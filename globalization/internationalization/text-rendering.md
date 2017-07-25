@@ -20,19 +20,19 @@ You can see the problems this English–centric approach presented when represen
 
 First, some languages do not have a one–to–one mapping between their uppercase and lowercase characters. For instance, the uppercase equivalent of the German [ß] is "SS." Second, some characters have different mappings depending upon the language in which they are used. Most non–Latin scripts do not even use the concept of lowercase and uppercase. Where are the capital letters in the strings below?
 
--   [पूंजी पत्र कहाँ हैं?] (Devanagari script/Hindi)
--   [大寫字母在哪裡？] (Traditional Chinese)
--   [மூலதன கடிதங்கள் எங்கே?] (Tamil)
+-   [पूंजी पत्र कहाँ हैं?] \(Devanagari script/Hindi)
+-   [大寫字母在哪裡？] \(Traditional Chinese)
+-   [மூலதன கடிதங்கள் எங்கே?] \(Tamil)
 -   (Arabic) [أين هي الحروف الكبيرة؟ ]
--   [ບ່ອນທີ່ຈົດຫມາຍນະຄອນຫຼວງມີຫຍັງແດ່?] (Lao)
+-   [ບ່ອນທີ່ຈົດຫມາຍນະຄອນຫຼວງມີຫຍັງແດ່?] \(Lao)
 -   (Hebrew) [היכן הם אותיות רישיות?]
 
--   [대문자는 어디 있습니까?] (Korean)
--   [ಅಕ್ಷರಗಳಲ್ಲಿ ಎಲ್ಲಿ?] (Kannada)
--   [ตัวอักษรตัวใหญ่อยู่ที่ไหน] (Thai)
--   [কোথায় বড় হাতের অক্ষরে?] (Bangla)
--   [სად არიან ასოებით?] (Georgian)
--   [જ્યાં મૂડી અક્ષરો છે?] (Gujarati)
+-   [대문자는 어디 있습니까?] \(Korean)
+-   [ಅಕ್ಷರಗಳಲ್ಲಿ ಎಲ್ಲಿ?] \(Kannada)
+-   [ตัวอักษรตัวใหญ่อยู่ที่ไหน] \(Thai)
+-   [কোথায় বড় হাতের অক্ষরে?] \(Bangla)
+-   [სად არიან ასოებით?] \(Georgian)
+-   [જ્યાં મૂડી અક્ષરો છે?] \(Gujarati)
 
 Developers are better served by using an API (e.g., [ToUpper()](https://msdn.microsoft.com/en-us/library/24kc78ka(v=vs.110).aspx)) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-[İ] problem](https://msdn.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase " [i]" maps to a dotless uppercase letter: " [I]." However, in Turkish the lowercase " [i]" maps to a dotted uppercase letter: " [İ]."
 
