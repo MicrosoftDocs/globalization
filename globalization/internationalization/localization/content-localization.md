@@ -10,4 +10,4 @@ Tracking content changes made in the source is crucial to lowering localization 
 
 One of the big challenges in localizing online Help and related Web sites is that the original text is often created under a very tight schedule toward the end of the product cycle. If the localized product is scheduled to ship simultaneously with the original-language product, the documentation has to be localized under an even tighter schedule. Indeed, adding the localized Help to the build is often one of the last things to be done before a localized product is shipped, which does not leave much room for testing. And while there is little chance of the localized Help breaking functionality within the product itself, you still want to be sure that all the links that connect the different Help pages still work.
 
-[Show:]{} Inherited Protected
+

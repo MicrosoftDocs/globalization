@@ -8,4 +8,4 @@ As its name implies, the user locale (known in Windows XP as "Standards and form
 
 When changes are made, all locale-aware applications should monitor the window message WM\_SETTINGCHANGE and should be able to update their displayed data accordingly. Numbers, currency, date, and time are some of the variables that are affected by the user-locale setting. The user locale is a user variable that cannot be changed programmatically. The only way to change it is for the user to do so manually.
 
-[Show:]{} Inherited Protected
+

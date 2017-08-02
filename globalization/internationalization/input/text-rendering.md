@@ -96,7 +96,7 @@ Latin characters have a left-to-right (LTR) Unicode directional property and hen
 
 For these scripts, the logical order (the order in which the user enters text with a sequence of virtual-key inputs) and the visual order (the order in which characters are represented to the user) are different in most cases.
 
-![Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters](https://i-msdn.sec.s-msft.com/dynimg/IC868519.jpg "Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters")
+![Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters](/media/hubs/globalization/IC868519.jpg "Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters")
 **Figure**: Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters
 
 ### Neutral Characters
@@ -157,12 +157,12 @@ Two other invisible but non-embedding directional control characters provided by
 
 All these text rendering issues can have implications for cursor movement. Unlike Latin script, which requires forward and backward movement of the caret only, some scripts demand that characters be displayed above, below, or to the left of previous characters. In Thai, for example, if the cursor is positioned after a base consonant, vowel, and tone mark, the cursor should skip back over all three characters when the user types the back arrow.
 
-![Cursor positioning](https://i-msdn.sec.s-msft.com/dynimg/IC868521.png "Cursor positioning")
+![Cursor positioning](/media/hubs/globalization/IC868521.png "Cursor positioning")
 **Figure**: Cursor positioning
 
 For bidirectional scripts, the direction of the cursor movement may change depending on the direction of the text involved. For example, when using the arrow keys to move from right to left through Arabic and then English text in the same sentence, the insertion point moves in a right-to-left manner through the Arabic text and then continues at the rightmost character in the English word and progresses in a right-to-left manner.
 
-![Pressing the right-arrow key through Latin and Hebrew text](https://i-msdn.sec.s-msft.com/dynimg/IC868520.png "Pressing the right-arrow key through Latin and Hebrew text")
+![Pressing the right-arrow key through Latin and Hebrew text](/media/hubs/globalization/IC868520.png "Pressing the right-arrow key through Latin and Hebrew text")
 **Figure**: Pressing the right-arrow key through Latin and Hebrew text.
 
 Similarly, backspace, highlighting, and double-clicking should work correctly for the text properties.
@@ -175,4 +175,4 @@ Search should use a suitable buffer size to accept multi-byte characters. Word w
 -   For most search implementations, the functionality comes from SQL, for more advanced implementations you must specify the appropriate collation for the language being searched.
 -   For more information on line and word breaking, please see [Line and Word Breaking](https://msdn.microsoft.com/globalization/mt662334).
 
-[Show:]{} Inherited Protected
+

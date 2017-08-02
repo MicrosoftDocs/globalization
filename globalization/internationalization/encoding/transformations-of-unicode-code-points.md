@@ -29,4 +29,4 @@ Since UTF-8 is so commonly used in Web content, it's helpful to know how Unicode
 
 **Table 2: **Relationship between Unicode code points and a UTF-8-encoded character. In UTF-8, the first byte indicates the number of bytes to follow in a multibyte-encoded sequence.
 
-[Show:]{} Inherited Protected
+

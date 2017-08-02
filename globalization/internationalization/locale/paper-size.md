@@ -29,4 +29,4 @@ When considering printing, you should ensure the following areas are covered.
 -   **Headers and Footers**: As with the regular document surface, this area should be World Ready.
 -   **Other formats, such as XPS and PDF Printing**: If your application supports printing XPS or PDF documents, then all the above issues should be applied to these document types.
 
-[Show:]{} Inherited Protected
+

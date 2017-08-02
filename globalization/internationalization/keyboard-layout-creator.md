@@ -28,4 +28,4 @@ To install and use MSKLC 1.4, your system must meet the following requirements:
 -   [Download MSKLC 1.4](http://go.microsoft.com/fwlink/?LinkId=82315&clcid=0x409 "Download MSKLC 1.4")
 -   [Windows Keyboard Layouts](https://msdn.microsoft.com/en-us/goglobal/bb964651 "Windows Keyboard Layouts")
 
-[Show:]{} Inherited Protected
+

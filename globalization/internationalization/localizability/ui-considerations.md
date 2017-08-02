@@ -16,4 +16,4 @@ Now that you have learned how to store and handle text to make localization more
 [](https://msdn.microsoft.com/en-us/library/mt712571)
 ## Using Images and Icons
 
-[Show:]{} Inherited Protected
+

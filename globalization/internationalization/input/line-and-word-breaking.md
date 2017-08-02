@@ -24,4 +24,4 @@ Text input, output, and display in Web content has been made a lot easier becaus
 
 Another essential aspect of a globalized application is its ability to display the correct font. Thanks to the evolution of font technology, enabling support for varying fonts has become a more manageable task.
 
-[Show:]{} Inherited Protected
+

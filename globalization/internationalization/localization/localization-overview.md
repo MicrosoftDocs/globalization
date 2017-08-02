@@ -10,4 +10,4 @@ Establish clear guidelines for ensuring effective localization, for scheduling i
 
 Content localization involves printed documentation, online content, and Help files. In contrast with software localization, content localization can usually be translated as one big piece, without the localizer ever having to wonder about strings or what their meaning is. The content should be written in a way that is compatible with localization tools. Additionally, the content's text needs to be isolated from the layout and structure tags. A localization strategy that is well planned and executed will help you produce a successful localization project.
 
-[Show:]{} Inherited Protected
+

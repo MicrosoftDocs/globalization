@@ -14,4 +14,4 @@ As its name suggests, the system locale is a unique setting for each system. Onl
 
 The system locale is a system variable that cannot be changed programmatically. The only way to change it is for an administrator to do so manually.
 
-[Show:]{} Inherited Protected
+

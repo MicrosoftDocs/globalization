@@ -12,4 +12,4 @@ The current implementation of NLS APIs and the .NET Framework do not provide any
 -   Don't expect that all predefined fields should contain a value (such as the previous example of postal codes).
 -   Be flexible for additional data that you might not usually expect in an address(such as a description of how to get there).
 
-[Show:]{} Inherited Protected
+

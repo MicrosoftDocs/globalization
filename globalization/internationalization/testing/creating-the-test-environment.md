@@ -24,4 +24,4 @@ Having a non-Unicode component that fails to display is as bad as picking an inc
 
 You've determined which code, components, and applications are most likely to present globalization problems, decided upon a test platform, and manipulated settings to create an optimal testing environment for detecting specific problems. Following the guidelines just presented will ensure you have considered vital issues when preparing to carry out a globalized test.
 
-[Show:]{} Inherited Protected
+

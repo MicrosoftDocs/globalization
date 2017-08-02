@@ -26,7 +26,7 @@ BOOL CALLBACK EnumCalendarInfoProc(LPTSTR lpCalendarInfoString, CALID Calendar)
 
 Execution of the previous code sample would give the following result on English (United States) and Arabic (Tunisia) user locales, respectively.
 
-![Available calendar types for English (US) and Arabic (Tunisia)](https://i-msdn.sec.s-msft.com/dynimg/IC4981.jpg "Available calendar types for English (US) and Arabic (Tunisia)") 
+![Available calendar types for English (US) and Arabic (Tunisia)](/media/hubs/globalization/IC4981.jpg "Available calendar types for English (US) and Arabic (Tunisia)") 
 
 **Figure 1.** Available calendar types for English (United States) and Arabic (Tunisia).
 
@@ -40,4 +40,4 @@ The [GetLocaleInfo](https://msdn.microsoft.com/en-us/library/dd318101.aspx) API
 
 In a nutshell, Win32 NLS APIs give your application full control over the way a date can be represented by letting you select a given calendar type and a given formatting type for that calendar. In fact, NLS APIs give you more flexibility than you would ever need. As stated earlier, GetDateFormat is probably enough to format dates in a way that's locale-aware.
 
-[Show:]{} Inherited Protected
+

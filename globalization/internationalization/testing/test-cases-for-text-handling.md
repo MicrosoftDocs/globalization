@@ -53,4 +53,4 @@ Language-independent data persistence
 Applications must store and retrieve documents containing multilingual data, regardless of the language settings of the system where the operation is performed.
 All applications that store data in an external persistent storage
 
-[Show:]{} Inherited Protected
+

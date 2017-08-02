@@ -32,4 +32,4 @@ Establishing localization guidelines can increase the quality, accuracy, and use
 
 Content localization includes UA documentation, which consists of printed documentation, online content, and Help files. Content can be actual pieces of the software product or an online product by itself.
 
-[Show:]{} Inherited Protected
+

@@ -8,4 +8,4 @@ You will also need to retake UI screen shots for the localized versions of the p
 
 The localization team can give feedback about the graphics and multimedia components used in the product to ensure that they are suitable for all locales. Even if it were not expensive to design custom graphics for each language, having different images from one language to another can confuse the user who works with more than one language version.
 
-[Show:]{} Inherited Protected
+

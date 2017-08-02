@@ -8,4 +8,4 @@ It's important to distinguish between the system UI language and the user UI lan
 
 The user UI language on a non-MUI machine would be the same as the system UI language. With MUI, however, the user can change the language by clicking the Languages tab within the Regional And Language Options property sheet. (See Figure 6.) To see the effect of this change, the user will have to log off and then log back on.
 
-[Show:]{} Inherited Protected
+

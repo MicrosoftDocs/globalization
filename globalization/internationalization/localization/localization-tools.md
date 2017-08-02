@@ -20,4 +20,4 @@ Another requirement of a good localization tool involves its handling of localiz
 
 Of course, effective localization results not only from having the proper tools but from having the right people to perform all necessary tasks in the localization process. The following section identifies the team members on a typical localization project and examines each member's roles and responsibilities.
 
-[Show:]{} Inherited Protected
+

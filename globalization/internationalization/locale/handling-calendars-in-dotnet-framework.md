@@ -70,4 +70,4 @@ subtype Localized
 
 []As you can see, the .NET Framework offers a UI that's extensive, yet flexible and easy to use for date and calendar formatting. []
 
-[Show:]{} Inherited Protected
+

@@ -15,4 +15,4 @@ Another concept to be familiar with as you work with Unicode is that of byte-ord
 
 **Table 1: **Binary representation of the byte-order mark (U+FEFF) for specific encodings.
 
-[Show:]{} Inherited Protected
+

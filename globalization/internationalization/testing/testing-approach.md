@@ -20,4 +20,4 @@ You've seen the importance of globalizing your test as well as particular areas 
 
 Before testing is performed, there are several items to consider in preparation. For example, you'll need to determine priority levels for components that are going to be tested, choose a test platform, and create a proper testing environment.
 
-[Show:]{} Inherited Protected
+

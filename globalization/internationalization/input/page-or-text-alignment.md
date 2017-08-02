@@ -53,7 +53,7 @@ Any time you change the first strong character from a left-to-right language to 
 
 The text direction and cultural expectations can impact other features. For example, lines with Japanese or Korean text will have the underline appear on the right, while Chinese (Simplified and Traditional scripts) on the left. The positions of punctuation marks, for example, the relative position of commas and full stops, differ between horizontal and vertical writing. Punctuation such as parentheses, quotation marks, book title marks (Chinese), ellipsis mark, dash, wavy dash (Japanese), proper noun mark (Chinese), wavy book title mark (Chinese), emphasis mark, and cho-on mark (Japanese) are all rotated 90 degrees when switching between horizontal and vertical text.
 
-![Underlined text in four scripts](https://i-msdn.sec.s-msft.com/dynimg/IC868534.png "Underlined text in four scripts")
+![Underlined text in four scripts](/media/hubs/globalization/IC868534.png "Underlined text in four scripts")
 Figure 1: Underlined text in four scripts.
 
 [Ruby characters](/globalization/mt808150), which provide a phonetic guide for unusual or difficult- to-read characters, follow the direction of the main text. Inserted text in the Roman alphabet is usually written horizontally, or turned sideways when it appears in vertical text, with the base of the characters on the left.
@@ -69,4 +69,4 @@ For bidirectional languages—such as Arabic and Hebrew—the text should be ali
 -   if they exist, column names and row names originate and increase from top-right corner leftwards and towards the bottom; and
 -   if they exist, tabs originate from either the top-right or the bottom-right side and increase towards the left.
 
-[Show:]{} Inherited Protected
+

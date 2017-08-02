@@ -64,4 +64,4 @@ Dynamic retrieval of system-defined names
 The applications should not refer to built-in objects of the operating system by names stored in the application: the names of built-in accounts such as "Administrator" or folders such as "Program Files" must be retrieved dynamically. To check this, pseudo-localize the application and run it on a localized platform.
 All applications
 
-[Show:]{} Inherited Protected
+

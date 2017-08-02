@@ -33,4 +33,4 @@ Japan: April 1st, 2007
 
 These examples shows why you should use the date APIs when dealing with dates. Not only will they handle the correct format, but they will also display the correct translations for the long dates, thus saving translation costs.
 
-[Show:]{} Inherited Protected
+

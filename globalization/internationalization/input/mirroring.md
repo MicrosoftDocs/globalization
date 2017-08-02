@@ -6,7 +6,7 @@ https://msdnstage.redmond.corp.microsoft.com/en-US/globalization/mt662335For rig
 
 In localized applications for right-to-left languages, menus and submenus are mirrored and appear on the right side of the application. The figure below shows the Outlook UI for Arabic, which is mostly a mirror of the LTR UI. For example, the menu starts from the right side of the screen instead of from the left.
 
-![How the User Interface for Arabic compares to English language](https://i-msdn.sec.s-msft.com/dynimg/IC868515.jpg "How the User Interface for Arabic compares to English language")
+![How the User Interface for Arabic compares to English language](/media/hubs/globalization/IC868515.jpg "How the User Interface for Arabic compares to English language")
 [**How the User Interface for Arabic compares to English language.** ]{}
 
 ### Exceptions to RTL Reading Order and Alignment
@@ -22,4 +22,4 @@ In general, all controls for right-to-left (RTL) languages (e.g., Arabic and Heb
 [](https://msdn.microsoft.com/en-us/library/mt662335)
 #### back to top
 
-[Show:]{} Inherited Protected
+

@@ -21,4 +21,4 @@ Therefore, if you base your automation testing on an older tool with a few or al
 -   Refer to UI elements by their resource identifiers, ordinal numbers, or window classes, not by the caption. Captions are hard to track with multilingual development.
 -   Isolate text resources from the code in a way that's easy to localize. For example, they can be an include file defining text constants. As a result, localizers will be able to translate the external "resource file," and your tool will run with a localized UI.
 
-[Show:]{} Inherited Protected
+

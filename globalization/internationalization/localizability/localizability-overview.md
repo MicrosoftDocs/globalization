@@ -30,4 +30,4 @@ The proposed framework exists of two pieces, the first part is the clear separat
 
 The second part of the proposed framework is pseudo localization. Pseudo localization is a simulated localized product. Every string gets replaced by a semi-random pseudo localized string. The product can then be tested for its localizability.
 
-[Show:]{} Inherited Protected
+

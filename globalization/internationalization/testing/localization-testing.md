@@ -44,4 +44,4 @@ It's also a good idea to check that everything you are going to distribute in a 
 
 You've now seen the importance of globalized testing, localizability testing, and localization testing in terms of ensuring both that a product is world-ready and that it is suitable for worldwide distribution. One way in which the testing process has changed to reflect new goals involves the type of tools currently being used.
 
-[Show:]{} Inherited Protected
+

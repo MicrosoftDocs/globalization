@@ -12,4 +12,4 @@ Some locales share the same language yet use different words for the same object
 
 In general, the text (as well as the graphics and other elements) of the localized software product should not be altered to reflect locale-specific geopolitical views because this could cause inconsistency in the localized product. Nonetheless, sometimes there could be undesirable consequences resulting from a localized product that is not adapted to meet a locale's geopolitical views. If the views conveyed in the unaltered product are going to offend the target market, this will affect sales in that market. Such a situation would warrant alteration of the localized product. For disputes over national borders, maps, country names, international or political organizations and leaders, or any other politically sensitive subjects, consult an expert on geopolitical issues for advice. Then make any necessary adjustments in the original product. (For more information on political content, see Localizability Overview.)
 
-[Show:]{} Inherited Protected
+

@@ -6,4 +6,4 @@ Another element that requires localization is the UI layout. The localization pr
 
 In addition to text that increases in length when it is translated, font size can differ among language groups. For instance, East Asian languages usually display text in a larger font size than many other language groups. As a result of the change in font size, the system expands the UI vertically. Edit boxes, static text, and button controls within the East Asian localized version of the product usually result in larger vertical spacing than those within products from other language groups. Bidirectional languages like Arabic and Hebrew require mirroring of the screen layout to accommodate their RTL reading order. This requires mirroring the layout of menus, text, dialog boxes, and edit boxes.
 
-[Show:]{} Inherited Protected
+

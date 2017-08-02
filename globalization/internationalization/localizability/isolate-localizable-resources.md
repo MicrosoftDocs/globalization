@@ -6,11 +6,11 @@ This documentation is archived and is not being maintained.
 
 Once you know what you are looking for, it is easy to identify source code that isn't properly set up for localization. The most extreme cases are populated with hard-coded strings, constants, and characters. Files containing hard-coded localizable elements are the biggest nightmare to deal with. Translators cannot easily translate the source-code files, especially if the code is continually evolving. Many translators are not programmers and might delete important details, such as closing quotation marks or semicolons, or they might translate programming keywords as well as strings. Then developers must take time to clean up these files so that they will compile correctly. Hard-coded elements are difficult to find because they do not show up until the software is localized. Figures 1 and 2 show some common problems that occur during localization.
 
-![Hard-coded string example 1](https://i-msdn.sec.s-msft.com/dynimg/IC150997.jpg "Hard-coded string example 1")
+![Hard-coded string example 1](/media/hubs/globalization/IC150997.jpg "Hard-coded string example 1")
 
 **Figure 1:** The string "Unknown Modem" was hard-coded and thus went untranslated.
 
-![Hard-coded period](https://i-msdn.sec.s-msft.com/dynimg/IC35490.jpg "Hard-coded period")
+![Hard-coded period](/media/hubs/globalization/IC35490.jpg "Hard-coded period")
 
 **Figure 2:** The string is a text resource without a period at the end of sentence, and the period was hard-coded.
 
@@ -75,4 +75,4 @@ For more technical information on resource handling for Microsoft Win32, the Mic
 
 When dealing with resource repositories, you will save a lot of money if you remove unused strings and dialog boxes before having the resources localized. Translators and localizers have no way of knowing which of your strings are used and which are not. Thus all they do is what you tell them (such as to translate a particular resource file). For example, suppose one out of every 50 strings in your resources is not used. Referring back to the 25,000-string project, that means there are 500 strings in the resources that do not need to be translated. If you have 20 languages costing 42 cents per string to localize, those 500 strings end up using \$4,200 of your budget-money that could have been allocated elsewhere.
 
-[Show:]{} Inherited Protected
+

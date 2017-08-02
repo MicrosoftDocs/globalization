@@ -85,4 +85,4 @@ The Windows operating system also allows enabling font substitution but this sho
 
 -   [Script and Font Support in Windows](https://msdn.microsoft.com/en-us/globalization/mt791278)
 
-[Show:]{} Inherited Protected
+

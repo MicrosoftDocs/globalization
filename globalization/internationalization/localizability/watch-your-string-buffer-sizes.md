@@ -14,4 +14,4 @@ The increased string size caused the buffer to overflow, which in turn crashed t
 
 Along these same lines, buffer overruns, when there is no physical restriction, are notorious for bugs even in nonlocalized software. Localizing strings tends to reveal buffer overrun problems. These types of problems can be eliminated if buffers are dynamic or are allowed to have the maximum buffer size. Estimating size requirements will be discussed in the next section, which will explain how an optimal UI design makes localization easier.
 
-[Show:]{} Inherited Protected
+

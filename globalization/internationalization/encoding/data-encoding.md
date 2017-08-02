@@ -27,4 +27,4 @@ Since Unicode 3.01, more characters are supported beyond the BMP, and the new ch
 
 A codepage is a list of selected character codes characters represented as code points) in a certain order. Codepages are usually defined to support specific languages or groups of languages that share common writing systems. All Window codepages can only contain 256 code points.
 
-[Show:]{} Inherited Protected
+

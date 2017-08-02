@@ -90,7 +90,7 @@ When dealing with numeric values, there are six major items to pay attention to:
 
 The user can define preferred number-formatting parameters by making selections from the Numbers tab of the Customize Regional Options property sheet, within the Regional And Language Options property sheet. (See Figure 1 below.)
 
-![Number Format](https://i-msdn.sec.s-msft.com/dynimg/IC848906.jpg "Number Format") 
+![Number Format](/media/hubs/globalization/IC848906.jpg "Number Format") 
 
 **Figure 1:** Selecting the preferred number formatting.
 
@@ -104,4 +104,4 @@ In addition to in-line numbers, there may be additional systems used for [number
 [](https://msdn.microsoft.com/en-us/library/mt691872)
 ## Number Formatting in .NET Framework
 
-[Show:]{} Inherited Protected
+

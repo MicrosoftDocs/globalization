@@ -10,4 +10,4 @@ You can also use other install language packs on English Windows. This is especi
 
 Another test platform you can use is the localized build of the target operating system. If the tested application is to be localized into certain languages, these languages are the obvious choice for the platform. If the target operating system is Windows, other language versions of the operating system can be used too, even if the UI language does not match the language of your application. By using this configuration, you check how your application interacts with a localized system, where names of the system folders, built-in accounts, fonts, and other system objects might be different from what you get with an English or other language system. Once you've chosen a test platform, the next step is to create the test environment.
 
-[Show:]{} Inherited Protected
+

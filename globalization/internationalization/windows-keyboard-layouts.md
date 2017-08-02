@@ -2,7 +2,7 @@ This documentation is archived and is not being maintained.
 
 # Windows Keyboard Layouts
 
-![Windows keyboard](https://i-msdn.sec.s-msft.com/dynimg/IC381691.jpg "Windows keyboard")
+![Windows keyboard](/media/hubs/globalization/IC381691.jpg "Windows keyboard")
 
 Choose a keyboard below to view its layouts.
 
@@ -27,4 +27,4 @@ Layouts shipped in Windows 7 and Windows Server 2008 R2 are marked by (‡).
 -   [Create your own keyboard layout using Microsoft Keyboard Layout Creator](https://msdn.microsoft.com/goglobal/bb964665.aspx "Create your own keyboard layout using Microsoft Keyboard Layout Creator")
 -   [Keyboard Layouts FAQ](https://msdn.microsoft.com/goglobal/bb688179.aspx "Keyboard Layouts FAQ")
 
-[Show:]{} Inherited Protected
+

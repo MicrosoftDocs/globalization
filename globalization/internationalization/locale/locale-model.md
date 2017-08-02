@@ -20,7 +20,7 @@ For developers on older systems, you will need to determine the user locale and 
 
 Most developers don’t need to worry what the user has set as their keyboard. Most modern programming languages pass through Unicode text to the consuming program. The exception may be for keyboard shortcuts. If you define a shortcut as Alt-S and there is no S on the keyboard, what does that mean for the user?
 
-![Figure 1 Hindi Traditional Keyboard](https://i-msdn.sec.s-msft.com/dynimg/IC866727.png "Hindi Traditional Keyboard") *Figure 1 Hindi Traditional Keyboard*
+![Figure 1 Hindi Traditional Keyboard](/media/hubs/globalization/IC866727.png "Hindi Traditional Keyboard") *Figure 1 Hindi Traditional Keyboard*
 
 If you do need to access the keyboard and its settings directly, <https://msdn.microsoft.com/en-us/library/ms646267(vs.85).aspx> provides this information.
 
@@ -28,4 +28,4 @@ If you do need to access the keyboard and its settings directly, <https://msdn.m
 
 If you are on an older system or need to support legacy programs, you may need to use the System Locale. The system locale determines which code page is used on the system by default on operating systems that use Unicode as their native encoding. Only applications that do not use Unicode as their default character-encoding mechanism are affected by this setting; therefore, applications that are already Unicode-encoded can safely ignore the value and functionality of this setting. As its name suggests, the system locale is a unique setting for each system. The system locale is a system variable that cannot be changed programmatically. The only way to change it is for an administrator to do so manually. More information about how to use this setting may be found at [SystemLocale](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-international-core-winpe-systemlocale).
 
-[Show:]{} Inherited Protected
+

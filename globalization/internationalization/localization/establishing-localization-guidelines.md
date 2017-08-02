@@ -14,7 +14,7 @@ From a language standpoint, avoiding grammar and spelling mistakes in the origin
 
 The product-release schedule can differ from one market to another according to market needs. Ideally the localized product should be shipped on the same date as the original-language product, or with a delta less than 30 days. This concept is known as "simultaneous ship," or "sim ship." (For more information on sim shipping, see "[Understanding Internationalization](https://msdn.microsoft.com/en-us/library/bb688112.aspx)" and "[Designing a World-Ready Program](https://msdn.microsoft.com/en-us/goglobal/bb978435.aspx)"). However, shipping on the same day usually does not happen because localization, documentation printing, and package design continue after the original product has shipped. Figure 10-1 shows a typical time line for the development and shipping of a product. The product team and the international marketing team should decide what the delta between the shipping dates for the original product and the localized product should be. In **Figure 1**, Tier-1 languages refer to localized language versions that are shipped to the most important target markets; Tier-2 languages refer to language versions that ship to secondary markets, or are versions for which only a partial localization is planned. Localization for Tier-2 languages usually starts somewhere around the UI freeze of the original product.
 
-![Localization timeline for international production](https://i-msdn.sec.s-msft.com/dynimg/IC155683.gif "Localization timeline for international production") 
+![Localization timeline for international production](/media/hubs/globalization/IC155683.gif "Localization timeline for international production") 
 
 **Figure 1** - Localization timeline for international production.
 
@@ -30,4 +30,4 @@ Keeping track of the words that are actually translated for each handoff is impo
 
 So far this chapter has dealt mainly with software localization, in which changes are made to a program's resources. The final section of this chapter examines the second component of localization: content localization. Like software localization, content localization presents its own challenges. However, there are some notable differences between the two.
 
-[Show:]{} Inherited Protected
+

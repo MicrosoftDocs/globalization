@@ -4,7 +4,7 @@ This documentation is archived and is not being maintained.
 
 The *NumberFormatInfo* class defines how currency, decimal separators, and other numeric symbols are formatted and displayed based on culture. For example, the decimal number 10000.50 is formatted as 10,000.50 for the culture "en-US" and 10.000,50 for the culture "de-DE." An instance of *NumberFormatInfo* can be created for a specific cultureor the invariant culture, but not for a neutral culture. A neutral culture does not provide enough information to display the correct numeric format. Table 4-10 lists the standard format characters for each standard formatting pattern and the associated *NumberFormatInfo* property that can be set to modify this pattern.
 
-![Format Character](https://i-msdn.sec.s-msft.com/dynimg/IC11711.jpg "Format Character") 
+![Format Character](/media/hubs/globalization/IC11711.jpg "Format Character") 
 **Table 1:** Standard format characters for basic formatting patterns and the associated NumberFormatInfo property used to modify these patterns.
 
 The following code example displays an integer using the *NumberFormatInfo* standard currency format ("c") for the specified *CurrentCulture*.
@@ -37,4 +37,4 @@ kr100,00
 
 As when dealing with numbers, formatting conventions for addresses vary widely from one country to another. There are also discrepancies in the actual terms used when representing addresses that you will need to handle.
 
-[Show:]{} Inherited Protected
+

@@ -25,4 +25,4 @@ Once you have chosen a resource store, you can move on to the next area that cau
 [](https://msdn.microsoft.com/en-us/library/mt691879)
 ## Watch Your String Buffer Sizes
 
-[Show:]{} Inherited Protected
+

@@ -75,4 +75,4 @@ public class EuroLocalSample
      }
 }
 
-[Show:]{} Inherited Protected
+

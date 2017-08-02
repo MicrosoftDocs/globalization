@@ -19,7 +19,7 @@ For more advanced number formatting in the Win32 programming model, the GetLocal
 
 Possible return values are shown in Table 1 below.
 
-![Number Formatting](https://i-msdn.sec.s-msft.com/dynimg/IC109839.jpg "Number Formatting") 
+![Number Formatting](/media/hubs/globalization/IC109839.jpg "Number Formatting") 
 **Table 1:** Return values of various LCType flags.
 
 **Native digits.** LCType flag set to LOCALE\_SNATIVEDIGITS. Here is a code sample that deals with native digits:
@@ -31,12 +31,12 @@ GetLocaleInfo(LOCALE\_USER\_DEFAULT, // LCID (current user locale)
 
 This code would produce the following result on English (US) and Farsi locales, respectively:
 
-![Native Digit](https://i-msdn.sec.s-msft.com/dynimg/IC124322.jpg "Native Digit") 
+![Native Digit](/media/hubs/globalization/IC124322.jpg "Native Digit") 
 **Figure 1:** Native digits for English (US) and Farsi.
 
 **Digit Substitution.** Digit substitution defines which set of digits (with its associated shapes) should be used for presenting numbers. This information can be retrieved with the LCType flag set to LOCALE\_IDIGITSUBSTITUTION. The table below shows the possible return values:
 
-![Digit Substitution](https://i-msdn.sec.s-msft.com/dynimg/IC35857.jpg "Digit Substitution") 
+![Digit Substitution](/media/hubs/globalization/IC35857.jpg "Digit Substitution") 
 **Table 2:** Return values of LOCALE\_IDIGITSUBSTITUTION
 
-[Show:]{} Inherited Protected
+

@@ -35,4 +35,4 @@ sizeof (DWORD));
 
 The [RegionInfo](https://msdn.microsoft.com/en-us/library/system.globalization.regioninfo.aspx) class from the [System.Globalization](https://msdn.microsoft.com/en-us/library/system.globalization.aspx) namespace contains information about the country or region. In contrast to [CultureInfo](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx), RegionInfo does not represent preferences of the user and does not depend on the user's language or culture. A good example of this category of information is the [IsMetric](https://msdn.microsoft.com/en-us/library/system.globalization.regioninfo.ismetric.aspx) property of RegionInfo that gets a Boolean value indicating whether the country or region uses the metric system for measurements.
 
-[Show:]{} Inherited Protected
+

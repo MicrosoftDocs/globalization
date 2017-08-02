@@ -25,4 +25,4 @@ In order to set the rules for formatting locale-sensitive data in accordance wit
 
 As mentioned in [[Encodings and Code Pages]](https://msdn.microsoft.com/en-us/goglobal/bb688114 "Encodings and Code Pages") document, ".OCP" and ".ACP" parameters always refer to the settings of the user locale, not the system locale. While selecting this locale for LC\_CTYPE or LC\_ALL is not a good choice, all other categories should be set to match the user locale, unless your console must be explicitly independent of the user's settings.
 
-[Show:]{} Inherited Protected
+

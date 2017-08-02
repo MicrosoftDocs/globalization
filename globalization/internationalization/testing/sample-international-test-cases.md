@@ -18,4 +18,4 @@ The checklist shown in the following tables cannot possibly cover every situatio
 [](https://msdn.microsoft.com/en-us/library/mt662433)
 ## Test Cases for Localizability
 
-[Show:]{} Inherited Protected
+

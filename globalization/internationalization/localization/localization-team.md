@@ -16,4 +16,4 @@ Likewise, the localizer needs to be able to test the localized product in order 
 
 In addition to using good tools and having localization team members who perform defined functions, you should also have some basic process guidelines in place that will enable localization to run smoothly. The following section discusses some basic areas that you should consider.
 
-[Show:]{} Inherited Protected
+

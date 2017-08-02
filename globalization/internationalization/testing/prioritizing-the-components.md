@@ -11,4 +11,4 @@ Some components are more likely to have globalization problems than others, so p
 
 After determining which components are more likely to have serious globalization errors, choose a viable test platform in accordance with your particular circumstances.
 
-[Show:]{} Inherited Protected
+

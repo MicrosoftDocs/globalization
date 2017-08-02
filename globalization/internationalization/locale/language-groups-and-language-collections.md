@@ -8,4 +8,4 @@ With Windows 2000 the user can add support for many languages and scripts (inclu
 
 In Windows XP, Microsoft has simplified the process of installing these groups by gathering languages with similar properties into a language collection. On English Windows XP, support for all European languages (including Baltic languages, Cyrillic languages, Greek, and Turkic languages)-known as the "Basic Language Collection"-is installed by default. Additional language collections (such as East Asian for Japanese, Chinese, and Korean, as well as complex scripts for Arabic, Hebrew, the Indic family of languages, and Thai) can also be installed. (After installing a language group or collection, the user will need to restart the computer.)
 
-[Show:]{} Inherited Protected
+

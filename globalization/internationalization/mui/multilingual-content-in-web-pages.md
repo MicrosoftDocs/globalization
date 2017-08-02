@@ -61,8 +61,8 @@ The XML file can contain all the information needed for on-the-fly generation of
 
 The assumption is that the same information is kept in each language version of the XML resources, thus preserving the same schema among the languages. With this model you can use the same XSL transformation on all of the files, which will simplify your code. Adding new language resources becomes easy as well.
 
-![Structure of the resource tree](https://i-msdn.sec.s-msft.com/dynimg/IC856183.png "Structure of the resource tree")
+![Structure of the resource tree](/media/hubs/globalization/IC856183.png "Structure of the resource tree")
 
 **Figure 1:** Structure of the resource tree
 
-[Show:]{} Inherited Protected
+

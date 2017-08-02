@@ -13,7 +13,7 @@ GetCurrencyFormat(LOCALE\_USER\_DEFAULT, // a predefined value for user locale
 
 Execution of the previous code would give the following result on English (United States) and Danish user locales, respectively.
 
-![Currency format for English (United States) and Danish](https://i-msdn.sec.s-msft.com/dynimg/IC32596.jpg "Currency format for English (United States) and Danish") 
+![Currency format for English (United States) and Danish](/media/hubs/globalization/IC32596.jpg "Currency format for English (United States) and Danish") 
 
 Figure 1 - Currency format for English (United States) and Danish.
 
@@ -40,4 +40,4 @@ curformat.lpcurrencysymbol = text(:;"&gt;GetCurrencyFormat(LOCALE\_USER\_DEFAULT
 
 By following the code, the result of a currency symbol formatting for the Danish locale (with kr as default currency symbol) would be: € 123,40
 
-[Show:]{} Inherited Protected
+

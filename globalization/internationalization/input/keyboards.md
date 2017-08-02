@@ -8,7 +8,7 @@ You will find [keyboard input documentation on MSDN](https://msdn.microsoft.com/
 
 The exception may be for keyboard shortcuts. If you define a shortcut as Alt-S and there is no S on the keyboard, what does that mean for the user?
 
-![Hindi Traditional Keyboard](https://i-msdn.sec.s-msft.com/dynimg/IC866727.png "Hindi Traditional Keyboard")
+![Hindi Traditional Keyboard](/media/hubs/globalization/IC866727.png "Hindi Traditional Keyboard")
 [**Figure: Hindi Traditional Keyboard** ]{}
 
 ## Enable Input Method Editors (IMEs) and Text Prediction
@@ -28,4 +28,4 @@ When implementing IME support, the developer should consider the following:
 -   What happens when the user triggers a short cut associated with IME (e.g., hits ESC)?
 -   Maximum character limits (whether byte based or visually based) are more complex with IME input. A common problem case for this is entering text in fields with character length limits – does the limit apply to the text as entered or text as displayed? For complex writing systems, the number of key events may be greater than the final candidate length. For text prediction, the user might select a predicted word that exceeds the limit.
 
-[Show:]{} Inherited Protected
+

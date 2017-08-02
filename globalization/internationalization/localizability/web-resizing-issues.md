@@ -23,4 +23,4 @@ The HAL documentation lists a series of rules and the key reasons behind them. T
 
 A key point to remember is that HAL is just one approach for achieving zero international resizing. There are probably countless other methods. This is fine as long as they achieve the same result. Even so, other methods will probably benefit from using some of the HAL rules. Another point to bear in mind is that there are already many HTML dialog boxes that are HAL-compliant for the most part. This is especially true for dialog boxes (or windows) that were designed to be resizable.
 
-[Show:]{} Inherited Protected
+

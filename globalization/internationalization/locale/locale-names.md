@@ -25,4 +25,4 @@ For example, LCID for English (US) (en-US) is 1033 which in binary is
 +--------------+----+----------------+
      Reserved    Sort id  Language id      
 
-[Show:]{} Inherited Protected
+

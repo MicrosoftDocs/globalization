@@ -39,4 +39,4 @@ The .NET Framework has also added the idea of an argument placeholder to its Con
 Console.Write("Not enough memory to {0} the file {1}", sFunc, sFile);
 ```
 
-[Show:]{} Inherited Protected
+

@@ -27,4 +27,4 @@ For Right-To-Left (RTL) languages, not only does the text alignment and text rea
 
 UI elements may need to be re-sized for the localized software. The developer should consider the localized strings could be (much) longer than the English strings to implement the UI to handle them.
 
-[Show:]{} Inherited Protected
+

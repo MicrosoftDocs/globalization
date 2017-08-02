@@ -34,7 +34,7 @@ After adding new input locales or keyboard layouts mentioned above, you can clic
 
 ![Top of page](https://i-msdn.sec.s-msft.com/en-us/goglobal/bb688179.arrow_px_up(en-us).gif) [Top of page](#top)
 
-![plus](https://i-msdn.sec.s-msft.com/dynimg/IC856276.gif "plus") ![minus](https://i-msdn.sec.s-msft.com/dynimg/IC856275.gif "minus")
+![plus](/media/hubs/globalization/IC856276.gif "plus") ![minus](/media/hubs/globalization/IC856275.gif "minus")
 
 ## In This Article
 
@@ -48,4 +48,4 @@ After adding new input locales or keyboard layouts mentioned above, you can clic
 -   [Win32 MUI Run-Time Diagnostics](https://msdn.microsoft.com/en-us/goglobal/bb688098 "Win32 MUI Run-Time Diagnostics")
 -   Windows Keyboard Layouts
 
-[Show:]{} Inherited Protected
+

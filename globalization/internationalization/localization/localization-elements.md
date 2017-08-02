@@ -27,4 +27,4 @@ There are many elements that are modified in both software and content localizat
 [](https://msdn.microsoft.com/en-us/library/mt662350)
 ## Build Process and Packaging
 
-[Show:]{} Inherited Protected
+

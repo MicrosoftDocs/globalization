@@ -8,7 +8,7 @@ Some scripts or cultures have special rules about how text is justified. Justifi
 
 For East Asian language, the first and last characters of each line (except the last) are aligned to the left and right margins, and lines are filled by adding or subtracting space between and within words. This is also called [distributed alignment](https://technet.microsoft.com/en-us/library/dd948449(v=office.12).aspx#gt_dae18ea5-2a98-4e10-9570-7f4ac695c6b8).
 
-![](https://i-msdn.sec.s-msft.com/dynimg/IC868523.png) 
+![](/media/hubs/globalization/IC868523.png) 
 
 ## Thai Text Justification
 
@@ -16,11 +16,11 @@ The main difference between Thai text justification and English justification is
 
 Thai text without distributed justification
 
-![](https://i-msdn.sec.s-msft.com/dynimg/IC868527.png) 
+![](/media/hubs/globalization/IC868527.png) 
 
 Thai text with distributed justification
 
-![](https://i-msdn.sec.s-msft.com/dynimg/IC868526.png) 
+![](/media/hubs/globalization/IC868526.png) 
 
 ## Kashida Justification
 
@@ -28,8 +28,8 @@ Kashida is a character elongation used in Arabic language to increase the length
 
 Here is a typical Arabic text with and without kashida justification:
 
-![](https://i-msdn.sec.s-msft.com/dynimg/IC868524.png) 
+![](/media/hubs/globalization/IC868524.png) 
 
-![](https://i-msdn.sec.s-msft.com/dynimg/IC868525.png) 
+![](/media/hubs/globalization/IC868525.png) 
 
-[Show:]{} Inherited Protected
+

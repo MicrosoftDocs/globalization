@@ -38,4 +38,4 @@ Third, choose a language for which the target market of the localized product is
 
 In spite of its benefits, pilot localization cannot guarantee that all issues will be covered in your localizability test. Different language versions might vary in the degree of translation required and in the problems you are likely to see due to localization. By using pseudo-localization to address general areas of potential risk, you will preempt more problems than by using pilot localization, which focuses more on the requirements dictated by one particular language.
 
-[Show:]{} Inherited Protected
+

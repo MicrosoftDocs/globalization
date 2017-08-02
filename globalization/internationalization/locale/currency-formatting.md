@@ -22,7 +22,7 @@ Currency formatting needs to take into consideration these following elements:
 
 Most currencies use the same decimal and thousands separator that the numbers in the locale use, but this is not always true. In some places in Switzerland, they use the period as a decimal separator for Swiss frans (Sfr. 127.54), but then use commas as the decimal separator everywhere else (127,54).
 
-![Currency format](https://i-msdn.sec.s-msft.com/dynimg/IC848905.jpg "Currency format") 
+![Currency format](/media/hubs/globalization/IC848905.jpg "Currency format") 
 
 **Figure 1.** Currency format in Region settings
 
@@ -34,4 +34,4 @@ Most currencies use the same decimal and thousands separator that the numbers in
 [](https://msdn.microsoft.com/en-us/library/mt691867)
 ## Currency Formatting in .NET Framework
 
-[Show:]{} Inherited Protected
+

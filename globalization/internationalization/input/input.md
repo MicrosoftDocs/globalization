@@ -27,4 +27,4 @@ The word and line breaking add a special case when multilingual text is to be pa
 
 All language versions of Windows are enabled for all supported languages, thereby empowering applications that use Unicode as their encoding model to handle mixed text from any of the supported scripts.
 
-[Show:]{} Inherited Protected
+

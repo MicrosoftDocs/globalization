@@ -91,4 +91,4 @@ In a small number of cases the range of characters in the test input might be so
 
 In addition to globalizing test data that will catch problems and validate functionality, as you conduct your test and view the results you should be able to recognize how some of the globalization problems mentioned in " [Creating the Test Environment](https://msdn.microsoft.com/en-us/globalization/mt662419)".
 
-[Show:]{} Inherited Protected
+

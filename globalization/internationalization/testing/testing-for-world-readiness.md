@@ -37,4 +37,4 @@ Using automated test tools is an effective way to verify the functionality of lo
 
 The sample test items are broken up into basic areas of functionality and are accompanied by details on how these areas can be verified, what the potential problems associated with certain areas are, and when the test is applicable.
 
-[Show:]{} Inherited Protected
+

@@ -8,4 +8,4 @@ The basic product design for the localized product should be the same as for the
 
 An important component of localization involves tools that will simplify the localization process. While some people might be able to add up ten numbers in their heads, using a calculator is usually a quicker and easier method of achieving-what should be-the same result. Similarly, the proper localization tools will help expedite the localization process and will handle many of the common tasks that localization entails.
 
-[Show:]{} Inherited Protected
+

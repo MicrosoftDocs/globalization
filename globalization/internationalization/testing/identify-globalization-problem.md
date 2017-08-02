@@ -20,4 +20,4 @@ As a final note regarding globalized testing, when planning and running testing 
 
 Once you've verified that a product's functionality has been globalized through globalizing the existing testing process, you will need to determine whether the application is going to be localized. If so, the next step is localizability testing. Using techniques such as pseudo-localization and the pseudo-mirroring test; reviewing code, UI, and documentation; and performing pilot localization are all tasks that comprise localizability testing.
 
-[Show:]{} Inherited Protected
+

@@ -54,4 +54,4 @@ Before examining the technical implementation of MUI in Win32 applications, it i
 -   [Resource Handling in the .NET Framework](https://msdn.microsoft.com/en-US/library/mt670612) 
 -   [Multilingual content in Web Pages](https://msdn.microsoft.com/en-US/library/mt670613) 
 
-[Show:]{} Inherited Protected
+

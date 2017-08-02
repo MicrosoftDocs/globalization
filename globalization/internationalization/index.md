@@ -98,4 +98,4 @@ The below sections provide some generic information about the internationalizati
 
 [Sample International Test Cases](https://msdn.microsoft.com/en-US/library/mt662424)
 
-[Show:]{} Inherited Protected
+

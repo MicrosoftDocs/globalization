@@ -30,4 +30,4 @@ Measurement-systems independence
 Verify that applications that use real physical dimensions for formatting graphic and text data utilize the measurement system (metric or U.S. Customary System) corresponding to the user's locale settings.
 Applications that use real physical dimensions for formatting graphic and text data
 
-[Show:]{} Inherited Protected
+
