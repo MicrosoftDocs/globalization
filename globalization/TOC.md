@@ -1,4 +1,4 @@
-# [Index](index.md)
+# [Globalization](index.md)
 ## [Documentation](https://msdn.microsoft.com/en-us/library/dd318661)
 ### [.NET Globalization](https://msdn.microsoft.com/en-us/library/system.globalization(v=vs.110).aspx)
 ### [Windows Internationalization](https://dev.windows.com/en-us/internationalization)

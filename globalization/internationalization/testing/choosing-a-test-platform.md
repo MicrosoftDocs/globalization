@@ -1,4 +1,4 @@
-This documentation is archived and is not being maintained.
+
 
 # Choosing a Test Platform for Globalization Testing
 

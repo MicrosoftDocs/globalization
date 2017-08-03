@@ -1,4 +1,4 @@
-This documentation is archived and is not being maintained.
+
 
 # Do Not Compound Several Variables
 

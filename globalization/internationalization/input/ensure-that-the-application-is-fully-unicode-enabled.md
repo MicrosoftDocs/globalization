@@ -1,4 +1,4 @@
-This documentation is archived and is not being maintained.
+
 
 # Ensure that the Application is fully Unicode enabled
 

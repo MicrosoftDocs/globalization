@@ -1,4 +1,4 @@
-This documentation is archived and is not being maintained.
+
 
 # Keyboards, Other Input Methods, and Text Predication
 

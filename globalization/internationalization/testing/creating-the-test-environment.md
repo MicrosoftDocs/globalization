@@ -1,4 +1,4 @@
-This documentation is archived and is not being maintained.
+
 
 # Creating the Test Environment for Globalization Testing
 

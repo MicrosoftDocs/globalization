@@ -1,4 +1,4 @@
-This documentation is archived and is not being maintained.
+
 
 # Resource Handling in the .NET Framework
 

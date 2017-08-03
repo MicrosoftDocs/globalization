@@ -1,4 +1,4 @@
-This documentation is archived and is not being maintained.
+
 
 # Security Guidelines for International
 

@@ -1,6 +1,5 @@
-# Globalization Dev Center
+# Globalization Documentation
 
-[](# "Swipe Previous")
 ## Microsoft Language Portal
 
 ### Terminology and Style Guide
