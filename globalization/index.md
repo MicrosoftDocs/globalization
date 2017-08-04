@@ -1,3 +1,55 @@
+---
+layout: HubPage
+hide_bc: true
+title: Globalization Documentation
+description: 
+---
+<!-- testing -->
+<div id="main" class="v2">
+  <div class="container">
+    <ul class="cardsC">
+        <li>
+            <a href="/sql/sql-server/sql-server-2017-release-notes">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="/media/hubs/sql/sql-server-1.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>What's new</h3>
+                            <p>New features and updates for SQL Server 2016 and later</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </li>
+        <li>
+            <a href="/sql/sql-server/install/planning-a-sql-server-installation">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img src="/media/hubs/sql/sql-server-2.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Install SQL Server 2016</h3>
+                            <p>Installation options and complete steps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </li>
+    </ul>
+  </div>
+</div>
+<!-- end Testing -->
 # Globalization Documentation
 
 ## Microsoft Language Portal
