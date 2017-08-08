@@ -13,7 +13,7 @@ description: Resources for the internationalization (globalization + localizabil
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="" />
+                            <img src="/media/common/placeholder.svg" alt="Microsoft Language Portal" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -32,7 +32,7 @@ description: Resources for the internationalization (globalization + localizabil
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="" />
+                            <img src="/media/common/placeholder.svg" alt="Windows Internationalization" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -61,7 +61,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="Get Started with Globalization" src="/en-us/media/hubs/common/placeholder.svg">
                         </div>
                     </div>
                     <div class="cardText">
@@ -80,7 +80,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="Internationalization for Windows Applications" src="/en-us/media/hubs/common/placeholder.svg">
                         </div>
                     </div>
                     <div class="cardText">
@@ -99,7 +99,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="National Language Support" src="/en-us/media/hubs/common/placeholder.svg">
                         </div>
                     </div>
                     <div class="cardText">
@@ -123,7 +123,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="Windows Keyboard Layouts" src="/en-us/media/hubs/common/placeholder.svg">
                         </div>
                     </div>
                     <div class="cardText">
