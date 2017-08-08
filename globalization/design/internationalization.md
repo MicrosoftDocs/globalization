@@ -21,48 +21,10 @@ It is important to ensure all our features are World Ready. What does it take? A
 
 Regardless of the coding methodology you use, there is a basic workflow to incorporating world-readiness into your code.
 
-+-----------------+-----------------+-----------------+-----------------+
+
 | **Plan**        | **Development** | **Translate**   | **Iterate**     |
-+=================+=================+=================+=================+
-| What markets    | Code and verify | Is the product  | Few products    |
-| will you        | the product can | translatable?   | are static      |
-| release to, now | work in         | Do you have a   | entities. Once  |
-| and in the      | multiple        | system to have  | you’ve been     |
-| future? What    | markets—without | the product     | through the     |
-| are the legal   | the need for    | translated? Are | cycle once, you |
-| and cultural    | redesign. Use   | you using       | will need to    |
-| requirements of | internationaliz | in-house        | continue to     |
-| those markets?  | ation           | resources or    | practice        |
-|                 | libraries.      | outsourcing?    | internationaliz |
-| Even if you     |                 |                 | ation           |
-| only release in | Set up          |                 | in all future   |
-| one language,   | internationaliz |                 | iterations.     |
-| that language   | ation           |                 |                 |
-| may be used by  | metrics—and     |                 |                 |
-| multiple        | adhere to your  |                 |                 |
-| markets. Is     | own standards.  |                 |                 |
-| your code       |                 |                 |                 |
-| flexible enough | Ensure the      |                 |                 |
-| to work in      | product can be  |                 |                 |
-| those markets?  | translated when |                 |                 |
-|                 | you’re ready to |                 |                 |
-| Does your       | release in      |                 |                 |
-| entire product  | those markets.  |                 |                 |
-| experience—orde |                 |                 |                 |
-| r,              | In an agile     |                 |                 |
-| use, and        | world, your     |                 |                 |
-| support—allow   | code needs to   |                 |                 |
-| business in     | be “done”—that  |                 |                 |
-| languages and   | is              |                 |                 |
-| markets you are | internationaliz |                 |                 |
-| targeting?      | ationed—by      |                 |                 |
-|                 | the end of the  |                 |                 |
-|                 | sprint. No      |                 |                 |
-|                 | special effort  |                 |                 |
-|                 | as you might    |                 |                 |
-|                 | have seen in    |                 |                 |
-|                 | other models.   |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
+|-----------------|---------------- |---------------- |-----------------|
+| What markets will you release to, now and in the future? What are the legal and cultural requirements of those markets? Even if you only release in one language, that language may be used by multiple markets. Is your code flexible enough to work in those markets? Does your entire product experience—order, use, and support—allow business in languages and markets you are targeting? | Code and verify the product can work in multiple markets—without the need for redesign. Use internationalization libraries. Set up internationalization metrics—and adhere to your own standards. Ensure the product can be translated when you’re ready to release in those markets. In an agile world, your code needs to be “done”—that is internationalizationed—by the end of the sprint. No special effort as you might have seen in other models. | Is the product translatable? Do you have a system to have the product translated? Are you using in-house resources or outsourcing? | Few products are static entities. Once you’ve been through the cycle once, you will need to continue to practice internationalization in all future iterations. |
 
 ## Designing for Internationalization
 
