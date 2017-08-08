@@ -5,7 +5,7 @@ description: Resources for the internationalization (globalization + localizabil
 ---
 # Globalization Documentation
 
-<ul class="panelContent cardsW">
+<ul class="panelContent cardsY">
     <li>
         <a href="https://www.microsoft.com/Language">
         <div class="cardSize">
