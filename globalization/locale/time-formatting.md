@@ -32,11 +32,8 @@ Like date and calendar formats, time formats are not constant throughout the wor
 **Figure 2:** Time Zone page of Date And Time Properties property sheet.
 
 ### See more info in the below links:
+ - [Time Formatting and Time Zones in Win32](time-formatting-and-time-zones-in-win32.md)
+ - [Time Formatting and Time Zones in .NET Framework](time-formatting-and-time-zones-in-dotnet-framework.md)
 
-[](https://msdn.microsoft.com/en-us/library/mt691561)
-## Time Formatting and Time Zones in Win32
-
-[](https://msdn.microsoft.com/en-us/library/mt691562)
-## Time Formatting and Time Zones in .NET Frameword
 
 

@@ -10,11 +10,11 @@ In Swedish, for example, some vowels with an accent sort after “Z,” whereas 
 
 One important case where code frequently runs into problems is supporting users who use the Turkish alphabet. For these languages, there are four variation of the character i and they don’t map to the same casings as English or other languages. This is called the [Turkish-I problem](https://msdn.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5).
 
-                      Lower Case Form   Upper Case Form
-  ------------------- ----------------- -----------------
-  English             [i] (\\u0069)     [I] (\\u0049)
-  Turkic undotted i   [ı] (\\u0131)     [I] (\\u0049)
-  Turkic dotted i     [i] (\\u0069)     [İ] (\\u0130)
+|                   | Lower Case Form  | Upper Case Form  |
+|-------------------| -----------------| -----------------|
+|English            | [i] (\\u0069)    | [I] (\\u0049)    |
+|Turkic undotted i  | [ı] (\\u0131)    | [I] (\\u0049)    |
+|Turkic dotted i    | [i] (\\u0069)    | [İ] (\\u0130)    |
 
 String sorting and comparison are language-specific. Even within languages based on the Latin script, there are different composition and sorting rules. Thus, you should not rely on code points to do proper sorting and string comparison.
 
@@ -81,6 +81,7 @@ To mitigate against this, applications can call [GetNLSVersionEx](https://msdn.m
 
 The Array class provides an overloaded method that allows you to sort arrays based on the CultureInfo.CurrentCulture property. In the following example, an array of three strings is created. First, the [CurrentCulture](https://msdn.microsoft.com/en-us/library/system.threading.thread.currentculture.aspx) is set to “en-US” and the method is called. The resulting sort order is based on sorting conventions for the “en-US” culture. Next, the [CurrentCulture](https://msdn.microsoft.com/en-us/library/system.threading.thread.currentculture.aspx) is set to “da-DK” and the method is called again. Notice how the resulting sort order differs from the “en-US” results because the sorting conventions for the “da-DK” culture are used.
 
+```C#
     using System;
     using System.Threading ;
     using System.Globalization ;
@@ -127,6 +128,7 @@ The Array class provides an overloaded method that allows you to sort arrays bas
        Console.WriteLine ("\the result of comparing {0} with {1} is: {2}",str1, str2, result2);
       }
     }
+```
 
 This code produces the following output:
 
@@ -152,10 +154,10 @@ Some Unicode characters have multiple equivalent binary representations consisti
 
 For example, the glyph ä may be canonically represented by the following sets of code points:
 
-  Characters   Code Points
-  ------------ -------------------
-  ä            \\u00E4
-  a + ̈         \\u0061 + \\u0308
+|Characters  | Code Points        |
+|------------| -------------------|
+|ä           | \\u00E4            |
+|a + ̈        |  \\u0061 + \\u0308 |
 
 -   Use the [IsNormalized](https://msdn.microsoft.com/en-us/library/system.string.isnormalized(VS.80).aspx) method to test whether a string is normalized to a particular normalization form.
 -   Use the [Normalize](https://msdn.microsoft.com/en-us/library/system.string.normalize(VS.80).aspx) method to create a string that is normalized to a particular normalization form.
@@ -240,12 +242,12 @@ Diacritics do have an effect on some languages on both spelling and meaning of w
 
 Match Diacritics in the Find and Replace feature is used to ignore or consider diacritics when searching for text. If, for example, Match Diacritics was checked, diacritics will not be ignored and found words must match the exact type and location of all diacritics in the searched text. On the other hand, if Match Diacritics was unchecked, diacritics will be ignored and not considered when matching found words with searched text in the Find and Replace dialog. Again, using diacritics in the Find and Replace dialog will not be ignored even if the Match Diacritics is unchecked.
 
-  Search For   Setting                       Search Finds
-  ------------ ----------------------------- --------------
-  é            Match Diacritics selected     é
-  é            Match Diacritics unselected   e, é
-  שׁ           Match Diacritics selected     שׁ
-  ש            Match Diacritics unselected   ש, שׁ, שׂ
+|  Search For |  Setting                     |  Search Finds |
+|-------------| -----------------------------| --------------|
+|  é          |  Match Diacritics selected   |  é            |
+|  é          |  Match Diacritics unselected |  e, é         |
+|  שׁ          |  Match Diacritics selected   |   שׁ           |
+|  ש          |  Match Diacritics unselected |  ש, שׁ, שׂ      |
 
 ### Match Kashida
 
@@ -284,13 +286,11 @@ Even when user use wildcards, the search should not include partial characters. 
 -   Any character?
 -   Previous one or more @, etc.
 
-  Search String   Text    Result
-  --------------- ------- ----------
-  กี่?            หกี่ก   Match
-  กี?             หกี่ก   No match
-  กี่?            หกีa    Match
-  กี่@            หกี่ก   Match
-  กี@             หกี่ก   No match
-  กี่@            กี่ก    Match
-
-
+|  Search String|  Text  |  Result   |
+|---------------| -------| ----------|
+|  กี่?           |  หกี่ก   | Match     |
+|  กี?           |  หกี่ก   | No match  |
+|  กี่?           |  หกีa   | Match     |
+|  กี่@           |  หกี่ก   | Match     |
+|  กี@           |  หกี่ก   | No match  |
+|  กี่@           |  กี่ก    | Match     |
