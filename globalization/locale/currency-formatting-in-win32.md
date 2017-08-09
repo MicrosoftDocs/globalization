@@ -4,12 +4,14 @@
 
 Win32 NLS APIs can help you display currency data in a way that's locale-aware. The GetCurrencyFormat function formats a number string as a currency string for a specified locale. The code sample on the following page formats a number string into the user locale's default format:
 
+```C++
 GetCurrencyFormat(LOCALE\_USER\_DEFAULT, // a predefined value for user locale
       NULL, // operation option
       TEXT("123.40"), // input number (see MSDN for accepted chars)
       NULL, // formatting specifications
       g\_szTemp, // output buffer
       MAX\_STR); // size of output buffer
+```
 
 Execution of the previous code would give the following result on English (United States) and Danish user locales, respectively.
 
@@ -21,6 +23,7 @@ With this approach, the number string is formatted to a locale-specific format a
 
 Another scenario would be the use of the euro as the official currency of Belgium, Germany, Spain, France, Ireland, Italy, Luxembourg, the Netherlands, Austria, Portugal, Finland, and Greece. (This list is as of January 1, 2002.) The .NET Framework and Windows XP set the default currency symbol to the euro for these twelve countries that use the euro as their official currency. However, older versions of Windows, without any intervention, will still set the default currency symbol to the local currency for these countries or regions. To resolve the issue in the two scenarios just mentioned, you can take advantage of the lpFormat argument of GetCurrencyFormat. This argument is a pointer to a currency-formatting structure, where you can define your own formatting model and specify the currency symbol to be used following the formatting standard of a given locale. The following code sample uses the formatting for the currently selected user locale, but with the euro as the desired currency symbol. Here is how it works.
 
+```C++
 CURRENCYFMT CurFormat;
 // first fill in the currencyfmt structure with user locale-specific information.
 getlocaleinfo(locale\_user\_default, locale\_return\_number|locale\_idigits, &curformat.numdigits, str\_len):;
@@ -37,6 +40,7 @@ curformat.lpcurrencysymbol = text(:;"&gt;GetCurrencyFormat(LOCALE\_USER\_DEFAULT
        &CurFormat, // formatting specifications
        g\_szTemp, // output buffer
        MAX\_STR); // size of output buffer
+```
 
 By following the code, the result of a currency symbol formatting for the Danish locale (with kr as default currency symbol) would be: € 123,40
 

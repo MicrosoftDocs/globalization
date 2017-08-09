@@ -10,23 +10,22 @@ There are different techniques to represent each one of the Unicode code points 
 
 The table below shows two characters encoded in both code pages and Unicode, using UTF-16 and UTF-8.
 
-  Character   [A]    [院]
-  ----------- ------ ----------
-  MBCS        41     89 40
-  UTF-16      0041   9662
-  UTF-8       41     E9 99 A2
-
-**Table 1: **The character "A" and the CJK character encoded in code pages and in Unicode with both UTF-16 and UTF-8.
+| Character |  [A]  | [院]     |
+|-----------|-------|----------|
+| MBCS      |  41   | 89 40    |
+| UTF-16    |  0041 | 9662     |
+| UTF-8     |  41   | E9 99 A2 |
+**Table 1:** The character "A" and the CJK character encoded in code pages and in Unicode with both UTF-16 and UTF-8.
 
 Since UTF-8 is so commonly used in Web content, it's helpful to know how Unicode code points get mapped into this encoding without introducing the hassle of MBCS characters. Table 2 shows the relationship between Unicode code points and a UTF-8-encoded character. The starting byte of a chain of bytes in a UTF-8 encoded character tells how many bytes are used to encode that character. All the following bytes start with the mark "10" and the xxx's denote the binary representation of the encoding within the given range.
 
-  Unicode Range      UTF-8 Encoded Bytes
-  ------------------ -----------------------------------------------------
-  0x0000-0x007F      **0** xxxxxxx
-  0x0080-0x07FF      **110** xxxxx **10**xxxxxx
-  0x0800-0xFFFF      **1110** xxxx **10**xxxxxx **10**xxxxxx
-  0x10000-0x1FFFFF   **11110**xxx **10**xxxxxx **10**xxxxxx **10**xxxxxx
+|Unicode Range     |UTF-8 Encoded Bytes                                  |
+|------------------|-----------------------------------------------------|
+|0x0000-0x007F     |**0** xxxxxxx                                        |
+|0x0080-0x07FF     |**110** xxxxx **10**xxxxxx                           |
+|0x0800-0xFFFF     |**1110** xxxx **10**xxxxxx **10**xxxxxx              |
+|0x10000-0x1FFFFF  |**11110**xxx **10**xxxxxx **10**xxxxxx **10**xxxxxx  |
 
-**Table 2: **Relationship between Unicode code points and a UTF-8-encoded character. In UTF-8, the first byte indicates the number of bytes to follow in a multibyte-encoded sequence.
+**Table 2:** Relationship between Unicode code points and a UTF-8-encoded character. In UTF-8, the first byte indicates the number of bytes to follow in a multibyte-encoded sequence.
 
 

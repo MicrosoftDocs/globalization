@@ -13,7 +13,7 @@ description: Resources for the internationalization (globalization + localizabil
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="Microsoft Language Portal" />
+                            <img src="/media/common/i_overview.svg" alt="Microsoft Language Portal" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -32,7 +32,7 @@ description: Resources for the internationalization (globalization + localizabil
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="Windows Internationalization" />
+                            <img src="/media/common/i_road-map.svg" alt="Windows Internationalization" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -53,7 +53,7 @@ Software internationalization has two facets:
 -   **World-readiness:** This covers the generic coding and design issues and comprises two major areas: **Globalization** is the process to develop a program core whose features and code design are not solely based on a single language or locale. **Localizability** is the process to enable a program to be localized into different languages without any changes to the source code.
 -   **Localization:** This involves translating and customizing a product for a specific market.
 
-<ul class="panelContent cardsW">
+<ul class="panelContent cardsF">
     <li>
         <a href="https://msdn.microsoft.com/en-us/library/mt642951">
         <div class="cardSize">
@@ -61,7 +61,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="Get Started with Globalization" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="Get Started with Globalization" src="/media/common/i_get-started.svg">
                         </div>
                     </div>
                     <div class="cardText">
@@ -80,7 +80,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="Internationalization for Windows Applications" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="Internationalization for Windows Applications" src="/media/common/i_advanced.svg">
                         </div>
                     </div>
                     <div class="cardText">
@@ -99,7 +99,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="National Language Support" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="National Language Support" src="/media/common/i_web.svg">
                         </div>
                     </div>
                     <div class="cardText">
@@ -123,7 +123,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="Windows Keyboard Layouts" src="/en-us/media/hubs/common/placeholder.svg">
+                            <img alt="Windows Keyboard Layouts" src="/media/common/i_reference.svg">
                         </div>
                     </div>
                     <div class="cardText">
