@@ -28,54 +28,28 @@ When dealing with numeric values, there are six major items to pay attention to:
 
     Numbers might, of course, be shaped differently from one locale to another. Also, numbers in some locales might not correspond directly to there digits (0-9) used in, say, the United States. (See Table 1 below)
 
-    +-----------------------------------+-----------------------------------+
-    | **Script**                        | **Digits Used**                   |
-    +-----------------------------------+-----------------------------------+
-    | Latin                             | 0 1 2 3 4 5 6 7 8 9               |
-    +-----------------------------------+-----------------------------------+
-    | Arabic                            | ٠‎ ١‎ ٢‎ ٣‎ ٤‎ ٥‎ ٦‎ ٧‎ ٨‎ ٩      |
-    +-----------------------------------+-----------------------------------+
-    | Chinese / Japanese                | 〇 一 二 三 四 五 六 七 八 九 十… |
-    +-----------------------------------+-----------------------------------+
-    | Hebrew                            | א ,ב ,ג, ד, ה, ו, ז, ח ,ט…        |
-    +-----------------------------------+-----------------------------------+
-    | Korean                            | 일 이 삼 사 오 육 칠 팔 구…       |
-    |                                   |                                   |
-    | The Korean regularly uses both a  | 하나 둘 셋 넷 다섯 여섯 일곱 여덟 |
-    | Sino-Korean system and a native   | 아홉….                            |
-    | Korean system. Everything that    |                                   |
-    | can be counted will use one of    |                                   |
-    | the two systems, but seldom both. |                                   |
-    +-----------------------------------+-----------------------------------+
-    | Bengla                            | ০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮ ৯               |
-    +-----------------------------------+-----------------------------------+
-    | Devanagari                        | ० १ २ ३ ४ ५ ६ ७ ८ ९               |
-    |                                   |                                   |
-    | (script used to write Hindi,      |                                   |
-    | Marathi, and other languages)     |                                   |
-    +-----------------------------------+-----------------------------------+
-    | Gujarati                          | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |
-    +-----------------------------------+-----------------------------------+
-    | Gurmukhi                          | ੦ ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯               |
-    |                                   |                                   |
-    | (one of the scripts used to write |                                   |
-    | Punjabi)                          |                                   |
-    +-----------------------------------+-----------------------------------+
-    | Kannada                           | ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯               |
-    +-----------------------------------+-----------------------------------+
-    | Malayalam                         | ൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯               |
-    +-----------------------------------+-----------------------------------+
-    | Odia                              | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |
-    +-----------------------------------+-----------------------------------+
-    | Tami                              | ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯               |
-    +-----------------------------------+-----------------------------------+
-    | Telugu                            | ౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯               |
-    +-----------------------------------+-----------------------------------+
-    | Thai                              | ๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙               |
-    +-----------------------------------+-----------------------------------+
-    | Tibetan                           | ༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩               |
-    +-----------------------------------+-----------------------------------+
 
+    | **Script**                        | **Digits Used**                   |
+    |-----------------------------------|-----------------------------------|
+    | Latin                             | 0 1 2 3 4 5 6 7 8 9               |
+    | Arabic                            | ٠‎ ١‎ ٢‎ ٣‎ ٤‎ ٥‎ ٦‎ ٧‎ ٨‎ ٩      |
+    | Chinese / Japanese                | 〇 一 二 三 四 五 六 七 八 九 十… |
+    | Hebrew                            | א ,ב ,ג, ד, ה, ו, ז, ח ,ט…        |
+    | Korean                            | 일 이 삼 사 오 육 칠 팔 구…       |
+    | The Korean regularly uses both a Sino-Korean system and a native Korean system. Everything that can be counted will use one of the two systems, but seldom both. | 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉…. |
+    | Bengla                            | ০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮ ৯               |
+    | Devanagari \ (script used to write Hindi,Marathi, and other languages)                       | ० १ २ ३ ४ ५ ६ ७ ८ ९               |
+    | Gujarati                          | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |
+    | Gurmukhi \ (one of the scripts used to write |                                   |
+    | Punjabi)                        | ੦ ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯               |
+    | Kannada                           | ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯               |
+    | Malayalam                         | ൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯               |
+    | Odia                              | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |
+    | Tami                              | ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯               |
+    | Telugu                            | ౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯               |
+    | Thai                              | ๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙               |
+    | Tibetan                           | ༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩               |
+    
     Table 1: Digits used for a variety of scripts.
 
     Note how some scripts have one more digit than Latin or Arabic. This represents the number 10.
@@ -98,10 +72,8 @@ In addition to in-line numbers, there may be additional systems used for [number
 
 ### See more info in the below links:
 
-[](https://msdn.microsoft.com/en-us/library/mt691870)
-## Number Formatting in Win32
+ - [Number Formatting in Win32](number-formatting-in-win32.md)
+ - [Number Formatting in .NET Framework](number-formatting-in-dotnet-framework.md)
 
-[](https://msdn.microsoft.com/en-us/library/mt691872)
-## Number Formatting in .NET Framework
 
 

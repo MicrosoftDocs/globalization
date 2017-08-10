@@ -51,7 +51,7 @@ Although moving localizable items like strings and icons into resource repositor
 -   The inadvertent translation of resource names that are specific or necessary to your application. (One example includes a command string like "Open" that your code does not recognize anymore because it has been translated to "Ouvrir" in French. Another example is translating the name of a mutex or event that an application is checking for in the source language.)
 -   Also, you should not expect services and system components to always be in English, since they might have been translated for localized versions. For instance, the following code will fail when run on a localized version because all values in bold are translated on localized systems!
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C++
 // user is system, which means cannot log on
 if ( (_tcscmp(lpBuffer,TEXT("SYSTEM")) == 0) ||
  (_tcscmp(lpBuffer,TEXT("LOCAL SERVICE")) == 0) ||
@@ -60,7 +60,7 @@ if ( (_tcscmp(lpBuffer,TEXT("SYSTEM")) == 0) ||
 
 A better way to handle resources that come from localizable platforms is to use application programming interface (API) calls to get the system's localized values. The following example uses *SHGetFolderPath*, which will return the correct localized version of the path from one localized system to another localized system. (For information on the different Shell calls, see the [Shell Programmers Guide](https://msdn.microsoft.com/en-us/library/bb776778.aspx).)
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C++
 TCHAR szPath[MAX_PATH];
 SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, 0, szPath);
 ```
