@@ -13,7 +13,7 @@ description: Resources for the internationalization (globalization + localizabil
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_overview.svg" alt="Microsoft Language Portal" />
+                            <img src="/media/common/i_benefits.svg" alt="Microsoft Language Portal" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -32,7 +32,7 @@ description: Resources for the internationalization (globalization + localizabil
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="Windows Internationalization" />
+                            <img src="/media/common/i_guide.svg" alt="Windows Internationalization" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -99,7 +99,7 @@ Software internationalization has two facets:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img alt="National Language Support" src="/media/common/i_web.svg">
+                            <img alt="National Language Support" src="/media/common/i_api-reference.svg">
                         </div>
                     </div>
                     <div class="cardText">
