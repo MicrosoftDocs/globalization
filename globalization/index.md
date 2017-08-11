@@ -13,7 +13,7 @@ description: Learn and Explore the resource for the internationalization (global
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_benefits.svg" alt="Microsoft Language Portal" />
+                            <img src="/media/common/i_benefits.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -32,12 +32,31 @@ description: Learn and Explore the resource for the internationalization (global
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_guide.svg" alt="Windows Internationalization" />
+                            <img src="/media/common/i_guide.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Windows Internationalization</h3>
                         <p>Build apps for the global audience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/globalization/downloads">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_download-install.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Downloads</h3>
+                        <p>Tools and resources for globalization</p>
                     </div>
                 </div>
             </div>
