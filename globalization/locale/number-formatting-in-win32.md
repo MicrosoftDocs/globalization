@@ -4,12 +4,14 @@
 
 The easiest way to format numbers in a way that's locale-aware is to use the GetNumberFormat API. This API customizes the format of a number string for a specified locale. The following shows how the GetNumberFormat API is used to format a given number string for the current user locale (using the default settings for number formatting that the user has defined):
 
+```C++
 GetNumberFormat(LOCALE\_USER\_DEFAULT, // locale (current user locale)
           0,           // options
           TEXT("1234567890.12345"),            // input string (see MSDN for legal chars)
           NULL,          // formatting information
           g\_szTemp,           // formatted string buffer
           MAX\_STR);           // size of buffer
+```
 
 For more advanced number formatting in the Win32 programming model, the GetLocaleInfo API can be used to retrieve most of the number-formatting parameters (such as thousands separators, decimal separators, and negative numbers). Here are the appropriate flags to use as LCType in your calls to GetLocaleInfo, in order to retrieve each one of the number-formatting parameters.
 
@@ -24,10 +26,12 @@ Possible return values are shown in Table 1 below.
 
 **Native digits.** LCType flag set to LOCALE\_SNATIVEDIGITS. Here is a code sample that deals with native digits:
 
+```C++
 GetLocaleInfo(LOCALE\_USER\_DEFAULT, // LCID (current user locale)
           LOCALE\_SNATIVEDIGITS, // information type (native digits)
           &g\_szTemp, // returned value
           sizeof (g\_szTemp)); // size of buffer
+```
 
 This code would produce the following result on English (US) and Farsi locales, respectively:
 

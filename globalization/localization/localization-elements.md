@@ -6,25 +6,18 @@ The development team should supply the localization team with a single binary th
 
 There are many elements that are modified in both software and content localization. These elements include text, layout, graphics and multimedia, keyboard shortcuts, fonts, character sets and locale data, as well as the product's build process and packaging.
 
-[](https://msdn.microsoft.com/en-us/library/mt662344)
-## Text
+[Text](text.md)
 
-[](https://msdn.microsoft.com/en-us/library/mt662345)
-## Layout
+[Layout](layout.md)
 
-[](https://msdn.microsoft.com/en-us/library/mt662346)
-## Graphics and Multimedia
+[Graphics and Multimedia](graphics-and-multimedia.md) 
 
-[](https://msdn.microsoft.com/en-us/library/mt662347)
-## Keyboard Shortcuts
+[Keyboard Shortcuts](keyboard-shortcuts.md) 
 
-[](https://msdn.microsoft.com/en-us/library/mt662348)
-## Fonts
+[Fonts](fonts.md)
 
-[](https://msdn.microsoft.com/en-us/library/mt662349)
-## Locale Data and Character Sets
+[Locale Data and Character Sets](locale-data-and-character-sets.md)
 
-[](https://msdn.microsoft.com/en-us/library/mt662350)
-## Build Process and Packaging
+[Build Process and Packaging](build-process-and-packaging.md)
 
 

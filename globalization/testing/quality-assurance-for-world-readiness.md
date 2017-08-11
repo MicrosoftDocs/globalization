@@ -12,6 +12,6 @@ You can achieve all these benefits if the application you build targets a world-
 -   Local conventions are not considered.
 -   Text layout and other properties are not designed for.
 
-Making software world-ready is a new goal for many software companies, and problems are likely to arise when new technologies and methods are applied. The QA organization, especially those responsible for testing, must recognize the problem with test processes that are not world-ready-as shown in the next section-and must be prepared to prevent those problems or reduce their negative effect through proven solutions. (See "[Globalization of the Test](https://msdn.microsoft.com/globalization/mt662415)".)
+Making software world-ready is a new goal for many software companies, and problems are likely to arise when new technologies and methods are applied. The QA organization, especially those responsible for testing, must recognize the problem with test processes that are not world-ready-as shown in the next section-and must be prepared to prevent those problems or reduce their negative effect through proven solutions. (See "[Globalization of the Test](globalization-of-the-test.md)".)
 
 

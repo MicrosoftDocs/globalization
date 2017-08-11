@@ -4,7 +4,7 @@
 
 As stated before, there are times that variables are necessary because you might not know what needs to go in the string until run time. Things like dates, time, temperature, and number of sales are just a few examples of these types of variables. Besides giving these variables unique names, you need to make sure that you don't compound several variables together. For example, a translator ran across the following during a localization job:
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C++
 "%d:%d%s on %s, %s %d, %d"
 ```
 

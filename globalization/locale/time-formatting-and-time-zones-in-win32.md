@@ -6,8 +6,9 @@ To format time in the default settings of a given locale or as specified by the 
 
 The following code sample displays the current system time for the current user locale, using the default time format for that locale: 
 
-                  // Formats time as a time string for a specified locale.
-                  GetTimeFormat(LOCALE_USER_DEFAULT, // predefined current user locale
+```C++
+// Formats time as a time string for a specified locale.
+GetTimeFormat(LOCALE_USER_DEFAULT, // predefined current user locale
     0, // option flag for things like no usage of seconds or
      // force 24h clock
     NULL, // time - NULL to go with the current system locale time
@@ -15,7 +16,7 @@ The following code sample displays the current system time for the current user 
      // format
     g_szBuff1, // formatted string buffer
     MAX_STR); // size of string buffer
-                
+```
 
 Execution of this code would give the following result on English (United States) and Punjabi user locales, respectively. (See Figure 1 below)
 
@@ -25,11 +26,12 @@ Execution of this code would give the following result on English (United States
 
 As you saw in the previous example, the time formatting can be completely different from one locale to another. In this case, the use of a leading 0 in the hour representation, as well as the actual translation and positioning of P.M., change based on country and cultural standards. But even within the same locale or culture there is a variety of possible ways to format time: short or long formatting. The EnumTimeFormats function enumerates the time formats that are available for a specified locale. It does so by passing (to a callback function that an application defines) a pointer to a buffer that contains a time format. The EnumTimeFormats continues to do so until no more time formats are found, or until the callback function returns FALSE. Here is how the code works:
 
-                    EnumTimeFormats(EnumTimeFormatsProc, // enumeration callback function
+```C++
+EnumTimeFormats(EnumTimeFormatsProc, // enumeration callback function
      LOCALE_USER_DEFAULT, // locale for which the enumeration is done
      NULL); // unused
-                     
-                    // The callback function...
+ 
+    // The callback function...
     BOOL CALLBACK EnumTimeFormatsProc(LPTSTR lpTimeFormatString)
      {
      // end of enumeration, then terminate
@@ -38,7 +40,7 @@ As you saw in the previous example, the time formatting can be completely differ
      MessageBox(NULL, g_lpTimeFormatString, TEXT("Available Time format"), MB_OK);
      return TRUE;
      }
-                  
+```
 
 Execution of this code would give the following result on English (United States) and French (France) user locales, respectively. (See Figure 2 below.)
 
@@ -56,19 +58,22 @@ The obtained result (format picture) can then be used as an lpFormat argument in
 
 For example, to get the time string:
 
-                      "11:29:40 PM" 
-                
+```
+"11:29:40 PM" 
+```
 
 use the following picture string:
 
-                      "hh':'mm':'ss tt" 
-                
+```
+"hh':'mm':'ss tt" 
+```
 
 To retrieve information regarding the time parameters for a particular time zone that the user has selected, you can use the GetTimeZoneInformation function. These parameters control the translations between UTC and local time.
 
-                    DWORD GetTimeZoneInformation(LPTIME_ZONE_INFORMATION lpTimeZoneInformation);
-                    // Where LPTIME_ZONE_INFORMATION is defined as:
-                    typedef struct _TIME_ZONE_INFORMATION
+```C++
+DWORD GetTimeZoneInformation(LPTIME_ZONE_INFORMATION lpTimeZoneInformation);
+// Where LPTIME_ZONE_INFORMATION is defined as:
+typedef struct _TIME_ZONE_INFORMATION
     {
      LONG Bias;
      WCHAR StandardName[ 32 ];
@@ -79,14 +84,15 @@ To retrieve information regarding the time parameters for a particular time zone
      LONG DaylightBias
     } 
     TIME_ZONE_INFORMATION, *PTIME_ZONE_INFORMATION;
-                  
+```
 
 The *Bias* parameter of the TIME\_ZONE\_INFORMATION structure is the difference, in minutes, between UTC time and local time.
 
 All translations between UTC time and local time are based on the following formula:
 
-                    UTC = local time + bias 
-                  
+```
+UTC = local time + bias 
+```
 
 Unfortunately, Win32 APIs do not offer a solution to enumerate information relative to any other time zone than the one currently selected by the user. GetLocalTime and GetSystemTime will allow you to retrieve the current local and the UTC times, respectively. To convert the local time to UTC, you can use the LocalFileTimeToFileTime API. These are but two of the many Win32 APIs dealing with time. To learn about other functions, search for "time functions" on [[http://msdn.microsoft.com.]](http://msdn2.microsoft.com/)
 

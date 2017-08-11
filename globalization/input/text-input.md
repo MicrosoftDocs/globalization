@@ -6,10 +6,8 @@ On the surface, the input, output, and display of data is a simple process-the u
 
 Different languages have different keyboard layouts, and the characters of each language might fall into different character sets that require separate fonts. How can Microsoft Windows-based applications juggle multiple keyboards, character sets, and fonts? With all these challenges in mind, Microsoft Windows 2000 and Microsoft Windows XP support standard mechanisms for multilingual data input, output, and display. This section covers the many ways to handle each of these areas.
 
-[](https://msdn.microsoft.com/en-us/library/mt808064)
-## Unicode enabled
+- [Unicode enabled](https://msdn.microsoft.com/en-us/library/mt808064)
+- [Keyboards, Other Input Methods, and Text Predication](https://msdn.microsoft.com/en-us/library/mt808069)
 
-[](https://msdn.microsoft.com/en-us/library/mt808069)
-## Keyboards, Other Input Methods, and Text Predication
 
 

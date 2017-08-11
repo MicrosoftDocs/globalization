@@ -8,52 +8,56 @@ Methods and properties in the *DateTime* structure always use the local time zon
 
 Use the *DateTime.ToUniversalTime* method to convert a local *DateTime* to its UTC equivalent. To parse a date/time string and convert it to a UTC DateTime, use the *DateTimeStyles* enumeration *AdjustToUniversal* value with either the *DateTime.Parse* or *DateTime.ParseExact* method. These *DateTime* manipulations are illustrated in the following code example. This example creates a *DateTime* for the local time and then converts it to the UTC equivalent *DateTime*. Both types are converted to strings and written to the console. Notice that the strings differ by the UTC offset between the local time zone and UTC. (For more information on the UTC offset for various time zones, see the *TimeZone.GetUtcOffset* method in the Microsoft Developer Network documentation at [[http://msdn2.microsoft.com]](https://msdn.microsoft.com/).) These strings are converted back to *DateTime* types using the *DateTime.ParseExact* method. To capture the time-zone information stored in *utcdt*, the *AdjustToUniversal* value must be specified as a parameter to the *DateTime.ParseExact* method.
 
-                  using System;
-    using System.Globalization;
-    using System.Threading;
-                  public class TimeZoneSample
-    {
-                    public static void Main()
-     {
-     CultureInfo en = new CultureInfo("en-US");
-     Thread.CurrentThread.CurrentCulture = en;
-                   // Create a DateTime object for the local time.
-     DateTime dt = new DateTime(2001, 7, 13, 4, 0, 0);
-                   // Convert the local DateTime to the UTC time.
-     DateTime utcdt = dt.ToUniversalTime();
-                   // Define a custom string format to display the DateTime
-     // value. zzzz specifies the full time zone offset.
-     String format = "MM/dd/yyyy hh:mm:sszzz";
-                   // Convert the local DateTime object to a string
-     // using the custom format string and display.
-     String str = dt.ToString(format);
-     Console.WriteLine(str);
-                   // Convert the UTC DateTime to a string
-     // using the custom format string and display.
-     String utcstr = utcdt.ToString(format);
-     Console.WriteLine(utcstr);
-                   // Convert the string back to a local DateTime object and
-     // display.
-     DateTime parsedBack = DateTime.ParseExact(str,format,en.DateTimeFormat);
-     Console.WriteLine(parsedBack);
-                   // Convert the string back to a UTC DateTime object and
-     // display. If you do not use the DateTime.ParseExact
-     // method that takes a DateTimeStyles.AdjustToUniversal
-     // value, the parsed DateTime object will not include the
-     // time zone information.
-                   DateTime parsedBackUTC = DateTime.ParseExact (str, format, en.DateTimeFormat, DateTimeStyles.AdjustToUniversal);
-     Console.WriteLine(parsedBackUTC);
-     }
-    }
+```C#
+using System;
+using System.Globalization;
+using System.Threading;
+
+public class TimeZoneSample
+{
+  public static void Main()
+ {
+ CultureInfo en = new CultureInfo("en-US");
+ Thread.CurrentThread.CurrentCulture = en;
+    // Create a DateTime object for the local time.
+ DateTime dt = new DateTime(2001, 7, 13, 4, 0, 0);
+    // Convert the local DateTime to the UTC time.
+ DateTime utcdt = dt.ToUniversalTime();
+    // Define a custom string format to display the DateTime
+ // value. zzzz specifies the full time zone offset.
+ String format = "MM/dd/yyyy hh:mm:sszzz";
+    // Convert the local DateTime object to a string
+ // using the custom format string and display.
+ String str = dt.ToString(format);
+ Console.WriteLine(str);
+    // Convert the UTC DateTime to a string
+ // using the custom format string and display.
+ String utcstr = utcdt.ToString(format);
+ Console.WriteLine(utcstr);
+    // Convert the string back to a local DateTime object and
+ // display.
+ DateTime parsedBack = DateTime.ParseExact(str,format,en.DateTimeFormat);
+ Console.WriteLine(parsedBack);
+    // Convert the string back to a UTC DateTime object and
+ // display. If you do not use the DateTime.ParseExact
+ // method that takes a DateTimeStyles.AdjustToUniversal
+ // value, the parsed DateTime object will not include the
+ // time zone information.
+    DateTime parsedBackUTC = DateTime.ParseExact (str, format, en.DateTimeFormat, DateTimeStyles.AdjustToUniversal);
+ Console.WriteLine(parsedBackUTC);
+ }
+}
+```
                 
 
 This code produces the following output:
 
-                  07/13/2001 04:00:00-07:00 
-    07/13/2001 11:00:00-07:00 
-    7/13/2001 4:00:00 AM 
-    7/13/2001 11:00:00 AM 
-                
+```
+07/13/2001 04:00:00-07:00 
+07/13/2001 11:00:00-07:00 
+7/13/2001 4:00:00 AM 
+7/13/2001 11:00:00 AM 
+```
 
 Another vital point to consider when creating an application that is locale-aware is how currency is displayed. Since money is a valued commodity, it is essential that such things as the correct currency symbol as well as the appropriate decimal and thousands separator be used, for example, or the consequences could potentially be disastrous!
 
@@ -61,16 +65,18 @@ Another vital point to consider when creating an application that is locale-awar
 
 In **"Retrieving the Browser Language Setting"** in the [[Use Locale Model]](https://msdn.microsoft.com/en-us/globalization/mt662310) article, you saw how to retrieve the current browser locale on the client side and how to set the global locale of your context or session to this value. After the appropriate locale has been set, you can easily format the time using FormatDateTime, a locale-aware function. Suppose you have retrieved the Chinese (Taiwan) locale as the primary browser locale ("zh-TW" is the default value for this locale). The following code saves the current context locale (matching the server's user locale), sets the locale to Chinese (Taiwan), formats the date in Chinese (Taiwan) format, and restores the original locale.
 
-                  currentLocale = GetLocale
-    Original = SetLocale("zh-TW")
-    DateData = FormatDateTime(Now(),vbLongTime)
-    Original = SetLocale(currentLocale)
-                
+```
+currentLocale = GetLocale
+Original = SetLocale("zh-TW")
+DateData = FormatDateTime(Now(),vbLongTime)
+Original = SetLocale(currentLocale)
+```
 
 And the output would be:
 
-                  下午 04:16:08 
-                
+```
+下午 04:16:08 
+```
 
 Obviously the scripting technology does not offer the same flexibility to manipulate time formats as NLS APIs do in the case of Win32 programming. However, the FormatDateTime function gives you the ability to display time in the user's cultural preferences in both short- and long-time formats.
 

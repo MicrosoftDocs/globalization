@@ -48,10 +48,12 @@ While the configuration of Windows where your application runs might not provide
 
 Controls, such as radio buttons and check boxes that allow the text to wrap are another way of handling text expansion. To allow multiple lines in a Win32 resource file, you can either manually add the BS\_MULTILINE property to the control (shown within bold in the following code):
 
+```C++
 CONTROL "Check1",IDC\_CHECK1,"Button",BS\_AUTOCHECKBOX |
 &lt;B&gt;BS\_MULTILINE&lt;/B&gt; | WS\_TABSTOP,21,21,41,10
 CONTROL "Radio1",IDC\_RADIO1,"Button",BS\_AUTORADIOBUTTON |
 &lt;b&gt; BS\_MULTILINE&lt;/b&gt;,19,45,39,10
+```
 Or in Microsoft Visual Studio you can select the Multiline property in the particular control's property sheet. (See **Figure 7**.)
 
 ![Multiline property](/media/hubs/globalization/IC161976.jpg "Multiline property") 

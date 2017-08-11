@@ -4,7 +4,7 @@
 
 Win32 supports two resource types for storing strings: string tables and message tables. (For more information on message tables, see the section on [Multilingual User Interface (MUI)](https://msdn.microsoft.com/globalization/mt643131).) String tables make sense for short strings and for strings containing only one replacement parameter; message tables are more convenient for alert and error messages that contain more than one replacement parameter. (Message tables support up to 99 parameters.) The FormatMessage API will substitute variables according to each placemarker's numeric label and not according to the label's position in the string. Localizers can freely change a string's word order and FormatMessage will still return correct results. The file format of the message table is not complicated; you can create message tables with a simple text editor. The following code appears in a message table that contains English and German translations of the same strings. The German translation of IDS\_OTHERIMAGE reverses the positions of the replacement parameters.
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C++
 // Sample.mc
 
      LanguageNames=(German=2:msg00002)
@@ -32,7 +32,7 @@ Win32 supports two resource types for storing strings: string tables and message
 
 The syntax for formatting the first message is as follows:
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C++
   // lpBuf must be large enough to hold the formatted message!
 
         DWORD langID = MAKELANGID(LANG_GERMAN, SUBLANG_GERMAN);
@@ -56,7 +56,7 @@ You can use FormatMessage with string tables as well as with message tables, but
 
 FormatMessage is particularly useful for a number of reasons. In conjunction with the API call GetLastError, you can use it to format error messages returned by the system. An example of this technique is given in the following ReportError routine. FormatMessage also allows you to specify the language of the string you want to retrieve from a message table. LoadString can retrieve only resources associated with the language of the current thread's locale.
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C++
 void ReportError()
  
     {

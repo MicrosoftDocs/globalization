@@ -22,6 +22,6 @@ In contrast, there are unusual characters that have very specific semantic rules
 
  ![Example Glyphs](/media/hubs/globalization/IC855516.png "Example Glyphs") 
 
-**[Figure 1: ]**Precomposed and composite glyphs
+**[Figure 1: ]** Precomposed and composite glyphs
 
 

@@ -20,13 +20,13 @@ A specific culture is associated with both a language and a region and provides 
 
 The CurrentUICulture property is set by the framework when the application starts so that it matches the user's default UI language. Alternatively, you can set CurrentUICulture explicitly in your application's code. The following code example sets the CurrentUICulture property to the neutral culture "de" for German.
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C#
 Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
 ```
 
 You can also set the CurrentUICulture property to a specific culture. The following code example sets the CurrentUICulture property to the specific culture "de-DE" for German in Germany:
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace; MARGIN-LEFT: 30px" xmlns=""}
+```C#
 Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE"); 
 ```
 
@@ -44,8 +44,7 @@ The resource generation process is straightforward and includes three steps (alt
 2.  Another optional step is to create a text file that contains resources such as strings and to transform this text file into a .resx file by using the ResXGen tool provided in the Microsoft .NET Framework SDK. Note that the ResXGen tool is different from the ResGen tool mentioned in step 1. Figure 2 shows the .NET resource generation process used in the .NET Framework.
 3.  The .resources file is embedded into an assembly by using either the assembly linker tool or a language compiler, such as the C\# compiler (CSC.exe).
 
-![The .NET resource generation process](/media/hubs/globalization/IC856186.png "The .NET resource generation process") 
-
+![The .NET resource generation process](/media/hubs/globalization/IC856186.png "The .NET resource generation process")
 **Figure 2:** The .NET resource generation process
 
 ### Resource Loading in the .NET Framework
@@ -68,7 +67,6 @@ The hub and spoke model for packaging and deploying resources uses a fallback pr
 For instance, if an application is localized in French using the "fr-FR" culture for its resources satellite assembly, and if the application is looking for a string that cannot be found in "fr-FR," it will then fall back to the French culture (if available) and try to find the string in the "fr" satellite assembly. If the string is not available at that level, it will then fall back to the default resources in the main assembly. Finally, if the string resource is not found at that level, an exception will be raised. **Figure 3** illustrates the fallback process.
 
 ![The .NET resource fallback mechanism](/media/hubs/globalization/IC856185.png "The .NET resource fallback mechanism")
-
 **Figure 3:** The .NET resource fallback mechanism
 
 
