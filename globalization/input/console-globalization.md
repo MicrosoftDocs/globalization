@@ -18,10 +18,12 @@ CRT locale support is built around the *(\_w)setlocale(category, locale)* call, 
 
 In order to set the rules for formatting locale-sensitive data in accordance with the user locale, the following calls can be executed:
 
-`_wsetlocale (LC_COLLATE, L(".OCP") );  // sets the sort order`
-`_wsetlocale (LC_MONETARY, L(".OCP") ); // sets the currency formatting rules`
-`_wsetlocale (LC_NUMERIC, L(".OCP") );  // sets the formatting of numerals`
-`_wsetlocale (LC_TIME, L(".OCP") );     // defines the date/time formatting`
+```C++
+_wsetlocale (LC_COLLATE, L(".OCP") );  // sets the sort order`
+_wsetlocale (LC_MONETARY, L(".OCP") ); // sets the currency formatting rules`
+_wsetlocale (LC_NUMERIC, L(".OCP") );  // sets the formatting of numerals`
+_wsetlocale (LC_TIME, L(".OCP") );     // defines the date/time formatting`
+```
 
 As mentioned in [[Encodings and Code Pages]](https://msdn.microsoft.com/en-us/goglobal/bb688114 "Encodings and Code Pages") document, ".OCP" and ".ACP" parameters always refer to the settings of the user locale, not the system locale. While selecting this locale for LC\_CTYPE or LC\_ALL is not a good choice, all other categories should be set to match the user locale, unless your console must be explicitly independent of the user's settings.
 

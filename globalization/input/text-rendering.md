@@ -54,9 +54,9 @@ A typical example is the ligature of Arabic Lam and Alef as shown below (reading
 
 ل + ا = لا ← ALT + 65275
 
-  **Individual Characters**   **Without Ligatures**   **With Ligatures**
-  --------------------------- ----------------------- --------------------
-  ل م ح                       لمح                     لمحـ
+| **Individual Characters** |  **Without Ligatures** |  **With Ligatures** |
+|---------------------------|------------------------|---------------------|
+| ل م ح                     |  لمح                   |  لمحـ               |
 
 ### Contextual Shaping
 
@@ -111,18 +111,18 @@ The bidi algorithm renders neutral characters by looking the characters surround
 
 When a neutral character falls between two characters of the same directionality, it will assume the same directionality as the surrounding characters. Hence the bidi algorithm will render it as one run with the same directionality.
 
-  **LTR Examples:**   first second   first&second   first,second
-  ------------------- -------------- -------------- --------------
-  **RTL Examples:**   عربي سلام      عربي&سلام      عربي,سلام
+| **LTR Examples:** |  first second |  first&second |  first,second |
+|-------------------|---------------|---------------|---------------|
+| **RTL Examples:** |  عربي سلام     | عربي&سلام     |  عربي,سلام       |
 
 ### Between Opposite Directionality
 
 When a neutral character falls between two characters of the opposite directionality, it will assume the overall directionality of the whole paragraph or context. The following example shows the different scenarios of how the bidi algorithm renders text with neutral characters between characters of different directionalities: same directionality as the surrounding characters. Hence the bidi algorithm will render it as one run with the same directionality.
 
-  **Typed Text**                 **Display in LTR Paragraph**   **Display in RTL Paragraph**
-  ------------------------------ ------------------------------ ------------------------------
-  “First” then “&” then “عربي”   [First&]عربي                   first [&عربي]
-  then “&” then “Last”“عربي”     [&Last]عربي                    [عربي&]Last
+| **Typed Text**               |  **Display in LTR Paragraph** |  **Display in RTL Paragraph** |
+|------------------------------|-------------------------------|-------------------------------|
+| “First” then “&” then “عربي” |  [First&]عربي                 |  first [&عربي]                |
+| then “&” then “Last”“عربي”   |  [&Last]عربي                  |  [عربي&]Last                  |
 
 Notice how the neutral character in each column is attached to a different character set. For example, in the first row, the neutral character is treated as an English character in the first column (assigned LTR directionality), but as an Arabic character in the second column (assigned an RTL directionality).
 

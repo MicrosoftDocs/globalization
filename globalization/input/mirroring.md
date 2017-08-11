@@ -19,7 +19,3 @@ In general, all controls for right-to-left (RTL) languages (e.g., Arabic and Heb
 -   Server and Domain names
 -   Media controls
 
-[](https://msdn.microsoft.com/en-us/library/mt662335)
-#### back to top
-
-

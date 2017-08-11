@@ -6,6 +6,7 @@ As you probably noticed in the last code sample, one of the arguments of the enu
 
 The [EnumCalendarInfoEx](https://msdn.microsoft.com/en-us/library/dd317804.aspx) API can be used to enumerate all calendar information (such as names of calendars, names of days of the week, and names of months) for all applicable and available calendar types pertaining to a given locale. The code sample enumerates the native names of all supported calendars.
 
+```C++
 // Enumerate the native calendar names for all available calendar
 // types that correspond to the current user locale.
 EnumCalendarInfoEx(EnumCalendarInfoProc,   // enumeration callback
@@ -23,6 +24,7 @@ BOOL CALLBACK EnumCalendarInfoProc(LPTSTR lpCalendarInfoString, CALID Calendar)
     MessageBox(NULL, g\_szBuf2, TEXT(&Calendars names&), MB\_OK);
     return TRUE;
 }
+```
 
 Execution of the previous code sample would give the following result on English (United States) and Arabic (Tunisia) user locales, respectively.
 

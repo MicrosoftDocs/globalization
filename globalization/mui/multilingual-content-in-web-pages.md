@@ -22,7 +22,7 @@ Rather than selecting one particular algorithm as the preferred solution for all
 
 Partial sample VBScript code:
 
-``` {style="FONT-FAMILY: Consolas, Courier, monospace" xmlns=""}
+```
 <%@LANGUAGE = VBScript %>
 <%
 ' Function GetSessionLanguage() is omitted for simplicity. It

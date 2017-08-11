@@ -9,6 +9,7 @@ The *NumberFormatInfo* class defines how currency, decimal separators, and other
 
 The following code example displays an integer using the *NumberFormatInfo* standard currency format ("c") for the specified *CurrentCulture*.
 
+```C#
 using System.Globalization;
 public class TestClass
 {
@@ -29,6 +30,7 @@ public class TestClass
      Console.WriteLine(i.ToString("c", dk));
      }
 }
+```
 
 This code produces the following output:
 

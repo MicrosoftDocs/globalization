@@ -8,6 +8,7 @@ To handle native calendar types, the .NET Framework provides the Calendar class 
 
 The following code example in C\# creates CultureInfo objects for the culture "th-TH" (Thai in Thailand) and displays the default and optional calendars for each culture. The GregorianCalendar is further divided into subtypes by the GregorianCalendar.CalendarType property. In this example, each time the calendar is determined to be Gregorian, the CalendarType value is retrieved and displayed.
 
+```C#
 using System;
 using System.Globalization;
 public class TestClass
@@ -57,6 +58,7 @@ public class TestClass
         }
     }
 }
+```
 
 This code produces the following output: 
 
@@ -68,6 +70,6 @@ System.Globalization.ThaiBuddhistCalendar
 System.Globalization.GregorianCalendar
 subtype Localized
 
-[]As you can see, the .NET Framework offers a UI that's extensive, yet flexible and easy to use for date and calendar formatting. []
+As you can see, the .NET Framework offers a UI that's extensive, yet flexible and easy to use for date and calendar formatting. 
 
 

@@ -26,7 +26,7 @@ By activating the mirroring layout on a per-process basis, all windows that are 
 
 You set the default direction to RTL for a process by calling [[SetProcessDefaultLayout]](https://msdn.microsoft.com/en-us/library/ms633542.aspx) (LAYOUT\_RTL). You can also turn off default mirroring by calling *SetProcessDefaultLayout(0)*. In addition, you can query the current default layout direction as follows:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 BOOL WINAPI
 GetProcessDefaultLayout(DWORD *pdwDefaultLayout);  
 ```
@@ -45,7 +45,7 @@ A good example of a case where you should prevent the mirroring of child windows
 
 The following code shows how to toggle the layout of a window between RTL and LTR:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 LONG lExStyles;
 
 // Retrieve the extended style of the window.
@@ -74,7 +74,7 @@ The only way to switch between mirrored and nonmirrored dialog resources at run 
 
 The mirroring technology described up to now applies to all objects in a standard window. These objects, as well as bitmaps and icons in a mirrored window, are all mirrored by default. Obviously, there are some graphics objects, particularly those that include text, that shouldn't be mirrored. Therefore, Microsoft provides several GDI functions in platforms that support mirroring (which, again, includes all versions of Windows 2000 and Windows XP). These functions are shown in the following code:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 BOOL WINAPI 
  SetLayout(HDC hDc, DWORD dwLayout);
 DWORD WINAPI 
@@ -85,7 +85,7 @@ The device context of a mirrored window is mirrored by default. Nevertheless, yo
 
 Drawing images that may be sensitive to directionality of the output presents a separate problem. To prevent mirroring of bitmaps, call *SetLayout* with the LAYOUT\_BITMAPORIENTATIONPRESERVED bit set in *dwLayout* :
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 SetLayout(hdc, LAYOUT_RTL | LAYOUT_BITMAPORIENTATIONPRESERVED);  
 ```
 
@@ -111,7 +111,7 @@ A tricky situation when enabling mirroring is when you are dealing with property
 
 Perhaps one of the biggest issues when it comes to dealing with mirroring is mapping between screen coordinates and client coordinates, or failing to do so. For example, developers often use code such as the following to position a control in a window:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 GetWindowRect(hControl, (LPRECT) &rControlRect);
 // Gets coordinates of window in screen coordinates.
 ScreenToClient(hDialog, (LPPOINT) &rControlRect.left);
@@ -121,7 +121,7 @@ ScreenToClient(hDialog, (LPPOINT) &rControlRect.right);
 
 In this code, the left edge of a rectangle becomes the right edge in a mirrored window, and vice versa, causing unintended results. The solution is to replace the *ScreenToClient* calls as shown in the following code:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 GetWindowRect(hControl, (LPRECT) &rControlRect);
 // Gets coordinates of window in screen coordinates.
 MapWindowPoints (NULL, hDialog, (LPPOINT) &rControlRect, 2);
@@ -131,7 +131,7 @@ This code works because the *MapWindowPoints* API has been modified on platforms
 
 Another common practice that can cause problems in mirrored windows is using offsets in screen coordinates to position objects in a client window, instead of using client coordinates. For example, to position a control in a dialog box, the following code uses the difference in the left edges of the control and the dialog box-in screen coordinates-as the *x* position in client coordinates:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 RECT rcDialog;
 RECT rcControl;
 HWND hControl = GetDlgItem(hDlg, IDD_CONTROL);
@@ -145,7 +145,7 @@ MoveWindow(hControl, rcControl.left - rcDialog.left, _
 
 This works fine when the dialog window has an LTR layout, and when the mapping mode of the client is MM\_TEXT. The new *x* position in client coordinates corresponds to the difference in the left edges of the control and the dialog box in screen coordinates. In a mirrored dialog box, however, the roles of left and right are reversed. You can remove the assumption from the previous code that near is left and far is right by using [[MapWindowPoints]](https://msdn.microsoft.com/en-us/library/dd145046.aspx) to go into client coordinates, as shown in the following code sample:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 RECT rcDialog;
 RECT rcControl;
 HWND hControl = GetDlgItem(hDlg, IDD_CONTROL);
@@ -191,8 +191,8 @@ Another solution is to have two different sets of graphics in your resources-one
 
 As a third solution, if you ship a separate set of binaries based on the target localized languages, you can let your localization team mirror those graphics elements using a resource editor. (Most resource editors let you flip images in both *x* and *y* directions nowadays.) A final solution-especially when you don't have direct access to the device context where the graphics will be rendered-is to create a mirrored copy of the resource. You then pass this mirrored copy instead of the original, nonmirrored one. (Again, when the mirrored graphics are rendered on a mirrored device context, they will revert back to their original, intended look.) The following sample code illustrates how to mirror both a bitmap and an icon when each's handle is passed:
 
-                
-                  HBITMAP CreateMirroredBitmap( HBITMAP hbmOrig)
+```C++
+HBITMAP CreateMirroredBitmap( HBITMAP hbmOrig)
     {
                    HDC hdc, hdcMem1, hdcMem2;
      HBITMAP hbm = NULL, hOld_bm1, hOld_bm2;
@@ -307,21 +307,20 @@ As a third solution, if you ship a separate set of binaries based on the target 
      if (hdcMask)
      DeleteDC(hdcMask);
      return hicon;
-                  }
-                
-              
+}
+```
 
 #### Mirroring and Image-List Controls
 
 A good way of dealing with graphics is to use image-list controls because of the wide flexibility these controls offer. Image-list controls are also used to manage graphics for other controls like tree-view and list-view controls. However, there is one potential issue that can arise. In the case of direction-sensitive bitmaps, if you are using an image list whose contents will be rendered on a mirrored device context, the image list will not have direct access to the image-list device context. On Windows XP, you can use the image-list flags ILC\_MIRROR and ILC\_PERITEMMIRROR to enable mirroring. If your code needs to run on Windows 2000, Windows 98, or Windows Me with mirroring support, you can use the previous code samples to mirror the direction-sensitive bitmap or icon before adding it to the list. Note, however, that the previous code will allow you to mirror such bitmaps and icons if you are adding these images to the list one by one. If you are adding images to the list more than one at a time, you can tweak the previous code to mirror each element inside the image strip that you are adding to the list. For example, you can modify *CreateMirroredBitmap(),* so that instead of this line:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 BitBlt(hdcMem2, 0, 0, bm.bmWidth, bm.bmHeight, hdcMem1, 0, 0, SRCCOPY); 
 ```
 
 you can have the following code, where *Width* is the width of each individual image in the image strip that will be added to the image list:
 
-``` {style="MARGIN-LEFT: 30px"}
+```C++
 int n = bm.bmWidth / Width, i;
 for(i =0; i< n; i++)
  {

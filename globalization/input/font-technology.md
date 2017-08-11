@@ -50,10 +50,9 @@ With font fallback and font linking, the font size of the text is maintained. So
 
 Both font fallback and font linking can leverage logic to estimate an appropriate font size, but both mechanisms have to use metrics exposed by the font that might or might not actually match the way the font appears. Consider the difference in the visual height of English letters among 8-point Microsoft Sans Serif, 8-point Traditional Arabic, and 8-point Leelawadee UI:
 
-  ---------------------- -------------------- ---------------
-  E                      E                    E
-  Microsoft Sans Serif   Traditional Arabic   Leelawadee UI
-  ---------------------- -------------------- ---------------
+| Microsoft Sans Serif | Traditional Arabic | Leelawadee  |
+|----------------------|--------------------|-------------|
+| E                    |  E                 |   E         |
 
 Even though all of these are supposedly 8-point fonts, the apparent size of the English letters varies widely. Font fallback and font linking are no substitutes for choosing the right font in the first place. Rather, these mechanisms are simply a means of preventing the user from manually selecting a font; additionally, they prevent UI text from being displayed as a default glyph.
 

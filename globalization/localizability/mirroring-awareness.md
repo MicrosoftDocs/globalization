@@ -50,10 +50,7 @@ The owner-drawn command or bitmap is being drawn outside the desired area becaus
 
 ### See more at the below links.
 
-[](https://msdn.microsoft.com/en-us/library/mt691881)
-## Mirroring in Win32
-
-[](https://msdn.microsoft.com/en-us/library/mt691880)
-## Mirroring in .NET Framework
+- [Mirroring in Win32](https://msdn.microsoft.com/en-us/library/mt691881)
+- [Mirroring in .NET Framework](https://msdn.microsoft.com/en-us/library/mt691880)
 
 
