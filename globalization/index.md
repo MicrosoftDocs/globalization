@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Globalization Documentation
-description: Resources for the internationalization (globalization + localizability + localization) related topics.
+description: Learn and Explore the resource for the internationalization (globalization + localizability + localization) related topics.
 ---
 # Globalization Documentation
 
