@@ -1,5 +1,3 @@
-This documentation is archived and is not being maintained.
-
 # Overlay Text Properties
 
 The remaining category of advanced text properties relates to text overlay. These properties apply not just to the glyph, but to an entire text string.
