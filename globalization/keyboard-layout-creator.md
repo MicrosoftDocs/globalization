@@ -20,7 +20,7 @@ The Microsoft Keyboard Layout Creator (MSKLC) extends the international function
 To install and use MSKLC 1.4, your system must meet the following requirements:
 
 -   Windows 2000, Windows XP, Windows Server 2003, Windows Vista, or Windows 7. (MSKLC 1.4 will not run on Windows 95, Windows 98, Windows ME, or Windows NT 4.)
--   Microsoft .NET Framework v2.0 must be installed. If you have not already installed this version of the .NET Framework, you can do so from the following URL: [https://www.microsoft.com/net/download](/netframework/aa731542.aspx "https://www.microsoft.com/net/download")
+-   Microsoft .NET Framework v2.0 must be installed. If you have not already installed this version of the .NET Framework, you can do so from the following URL: [https://www.microsoft.com/net/download](https://www.microsoft.com/net/download "https://www.microsoft.com/net/download")
 -   Note that MSKLC 1.4 is a 32-bit application. It will run on 64-bit systems, but in 32-bit mode.
 
 ## Related Links

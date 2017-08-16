@@ -12,9 +12,9 @@ One important case where code frequently runs into problems is supporting users 
 
 |                   | Lower Case Form  | Upper Case Form  |
 |-------------------| -----------------| -----------------|
-|English            | [i] (\\u0069)    | [I] (\\u0049)    |
-|Turkic undotted i  | [ı] (\\u0131)    | [I] (\\u0049)    |
-|Turkic dotted i    | [i] (\\u0069)    | [İ] (\\u0130)    |
+|English            | i (\\u0069)    | I (\\u0049)    |
+|Turkic undotted i  | ı (\\u0131)    | I (\\u0049)    |
+|Turkic dotted i    | i (\\u0069)    | İ (\\u0130)    |
 
 String sorting and comparison are language-specific. Even within languages based on the Latin script, there are different composition and sorting rules. Thus, you should not rely on code points to do proper sorting and string comparison.
 
@@ -52,18 +52,18 @@ Applications using sort keys follow this general model:
 2.  Compare strings by comparing the value of their sort keys using [memcmp](https://msdn.microsoft.com/en-us/library/zyaebf12(VS.80).aspx).
 3.  Store the resulting sort key values along with your string to avoid extra processing time to evaluate the linguistic properties of each string each time they are compared.
 
-A sort key is a composite representation of a sort element (see the figure below). Each component of the sort key has a different weight, depending on the sort rules associated with the locale. Elements are sorted based on script (that is, all Greek characters sort together, all Cyrillic characters sort together, and so on); alphanumeric and symbolic characters; diacritics; case; and other special rules, such as two characters sorting as a single character (for example, the Spanish “ [CH]”).
+A sort key is a composite representation of a sort element (see the figure below). Each component of the sort key has a different weight, depending on the sort rules associated with the locale. Elements are sorted based on script (that is, all Greek characters sort together, all Cyrillic characters sort together, and so on); alphanumeric and symbolic characters; diacritics; case; and other special rules, such as two characters sorting as a single character (for example, the Spanish “CH”).
 
 ### Using Sort Keys
 
-Once the search engine has a sorted list of words, it can quickly look for matching strings using a binary search algorithm. Using sort keys is very convenient because they automatically handle language-specific and locale-specific sorting preferences. One example includes matching ligatures. (In English, “Æ” is equivalent to “AE,” but this is not true in Danish.) Another example involves distinguishing between single letters and two-character combinations. (In some Spanish locales, “ [l]” and the combination “ [ll]” are distinct letters.)
+Once the search engine has a sorted list of words, it can quickly look for matching strings using a binary search algorithm. Using sort keys is very convenient because they automatically handle language-specific and locale-specific sorting preferences. One example includes matching ligatures. (In English, “Æ” is equivalent to “AE,” but this is not true in Danish.) Another example involves distinguishing between single letters and two-character combinations. (In some Spanish locales, “l” and the combination “ll” are distinct letters.)
 
 Some features of linguistic sorting are:
 
 -   A language’s writing system will determine what influences the sort order of the language. For example, a sort order for Russian would be based on Cyrillic letters and possibly diacritics, but a sort order for Japanese might be based on the number of strokes it takes to draw a character.
 -   Linguistic sort orders are different than the Unicode code point order.
 -   Languages that use the same script often have different linguistic sort orders.
--   A sorting element (such as a character) can be the combination of more than one Unicode code point. For example, \\u0B95 + \\u0BCD + \\u0BB7 = Tamil Ksha, a single sorting element in Tamil ([க] + [்] + [ஷ] = [க்ஷ]).
+-   A sorting element (such as a character) can be the combination of more than one Unicode code point. For example, \\u0B95 + \\u0BCD + \\u0BB7 = Tamil Ksha, a single sorting element in Tamil (க + [் + ஷ = க்ஷ).
 
 The best thing to remember is that by using Windows system support, all of these sorting issues are automatically handled for you.
 
@@ -185,9 +185,9 @@ It’s common for East Asian languages to having more than one sorting order. Yo
 
 For those unfamiliar with East Asian sorting, a brief explanation may be needed. Technically, what is commonly referred to “Stroke Count” or “Stroke” sort order is a radical-and-stroke sorting used for non-alphabetic writing systems such as Chinese and the logographic systems that derived from Chinese, whose thousands of symbols defy alphabetic-style ordering.
 
-In these languages, common components of characters are identified called “radicals.” Characters are then grouped by their primary radical, then ordered by the number of pen strokes within each radical. When there is no obvious radical or more than one radical, convention governs which is used for sorting. For example, the Chinese character for “mother” ([媽]) is sorted as a thirteen-stroke character under the three-stroke primary radical ([女]).
+In these languages, common components of characters are identified called “radicals.” Characters are then grouped by their primary radical, then ordered by the number of pen strokes within each radical. When there is no obvious radical or more than one radical, convention governs which is used for sorting. For example, the Chinese character for “mother” (媽) is sorted as a thirteen-stroke character under the three-stroke primary radical (女).
 
-The radical-and-stroke system is cumbersome compared to an alphabetical system in which there are a few characters, all unambiguous. The choice of which components of a logograph comprise separate radicals and which radical is primary is not always clear-cut. As a result, the logographic languages often supplement radical-and-stroke ordering with alphabetic sorting of a phonetic conversion of the logographs. For example, the [kanji](http://en.wikipedia.org/wiki/Kanji) word Tōkyō ([東京]), the Japanese name of Tokyo can be sorted as if it were spelled out in the Japanese characters of the [hiragana syllabary](http://en.wikipedia.org/wiki/Hiragana) as “to-u-ki-yo-u” ([とうきょう]), using the conventional sorting order for these characters, this is “phonetic” sorting.
+The radical-and-stroke system is cumbersome compared to an alphabetical system in which there are a few characters, all unambiguous. The choice of which components of a logograph comprise separate radicals and which radical is primary is not always clear-cut. As a result, the logographic languages often supplement radical-and-stroke ordering with alphabetic sorting of a phonetic conversion of the logographs. For example, the [kanji](http://en.wikipedia.org/wiki/Kanji) word Tōkyō (東京), the Japanese name of Tokyo can be sorted as if it were spelled out in the Japanese characters of the [hiragana syllabary](http://en.wikipedia.org/wiki/Hiragana) as “to-u-ki-yo-u” (とうきょう), using the conventional sorting order for these characters, this is “phonetic” sorting.
 
 #### Japanese Sorting
 
@@ -253,19 +253,19 @@ Match Diacritics in the Find and Replace feature is used to ignore or consider d
 
 Kashida is mainly used in Arabic text for the sole purpose of text justification in both left and right sides. It, however, may also be used by some for enhancing visual appearance of some words. Kashida should have no effect on spelling or meaning of any word it is inserted to. You may choose to add one or more kashidas between any connected characters.
 
-Match Kashida in Find and Replace functionality is used to ignore or consider kashida when searching for text. If, for example, Match Kashida was checked, kashidas will not be ignored in your search or replacement. Hence Find and Replace will only find words whose kashidas location and number exactly match those of the text typed in Find and Replace. On the other hand, if Match Kashida was unchecked, kashidas will simply be ignored and Arabic words such as ([حليم] and [حليــــــــــم]) would be equivalent and searching the first word would catch both words. However, searching the second one (the one with a kashida) will only find the same word and not the other one (without the kashida). This is OK since the user would type the kashida in Find and Replace only if he/she really intends to include it in the search.
+Match Kashida in Find and Replace functionality is used to ignore or consider kashida when searching for text. If, for example, Match Kashida was checked, kashidas will not be ignored in your search or replacement. Hence Find and Replace will only find words whose kashidas location and number exactly match those of the text typed in Find and Replace. On the other hand, if Match Kashida was unchecked, kashidas will simply be ignored and Arabic words such as (حليم and حليــــــــــم) would be equivalent and searching the first word would catch both words. However, searching the second one (the one with a kashida) will only find the same word and not the other one (without the kashida). This is OK since the user would type the kashida in Find and Replace only if he/she really intends to include it in the search.
 
 ### Match Alef Hamza
 
-It happens very often that the Arabic letter Alef with Hamza ([أ]) is written as simply Alef without Hamza ([ا]) on top of it with affecting the meaning. Hence, some applications include “Match Alef Hamza” to selectively choose to ignore or consider the Alef Hamza when searching Arabic text. For example, if Match Alef Hamza is unchecked, then searching for ([احمد]) or ([أحمد]) will find both ([احمد]) and ([أحمد]). On the other hand, if Match Alef Hamza is checked, then the Alef and Alef Hamza must match that of the text used in the Find and Replace dialog. Therefore, searching for ([احمد]) will not find ([أحمد]).
+It happens very often that the Arabic letter Alef with Hamza (أ) is written as simply Alef without Hamza (ا) on top of it with affecting the meaning. Hence, some applications include “Match Alef Hamza” to selectively choose to ignore or consider the Alef Hamza when searching Arabic text. For example, if Match Alef Hamza is unchecked, then searching for (احمد) or (أحمد) will find both (احمد) and (أحمد). On the other hand, if Match Alef Hamza is checked, then the Alef and Alef Hamza must match that of the text used in the Find and Replace dialog. Therefore, searching for (احمد) will not find (أحمد).
 
 ### Hanja with Phonetic Hangul
 
-The “Hanja with phonetic Hangul” option is used to find words written in either the hanja (Han or “Chinese script”) or Hangul (native Korean script). (See [Korean mixed script](https://en.wikipedia.org/wiki/Korean_mixed_script) for more details.) For example, the terms [한자] and [漢字] both mean “Hangul.”
+The “Hanja with phonetic Hangul” option is used to find words written in either the hanja (Han or “Chinese script”) or Hangul (native Korean script). (See [Korean mixed script](https://en.wikipedia.org/wiki/Korean_mixed_script) for more details.) For example, the terms 한자 and 漢字 both mean “Hangul.”
 
 ### Full and Half- and Half-Width Forms
 
-This option allows users to search for full- and half-width forms. This means the pair A (\\u0041) and full-width Ａ (\\uFF21) and the pair [ァ] (\\u30A1) and half-width [ｦ] (\\uFF66) will be considered equivalent characters. To correctly search for these characters, it is recommended to [normalize](#String-Normalization) the strings first.
+This option allows users to search for full- and half-width forms. This means the pair A (\\u0041) and full-width Ａ (\\uFF21) and the pair ァ (\\u30A1) and half-width ｦ (\\uFF66) will be considered equivalent characters. To correctly search for these characters, it is recommended to [normalize](#String-Normalization) the strings first.
 
 ### Sounds Like
 
@@ -273,11 +273,11 @@ This feature allows users to treat characters as equal. For example, it will tre
 
 English: The spaghetti we had for dinner was delicious.
 
-Japanese: [夕食に食べたスパゲッティは、美味しかったです。]
+Japanese: 夕食に食べたスパゲッティは、美味しかったです。
 
-Hiragana: [ゆうしょくにたべたすぱげってぃは、おいしかったです。]
+Hiragana: ゆうしょくにたべたすぱげってぃは、おいしかったです。
 
-Katakana: [ユウショクニタベタスパゲッティハ、オイシカッタデス。]
+Katakana: ユウショクニタベタスパゲッティハ、オイシカッタデス。
 
 ### Wildcard Search
 
