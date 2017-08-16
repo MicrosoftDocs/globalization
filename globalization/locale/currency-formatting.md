@@ -1,5 +1,3 @@
-
-
 ---
 title: Currency Formatting
 description: Currency symbol, Currency symbol placement, and Negative-amount display can vary in different countries/regions.
