@@ -1,5 +1,3 @@
-
-
 ---
 title: Date Formatting
 description: Each date displays the day, month, and year, but the presentation order and separators can vary in different countries/regions.
