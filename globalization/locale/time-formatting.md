@@ -1,5 +1,11 @@
 
 
+---
+title: Time Formatting
+description: Each time displays the hour, minute, and second, but the presentation order and separators could vary in different countries/regions.
+ms.assetid: f7194ac9-9c29-4f16-a38d-87ebab60888b
+ms.date: 03/16/2016
+---
 # Time Formatting
 
 Like date and calendar formats, time formats are not constant throughout the world. Although each representation of time basically displays the hour, minutes, and seconds, their presentation order and separators vary greatly. In fact, there might be many differences between regions within the same country. The time formatting might differ from one culture to another in one of the following three ways:
