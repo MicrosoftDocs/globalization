@@ -1,5 +1,9 @@
-
-
+---
+title: Build Process and Packaging
+description: 
+ms.assetid: 0763f34f-0518-4b3c-84ba-d74353067f49
+ms.date: 02/16/2016
+---
 # Build Process and Packaging
 
 It is a good idea to use the same build process for the localized product as for the original product. Still, there are some binaries that need to be included in or excluded from the localized product for specific markets, which can alter the build process for the localized product. The localization team should work with the development team to set up an automatic procedure for handling changes, and should make this procedure part of the general production process. Localizers need to make sure all text, controls, and menu items that refer to locale-specific features are changed accordingly.
