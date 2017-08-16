@@ -1,5 +1,11 @@
 
 
+---
+title: Number Formatting
+description: Thousands separator, decimal separator, and the way negative numbers are displayed can vary in different countries/regions.
+ms.assetid: 8f183742-60d3-40bb-ab13-083c1ec7adf4
+ms.date: 01/26/2017
+---
 # Number Formatting
 
 When dealing with numeric values, there are six major items to pay attention to:
