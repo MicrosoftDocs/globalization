@@ -1,4 +1,3 @@
-
 ---
 title: Calendar Differences
 description: The Gregorian calendar is used in most English speaking countries, but the globalized software should take into consideration other calendaring system
