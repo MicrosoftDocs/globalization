@@ -1,5 +1,9 @@
-
-
+---
+title: Locale and Culture
+description: Locale plays a vital role to develop the globalized software to be locale and culture aware.
+ms.assetid: 9b9cd170-03dc-48b9-aeee-c1a8e32f0559
+ms.date: 03/16/2016
+---
 # Locale and Culture Awareness
 
 [Using Locale Model](https://msdn.microsoft.com/en-us/library/mt662310)  

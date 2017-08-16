@@ -1,5 +1,9 @@
-
-
+---
+title: Units of Measurement
+description: Most of world uses the metric system (meters, liters, grams, etc). Where the US still uses the imperial system (feet, inches, pounds, etc).
+ms.assetid: 0889ecb8-4d4c-4dc2-b3ca-3c11cbf2b043
+ms.date: 01/24/2017
+---
 # Units of Measurement
 
 Throughout the world things are measured using different units and scales. The most popular one used is the metric system (meters, liters, grams, etc). Where as the US still uses the imperial system (feet, inches, pounds, etc). The kind of measurements referred to are for things such as:
