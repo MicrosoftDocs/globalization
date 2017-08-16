@@ -1,4 +1,9 @@
-
+---
+title: Quality Assurance for World-Readiness
+description: The goal of ensuring world-readiness has a wider scope and requires more fore-thought than merely testing localized applications.
+ms.assetid: 6ba1dbde-55ae-4495-be7f-03473e2aca30
+ms.date: 04/03/2017
+---
 
 # Quality Assurance for World-Readiness
 

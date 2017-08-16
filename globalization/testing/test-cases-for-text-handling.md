@@ -1,4 +1,9 @@
-
+---
+title: Test Cases for Text Handling
+description: Globalization test cases for handling the UI text.
+ms.assetid: 3261e61f-09a9-476d-b5ae-38a8fafebfcc
+ms.date: 04/14/2017
+---
 
 # Test Cases for Text Handling
 

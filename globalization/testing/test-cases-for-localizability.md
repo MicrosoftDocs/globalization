@@ -1,4 +1,9 @@
-
+---
+title: Test Cases for Localizability
+description: Localizability test cases.
+ms.assetid: 330ea2d5-defe-464b-986d-b06a0dd595f4
+ms.date: 04/12/2017
+---
 
 # Test Cases for Localizability
 
