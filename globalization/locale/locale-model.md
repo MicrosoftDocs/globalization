@@ -1,4 +1,3 @@
-
 ---
 title: Locale Model
 description: Locale plays a vital role to develop the globalized software to be locale and culture aware.
