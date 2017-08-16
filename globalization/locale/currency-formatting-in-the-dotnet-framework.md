@@ -1,3 +1,9 @@
+---
+title: Currency Formatting in the .NET Framework
+description: 
+ms.assetid: 773de803-6a2b-4690-9cce-9b3e6f24529e
+ms.date: 03/16/2016
+---
 
 
 # Currency Formatting in the .NET Framework
