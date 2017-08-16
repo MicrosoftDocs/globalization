@@ -16,7 +16,7 @@ Printing is a major concern that should be addressed at the early stages of your
 | 9           | A4          |
 
 
-    See also [[ISO 216 Standard Paper Size]](http://en.wikipedia.org/wiki/ISO_216) for reference.
+See also [[ISO 216 Standard Paper Size]](http://en.wikipedia.org/wiki/ISO_216) for reference.
 -   **Character Sets**: Issues with by printer drivers and printer technologies are more likely as support for more languages is added. Ensure that the work you did to support Complex Script and bidirectional text extends to printing.
 
 ## Printing Areas
