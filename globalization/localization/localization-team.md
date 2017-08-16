@@ -1,5 +1,9 @@
-
-
+---
+title: Localization Team
+description: A large localization project requires a team that consists of a program manager, one or more localization engineers, and many localizers.
+ms.assetid: 0516657d-a48c-4e0c-968c-61308a866eb3
+ms.date: 03/16/2016
+---
 # Localization Team
 
 A large localization project requires a team that consists of a program manager, one or more localization engineers, and many localizers. The program manager should coordinate between the development team and the localization team, making sure that developers use code practices that are conducive to localization. (For more information on these practices, see [[Use Locale Model]](https://msdn.microsoft.com/en-us/goglobal/bb688121 "Use Locale Model").) The program manager should also deal with the external teams that do localization and, of course, manage the internal localization process.
