@@ -1,4 +1,9 @@
-
+---
+title: Design Internationalization
+description: 
+ms.assetid: 12240d5d-6de0-4f78-8d4c-faf1e4b17b31
+ms.date: 11/15/2016
+---
 
 # Internationalization
 
