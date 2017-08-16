@@ -1,4 +1,3 @@
-
 ---
 title: Sorting and String Comparison
 description: In the world-ready applications, the alphabetical order can vary among languages, and the conventions for sequencing items can also be quite different
