@@ -1,5 +1,3 @@
-
-
 ---
 title: Time Formatting
 description: Each time displays the hour, minute, and second, but the presentation order and separators could vary in different countries/regions.
