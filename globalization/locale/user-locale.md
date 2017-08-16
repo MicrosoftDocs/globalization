@@ -1,3 +1,9 @@
+---
+title: User Locale
+description: User locale determines which default settings a user wants for formatting dates, times, currency, and large numbers.
+ms.assetid: 4c71c47c-033c-452f-9061-45609f590c19
+ms.date: 02/23/2017
+---
 
 
 # User Locale
