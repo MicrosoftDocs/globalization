@@ -1,4 +1,9 @@
-
+---
+title: Sample International Test Cases
+description: Sample test cases for globalization and localizability.
+ms.assetid: 3c24a50b-70ef-4c67-95bd-17e4d4699211
+ms.date: 03/16/2016
+---
 
 # Sample International Test Cases
 

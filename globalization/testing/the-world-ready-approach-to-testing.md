@@ -1,4 +1,9 @@
-
+---
+title: The World-Ready Approach to Testing
+description: World-ready testing reduces redundancy in test runs on localized products and make simultaneous release possible.
+ms.assetid: a6b10a4c-a8b4-4ccb-9c1e-d5f82adcacc0
+ms.date: 04/03/2017
+---
 
 # The World-Ready Approach to Testing
 

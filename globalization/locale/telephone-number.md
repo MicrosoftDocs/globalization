@@ -1,5 +1,9 @@
-
-
+---
+title: Telephone Number
+description: Input fields and the routines that process information dealing with telephone numbers should be able to handle the variety of formats.
+ms.assetid: 5aea6983-c912-4743-9436-bb9e034721e2
+ms.date: 01/24/2017
+---
 # Telephone Number
 
 Like addresses, the format for telephone numbers around the world varies significantly. Once again, input fields and the routines that process information dealing with telephone numbers should be able to handle the variety of formats.

@@ -1,4 +1,9 @@
-
+---
+title: Test Cases for Locale Awareness
+description: Globalization test cases for verifying the data in various regional settings.
+ms.assetid: 7263c020-837b-478b-8c94-e59aeb913c8d
+ms.date: 04/14/2017
+---
 
 # Test Cases for Locale Awareness
 

@@ -4,8 +4,6 @@ description: Some languages don't indicate the distinction between words by usin
 ms.assetid: 792a33f6-1e08-48e9-b7f4-9a845c0fb9c8
 ms.date: 03/16/2016
 ---
-
-
 # Line and Word Breaking
 
 Along with Complex Scripts, word and line breaking add a special case when multilingual text is to be parsed or displayed.

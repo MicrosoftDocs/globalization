@@ -1,5 +1,9 @@
-
-
+---
+title: Currency Formatting
+description: Currency symbol, Currency symbol placement, and Negative-amount display can vary in different countries/regions.
+ms.assetid: a1a14312-a28c-491d-8a26-149338464869
+ms.date: 03/16/2016
+---
 # Currency Formatting
 
 Currency formatting needs to take into consideration these following elements:

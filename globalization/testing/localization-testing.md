@@ -1,4 +1,9 @@
-
+---
+title: Localization Testing
+description: Localization testing will test the UI is localized to the correct languages. This is done after globalization test is complete.
+ms.assetid: fe7e19f0-864c-4ba0-b05e-349c566dc061
+ms.date: 03/16/2016
+---
 
 # Localization Testing
 

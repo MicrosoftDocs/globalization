@@ -1,5 +1,9 @@
-
-
+---
+title: Page or Text Alignment
+description: When creating a locale–aware application, you'll need to consider handling of linguistic nuances.
+ms.assetid: 6b1de8ff-d50c-4b36-bd97-e3e7eda36406
+ms.date: 05/01/2017
+---
 # Page or Text Alignment
 
 In typesetting and page layout, alignment is the setting of text flow or image placement relative to a page, column (measure), table cell or tab. Type alignment sometimes referred to as “text alignment”, “text justification”, “type justification”, or “document direction.” Additionally, this may be referred to as Reading Order; Reading Order is a method that describes the order in which a block of text is displayed—sometimes in contrast with how the text is entered or stored (logical order).

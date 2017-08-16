@@ -1,4 +1,9 @@
-
+---
+title: Tranformations of Unicode Code Points
+description: Brief description about the techniques to encode Unicode characters.
+ms.assetid: 6b8a5c90-424f-4254-9c98-8311e1f53594
+ms.date: 03/11/2017
+---
 
 # Transformations of Unicode Code Points
 

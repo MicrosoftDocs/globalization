@@ -1,5 +1,9 @@
-
-
+---
+title: Locale Model
+description: Locale plays a vital role to develop the globalized software to be locale and culture aware.
+ms.assetid: e65d446a-04fb-4235-859a-d84cbb64b463
+ms.date: 02/23/2017
+---
 # Locale Model
 
 Before deciding on an approach, you must first understand your design goals. Are you trying to change the language of the user interface or are you trying to present a locale-sensitive datum in the format the user expects? Locale-sensitive data are items such as date formats or sorted lists. Language and locale are related concepts, but are not interchangeable and there are sets of APIs to address each scenario.

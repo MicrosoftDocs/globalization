@@ -1,5 +1,9 @@
-
-
+---
+title: Date Formatting
+description: Each date displays the day, month, and year, but the presentation order and separators can vary in different countries/regions.
+ms.assetid: 05632b68-e221-4d77-a85b-68f9d3781ecf
+ms.date: 01/24/2017
+---
 # Date Formatting
 
 Date formatting is not constant through out the world. Although each date basically displays the day, month, and year, their presentation order and separators vary greatly. In fact, there may be many differences between regions within the same country.

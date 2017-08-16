@@ -1,5 +1,9 @@
-
-
+---
+title: Address Format
+description: One of the most nonstandard formatted items you'll need to deal with in globalization is address formats.
+ms.assetid: d02aec53-1433-4a43-8e20-73d9886c7a5c
+ms.date: 01/24/2017
+---
 # Address Format
 
 One of the most nonstandard formatted items you'll need to deal with in globalization is address formats. Thus input fields and the routines that process address information should be able to handle various formats. For instance, a very common mistake (such as in Web forms) is to insist that the user enter something in a field labeled State (or Province for Canadians). While this makes sense to people located in the United States and Canada, it confuses those from other parts of the world, since most don't have a "State" in their addresses.

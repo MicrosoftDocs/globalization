@@ -1,4 +1,9 @@
-
+---
+title: Globalizing Your Test Data
+description: Test data should be multilingual Unicode text different from the system locale. Use mixed scripts or Unicode-only text to discover codepage dependency
+ms.assetid: d5c50681-f03c-4145-b40f-090e887bcb75
+ms.date: 04/05/2017
+---
 
 # Globalizing Your Test Data
 
