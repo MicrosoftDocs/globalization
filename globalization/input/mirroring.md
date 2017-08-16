@@ -1,5 +1,9 @@
-
-
+---
+title: Mirroring
+description: Complex scripts refer to the languages, where the characters are not laid out in the left-to-right progression, as most European characters are.
+ms.assetid: 437a9601-a54c-4c91-bb64-52c4d1b62e86
+ms.date: 04/26/2017
+---
 # Mirroring
 
  For right-to-left (RTL) languages, not only does the text alignment and text reading order go from right to left; UI elements should follow this natural direction of right to left. By default, edit controls inserted into a right-to-left document should inherit right-to-left behavior. Control handles and pull-down buttons should be mirrored on right-to-left documents.
