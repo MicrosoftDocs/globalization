@@ -1,3 +1,9 @@
+---
+title: Choosing a Test Platform for Globalization Testing
+description: Globalization testing depends on the functionality of your system, required level of support, and the testers' ability to work on a localized OS.
+ms.assetid: 43368161-d029-480c-9c71-67c1c26ae70d
+ms.date: 04/03/2017
+---
 
 
 # Choosing a Test Platform for Globalization Testing
