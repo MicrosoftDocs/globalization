@@ -1,3 +1,9 @@
+---
+title: Location or Geographic ID
+description: Software, including Windows, may provide additional content for a particular location. Some services provide local info such as news and weather.
+ms.assetid: cbf0ba5d-1253-4ff3-8094-3d2d3696e870
+ms.date: 02/23/2017
+---
 
 
 # Location or Geographic ID
