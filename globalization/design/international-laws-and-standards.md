@@ -1,4 +1,9 @@
-
+---
+title: International Laws and Standards
+description: 
+ms.assetid: 7520d2d5-a250-43ca-8318-1c740592004e
+ms.date: 11/16/2016
+---
 
 # International Laws and Standards
 
