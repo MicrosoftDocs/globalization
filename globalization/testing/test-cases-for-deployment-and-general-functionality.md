@@ -1,4 +1,10 @@
 
+---
+title: Test Cases for Deployment and General Functionality
+description: Globalization test cases for deployment and functionality.
+ms.assetid: 98643fba-eb93-4fd3-9604-b35aef27c61a
+ms.date: 04/11/2017
+---
 
 # Test Cases for Deployment and General Functionality
 
