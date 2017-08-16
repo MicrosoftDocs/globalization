@@ -3,6 +3,7 @@ layout: LandingPage
 title: Globalization Documentation
 description: Learn and Explore the resource for the internationalization (globalization + localizability + localization) related topics.
 ms.assetid: e1cb4bf7-b23e-434d-93f3-2b71b8f3f640
+ms.date: 08/15/2016
 ---
 # Globalization Documentation
 
@@ -73,9 +74,9 @@ Software internationalization has two facets:
 -   **World-readiness:** This covers the generic coding and design issues and comprises two major areas: **Globalization** is the process to develop a program core whose features and code design are not solely based on a single language or locale. **Localizability** is the process to enable a program to be localized into different languages without any changes to the source code.
 -   **Localization:** This involves translating and customizing a product for a specific market.
 
-<ul class="panelContent cardsF">
+<ul class="panelContent cardsA cols cols4">
     <li>
-        <a href="https://msdn.microsoft.com/en-us/library/mt642951">
+        <a href="/globalization/software-internationalization">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
