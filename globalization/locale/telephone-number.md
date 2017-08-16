@@ -1,5 +1,3 @@
-
-
 ---
 title: Telephone Number
 description: Input fields and the routines that process information dealing with telephone numbers should be able to handle the variety of formats.
