@@ -63,7 +63,7 @@ Some features of linguistic sorting are:
 -   A language’s writing system will determine what influences the sort order of the language. For example, a sort order for Russian would be based on Cyrillic letters and possibly diacritics, but a sort order for Japanese might be based on the number of strokes it takes to draw a character.
 -   Linguistic sort orders are different than the Unicode code point order.
 -   Languages that use the same script often have different linguistic sort orders.
--   A sorting element (such as a character) can be the combination of more than one Unicode code point. For example, \\u0B95 + \\u0BCD + \\u0BB7 = Tamil Ksha, a single sorting element in Tamil (க + [் + ஷ = க்ஷ).
+-   A sorting element (such as a character) can be the combination of more than one Unicode code point. For example, \\u0B95 + \\u0BCD + \\u0BB7 = Tamil Ksha, a single sorting element in Tamil (க + ் + ஷ = க்ஷ).
 
 The best thing to remember is that by using Windows system support, all of these sorting issues are automatically handled for you.
 
