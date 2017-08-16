@@ -1,5 +1,3 @@
-
-
 ---
 title: Number Formatting
 description: Thousands separator, decimal separator, and the way negative numbers are displayed can vary in different countries/regions.
