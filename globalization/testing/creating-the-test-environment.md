@@ -2,7 +2,7 @@
 title: Creating the Test Environment for Globalization Testing
 description: Choosing a platform for the test is not enough to guarantee that the test is globalized and that no globalization problems are left in the code.
 ms.assetid: e2e060ec-90da-4f42-a4a4-4b9374c33276
-ms.date: 08/16/2016
+ms.date: 03/16/2016
 ---
 
 # Creating the Test Environment for Globalization Testing
