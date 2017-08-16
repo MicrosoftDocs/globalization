@@ -1,5 +1,9 @@
-
-
+---
+title: When Variables Are Necessary, Use Unique Names
+description: 
+ms.assetid: 889f8577-b7a3-42f1-8c2f-07f8b60f6078
+ms.date: 06/28/2016
+---
 # When Variables Are Necessary, Use Unique Names
 
 Although translators would love to have strings with no variables as well as strings that are repeated for usage in different contexts, there are times when it is necessary to use variables. When there is only one variable in a string, like in the example that involved deleting a file, directory, or subdirectory, it is best to use a function that allows you to at least put a placeholder in the text. Thus the earlier example would become:
