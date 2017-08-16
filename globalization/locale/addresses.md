@@ -1,5 +1,3 @@
-
-
 ---
 title: Address Format
 description: One of the most nonstandard formatted items you'll need to deal with in globalization is address formats.
