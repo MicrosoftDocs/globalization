@@ -1,6 +1,6 @@
 ---
 title: Ensure that the Application is fully Unicode enabled
-description: Language-specific operations of console applications can and should follow the locale settings of the system.
+description: 
 ms.assetid: 496a1b05-4988-4661-b358-cc492fd29584
 ms.date: 04/21/2017
 ---
