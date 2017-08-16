@@ -1,3 +1,9 @@
+---
+title: Language Groups and Language Collections
+description: Legacy information regarding the code-page, keyboard layouts, and fonts on the older versions of Windows.
+ms.assetid: 83636fee-b149-42bb-ac82-8d0ac0366363
+ms.date: 02/23/2017
+---
 
 
 # Language Groups and Language Collections
