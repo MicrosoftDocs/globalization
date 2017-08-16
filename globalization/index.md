@@ -1,8 +1,9 @@
 ---
 layout: LandingPage
-title: Globalization Documentation
-description: Learn and Explore the resource for the internationalization (globalization + localizability + localization) related topics.
+title: Globalization Dev Center
+description: Resources for the internationalization (globalization + localizability + localization) related topics.
 ms.assetid: e1cb4bf7-b23e-434d-93f3-2b71b8f3f640
+ms.date: 08/16/2016
 ---
 # Globalization Documentation
 
