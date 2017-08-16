@@ -1,5 +1,9 @@
-
-
+---
+title: Console Globalization
+description: Language-specific operations of console applications can and should follow the locale settings of the system.
+ms.assetid: dd9aec54-e3aa-4b12-a709-04c9166492ff
+ms.date: 04/21/2017
+---
 # Console Globalization
 
 Language-specific operations of console applications can and should follow the locale settings of the system. This will guarantee locale-authentic formatting of numbers, date, time, currency values, and collation (sorting) operations. Locale support is available for text-mode applications through both C run-time (CRT) and Win32. Those two mechanisms can not be used interchangeably: the settings of CRT locale have no effect on Win32 code, user locale does not define the behavior of the functions exported by C run-time libraries.
