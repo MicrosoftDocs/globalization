@@ -11,7 +11,7 @@ The legal requirements for your software will vary by market and business. If yo
 
 ## **Security**
 
-The [[Security Guidelines for International](security-guidelines.md) outlines things to consider at the intersection of internationalization and security. For information on security specifically, reference the [Security Developer Center](http://msdn2.microsoft.com/security/).]{}
+The [Security Guidelines for International](security-guidelines.md) outlines things to consider at the intersection of internationalization and security. For information on security specifically, reference the [Security Developer Center](http://msdn2.microsoft.com/security/).
 
 ## **Privacy and International Law**
 
@@ -29,7 +29,7 @@ Although encryption in France is perfectly legal, it is subject to strict govern
 
 ## Language Laws
 
-[*La Loi de Toubon*](https://en.wikipedia.org/wiki/Toubon_Law)(Toubon Law) applies to products and services sold in France (no matter which country they’re from) and requires the use of the French language in the designation, marketing, presentation (i.e., labels, leaflets, catalogues, brochures, order forms, product sheets, delivery slips, etc.), instructions for use (whether on paper, audio, through an online resource, or built in the software), the description of the extent and the conditions of guarantee, as well as in announcements (including advertising) intended for the general public.
+[*La Loi de Toubon*](https://en.wikipedia.org/wiki/Toubon_Law) (Toubon Law) applies to products and services sold in France (no matter which country they’re from) and requires the use of the French language in the designation, marketing, presentation (i.e., labels, leaflets, catalogues, brochures, order forms, product sheets, delivery slips, etc.), instructions for use (whether on paper, audio, through an online resource, or built in the software), the description of the extent and the conditions of guarantee, as well as in announcements (including advertising) intended for the general public.
 
 Constitutionally, both French and English are official language of Canada. In addition to the requirement that government services be available in both languages, there are further laws that “places obligations on private actors in Canadian society to provide access to goods or services in both official languages (such as the requirement that food products be labeled in both English and French).” For more information, please see Wikipedia’s article on [Official Bilingualism in Canada](http://en.wikipedia.org/wiki/Bilingualism_in_Canada).
 
