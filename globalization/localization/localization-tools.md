@@ -1,5 +1,9 @@
-
-
+---
+title: Localization Tools
+description: Using the proper resource editor tools can make the localization of product resources quick and easy.
+ms.assetid: 69222719-1867-459f-be10-14cffa11227a
+ms.date: 03/16/2016
+---
 # Localization Tools
 
 There are several ways to localize software product files. One method is to edit the original resource files before the compilation process takes place. A second method is to localize the final compiled binaries of the product, and then to either save the localized resources into the same binaries or into a separate localization database. Most localization tools are capable of handling either or both of these methods. Regardless of the localization method you choose, using the proper resource editor tools can make the localization of product resources quick and easy. Effective localization tools should also be able to create the localized version of the corresponding original file. This original file can be a resource file or a compiled file, depending on the localization team's choice of tools and localization process.
