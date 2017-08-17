@@ -12,11 +12,11 @@ The easiest way to format numbers in a way that's locale-aware is to use the Get
 
 ```C++
 GetNumberFormat(LOCALE\_USER\_DEFAULT, // locale (current user locale)
-          0,           // options
-          TEXT("1234567890.12345"),            // input string (see MSDN for legal chars)
-          NULL,          // formatting information
-          g\_szTemp,           // formatted string buffer
-          MAX\_STR);           // size of buffer
+          0,                           // options
+          TEXT("1234567890.12345"),    // input string (see MSDN for legal chars)
+          NULL,                        // formatting information
+          g\_szTemp,                   // formatted string buffer
+          MAX\_STR);                   // size of buffer
 ```
 
 For more advanced number formatting in the Win32 programming model, the GetLocaleInfo API can be used to retrieve most of the number-formatting parameters (such as thousands separators, decimal separators, and negative numbers). Here are the appropriate flags to use as LCType in your calls to GetLocaleInfo, in order to retrieve each one of the number-formatting parameters.
@@ -28,25 +28,28 @@ For more advanced number formatting in the Win32 programming model, the GetLocal
 Possible return values are shown in Table 1 below.
 
 ![Number Formatting](/media/hubs/globalization/IC109839.jpg "Number Formatting") 
+
 **Table 1:** Return values of various LCType flags.
 
 **Native digits.** LCType flag set to LOCALE\_SNATIVEDIGITS. Here is a code sample that deals with native digits:
 
 ```C++
 GetLocaleInfo(LOCALE\_USER\_DEFAULT, // LCID (current user locale)
-          LOCALE\_SNATIVEDIGITS, // information type (native digits)
-          &g\_szTemp, // returned value
-          sizeof (g\_szTemp)); // size of buffer
+          LOCALE\_SNATIVEDIGITS,     // information type (native digits)
+          &g\_szTemp,                // returned value
+          sizeof (g\_szTemp));       // size of buffer
 ```
 
 This code would produce the following result on English (US) and Farsi locales, respectively:
 
 ![Native Digit](/media/hubs/globalization/IC124322.jpg "Native Digit") 
+
 **Figure 1:** Native digits for English (US) and Farsi.
 
 **Digit Substitution.** Digit substitution defines which set of digits (with its associated shapes) should be used for presenting numbers. This information can be retrieved with the LCType flag set to LOCALE\_IDIGITSUBSTITUTION. The table below shows the possible return values:
 
 ![Digit Substitution](/media/hubs/globalization/IC35857.jpg "Digit Substitution") 
+
 **Table 2:** Return values of LOCALE\_IDIGITSUBSTITUTION
 
 
