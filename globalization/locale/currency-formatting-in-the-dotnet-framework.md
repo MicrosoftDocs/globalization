@@ -8,7 +8,7 @@ ms.date: 03/16/2016
 
 # Currency Formatting in the .NET Framework
 
-The .NET format strings are useful if you want to convert one of the standard .NET Framework data types to a string that represents that type in some other format. For example, if you have an integer value of 100 that you want to represent to the user as a currency value, you could easily use the ToString method and the currency-format string ("C") to produce a string of "\$100.00". Computers that do not have English (United States) specified as the current culture will display whatever currency notation is used by the current culture. The original value contained in the data type is not converted, but a new string is returned that represents the resulting value. This new string cannot be used for calculation until it is converted back to a .NET base data type. The original value, however, can be calculated at any time.
+The .NET format strings are useful if you want to convert one of the standard .NET Framework data types to a string that represents that type in some other format. For example, if you have an integer value of 100 that you want to represent to the user as a currency value, you could easily use the ToString method and the currency-format string ("C") to produce a string of "$100.00". Computers that do not have English (United States) specified as the current culture will display whatever currency notation is used by the current culture. The original value contained in the data type is not converted, but a new string is returned that represents the resulting value. This new string cannot be used for calculation until it is converted back to a .NET base data type. The original value, however, can be calculated at any time.
 
 In the following code example, the ToString method displays the value of 100 as a currency-formatted string in the console's output window.
 
@@ -18,11 +18,9 @@ String MyString = MyInt.ToString("C");
 Console.WriteLine(MyString);
 ```
 
-This code displays \$100.00 to the console on computers that have English (United States) as the current culture.
+This code displays $100.00 to the console on computers that have English (United States) as the current culture.
 
 The CurrencySymbol property of the RegionInfo class from the System.Globalization namespace can be used to retrieve the currency symbol associated with the country or region. Also, the ISOCurrencySymbol property of RegionInfo retrieves the three-character ISO 4217 currency symbol associated with the country or region.
-
-Regarding the euro challenge mentioned earlier, again, the euro is now the default currency symbol of twelve European countries, but only Windows XP has this currency symbol set as the default for the affected countries. On downlevel platforms (including Windows 2000), this value has to be set manually by the user. If you want to ensure that your application uses the .NET Framework's default settings and use the euro as the default currency symbol (regardless of the user settings), you must create a CultureInfo object, passing a useUserOverride parameter set to false.
 
 The following example uses code that is similar to the previous example. It sets the current culture to "fr-FR" and displays an integer to the console formatted as currency. The user's local currency settings are used to format the currency. Next, the culture is set to "fr-FR" using the CultureInfo constructor that accepts the useUserOverride parameter set to false. The number is then formatted using the .NET Framework default settings, and the euro currency symbol is displayed.
 
