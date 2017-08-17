@@ -1,5 +1,9 @@
-
-
+---
+title: Text Rendering
+description: When creating a locale–aware application, you'll need to consider handling of linguistic nuances.
+ms.assetid: 3bf55477-13ea-41ca-92dc-f4194b4928a5
+ms.date: 05/01/2017
+---
 # Text Rendering
 
 Text rendering is the process of converting a string to a format that is readable to the user. For simple scripts, this process is straightforward. For more complicated scripts, there are many factors that lead to the correct rendering of a string.

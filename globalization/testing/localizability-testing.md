@@ -1,4 +1,9 @@
-
+---
+title: Localizability Testing
+description: Localizability testing verifies if UI of the program being tested can be easily translated to any target language without making code modifications.
+ms.assetid: 52e11350-bdb0-4086-96b6-ca71f29a21ff
+ms.date: 04/05/2017
+---
 
 # Localizability Testing
 

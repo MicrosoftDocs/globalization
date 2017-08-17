@@ -1,3 +1,9 @@
+---
+title: Sorting and String Comparison in Win32
+description: 
+ms.assetid: 3de45dab-a908-4c80-8915-10d8a0abc625
+ms.date: 01/25/2017
+---
 
 
 # Sorting and String Comparison in Win32

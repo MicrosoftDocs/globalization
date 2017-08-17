@@ -1,4 +1,9 @@
-
+---
+title: Frequently Asked Questions
+description: Questions and answers about Microsoft keyboard layouts.
+ms.assetid: 501334a7-5ec1-43b6-9d5d-a05ea6083770
+ms.date: 08/03/2016
+---
 
 # Frequently Asked Questions
 

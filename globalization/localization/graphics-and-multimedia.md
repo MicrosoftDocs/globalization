@@ -1,3 +1,9 @@
+---
+title: Graphics and Multimedia
+description: 
+ms.assetid: ac54e47b-d4f9-434d-94e3-68c9e5e4bcfa
+ms.date: 03/16/2016
+---
 
 
 # Graphics and Multimedia

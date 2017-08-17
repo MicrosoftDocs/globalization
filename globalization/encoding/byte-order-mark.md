@@ -1,4 +1,9 @@
-
+---
+title: Byte Order Mark
+description: Byte Order Mark (BOM) is used to indicate how a processor places serialized text into a sequence of bytes.
+ms.assetid: ba9afff8-782e-43df-9053-f1f61c8d22eb
+ms.date: 03/11/2017
+---
 
 # Byte Order Mark
 

@@ -1,4 +1,9 @@
-
+---
+title: Data Encoding
+description: The correct encoding is critical to maintain the data integrity to globalize the application.
+ms.assetid: 70fa1c6a-da6d-4285-8293-68d9c7b491ef
+ms.date: 03/16/2016
+---
 
 # Data Encoding
 

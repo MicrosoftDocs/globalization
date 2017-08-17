@@ -1,3 +1,9 @@
+---
+title: Input Locale
+description: Legacy information regarding the input on the older versions of Windows.
+ms.assetid: f8cdaa0d-69f9-4e03-8678-81d875f83c1a
+ms.date: 02/23/2017
+---
 
 
 # Input Locale

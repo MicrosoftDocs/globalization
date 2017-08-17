@@ -1,5 +1,9 @@
-
-
+---
+title: UI Language
+description: This variable allows each user to select the language of the UI for such things as dialog boxes, menus, and Help files.
+ms.assetid: de2ab910-0b17-405c-8e28-faa418af5f1c
+ms.date: 02/23/2017
+---
 # UI Language
 
 This variable allows each user to select the language of the UI for such things as dialog boxes, menus, and Help files. This option is only available on the MUI Pack of Windows XP Professional and on the MultiLanguage version of Windows 2000 Professional.

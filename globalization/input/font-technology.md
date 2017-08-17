@@ -1,5 +1,9 @@
-
-
+---
+title: Font Technology
+description: To select and display the right character or glyph is a big challenge in enabling the software to handle international character sets.
+ms.assetid: 7ca05e14-0371-43bc-907e-204dc814d6eb
+ms.date: 11/22/2016
+---
 # Font Technology
 
 A critical requirement for any operating system that supports for international writing systems is the ability to enter, select, and display the right character. For most operating systems, this is elegantly handled though mobile devices may have restricted writing system coverage based on market release.

@@ -1,5 +1,9 @@
-
-
+---
+title: Avoid Run-Time Composite Strings
+description: 
+ms.assetid: 9b878fc7-44c8-4adb-94a5-13164d135eaf
+ms.date: 06/28/2016
+---
 # Avoid Run-Time Composite Strings
 
 When creating strings for output, well-intentioned programmers use a coding trick that has been passed down from generation to generation of developers as a good coding practice. That trick is using text strings with variables that get composed at the application's run time. Thus you see code as shown here that is written to produce the following English text:

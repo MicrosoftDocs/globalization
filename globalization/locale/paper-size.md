@@ -1,5 +1,9 @@
-
-
+---
+title: Paper Size
+description: If your application needs to print, you should allow the default paper size to be configurable for globalization purpose.
+ms.assetid: fe36768d-ffc5-4271-b308-9aa47154c722
+ms.date: 11/14/2016
+---
 # Printing
 
 ## Printing Overview

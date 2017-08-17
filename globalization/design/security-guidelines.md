@@ -1,4 +1,9 @@
-
+---
+title: Security Guidelines for International
+description: 
+ms.assetid: 00ad82fb-42ba-4df8-b78f-962b98d5cc97
+ms.date: 11/16/2016
+---
 
 # Security Guidelines for International
 

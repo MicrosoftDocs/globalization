@@ -1,4 +1,9 @@
-
+---
+title: Thread Locale
+description: Thread locale defaults to the selected user locale. It can be changed with the API SetThreadLocale, but in general it should not be overwritten.
+ms.assetid: be4c2fd3-22d3-48af-adf6-3a136e1eec87
+ms.date: 02/23/2017
+---
 
 # Thread Locale
 

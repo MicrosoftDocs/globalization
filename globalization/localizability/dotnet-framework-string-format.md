@@ -1,5 +1,9 @@
-
-
+---
+title: .NET Framework -- String.Format
+description: 
+ms.assetid: c1386557-8372-486b-b98e-6e84286e9255
+ms.date: 06/28/2016
+---
 # .NET Framework—String.Format
 
 The .NET Framework has a counterpart to Win32's FormatMessage—the String.Format method. It allows you to number your variable placeholders so that localizers can rearrange them depending on the syntax of the language into which you are translating, without having to rearrange the variables themselves in the method call. The one difference between FormatMessageand String.Format is that instead of using FormatMessage's percent sign (%) plus some number to designate the placeholder, String.Format encompasses the number within braces "{ }." So the earlier example would be changed from the FormatMessage syntax of:

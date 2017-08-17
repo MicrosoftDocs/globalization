@@ -1,5 +1,9 @@
-
-
+---
+title: Code Pages
+description: A codepage is a list of selected character codes characters represented as code points in a certain order.
+ms.assetid: ecf7501a-f06a-423f-b263-2d472f3ed2a7
+ms.date: 06/27/2016
+---
 # Code Pages
 
 It is recommended to use one of the Unicode encodings, but if you are working with legacy software you may need to continue to use older code pages.

@@ -1,3 +1,9 @@
+---
+title: Sorting and String Comparison in .NET Framework
+description: 
+ms.assetid: 475f7db4-8dd8-4ba1-bab0-43132d9214b2
+ms.date: 01/25/2017
+---
 
 
 # Sorting and String Comparison in .NET Framework

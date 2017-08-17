@@ -1,4 +1,9 @@
-
+---
+title: Identify Globalization Problem
+description: The most serious globalization problem is functionality loss. This problem can surface when a system locale is changed, or when accessing input data.
+ms.assetid: 022e7dc6-3be9-433b-8554-d356bdf751c1
+ms.date: 04/03/2017
+---
 
 # Identify Globalization Problem
 
