@@ -11,7 +11,7 @@ The legal requirements for your software will vary by market and business. If yo
 
 ## **Security**
 
-The [[Security Guidelines for International](https://msdnstage.redmond.corp.microsoft.com/globalization/mt790756) outlines things to consider at the intersection of internationalization and security. For information on security specifically, reference the [Security Developer Center](http://msdn2.microsoft.com/security/).]{}
+The [[Security Guidelines for International](security-guidelines.md) outlines things to consider at the intersection of internationalization and security. For information on security specifically, reference the [Security Developer Center](http://msdn2.microsoft.com/security/).]{}
 
 ## **Privacy and International Law**
 

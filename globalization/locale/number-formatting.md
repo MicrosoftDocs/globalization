@@ -51,7 +51,7 @@ When dealing with numeric values, there are six major items to pay attention to:
 
 Table 1: Digits used for a variety of scripts.
 
-    Note how some scripts have one more digit than Latin or Arabic. This represents the number 10.
+Note how some scripts have one more digit than Latin or Arabic. This represents the number 10.
 
 5.  **Digit grouping.**  
     This refers to the number of digits contained between each separator for all digit groups that appear to the left of the decimal separator. For example, the 3-digit group is used for most cultures, such as for English (United States): 123,456,789.00. However, notice that Hindi uses a 2-digit grouping, except for the 3-digit grouping for denoting hundreds: 12,34,56,789.00
