@@ -2,7 +2,7 @@
 title: Text Input, Output, and Display
 description: Input, output, and display need to deal with the capitalization, fonts, line and word breaking, and complex scripts in the globalized software.
 ms.assetid: 4f5e4604-0058-4f01-9959-685b82bf2442
-ms.date: 4/21/2016
+ms.date: 04/21/2016
 ---
 # Text Input, Output, and Display
 
