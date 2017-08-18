@@ -2,7 +2,7 @@
 
 # Localizability Overview
 
-If you think that after anapplication designed for a single-market has been tested (and possibly launched) it is then an easy matter to generate localized software by just translating a handful of UI-strings . . . think again!
+If you think that after anapplication designed for a single-market has been tested (and possibly launched) it is then an easy matter to generate localized software by just translating a handful of UI-strings…think again!
 
 There are many many complications in most software projects that make it hard to localize:
 
