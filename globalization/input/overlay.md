@@ -26,9 +26,11 @@ Other methods to emphasis text include underlining (or "side line" if the text i
 Emphasis mark are not supported in HTML. Attempting to save documents containing emphasis marks may result in conversion to underline for the alternative "emphasizing" effect, instead.
 
 ![Emphasis marks on horizontal text](https://i-msdn.sec.s-msft.com/dynimg/IC868529.png "Emphasis marks on horizontal text") 
+
 **Figure 2:** Emphasis marks on horizontal text.
 
 ![Emphasis marks on vertical text](https://i-msdn.sec.s-msft.com/dynimg/IC868532.png "Emphasis marks on vertical text") 
+
 **Figure 3:** Emphasis marks on vertical text.
 
 ## Enclosed Characters
@@ -36,4 +38,5 @@ Emphasis mark are not supported in HTML. Attempting to save documents containing
 Enclosed characters are characters surrounded by equilateral shapes such as triangle, square, diamond or circle - commonly used in East Asia to indicate symbols. Enclosed characters are not supported in HTML; attempting to save documents with enclosed characters may result in removing the enclosing effects and leaving the base character.
 
 ![Example of enclosed characters](https://i-msdn.sec.s-msft.com/dynimg/IC868531.jpg "Example of enclosed characters") 
+
 **Figure 4:** Example of enclosed characters
