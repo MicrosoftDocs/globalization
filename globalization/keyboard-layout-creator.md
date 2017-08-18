@@ -1,8 +1,5 @@
 ---
-title: The Microsoft Keyboard Layout Creator
-description: Get started on creating your own virtual keyboard layout. 
-ms.assetid: 7e23901a-1d5b-41b1-981c-20543165ee84
-ms.date: 07/19/2016
+redirect_url: https://www.microsoft.com/en-us/download/details.aspx?id=22339
 ---
 
 ### The Microsoft Keyboard Layout Creator
