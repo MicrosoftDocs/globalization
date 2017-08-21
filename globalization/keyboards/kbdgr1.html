@@ -1,0 +1,792 @@
+<!--TOOLBAR_EXEMPT--><HTML>
+<HEAD>
+<TITLE>German (IBM) Keyboard Layout</TITLE>
+<META name="description" content="German (IBM) Keyboard">
+<META name="ms.locale" content="EN-US">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+var State = 0;
+var Clicked = 0;
+function chooseState(x){
+  switch (State){
+    case 0:
+      document.all.normalstate.style.display='none';
+      break;
+    case 1:
+      document.all.shiftstate.style.display='none';
+      break;
+    case 2:
+      document.all.altgrstate.style.display='none';
+      break;
+    case 3:
+      document.all.shiftaltgrstate.style.display='none';
+      break;
+    case 4:
+      document.all.normalstatecap.style.display='none';
+      break;
+    case 5:
+      document.all.shiftstatecap.style.display='none';
+      break;
+    case 6:
+      document.all.altgrstatecap.style.display='none';
+      break;
+    case 7:
+      document.all.shiftaltgrstatecap.style.display='none';
+      break;
+    default:
+      break;
+  }
+  switch (x){
+    case 0:
+      document.all.normalstate.style.display='';
+      break;
+    case 1:
+      document.all.shiftstate.style.display='';
+      break;
+    case 2:
+      document.all.altgrstate.style.display='';
+      break;
+    case 3:
+      document.all.shiftaltgrstate.style.display='';
+      break;
+    case 4:
+      document.all.normalstatecap.style.display='';
+      break;
+    case 5:
+      document.all.shiftstatecap.style.display='';
+      break;
+    case 6:
+      document.all.altgrstatecap.style.display='';
+      break;
+    case 7:
+      document.all.shiftaltgrstatecap.style.display='';
+      break;
+    default:
+      break;
+  }
+}
+function keyOpen(){
+  document.all.loading.style.display='none';
+  document.all.normalstate.style.display='';
+}
+function MouseOver(x){
+    if ((Clicked!=1) && ((State & x) == 0)){
+    chooseState(State | x);
+  }
+  Clicked=0;
+}
+function MouseOut(x){
+  if ((State & x) == 0){
+    State |= x;
+    chooseState(State^x);
+    State ^= x;
+  }
+}
+function Click(x){
+  chooseState(State^x);
+  State ^= x;
+  if ((State & x) == 0){
+    Clicked=1;
+  }
+  else {
+    Clicked=0;
+  }
+}
+</SCRIPT>
+<LINK REL="stylesheet" TYPE="text/css" HREF="https://www.microsoft.com/resources/msdn/goglobal/keyboards/keyboardstyle.css">
+</HEAD>
+<BODY BGCOLOR="#B0C4DE" onLoad="keyOpen()">
+<div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt solid #000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
+<script type="text/javascript" language="javascript">
+Xoffset=10;    // modify these values to ...
+Yoffset=10;    // change the popup position.
+
+var old,skn,iex=(document.all),yyy=-1000;
+
+var ns4=document.layers
+var ns6=document.getElementById&&!document.all
+var ie4=document.all
+
+if(window.opera) ns6 = true;
+
+if (ns4)
+skn=document.glosso
+else if (ns6)
+skn=document.getElementById("glosso").style
+else if (ie4)
+skn=document.all.glosso.style
+if(ns4)document.captureEvents(Event.MOUSEMOVE);
+else{
+skn.visibility="visible"
+skn.display="none"
+}
+
+document.onmousemove=get_mouse;
+
+function popup(msg){	
+var content=msg;
+yyy=Yoffset;
+ if(ns4){skn.document.write(content);skn.document.close();skn.visibility="visible"}
+ if(ns6){document.getElementById("glosso").innerHTML=content;skn.display=''}
+//if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
+}
+
+         
+    function get_mouse(e){
+       var blont = document.getElementById("glosso").innerHTML;
+        var x=(ns4||ns6)?e.pageX:event.x+document.body.scrollLeft;
+       if((x > 110)&&(x < 220)) {
+       if(blont.length>25) x -= 40;
+	       
+	       x= x - 65;}
+       if(x>220) {
+       if(blont.length>25) {
+	       x = x - 40;}
+       if(blont.length>45) {
+	       x = x - 40;}
+       if(blont.length>65) {
+	       x = x - 30;}
+       	x= x - 110;}
+
+       
+        skn.left=x+Xoffset;
+        
+        var y=(ns4||ns6)?e.pageY:event.y+document.documentElement.scrollTop;
+		if(y > 65){ y = y - 40;
+	} else {
+		y = y + 18;
+}
+        skn.top=y;
+        
+        //alert(content);
+        
+}
+
+function kill(){
+        yyy=-1000;
+        if(ns4){skn.visibility="hidden";}
+        else if (ns6||ie4)
+        skn.display="none"
+}
+
+</script><DIV ID=loading CLASS=loading>
+<br><br><br><h3 align=center>Loading the keyboard layout, please wait ....<h3>
+</DIV>
+<DIV ID=normalstate CLASS=normalstate STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005EK.jpg" ALT="U+005E Circumflex Accent&#10;DeadKey : &#x00E2; &#x00C2; &#x00EA; &#x00CA; &#x00EE; &#x00CE; &#x00F4; &#x00D4; &#x00FB; &#x00DB;"  onmouseover = "popup('U+005E Circumflex Accent<br>DeadKey : &amp;#x00E2; &amp;#x00C2; &amp;#x00EA; &amp;#x00CA; &amp;#x00EE; &amp;#x00CE; &amp;#x00F4; &amp;#x00D4; &amp;#x00FB; &amp;#x00DB;');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0031.jpg" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0032.jpg" ALT="U+0032 Digit Two"  onmouseover = "popup('U+0032 Digit Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0033.jpg" ALT="U+0033 Digit Three"  onmouseover = "popup('U+0033 Digit Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0034.jpg" ALT="U+0034 Digit Four"  onmouseover = "popup('U+0034 Digit Four');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0035.jpg" ALT="U+0035 Digit Five"  onmouseover = "popup('U+0035 Digit Five');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0036.jpg" ALT="U+0036 Digit Six"  onmouseover = "popup('U+0036 Digit Six');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0037.jpg" ALT="U+0037 Digit Seven"  onmouseover = "popup('U+0037 Digit Seven');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0038.jpg" ALT="U+0038 Digit Eight"  onmouseover = "popup('U+0038 Digit Eight');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0039.jpg" ALT="U+0039 Digit Nine"  onmouseover = "popup('U+0039 Digit Nine');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0030.jpg" ALT="U+0030 Digit Zero"  onmouseover = "popup('U+0030 Digit Zero');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00DF.jpg" ALT="U+00DF Latin Small Letter Sharp S"  onmouseover = "popup('U+00DF Latin Small Letter Sharp S');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B4K.jpg" ALT="U+00B4 Acute Accent&#10;DeadKey : &#x00E1; &#x00C1; &#x00E9; &#x00C9; &#x00ED; &#x00CD; &#x00F3; &#x00D3; &#x00FA; &#x00DA; &#x00FD; &#x00DD;"  onmouseover = "popup('U+00B4 Acute Accent<br>DeadKey : &amp;#x00E1; &amp;#x00C1; &amp;#x00E9; &amp;#x00C9; &amp;#x00ED; &amp;#x00CD; &amp;#x00F3; &amp;#x00D3; &amp;#x00FA; &amp;#x00DA; &amp;#x00FD; &amp;#x00DD;');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0071.jpg" ALT="U+0071 Latin Small Letter Q"  onmouseover = "popup('U+0071 Latin Small Letter Q');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0077.jpg" ALT="U+0077 Latin Small Letter W"  onmouseover = "popup('U+0077 Latin Small Letter W');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0065.jpg" ALT="U+0065 Latin Small Letter E"  onmouseover = "popup('U+0065 Latin Small Letter E');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0072.jpg" ALT="U+0072 Latin Small Letter R"  onmouseover = "popup('U+0072 Latin Small Letter R');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0074.jpg" ALT="U+0074 Latin Small Letter T"  onmouseover = "popup('U+0074 Latin Small Letter T');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007A.jpg" ALT="U+007A Latin Small Letter Z"  onmouseover = "popup('U+007A Latin Small Letter Z');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0075.jpg" ALT="U+0075 Latin Small Letter U"  onmouseover = "popup('U+0075 Latin Small Letter U');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0069.jpg" ALT="U+0069 Latin Small Letter I"  onmouseover = "popup('U+0069 Latin Small Letter I');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006F.jpg" ALT="U+006F Latin Small Letter O"  onmouseover = "popup('U+006F Latin Small Letter O');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0070.jpg" ALT="U+0070 Latin Small Letter P"  onmouseover = "popup('U+0070 Latin Small Letter P');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00FC.jpg" ALT="U+00FC Latin Small Letter U With Diaeresis"  onmouseover = "popup('U+00FC Latin Small Letter U With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002B.jpg" ALT="U+002B Plus Sign"  onmouseover = "popup('U+002B Plus Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0061.jpg" ALT="U+0061 Latin Small Letter A"  onmouseover = "popup('U+0061 Latin Small Letter A');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0073.jpg" ALT="U+0073 Latin Small Letter S"  onmouseover = "popup('U+0073 Latin Small Letter S');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0064.jpg" ALT="U+0064 Latin Small Letter D"  onmouseover = "popup('U+0064 Latin Small Letter D');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0066.jpg" ALT="U+0066 Latin Small Letter F"  onmouseover = "popup('U+0066 Latin Small Letter F');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0067.jpg" ALT="U+0067 Latin Small Letter G"  onmouseover = "popup('U+0067 Latin Small Letter G');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0068.jpg" ALT="U+0068 Latin Small Letter H"  onmouseover = "popup('U+0068 Latin Small Letter H');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006A.jpg" ALT="U+006A Latin Small Letter J"  onmouseover = "popup('U+006A Latin Small Letter J');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006B.jpg" ALT="U+006B Latin Small Letter K"  onmouseover = "popup('U+006B Latin Small Letter K');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006C.jpg" ALT="U+006C Latin Small Letter L"  onmouseover = "popup('U+006C Latin Small Letter L');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00F6.jpg" ALT="U+00F6 Latin Small Letter O With Diaeresis"  onmouseover = "popup('U+00F6 Latin Small Letter O With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00E4.jpg" ALT="U+00E4 Latin Small Letter A With Diaeresis"  onmouseover = "popup('U+00E4 Latin Small Letter A With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0023.jpg" ALT="U+0023 Number Sign"  onmouseover = "popup('U+0023 Number Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003C.jpg" ALT="U+003C Less-Than Sign"  onmouseover = "popup('U+003C Less-Than Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0079.jpg" ALT="U+0079 Latin Small Letter Y"  onmouseover = "popup('U+0079 Latin Small Letter Y');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0078.jpg" ALT="U+0078 Latin Small Letter X"  onmouseover = "popup('U+0078 Latin Small Letter X');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0063.jpg" ALT="U+0063 Latin Small Letter C"  onmouseover = "popup('U+0063 Latin Small Letter C');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0076.jpg" ALT="U+0076 Latin Small Letter V"  onmouseover = "popup('U+0076 Latin Small Letter V');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0062.jpg" ALT="U+0062 Latin Small Letter B"  onmouseover = "popup('U+0062 Latin Small Letter B');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006E.jpg" ALT="U+006E Latin Small Letter N"  onmouseover = "popup('U+006E Latin Small Letter N');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006D.jpg" ALT="U+006D Latin Small Letter M"  onmouseover = "popup('U+006D Latin Small Letter M');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002C.jpg" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002E.jpg" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002D.jpg" ALT="U+002D Hyphen-Minus"  onmouseover = "popup('U+002D Hyphen-Minus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=shiftstate CLASS=shiftstate STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B0.jpg" ALT="U+00B0 Degree Sign"  onmouseover = "popup('U+00B0 Degree Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0021.jpg" ALT="U+0021 Exclamation Mark"  onmouseover = "popup('U+0021 Exclamation Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0022.jpg" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00A7.jpg" ALT="U+00A7 Section Sign"  onmouseover = "popup('U+00A7 Section Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0024.jpg" ALT="U+0024 Dollar Sign"  onmouseover = "popup('U+0024 Dollar Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0025.jpg" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0026.jpg" ALT="U+0026 Ampersand"  onmouseover = "popup('U+0026 Ampersand');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002F.jpg" ALT="U+002F Solidus"  onmouseover = "popup('U+002F Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0028.jpg" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0029.jpg" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003D.jpg" ALT="U+003D Equals Sign"  onmouseover = "popup('U+003D Equals Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003F.jpg" ALT="U+003F Question Mark"  onmouseover = "popup('U+003F Question Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0060K.jpg" ALT="U+0060 Grave Accent&#10;DeadKey : &#x00E0; &#x00C0; &#x00E8; &#x00C8; &#x00EC; &#x00CC; &#x00F2; &#x00D2; &#x00F9; &#x00D9;"  onmouseover = "popup('U+0060 Grave Accent<br>DeadKey : &amp;#x00E0; &amp;#x00C0; &amp;#x00E8; &amp;#x00C8; &amp;#x00EC; &amp;#x00CC; &amp;#x00F2; &amp;#x00D2; &amp;#x00F9; &amp;#x00D9;');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0051.jpg" ALT="U+0051 Latin Capital Letter Q"  onmouseover = "popup('U+0051 Latin Capital Letter Q');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0057.jpg" ALT="U+0057 Latin Capital Letter W"  onmouseover = "popup('U+0057 Latin Capital Letter W');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0045.jpg" ALT="U+0045 Latin Capital Letter E"  onmouseover = "popup('U+0045 Latin Capital Letter E');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0052.jpg" ALT="U+0052 Latin Capital Letter R"  onmouseover = "popup('U+0052 Latin Capital Letter R');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0054.jpg" ALT="U+0054 Latin Capital Letter T"  onmouseover = "popup('U+0054 Latin Capital Letter T');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005A.jpg" ALT="U+005A Latin Capital Letter Z"  onmouseover = "popup('U+005A Latin Capital Letter Z');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0055.jpg" ALT="U+0055 Latin Capital Letter U"  onmouseover = "popup('U+0055 Latin Capital Letter U');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0049.jpg" ALT="U+0049 Latin Capital Letter I"  onmouseover = "popup('U+0049 Latin Capital Letter I');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004F.jpg" ALT="U+004F Latin Capital Letter O"  onmouseover = "popup('U+004F Latin Capital Letter O');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0050.jpg" ALT="U+0050 Latin Capital Letter P"  onmouseover = "popup('U+0050 Latin Capital Letter P');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00DC.jpg" ALT="U+00DC Latin Capital Letter U With Diaeresis"  onmouseover = "popup('U+00DC Latin Capital Letter U With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002A.jpg" ALT="U+002A Asterisk"  onmouseover = "popup('U+002A Asterisk');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0041.jpg" ALT="U+0041 Latin Capital Letter A"  onmouseover = "popup('U+0041 Latin Capital Letter A');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0053.jpg" ALT="U+0053 Latin Capital Letter S"  onmouseover = "popup('U+0053 Latin Capital Letter S');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0044.jpg" ALT="U+0044 Latin Capital Letter D"  onmouseover = "popup('U+0044 Latin Capital Letter D');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0046.jpg" ALT="U+0046 Latin Capital Letter F"  onmouseover = "popup('U+0046 Latin Capital Letter F');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0047.jpg" ALT="U+0047 Latin Capital Letter G"  onmouseover = "popup('U+0047 Latin Capital Letter G');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0048.jpg" ALT="U+0048 Latin Capital Letter H"  onmouseover = "popup('U+0048 Latin Capital Letter H');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004A.jpg" ALT="U+004A Latin Capital Letter J"  onmouseover = "popup('U+004A Latin Capital Letter J');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004B.jpg" ALT="U+004B Latin Capital Letter K"  onmouseover = "popup('U+004B Latin Capital Letter K');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004C.jpg" ALT="U+004C Latin Capital Letter L"  onmouseover = "popup('U+004C Latin Capital Letter L');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00D6.jpg" ALT="U+00D6 Latin Capital Letter O With Diaeresis"  onmouseover = "popup('U+00D6 Latin Capital Letter O With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00C4.jpg" ALT="U+00C4 Latin Capital Letter A With Diaeresis"  onmouseover = "popup('U+00C4 Latin Capital Letter A With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0027.jpg" ALT="U+0027 Apostrophe"  onmouseover = "popup('U+0027 Apostrophe');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003E.jpg" ALT="U+003E Greater-Than Sign"  onmouseover = "popup('U+003E Greater-Than Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0059.jpg" ALT="U+0059 Latin Capital Letter Y"  onmouseover = "popup('U+0059 Latin Capital Letter Y');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0058.jpg" ALT="U+0058 Latin Capital Letter X"  onmouseover = "popup('U+0058 Latin Capital Letter X');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0043.jpg" ALT="U+0043 Latin Capital Letter C"  onmouseover = "popup('U+0043 Latin Capital Letter C');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0056.jpg" ALT="U+0056 Latin Capital Letter V"  onmouseover = "popup('U+0056 Latin Capital Letter V');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0042.jpg" ALT="U+0042 Latin Capital Letter B"  onmouseover = "popup('U+0042 Latin Capital Letter B');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004E.jpg" ALT="U+004E Latin Capital Letter N"  onmouseover = "popup('U+004E Latin Capital Letter N');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004D.jpg" ALT="U+004D Latin Capital Letter M"  onmouseover = "popup('U+004D Latin Capital Letter M');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003B.jpg" ALT="U+003B Semicolon"  onmouseover = "popup('U+003B Semicolon');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003A.jpg" ALT="U+003A Colon"  onmouseover = "popup('U+003A Colon');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005F.jpg" ALT="U+005F Low Line"  onmouseover = "popup('U+005F Low Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=altgrstate CLASS=altgrstate STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B2.jpg" ALT="U+00B2 Superscript Two"  onmouseover = "popup('U+00B2 Superscript Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B3.jpg" ALT="U+00B3 Superscript Three"  onmouseover = "popup('U+00B3 Superscript Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007B.jpg" ALT="U+007B Left Curly Bracket"  onmouseover = "popup('U+007B Left Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005B.jpg" ALT="U+005B Left Square Bracket"  onmouseover = "popup('U+005B Left Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005D.jpg" ALT="U+005D Right Square Bracket"  onmouseover = "popup('U+005D Right Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007D.jpg" ALT="U+007D Right Curly Bracket"  onmouseover = "popup('U+007D Right Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005C.jpg" ALT="U+005C Reverse Solidus"  onmouseover = "popup('U+005C Reverse Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0040.jpg" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/20AC.jpg" ALT="U+20AC Euro Sign"  onmouseover = "popup('U+20AC Euro Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007E.jpg" ALT="U+007E Tilde"  onmouseover = "popup('U+007E Tilde');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007C.jpg" ALT="U+007C Vertical Line"  onmouseover = "popup('U+007C Vertical Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B5.jpg" ALT="U+00B5 Micro Sign"  onmouseover = "popup('U+00B5 Micro Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=shiftaltgrstate CLASS=shiftaltgrstate STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B2.jpg" ALT="U+00B2 Superscript Two"  onmouseover = "popup('U+00B2 Superscript Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B3.jpg" ALT="U+00B3 Superscript Three"  onmouseover = "popup('U+00B3 Superscript Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007B.jpg" ALT="U+007B Left Curly Bracket"  onmouseover = "popup('U+007B Left Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005B.jpg" ALT="U+005B Left Square Bracket"  onmouseover = "popup('U+005B Left Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005D.jpg" ALT="U+005D Right Square Bracket"  onmouseover = "popup('U+005D Right Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007D.jpg" ALT="U+007D Right Curly Bracket"  onmouseover = "popup('U+007D Right Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005C.jpg" ALT="U+005C Reverse Solidus"  onmouseover = "popup('U+005C Reverse Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0040.jpg" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007E.jpg" ALT="U+007E Tilde"  onmouseover = "popup('U+007E Tilde');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007C.jpg" ALT="U+007C Vertical Line"  onmouseover = "popup('U+007C Vertical Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B5.jpg" ALT="U+00B5 Micro Sign"  onmouseover = "popup('U+00B5 Micro Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=normalstatecap CLASS=normalstatecap STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005EK.jpg" ALT="U+005E Circumflex Accent&#10;DeadKey : &#x00E2; &#x00C2; &#x00EA; &#x00CA; &#x00EE; &#x00CE; &#x00F4; &#x00D4; &#x00FB; &#x00DB;"  onmouseover = "popup('U+005E Circumflex Accent<br>DeadKey : &amp;#x00E2; &amp;#x00C2; &amp;#x00EA; &amp;#x00CA; &amp;#x00EE; &amp;#x00CE; &amp;#x00F4; &amp;#x00D4; &amp;#x00FB; &amp;#x00DB;');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0031.jpg" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0032.jpg" ALT="U+0032 Digit Two"  onmouseover = "popup('U+0032 Digit Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0033.jpg" ALT="U+0033 Digit Three"  onmouseover = "popup('U+0033 Digit Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0034.jpg" ALT="U+0034 Digit Four"  onmouseover = "popup('U+0034 Digit Four');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0035.jpg" ALT="U+0035 Digit Five"  onmouseover = "popup('U+0035 Digit Five');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0036.jpg" ALT="U+0036 Digit Six"  onmouseover = "popup('U+0036 Digit Six');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0037.jpg" ALT="U+0037 Digit Seven"  onmouseover = "popup('U+0037 Digit Seven');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0038.jpg" ALT="U+0038 Digit Eight"  onmouseover = "popup('U+0038 Digit Eight');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0039.jpg" ALT="U+0039 Digit Nine"  onmouseover = "popup('U+0039 Digit Nine');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0030.jpg" ALT="U+0030 Digit Zero"  onmouseover = "popup('U+0030 Digit Zero');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00DF.jpg" ALT="U+00DF Latin Small Letter Sharp S"  onmouseover = "popup('U+00DF Latin Small Letter Sharp S');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B4K.jpg" ALT="U+00B4 Acute Accent&#10;DeadKey : &#x00E1; &#x00C1; &#x00E9; &#x00C9; &#x00ED; &#x00CD; &#x00F3; &#x00D3; &#x00FA; &#x00DA; &#x00FD; &#x00DD;"  onmouseover = "popup('U+00B4 Acute Accent<br>DeadKey : &amp;#x00E1; &amp;#x00C1; &amp;#x00E9; &amp;#x00C9; &amp;#x00ED; &amp;#x00CD; &amp;#x00F3; &amp;#x00D3; &amp;#x00FA; &amp;#x00DA; &amp;#x00FD; &amp;#x00DD;');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0051.jpg" ALT="U+0051 Latin Capital Letter Q"  onmouseover = "popup('U+0051 Latin Capital Letter Q');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0057.jpg" ALT="U+0057 Latin Capital Letter W"  onmouseover = "popup('U+0057 Latin Capital Letter W');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0045.jpg" ALT="U+0045 Latin Capital Letter E"  onmouseover = "popup('U+0045 Latin Capital Letter E');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0052.jpg" ALT="U+0052 Latin Capital Letter R"  onmouseover = "popup('U+0052 Latin Capital Letter R');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0054.jpg" ALT="U+0054 Latin Capital Letter T"  onmouseover = "popup('U+0054 Latin Capital Letter T');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005A.jpg" ALT="U+005A Latin Capital Letter Z"  onmouseover = "popup('U+005A Latin Capital Letter Z');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0055.jpg" ALT="U+0055 Latin Capital Letter U"  onmouseover = "popup('U+0055 Latin Capital Letter U');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0049.jpg" ALT="U+0049 Latin Capital Letter I"  onmouseover = "popup('U+0049 Latin Capital Letter I');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004F.jpg" ALT="U+004F Latin Capital Letter O"  onmouseover = "popup('U+004F Latin Capital Letter O');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0050.jpg" ALT="U+0050 Latin Capital Letter P"  onmouseover = "popup('U+0050 Latin Capital Letter P');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00DC.jpg" ALT="U+00DC Latin Capital Letter U With Diaeresis"  onmouseover = "popup('U+00DC Latin Capital Letter U With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002B.jpg" ALT="U+002B Plus Sign"  onmouseover = "popup('U+002B Plus Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0041.jpg" ALT="U+0041 Latin Capital Letter A"  onmouseover = "popup('U+0041 Latin Capital Letter A');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0053.jpg" ALT="U+0053 Latin Capital Letter S"  onmouseover = "popup('U+0053 Latin Capital Letter S');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0044.jpg" ALT="U+0044 Latin Capital Letter D"  onmouseover = "popup('U+0044 Latin Capital Letter D');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0046.jpg" ALT="U+0046 Latin Capital Letter F"  onmouseover = "popup('U+0046 Latin Capital Letter F');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0047.jpg" ALT="U+0047 Latin Capital Letter G"  onmouseover = "popup('U+0047 Latin Capital Letter G');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0048.jpg" ALT="U+0048 Latin Capital Letter H"  onmouseover = "popup('U+0048 Latin Capital Letter H');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004A.jpg" ALT="U+004A Latin Capital Letter J"  onmouseover = "popup('U+004A Latin Capital Letter J');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004B.jpg" ALT="U+004B Latin Capital Letter K"  onmouseover = "popup('U+004B Latin Capital Letter K');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004C.jpg" ALT="U+004C Latin Capital Letter L"  onmouseover = "popup('U+004C Latin Capital Letter L');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00D6.jpg" ALT="U+00D6 Latin Capital Letter O With Diaeresis"  onmouseover = "popup('U+00D6 Latin Capital Letter O With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00C4.jpg" ALT="U+00C4 Latin Capital Letter A With Diaeresis"  onmouseover = "popup('U+00C4 Latin Capital Letter A With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0023.jpg" ALT="U+0023 Number Sign"  onmouseover = "popup('U+0023 Number Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003C.jpg" ALT="U+003C Less-Than Sign"  onmouseover = "popup('U+003C Less-Than Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0059.jpg" ALT="U+0059 Latin Capital Letter Y"  onmouseover = "popup('U+0059 Latin Capital Letter Y');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0058.jpg" ALT="U+0058 Latin Capital Letter X"  onmouseover = "popup('U+0058 Latin Capital Letter X');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0043.jpg" ALT="U+0043 Latin Capital Letter C"  onmouseover = "popup('U+0043 Latin Capital Letter C');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0056.jpg" ALT="U+0056 Latin Capital Letter V"  onmouseover = "popup('U+0056 Latin Capital Letter V');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0042.jpg" ALT="U+0042 Latin Capital Letter B"  onmouseover = "popup('U+0042 Latin Capital Letter B');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004E.jpg" ALT="U+004E Latin Capital Letter N"  onmouseover = "popup('U+004E Latin Capital Letter N');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/004D.jpg" ALT="U+004D Latin Capital Letter M"  onmouseover = "popup('U+004D Latin Capital Letter M');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002C.jpg" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002E.jpg" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002D.jpg" ALT="U+002D Hyphen-Minus"  onmouseover = "popup('U+002D Hyphen-Minus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=shiftstatecap CLASS=shiftstatecap STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B0.jpg" ALT="U+00B0 Degree Sign"  onmouseover = "popup('U+00B0 Degree Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0021.jpg" ALT="U+0021 Exclamation Mark"  onmouseover = "popup('U+0021 Exclamation Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0022.jpg" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00A7.jpg" ALT="U+00A7 Section Sign"  onmouseover = "popup('U+00A7 Section Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0024.jpg" ALT="U+0024 Dollar Sign"  onmouseover = "popup('U+0024 Dollar Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0025.jpg" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0026.jpg" ALT="U+0026 Ampersand"  onmouseover = "popup('U+0026 Ampersand');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002F.jpg" ALT="U+002F Solidus"  onmouseover = "popup('U+002F Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0028.jpg" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0029.jpg" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003D.jpg" ALT="U+003D Equals Sign"  onmouseover = "popup('U+003D Equals Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003F.jpg" ALT="U+003F Question Mark"  onmouseover = "popup('U+003F Question Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0060K.jpg" ALT="U+0060 Grave Accent&#10;DeadKey : &#x00E0; &#x00C0; &#x00E8; &#x00C8; &#x00EC; &#x00CC; &#x00F2; &#x00D2; &#x00F9; &#x00D9;"  onmouseover = "popup('U+0060 Grave Accent<br>DeadKey : &amp;#x00E0; &amp;#x00C0; &amp;#x00E8; &amp;#x00C8; &amp;#x00EC; &amp;#x00CC; &amp;#x00F2; &amp;#x00D2; &amp;#x00F9; &amp;#x00D9;');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0071.jpg" ALT="U+0071 Latin Small Letter Q"  onmouseover = "popup('U+0071 Latin Small Letter Q');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0077.jpg" ALT="U+0077 Latin Small Letter W"  onmouseover = "popup('U+0077 Latin Small Letter W');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0065.jpg" ALT="U+0065 Latin Small Letter E"  onmouseover = "popup('U+0065 Latin Small Letter E');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0072.jpg" ALT="U+0072 Latin Small Letter R"  onmouseover = "popup('U+0072 Latin Small Letter R');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0074.jpg" ALT="U+0074 Latin Small Letter T"  onmouseover = "popup('U+0074 Latin Small Letter T');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007A.jpg" ALT="U+007A Latin Small Letter Z"  onmouseover = "popup('U+007A Latin Small Letter Z');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0075.jpg" ALT="U+0075 Latin Small Letter U"  onmouseover = "popup('U+0075 Latin Small Letter U');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0069.jpg" ALT="U+0069 Latin Small Letter I"  onmouseover = "popup('U+0069 Latin Small Letter I');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006F.jpg" ALT="U+006F Latin Small Letter O"  onmouseover = "popup('U+006F Latin Small Letter O');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0070.jpg" ALT="U+0070 Latin Small Letter P"  onmouseover = "popup('U+0070 Latin Small Letter P');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00FC.jpg" ALT="U+00FC Latin Small Letter U With Diaeresis"  onmouseover = "popup('U+00FC Latin Small Letter U With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002A.jpg" ALT="U+002A Asterisk"  onmouseover = "popup('U+002A Asterisk');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0061.jpg" ALT="U+0061 Latin Small Letter A"  onmouseover = "popup('U+0061 Latin Small Letter A');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0073.jpg" ALT="U+0073 Latin Small Letter S"  onmouseover = "popup('U+0073 Latin Small Letter S');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0064.jpg" ALT="U+0064 Latin Small Letter D"  onmouseover = "popup('U+0064 Latin Small Letter D');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0066.jpg" ALT="U+0066 Latin Small Letter F"  onmouseover = "popup('U+0066 Latin Small Letter F');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0067.jpg" ALT="U+0067 Latin Small Letter G"  onmouseover = "popup('U+0067 Latin Small Letter G');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0068.jpg" ALT="U+0068 Latin Small Letter H"  onmouseover = "popup('U+0068 Latin Small Letter H');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006A.jpg" ALT="U+006A Latin Small Letter J"  onmouseover = "popup('U+006A Latin Small Letter J');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006B.jpg" ALT="U+006B Latin Small Letter K"  onmouseover = "popup('U+006B Latin Small Letter K');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006C.jpg" ALT="U+006C Latin Small Letter L"  onmouseover = "popup('U+006C Latin Small Letter L');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00F6.jpg" ALT="U+00F6 Latin Small Letter O With Diaeresis"  onmouseover = "popup('U+00F6 Latin Small Letter O With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00E4.jpg" ALT="U+00E4 Latin Small Letter A With Diaeresis"  onmouseover = "popup('U+00E4 Latin Small Letter A With Diaeresis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0027.jpg" ALT="U+0027 Apostrophe"  onmouseover = "popup('U+0027 Apostrophe');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003E.jpg" ALT="U+003E Greater-Than Sign"  onmouseover = "popup('U+003E Greater-Than Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0079.jpg" ALT="U+0079 Latin Small Letter Y"  onmouseover = "popup('U+0079 Latin Small Letter Y');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0078.jpg" ALT="U+0078 Latin Small Letter X"  onmouseover = "popup('U+0078 Latin Small Letter X');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0063.jpg" ALT="U+0063 Latin Small Letter C"  onmouseover = "popup('U+0063 Latin Small Letter C');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0076.jpg" ALT="U+0076 Latin Small Letter V"  onmouseover = "popup('U+0076 Latin Small Letter V');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0062.jpg" ALT="U+0062 Latin Small Letter B"  onmouseover = "popup('U+0062 Latin Small Letter B');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006E.jpg" ALT="U+006E Latin Small Letter N"  onmouseover = "popup('U+006E Latin Small Letter N');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/006D.jpg" ALT="U+006D Latin Small Letter M"  onmouseover = "popup('U+006D Latin Small Letter M');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003B.jpg" ALT="U+003B Semicolon"  onmouseover = "popup('U+003B Semicolon');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003A.jpg" ALT="U+003A Colon"  onmouseover = "popup('U+003A Colon');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005F.jpg" ALT="U+005F Low Line"  onmouseover = "popup('U+005F Low Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=altgrstatecap CLASS=altgrstatecap STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B2.jpg" ALT="U+00B2 Superscript Two"  onmouseover = "popup('U+00B2 Superscript Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B3.jpg" ALT="U+00B3 Superscript Three"  onmouseover = "popup('U+00B3 Superscript Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007B.jpg" ALT="U+007B Left Curly Bracket"  onmouseover = "popup('U+007B Left Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005B.jpg" ALT="U+005B Left Square Bracket"  onmouseover = "popup('U+005B Left Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005D.jpg" ALT="U+005D Right Square Bracket"  onmouseover = "popup('U+005D Right Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007D.jpg" ALT="U+007D Right Curly Bracket"  onmouseover = "popup('U+007D Right Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005C.jpg" ALT="U+005C Reverse Solidus"  onmouseover = "popup('U+005C Reverse Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0040.jpg" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/20AC.jpg" ALT="U+20AC Euro Sign"  onmouseover = "popup('U+20AC Euro Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007E.jpg" ALT="U+007E Tilde"  onmouseover = "popup('U+007E Tilde');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007C.jpg" ALT="U+007C Vertical Line"  onmouseover = "popup('U+007C Vertical Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B5.jpg" ALT="U+00B5 Micro Sign"  onmouseover = "popup('U+00B5 Micro Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=shiftaltgrstatecap CLASS=shiftaltgrstatecap STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B2.jpg" ALT="U+00B2 Superscript Two"  onmouseover = "popup('U+00B2 Superscript Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B3.jpg" ALT="U+00B3 Superscript Three"  onmouseover = "popup('U+00B3 Superscript Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007B.jpg" ALT="U+007B Left Curly Bracket"  onmouseover = "popup('U+007B Left Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005B.jpg" ALT="U+005B Left Square Bracket"  onmouseover = "popup('U+005B Left Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005D.jpg" ALT="U+005D Right Square Bracket"  onmouseover = "popup('U+005D Right Square Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007D.jpg" ALT="U+007D Right Curly Bracket"  onmouseover = "popup('U+007D Right Curly Bracket');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005C.jpg" ALT="U+005C Reverse Solidus"  onmouseover = "popup('U+005C Reverse Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0040.jpg" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007E.jpg" ALT="U+007E Tilde"  onmouseover = "popup('U+007E Tilde');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/EnterX.jpg" WIDTH=30 HEIGHT=42</TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/None.jpg" WIDTH=20 HEIGHT=0></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/007C.jpg" ALT="U+007C Vertical Line"  onmouseover = "popup('U+007C Vertical Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/00B5.jpg" ALT="U+00B5 Micro Sign"  onmouseover = "popup('U+00B5 Micro Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0000.jpg" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+</BODY>
+</HTML>
