@@ -6,12 +6,13 @@ ms.date: 04/26/2017
 ---
 # Mirroring
 
- For right-to-left (RTL) languages, not only does the text alignment and text reading order go from right to left; UI elements should follow this natural direction of right to left. By default, edit controls inserted into a right-to-left document should inherit right-to-left behavior. Control handles and pull-down buttons should be mirrored on right-to-left documents.
+For right-to-left (RTL) languages, not only does the text alignment and text reading order go from right to left; UI elements should follow this natural direction of right to left. By default, edit controls inserted into a right-to-left document should inherit right-to-left behavior. Control handles and pull-down buttons should be mirrored on right-to-left documents.
 
 In localized applications for right-to-left languages, menus and submenus are mirrored and appear on the right side of the application. The figure below shows the Outlook UI for Arabic, which is mostly a mirror of the LTR UI. For example, the menu starts from the right side of the screen instead of from the left.
 
 ![How the User Interface for Arabic compares to English language](/media/hubs/globalization/IC868515.jpg "How the User Interface for Arabic compares to English language")
-[**How the User Interface for Arabic compares to English language.** ]{}
+
+**How the User Interface for Arabic compares to English language.**
 
 ### Exceptions to RTL Reading Order and Alignment
 

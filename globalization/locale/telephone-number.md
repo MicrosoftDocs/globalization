@@ -18,7 +18,7 @@ Formats for telephone numbers for selected countries:
 | Singapore   | 123 4567   |
 | Thailand    | \(01) 234-5678 or<br />(012) 34-5678 |
 | United Kingdom | 0123 456 7890 or<br />01234 567890 |
-| United States | [(123) 456 7890[![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcklEQVR4XpXTPUvDUBTH4aR2c2hBQXGpTiIORhBcBOvgYKf0Awi+4Ggr1MVPIIrYdnEpShddHIyLi6AVXVxsRRDRwbi4KNgu4lCIv8i/i6QRDzycy+09555LqOl5nhEUptPoJe1iDHU8oYlrlDw79m4QEbSLPexzsIc8hDRm8YBjLpj4q8EgxQdab+MNd4ghhQ2adIc1+ORAFEnWWfTDRp7GDfImlsIavKALLuqoqMGUCs4wHtagiQ5uc8kDyCOBKlP1k78QNTOZnMXCQRxWsbjl6iuskV41SQG2Gj9rikvcR1WcgKFDBa1LOEUK56hqv8BUFV3SGWkVS9JQ6Dsv4wQ1DKMPORUvkm78BhdQMI1CTa5I0yrcwSFqFD+SZ7DQesIkCG5S/JpkHYERQRmuNsrZ7Grc+Ef8/Bcoslkfae8Wc7CUHZ++TuAEBj86pHntjaDKXllPy6PW/gkKFaThwp/K87N8hDcQTTKKFTioSxqB8Q2BNX5JtAljwgAAAABJRU5ErkJggg== "Call: (123) 456 7890")](# "Call: (123) 456 7890")] |
+| United States | (123) 456 7890 |
 
 Notice that there are different separators such as hyphens (-), periods (.), and spaces, different groupings (two, three, four, five, and six digits per group), and different numbers of total digits used (7-11). Also, the examples just given didn't include country codes, which could be anything from one to three digits.
 

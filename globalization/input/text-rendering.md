@@ -14,9 +14,9 @@ Text rendering is the process of converting a string to a format that is readabl
 
 ## Capitalization, Uppercasing, and Lowercasing
 
-When creating a locale–aware application, you'll need to consider handling of linguistic nuances. These nuances might seem trivial, but could have a large impact on application design and functionality. For example, Windows allows you to convert characters into either uppercase or lowercase equivalents. Some applications use this feature to automatically convert the first letter of every sentence into uppercase or to assume that certain types of words should always be capitalized. In Russian, however, names of the days of the week are never capitalized–capitalizing the word for "Wednesday" changes the meaning to "environment," and capitalizing the word for "Sunday" changes the meaning to "resurrection".
+When creating a locale-aware application, you'll need to consider handling of linguistic nuances. These nuances might seem trivial, but could have a large impact on application design and functionality. For example, Windows allows you to convert characters into either uppercase or lowercase equivalents. Some applications use this feature to automatically convert the first letter of every sentence into uppercase or to assume that certain types of words should always be capitalized. In Russian, however, names of the days of the week are never capitalized–capitalizing the word for "Wednesday" changes the meaning to "environment," and capitalizing the word for "Sunday" changes the meaning to "resurrection".
 
-In the past, as localized products were developed, language–sensitive issues–such as casing–were sometimes handled with what were thought of as well–designed, intelligent algorithms. For example, an uppercasing macro that relies on the code–point numbers of ASCII characters and the linear relationship between uppercase characters (A = 41) and lowercase characters (a = 61) can be written as:
+In the past, as localized products were developed, language-sensitive issues—such as casing—were sometimes handled with what were thought of as well-designed, intelligent algorithms. For example, an uppercasing macro that relies on the code–point numbers of ASCII characters and the linear relationship between uppercase characters (A = 41) and lowercase characters (a = 61) can be written as:
 
 ```C++
 #define ToUpper(ch) ((ch)&lt;='Z' ? (ch) : (ch)+'A' - 'a')
@@ -24,23 +24,22 @@ In the past, as localized products were developed, language–sensitive issues�
 
 You can see the problems this English–centric approach presented when representing uppercasing in non–Latin scripts or languages with accented characters where, for example, character mapping doesn't follow the assumed relationship between lowercase and uppercase characters. There are several other reasons why algorithmic solutions for case-folding does not cover all occurrences.
 
-First, some languages do not have a one–to–one mapping between their uppercase and lowercase characters. For instance, the uppercase equivalent of the German [ß] is "SS." Second, some characters have different mappings depending upon the language in which they are used. Most non–Latin scripts do not even use the concept of lowercase and uppercase. Where are the capital letters in the strings below?
+First, some languages do not have a one–to–one mapping between their uppercase and lowercase characters. For instance, the uppercase equivalent of the German ß is "SS." Second, some characters have different mappings depending upon the language in which they are used. Most non–Latin scripts do not even use the concept of lowercase and uppercase. Where are the capital letters in the strings below?
 
--   [पूंजी पत्र कहाँ हैं?] \(Devanagari script/Hindi)
--   [大寫字母在哪裡？] \(Traditional Chinese)
--   [மூலதன கடிதங்கள் எங்கே?] \(Tamil)
--   (Arabic) [أين هي الحروف الكبيرة؟ ]
--   [ບ່ອນທີ່ຈົດຫມາຍນະຄອນຫຼວງມີຫຍັງແດ່?] \(Lao)
--   (Hebrew) [היכן הם אותיות רישיות?]
+-   पूंजी पत्र कहाँ हैं? \(Devanagari script/Hindi)
+-   大寫字母在哪裡？ \(Traditional Chinese)
+-   மூலதன கடிதங்கள் எங்கே? \(Tamil)
+-   (Arabic) أين هي الحروف الكبيرة؟ 
+-   ບ່ອນທີ່ຈົດຫມາຍນະຄອນຫຼວງມີຫຍັງແດ່? \(Lao)
+-   (Hebrew) היכן הם אותיות רישיות?
+-   대문자는 어디 있습니까? \(Korean)
+-   ಅಕ್ಷರಗಳಲ್ಲಿ ಎಲ್ಲಿ? \(Kannada)
+-   ตัวอักษรตัวใหญ่อยู่ที่ไหน \(Thai)
+-   কোথায় বড় হাতের অক্ষরে? \(Bangla)
+-   სად არიან ასოებით? \(Georgian)
+-   જ્યાં મૂડી અક્ષરો છે? \(Gujarati)
 
--   [대문자는 어디 있습니까?] \(Korean)
--   [ಅಕ್ಷರಗಳಲ್ಲಿ ಎಲ್ಲಿ?] \(Kannada)
--   [ตัวอักษรตัวใหญ่อยู่ที่ไหน] \(Thai)
--   [কোথায় বড় হাতের অক্ষরে?] \(Bangla)
--   [სად არიან ასოებით?] \(Georgian)
--   [જ્યાં મૂડી અક્ષરો છે?] \(Gujarati)
-
-Developers are better served by using an API (e.g., [ToUpper()](https://msdn.microsoft.com/en-us/library/24kc78ka(v=vs.110).aspx)) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-[İ] problem](https://msdn.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase " [i]" maps to a dotless uppercase letter: " [I]." However, in Turkish the lowercase " [i]" maps to a dotted uppercase letter: " [İ]."
+Developers are better served by using an API (e.g., [ToUpper()](https://msdn.microsoft.com/en-us/library/24kc78ka(v=vs.110).aspx)) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-İ] problem](https://msdn.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase "i" maps to a dotless uppercase letter: "I." However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "İ."
 
 ## Text Shaping
 
@@ -59,7 +58,7 @@ A typical example is the ligature of Arabic Lam and Alef as shown below (reading
 ل + ا = لا ← ALT + 65275
 
 | **Individual Characters** |  **Without Ligatures** |  **With Ligatures** |
-|---------------------------|------------------------|---------------------|
+|----------------------|-------------------|-----------------|
 | ل م ح                     |  لمح                   |  لمحـ               |
 
 ### Contextual Shaping
@@ -68,7 +67,7 @@ In some scripts the glyph displayed depends on the surrounding characters. A sin
 
 In Greek, the sigma character changes depending on whether the letter is at the beginning or the end of the word, as in the following example.
 
-[σ] [οφό] [ς]
+σ οφό ς
 
 ### Character Reordering
 
@@ -103,6 +102,7 @@ Latin characters have a left-to-right (LTR) Unicode directional property and hen
 For these scripts, the logical order (the order in which the user enters text with a sequence of virtual-key inputs) and the visual order (the order in which characters are represented to the user) are different in most cases.
 
 ![Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters](/media/hubs/globalization/IC868519.jpg "Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters")
+
 **Figure**: Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters
 
 ### Neutral Characters
@@ -164,11 +164,13 @@ Two other invisible but non-embedding directional control characters provided by
 All these text rendering issues can have implications for cursor movement. Unlike Latin script, which requires forward and backward movement of the caret only, some scripts demand that characters be displayed above, below, or to the left of previous characters. In Thai, for example, if the cursor is positioned after a base consonant, vowel, and tone mark, the cursor should skip back over all three characters when the user types the back arrow.
 
 ![Cursor positioning](/media/hubs/globalization/IC868521.png "Cursor positioning")
+
 **Figure**: Cursor positioning
 
 For bidirectional scripts, the direction of the cursor movement may change depending on the direction of the text involved. For example, when using the arrow keys to move from right to left through Arabic and then English text in the same sentence, the insertion point moves in a right-to-left manner through the Arabic text and then continues at the rightmost character in the English word and progresses in a right-to-left manner.
 
 ![Pressing the right-arrow key through Latin and Hebrew text](/media/hubs/globalization/IC868520.png "Pressing the right-arrow key through Latin and Hebrew text")
+
 **Figure**: Pressing the right-arrow key through Latin and Hebrew text.
 
 Similarly, backspace, highlighting, and double-clicking should work correctly for the text properties.

@@ -16,9 +16,9 @@ It is important to ensure all our features are World Ready. What does it take? A
 -   Unicode enabled, including Surrogate Pairs
 -   Local and Culturally Aware
 -   Support International Standards as appropriate
--   Support different Input Methods , including IMEs
--   Complex Script aware , including UI mirroring
--   Font independency (font may be customized by language , support font fallback , etc.)
+-   Support different Input Methods, including IMEs
+-   Complex Script aware, including UI mirroring
+-   Font independency (font may be customized by language, support font fallback , etc.)
 -   Localizable
 -   Pluggable (MUI Aware)
 
@@ -58,7 +58,7 @@ Coding for world-readiness may have an impact upon the UI design; below is a lis
 
 ### Internet Protocols
 
--   If your feature processes and displays various internet protocols, does it support non-Latin characters such as www.café.com, χρήστη@μηχανή.ελ, http:// [مثال.إختبار, or \\\\][公司\\][单][位\\][文件.docx.]
+-   If your feature processes and displays various internet protocols, does it support non-Latin characters such as www.<span></span>café.com, χρήστη@μηχανή.ελ, http:// مثال.إختبار, or \\\\公司\\单位\\文件.docx.
     -   Double-encoding is frequently seen when to different components use HTML encoding; instead of “Documents partagés” (Shared Documents) the user sees “Documents partag&\#233;s”. The resulting string is not human readable.
     -   Have you considered the entire process flow?
         -   When processing data, host names, URLs/IRIs or UNC paths, or email addresses when is the conversion happening? Who is doing the conversion?
@@ -82,17 +82,15 @@ Coding for world-readiness may have an impact upon the UI design; below is a lis
 It is best to use common APIs, such NLS or .NET, to address the following issues.
 
 -   If your feature uses date/time formats, a calendar, or a calendar control, does it allow usage of different calendar types? For example:
-    -   If your feature displays date or time, does it allow different date or time format ordering? For example, Japanese dates are often in the order of era, year, month, and date ([平成 22][年 12][月 05][日)].
+    -   If your feature displays date or time, does it allow different date or time format ordering? For example, Japanese dates are often in the order of era, year, month, and date (平成 22年 12月 05日).
     -   Consider how different calendars may impact all your features. Does your month picker support the 13 months found in the Hebrew Lunar calendar during a leap year? In addition, weekdays are not always Monday through Friday. Many countries use Saturday as the first day of the week.
 -   If your feature displays numbers, does it allow different number formats? For example:
     -   The default setting for the German locale is the period (.) to separate number groups and the comma (,) to show fractions, as in 1.234,56.
     -   Turkish people place the percentage symbol (%) on the left side of a number (%20).
-        -   Does your feature display, input, send, receive, save or load whole numbers, decimals, percentages, negative numbers, or non-ASCII numbers (e.g., [١,][٢,][๒,][๓,] etc.)?
+        -   Does your feature display, input, send, receive, save or load whole numbers, decimals, percentages, negative numbers, or non-ASCII numbers (e.g., ١,٢, ๒, ๓, etc.)?
         -   Does the feature allow the user to format numbers as currency? Display, input, send or receive, and save or load currency numbers. For example, Bahrain uses three decimal places in their currency format ([د.ب.‏1,234.456]), if you hard-code the decimal places to two places your feature will not meet the user’s expectations.
         -   If your feature sorts a range of data, can the user specify the correct sort order that matches their cultural expectations? For example, in Norwegian, the “ø” character is sorted after “z”. If a user asks for a range of data of h-q, they would be surprised to see items starting with the ø character in their results. Each language sorts uniquely, and some cultures define more than one sort order for their language.
         -   If your feature displays proper names including honorifics (Do you allow for ruby text or phonetic guides ? Are you addressing the user in the level of formality appropriate to that culture and the context?) , addresses, telephone numbers, or phone numbers, can the format and ordering be changed? For example, a Korean phone number has nine digits and the prefix can be either three or four digits, and the area code can be either two or three digits, (02) 531-4500.
-
-&nbsp;
 -   If your feature allows printing, can the user configure the paper size to non-US standards? For example, Swedish standards dictate a G4 paper size. If your feature allows printing, will all the content correctly preview and print as it was displayed on the screen? Did you consider all fields, comments, signatures, margins, headers, footers, and page breaks?
 
 ### User Interface
@@ -100,7 +98,7 @@ It is best to use common APIs, such NLS or .NET, to address the following issues
 This includes error messages, log files, and console applications.
 
 -   Are you using Global English? It is recommended to use simple, easy to understand English for users around the world and for those who are using English as a second or third language. Additionally, this will make your strings easier (and cheaper) to translate.
--   If your feature has UI strings, are all the strings available to be translated? For example, all UI is required to be translated by the [ToubonLaw](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) in France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) in Canada.
+-   If your feature has UI strings, are all the strings available to be translated? For example, all UI is required to be translated by the [Toubon Law](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) in France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) in Canada.
 -   Does the feature incorporate components that are not translated for your target markets how will you handle unsupported markets? What are the ramifications, fall back mechanisms, etc.?
 -   If your feature has UI elements that combine to form a sentence, can the UI be reordered? For example, the recurrence dialog in the calendar is problematic and adds complexity to localization because the ordering of the sentence doesn’t make sense in non-English languages.
     ![Re-ordering UI elements for localization](/media/hubs/globalization/IC863446.jpg "Re-ordering UI elements for localization") 

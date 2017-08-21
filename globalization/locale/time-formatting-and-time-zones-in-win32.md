@@ -8,7 +8,7 @@ ms.date: 03/16/2016
 
 # Time Formatting and Time Zones in Win32
 
-To format time in the default settings of a given locale or as specified by the user in the **Regional and Language Options** Control Panel, you can use GetTimeFormat. This function formats time--either a specified time or the local system time--as a time string for a specified locale.
+To format time in the default settings of a given locale or as specified by the user in the **Regional and Language Options** Control Panel, you can use GetTimeFormat. This function formats time—either a specified time or the local system time—as a time string for a specified locale.
 
 The following code sample displays the current system time for the current user locale, using the default time format for that locale: 
 
@@ -100,6 +100,6 @@ All translations between UTC time and local time are based on the following form
 UTC = local time + bias 
 ```
 
-Unfortunately, Win32 APIs do not offer a solution to enumerate information relative to any other time zone than the one currently selected by the user. GetLocalTime and GetSystemTime will allow you to retrieve the current local and the UTC times, respectively. To convert the local time to UTC, you can use the LocalFileTimeToFileTime API. These are but two of the many Win32 APIs dealing with time. To learn about other functions, search for "time functions" on [[http://msdn.microsoft.com.]](http://msdn2.microsoft.com/)
+Unfortunately, Win32 APIs do not offer a solution to enumerate information relative to any other time zone than the one currently selected by the user. GetLocalTime and GetSystemTime will allow you to retrieve the current local and the UTC times, respectively. To convert the local time to UTC, you can use the LocalFileTimeToFileTime API. These are but two of the many Win32 APIs dealing with time. To learn about other functions, search for "time functions" on [http://msdn.microsoft.com.](http://msdn2.microsoft.com/)
 
 
