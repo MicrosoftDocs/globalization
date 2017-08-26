@@ -1,6 +1,6 @@
 ---
 title: Security Guidelines for International
-description: 
+description: This topic describes the security guidelines for globalization of the software.
 ms.assetid: 00ad82fb-42ba-4df8-b78f-962b98d5cc97
 ms.date: 11/16/2016
 ---
