@@ -56,7 +56,7 @@ Both font fallback and font linking can leverage logic to estimate an appropriat
 
 | Microsoft Sans Serif | Traditional Arabic | Leelawadee  |
 |:---:|:---:|:---:|
-| E                    |  E                 |   E         |
+| ![Sans Serif](https://docs.microsoft.com/en-us/globalization/input/images/SansSerif.jpg "Sans Serif")                    |  ![Traditional Arabic](https://docs.microsoft.com/en-us/globalization/input/images/TradArabic.jpg "Traditional Arabic")                 |   ![Leelawadee](https://docs.microsoft.com/en-us/globalization/input/images/Leelawadee.jpg "Leelawadee")         |
 
 Even though all of these are supposedly 8-point fonts, the apparent size of the English letters varies widely. Font fallback and font linking are no substitutes for choosing the right font in the first place. Rather, these mechanisms are simply a means of preventing the user from manually selecting a font; additionally, they prevent UI text from being displayed as a default glyph.
 
