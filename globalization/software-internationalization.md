@@ -11,7 +11,7 @@ ms.date: 07/14/2017
 
 With the growing software market far beyond the English-speaking world, it's important for the software to support various text and data formats to reach all the potential customers. To make that happen, the most important step is to design the software with the internationalization in mind.
 
-The below sections provide some generic information about the internationalization concepts—globalization, localizability, an localization. The same information can also be found at the [MSDN Library](https://msdn.microsoft.com/library/bb688110).
+The below sections provide some generic information about the internationalization concepts—globalization, localizability, an localization.
 
 ## Data Encoding
 
