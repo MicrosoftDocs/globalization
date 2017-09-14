@@ -11,96 +11,100 @@ ms.date: 07/14/2017
 
 With the growing software market far beyond the English-speaking world, it's important for the software to support various text and data formats to reach all the potential customers. To make that happen, the most important step is to design the software with the internationalization in mind.
 
-The below sections provide some generic information about the internationalization concepts—globalization, localizability, and localization.
+The below sections provide some generic information about the internationalization concepts—globalization, localizability, an localization. 
 
 ## Data Encoding
 
-[Encoding Overview](https://msdn.microsoft.com/en-US/library/mt683841)
+[Encoding Overview](https://docs.microsoft.com/en-us/globalization/encoding/encoding-overview)
 
-[Transformation of Unicode Code Points](https://msdn.microsoft.com/en-US/library/mt683843)
+[Transformation of Unicode Code Points](https://docs.microsoft.com/en-us/globalization/encoding/transformations-of-unicode-code-points)
 
-[Byte Order Mark](https://msdn.microsoft.com/en-US/library/mt683845)
+[Byte Order Mark](https://docs.microsoft.com/en-us/globalization/encoding/byte-order-mark)
 
-[Surrogate Pairs](https://msdn.microsoft.com/en-US/library/mt683846)
+[Surrogate Pairs](https://docs.microsoft.com/en-us/globalization/encoding/surrogate-pairs)
 
-[Code Pages](https://msdn.microsoft.com/en-US/library/mt662301)
+[Code Pages](https://docs.microsoft.com/en-us/globalization/encoding/code-pages)
 
 ## Locale and Culture Awareness
 
-[Using Locale Model](https://msdn.microsoft.com/en-US/library/mt662310)
+[Using Locale Model](https://docs.microsoft.com/en-us/globalization/locale/locale-model)
 
-[Sorting and String Comparison](https://msdn.microsoft.com/en-US/library/mt662313)
+[Sorting and String Comparison](https://docs.microsoft.com/en-us/globalization/locale/sorting-and-string-comparison)
 
-[Calendar Differences](https://msdn.microsoft.com/en-US/library/mt662317)
+[Calendar Differences](https://docs.microsoft.com/en-us/globalization/locale/calendar-differences)
 
-[Date Formatting](https://msdn.microsoft.com/en-US/library/mt662320)
+[Date Formatting](https://docs.microsoft.com/en-us/globalization/locale/date-formatting)
 
-[Time Formatting](https://msdn.microsoft.com/en-US/library/mt662321)
+[Time Formatting](https://docs.microsoft.com/en-us/globalization/locale/time-formatting)
 
-[Number Formatting](https://msdn.microsoft.com/en-US/library/mt662324)
+[Currency Formatting](https://docs.microsoft.com/en-us/globalization/locale/currency-formatting)
 
-[Addresses](https://msdn.microsoft.com/en-US/library/mt662325)
+[Number Formatting](https://docs.microsoft.com/en-us/globalization/locale/number-formatting)
 
-[Telephone Number](https://msdn.microsoft.com/en-US/library/mt662326)
+[Addresses](https://docs.microsoft.com/en-us/globalization/locale/addresses)
 
-[Paper Size](https://msdn.microsoft.com/en-US/library/mt662327)
+[Telephone Number](https://docs.microsoft.com/en-us/globalization/locale/telephone-number)
 
-[Units of Measurement](https://msdn.microsoft.com/en-US/library/mt662328)
+[Paper Size](https://docs.microsoft.com/en-us/globalization/locale/paper-size)
+
+[Units of Measurement](https://docs.microsoft.com/en-us/globalization/locale/units-of-measurement)
 
 ## Input, Output, and Display
 
-[Text Input, Output, and Display](https://msdn.microsoft.com/en-US/library/mt662329)
+[Text Input, Output, and Display](https://docs.microsoft.com/en-us/globalization/input/text-input)
 
-[Capitalization, Uppercasing, and Lowercasing](https://msdn.microsoft.com/en-US/library/mt662330)
+[Text Rendering](https://docs.microsoft.com/en-us/globalization/input/text-rendering)
 
-[Fonts](https://msdn.microsoft.com/en-US/library/mt662331)
+[Page or Text Alignment](https://docs.microsoft.com/en-us/globalization/input/page-or-text-alignment)
 
-[Line and Word Breaking](https://msdn.microsoft.com/en-US/library/mt662334)
+[Text Justification](https://docs.microsoft.com/en-us/globalization/input/text-justification)
 
-[Complex Scripts Awareness](https://msdn.microsoft.com/en-US/library/mt662335)
+[Font Technology](https://docs.microsoft.com/en-us/globalization/input/font-technology)
 
-[Console Globalization](https://msdn.microsoft.com/en-US/library/mt662336)
+[Line and Word Breaking](https://docs.microsoft.com/en-us/globalization/input/line-and-word-breaking)
+
+[Mirroring](https://docs.microsoft.com/en-us/globalization/input/mirroring)
+
+[Overlay Text Properties](https://docs.microsoft.com/en-us/globalization/input/overlay)
 
 ## Localizability
 
-[Localizability Overview](https://msdn.microsoft.com/en-US/library/mt651700)
+[Localizability Overview](https://docs.microsoft.com/en-us/globalization/localizability/overview)
 
-[Isolate Localizable Resources](https://msdn.microsoft.com/en-US/library/mt662338)
+[Isolate Localizable Resources](https://docs.microsoft.com/en-us/globalization/localizability/isolate-localizable-resources)
 
-[String Handling](https://msdn.microsoft.com/en-US/library/mt662339) 
+[String Handling](https://docs.microsoft.com/en-us/globalization/localizability/string-handling) 
 
-[Mirroring Awareness](https://msdn.microsoft.com/en-US/library/mt662340)
+[Mirroring Awareness](https://docs.microsoft.com/en-us/globalization/localizability/mirroring-awareness)
 
-[UI Considerations](https://msdn.microsoft.com/en-US/library/mt662341)
+[UI Considerations](https://docs.microsoft.com/en-us/globalization/localizability/ui-considerations)
 
 ## Localization
 
-[Localization Overview](https://msdn.microsoft.com/en-US/library/mt662355)
+[Localization Overview](https://docs.microsoft.com/en-us/globalization/localization/overview)
 
-[Localization Elements](https://msdn.microsoft.com/en-US/library/mt662343)
+[Localization Elements](https://docs.microsoft.com/en-us/globalization/localization/localization-elements)
 
-[Localization Tools](https://msdn.microsoft.com/en-US/library/mt662351)
+[Localization Tools](https://docs.microsoft.com/en-us/globalization/localization/localization-tools)
 
-[Localization Team](https://msdn.microsoft.com/en-US/library/mt662352)
+[Localization Team](https://docs.microsoft.com/en-us/globalization/localization/localization-team)
 
-[Establishing Localization Guidelines](https://msdn.microsoft.com/en-US/library/mt662353)
+[Establishing Localization Guidelines](https://docs.microsoft.com/en-us/globalization/localization/establishing-localization-guidelines)
 
-[Content Localization](https://msdn.microsoft.com/en-US/library/mt662354)
+[Content Localization](https://docs.microsoft.com/en-us/globalization/localization/content-localization)
 
 ## Testing for World Readiness
 
-[Quality Assurance for World-Readiness](https://msdn.microsoft.com/en-US/library/mt662412)
+[Quality Assurance for World-Readiness](https://docs.microsoft.com/en-us/globalization/testing/quality-assurance-for-world-readiness)
 
-[The World-Ready Approach to Testing](https://msdn.microsoft.com/en-US/library/mt662413)
+[The World-Ready Approach to Testing](https://docs.microsoft.com/en-us/globalization/testing/the-world-ready-approach-to-testing)
 
-[Globalization of the Test](https://msdn.microsoft.com/en-US/library/mt662415)
+[Globalization of the Test](https://docs.microsoft.com/en-us/globalization/testing/globalization-of-the-test)
 
-[Localizability Testing](https://msdn.microsoft.com/en-US/library/mt651780)
+[Localizability Testing](https://docs.microsoft.com/en-us/globalization/testing/localizability-testing)
 
-[Localization Testing](https://msdn.microsoft.com/en-US/library/mt662422)
+[Localization Testing](https://docs.microsoft.com/en-us/globalization/testing/localization-testing)
 
-[The Role of Test Tools](https://msdn.microsoft.com/en-US/library/mt662423)
+[The Role of Test Tools](https://docs.microsoft.com/en-us/globalization/testing/the-role-of-test-tools)
 
-[Sample International Test Cases](https://msdn.microsoft.com/en-US/library/mt662424)
-
-
+[Sample International Test Cases](https://docs.microsoft.com/en-us/globalization/testing/sample-international-test-cases)
