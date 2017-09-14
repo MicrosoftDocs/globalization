@@ -108,5 +108,3 @@ The below sections provide some generic information about the internationalizati
 [The Role of Test Tools](https://docs.microsoft.com/en-us/globalization/testing/the-role-of-test-tools)
 
 [Sample International Test Cases](https://docs.microsoft.com/en-us/globalization/testing/sample-international-test-cases)
-
-
