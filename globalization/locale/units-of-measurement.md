@@ -17,7 +17,7 @@ Throughout the world things are measured using different units and scales. The m
 -   Angle notation
 -   etc.
 
-Thus you need to make sure that if you deal with measurements, you can display them in different systems. Also, make sure it is clear to the use on what system is currently being display. Remember a Mars probe was lost because it's guidance system was developed for one system and the scientists using it thought it was the other system.
+Thus you need to ensure that if you deal with measurements, you can display them using different systems. Also, make sure it is clear to the user what system is currently being displayed. Remember a Mars probe was lost because it's guidance system was developed for one system and the scientists using it thought it was the other system.
 
 ### Units of Measurement in Win32
 
