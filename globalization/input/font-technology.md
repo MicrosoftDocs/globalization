@@ -52,6 +52,7 @@ If font linking is enabled on your device, you can examine the registry by enume
 
 With font fallback and font linking, the font size of the text is maintained. So the newly applied font will be the same specified size as that of the original font. For example, if an 8-point Tahoma font was selected to type English and now the user enters some Japanese text, an 8-point Meiryo font will be automatically selected. The 8-point font size might not be the best choice for some scripts, since it can make them hard to read.
 
+
 Both font fallback and font linking can leverage logic to estimate an appropriate font size, but both mechanisms have to use metrics exposed by the font that might or might not actually match the way the font appears. Consider the difference in the visual height of English letters among Microsoft Sans Serif, Traditional Arabic, and Leelawadee UI:
 
 | Microsoft Sans Serif | Traditional Arabic | Leelawadee  |
