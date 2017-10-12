@@ -71,8 +71,8 @@ ms.date: 08/16/2016
 
 Software internationalization has two facets:
 
--   **World-readiness:** This covers the generic coding and design issues and comprises two major areas: **Globalization** is the process to develop a program core whose features and code design are not solely based on a single language or locale. **Localizability** is the process to enable a program to be localized into different languages without any changes to the source code.
--   **Localization:** This involves translating and customizing a product for a specific market.
+- **World-readiness:** This covers the generic coding and design issues and comprises two major areas: **Globalization** is the process to develop a program core whose features and code design are not solely based on a single language or locale. **Localizability** is the process to enable a program to be localized into different languages without any changes to the source code.
+- **Localization:** This involves translating and customizing a product for a specific market.
 
 <ul class="panelContent cardsA cols cols4">
     <li>
