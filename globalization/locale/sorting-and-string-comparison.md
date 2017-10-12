@@ -181,6 +181,22 @@ There are several situations where you would want your sort order not to vary fr
 
 See [this article](https://msdn.microsoft.com/en-us/library/ms143726(v=sql.130).aspx).
 
+### How do I verify that sorting works correctly in my code?
+
+If you are relying on Windows, .Net, SQL or another of established framework for string sorting/comparisons, there is typically little benefit in trying to comprehensively test sorting rules for each locale but you'll still want to validate that the sorting order correctly follows the user’s regional and language settings using sample data similar to below:
+
+|Expected order English-US| Expected order French - France |Expected order Spanish - Spain |
+|-----|-----|-----|
+|cote |cote |cote |
+|coté |__*côte*__ |coté |
+|côte |__*coté*__ |côte |
+|côté |côté |côté |
+|Namibia |Namibia |Namibia |
+|ñandú |ñandú |__*número*__ |
+|ñú |ñú |__*ñandú*__ |
+|número |número |__*ñú*__ |
+
+
 ## Market Specific Sorting Examples
 
 ### East Asian Sorting
