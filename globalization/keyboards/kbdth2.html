@@ -1,0 +1,454 @@
+<!--TOOLBAR_EXEMPT--><HTML>
+<HEAD>
+<TITLE>Thai Kedmanee (non-ShiftLock) Keyboard Layout</TITLE>
+<META name="description" content="Thai Kedmanee (non-ShiftLock) Keyboard">
+<META name="ms.locale" content="EN-US">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+var State = 0;
+var Clicked = 0;
+function chooseState(x){
+  switch (State){
+    case 0:
+      document.all.normalstate.style.display='none';
+      break;
+    case 1:
+      document.all.shiftstate.style.display='none';
+      break;
+    case 2:
+    case 4:
+      document.all.normalstatecap.style.display='none';
+      break;
+    case 5:
+      document.all.shiftstatecap.style.display='none';
+      break;
+    default:
+      break;
+  }
+  switch (x){
+    case 0:
+      document.all.normalstate.style.display='';
+      break;
+    case 1:
+      document.all.shiftstate.style.display='';
+      break;
+    case 2:
+    case 4:
+      document.all.normalstatecap.style.display='';
+      break;
+    case 5:
+      document.all.shiftstatecap.style.display='';
+      break;
+    default:
+      break;
+  }
+}
+function keyOpen(){
+  document.all.loading.style.display='none';
+  document.all.normalstate.style.display='';
+}
+function MouseOver(x){
+    if ((Clicked!=1) && ((State & x) == 0)){
+    chooseState(State | x);
+  }
+  Clicked=0;
+}
+function MouseOut(x){
+  if ((State & x) == 0){
+    State |= x;
+    chooseState(State^x);
+    State ^= x;
+  }
+}
+function Click(x){
+  chooseState(State^x);
+  State ^= x;
+  if ((State & x) == 0){
+    Clicked=1;
+  }
+  else {
+    Clicked=0;
+  }
+}
+</SCRIPT>
+<LINK REL="stylesheet" TYPE="text/css" HREF="https://www.microsoft.com/resources/msdn/goglobal/keyboards/keyboardstyle.css">
+</HEAD>
+<BODY BGCOLOR="#B0C4DE" onLoad="keyOpen()">
+<div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt solid #000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
+<script type="text/javascript" language="javascript">
+Xoffset=10;    // modify these values to ...
+Yoffset=10;    // change the popup position.
+
+var old,skn,iex=(document.all),yyy=-1000;
+
+var ns4=document.layers
+var ns6=document.getElementById&&!document.all
+var ie4=document.all
+
+if(window.opera) ns6 = true;
+
+if (ns4)
+skn=document.glosso
+else if (ns6)
+skn=document.getElementById("glosso").style
+else if (ie4)
+skn=document.all.glosso.style
+if(ns4)document.captureEvents(Event.MOUSEMOVE);
+else{
+skn.visibility="visible"
+skn.display="none"
+}
+
+document.onmousemove=get_mouse;
+
+function popup(msg){	
+var content=msg;
+yyy=Yoffset;
+ if(ns4){skn.document.write(content);skn.document.close();skn.visibility="visible"}
+ if(ns6){document.getElementById("glosso").innerHTML=content;skn.display=''}
+//if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
+}
+
+         
+    function get_mouse(e){
+       var blont = document.getElementById("glosso").innerHTML;
+        var x=(ns4||ns6)?e.pageX:event.x+document.body.scrollLeft;
+       if((x > 110)&&(x < 220)) {
+       if(blont.length>25) x -= 40;
+	       
+	       x= x - 65;}
+       if(x>220) {
+       if(blont.length>25) {
+	       x = x - 40;}
+       if(blont.length>45) {
+	       x = x - 40;}
+       if(blont.length>65) {
+	       x = x - 30;}
+       	x= x - 110;}
+
+       
+        skn.left=x+Xoffset;
+        
+        var y=(ns4||ns6)?e.pageY:event.y+document.documentElement.scrollTop;
+		if(y > 65){ y = y - 40;
+	} else {
+		y = y + 18;
+}
+        skn.top=y;
+        
+        //alert(content);
+        
+}
+
+function kill(){
+        yyy=-1000;
+        if(ns4){skn.visibility="hidden";}
+        else if (ns6||ie4)
+        skn.display="none"
+}
+
+</script><DIV ID=loading CLASS=loading>
+<br><br><br><h3 align=center>Loading the keyboard layout, please wait ....<h3>
+</DIV>
+<DIV ID=normalstate CLASS=normalstate STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005F.jpg" ALT="U+005F Low Line"  onmouseover = "popup('U+005F Low Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E45.jpg" ALT="U+0E45 Thai Character Lakkhangyao"  onmouseover = "popup('U+0E45 Thai Character Lakkhangyao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002F.jpg" ALT="U+002F Solidus"  onmouseover = "popup('U+002F Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002D.jpg" ALT="U+002D Hyphen-Minus"  onmouseover = "popup('U+002D Hyphen-Minus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E20.jpg" ALT="U+0E20 Thai Character Pho Samphao"  onmouseover = "popup('U+0E20 Thai Character Pho Samphao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E16.jpg" ALT="U+0E16 Thai Character Tho Thung"  onmouseover = "popup('U+0E16 Thai Character Tho Thung');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E38.jpg" ALT="U+0E38 Thai Character Sara U"  onmouseover = "popup('U+0E38 Thai Character Sara U');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E36.jpg" ALT="U+0E36 Thai Character Sara Ue"  onmouseover = "popup('U+0E36 Thai Character Sara Ue');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E04.jpg" ALT="U+0E04 Thai Character Kho Khwai"  onmouseover = "popup('U+0E04 Thai Character Kho Khwai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E15.jpg" ALT="U+0E15 Thai Character To Tao"  onmouseover = "popup('U+0E15 Thai Character To Tao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E08.jpg" ALT="U+0E08 Thai Character Cho Chan"  onmouseover = "popup('U+0E08 Thai Character Cho Chan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E02.jpg" ALT="U+0E02 Thai Character Kho Khai"  onmouseover = "popup('U+0E02 Thai Character Kho Khai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0A.jpg" ALT="U+0E0A Thai Character Cho Chang"  onmouseover = "popup('U+0E0A Thai Character Cho Chang');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E46.jpg" ALT="U+0E46 Thai Character Maiyamok"  onmouseover = "popup('U+0E46 Thai Character Maiyamok');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E44.jpg" ALT="U+0E44 Thai Character Sara Ai Maimalai"  onmouseover = "popup('U+0E44 Thai Character Sara Ai Maimalai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E33.jpg" ALT="U+0E33 Thai Character Sara Am"  onmouseover = "popup('U+0E33 Thai Character Sara Am');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1E.jpg" ALT="U+0E1E Thai Character Pho Phan"  onmouseover = "popup('U+0E1E Thai Character Pho Phan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E30.jpg" ALT="U+0E30 Thai Character Sara A"  onmouseover = "popup('U+0E30 Thai Character Sara A');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E31.jpg" ALT="U+0E31 Thai Character Mai Han-Akat"  onmouseover = "popup('U+0E31 Thai Character Mai Han-Akat');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E35.jpg" ALT="U+0E35 Thai Character Sara Ii"  onmouseover = "popup('U+0E35 Thai Character Sara Ii');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E23.jpg" ALT="U+0E23 Thai Character Ro Rua"  onmouseover = "popup('U+0E23 Thai Character Ro Rua');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E19.jpg" ALT="U+0E19 Thai Character No Nu"  onmouseover = "popup('U+0E19 Thai Character No Nu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E22.jpg" ALT="U+0E22 Thai Character Yo Yak"  onmouseover = "popup('U+0E22 Thai Character Yo Yak');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1A.jpg" ALT="U+0E1A Thai Character Bo Baimai"  onmouseover = "popup('U+0E1A Thai Character Bo Baimai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E25.jpg" ALT="U+0E25 Thai Character Lo Ling"  onmouseover = "popup('U+0E25 Thai Character Lo Ling');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E03W.jpg" ALT="U+0E03 Thai Character Kho Khuat"  onmouseover = "popup('U+0E03 Thai Character Kho Khuat');" onmouseout="kill();" WIDTH=30 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1F.jpg" ALT="U+0E1F Thai Character Fo Fan"  onmouseover = "popup('U+0E1F Thai Character Fo Fan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2B.jpg" ALT="U+0E2B Thai Character Ho Hip"  onmouseover = "popup('U+0E2B Thai Character Ho Hip');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E01.jpg" ALT="U+0E01 Thai Character Ko Kai"  onmouseover = "popup('U+0E01 Thai Character Ko Kai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E14.jpg" ALT="U+0E14 Thai Character Do Dek"  onmouseover = "popup('U+0E14 Thai Character Do Dek');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E40.jpg" ALT="U+0E40 Thai Character Sara E"  onmouseover = "popup('U+0E40 Thai Character Sara E');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E49.jpg" ALT="U+0E49 Thai Character Mai Tho"  onmouseover = "popup('U+0E49 Thai Character Mai Tho');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E48.jpg" ALT="U+0E48 Thai Character Mai Ek"  onmouseover = "popup('U+0E48 Thai Character Mai Ek');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E32.jpg" ALT="U+0E32 Thai Character Sara Aa"  onmouseover = "popup('U+0E32 Thai Character Sara Aa');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2A.jpg" ALT="U+0E2A Thai Character So Sua"  onmouseover = "popup('U+0E2A Thai Character So Sua');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E27.jpg" ALT="U+0E27 Thai Character Wo Waen"  onmouseover = "popup('U+0E27 Thai Character Wo Waen');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E07.jpg" ALT="U+0E07 Thai Character Ngo Ngu"  onmouseover = "popup('U+0E07 Thai Character Ngo Ngu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Enter.jpg" WIDTH=42 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1C.jpg" ALT="U+0E1C Thai Character Pho Phung"  onmouseover = "popup('U+0E1C Thai Character Pho Phung');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1B.jpg" ALT="U+0E1B Thai Character Po Pla"  onmouseover = "popup('U+0E1B Thai Character Po Pla');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E41.jpg" ALT="U+0E41 Thai Character Sara Ae"  onmouseover = "popup('U+0E41 Thai Character Sara Ae');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2D.jpg" ALT="U+0E2D Thai Character O Ang"  onmouseover = "popup('U+0E2D Thai Character O Ang');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E34.jpg" ALT="U+0E34 Thai Character Sara I"  onmouseover = "popup('U+0E34 Thai Character Sara I');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E37.jpg" ALT="U+0E37 Thai Character Sara Uee"  onmouseover = "popup('U+0E37 Thai Character Sara Uee');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E17.jpg" ALT="U+0E17 Thai Character Tho Thahan"  onmouseover = "popup('U+0E17 Thai Character Tho Thahan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E21.jpg" ALT="U+0E21 Thai Character Mo Ma"  onmouseover = "popup('U+0E21 Thai Character Mo Ma');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E43.jpg" ALT="U+0E43 Thai Character Sara Ai Maimuan"  onmouseover = "popup('U+0E43 Thai Character Sara Ai Maimuan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1D.jpg" ALT="U+0E1D Thai Character Fo Fa"  onmouseover = "popup('U+0E1D Thai Character Fo Fa');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=shiftstate CLASS=shiftstate STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0025.jpg" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002B.jpg" ALT="U+002B Plus Sign"  onmouseover = "popup('U+002B Plus Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E51.jpg" ALT="U+0E51 Thai Digit One"  onmouseover = "popup('U+0E51 Thai Digit One');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E52.jpg" ALT="U+0E52 Thai Digit Two"  onmouseover = "popup('U+0E52 Thai Digit Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E53.jpg" ALT="U+0E53 Thai Digit Three"  onmouseover = "popup('U+0E53 Thai Digit Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E54.jpg" ALT="U+0E54 Thai Digit Four"  onmouseover = "popup('U+0E54 Thai Digit Four');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E39.jpg" ALT="U+0E39 Thai Character Sara Uu"  onmouseover = "popup('U+0E39 Thai Character Sara Uu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E3F.jpg" ALT="U+0E3F Thai Currency Symbol Baht"  onmouseover = "popup('U+0E3F Thai Currency Symbol Baht');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E55.jpg" ALT="U+0E55 Thai Digit Five"  onmouseover = "popup('U+0E55 Thai Digit Five');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E56.jpg" ALT="U+0E56 Thai Digit Six"  onmouseover = "popup('U+0E56 Thai Digit Six');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E57.jpg" ALT="U+0E57 Thai Digit Seven"  onmouseover = "popup('U+0E57 Thai Digit Seven');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E58.jpg" ALT="U+0E58 Thai Digit Eight"  onmouseover = "popup('U+0E58 Thai Digit Eight');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E59.jpg" ALT="U+0E59 Thai Digit Nine"  onmouseover = "popup('U+0E59 Thai Digit Nine');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E50.jpg" ALT="U+0E50 Thai Digit Zero"  onmouseover = "popup('U+0E50 Thai Digit Zero');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0022.jpg" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0E.jpg" ALT="U+0E0E Thai Character Do Chada"  onmouseover = "popup('U+0E0E Thai Character Do Chada');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E11.jpg" ALT="U+0E11 Thai Character Tho Nangmontho"  onmouseover = "popup('U+0E11 Thai Character Tho Nangmontho');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E18.jpg" ALT="U+0E18 Thai Character Tho Thong"  onmouseover = "popup('U+0E18 Thai Character Tho Thong');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4D.jpg" ALT="U+0E4D Thai Character Nikhahit"  onmouseover = "popup('U+0E4D Thai Character Nikhahit');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4A.jpg" ALT="U+0E4A Thai Character Mai Tri"  onmouseover = "popup('U+0E4A Thai Character Mai Tri');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E13.jpg" ALT="U+0E13 Thai Character No Nen"  onmouseover = "popup('U+0E13 Thai Character No Nen');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2F.jpg" ALT="U+0E2F Thai Character Paiyannoi"  onmouseover = "popup('U+0E2F Thai Character Paiyannoi');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0D.jpg" ALT="U+0E0D Thai Character Yo Ying"  onmouseover = "popup('U+0E0D Thai Character Yo Ying');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E10.jpg" ALT="U+0E10 Thai Character Tho Than"  onmouseover = "popup('U+0E10 Thai Character Tho Than');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002C.jpg" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E05W.jpg" ALT="U+0E05 Thai Character Kho Khon"  onmouseover = "popup('U+0E05 Thai Character Kho Khon');" onmouseout="kill();" WIDTH=30 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E24.jpg" ALT="U+0E24 Thai Character Ru"  onmouseover = "popup('U+0E24 Thai Character Ru');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E06.jpg" ALT="U+0E06 Thai Character Kho Rakhang"  onmouseover = "popup('U+0E06 Thai Character Kho Rakhang');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0F.jpg" ALT="U+0E0F Thai Character To Patak"  onmouseover = "popup('U+0E0F Thai Character To Patak');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E42.jpg" ALT="U+0E42 Thai Character Sara O"  onmouseover = "popup('U+0E42 Thai Character Sara O');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0C.jpg" ALT="U+0E0C Thai Character Cho Choe"  onmouseover = "popup('U+0E0C Thai Character Cho Choe');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E47.jpg" ALT="U+0E47 Thai Character Maitaikhu"  onmouseover = "popup('U+0E47 Thai Character Maitaikhu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4B.jpg" ALT="U+0E4B Thai Character Mai Chattawa"  onmouseover = "popup('U+0E4B Thai Character Mai Chattawa');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E29.jpg" ALT="U+0E29 Thai Character So Rusi"  onmouseover = "popup('U+0E29 Thai Character So Rusi');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E28.jpg" ALT="U+0E28 Thai Character So Sala"  onmouseover = "popup('U+0E28 Thai Character So Sala');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0B.jpg" ALT="U+0E0B Thai Character So So"  onmouseover = "popup('U+0E0B Thai Character So So');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002E.jpg" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Enter.jpg" WIDTH=42 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0028.jpg" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0029.jpg" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E09.jpg" ALT="U+0E09 Thai Character Cho Ching"  onmouseover = "popup('U+0E09 Thai Character Cho Ching');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2E.jpg" ALT="U+0E2E Thai Character Ho Nokhuk"  onmouseover = "popup('U+0E2E Thai Character Ho Nokhuk');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E3A.jpg" ALT="U+0E3A Thai Character Phinthu"  onmouseover = "popup('U+0E3A Thai Character Phinthu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4C.jpg" ALT="U+0E4C Thai Character Thanthakhat"  onmouseover = "popup('U+0E4C Thai Character Thanthakhat');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003F.jpg" ALT="U+003F Question Mark"  onmouseover = "popup('U+003F Question Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E12.jpg" ALT="U+0E12 Thai Character Tho Phuthao"  onmouseover = "popup('U+0E12 Thai Character Tho Phuthao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2C.jpg" ALT="U+0E2C Thai Character Lo Chula"  onmouseover = "popup('U+0E2C Thai Character Lo Chula');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E26.jpg" ALT="U+0E26 Thai Character Lu"  onmouseover = "popup('U+0E26 Thai Character Lu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=normalstatecap CLASS=normalstatecap STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/005F.jpg" ALT="U+005F Low Line"  onmouseover = "popup('U+005F Low Line');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E45.jpg" ALT="U+0E45 Thai Character Lakkhangyao"  onmouseover = "popup('U+0E45 Thai Character Lakkhangyao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002F.jpg" ALT="U+002F Solidus"  onmouseover = "popup('U+002F Solidus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002D.jpg" ALT="U+002D Hyphen-Minus"  onmouseover = "popup('U+002D Hyphen-Minus');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E20.jpg" ALT="U+0E20 Thai Character Pho Samphao"  onmouseover = "popup('U+0E20 Thai Character Pho Samphao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E16.jpg" ALT="U+0E16 Thai Character Tho Thung"  onmouseover = "popup('U+0E16 Thai Character Tho Thung');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E38.jpg" ALT="U+0E38 Thai Character Sara U"  onmouseover = "popup('U+0E38 Thai Character Sara U');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E36.jpg" ALT="U+0E36 Thai Character Sara Ue"  onmouseover = "popup('U+0E36 Thai Character Sara Ue');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E04.jpg" ALT="U+0E04 Thai Character Kho Khwai"  onmouseover = "popup('U+0E04 Thai Character Kho Khwai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E15.jpg" ALT="U+0E15 Thai Character To Tao"  onmouseover = "popup('U+0E15 Thai Character To Tao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E08.jpg" ALT="U+0E08 Thai Character Cho Chan"  onmouseover = "popup('U+0E08 Thai Character Cho Chan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E02.jpg" ALT="U+0E02 Thai Character Kho Khai"  onmouseover = "popup('U+0E02 Thai Character Kho Khai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0A.jpg" ALT="U+0E0A Thai Character Cho Chang"  onmouseover = "popup('U+0E0A Thai Character Cho Chang');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E46.jpg" ALT="U+0E46 Thai Character Maiyamok"  onmouseover = "popup('U+0E46 Thai Character Maiyamok');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E44.jpg" ALT="U+0E44 Thai Character Sara Ai Maimalai"  onmouseover = "popup('U+0E44 Thai Character Sara Ai Maimalai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E33.jpg" ALT="U+0E33 Thai Character Sara Am"  onmouseover = "popup('U+0E33 Thai Character Sara Am');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1E.jpg" ALT="U+0E1E Thai Character Pho Phan"  onmouseover = "popup('U+0E1E Thai Character Pho Phan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E30.jpg" ALT="U+0E30 Thai Character Sara A"  onmouseover = "popup('U+0E30 Thai Character Sara A');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E31.jpg" ALT="U+0E31 Thai Character Mai Han-Akat"  onmouseover = "popup('U+0E31 Thai Character Mai Han-Akat');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E35.jpg" ALT="U+0E35 Thai Character Sara Ii"  onmouseover = "popup('U+0E35 Thai Character Sara Ii');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E23.jpg" ALT="U+0E23 Thai Character Ro Rua"  onmouseover = "popup('U+0E23 Thai Character Ro Rua');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E19.jpg" ALT="U+0E19 Thai Character No Nu"  onmouseover = "popup('U+0E19 Thai Character No Nu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E22.jpg" ALT="U+0E22 Thai Character Yo Yak"  onmouseover = "popup('U+0E22 Thai Character Yo Yak');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1A.jpg" ALT="U+0E1A Thai Character Bo Baimai"  onmouseover = "popup('U+0E1A Thai Character Bo Baimai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E25.jpg" ALT="U+0E25 Thai Character Lo Ling"  onmouseover = "popup('U+0E25 Thai Character Lo Ling');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E03W.jpg" ALT="U+0E03 Thai Character Kho Khuat"  onmouseover = "popup('U+0E03 Thai Character Kho Khuat');" onmouseout="kill();" WIDTH=30 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1F.jpg" ALT="U+0E1F Thai Character Fo Fan"  onmouseover = "popup('U+0E1F Thai Character Fo Fan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2B.jpg" ALT="U+0E2B Thai Character Ho Hip"  onmouseover = "popup('U+0E2B Thai Character Ho Hip');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E01.jpg" ALT="U+0E01 Thai Character Ko Kai"  onmouseover = "popup('U+0E01 Thai Character Ko Kai');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E14.jpg" ALT="U+0E14 Thai Character Do Dek"  onmouseover = "popup('U+0E14 Thai Character Do Dek');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E40.jpg" ALT="U+0E40 Thai Character Sara E"  onmouseover = "popup('U+0E40 Thai Character Sara E');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E49.jpg" ALT="U+0E49 Thai Character Mai Tho"  onmouseover = "popup('U+0E49 Thai Character Mai Tho');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E48.jpg" ALT="U+0E48 Thai Character Mai Ek"  onmouseover = "popup('U+0E48 Thai Character Mai Ek');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E32.jpg" ALT="U+0E32 Thai Character Sara Aa"  onmouseover = "popup('U+0E32 Thai Character Sara Aa');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2A.jpg" ALT="U+0E2A Thai Character So Sua"  onmouseover = "popup('U+0E2A Thai Character So Sua');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E27.jpg" ALT="U+0E27 Thai Character Wo Waen"  onmouseover = "popup('U+0E27 Thai Character Wo Waen');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E07.jpg" ALT="U+0E07 Thai Character Ngo Ngu"  onmouseover = "popup('U+0E07 Thai Character Ngo Ngu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Enter.jpg" WIDTH=42 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1C.jpg" ALT="U+0E1C Thai Character Pho Phung"  onmouseover = "popup('U+0E1C Thai Character Pho Phung');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1B.jpg" ALT="U+0E1B Thai Character Po Pla"  onmouseover = "popup('U+0E1B Thai Character Po Pla');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E41.jpg" ALT="U+0E41 Thai Character Sara Ae"  onmouseover = "popup('U+0E41 Thai Character Sara Ae');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2D.jpg" ALT="U+0E2D Thai Character O Ang"  onmouseover = "popup('U+0E2D Thai Character O Ang');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E34.jpg" ALT="U+0E34 Thai Character Sara I"  onmouseover = "popup('U+0E34 Thai Character Sara I');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E37.jpg" ALT="U+0E37 Thai Character Sara Uee"  onmouseover = "popup('U+0E37 Thai Character Sara Uee');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E17.jpg" ALT="U+0E17 Thai Character Tho Thahan"  onmouseover = "popup('U+0E17 Thai Character Tho Thahan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E21.jpg" ALT="U+0E21 Thai Character Mo Ma"  onmouseover = "popup('U+0E21 Thai Character Mo Ma');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E43.jpg" ALT="U+0E43 Thai Character Sara Ai Maimuan"  onmouseover = "popup('U+0E43 Thai Character Sara Ai Maimuan');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E1D.jpg" ALT="U+0E1D Thai Character Fo Fa"  onmouseover = "popup('U+0E1D Thai Character Fo Fa');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+<DIV ID=shiftstatecap CLASS=shiftstatecap STYLE="display:none">
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0025.jpg" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002B.jpg" ALT="U+002B Plus Sign"  onmouseover = "popup('U+002B Plus Sign');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E51.jpg" ALT="U+0E51 Thai Digit One"  onmouseover = "popup('U+0E51 Thai Digit One');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E52.jpg" ALT="U+0E52 Thai Digit Two"  onmouseover = "popup('U+0E52 Thai Digit Two');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E53.jpg" ALT="U+0E53 Thai Digit Three"  onmouseover = "popup('U+0E53 Thai Digit Three');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E54.jpg" ALT="U+0E54 Thai Digit Four"  onmouseover = "popup('U+0E54 Thai Digit Four');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E39.jpg" ALT="U+0E39 Thai Character Sara Uu"  onmouseover = "popup('U+0E39 Thai Character Sara Uu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E3F.jpg" ALT="U+0E3F Thai Currency Symbol Baht"  onmouseover = "popup('U+0E3F Thai Currency Symbol Baht');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E55.jpg" ALT="U+0E55 Thai Digit Five"  onmouseover = "popup('U+0E55 Thai Digit Five');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E56.jpg" ALT="U+0E56 Thai Digit Six"  onmouseover = "popup('U+0E56 Thai Digit Six');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E57.jpg" ALT="U+0E57 Thai Digit Seven"  onmouseover = "popup('U+0E57 Thai Digit Seven');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E58.jpg" ALT="U+0E58 Thai Digit Eight"  onmouseover = "popup('U+0E58 Thai Digit Eight');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E59.jpg" ALT="U+0E59 Thai Digit Nine"  onmouseover = "popup('U+0E59 Thai Digit Nine');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/BackSp.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Tab.jpg" WIDTH=30 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E50.jpg" ALT="U+0E50 Thai Digit Zero"  onmouseover = "popup('U+0E50 Thai Digit Zero');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0022.jpg" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0E.jpg" ALT="U+0E0E Thai Character Do Chada"  onmouseover = "popup('U+0E0E Thai Character Do Chada');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E11.jpg" ALT="U+0E11 Thai Character Tho Nangmontho"  onmouseover = "popup('U+0E11 Thai Character Tho Nangmontho');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E18.jpg" ALT="U+0E18 Thai Character Tho Thong"  onmouseover = "popup('U+0E18 Thai Character Tho Thong');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4D.jpg" ALT="U+0E4D Thai Character Nikhahit"  onmouseover = "popup('U+0E4D Thai Character Nikhahit');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4A.jpg" ALT="U+0E4A Thai Character Mai Tri"  onmouseover = "popup('U+0E4A Thai Character Mai Tri');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E13.jpg" ALT="U+0E13 Thai Character No Nen"  onmouseover = "popup('U+0E13 Thai Character No Nen');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2F.jpg" ALT="U+0E2F Thai Character Paiyannoi"  onmouseover = "popup('U+0E2F Thai Character Paiyannoi');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0D.jpg" ALT="U+0E0D Thai Character Yo Ying"  onmouseover = "popup('U+0E0D Thai Character Yo Ying');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E10.jpg" ALT="U+0E10 Thai Character Tho Than"  onmouseover = "popup('U+0E10 Thai Character Tho Than');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002C.jpg" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E05W.jpg" ALT="U+0E05 Thai Character Kho Khon"  onmouseover = "popup('U+0E05 Thai Character Kho Khon');" onmouseout="kill();" WIDTH=30 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E24.jpg" ALT="U+0E24 Thai Character Ru"  onmouseover = "popup('U+0E24 Thai Character Ru');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E06.jpg" ALT="U+0E06 Thai Character Kho Rakhang"  onmouseover = "popup('U+0E06 Thai Character Kho Rakhang');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0F.jpg" ALT="U+0E0F Thai Character To Patak"  onmouseover = "popup('U+0E0F Thai Character To Patak');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E42.jpg" ALT="U+0E42 Thai Character Sara O"  onmouseover = "popup('U+0E42 Thai Character Sara O');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0C.jpg" ALT="U+0E0C Thai Character Cho Choe"  onmouseover = "popup('U+0E0C Thai Character Cho Choe');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E47.jpg" ALT="U+0E47 Thai Character Maitaikhu"  onmouseover = "popup('U+0E47 Thai Character Maitaikhu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4B.jpg" ALT="U+0E4B Thai Character Mai Chattawa"  onmouseover = "popup('U+0E4B Thai Character Mai Chattawa');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E29.jpg" ALT="U+0E29 Thai Character So Rusi"  onmouseover = "popup('U+0E29 Thai Character So Rusi');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E28.jpg" ALT="U+0E28 Thai Character So Sala"  onmouseover = "popup('U+0E28 Thai Character So Sala');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E0B.jpg" ALT="U+0E0B Thai Character So So"  onmouseover = "popup('U+0E0B Thai Character So So');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/002E.jpg" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Enter.jpg" WIDTH=42 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0028.jpg" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0029.jpg" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E09.jpg" ALT="U+0E09 Thai Character Cho Ching"  onmouseover = "popup('U+0E09 Thai Character Cho Ching');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2E.jpg" ALT="U+0E2E Thai Character Ho Nokhuk"  onmouseover = "popup('U+0E2E Thai Character Ho Nokhuk');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E3A.jpg" ALT="U+0E3A Thai Character Phinthu"  onmouseover = "popup('U+0E3A Thai Character Phinthu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E4C.jpg" ALT="U+0E4C Thai Character Thanthakhat"  onmouseover = "popup('U+0E4C Thai Character Thanthakhat');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/003F.jpg" ALT="U+003F Question Mark"  onmouseover = "popup('U+003F Question Mark');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E12.jpg" ALT="U+0E12 Thai Character Tho Phuthao"  onmouseover = "popup('U+0E12 Thai Character Tho Phuthao');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E2C.jpg" ALT="U+0E2C Thai Character Lo Chula"  onmouseover = "popup('U+0E2C Thai Character Lo Chula');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/0E26.jpg" ALT="U+0E26 Thai Character Lu"  onmouseover = "popup('U+0E26 Thai Character Lu');" onmouseout="kill();" WIDTH=20 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20></TD>
+</TR></TABLE>
+<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
+<TR>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
+<TD><IMG SRC="https://www.microsoft.com/resources/msdn/goglobal/keyboards/images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
+</TR></TABLE>
+</DIV>
+</BODY>
+</HTML>
