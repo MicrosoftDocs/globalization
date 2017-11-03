@@ -39,7 +39,7 @@ First, some languages do not have a one–to–one mapping between their upperca
 -   სად არიან ასოებით? \(Georgian)
 -   જ્યાં મૂડી અક્ષરો છે? \(Gujarati)
 
-Developers are better served by using an API (e.g., [ToUpper()](https://msdn.microsoft.com/en-us/library/24kc78ka(v=vs.110).aspx)) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-İ] problem](https://msdn.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase "i" maps to a dotless uppercase letter: "I." However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "İ."
+Developers are better served by using an API (e.g., [ToUpper()](https://msdn.microsoft.com/en-us/library/24kc78ka(v=vs.110).aspx)) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-İ problem](https://msdn.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase "i" maps to a dotless uppercase letter: "I." However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "İ."
 
 ## Text Shaping
 
