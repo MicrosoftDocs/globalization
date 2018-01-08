@@ -8,11 +8,11 @@ ms.date: 03/16/2016
 
 # Time Formatting and Time Zones in .NET Framework
 
-The easiest and most efficient way of doing time formatting in the .NET world is to take advantage of the *DateTime* structure that provides methods such as *DateTime.ToString* and *DateTime.Parse*. These methods allow you to perform culture-sensitive operations on a *DateTime object*. Use the *DateTimeFormatInfo* class to format and display a *DateTime* based on culture. *DateTimeFormatInfo* defines how DateTime values are formatted and displayed, depending on the culture. For example, using the *LongTimePattern*, the time 4 hours P.M., 36 minutes and 15 seconds is formatted as 4:36:15 PM for the "en-US" culture and 16:36:15 for the "fr-FR" culture number-formatting standards. (For more information and code samples, see the [Date Formatting](https://msdn.microsoft.com/en-US/globalization/mt662320) article.)
+The easiest and most efficient way of doing time formatting in the .NET world is to take advantage of the *DateTime* structure that provides methods such as *DateTime.ToString* and *DateTime.Parse*. These methods allow you to perform culture-sensitive operations on a *DateTime object*. Use the *DateTimeFormatInfo* class to format and display a *DateTime* based on culture. *DateTimeFormatInfo* defines how DateTime values are formatted and displayed, depending on the culture. For example, using the *LongTimePattern*, the time 4 hours P.M., 36 minutes and 15 seconds is formatted as 4:36:15 PM for the "en-US" culture and 16:36:15 for the "fr-FR" culture number-formatting standards. (For more information and code samples, see the [Date Formatting](date-formatting.md) article.)
 
 Methods and properties in the *DateTime* structure always use the local time zone for calculations and comparisons. You should consider this when using the *DateTime.Parse* method and the *DateTime.ParseExact* method. These methods provide overloads that allow you to convert the string representation of a date and time to a *DateTime* type. You can also choose to format a *DateTime* for a specific culture. If you do not specify a time zone in the string that you pass to these methods, they return the parsed date and time without performing a time-zone adjustment. The date and time are based on the system's time-zone setting. If you specify a time-zone offset, these methods parse the date/time string, convert it to UTC, and then convert it to the time on the local system.
 
-Use the *DateTime.ToUniversalTime* method to convert a local *DateTime* to its UTC equivalent. To parse a date/time string and convert it to a UTC DateTime, use the *DateTimeStyles* enumeration *AdjustToUniversal* value with either the *DateTime.Parse* or *DateTime.ParseExact* method. These *DateTime* manipulations are illustrated in the following code example. This example creates a *DateTime* for the local time and then converts it to the UTC equivalent *DateTime*. Both types are converted to strings and written to the console. Notice that the strings differ by the UTC offset between the local time zone and UTC. (For more information on the UTC offset for various time zones, see the *TimeZone.GetUtcOffset* method in the Microsoft Developer Network documentation at [http://msdn2.microsoft.com](https://msdn.microsoft.com/).) These strings are converted back to *DateTime* types using the *DateTime.ParseExact* method. To capture the time-zone information stored in *utcdt*, the *AdjustToUniversal* value must be specified as a parameter to the *DateTime.ParseExact* method.
+Use the *DateTime.ToUniversalTime* method to convert a local *DateTime* to its UTC equivalent. To parse a date/time string and convert it to a UTC DateTime, use the *DateTimeStyles* enumeration *AdjustToUniversal* value with either the *DateTime.Parse* or *DateTime.ParseExact* method. These *DateTime* manipulations are illustrated in the following code example. This example creates a *DateTime* for the local time and then converts it to the UTC equivalent *DateTime*. Both types are converted to strings and written to the console. Notice that the strings differ by the UTC offset between the local time zone and UTC. (For more information on the UTC offset for various time zones, see the [TimeZone.GetUtcOffset](https://docs.microsoft.com/dotnet/api/system.timezone.getutcoffset) method.) These strings are converted back to *DateTime* types using the *DateTime.ParseExact* method. To capture the time-zone information stored in *utcdt*, the *AdjustToUniversal* value must be specified as a parameter to the *DateTime.ParseExact* method.
 
 ```C#
 using System;
@@ -69,7 +69,7 @@ Another vital point to consider when creating an application that is locale-awar
 
 ## Time Formatting in Web Pages
 
-In **"Retrieving the Browser Language Setting"** in the [Use Locale Model](https://msdn.microsoft.com/en-us/globalization/mt662310) article, you saw how to retrieve the current browser locale on the client side and how to set the global locale of your context or session to this value. After the appropriate locale has been set, you can easily format the time using FormatDateTime, a locale-aware function. Suppose you have retrieved the Chinese (Taiwan) locale as the primary browser locale ("zh-TW" is the default value for this locale). The following code saves the current context locale (matching the server's user locale), sets the locale to Chinese (Taiwan), formats the date in Chinese (Taiwan) format, and restores the original locale.
+In **"Retrieving the Browser Language Setting"** in the [Locale Model](locale-model.md) article, you saw how to retrieve the current browser locale on the client side and how to set the global locale of your context or session to this value. After the appropriate locale has been set, you can easily format the time using FormatDateTime, a locale-aware function. Suppose you have retrieved the Chinese (Taiwan) locale as the primary browser locale ("zh-TW" is the default value for this locale). The following code saves the current context locale (matching the server's user locale), sets the locale to Chinese (Taiwan), formats the date in Chinese (Taiwan) format, and restores the original locale.
 
 ```
 currentLocale = GetLocale
@@ -89,10 +89,9 @@ Obviously the scripting technology does not offer the same flexibility to manipu
 ## References
 
 See the MSDN documentation for details about the following APIs:
-[EnumTimeFormats](https://msdn.microsoft.com/en-us/library/ms776258.aspx)
-[GetTimeFormat](https://msdn.microsoft.com/en-us/library/ms776299.aspx)
-[GetTimeZoneInformation](https://msdn.microsoft.com/en-us/library/ms724421.aspx)
-[SetTimeZoneInformation](https://msdn.microsoft.com/en-us/library/ms724944.aspx)
-[DateTime Structure for .NET](https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx)
 
-
+[EnumTimeFormats](https://msdn.microsoft.com/library/dd317830.aspx)  
+[GetTimeFormat](https://msdn.microsoft.com/library/dd318130.aspx)  
+[GetTimeZoneInformation](https://msdn.microsoft.com/library/ms724421.aspx)  
+[SetTimeZoneInformation](https://msdn.microsoft.com/library/ms724944.aspx)  
+[DateTime Structure for .NET](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)  

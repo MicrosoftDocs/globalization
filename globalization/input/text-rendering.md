@@ -39,11 +39,11 @@ First, some languages do not have a one–to–one mapping between their upperca
 -   სად არიან ასოებით? \(Georgian)
 -   જ્યાં મૂડી અક્ષરો છે? \(Gujarati)
 
-Developers are better served by using an API (e.g., [ToUpper()](https://msdn.microsoft.com/en-us/library/24kc78ka(v=vs.110).aspx)) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-İ problem](https://msdn.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase "i" maps to a dotless uppercase letter: "I." However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "İ."
+Developers are better served by using an API (for example, [ToUpper()](https://docs.microsoft.com/dotnet/api/system.string.toupper#System_String_ToUpper_System_Globalization_CultureInfo_) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-İ problem](https://msdn.microsoft.com/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase "i" maps to a dotless uppercase letter: "I." However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "İ."
 
 ## Text Shaping
 
-Most platforms and browsers support correct text shaping automatically or by calling APIs (such as [DirectWrite](https://msdn.microsoft.com/en-us/library/windows/desktop/dd371554(v=vs.85).aspx)), but testers and developers should be aware that scripts’ glyph shapes may change depending on the context, and should ensure correct behavior in applications.
+Most platforms and browsers support correct text shaping automatically or by calling APIs (such as [DirectWrite](https://msdn.microsoft.com/library/windows/desktop/dd371554(v=vs.85).aspx)), but testers and developers should be aware that scripts’ glyph shapes may change depending on the context, and should ensure correct behavior in applications.
 
 ### Ligatures
 
@@ -181,6 +181,4 @@ Search should use a suitable buffer size to accept multi-byte characters. Word w
 
 -   Search needs to support languages without word breakers, e.g. Japanese and Chinese.
 -   For most search implementations, the functionality comes from SQL, for more advanced implementations you must specify the appropriate collation for the language being searched.
--   For more information on line and word breaking, please see [Line and Word Breaking](https://msdn.microsoft.com/globalization/mt662334).
-
-
+-   For more information on line and word breaking, please see [Line and Word Breaking](line-and-word-breaking.md).

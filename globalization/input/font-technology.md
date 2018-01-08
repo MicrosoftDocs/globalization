@@ -67,7 +67,7 @@ MEIRYO.TTC,Meiryo,128,85
 ```
 indicates that the scaling algorithm should apply the scaling factors 128 and 85 whenever the given base font is linked to the Meiryo font.
 
-Note that [GDI+](https://msdn.microsoft.com/en-us/library/ms533798(vs.85).aspx) is not able to parse these scaling factors. Thus, references to fonts with scaling factors are repeated without these scaling factors. In GDI+, the first reference, with the scaling factors, will appear to be to an unrecognized font and will be ignored. In GDI, the second reference will be treated as redundant and ignored.
+Note that [GDI+](https://msdn.microsoft.com/library/ms533798(vs.85).aspx) is not able to parse these scaling factors. Thus, references to fonts with scaling factors are repeated without these scaling factors. In GDI+, the first reference, with the scaling factors, will appear to be to an unrecognized font and will be ignored. In GDI, the second reference will be treated as redundant and ignored.
 
 ### Font Substitution
 

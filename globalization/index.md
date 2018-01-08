@@ -95,7 +95,7 @@ Software internationalization has two facets:
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/en-us/library/dd318661(vs.85).aspx">
+        <a href="https://msdn.microsoft.com/library/dd318661(vs.85).aspx">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

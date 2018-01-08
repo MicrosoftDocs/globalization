@@ -24,7 +24,7 @@ Although you can activate mirroring through the localization process (with non- 
 
 By activating the mirroring layout on a per-process basis, all windows that are created after activation will be mirrored; but this activation will not affect the existing windows. This approach is very similar to noncompile mirroring, with the exception that the mirroring style within an application can be turned on and off at run time rather than at a binary level, as in the case of noncompile mirroring.
 
-You set the default direction to RTL for a process by calling [[SetProcessDefaultLayout]](https://msdn.microsoft.com/en-us/library/ms633542.aspx) (LAYOUT\_RTL). You can also turn off default mirroring by calling *SetProcessDefaultLayout(0)*. In addition, you can query the current default layout direction as follows:
+You set the default direction to RTL for a process by calling [SetProcessDefaultLayout](https://msdn.microsoft.com/library/ms633542.aspx) (LAYOUT\_RTL). You can also turn off default mirroring by calling *SetProcessDefaultLayout(0)*. In addition, you can query the current default layout direction as follows:
 
 ```C++
 BOOL WINAPI
@@ -143,7 +143,7 @@ MoveWindow(hControl, rcControl.left - rcDialog.left, _
  rcControl.top - rcDialog.top, nWidth, nHeight, FALSE);
 ```
 
-This works fine when the dialog window has an LTR layout, and when the mapping mode of the client is MM\_TEXT. The new *x* position in client coordinates corresponds to the difference in the left edges of the control and the dialog box in screen coordinates. In a mirrored dialog box, however, the roles of left and right are reversed. You can remove the assumption from the previous code that near is left and far is right by using [[MapWindowPoints]](https://msdn.microsoft.com/en-us/library/dd145046.aspx) to go into client coordinates, as shown in the following code sample:
+This works fine when the dialog window has an LTR layout, and when the mapping mode of the client is MM\_TEXT. The new *x* position in client coordinates corresponds to the difference in the left edges of the control and the dialog box in screen coordinates. In a mirrored dialog box, however, the roles of left and right are reversed. You can remove the assumption from the previous code that near is left and far is right by using [MapWindowPoints](https://msdn.microsoft.com/library/dd145046.aspx) to go into client coordinates, as shown in the following code sample:
 
 ```C++
 RECT rcDialog;

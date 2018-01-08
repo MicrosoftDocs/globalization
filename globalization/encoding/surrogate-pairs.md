@@ -29,6 +29,6 @@ For example, 葛 \(U+845B) may also be represented as 󠄀葛 \(U+845B; VS17/U+E
 
 ### End-User Defined Characters
 
-[End-user defined characters](https://msdn.microsoft.com/en-us/library/dd317802(v=vs.85).aspx) (EUDCs) and [Private Use Area](https://msdn.microsoft.com/en-us/library/dd317802(v=vs.85).aspx) (PUA) characters are used to represent custom characters that are shared across an entire corporation, organization, or government. They are often used to display names or words with custom characters unavailable in other fonts. These characters cannot be reliably shared across computers or systems.
+[End-user defined characters](https://msdn.microsoft.com/library/dd317802(v=vs.85).aspx) (EUDCs) and [Private Use Area](https://msdn.microsoft.com/library/dd317802(v=vs.85).aspx) (PUA) characters are used to represent custom characters that are shared across an entire corporation, organization, or government. They are often used to display names or words with custom characters unavailable in other fonts. These characters cannot be reliably shared across computers or systems.
 
 
