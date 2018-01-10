@@ -16,10 +16,10 @@ This becomes even more complex when dealing with Asian character sets. Because C
 
 Each Asian character is represented by a pair of code points (thus double-byte). For programming awareness, a set of points are set aside to represent the first byte of the set and are not valued unless they are immediately followed by a defined second byte. DBCS meant that you had to write code that would treat these pair of code points as one,and this still disallowed the combining of say Japanese and Chinese in the same data stream, because depending on the codepage the same double-byte code points represent different characters for the different languages.
 
-In order to allow for the storage of different languages in the same data stream, [[Unicode]](https://msdn.microsoft.com/en-us/globalization/mt683841) was created. This one "codepage" can represent over 64,000 characters and with surrogates it can represent over a million characters. The use of Unicode in Windows allows for easier creation of World-Ready code, because you no longer have to worry about which codepage you are addressing, nor whether you had to group character points to represent one character.
+In order to allow for the storage of different languages in the same data stream, [Unicode](../encoding/encoding-overview.md) was created. This one "codepage" can represent over 64,000 characters and with surrogates it can represent over a million characters. The use of Unicode in Windows allows for easier creation of World-Ready code, because you no longer have to worry about which codepage you are addressing, nor whether you had to group character points to represent one character.
 
-Please note that if still supporting Win95/98/ME applications, you will need to convert the Unicode code points back to Window codepages. This is because Win95/98/ME GDI is ANSI based. But this is made easy with the functions **WideChartoMultiByte** and **MultiByteToWideChar**. See "[[Unicode and Character Sets]](https://msdn.microsoft.com/en-us/library/dd374083.aspx)" on MSDN.
+Please note that if still supporting Win95/98/ME applications, you will need to convert the Unicode code points back to Window codepages. This is because Win95/98/ME GDI is ANSI based. But this is made easy with the functions **WideChartoMultiByte** and **MultiByteToWideChar**. See "[Unicode and Character Sets](https://msdn.microsoft.com/library/dd374083.aspx)" on MSDN.
 
-For information about encodings in web pages, please see [**[MLang]**](https://msdn.microsoft.com/en-us/library/aa767865.aspx) on MSDN.
+For information about encodings in web pages, please see [**[MLang]**](https://msdn.microsoft.com/library/aa767865.aspx) on MSDN.
 
 

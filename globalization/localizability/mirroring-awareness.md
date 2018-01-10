@@ -27,7 +27,7 @@ To minimize the amount of re-write needed for applications to support mirroring,
 
 There are two different approaches to turn mirroring on and off:
 
--   **Compiled application approach:** This is the approach you use when you have full access to the applications source code. For example, by [setting DirectionFlow in WPF](https://msdn.microsoft.com/en-us/library/aa350685(v=vs.110).aspx).
+-   **Compiled application approach:** This is the approach you use when you have full access to the applications source code. For example, by [setting DirectionFlow in WPF](/dotnet/framework/wpf/advanced/bidirectional-features-in-wpf-overview).
 -   **Non-compiled application approach:** This is the approach you use when you have legacy applications for which you have on access to any of the code. This is usually done with some resource localization tool.
 
 ### Mirroring Bug Examples
@@ -50,7 +50,5 @@ The owner-drawn command or bitmap is being drawn outside the desired area becaus
 
 ### See more at the below links.
 
-- [Mirroring in Win32](https://msdn.microsoft.com/en-us/library/mt691881)
-- [Mirroring in .NET Framework](https://msdn.microsoft.com/en-us/library/mt691880)
-
-
+- [Mirroring in Win32](https://msdn.microsoft.com/library/mt691881)
+- [Mirroring in .NET Framework](https://msdn.microsoft.com/library/mt691880)

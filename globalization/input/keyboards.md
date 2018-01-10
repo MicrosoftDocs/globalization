@@ -8,7 +8,7 @@ ms.date: 04/21/2017
 
 If you are using a standard control, you should have no need to worry about the user’s input method. This will be handled for you automatically. Advanced applications (such as a text editor) that need to have full control over how input languages are handled should monitor—and should be able to respond to—the user’s changes.
 
-You will find [keyboard input documentation on MSDN](https://msdn.microsoft.com/en-us/library/ms646268(VS.85).aspx).
+You will find [keyboard input documentation on MSDN](https://msdn.microsoft.com/library/ms646268(VS.85).aspx).
 
 The exception may be for keyboard shortcuts. If you define a shortcut as Alt-S and there is no S on the keyboard, what does that mean for the user?
 

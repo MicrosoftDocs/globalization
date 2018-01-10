@@ -23,7 +23,7 @@ Thus you need to ensure that if you deal with measurements, you can display them
 
 Although you need to do your own conversions between the metric and US systems, Win32 NLS APIs can help you detect which system of measurement is used for a given locale.
 
-The system of measurement can be obtain from [GetLocaleInfo](https://msdn.microsoft.com/en-us/library/ms776270.aspx) API with [LCTYPE](https://msdn.microsoft.com/en-us/library/bb507201.aspx) flag set to *LOCALE\_IMEASURE*. The returned value is 0 if the metric system (Système International d'unités, or S.I.) is used, and 1 if the U.S. system is used. The maximum number of characters allowed for this string is two.
+The system of measurement can be obtain from [GetLocaleInfo](https://msdn.microsoft.com/library/dd318101.aspx) API with [LCTYPE](https://msdn.microsoft.com/library/bb507201.aspx) flag set to *LOCALE\_IMEASURE*. The returned value is 0 if the metric system (Système International d'unités, or S.I.) is used, and 1 if the U.S. system is used. The maximum number of characters allowed for this string is two.
 
  ```C++
 DWORD dwMSys;
@@ -35,6 +35,4 @@ sizeof (DWORD));
 
 ### Units of Measurement in .NET Framework
 
-The [RegionInfo](https://msdn.microsoft.com/en-us/library/system.globalization.regioninfo.aspx) class from the [System.Globalization](https://msdn.microsoft.com/en-us/library/system.globalization.aspx) namespace contains information about the country or region. In contrast to [CultureInfo](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx), RegionInfo does not represent preferences of the user and does not depend on the user's language or culture. A good example of this category of information is the [IsMetric](https://msdn.microsoft.com/en-us/library/system.globalization.regioninfo.ismetric.aspx) property of RegionInfo that gets a Boolean value indicating whether the country or region uses the metric system for measurements.
-
-
+The [RegionInfo](https://docs.microsoft.com/dotnet/api/system.globalization.regioninfo) class from the [System.Globalization](https://docs.microsoft.com/dotnet/api/system.globalization) namespace contains information about the country or region. In contrast to [CultureInfo](https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo), RegionInfo does not represent preferences of the user and does not depend on the user's language or culture. A good example of this category of information is the [IsMetric](https://docs.microsoft.com/dotnet/api/system.globalization.regioninfo.ismetric) property of RegionInfo that gets a Boolean value indicating whether the country or region uses the metric system for measurements.
