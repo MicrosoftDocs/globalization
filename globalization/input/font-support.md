@@ -799,8 +799,6 @@ In a default setup, not all scripts are necessarily enabled. In the **Regional O
 
 The sixteen language groups available on Windows 2000 are: Arabic, Armenian, Baltic, Central European, Cyrillic, Georgian, Greek, Hebrew, Indic, Japanese, Korean, Simplified Chinese, Thai, Traditional Chinese, Turkic, Vietnamese, Western Europe and United States.
 
-A *surrogates* shaping engine was also added to Uniscribe to allow display of Unicode supplementary-plane characters in the GDI text stack. (GDI supports wide characters but does not understand UTF-16 surrogate pairs.) See the [Surrogates and Supplementary Characters](https://msdn.microsoft.com/globalization/mt683846) topic for details on the extent of support for supplementary-plan characters. Windows 2000 did not include fonts for any supplementary-plane characters.
+A *surrogates* shaping engine was also added to Uniscribe to allow display of Unicode supplementary-plane characters in the GDI text stack. (GDI supports wide characters but does not understand UTF-16 surrogate pairs.) See the [Surrogate Pairs and Variation Selectors](../encoding/surrogate-pairs.md) topic for details on the extent of support for supplementary-plan characters. Windows 2000 did not include fonts for any supplementary-plane characters.
 
 [Top of page](#content)
-
-

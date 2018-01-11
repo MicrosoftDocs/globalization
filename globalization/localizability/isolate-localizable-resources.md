@@ -58,7 +58,7 @@ if ( (_tcscmp(lpBuffer,TEXT("SYSTEM")) == 0) ||
  (_tcscmp(lpBuffer,TEXT("NETWORK SERVICE")) == 0)
 ```
 
-A better way to handle resources that come from localizable platforms is to use application programming interface (API) calls to get the system's localized values. The following example uses *SHGetFolderPath*, which will return the correct localized version of the path from one localized system to another localized system. (For information on the different Shell calls, see the [Shell Programmers Guide](https://msdn.microsoft.com/en-us/library/bb776778.aspx).)
+A better way to handle resources that come from localizable platforms is to use application programming interface (API) calls to get the system's localized values. The following example uses *SHGetFolderPath*, which will return the correct localized version of the path from one localized system to another localized system. (For information on the different Shell calls, see the [Shell Programmers Guide](https://msdn.microsoft.com/library/bb776778.aspx).)
 
 ```C++
 TCHAR szPath[MAX_PATH];
