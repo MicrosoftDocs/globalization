@@ -27,12 +27,14 @@ Choose a keyboard below to view its layouts.
                                     <div class="card">
                                         <div class="cardText">
                                             <ul class="noBullet">
-                                                <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdal.html", "_blank", "height=130, width=347, scroll=no");">Albanian</a></li>
-                                                <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbda1.html", "_blank", "height=130, width=347, scroll=no");">Arabic (101)</a></li>
-                                                <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbda2.html", "_blank", "height=130, width=347, scroll=no");">Arabic (102)</a></li>
-                                                <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbda3.html", "_blank", "height=130, width=347, scroll=no");">Arabic (102) AZERTY</a></li>
-                                                <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdarme.html", "_blank", "height=130, width=347, scroll=no");">Armenian Eastern</a></li>
-                                                <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdarmw.html", "_blank", "height=130, width=347, scroll=no");">Armenian Western</a></li>
+                                                <li>
+                                                    <a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdal.html', '_blank', 'height=130, width=347, scroll=no');">Albanian</a>
+                                                </li>
+                                                <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbda1.html', '_blank', 'height=130, width=347, scroll=no');">Arabic (101)</a></li>
+                                                <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbda2.html', '_blank', 'height=130, width=347, scroll=no');">Arabic (102)</a></li>
+                                                <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbda3.html', '_blank', 'height=130, width=347, scroll=no');">Arabic (102) AZERTY</a></li>
+                                                <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdarme.html', '_blank', 'height=130, width=347, scroll=no');">Armenian Eastern</a></li>
+                                                <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdarmw.html', '_blank', 'height=130, width=347, scroll=no');">Armenian Western</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -50,11 +52,11 @@ Choose a keyboard below to view its layouts.
                     <a href="#win8panel"></a>
                     <ul id="win8panel" class="cardsL">
                         <li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdgr.html", "_blank", "height=130, width=347, scroll=no");">German</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdgr1.html", "_blank", "height=130, width=347, scroll=no");">German (IBM)</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdhe.html", "_blank", "height=130, width=347, scroll=no");">Greek</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdhe220.html", "_blank", "height=130, width=347, scroll=no");">Greek (220)</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdhela2.html", "_blank", "height=130, width=347, scroll=no");">Greek (220) Latin</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdgr.html', '_blank', 'height=130, width=347, scroll=no');">German</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdgr1.html', '_blank', 'height=130, width=347, scroll=no');">German (IBM)</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdhe.html', '_blank', 'height=130, width=347, scroll=no');">Greek</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdhe220.html', '_blank', 'height=130, width=347, scroll=no');">Greek (220)</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdhela2.html', '_blank', 'height=130, width=347, scroll=no');">Greek (220) Latin</a></li>
                         </li>
                     </ul>
                 </li>
@@ -67,11 +69,11 @@ Choose a keyboard below to view its layouts.
                     <a href="#win10panel"></a>
                     <ul id="win10panel" class="cardsL">
                         <li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdmon.html", "_blank", "height=130, width=347, scroll=no");">Mongolian (Cyrillic)*</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdmonmo.html", "_blank", "height=130, width=347, scroll=no");">Mongolian (Mongolian Script)†</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdno.html", "_blank", "height=130, width=347, scroll=no");">Norwegian</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdru.html", "_blank", "height=130, width=347, scroll=no");">Russian</a></li>
-                            <li><a class="barLink" href="javascript:window.open("/globalization/keyboards/kbdru1.html", "_blank", "height=130, width=347, scroll=no");">Russian (Typewriter)</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdmon.html', '_blank', 'height=130, width=347, scroll=no');">Mongolian (Cyrillic)*</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdmonmo.html', '_blank', 'height=130, width=347, scroll=no');">Mongolian (Mongolian Script)†</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdno.html', '_blank', 'height=130, width=347, scroll=no');">Norwegian</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdru.html', '_blank', 'height=130, width=347, scroll=no');">Russian</a></li>
+                            <li><a class="barLink" href="javascript:window.open('/globalization/keyboards/kbdru1.html', '_blank', 'height=130, width=347, scroll=no');">Russian (Typewriter)</a></li>
                         </li>
                     </ul>
                 </li>
