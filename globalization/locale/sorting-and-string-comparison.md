@@ -28,7 +28,7 @@ When designing your application, you must first decide whether it makes sense to
 
 ### User Experience
 
-Users choose their sort order by setting their language in the operating system. When the chosen language has more than one sort order, the user has the options may specify which of the available sort orders they prefer.
+Users choose their sort order by setting their language in the operating system. When the chosen language has more than one sort order, the user may specify which of the available sort orders they prefer.
 
 For web applications, there may be built in settings (such as on [SharePoint Online](https://support.office.com/en-us/article/Change-regional-settings-for-a-site-e9e189c7-16e3-45d3-a090-770be6e83c1a?ui=en-US&rs=en-US&ad=US&fromAR=1)) or the application may depend on the browser’s language settings via the HTTP\_ACCEPT\_LANGUAGE string.
 
