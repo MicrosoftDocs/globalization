@@ -1,6 +1,14 @@
 {
-  "need_generate_pdf": false,
   "need_generate_intellisense": false,
+  "branch_target_mapping": 
+  { 
+    "live": ["Publish", "Pdf"]
+  },
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },  
   "docsets_to_publish": [
     {
       "docset_name": "globalization",
@@ -22,14 +30,19 @@
   "notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
-    }
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
+    }    
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": true
 }
