@@ -7,7 +7,7 @@ ms.date: 01/05/2017
 
 # Windows Keyboard Layouts
 
-![Windows keyboard](/media/hubs/globalization/IC381691.jpg "Windows keyboard")
+![Windows keyboard](https://docs.microsoft.com/media/hubs/globalization/IC381691.jpg "Windows keyboard")
 
 Choose a keyboard below to view its layouts.
 <table>
