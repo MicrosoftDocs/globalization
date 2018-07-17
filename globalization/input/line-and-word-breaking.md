@@ -8,7 +8,7 @@ ms.date: 03/16/2016
 
 Along with Complex Scripts, word and line breaking add a special case when multilingual text is to be parsed or displayed.
 
-Latin script follows some straightforward rules for world and line breaking, such as breaking a line at a space, tab, or hyphen. For languages like Thai and Khmer, words run together (with no space between characters that end a word and those that begin another word, as with Latin script). This makes word breaking in such languages a more complex process, since syntax rules require line breaking on word boundaries. Thus for languages like Thai and Khmer, word breaking is based on grammatical analysis and on word matching in dictionaries during text processing at run time. Other languages also have rules of their own.
+Latin script follows some straightforward rules for word and line breaking, such as breaking a line at a space, tab, or hyphen. For languages like Thai and Khmer, words run together (with no space between characters that end a word and those that begin another word, as with Latin script). This makes word breaking in such languages a more complex process, since syntax rules require line breaking on word boundaries. Thus for languages like Thai and Khmer, word breaking is based on grammatical analysis and on word matching in dictionaries during text processing at run time. Other languages also have rules of their own.
 
 Unlike most Western written languages, Chinese, Japanese, Korean, and Thai do not necessarily indicate the distinction between words by using spaces. Although the Thai language does not use spacing between words, it still requires lines to be broken on word boundaries.
 
