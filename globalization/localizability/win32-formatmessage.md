@@ -49,11 +49,11 @@ The syntax for formatting the first message is as follows:
 
         DWORD len = FormatMessage(
 
-             FORMAT_MESSAGE_FROM_HMODULE|FORMAT_MESSAGE_ARGUMENT_ARRAY,
+             FORMAT_MESSAGE_FROM_HMODULE|FORMAT_MESSAGE_ARGUMENT_ARRAY,
 
-             hModule, idMsg, langID, lpBuf, sizeof(lpBuf)/sizeof(TCHAR),
+             hModule, idMsg, langID, lpBuf, sizeof(lpBuf)/sizeof(TCHAR),
 
-             lppArgs);
+             lppArgs);
 ```
 
 You can use FormatMessage with string tables as well as with message tables, but it is more efficient to use the function with message tables. FormatMessage can retrieve strings from message tables directly, but it cannot access string tables. To format a string from a string table, you would first have to retrieve it with the LoadString function and then pass it in a buffer to FormatMessage. Not only is this an extra step, it's a convoluted extra step.
@@ -64,29 +64,29 @@ FormatMessage is particularly useful for a number of reasons. In conjunction wit
 void ReportError()
  
     {
-        LPTSTR lpMessage;
+        LPTSTR lpMessage;
 
-        DWORD dwErrCode = GetLastError();
+        DWORD dwErrCode = GetLastError();
 
-        FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER |
+        FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER |
 
-             FORMAT_MESSAGE_FROM_SYSTEM,
+             FORMAT_MESSAGE_FROM_SYSTEM,
 
-             NULL, // no source buffer needed
+             NULL, // no source buffer needed
 
-             dwErrCode, // error code for this message
+             dwErrCode, // error code for this message
 
-             NULL, // default language ID
+             NULL, // default language ID
 
-             (LPTSTR)&lpMessage, // allocated by fcn
+             (LPTSTR)&lpMessage, // allocated by fcn
 
-             NULL, // minimum size of buffer
+             NULL, // minimum size of buffer
 
-             NULL); // no inserts
+             NULL); // no inserts
 
-        MessageBox(NULL, lpMessage, TEXT("File Error"), 
+        MessageBox(NULL, lpMessage, TEXT("File Error"), 
 
-             MB_ICONSTOP | MB_OK );
+             MB_ICONSTOP | MB_OK );
 
     }
 ```

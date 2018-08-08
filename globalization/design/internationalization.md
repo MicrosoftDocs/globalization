@@ -58,12 +58,12 @@ Coding for world-readiness may have an impact upon the UI design; below is a lis
 
 ### Internet Protocols
 
--   If your feature processes and displays various internet protocols, does it support non-Latin characters such as www.café.com, <span lang=el>χρήστη@μηχανή.ελ</span>, <span lang=ar dir=rtl>http:// مثال.إختبار</span>, or <span lang=zh-HanS>\\\\公司\\单位\\文件.docx</span.
-    -   Double-encoding is frequently seen when to different components use HTML encoding; instead of “Documents partagés” (Shared Documents) the user sees “Documents partag&\#233;s”. The resulting string is not human readable.
-    -   Have you considered the entire process flow?
-        -   When processing data, host names, URLs/IRIs or UNC paths, or email addresses when is the conversion happening? Who is doing the conversion?
-        -   Is your feature handing off the information in the format the receiving component is expecting?
-        -   Is your feature properly encoding and decoding incoming data?
+- If your feature processes and displays various internet protocols, does it support non-Latin characters such as www.café.com, <span lang=el>χρήστη@μηχανή.ελ</span>, <span lang=ar dir=rtl>http:// مثال.إختبار</span>, or <span lang=zh-HanS>\\\\公司\\单位\\文件.docx</span.
+  -   Double-encoding is frequently seen when to different components use HTML encoding; instead of “Documents partagés” (Shared Documents) the user sees “Documents partag&\#233;s”. The resulting string is not human readable.
+  -   Have you considered the entire process flow?
+      -   When processing data, host names, URLs/IRIs or UNC paths, or email addresses when is the conversion happening? Who is doing the conversion?
+      -   Is your feature handing off the information in the format the receiving component is expecting?
+      -   Is your feature properly encoding and decoding incoming data?
 
 ### Text Input and Display
 
@@ -81,17 +81,19 @@ Coding for world-readiness may have an impact upon the UI design; below is a lis
 
 It is best to use common APIs, such NLS or .NET, to address the following issues.
 
--   If your feature uses date/time formats, a calendar, or a calendar control, does it allow usage of different calendar types? For example:
-    -   If your feature displays date or time, does it allow different date or time format ordering? For example, Japanese dates are often in the order of era, year, month, and date (<span langu=jp>平成 22年 12月 05日</span>).
-    -   Consider how different calendars may impact all your features. Does your month picker support the 13 months found in the Hebrew Lunar calendar during a leap year? In addition, weekdays are not always Monday through Friday. Many countries use Saturday as the first day of the week.
--   If your feature displays numbers, does it allow different number formats? For example:
-    -   The default setting for the German locale is the period (.) to separate number groups and the comma (,) to show fractions, as in 1.234,56.
-    -   Turkish people place the percentage symbol (%) on the left side of a number (%20).
-        -   Does your feature display, input, send, receive, save or load whole numbers, decimals, percentages, negative numbers, or non-ASCII numbers (e.g., <span lang=ar>١,٢</span>, <span lang=th>๒, ๓</span>, etc.)?
-        -   Does the feature allow the user to format numbers as currency? Display, input, send or receive, and save or load currency numbers. For example, Bahrain uses three decimal places in their currency format (<span lang=ar>[د.ب.‏1,234.456]</span>), if you hard-code the decimal places to two places your feature will not meet the user’s expectations.
-        -   If your feature sorts a range of data, can the user specify the correct sort order that matches their cultural expectations? For example, in Norwegian, the “ø” character is sorted after “z”. If a user asks for a range of data of h-q, they would be surprised to see items starting with the ø character in their results. Each language sorts uniquely, and some cultures define more than one sort order for their language.
-        -   If your feature displays proper names including honorifics (Do you allow for ruby text or phonetic guides ? Are you addressing the user in the level of formality appropriate to that culture and the context?) , addresses, telephone numbers, or phone numbers, can the format and ordering be changed? For example, a Korean phone number has nine digits and the prefix can be either three or four digits, and the area code can be either two or three digits, (02) 531-4500.
--   If your feature allows printing, can the user configure the paper size to non-US standards? For example, Swedish standards dictate a G4 paper size. If your feature allows printing, will all the content correctly preview and print as it was displayed on the screen? Did you consider all fields, comments, signatures, margins, headers, footers, and page breaks?
+- If your feature uses date/time formats, a calendar, or a calendar control, does it allow usage of different calendar types? For example:
+  - If your feature displays date or time, does it allow different date or time format ordering? For example, Japanese dates are often in the order of era, year, month, and date (<span langu=jp>平成 22年 12月 05日</span>).
+  - Consider how different calendars may impact all your features. Does your month picker support the 13 months found in the Hebrew Lunar calendar during a leap year? In addition, weekdays are not always Monday through Friday. Many countries use Saturday as the first day of the week.
+
+- If your feature displays numbers, does it allow different number formats? For example:
+  - The default setting for the German locale is the period (.) to separate number groups and the comma (,) to show fractions, as in 1.234,56.
+  - Turkish people place the percentage symbol (%) on the left side of a number (%20).
+    - Does your feature display, input, send, receive, save or load whole numbers, decimals, percentages, negative numbers, or non-ASCII numbers (e.g., <span lang=ar>١,٢</span>, <span lang=th>๒, ๓</span>, etc.)?
+    - Does the feature allow the user to format numbers as currency? Display, input, send or receive, and save or load currency numbers. For example, Bahrain uses three decimal places in their currency format (<span lang=ar>[د.ب.‏1,234.456]</span>), if you hard-code the decimal places to two places your feature will not meet the user’s expectations.
+    - If your feature sorts a range of data, can the user specify the correct sort order that matches their cultural expectations? For example, in Norwegian, the “ø” character is sorted after “z”. If a user asks for a range of data of h-q, they would be surprised to see items starting with the ø character in their results. Each language sorts uniquely, and some cultures define more than one sort order for their language.
+    - If your feature displays proper names including honorifics (Do you allow for ruby text or phonetic guides ? Are you addressing the user in the level of formality appropriate to that culture and the context?) , addresses, telephone numbers, or phone numbers, can the format and ordering be changed? For example, a Korean phone number has nine digits and the prefix can be either three or four digits, and the area code can be either two or three digits, (02) 531-4500.
+
+- If your feature allows printing, can the user configure the paper size to non-US standards? For example, Swedish standards dictate a G4 paper size. If your feature allows printing, will all the content correctly preview and print as it was displayed on the screen? Did you consider all fields, comments, signatures, margins, headers, footers, and page breaks?
 
 ### User Interface
 
@@ -101,14 +103,14 @@ This includes error messages, log files, and console applications.
 -   If your feature has UI strings, are all the strings available to be translated? For example, all UI is required to be translated by the [Toubon Law](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) in France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) in Canada.
 -   Does the feature incorporate components that are not translated for your target markets how will you handle unsupported markets? What are the ramifications, fall back mechanisms, etc.?
 -   If your feature has UI elements that combine to form a sentence, can the UI be reordered? For example, the recurrence dialog in the calendar is problematic and adds complexity to localization because the ordering of the sentence doesn’t make sense in non-English languages.
-    ![Re-ordering UI elements for localization](/media/hubs/globalization/IC863446.jpg "Re-ordering UI elements for localization") 
+    ![Re-ordering UI elements for localization](/media/hubs/globalization/IC863446.jpg "Re-ordering UI elements for localization") 
 -   If your feature has images that contain text that requires translation, can you use a different image instead? Image translation adds complexity and extra cost to the localization process. It is recommended to create generic images or icons that work for all languages.
-    ![English font button](/media/hubs/globalization/IC863447.png "English font button")  English vs. ![Arabic font button](/media/hubs/globalization/IC863449.png "Arabic font button")  Arabic
+    ![English font button](/media/hubs/globalization/IC863447.png "English font button")  English vs. ![Arabic font button](/media/hubs/globalization/IC863449.png "Arabic font button")  Arabic
 -   If your feature has UI elements, can they be designed to dynamically expand for other languages? For example, the date navigator shows days of the week abbreviated with two letters for English (Su, Mo, Tu), and expands to shows days abbreviated with three letters for Turkish.
     Keep in mind that text may expand vertically and horizontally. Allow for text to expand horizontally (the length of words will increase in some languages, such as German, Finnish, and Czech), but also design for text to increase vertically. Some scripts have tall risers and descenders or accent characters that will expand beyond typical English or Latin script text.
 -   Clipping and truncation can change meaning. Ensure you understand the how meaning can be changed if you clip part of the word (in particular accents) in other scripts. Removing the accents can change the meaning of a word—probably to something you didn’t intend!
 -   Does your feature have dialogs that contain elements that display content dynamically? For example, these controls are impossible to localize, especially if these controls ever require resizing and/or relocation—there is no way for the translator to know what elements will display together.
-    ![Dialog buttons](/media/hubs/globalization/IC863448.jpg "Dialog buttons") 
+    ![Dialog buttons](/media/hubs/globalization/IC863448.jpg "Dialog buttons") 
 -   Can all the components of the feature be mirrored for languages that are written right-to-left (RTL), such as animation, shadows, tree control, or tab order? For example, Hebrew users type from right to left and have a right to left workflow. They have a poor experience when panes in the modules are not mirrored consistently. The navigation pane is mirrored correctly, but the message list is not. As a result, the message list and navigation pane scroll bars are side-by-side, making it difficult for the user to pick the correct scroll bar to use.
 -   Italic, bold, and underline are not universal for all scripts. Some fonts may not even have an italic form. Consider the impact to your design if you need to use other method to differentiate text or allow alternate emphasis methods for non-Latin text.
 -   Capitalization can matter—or is not applicable.

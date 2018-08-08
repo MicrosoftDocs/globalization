@@ -25,10 +25,10 @@ CAL\_SCALNAME); // calendar info (return the calendar name)
 // The callback function will look like:
 BOOL CALLBACK EnumCalendarInfoProc(LPTSTR lpCalendarInfoString, CALID Calendar)
 {
-    if (!lpCalendarInfoString)
-        return FALSE;
-    MessageBox(NULL, g\_szBuf2, TEXT(&Calendars names&), MB\_OK);
-    return TRUE;
+    if (!lpCalendarInfoString)
+        return FALSE;
+    MessageBox(NULL, g\_szBuf2, TEXT(&Calendars names&), MB\_OK);
+    return TRUE;
 }
 ```
 

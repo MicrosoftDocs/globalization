@@ -36,11 +36,11 @@ public class TimeZoneSample
  // using the custom format string and display.
  String str = dt.ToString(format);
  Console.WriteLine(str);
-    // Convert the UTC DateTime to a string
+    // Convert the UTC DateTime to a string
  // using the custom format string and display.
  String utcstr = utcdt.ToString(format);
  Console.WriteLine(utcstr);
-    // Convert the string back to a local DateTime object and
+    // Convert the string back to a local DateTime object and
  // display.
  DateTime parsedBack = DateTime.ParseExact(str,format,en.DateTimeFormat);
  Console.WriteLine(parsedBack);

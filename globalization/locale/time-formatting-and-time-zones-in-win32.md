@@ -36,7 +36,7 @@ As you saw in the previous example, the time formatting can be completely differ
 EnumTimeFormats(EnumTimeFormatsProc, // enumeration callback function
      LOCALE_USER_DEFAULT, // locale for which the enumeration is done
      NULL); // unused
- 
+ 
     // The callback function...
     BOOL CALLBACK EnumTimeFormatsProc(LPTSTR lpTimeFormatString)
      {

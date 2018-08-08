@@ -10,7 +10,7 @@ In Microsoft Visual Studio .NET, you can create ASP.NET applications by using ei
 
 You can set the DIR attribute at a DOCUMENT object level. All the controls on the form will inherit the same settings. However, the DIR attribute can be used individually with other tags such as &lt;TABLE&gt; and in Web Forms controls, as in the following example, which allows items to be displayed from right to left:
 
-&lt;TABLE dir="rtl" ...&gt;&lt;asp:TextBox dir="rtl" ...&gt;  
+&lt;TABLE dir="rtl" ...&gt;&lt;asp:TextBox dir="rtl" ...&gt;  
 
 ### Mirrored Windows Forms
 
@@ -19,6 +19,7 @@ Windows applications created in the .NET Framework allow you to access operating
 Windows Forms can be standard windows, multiple-document interface (MDI) windows, dialog boxes, or display surfaces for graphical routines. The easiest way to define the UI for a form is to place controls on its surface. Forms are objects that have several functions. The objects expose properties that define the forms' appearance, methods which define their behavior, and events which define their interaction with the user. Windows Forms are controls because they inherit from the *Control* class. This class has a key property for RTL support-the *RightToLeft* property-which specifies whether the text is displayed from right to left. The form itself supports the *RightToLeft* property, as do all your controls.
 
 **[Table 1: Values for the RightToLeft property]**
+
 | **[Value]** | **[Description]**                  |
 |-------------|------------------------------------|
 | [Inherit]   | [The direction in which the text is rendered is inherited from the parent control.] |

@@ -67,7 +67,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdinbe1.html", "_blank", "height=130, width=347, scroll=no");'>Bengali - INSCRIPT†</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdinbe1.html", "_blank", "height=130, width=347, scroll=no");'>Bengali - INSCRIPT (Legacy)**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdinbe1.html", "_blank", "height=130, width=347, scroll=no");'>Bengali - INSCRIPT (Legacy)<strong></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdbgph1.html", "_blank", "height=130, width=347, scroll=no");'>Bulgarian (Phonetic Traditional)‡</a>
@@ -115,10 +115,10 @@ Choose a keyboard below to view its layouts.
   </tr>
   <tr>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbddiv1.html", "_blank", "height=130, width=347, scroll=no");'>Divehi Phonetic*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbddiv1.html", "_blank", "height=130, width=347, scroll=no");'>Divehi Phonetic<em></a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbddiv2.html", "_blank", "height=130, width=347, scroll=no");'>Divehi Typewriter*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbddiv2.html", "_blank", "height=130, width=347, scroll=no");'>Divehi Typewriter</em></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdne.html", "_blank", "height=130, width=347, scroll=no");'>Dutch</a>
@@ -135,7 +135,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdfi.html", "_blank", "height=130, width=347, scroll=no");'>Finnish</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdfi1.html", "_blank", "height=130, width=347, scroll=no");'>Finnish with Sami**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdfi1.html", "_blank", "height=130, width=347, scroll=no");'>Finnish with Sami</strong></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdfr.html", "_blank", "height=130, width=347, scroll=no");'>French</a>
@@ -189,7 +189,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdgrlnd.html", "_blank", "height=130, width=347, scroll=no");'>Greenlandic†</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdinguj.html", "_blank", "height=130, width=347, scroll=no");'>Gujarati*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdinguj.html", "_blank", "height=130, width=347, scroll=no");'>Gujarati<em></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdhau.html", "_blank", "height=130, width=347, scroll=no");'>Hausa‡</a>
@@ -237,7 +237,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdJapan.html", "_blank", "height=130, width=347, scroll=no");'>Japanese</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdinkan.html", "_blank", "height=130, width=347, scroll=no");'>Kannada*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdinkan.html", "_blank", "height=130, width=347, scroll=no");'>Kannada</em></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdkaz.html", "_blank", "height=130, width=347, scroll=no");'>Kazakh</a>
@@ -246,7 +246,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdKorea.html", "_blank", "height=130, width=347, scroll=no");'>Korean</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdKyr.html", "_blank", "height=130, width=347, scroll=no");'>Kyrgyz (Cyrillic)*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdKyr.html", "_blank", "height=130, width=347, scroll=no");'>Kyrgyz (Cyrillic)<em></a>
     </td>
   </tr>
   <tr>
@@ -285,16 +285,16 @@ Choose a keyboard below to view its layouts.
   </tr>
   <tr>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdinmal.html", "_blank", "height=130, width=347, scroll=no");'>Malayalam**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdinmal.html", "_blank", "height=130, width=347, scroll=no");'>Malayalam</em><em></a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdmaori.html", "_blank", "height=130, width=347, scroll=no");'>Maori**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdmaori.html", "_blank", "height=130, width=347, scroll=no");'>Maori</em><em></a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdmlt47.html", "_blank", "height=130, width=347, scroll=no");'>Maltese 47**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdmlt47.html", "_blank", "height=130, width=347, scroll=no");'>Maltese 47</em><em></a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdmlt48.html", "_blank", "height=130, width=347, scroll=no");'>Maltese 48**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdmlt48.html", "_blank", "height=130, width=347, scroll=no");'>Maltese 48</em><em></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdmaori.html", "_blank", "height=130, width=347, scroll=no");'>Maori†</a>
@@ -305,7 +305,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdinmar.html", "_blank", "height=130, width=347, scroll=no");'>Marathi</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdmon.html", "_blank", "height=130, width=347, scroll=no");'>Mongolian (Cyrillic)*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdmon.html", "_blank", "height=130, width=347, scroll=no");'>Mongolian (Cyrillic)</em></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdmonmo.html", "_blank", "height=130, width=347, scroll=no");'>Mongolian (Mongolian Script)†</a>
@@ -319,7 +319,7 @@ Choose a keyboard below to view its layouts.
   </tr>
   <tr>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdno1.html", "_blank", "height=130, width=347, scroll=no");'>Norwegian with Sami**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdno1.html", "_blank", "height=130, width=347, scroll=no");'>Norwegian with Sami<strong></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdinori.html", "_blank", "height=130, width=347, scroll=no");'>Oriya†</a>
@@ -345,7 +345,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdbr.html", "_blank", "height=130, width=347, scroll=no");'>Portuguese (Brazilian ABNT)</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdinpun.html", "_blank", "height=130, width=347, scroll=no");'>Punjabi (Gurmukhi)*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdinpun.html", "_blank", "height=130, width=347, scroll=no");'>Punjabi (Gurmukhi)<em></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdro.html", "_blank", "height=130, width=347, scroll=no");'>Romanian (Legacy)</a>
@@ -365,12 +365,12 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdru1.html", "_blank", "height=130, width=347, scroll=no");'>Russian (Typewriter)</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdsmsfi.html", "_blank", "height=130, width=347, scroll=no");'>Sami Extended Finland-Sweden**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdsmsfi.html", "_blank", "height=130, width=347, scroll=no");'>Sami Extended Finland-Sweden</strong></a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdsmsno.html", "_blank", "height=130, width=347, scroll=no");'>Sami Extended Norway**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdsmsno.html", "_blank", "height=130, width=347, scroll=no");'>Sami Extended Norway<strong></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdycc.html", "_blank", "height=130, width=347, scroll=no");'>Serbian (Cyrillic)</a>
@@ -433,12 +433,12 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdsg.html", "_blank", "height=130, width=347, scroll=no");'>Swiss German</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdsyr1.html", "_blank", "height=130, width=347, scroll=no");'>Syriac Standard*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdsyr1.html", "_blank", "height=130, width=347, scroll=no");'>Syriac Standard<em></a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdsyr2.html", "_blank", "height=130, width=347, scroll=no");'>Syriac Phonetic*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdsyr2.html", "_blank", "height=130, width=347, scroll=no");'>Syriac Phonetic</em></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdtajik.html", "_blank", "height=130, width=347, scroll=no");'>Tajik†</a>
@@ -450,7 +450,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbdtat.html", "_blank", "height=130, width=347, scroll=no");'>Tatar</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdintel.html", "_blank", "height=130, width=347, scroll=no");'>Telugu*</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdintel.html", "_blank", "height=130, width=347, scroll=no");'>Telugu</em></a>
     </td>
   </tr>
   <tr>
@@ -492,7 +492,7 @@ Choose a keyboard below to view its layouts.
       <a href="#" onclick='window.open("/globalization/keyboards/kbduk.html", "_blank", "height=130, width=347, scroll=no");'>United Kingdom</a>
     </td>
     <td>
-      <a href="#" onclick='window.open("/globalization/keyboards/kbdukx.html", "_blank", "height=130, width=347, scroll=no");'>United Kingdom Extended**</a>
+      <a href="#" onclick='window.open("/globalization/keyboards/kbdukx.html", "_blank", "height=130, width=347, scroll=no");'>United Kingdom Extended</strong></a>
     </td>
     <td>
       <a href="#" onclick='window.open("/globalization/keyboards/kbdurdu.html", "_blank", "height=130, width=347, scroll=no");'>Urdu</a>

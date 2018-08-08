@@ -20,7 +20,7 @@ As a further caveat, not all Unicode-based text processing is a matter of simple
 
 In contrast, there are unusual characters that have very specific semantic rules attached to them; these characters are detailed in The Unicode Standard. Some characters always allow a line break (for example, most spaces), whereas others never do (for instance, nonspacing or nonbreaking characters). Still other characters, including many used in Arabic and Hebrew, are defined as having strong or weak text directionality. The Unicode Standard defines an algorithm for determining the display order of bidirectional text, and it also defines several "directional formatting codes" as overrides for cases not handled by the implicit bidirectional ordering rules to help create comprehensible bidirectional text. These formatting codes allow characters to be stored in logical order but displayed appropriately depending on their directionality. Neutral characters, such as punctuation marks, assume the directionality of the strong or weak characters nearby. Formatting codes can be used to delineate embedded text or to specify the directionality of characters. (For more information on displaying bidirectional Unicode-based text, see Unicode's [BiDi Algorithm](http://unicode.org/reports/tr9/).)
 
- ![Example Glyphs](/media/hubs/globalization/IC855516.png "Example Glyphs") 
+ ![Example Glyphs](/media/hubs/globalization/IC855516.png "Example Glyphs") 
 
 **Figure 1:** Precomposed and composite glyphs
 

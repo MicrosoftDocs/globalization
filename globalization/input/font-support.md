@@ -431,11 +431,11 @@ The following table lists scripts newly supported in Windows 7, and associated 
 
 Braille
 
- 
+ 
 
 Segoe UI Symbol
 
- 
+ 
 
 Deseret
 
@@ -443,7 +443,7 @@ North America
 
 Segoe UI Symbol
 
- 
+ 
 
 New Tai Lue
 
@@ -483,15 +483,15 @@ Europe
 
 Segoe UI Symbol
 
- 
+ 
 
 Symbols
 
- 
+ 
 
 Segoe UI Symbol
 
- 
+ 
 
 Tai Le
 
@@ -515,7 +515,7 @@ Africa
 
 Ebrima
 
- 
+ 
 
 Note: The Segoe UI Symbol font contains a subset of Unicode-encoded symbols. It is not a symbol charset-encoded font.
 
@@ -551,7 +551,7 @@ North America
 
 Plantagenet
 
- 
+ 
 
 Ethiopic
 
@@ -567,7 +567,7 @@ Southeast Asia
 
 DaunPenh MoolBoran
 
- 
+ 
 
 Lao
 
@@ -575,7 +575,7 @@ Southeast Asia
 
 DokChampa
 
- 
+ 
 
 Mongolian
 
@@ -583,7 +583,7 @@ North Asia
 
 Mongolian Baiti
 
- 
+ 
 
 Odia
 
@@ -591,7 +591,7 @@ Indian subcontinent
 
 Kalinga
 
- 
+ 
 
 Sinhala
 
@@ -599,7 +599,7 @@ Indian subcontinent
 
 Iskoola Pota
 
- 
+ 
 
 Tibetan
 
@@ -607,7 +607,7 @@ Central Asia
 
 Microsoft Himalaya
 
- 
+ 
 
 Yi
 
@@ -615,7 +615,7 @@ China
 
 Microsoft Yi Baiti
 
- 
+ 
 
 In Windows Vista and later versions, text-display support for all scripts and languages is always enabled in all editions.
 
@@ -669,7 +669,7 @@ Indian subcontinent
 
 Kartika
 
- 
+ 
 
 As with Windows XP (RTM), the **Regional and Language Options** control panel (intl.cpl) has two option controls to enable “complex script and right-to-left languages” (Arabic, Hebrew, Thaana, Indic scripts and Thai) and CJK (Chinese, Japanese, Korean). One effect of these options is to enable the Uniscribe component within the text stack. Whereas in the RTM version, Uniscribe is not enabled by default in all SKUs, in SP2 it is always enabled by default.
 
@@ -693,7 +693,7 @@ Indian subcontinent
 
 Shruti
 
- 
+ 
 
 Gurmukhi
 
@@ -709,7 +709,7 @@ Indian subcontinent
 
 Tunga
 
- 
+ 
 
 Syriac
 
@@ -717,7 +717,7 @@ Middle East
 
 Estrangelo Edessa
 
- 
+ 
 
 Telugu
 
@@ -725,7 +725,7 @@ Indian subcontinent
 
 Gautami
 
- 
+ 
 
 Thaana
 
@@ -769,7 +769,7 @@ Eurasia
 
 Sylfaen
 
- 
+ 
 
 Devanagari
 
@@ -785,7 +785,7 @@ Eurasia
 
 Sylfaen
 
- 
+ 
 
 Tamil
 
@@ -793,7 +793,7 @@ Indian subcontinent
 
 Latha
 
- 
+ 
 
 In a default setup, not all scripts are necessarily enabled. In the **Regional Options** control panel (intl.cpl), the **General** tab includes a list of sixteen language/script categories (“language groups”) that can be individually enabled or disabled. (The language group for the UI language cannot be disabled, however.) When a language group is enabled, various support files are copied from the CD, including fonts; in the case of “complex-script” language groups (Arabic, Hebrew, Indic, Thai, and Vietnamese), registry entries to activate Uniscribe are also added.
 

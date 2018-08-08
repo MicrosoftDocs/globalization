@@ -12,11 +12,11 @@ Win32 NLS APIs can help you display currency data in a way that's locale-aware. 
 
 ```C++
 GetCurrencyFormat(LOCALE\_USER\_DEFAULT, // a predefined value for user locale
-      NULL, // operation option
-      TEXT("123.40"), // input number (see MSDN for accepted chars)
-      NULL, // formatting specifications
-      g\_szTemp, // output buffer
-      MAX\_STR); // size of output buffer
+      NULL, // operation option
+      TEXT("123.40"), // input number (see MSDN for accepted chars)
+      NULL, // formatting specifications
+      g\_szTemp, // output buffer
+      MAX\_STR); // size of output buffer
 ```
 
 Execution of the previous code would give the following result on English (United States) and Danish user locales, respectively.
@@ -41,11 +41,11 @@ getlocaleinfo(locale\_user\_default, locale\_return\_number|locale\_inegcurr, cu
 getlocaleinfo(locale\_user\_default, locale\_return\_number|locale\_icurrency, curformat.positiveorder, str\_len):;
 // set euro as the default currency symbol.
 curformat.lpcurrencysymbol = text(:;"&gt;GetCurrencyFormat(LOCALE\_USER\_DEFAULT, // a predefined value for user locale
-       0, // operation option
-       TEXT("123.40"), // input number (see MSDN for legal chars)
-       &CurFormat, // formatting specifications
-       g\_szTemp, // output buffer
-       MAX\_STR); // size of output buffer
+       0, // operation option
+       TEXT("123.40"), // input number (see MSDN for legal chars)
+       &CurFormat, // formatting specifications
+       g\_szTemp, // output buffer
+       MAX\_STR); // size of output buffer
 ```
 
 By following the code, the result of a currency symbol formatting for the Danish locale (with kr as default currency symbol) would be: € 123,40
