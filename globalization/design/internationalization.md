@@ -1,4 +1,4 @@
----
+﻿---
 title: Design Internationalization
 description: 
 ms.assetid: 12240d5d-6de0-4f78-8d4c-faf1e4b17b31
@@ -18,7 +18,7 @@ It is important to ensure all our features are World Ready. What does it take? A
 -   Support International Standards as appropriate
 -   Support different Input Methods, including IMEs
 -   Complex Script aware, including UI mirroring
--   Font independency (font may be customized by language, support font fallback , etc.)
+-   Font independency (font may be customized by language, support font fallback, etc.)
 -   Localizable
 -   Pluggable (MUI Aware)
 
@@ -53,7 +53,7 @@ Coding for world-readiness may have an impact upon the UI design; below is a lis
 
 -   Does the feature work between two people who do not share the same language or culture? For example, an Arabic user successfully sends a meeting request to an English recipient without any garbled content. Do you need to make machine translation is available to translate the content?
 -   Does the feature work between two people who are not in the same time zone? For example:
-    -   A co-worker in California sends a meeting request to a coworker in New York. Both coworkers meet at the correct time even though they are in two different time zones.
+    -   A co-worker in California sends a meeting request to a co-worker in New York. Both co-workers meet at the correct time even though they are in two different time zones.
     -   Is latency considered in the scenario? What happens if someone doesn’t respond is X amount of time due to time zone differences?
 
 ### Internet Protocols
