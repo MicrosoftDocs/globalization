@@ -88,6 +88,8 @@ void ReportError()
 
              MB_ICONSTOP | MB_OK );
 
+        LocalFree(lpMessage); // Free the memory allocated by FormatMessage
+
     }
 ```
 
