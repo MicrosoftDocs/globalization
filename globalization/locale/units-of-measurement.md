@@ -29,7 +29,7 @@ The system of measurement can be obtain from [GetLocaleInfo](https://msdn.micros
 DWORD dwMSys;
 GetLocaleInfo(LOCALE\_USER\_DEFAULT,     // locale identifier (current user locale)
 LOCALE\_IMEASURE|LOCALE\_RETURN\_NUMBER, // information type (measurement system)
-&dwMSys,                                 // retuned value
+&dwMSys,                                 // returned value
 sizeof (DWORD));
 ```
 
