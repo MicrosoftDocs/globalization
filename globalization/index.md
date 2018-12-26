@@ -3,6 +3,7 @@ layout: LandingPage
 title: Globalization Documentation
 description: Learn and Explore the resource for the internationalization (globalization + localizability + localization) related topics.
 ms.assetid: e1cb4bf7-b23e-434d-93f3-2b71b8f3f640
+ms.topic: landing-page
 ms.date: 08/16/2016
 ---
 # Globalization Documentation
@@ -71,8 +72,8 @@ ms.date: 08/16/2016
 
 Software internationalization has two facets:
 
--   **World-readiness:** This covers the generic coding and design issues and comprises two major areas: **Globalization** is the process to develop a program core whose features and code design are not solely based on a single language or locale. **Localizability** is the process to enable a program to be localized into different languages without any changes to the source code.
--   **Localization:** This involves translating and customizing a product for a specific market.
+- **World-readiness:** This covers the generic coding and design issues and comprises two major areas: **Globalization** is the process to develop a program core whose features and code design are not solely based on a single language or locale. **Localizability** is the process to enable a program to be localized into different languages without any changes to the source code.
+- **Localization:** This involves translating and customizing a product for a specific market.
 
 <ul class="panelContent cardsA cols cols4">
     <li>
@@ -95,7 +96,7 @@ Software internationalization has two facets:
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/en-us/library/dd318661(vs.85).aspx">
+        <a href="https://msdn.microsoft.com/library/dd318661(vs.85).aspx">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

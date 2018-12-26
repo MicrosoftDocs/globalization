@@ -2,7 +2,7 @@
 
 # Element Resizing
 
-The most time-consuming part of localizing the UI is resizing elements, particularly for applications that will ship in numerous languages and that contain a large number of dialog boxes. Therefore, it is recommended to use [Dynamic Layout](https://msdn.microsoft.com/en-us/library/bb514519(v=vs.110).aspx) where ever possible.
+The most time-consuming part of localizing the UI is resizing elements, particularly for applications that will ship in numerous languages and that contain a large number of dialog boxes. Therefore, it is recommended to use [Dynamic Layout](https://msdn.microsoft.com/library/bb514519(v=vs.110).aspx) where ever possible.
 
 However, the following provides solutions for addressing this issue when working with Win32 dialog boxes.
 

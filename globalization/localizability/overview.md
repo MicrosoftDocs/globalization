@@ -26,7 +26,7 @@ In some cases information has been added to the source files, meant for localiza
 
 The best way to move forward is to integrate "thinking about localization" in the development (and test) cycle. We need to setup a framework and guidelines to help development with this task. Support must be provided where needed.
 
-The proposed framework exists of two pieces, the first part is the clear separation of resources in "functionality related resources" and "UI related resources," together with solving some of the current limitations and dependencies in the software. This we call the "language neutral product" (for more information, see [Isolating Localizable Resources](https://msdn.microsoft.com/globalization/mt662338)).
+The proposed framework exists of two pieces, the first part is the clear separation of resources in "functionality related resources" and "UI related resources," together with solving some of the current limitations and dependencies in the software. This we call the "language neutral product" (for more information, see [Isolating Localizable Resources](isolate-localizable-resources.md)).
 
 The second part of the proposed framework is pseudo localization. Pseudo localization is a simulated localized product. Every string gets replaced by a semi-random pseudo localized string. The product can then be tested for its localizability.
 

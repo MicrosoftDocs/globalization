@@ -39,8 +39,7 @@ When dealing with numeric values, there are six major items to pay attention to:
 | Bengla                            | ০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮ ৯               |
 | Devanagari (script used to write Hindi,Marathi, and other languages)                       | ० १ २ ३ ४ ५ ६ ७ ८ ९ |
 | Gujarati                          | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |
-| Gurmukhi (one of the scripts used to write |                                   |
-| Punjabi)                        | ੦ ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯               |
+| Gurmukhi (one of the scripts used to write Punjabi) | ੦ ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯               |
 | Kannada                           | ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯               |
 | Malayalam                         | ൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯               |
 | Odia                              | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |

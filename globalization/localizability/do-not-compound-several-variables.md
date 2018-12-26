@@ -22,6 +22,4 @@ Needless to say, the translator did not know how to translate the word "on," sin
 -   Third %d—Day of month, as decimal number (01-31)
 -   Fourth %d—Year with century, as decimal number
 
-To avoid confusion, the programmer should have used unique names. Even better, the programmer should have stored the data in language-neutral data variables-such as a time structure-and then used one of the Windows globalization services-such as National Language Support (NLS) or .NET. (For more information on these globalization services, see " [Locale Model](https://msdn.microsoft.com/globalization/mt662310)." ) Remember that even though you use unique variable names, you still need to leave enough information so the translators know what you are trying to say. 
-
-
+To avoid confusion, the programmer should have used unique names. Even better, the programmer should have stored the data in language-neutral data variables-such as a time structure-and then used one of the Windows globalization services-such as National Language Support (NLS) or .NET. (For more information on these globalization services, see [Locale Model](../locale/locale-model.md). ) Remember that even though you use unique variable names, you still need to leave enough information so the translators know what you are trying to say.

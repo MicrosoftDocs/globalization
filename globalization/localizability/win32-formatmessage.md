@@ -6,7 +6,7 @@ ms.date: 06/28/2016
 ---
 # Win32—FormatMessage
 
-Win32 supports two resource types for storing strings: string tables and message tables. (For more information on message tables, see the section on [Multilingual User Interface (MUI)](https://msdn.microsoft.com/globalization/mt643131).) String tables make sense for short strings and for strings containing only one replacement parameter; message tables are more convenient for alert and error messages that contain more than one replacement parameter. (Message tables support up to 99 parameters.) The FormatMessage API will substitute variables according to each placemarker's numeric label and not according to the label's position in the string. Localizers can freely change a string's word order and FormatMessage will still return correct results. The file format of the message table is not complicated; you can create message tables with a simple text editor. The following code appears in a message table that contains English and German translations of the same strings. The German translation of IDS\_OTHERIMAGE reverses the positions of the replacement parameters.
+Win32 supports two resource types for storing strings: string tables and message tables. (For more information on message tables, see the section on [Multilingual User Interface (MUI)](https://msdn.microsoft.com/library/windows/desktop/dd374113(v=vs.85).aspx).) String tables make sense for short strings and for strings containing only one replacement parameter; message tables are more convenient for alert and error messages that contain more than one replacement parameter. (Message tables support up to 99 parameters.) The FormatMessage API will substitute variables according to each placemarker's numeric label and not according to the label's position in the string. Localizers can freely change a string's word order and FormatMessage will still return correct results. The file format of the message table is not complicated; you can create message tables with a simple text editor. The following code appears in a message table that contains English and German translations of the same strings. The German translation of IDS\_OTHERIMAGE reverses the positions of the replacement parameters.
 
 ```C++
 // Sample.mc
@@ -87,6 +87,8 @@ void ReportError()
         MessageBox(NULL, lpMessage, TEXT("File Error"), 
 
              MB_ICONSTOP | MB_OK );
+
+        LocalFree(lpMessage); // Free the memory allocated by FormatMessage
 
     }
 ```

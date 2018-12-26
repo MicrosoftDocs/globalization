@@ -52,11 +52,12 @@ If font linking is enabled on your device, you can examine the registry by enume
 
 With font fallback and font linking, the font size of the text is maintained. So the newly applied font will be the same specified size as that of the original font. For example, if an 8-point Tahoma font was selected to type English and now the user enters some Japanese text, an 8-point Meiryo font will be automatically selected. The 8-point font size might not be the best choice for some scripts, since it can make them hard to read.
 
-Both font fallback and font linking can leverage logic to estimate an appropriate font size, but both mechanisms have to use metrics exposed by the font that might or might not actually match the way the font appears. Consider the difference in the visual height of English letters among 8-point Microsoft Sans Serif, 8-point Traditional Arabic, and 8-point Leelawadee UI:
+
+Both font fallback and font linking can leverage logic to estimate an appropriate font size, but both mechanisms have to use metrics exposed by the font that might or might not actually match the way the font appears. Consider the difference in the visual height of English letters among Microsoft Sans Serif, Traditional Arabic, and Leelawadee UI:
 
 | Microsoft Sans Serif | Traditional Arabic | Leelawadee  |
 |:---:|:---:|:---:|
-| E                    |  E                 |   E         |
+| ![Sans Serif](https://docs.microsoft.com/en-us/globalization/input/images/SansSerif.jpg "Sans Serif")                    |  ![Traditional Arabic](https://docs.microsoft.com/en-us/globalization/input/images/TradArabic.jpg "Traditional Arabic")                 |   ![Leelawadee](https://docs.microsoft.com/en-us/globalization/input/images/Leelawadee.jpg "Leelawadee")         |
 
 Even though all of these are supposedly 8-point fonts, the apparent size of the English letters varies widely. Font fallback and font linking are no substitutes for choosing the right font in the first place. Rather, these mechanisms are simply a means of preventing the user from manually selecting a font; additionally, they prevent UI text from being displayed as a default glyph.
 
@@ -66,7 +67,7 @@ MEIRYO.TTC,Meiryo,128,85
 ```
 indicates that the scaling algorithm should apply the scaling factors 128 and 85 whenever the given base font is linked to the Meiryo font.
 
-Note that [GDI+](https://msdn.microsoft.com/en-us/library/ms533798(vs.85).aspx) is not able to parse these scaling factors. Thus, references to fonts with scaling factors are repeated without these scaling factors. In GDI+, the first reference, with the scaling factors, will appear to be to an unrecognized font and will be ignored. In GDI, the second reference will be treated as redundant and ignored.
+Note that [GDI+](https://msdn.microsoft.com/library/ms533798(vs.85).aspx) is not able to parse these scaling factors. Thus, references to fonts with scaling factors are repeated without these scaling factors. In GDI+, the first reference, with the scaling factors, will appear to be to an unrecognized font and will be ignored. In GDI, the second reference will be treated as redundant and ignored.
 
 ### Font Substitution
 
