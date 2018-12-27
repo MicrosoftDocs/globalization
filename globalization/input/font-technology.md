@@ -87,6 +87,6 @@ The Windows operating system also allows enabling font substitution but this sho
 
 ## Related Content
 
--   [Script and Font Support in Windows](https://msdn.microsoft.com/en-us/globalization/mt791278)
+-   [Script and Font Support in Windows](https://docs.microsoft.com/en-us/globalization/input/font-support)
 
 
