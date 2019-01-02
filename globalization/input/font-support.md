@@ -1,6 +1,6 @@
 
 
-# Script and Font Support in Windows
+# Script and Font Support in Windows<a name="content"></a>
 
 Since before Windows 2000, text-display support for new scripts has been added in each major release of Windows. This article describes changes made in each major release.
 
@@ -19,147 +19,31 @@ Comments on language usage are included in cases in which associations between s
 -   [Windows XP](#_Windows_XP)
 -   [Windows 2000](#_Windows_2000)
 
-## Windows 10
+## Windows 10<a name="_Windows_10"></a>
 
 Windows 10 converges the Windows platform for use across multiple device categories. The description above of previous releases applies to Windows Client (desktop) and Server editions. This section on Windows 10 covers all Windows 10 editions, including Desktop, Server and Mobile.
 
 All Windows 10 editions support the same set of scripts. In addition to the scripts supported in earlier Windows releases, Windows 10 adds support for several additional, historic scripts. These are supported using the new Segoe UI Historic font:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Brahmi
-
-Indian subcontinent
-
-Segoe UI Historic
-
-Historic
-
-Carian
-
-Europe
-
-Segoe UI Historic
-
-Historic
-
-Cypriot
-
-Europe
-
-Segoe UI Historic
-
-Historic
-
-Egyptian Hieroglyphs
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Imperial Aramaic
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Inscriptional Pahlavi
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Inscriptional Parthian
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Kharoshthi
-
-Indian subcontinent
-
-Segoe UI Historic
-
-Historic
-
-Lycian
-
-Europe
-
-Segoe UI Historic
-
-Historic
-
-Lydian
-
-Europe
-
-Segoe UI Historic
-
-Historic
-
-Phoenician
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Old Persian Cuneiform
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Old South Arabian
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Shavian
-
-Europe
-
-Segoe UI Historic
-
-English phonetic writing
-
-Sumero-Akkadian Cuneiform
-
-Middle East
-
-Segoe UI Historic
-
-Historic
-
-Ugaritic Cuneiform
-
-Middle East
-
-Segoe UI Historic
-
-Historic
+<table>
+<tr><th>New scripts</th><th>Region where script is from</th><th>Fonts</th><th>Comments on language usage</th></tr>
+<tr><td>Brahmi</td><td>Indian subcontinent</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Carian</td><td>Europe</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Cypriot</td><td>Europe</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Egyptian Hieroglyphs</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Imperial Aramaic</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Inscriptional Pahlavi</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Inscriptional Parthian</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Kharoshthi</td><td>Indian subcontinent</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Lycian</td><td>Europe</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Lydian</td><td>Europe</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Phoenician</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Old Persian Cuneiform</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Old South Arabian</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Shavian</td><td>Europe</td><td>Segoe UI Historic</td><td>English phonetic writing</td></tr>
+<tr><td>Sumero-Akkadian Cuneiform</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+<tr><td>Ugaritic Cuneiform</td><td>Middle East</td><td>Segoe UI Historic</td><td>Historic</td></tr>
+</table>
 
 Certain other historic scripts were supported in earlier versions in the Segoe UI Symbol font. In order to avoid duplication, the following scripts have been removed from Segoe UI Symbol and included in Segoe UI Historic:
 
@@ -179,7 +63,7 @@ In Windows 8 and Windows 8.1, private-use-characters in the Segoe UI Symbol fo
 
 An important development in Windows 10 is the Universal Windows Platform (UWP): a converged app platform allowing a developer to create a single app that can run on all Windows devices. Windows fonts are one aspect of this convergence: Windows 10 introduces a recommended UWP font set that is common across all editions that support UWP, including Desktop, Server, Mobile and Xbox.
 
-For information regarding which fonts are included in the recommended UWP font set, complete details are provided in [Guidelines for fonts](http://go.microsoft.com/fwlink/p/?LinkId=534935). One important point to note is that the recommended font set does not include all of the weights for certain font families. In particular, due to the large size of East Asian fonts, only the regular weight of East Asian font families are included in the recommended font set.
+For information regarding which fonts are included in the recommended Microsoft font set, complete details are provided in [Guidelines for fonts](https://docs.microsoft.com/en-us/windows/desktop/uxguide/vis-fonts). One important point to note is that the recommended font set does not include all of the weights for certain font families. In particular, due to the large size of East Asian fonts, only the regular weight of East Asian font families are included in the recommended font set.
 
 A number of additional fonts are available for Desktop and Server, including all other fonts from previous releases. However, not all of these are pre-installed by default in all images. In order to make disk usage and font choices more relevant to users according to the languages that they use, a number of fonts have been moved into optional, on-demand packages. These packages are designed around the different scripts that fonts are primarily intended to support, and most are installed automatically by Windows Update when the associated languages are enabled in language settings (for example, by enabling a keyboard).
 
@@ -229,69 +113,23 @@ Balinese, Batak, Brahmi, Buginese, Buhid, Chakma, Cham, Duployan, Egyptian Hiero
 
 Other scripts in Unicode 7.0 either are supported in other shaping engines or do not require complex script handling.
 
-For more background on the Universal Shaping Engine, see [Windows shapes the world’s languages](http://blogs.windows.com/bloggingwindows/2015/02/23/windows-shapes-the-worlds-languages/) .
+For more background on the Universal Shaping Engine, see [Creating and supporting OpenType fonts for the Universal Shaping Engine](https://docs.microsoft.com/en-us/typography/script-development/use) .
 
 [Top of page](#content)
 
-## Windows 8.1
+## Windows 8.1<a name="_Windows_8.1"></a>
 
 The following table lists scripts newly supported in Windows 8.1, and associated fonts:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Buginese
-
-Southeast Asia
-
-Leelawadee UI
-
-Buginese
-
-Coptic
-
-Middle East
-
-Segoe UI Symbol
-
-Historic
-
-Javanese
-
-Southeast Asia
-
-Javanese Text
-
-Javanese
-
-Meroitic Cursive
-
-Middle East
-
-Segoe UI Symbol
-
-Historic
-
-Ol Chiki
-
-Indian Subcontinent
-
-Nirmala UI
-
-Santali
-
-Sora Sompeng
-
-Indian Subcontinent
-
-Nirmala UI
-
-Sora
+<table>
+<tr><th>	New scripts 	</th><th>	Region where script is from 	</th><th>	Fonts 	</th><th>	Comments on language usage 	</th></tr>
+<tr><td>	Buginese	</td><td>	Southeast Asia	</td><td>	Leelawadee UI	</td><td>	Buginese	</td></tr>
+<tr><td>	Coptic	</td><td>	Middle East	</td><td>	Segoe UI Symbol	</td><td>	Historic	</td></tr>
+<tr><td>	Javanese	</td><td>	Southeast Asia	</td><td>	Javanese Text	</td><td>	Javanese	</td></tr>
+<tr><td>	Meroitic Cursive	</td><td>	Middle East	</td><td>	Segoe UI Symbol	</td><td>	Historic	</td></tr>
+<tr><td>	Ol Chiki	</td><td>	Indian Subcontinent	</td><td>	Nirmala UI	</td><td>	Santali	</td></tr>
+<tr><td>	Sora Sompeng	</td><td>	Indian Subcontinent	</td><td>	Nirmala UI	</td><td>	Sora	</td></tr>
+</table>
 
 For the previously-supported Khmer, Lao and Thai scripts, the fonts used for the Windows user interface were changed in Windows 8.1:
 
@@ -318,81 +156,21 @@ Another addition in Windows 8.1 is a collection of fonts with members optimized
 
 [Top of page](#content)
 
-## Windows 8
+## Windows 8<a name="_Windows_8"></a>
 
 The following table lists scripts newly supported in Windows 8, and associated fonts:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Glagolitic
-
-Europe
-
-Segoe UI Symbol
-
-Historic
-
-Gothic
-
-Europe
-
-Segoe UI Symbol
-
-Historic
-
-Old Hangul
-
-East Asia
-
-Malgun Gothic
-
-Historic, used in historic Korean texts
-
-Old Italic
-
-Europe
-
-Segoe UI Symbol
-
-Historic
-
-Lisu
-
-China, Southeast Asia
-
-Segoe UI
-
-Lisu
-
-Myanmar
-
-Southeast Asia
-
-Myanmar Text
-
-Myanmar, Shan, Karen
-
-N’Ko
-
-Africa
-
-Ebrima
-
-N’Ko and other Manding languages
-
-Orkhon
-
-China
-
-Segoe UI Symbol
-
-Historic
+<table>
+<tr><th>	New scripts 	</th><th>	Region where script is from 	</th><th>	Fonts 	</th><th>	Comments on language usage 	</th></tr>
+<tr><td>	Glagolitic	</td><td>	Europe	</td><td>	Segoe UI Symbol	</td><td>	Historic	</td></tr>
+<tr><td>	Gothic	</td><td>	Europe	</td><td>	Segoe UI Symbol	</td><td>	Historic	</td></tr>
+<tr><td>	Old Hangul	</td><td>	East Asia	</td><td>	Malgun Gothic	</td><td>	Historic, used in historic Korean texts	</td></tr>
+<tr><td>	Old Italic	</td><td>	Europe	</td><td>	Segoe UI Symbol	</td><td>	Historic	</td></tr>
+<tr><td>	Lisu	</td><td>	China, Southeast Asia	</td><td>	Segoe UI	</td><td>	Lisu	</td></tr>
+<tr><td>	Myanmar	</td><td>	Southeast Asia	</td><td>	Myanmar Text	</td><td>	Myanmar, Shan, Karen	</td></tr>
+<tr><td>	N’Ko	</td><td>	Africa	</td><td>	Ebrima	</td><td>	N’Ko and other Manding languages	</td></tr>
+<tr><td>	Orkhon	</td><td>	China	</td><td>	Segoe UI Symbol	</td><td>	Historic	</td></tr>
+</table>
 
 Some significant changes were introduced into Unicode version 5.2 in relation to the encoding of Old Hangul text. These changes enable products that can support Korean Standard KS X 1026-1:2007. In earlier versions of Windows, Uniscribe included support for shaping Old Hangul text, though not in accordance with the KS X 1026-1:2007 standard. In Windows 8, Uniscribe and DirectWrite provide support for Old Hangul text in accordance with the Korean standard, and font support for Old Hangul text is also now included.
 
@@ -417,105 +195,24 @@ In Windows 7, both Uniscribe and DirectWrite provided support for OpenType adva
 
 [Top of page](#content)
 
-## Windows 7
+## Windows 7<a name="_Windows_7"></a>
 
 The following table lists scripts newly supported in Windows 7, and associated fonts:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Braille
-
- 
-
-Segoe UI Symbol
-
- 
-
-Deseret
-
-North America
-
-Segoe UI Symbol
-
- 
-
-New Tai Lue
-
-China
-
-Microsoft New Tai Lue
-
-Used for the Xishuangbanna Dai language
-
-Ogham
-
-Europe
-
-Segoe UI Symbol
-
-Historic, used for English and Irish
-
-Osmanya
-
-Africa
-
-Ebrima
-
-Historic script from East Africa (Somalia)
-
-Phags-pa
-
-North Asia
-
-Microsoft PhagsPa
-
-Historic, used for several languages including Mongolian, Chinese, Tibetan and Sanskrit
-
-Runic
-
-Europe
-
-Segoe UI Symbol
-
- 
-
-Symbols
-
- 
-
-Segoe UI Symbol
-
- 
-
-Tai Le
-
-China
-
-Microsoft Tai Le
-
-Used for the Dehong Dai language
-
-Tifinagh
-
-Africa
-
-Ebrima
-
-Used for Tamazight and other Amazigh languages
-
-Vai
-
-Africa
-
-Ebrima
-
- 
+<table>
+<tr><th>	New scripts 	</th><th>	Region where script is from 	</th><th>	Fonts 	</th><th>	Comments on language usage 	</th></tr>
+<tr><td>	Braille	</td><td>		</td><td>	Segoe UI Symbol	</td><td>		</td></tr>
+<tr><td>	Deseret	</td><td>	North America	</td><td>	Segoe UI Symbol	</td><td>		</td></tr>
+<tr><td>	New Tai Lue	</td><td>	China	</td><td>	Microsoft New Tai Lue	</td><td>	Used for the Xishuangbanna Dai language	</td></tr>
+<tr><td>	Ogham	</td><td>	Europe	</td><td>	Segoe UI Symbol	</td><td>	Historic, used for English and Irish	</td></tr>
+<tr><td>	Osmanya	</td><td>	Africa	</td><td>	Ebrima	</td><td>	Historic script from East Africa (Somalia)	</td></tr>
+<tr><td>	Phags-pa	</td><td>	North Asia	</td><td>	Microsoft PhagsPa	</td><td>	Historic, used for several languages including Mongolian, Chinese, Tibetan and Sanskrit	</td></tr>
+<tr><td>	Runic	</td><td>	Europe	</td><td>	Segoe UI Symbol	</td><td>		</td></tr>
+<tr><td>	Symbols	</td><td>		</td><td>	Segoe UI Symbol	</td><td>		</td></tr>
+<tr><td>	Tai Le	</td><td>	China	</td><td>	Microsoft Tai Le	</td><td>	Used for the Dehong Dai language	</td></tr>
+<tr><td>	Tifinagh	</td><td>	Africa	</td><td>	Ebrima	</td><td>	Used for Tamazight and other Amazigh languages	</td></tr>
+<tr><td>	Vai	</td><td>	Africa	</td><td>	Ebrima	</td><td>		</td></tr>
+</table>
 
 Note: The Segoe UI Symbol font contains a subset of Unicode-encoded symbols. It is not a symbol charset-encoded font.
 
@@ -525,97 +222,23 @@ Windows 7 added support for Unicode variation-selector sequences for Phags-pa s
 
 As part of on-going work to provide next-generation graphics, Windows 7 introduced a new text stack, DirectWrite. The OpenType and complex-script functionality that has been part of Uniscribe was fully integrated into the DirectWrite text stack with the result that the DirectWrite and GDI text stacks have complete parity in script and language support.
 
-## Windows Vista
+## Windows Vista<a name="_Windows_Vista"></a>
 
 The following table lists scripts newly supported in Windows Vista, and associated fonts:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Canadian Syllabics
-
-North America
-
-Euphemia
-
-Used for several languages, including Inuktitut and Cree
-
-Cherokee
-
-North America
-
-Plantagenet
-
- 
-
-Ethiopic
-
-Africa
-
-Nyala
-
-Used for Amharic, Tigrinya, and other languages
-
-Khmer
-
-Southeast Asia
-
-DaunPenh MoolBoran
-
- 
-
-Lao
-
-Southeast Asia
-
-DokChampa
-
- 
-
-Mongolian
-
-North Asia
-
-Mongolian Baiti
-
- 
-
-Odia
-
-Indian subcontinent
-
-Kalinga
-
- 
-
-Sinhala
-
-Indian subcontinent
-
-Iskoola Pota
-
- 
-
-Tibetan
-
-Central Asia
-
-Microsoft Himalaya
-
- 
-
-Yi
-
-China
-
-Microsoft Yi Baiti
-
- 
+<table>
+<tr><th>	New scripts 	</th><th>	Region where script is from 	</th><th>	Fonts 	</th><th>	Comments on language usage 	</th></tr>
+<tr><td>	Canadian Syllabics	</td><td>	North America	</td><td>	Euphemia	</td><td>	Used for several languages, including Inuktitut and Cree	</td></tr>
+<tr><td>	Cherokee	</td><td>	North America	</td><td>	Plantagenet	</td><td>		</td></tr>
+<tr><td>	Ethiopic	</td><td>	Africa	</td><td>	Nyala	</td><td>	Used for Amharic, Tigrinya, and other languages	</td></tr>
+<tr><td>	Khmer	</td><td>	Southeast Asia	</td><td>	DaunPenh MoolBoran	</td><td>		</td></tr>
+<tr><td>	Lao	</td><td>	Southeast Asia	</td><td>	DokChampa	</td><td>		</td></tr>
+<tr><td>	Mongolian	</td><td>	North Asia	</td><td>	Mongolian Baiti	</td><td>		</td></tr>
+<tr><td>	Odia	</td><td>	Indian subcontinent	</td><td>	Kalinga	</td><td>		</td></tr>
+<tr><td>	Sinhala	</td><td>	Indian subcontinent	</td><td>	Iskoola Pota	</td><td>		</td></tr>
+<tr><td>	Tibetan	</td><td>	Central Asia	</td><td>	Microsoft Himalaya	</td><td>		</td></tr>
+<tr><td>	Yi	</td><td>	China	</td><td>	Microsoft Yi Baiti	</td><td>		</td></tr>
+</table>
 
 In Windows Vista and later versions, text-display support for all scripts and languages is always enabled in all editions.
 
@@ -643,97 +266,33 @@ Prior to Windows Vista, Uniscribe had Arabic, Hebrew and Thai shaping engines t
 
 [Top of page](#content)
 
-## Windows XP SP2
+## Windows XP SP2<a name="_Windows_XP_SP2"></a>
 
 The following table lists scripts newly supported in Windows XP SP2, and associated fonts:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Bangla
-
-Indian subcontinent
-
-Vrinda
-
-Used for the Assamese language as well as Bangla
-
-Malayalam
-
-Indian subcontinent
-
-Kartika
-
- 
+<table>
+<tr><th>	New scripts 	</th><th>	Region where script is from 	</th><th>	Fonts 	</th><th>	Comments on language usage 	</th></tr>
+<tr><td>	Bangla	</td><td>	Indian subcontinent	</td><td>	Vrinda	</td><td>	Used for the Assamese language as well as Bangla	</td></tr>
+<tr><td>	Malayalam	</td><td>	Indian subcontinent	</td><td>	Kartika	</td><td>		</td></tr>
+</table>
 
 As with Windows XP (RTM), the **Regional and Language Options** control panel (intl.cpl) has two option controls to enable “complex script and right-to-left languages” (Arabic, Hebrew, Thaana, Indic scripts and Thai) and CJK (Chinese, Japanese, Korean). One effect of these options is to enable the Uniscribe component within the text stack. Whereas in the RTM version, Uniscribe is not enabled by default in all SKUs, in SP2 it is always enabled by default.
 
 [Top of page](#content)
 
-## Windows XP
+## Windows XP<a name="_Windows_XP"></a>
 
 The following table lists scripts newly supported in Windows XP, and associated fonts:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Gujarati
-
-Indian subcontinent
-
-Shruti
-
- 
-
-Gurmukhi
-
-Indian subcontinent
-
-Raavi
-
-Used in India for the Punjabi language
-
-Kannada
-
-Indian subcontinent
-
-Tunga
-
- 
-
-Syriac
-
-Middle East
-
-Estrangelo Edessa
-
- 
-
-Telugu
-
-Indian subcontinent
-
-Gautami
-
- 
-
-Thaana
-
-Indian subcontinent
-
-MV Boli
-
-Used for the Divehi language
+<table>
+<tr><th>	New scripts 	</th><th>	Region where script is from 	</th><th>	Fonts 	</th><th>	Comments on language usage 	</th></tr>
+<tr><td>	Gujarati	</td><td>	Indian subcontinent	</td><td>	Shruti	</td><td>		</td></tr>
+<tr><td>	Gurmukhi	</td><td>	Indian subcontinent	</td><td>	Raavi	</td><td>	Used in India for the Punjabi language	</td></tr>
+<tr><td>	Kannada	</td><td>	Indian subcontinent	</td><td>	Tunga	</td><td>		</td></tr>
+<tr><td>	Syriac	</td><td>	Middle East	</td><td>	Estrangelo Edessa	</td><td>		</td></tr>
+<tr><td>	Telugu	</td><td>	Indian subcontinent	</td><td>	Gautami	</td><td>		</td></tr>
+<tr><td>	Thaana	</td><td>	Indian subcontinent	</td><td>	MV Boli	</td><td>	Used for the Divehi language	</td></tr>
+</table>
 
 The font fallback mechanism in Uniscribe was extended to support fallback for Unicode supplementary planes: for each plane from 1 to 16, a single fallback font can be specified in the registry.
 
@@ -743,7 +302,7 @@ Note: all of the scripts mentioned are supported on Windows XP, but enablement 
 
 [Top of page](#content)
 
-## Windows 2000
+## Windows 2000<a name="_Windows_2000"></a>
 
 Windows 2000 was the first version of the Windows operating system that included the Uniscribe component, usp10.dll. (The lpk.dll library, which provides the interfaces between Uniscribe and various GDI and User APIs, was also added.) Functional benefits of Uniscribe included:
 
@@ -755,45 +314,13 @@ Support for basic Latin, Greek, Cyrillic and CJK existed with APIs in Windows N
 
 The following table lists scripts newly supported in Windows 2000, and associated fonts:
 
-**New scripts**
-
-**Region where script is from**
-
-**Fonts**
-
-**Comments on language usage**
-
-Armenian
-
-Eurasia
-
-Sylfaen
-
- 
-
-Devanagari
-
-Indian subcontinent
-
-Mangal
-
-Used for many languages including Hindi, Marathi, Sanskrit
-
-Georgian
-
-Eurasia
-
-Sylfaen
-
- 
-
-Tamil
-
-Indian subcontinent
-
-Latha
-
- 
+<table>
+<tr><th>	New scripts 	</th><th>	Region where script is from 	</th><th>	Fonts 	</th><th>	Comments on language usage 	</th></tr>
+<tr><td>	Armenian	</td><td>	Eurasia	</td><td>	Sylfaen	</td><td>		</td></tr>
+<tr><td>	Devanagari	</td><td>	Indian subcontinent	</td><td>	Mangal	</td><td>	Used for many languages including Hindi, Marathi, Sanskrit	</td></tr>
+<tr><td>	Georgian	</td><td>	Eurasia	</td><td>	Sylfaen	</td><td>		</td></tr>
+<tr><td>	Tamil	</td><td>	Indian subcontinent	</td><td>	Latha	</td><td>		</td></tr>
+</table>
 
 In a default setup, not all scripts are necessarily enabled. In the **Regional Options** control panel (intl.cpl), the **General** tab includes a list of sixteen language/script categories (“language groups”) that can be individually enabled or disabled. (The language group for the UI language cannot be disabled, however.) When a language group is enabled, various support files are copied from the CD, including fonts; in the case of “complex-script” language groups (Arabic, Hebrew, Indic, Thai, and Vietnamese), registry entries to activate Uniscribe are also added.
 
