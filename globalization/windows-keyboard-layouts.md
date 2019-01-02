@@ -25,17 +25,17 @@ If you use a pop-up blocker, please update your allowable list to include this W
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdarmph.html", "_blank", "height=130, width=347, scroll=no");'>Armenian Phonetic</a></td><td>8</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdarmty.html", "_blank", "height=130, width=347, scroll=no");'>Armenian Typewriter</a></td><td>8</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdarmw.html", "_blank", "height=130, width=347, scroll=no");'>Armenian Western (Legacy)</a></td><td>pre-XP</td></tr>
-<tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdinasa.html", "_blank", "height=130, width=347, scroll=no");'>Assamese - INSCRIPT</a></td><td>Vista/Server 2008</td></tr>
+<tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdinasa.html", "_blank", "height=130, width=347, scroll=no");'>Assamese - INSCRIPT</a></td><td>Vista / Server 2008</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdazst.html", "_blank", "height=130, width=347, scroll=no");'>Azerbaijani (Standard)</a></td><td>8.1</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdaze.html", "_blank", "height=130, width=347, scroll=no");'>Azeri Cyrillic</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdazel.html", "_blank", "height=130, width=347, scroll=no");'>Azeri Latin</a></td><td>pre-XP</td></tr>
-<tr><td><a name="B"></a>B</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdbash.html", "_blank", "height=130, width=347, scroll=no");'>Bashkir</a></td><td>Vista/Server 2008</td></tr>
+<tr><td><a name="B"></a>B</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdbash.html", "_blank", "height=130, width=347, scroll=no");'>Bashkir</a></td><td>Vista / Server 2008</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdblr.html", "_blank", "height=130, width=347, scroll=no");'>Belarusian</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdbene.html", "_blank", "height=130, width=347, scroll=no");'>Belgian (Comma)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdbe_1.html", "_blank", "height=130, width=347, scroll=no");'>Belgian (Period)</a></td><td>8.1</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdbe_2.html", "_blank", "height=130, width=347, scroll=no");'>Belgian French</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdinben.html", "_blank", "height=130, width=347, scroll=no");'>Bengali</a></td><td>pre-XP</td></tr>
-<tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdinbe2.html", "_blank", "height=130, width=347, scroll=no");'>Bengali - INSCRIPT</a></td><td>Vista/Server 2008</td></tr>
+<tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdinbe2.html", "_blank", "height=130, width=347, scroll=no");'>Bengali - INSCRIPT</a></td><td>Vista / Server 2008</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdinbe1.html", "_blank", "height=130, width=347, scroll=no");'>Bengali - INSCRIPT (Legacy)</a></td><td>XP SP2</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdbhc.html", "_blank", "height=130, width=347, scroll=no");'>Bosnian (Cyrillic)</a></td><td>8</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdbug.html", "_blank", "height=130, width=347, scroll=no");'>Buginese</a></td><td>8.1</td></tr>
