@@ -15,4 +15,4 @@ Conversely, if a user or an application installs a font that has characters defi
 It is not recommended to use PUA characters provided by the operating system or platform to avoid conflicts with the usage of certain individuals and organizations.
 
 ## Related Content
-* Private-Use Characters, Noncharacters & Sentinels FAQ
+* [Private-Use Characters, Noncharacters & Sentinels FAQ](http://www.unicode.org/faq/private_use.html)
