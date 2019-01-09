@@ -79,7 +79,7 @@ The Windows operating system also allows enabling font substitution but this sho
 
 1.  **Do not assume a selected font supports the desired script.** For example, it is impossible to use Miriam (a Hebrew font) to represent the hiragana script.
 2.  **Do not hardcode font face names.** These values may need to change based on the language of the UI and should be defined as a table or matrix based on the required script.
-3.  **Understand your font fallback.** Define to meet your design goals. For example, using HTML formats, you could define font-family: Georgia, "Times New Roman", "Microsoft YaHei", <span style="lang:zh-HanS">微软雅黑</span>, STXihei, <span style="lang:zh-HanS">华文细黑</a>, serif; which lists the Latin fonts first, includes both Microsoft and Apple fonts, and includes Chinese font names. For other coding solutions, the similar logic will be in a table or matrix.
+3.  **Understand your font fallback.** Define to meet your design goals. For example, using HTML formats, you could define font-family: Georgia, "Times New Roman", "Microsoft YaHei", <div lang="zh-Hans">微软雅黑</div>, STXihei, <div lang="zh-Hans">华文细黑</div>, serif; which lists the Latin fonts first, includes both Microsoft and Apple fonts, and includes Chinese font names. For other coding solutions, the similar logic will be in a table or a matrix.
 4.  **Do not allow localization of font face names.** The values are part of the core design experience for a product and should be set as part of the coding developer rather than made accessible by a translator.
 5.  **Do not hardcode the font size that you use**, and make sure that you make this variable customizable according to the script to be displayed; since some scripts are more complicated than others, they need more pixels to be displayed properly. The most reasonable way to think about this is font size (which is actually not consistently defined across writing systems) but the details rely actually upon the grid of available pixels for rendering. For example, most English characters can be displayed on a 5x7 grid, but Japanese characters need a grid of at least 16x16 to be seen clearly. Chinese characters, on the other hand, need a 24x24 grid. Thai characters only need 8 pixels for width, but they need at least 22 pixels for height. Thus it is easy to understand why some characters in a small font size might not be legible.
 6.  **Do not assume a given font is installed.** The user might delete or uninstall fonts (even a system font!).
@@ -88,5 +88,3 @@ The Windows operating system also allows enabling font substitution but this sho
 ## Related Content
 
 -   [Script and Font Support in Windows](https://docs.microsoft.com/en-us/globalization/input/font-support)
-
-
