@@ -67,7 +67,7 @@ Some features of linguistic sorting are:
 -   A language’s writing system will determine what influences the sort order of the language. For example, a sort order for Russian would be based on Cyrillic letters and possibly diacritics, but a sort order for Japanese might be based on the number of strokes it takes to draw a character.
 -   Linguistic sort orders are different than the Unicode code point order.
 -   Languages that use the same script often have different linguistic sort orders.
--   A sorting element (such as a character) can be the combination of more than one Unicode code point. For example, \\u0B95 + \\u0BCD + \\u0BB7 = Tamil Ksha, a single sorting element in Tamil (க + ் + ஷ = க்ஷ).
+-   A sorting element (such as a character) can be the combination of more than one Unicode code point. For example, \\u0B95 + \\u0BCD + \\u0BB7 = Tamil Ksha, a single sorting element in Tamil (<span lang="ta">க</span> + ் + <span lang="ta">ஷ</span> = <span lang="ta">க்ஷ</span>).
 
 The best thing to remember is that by using Windows system support, all of these sorting issues are automatically handled for you.
 
@@ -205,27 +205,27 @@ It’s common for East Asian languages to having more than one sorting order. Yo
 
 For those unfamiliar with East Asian sorting, a brief explanation may be needed. Technically, what is commonly referred to “Stroke Count” or “Stroke” sort order is a radical-and-stroke sorting used for non-alphabetic writing systems such as Chinese and the logographic systems that derived from Chinese, whose thousands of symbols defy alphabetic-style ordering.
 
-In these languages, common components of characters are identified called “radicals.” Characters are then grouped by their primary radical, then ordered by the number of pen strokes within each radical. When there is no obvious radical or more than one radical, convention governs which is used for sorting. For example, the Chinese character for “mother” (媽) is sorted as a thirteen-stroke character under the three-stroke primary radical (女).
+In these languages, common components of characters are identified called “radicals.” Characters are then grouped by their primary radical, then ordered by the number of pen strokes within each radical. When there is no obvious radical or more than one radical, convention governs which is used for sorting. For example, the Chinese character for “mother” (<span lang="ja">媽</span>) is sorted as a thirteen-stroke character under the three-stroke primary radical (<span lang="ja">女</span>).
 
-The radical-and-stroke system is cumbersome compared to an alphabetical system in which there are a few characters, all unambiguous. The choice of which components of a logograph comprise separate radicals and which radical is primary is not always clear-cut. As a result, the logographic languages often supplement radical-and-stroke ordering with alphabetic sorting of a phonetic conversion of the logographs. For example, the [kanji](http://en.wikipedia.org/wiki/Kanji) word Tōkyō (東京), the Japanese name of Tokyo can be sorted as if it were spelled out in the Japanese characters of the [hiragana syllabary](http://en.wikipedia.org/wiki/Hiragana) as “to-u-ki-yo-u” (とうきょう), using the conventional sorting order for these characters, this is “phonetic” sorting.
+The radical-and-stroke system is cumbersome compared to an alphabetical system in which there are a few characters, all unambiguous. The choice of which components of a logograph comprise separate radicals and which radical is primary is not always clear-cut. As a result, the logographic languages often supplement radical-and-stroke ordering with alphabetic sorting of a phonetic conversion of the logographs. For example, the [kanji](http://en.wikipedia.org/wiki/Kanji) word Tōkyō (<span lang="ja">東京</span>), the Japanese name of Tokyo can be sorted as if it were spelled out in the Japanese characters of the [hiragana syllabary](http://en.wikipedia.org/wiki/Hiragana) as “to-u-ki-yo-u” (<span lang="ja">とうきょう</span>), using the conventional sorting order for these characters, this is “phonetic” sorting.
 
 #### Japanese Sorting
 
 For sorting Japanese names, some features have phonetic name support, such as the Japanese Outlook Address Book. The following names are sorted correctly, even though the phonetic name info weren’t available from the user.
 
--   麻生太郎
+-   <span lang="ja">麻生太郎
 -   おかわりくん
 -   川端康成
 -   どらえもん
--   どらえもん２
+-   どらえもん２</span>
 
 The second list is acceptable when phonetic sorting is not available and has to rely on user input their phonetic names.
 
--   おかわりくん
+-   <span lang="ja">おかわりくん
 -   どらえもん２
 -   麻生太郎
 -   川端康成
--   どらえもん
+-   どらえもん</span>
 
 #### Simplified Chinese Sorting
 
@@ -266,26 +266,26 @@ Match Diacritics in the Find and Replace feature is used to ignore or consider d
 |-------------| -----------------------------| --------------|
 |  é          |  Match Diacritics selected   |  é            |
 |  é          |  Match Diacritics unselected |  e, é         |
-|  שׁ          |  Match Diacritics selected   |   שׁ           |
-|  ש          |  Match Diacritics unselected |  ש, שׁ, שׂ      |
+|  <span lang="he">שׁ</span>          |  Match Diacritics selected   |   <span lang="he">שׁ</span>           |
+|  <span lang="he">ש</span>          |  Match Diacritics unselected |  <span lang="he">ש, שׁ, שׂ</span>      |
 
 ### Match Kashida
 
 Kashida is mainly used in Arabic text for the sole purpose of text justification in both left and right sides. It, however, may also be used by some for enhancing visual appearance of some words. Kashida should have no effect on spelling or meaning of any word it is inserted to. You may choose to add one or more kashidas between any connected characters.
 
-Match Kashida in Find and Replace functionality is used to ignore or consider kashida when searching for text. If, for example, Match Kashida was checked, kashidas will not be ignored in your search or replacement. Hence Find and Replace will only find words whose kashidas location and number exactly match those of the text typed in Find and Replace. On the other hand, if Match Kashida was unchecked, kashidas will simply be ignored and Arabic words such as (حليم and حليــــــــــم) would be equivalent and searching the first word would catch both words. However, searching the second one (the one with a kashida) will only find the same word and not the other one (without the kashida). This is OK since the user would type the kashida in Find and Replace only if he/she really intends to include it in the search.
+Match Kashida in Find and Replace functionality is used to ignore or consider kashida when searching for text. If, for example, Match Kashida was checked, kashidas will not be ignored in your search or replacement. Hence Find and Replace will only find words whose kashidas location and number exactly match those of the text typed in Find and Replace. On the other hand, if Match Kashida was unchecked, kashidas will simply be ignored and Arabic words such as (<span lang="ar">حليم</span> and<span lang="ar"> حليــــــــــم</span>) would be equivalent and searching the first word would catch both words. However, searching the second one (the one with a kashida) will only find the same word and not the other one (without the kashida). This is OK since the user would type the kashida in Find and Replace only if he/she really intends to include it in the search.
 
 ### Match Alef Hamza
 
-It happens very often that the Arabic letter Alef with Hamza (أ) is written as simply Alef without Hamza (ا) on top of it with affecting the meaning. Hence, some applications include “Match Alef Hamza” to selectively choose to ignore or consider the Alef Hamza when searching Arabic text. For example, if Match Alef Hamza is unchecked, then searching for (احمد) or (أحمد) will find both (احمد) and (أحمد). On the other hand, if Match Alef Hamza is checked, then the Alef and Alef Hamza must match that of the text used in the Find and Replace dialog. Therefore, searching for (احمد) will not find (أحمد).
+It happens very often that the Arabic letter Alef with Hamza (<span lang="ar">أ</span>) is written as simply Alef without Hamza (<span lang="ar">ا</span>) on top of it with affecting the meaning. Hence, some applications include “Match Alef Hamza” to selectively choose to ignore or consider the Alef Hamza when searching Arabic text. For example, if Match Alef Hamza is unchecked, then searching for <span lang="ar">(احمد)</span> or <span lang="ar">(أحمد)</span> will find both <span lang="ar">(احمد)</span> and <span lang="ar">(أحمد)</span>. On the other hand, if Match Alef Hamza is checked, then the Alef and Alef Hamza must match that of the text used in the Find and Replace dialog. Therefore, searching for <span lang="ar">(احمد)</span> will not find <span lang="ar">(أحمد)</span>.
 
 ### Hanja with Phonetic Hangul
 
-The “Hanja with phonetic Hangul” option is used to find words written in either the hanja (Han or “Chinese script”) or Hangul (native Korean script). (See [Korean mixed script](https://en.wikipedia.org/wiki/Korean_mixed_script) for more details.) For example, the terms 한자 and 漢字 both mean “Hangul.”
+The “Hanja with phonetic Hangul” option is used to find words written in either the hanja (Han or “Chinese script”) or Hangul (native Korean script). (See [Korean mixed script](https://en.wikipedia.org/wiki/Korean_mixed_script) for more details.) For example, the terms <span lang="ko">한자</span> and <span lang="ko">漢字</span> both mean “Hangul.”
 
 ### Full and Half- and Half-Width Forms
 
-This option allows users to search for full- and half-width forms. This means the pair A (\\u0041) and full-width Ａ (\\uFF21) and the pair ァ (\\u30A1) and half-width ｦ (\\uFF66) will be considered equivalent characters. To correctly search for these characters, it is recommended to [normalize](#String-Normalization) the strings first.
+This option allows users to search for full- and half-width forms. This means the pair A (\\u0041) and full-width Ａ (\\uFF21) and the pair <span lang="ja">ァ</span> (\\u30A1) and half-width <span lang="ja">ｦ</span> (\\uFF66) will be considered equivalent characters. To correctly search for these characters, it is recommended to [normalize](#String-Normalization) the strings first.
 
 ### Sounds Like
 
@@ -293,11 +293,11 @@ This feature allows users to treat characters as equal. For example, it will tre
 
 English: The spaghetti we had for dinner was delicious.
 
-Japanese: 夕食に食べたスパゲッティは、美味しかったです。
+Japanese: <span lang="ja">夕食に食べたスパゲッティは、美味しかったです。</span>
 
-Hiragana: ゆうしょくにたべたすぱげってぃは、おいしかったです。
+Hiragana: <span lang="ja">ゆうしょくにたべたすぱげってぃは、おいしかったです。</span>
 
-Katakana: ユウショクニタベタスパゲッティハ、オイシカッタデス。
+Katakana: <span lang="ja">ユウショクニタベタスパゲッティハ、オイシカッタデス。</span>
 
 ### Wildcard Search
 
@@ -308,9 +308,9 @@ Even when user use wildcards, the search should not include partial characters. 
 
 |  Search String|  Text  |  Result   |
 |---------------| -------| ----------|
-|  กี่?           |  หกี่ก   | Match     |
-|  กี?           |  หกี่ก   | No match  |
-|  กี่?           |  หกีa   | Match     |
-|  กี่@           |  หกี่ก   | Match     |
-|  กี@           |  หกี่ก   | No match  |
-|  กี่@           |  กี่ก    | Match     |
+|  <span lang="th">กี่?           |  หกี่ก</span>   | Match     |
+|  <span lang="th">กี?           |  หกี่ก</span>   | No match  |
+|  <span lang="th">กี่?           |  หกีa</span>   | Match     |
+|  <span lang="th">กี่@           |  หกี่ก</span>   | Match     |
+|  <span lang="th">กี@           |  หกี่ก</span>   | No match  |
+|  <span lang="th">กี่@           |  กี่ก</span>    | Match     |
