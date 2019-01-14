@@ -58,7 +58,7 @@ Coding for world-readiness may have an impact upon the UI design; below is a lis
 
 ### Internet Protocols
 
--   If your feature processes and displays various internet protocols, does it support non-Latin characters such as www.café.com, <span lang="el">χρήστη@μηχανή.ελ</span>, <span lang="ar">http:// مثال.إختبار</span>, or \\\\<span lang="zh-Hans">公司</span>\\<span lang="zh-Hans">单位</span>\\<span lang="zh-Hans">文件</span>.docx.
+-   If your feature processes and displays various internet protocols, does it support non-Latin characters such as www<span></span>.café.<span></span>com, <span lang="el">χρήστη@μηχανή.ελ</span>, <span lang="ar">http:// مثال.إختبار</span>, or \\\\<span lang="zh-Hans">公司</span>\\<span lang="zh-Hans">单位</span>\\<span lang="zh-Hans">文件</span>.docx.
     -   Double-encoding is frequently seen when to different components use HTML encoding; instead of “Documents partagés” (Shared Documents) the user sees “Documents partag&\#233;s”. The resulting string is not human readable.
     -   Have you considered the entire process flow?
         -   When processing data, host names, URLs/IRIs or UNC paths, or email addresses when is the conversion happening? Who is doing the conversion?
