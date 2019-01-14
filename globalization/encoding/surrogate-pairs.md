@@ -25,7 +25,7 @@ There are two sets of variants defined by Unicode:
 
 Similar to surrogate pairs, the code point sequence is comprised of a base character followed by the variation selector (U+FE00-U+FE0F and U+E0100-U+E01EF, abbreviated VS1-VS16 and VS17-VS256).
 
-For example, 葛 \(U+845B) may also be represented as 󠄀葛 \(U+845B; VS17/U+E0100). (You will need a font that has defined this character for it to correctly display.)
+For example, <span lang="ja">葛</span> \(U+845B) may also be represented as 󠄀<span lang="ja">&#xe0100;</span> \(U+845B; VS17/U+E0100). (You will need a font that has defined this character for it to correctly display.)
 
 ### End-User Defined Characters
 
