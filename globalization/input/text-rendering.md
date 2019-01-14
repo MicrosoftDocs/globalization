@@ -26,20 +26,20 @@ You can see the problems this English–centric approach presented when represen
 
 First, some languages do not have a one–to–one mapping between their uppercase and lowercase characters. For instance, the uppercase equivalent of the German ß is "SS." Second, some characters have different mappings depending upon the language in which they are used. Most non–Latin scripts do not even use the concept of lowercase and uppercase. Where are the capital letters in the strings below?
 
--   पूंजी पत्र कहाँ हैं? \(Devanagari script/Hindi)
--   大寫字母在哪裡？ \(Traditional Chinese)
--   மூலதன கடிதங்கள் எங்கே? \(Tamil)
--   (Arabic) أين هي الحروف الكبيرة؟ 
--   ບ່ອນທີ່ຈົດຫມາຍນະຄອນຫຼວງມີຫຍັງແດ່? \(Lao)
--   (Hebrew) היכן הם אותיות רישיות?
--   대문자는 어디 있습니까? \(Korean)
--   ಅಕ್ಷರಗಳಲ್ಲಿ ಎಲ್ಲಿ? \(Kannada)
--   ตัวอักษรตัวใหญ่อยู่ที่ไหน \(Thai)
--   কোথায় বড় হাতের অক্ষরে? \(Bangla)
--   სად არიან ასოებით? \(Georgian)
--   જ્યાં મૂડી અક્ષરો છે? \(Gujarati)
+-   <span lang="hi">पूंजी पत्र कहाँ हैं?</span> \(Devanagari script/Hindi)
+-   <span lang="zh-Hant">大寫字母在哪裡？</span> \(Traditional Chinese)
+-   <span lang="ta">மூலதன கடிதங்கள் எங்கே?</span> \(Tamil)
+-   <span lang="ar" dir="rtl">أين هي الحروف الكبيرة؟</span> (Arabic) 
+-   <span lang="lo">ບ່ອນທີ່ຈົດຫມາຍນະຄອນຫຼວງມີຫຍັງແດ່?</span> \(Lao)
+-   <span lang="he" dir="rtl">היכן הם אותיות רישיות?</span> (Hebrew) 
+-   <span lang="ko">대문자는 어디 있습니까?</span> \(Korean)
+-   <span lang="kn">ಅಕ್ಷರಗಳಲ್ಲಿ ಎಲ್ಲಿ?</span> \(Kannada)
+-   <span lang="th">ตัวอักษรตัวใหญ่อยู่ที่ไหน</span> \(Thai)
+-   <span lang="bn">কোথায় বড় হাতের অক্ষরে?</span> \(Bangla)
+-   <span lang="ka">სად არიან ასოებით?</span> \(Georgian)
+-   <span lang="gu">જ્યાં મૂડી અક્ષરો છે?</span> \(Gujarati)
 
-Developers are better served by using an API (for example, [ToUpper()](https://docs.microsoft.com/dotnet/api/system.string.toupper#System_String_ToUpper_System_Globalization_CultureInfo_) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-İ problem](https://msdn.microsoft.com/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase "i" maps to a dotless uppercase letter: "I." However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "İ."
+Developers are better served by using an API (for example, [ToUpper()](https://docs.microsoft.com/dotnet/api/system.string.toupper#System_String_ToUpper_System_Globalization_CultureInfo_) if they need to capitalize text. Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step. Such as for addressing the [Turkish-İ problem](https://msdn.microsoft.com/library/ms973919.aspx#stringsinnet20_topic5). For English, the lowercase "i" maps to a dotless uppercase letter: "I." However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "<span lang="tr">İ</span>."
 
 ## Text Shaping
 
@@ -67,13 +67,13 @@ In some scripts the glyph displayed depends on the surrounding characters. A sin
 
 In Greek, the sigma character changes depending on whether the letter is at the beginning or the end of the word, as in the following example.
 
-σ οφό ς
+<span lang="el">σ οφό ς</span>
 
 ### Character Reordering
 
 Character reordering is the rearrangement of characters in sequence from their logical order (the order in which they are input) to their visual order (the order in which they are displayed). Some scripts, such as Devanagari and Tamil, require reordering, because vowel signs often appear to the left of, below, or above a character that they follow in logical order.
 
-कूत = क + ि + ै + ू + त
+<span lang="ta">कूत = क + ि + ै + ू + त</span>
 
 ### Character Stacking
 
@@ -83,7 +83,7 @@ Stacking or combining multiple characters into one “pile” is another issue t
 
 For Thai, a syllable usually consists of a consonant followed by a vowel and optionally a tone mark, the latter two of which are sometimes displayed above (or in some cases, below) the consonant.
 
-ที่อยู่ = ท + ี + ่ + อ + ย + ู + ่
+<span lang="th">ที่อยู่ = ท + ี + ่ + อ + ย + ู + ่</span>
 
 ## Direction
 
