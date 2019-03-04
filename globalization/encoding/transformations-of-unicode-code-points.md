@@ -15,7 +15,7 @@ There are different techniques to represent each one of the Unicode code points 
 
 The table below shows two characters encoded in both code pages and Unicode, using UTF-16 and UTF-8.
 
-| Character |  **A**  | **院**     |
+| Character |  **A**  | <span lang="zh-Hans">**院**</span>     |
 |-----------|-------|----------|
 | MBCS      |  41   | 89 40    |
 | UTF-16    |  0041 | 9662     |

@@ -31,22 +31,22 @@ When dealing with numeric values, there are six major items to pay attention to:
 | **Script**                        | **Digits Used**                   |
 |-----------------------------------|-----------------------------------|
 | Latin                             | 0 1 2 3 4 5 6 7 8 9               |
-| Arabic                            | ٠‎ ١‎ ٢‎ ٣‎ ٤‎ ٥‎ ٦‎ ٧‎ ٨‎ ٩      |
-| Chinese / Japanese                | 〇 一 二 三 四 五 六 七 八 九 十… |
-| Hebrew                            | א ,ב ,ג, ד, ה, ו, ז, ח ,ט…        |
-| Korean                            | 일 이 삼 사 오 육 칠 팔 구…       |
-| The Korean regularly uses both a Sino-Korean system and a native Korean system. Everything that can be counted will use one of the two systems, but seldom both. | 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉…. |
-| Bengla                            | ০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮ ৯               |
-| Devanagari (script used to write Hindi,Marathi, and other languages)                       | ० १ २ ३ ४ ५ ६ ७ ८ ९ |
-| Gujarati                          | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |
-| Gurmukhi (one of the scripts used to write Punjabi) | ੦ ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯               |
-| Kannada                           | ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯               |
-| Malayalam                         | ൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯               |
-| Odia                              | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯               |
-| Tami                              | ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯               |
-| Telugu                            | ౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯               |
-| Thai                              | ๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙               |
-| Tibetan                           | ༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩               |
+| Arabic                            |<span lang="ar">٠‎ ١‎ ٢‎ ٣‎ ٤‎ ٥‎ ٦‎ ٧‎ ٨‎ ٩</span>|
+| Chinese / Japanese                | <span lang="ja">〇 一 二 三 四 五 六 七 八 九 十…</span>|
+| Hebrew                            |<span lang="he"> א ,ב ,ג, ד, ה, ו, ז, ח ,ט…</span>|
+| Korean                            | <span lang="ko">일 이 삼 사 오 육 칠 팔 구…</span>|
+| The Korean regularly uses both a Sino-Korean system and a native Korean system. Everything that can be counted will use one of the two systems, but seldom both. | <span lang="ko">하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉…</span>.|
+| Bengla                            | <span lang="bn">০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮ ৯</span>|
+| Devanagari (script used to write Hindi,Marathi, and other languages)| <span lang="hi">० १ २ ३ ४ ५ ६ ७ ८ ९</span>|
+| Gujarati                          | <span lang="gu">୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯</span>               |
+| Gurmukhi (one of the scripts used to write Punjabi) | <span lang="pa">੦ ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯ </span>|
+| Kannada                           |<span lang="kn">೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯</span>|
+| Malayalam                         | <span lang="ml">൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯</span>|
+| Odia                              | <span lang="or">୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯</span>|
+| Tami                              | <span lang="ta">௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯</span>|
+| Telugu                            | <span lang="te">౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯</span>|
+| Thai                              | <span lang="th">๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙</span>|
+| Tibetan                           | <span lang="bo">༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩</span>|
 
 **Table 1**: Digits used for a variety of scripts.
 

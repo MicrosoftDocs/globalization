@@ -8,7 +8,7 @@ ms.date: 03/16/2016
 
 Currency formatting needs to take into consideration these following elements:
 
--   **Currency symbol** — This can be a pre-defined symbol like the European Euro '€' or a combination of letters like the use of 'GBP' for British Pound.
+-   **Currency symbol** — This can be a pre-defined symbol such as the European Euro '€' or a combination of letters like the use of 'GBP' for British Pound.
 -   **Currency symbol placement** — It can be either place before or after the digits.
 -   **Negative-amount display** — Several of the ways to display negative amounts are:
  
