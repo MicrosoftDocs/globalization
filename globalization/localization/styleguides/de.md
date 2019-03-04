@@ -18,7 +18,7 @@ Compose your vision within the cloud
 
 <span style="color: green">Our style</span>: <span lang="de">Lassen Sie Ihrer Kreativität freien Lauf.</span>
 
-<span style="color: red">Not our style</span>: <span lang="de">Realisieren Sie in der Cloud Ihre Vision.</span>>
+<span style="color: red">Not our style</span>: <span lang="de">Realisieren Sie in der Cloud Ihre Vision.</span>
 
 ## 2.	Keep product names in English
 
