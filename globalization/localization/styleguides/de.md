@@ -16,9 +16,9 @@ The language in Microsoft products should have the "feel" of a product originall
 
 Compose your vision within the cloud
 
-<span style="color: green">Our style</span>: <span lang="de">Lassen Sie Ihrer Kreativität freien Lauf.</span>
+<span style="color: green;">Our style</span>: <span lang="de">Lassen Sie Ihrer Kreativität freien Lauf.</span>
 
-<span style="color: red">Not our style</span>: <span lang="de">Realisieren Sie in der Cloud Ihre Vision.</span>
+<span style="color: red;">Not our style</span>: <span lang="de">Realisieren Sie in der Cloud Ihre Vision.</span>
 
 ## 2.	Keep product names in English
 
@@ -34,9 +34,9 @@ This is a rough rule: [Trademarked names](https://www.microsoft.com/en-us/legal/
 
 **Example**
 
-English: Microsoft Office 365 Developer Technical Preview → German: Microsoft Office 365 Developer Technical Preview
+English: Microsoft Office 365 Developer Technical Preview → German: <span lang="de">Microsoft Office 365 Developer Technical Preview</span>
 
-English: Windows Desktop Application Program → German: Windows-Desktopanwendungsprogramm
+English: Windows Desktop Application Program → German: <span lang="de">Windows-Desktopanwendungsprogramm</span>
 
 ## 3.	Follow the tone and style of the English original
 
@@ -134,9 +134,9 @@ The letter <span lang="de">ẞ</span> (<span lang="de">ß – ẞ</span>) is now
 
 English: STREET → German: <span lang="de">STRAẞE</span> (not: <span lang="de">STRASSE</span>)
 
-##10.	Use the right reference material
+## 10.	Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [Germany Style Guide](http://www.microsoft.com/en-us/language) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [German Style Guide](http://www.microsoft.com/en-us/language) and the following references:
 1.	Duden - Die deutsche Rechtschreibung, 27. Auflage, 2017
 2.	WAHRIG Wörterbuch der deutschen Sprache, von Renate Wahrig-Burfeind, Deutscher Taschenbuch Verlag, München 2012
 3.	Duden. Richtiges und gutes Deutsch. Bibliographisches Institut, Berlin; 7. Auflage, 2011
