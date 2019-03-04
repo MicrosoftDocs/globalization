@@ -19,7 +19,7 @@ Now let's compare these formats between United States (English), Mexico (Spanish
 
 United States: Tuesday, October 12, 1954  
 Mexico: martes 12 de octubre de 1954  
-Japan: 1954年10月12日
+Japan: <span lang="ja">1954年10月12日</span>
 
 Obviously, the names of the months and days of the week are different from locale to locale. However, there are other notable differences as well. For Mexico, the day comes before the month, everything is lowercase and the article "de" has been added. In Japan, the day of the week is not displayed, and the translations for day, month and year act more like separators.
 
