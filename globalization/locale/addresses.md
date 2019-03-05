@@ -12,7 +12,7 @@ You must also be flexible when performing validity checks of the data entered by
 
 The current implementation of NLS APIs and the .NET Framework do not provide any address formatting information. The best approach is to:
 
--   Divide the address into multiple fields for street number, building number, city, country/region, and postal code. (Note that some places—such as Taiwan—are considerred as regions by some nations and countries by others.)
+-   Divide the address into multiple fields for street number, building number, city, country/region, and postal code. (Note that some places—such as Taiwan—are considered regions by some nations and countries by others.)
 -   Don't expect that all predefined fields should contain a value (such as the previous example of postal codes).
 -   Be flexible for additional data that you might not usually expect in an address (such as a description of how to get there).
 
