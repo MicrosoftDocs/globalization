@@ -16,9 +16,9 @@ The language in Microsoft products should have the "feel" of a product originall
 
 Compose your vision within the cloud
 
-<span style="color: green;">Our style</span>: <span lang="de">Lassen Sie Ihrer Kreativität freien Lauf.</span>
+_Our style_: <span lang="de">Lassen Sie Ihrer Kreativität freien Lauf.</span>
 
-<span style="color: red;">Not our style</span>: <span lang="de">Realisieren Sie in der Cloud Ihre Vision.</span>
+_Not our style_: <span lang="de">Realisieren Sie in der Cloud Ihre Vision.</span>
 
 ## 2.	Keep product names in English
 
@@ -26,17 +26,17 @@ There is no need to leave a term in English, if a good German term is available.
 
 **Example**
 
-English: upload → German: <span lang="de">hochladen</span> (not: <span lang="de">uploaden</span>)
+_English_: upload → _German_: <span lang="de">hochladen</span> (_Not_: <span lang="de">uploaden</span>)
 
-English: firstline worker → German: <span lang="de">Mitarbeiter in Service und Produktion</span>
+_English_: firstline worker → _German_: <span lang="de">Mitarbeiter in Service und Produktion</span>
 
 This is a rough rule: [Trademarked names](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/en-us.aspx) and the name Microsoft Corporation often remain in English, unless an approved German name for the trademark is available. Application, product and sometimes even feature names may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](http://www.microsoft.com/language), or contact the moderator if there is any doubt.
 
 **Example**
 
-English: Microsoft Office 365 Developer Technical Preview → German: <span lang="de">Microsoft Office 365 Developer Technical Preview</span>
+_English_: Microsoft Office 365 Developer Technical Preview → _German_: <span lang="de">Microsoft Office 365 Developer Technical Preview</span>
 
-English: Windows Desktop Application Program → German: <span lang="de">Windows-Desktopanwendungsprogramm</span>
+_English_: Windows Desktop Application Program → _German_: <span lang="de">Windows-Desktopanwendungsprogramm</span>
 
 ## 3.	Follow the tone and style of the English original
 
@@ -44,9 +44,9 @@ English: Windows Desktop Application Program → German: <span lang="de">Windows
 
 **Example**
 
-Translate this warning: Invalid ID
+_Translate this warning_: Invalid ID
 
-With this: <span lang="de">Ihre ID sollte folgende Form haben: someone@example.com.</span> 
+_With this_: <span lang="de">Ihre ID sollte folgende Form haben: someone@example.com.</span> 
 
 ## 4.	Choose gender-neutral language
 
@@ -54,31 +54,31 @@ Regardless of the audience, avoid gender stereotypes and aim to be as gender-neu
 
 **Example**
 
-<span style="color: green">Our style</span>: <span lang="de">Sie erhalten möglicherweise keine Antwort, da dieser Kontakt den Status "Abwesend" hat.</span>
+_Our style_: <span lang="de">Sie erhalten möglicherweise keine Antwort, da dieser Kontakt den Status "Abwesend" hat.</span>
 
-<span style="color: red">Not our style</span>: <span lang="de">Diese(r) Empfänger(in) antwortet möglicherweise nicht, da er/sie den Status "Abwesend" hat.</span>
+_Not our style_: <span lang="de">Diese(r) Empfänger(in) antwortet möglicherweise nicht, da er/sie den Status "Abwesend" hat.</span>
 
 When you use gender-neutral pronouns (e.g. <span lang="de">man, jemand, niemand, wer</span>), be consistent and follow through. 
 
 **Example**
 
-<span style="color: green">Our style</span>: <span lang="de">Niemand darf aufgrund seines Alters benachteiligt werden.</span>
+_Our style_: <span lang="de">Niemand darf aufgrund seines Alters benachteiligt werden.</span>
 
-<span style="color: red">Not our style</span>: <span lang="de">Niemand darf aufgrund des Alters benachteiligt werden.</span>
+_Not our style_: <span lang="de">Niemand darf aufgrund des Alters benachteiligt werden.</span>
 
 Passive voice is a typical aspect of the German language. While Microsoft style is active, passive voice can be used to achieve gender-neutral language.
 
 **Example**
 
-<span style="color: green">Our style</span>: With this: <span lang="de">Es ist folgendes zu beachten.</span>
+_Our style_: With this: <span lang="de">Es ist folgendes zu beachten.</span>
 
-<span style="color: green">Not our style</span>: <span lang="de">Der Benutzer der Software sollte folgendes beachten.</span>
+_Not our style_: <span lang="de">Der Benutzer der Software sollte folgendes beachten.</span>
 
 If the text is about an individual and the gender is clear, be specific.
 
 **Example**
 
-<span style="color: green">Our style</span>: <span lang="de">Erika Müller ist Personalchefin. Sie ist unsere Expertin in Sachen Personal.</span>
+_Our style_: <span lang="de">Erika Müller ist Personalchefin. Sie ist unsere Expertin in Sachen Personal.</span>
 
 In short texts or text strings, for titles or when a group is composed of women and men, make conscious choices. Acceptable approaches are camel casing (e.g. <span lang="de">DoktorandIn</span>) and slash (e.g. <span lang="de">Entwickler/in</span>). Do not use an underscore (e.g. <span lang="de">Mitarbeiter_innen</span>).
 
@@ -90,17 +90,17 @@ In technical contexts, the use of "we" might sound too personal in German and mi
 
 **Example**
 
-English: Answer a few simple questions and we'll help you choose.
+_English_: Answer a few simple questions and we'll help you choose.
 
-German: <span lang="de">Beantworten Sie uns ein paar Fragen und wir helfen Ihnen bei der Auswahl.</span>
+_German_: <span lang="de">Beantworten Sie uns ein paar Fragen und wir helfen Ihnen bei der Auswahl.</span>
 
 ## 6.	Strike the right formality
 
-German is a more formal language. Most notably, we have the formal (<span lang="de">Sie</span>) and the informal way (<span lang="de">Du</span>) of addressing people. It has become more common to address others with the informal <span lang="de">Du</span>, particularly in advertisements or gaming contexts. While Microsoft's voice is generally on the less formal side, consistency is important. To assure that all translators use the same approach, we recommend using Sie unless you are addressing kids under 18.
+German is a more formal language. Most notably, we have the formal (<span lang="de">Sie</span>) and the informal way (<span lang="de">Du</span>) of addressing people. It has become more common to address others with the informal <span lang="de">Du</span>, particularly in advertisements or gaming contexts. While Microsoft's voice is generally on the less formal side, consistency is important. To assure that all translators use the same approach, we recommend using Sie unless you are addressing children under 18.
 
 **Example**
 
-<span style="color: green">Our style</span>: <span lang="de">Sie bestimmen, wann neue Updates installiert werden sollen.</span>
+_Our style_: <span lang="de">Sie bestimmen, wann neue Updates installiert werden sollen.</span>
 
 ## 7.	Break up long compounds
 
@@ -112,11 +112,11 @@ Product names that consist of multiple words are not hyphenated for legal reason
 
 **Example**
 
-English: home page file name → German: <span lang="de">Homepage-Dateiname</span>
+_English_: home page file name → German: <span lang="de">Homepage-Dateiname</span>
 
-English: Skype Manager Administrator → German: <span lang="de">Skype Manager-Administrator</span>
+_English_: Skype Manager Administrator → German: <span lang="de">Skype Manager-Administrator</span>
 
-English: Office Setup Assistant → German: <span lang="de">Office-Setup-Assistent</span>
+_English_: Office Setup Assistant → German: <span lang="de">Office-Setup-Assistent</span>
 
 ## 8.	Avoid abbreviations
 
@@ -124,7 +124,7 @@ English texts generally have a high number of abbreviations. German uses fewer a
 
 **Example**
 
-English: VCR → German: <span lang="de">Videorekorder</span> (not: VCR)
+_English_: VCR → German: <span lang="de">Videorekorder</span> (_Not_: VCR)
 
 ## 9.	Use <span lang="de">ß</span> where appropriate
 
@@ -132,7 +132,7 @@ The letter <span lang="de">ẞ</span> (<span lang="de">ß – ẞ</span>) is now
 
 **Example**
 
-English: STREET → German: <span lang="de">STRAẞE</span> (not: <span lang="de">STRASSE</span>)
+_English_: STREET → _German_: <span lang="de">STRAẞE</span> (not: <span lang="de">STRASSE</span>)
 
 ## 10.	Use the right reference material
 
