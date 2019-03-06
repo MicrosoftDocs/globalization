@@ -6,7 +6,7 @@ ms.date: 03/04/2019
 
 # Top 10 Tips for Microsoft Translation into German
 
-You are helping with translation into German, but don't have time to study all aspects of the German Style Guide? Here are ten of the most important aspects to keep in mind.
+You are helping with translation into German, but don't have time to study all aspects of the German Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Translate sense not words
 
