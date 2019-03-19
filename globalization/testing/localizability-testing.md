@@ -11,7 +11,7 @@ The purpose of localizability testing is to verify that the UI of the program be
 
 **Run a pseudo-localized version of a program**
 
-Pseudo-localization can be the most effective way of finding localizability bugs, which are generally detected when translating the program's UI. Pseudo-localization gives you a translation without the cost of an actual localization. (You can easily creating pseudo-localized versions using the [Multilingual App Toolkit](https://blogs.msdn.microsoft.com/matdev/).)
+Pseudo-localization can be the most effective way of finding localizability bugs, which are generally detected when translating the program's UI. Pseudo-localization gives you a translation without the cost of an actual localization. (You can easily creating pseudo-localized versions using the [Multilingual App Toolkit](../windows/uwp/design/globalizing/use-mat).)
 
 Once you pseudo-localize your program, test its functionality. Pseudo-localized applications should function no differently than their original version. Besides detecting localizability bugs, pseudo-localization often reveals globalization problems as well. As a result, testing a pseudo-localized application can potentially be central to verifying that an application is world-ready.
 

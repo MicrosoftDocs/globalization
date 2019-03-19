@@ -285,7 +285,7 @@ The “Hanja with phonetic Hangul” option is used to find words written in eit
 
 ### Full and Half- and Half-Width Forms
 
-This option allows users to search for full- and half-width forms. This means the pair A (\\u0041) and full-width Ａ (\\uFF21) and the pair <span lang="ja">ァ</span> (\\u30A1) and half-width <span lang="ja">ｦ</span> (\\uFF66) will be considered equivalent characters. To correctly search for these characters, it is recommended to [normalize](#String-Normalization) the strings first.
+This option allows users to search for full- and half-width forms. This means the pair A (\\u0041) and full-width Ａ (\\uFF21) and the pair <span lang="ja">ァ</span> (\\u30A1) and half-width <span lang="ja">ｦ</span> (\\uFF66) will be considered equivalent characters. To correctly search for these characters, it is recommended to [normalize](#string-normalization) the strings first.
 
 ### Sounds Like
 
