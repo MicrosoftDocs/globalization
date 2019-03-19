@@ -23,7 +23,7 @@ Thus you need to ensure that if you deal with measurements, you can display them
 
 Although you need to do your own conversions between the metric and US systems, Win32 NLS APIs can help you detect which system of measurement is used for a given locale.
 
-The system of measurement can be obtain from [GetLocaleInfo](https://msdn.microsoft.com/library/dd318101.aspx) API with [LCTYPE](https://msdn.microsoft.com/library/bb507201.aspx) flag set to *LOCALE\_IMEASURE*. The returned value is 0 if the metric system (Système International d'unités, or S.I.) is used, and 1 if the U.S. system is used. The maximum number of characters allowed for this string is two.
+The system of measurement can be obtain from [GetLocaleInfoEx](/windows/desktop/api/winnls/nf-winnls-getlocaleinfoex) API with [LCTYPE](/windows/desktop/Intl/locale-information-constants#constants-used-in-the-lctype-parameter-of-getlocaleinfo-getlocaleinfoex-and-setlocaleinfo) flag set to *LOCALE\_IMEASURE*. The returned value is 0 if the metric system (Système International d'unités, or S.I.) is used, and 1 if the U.S. system is used. The maximum number of characters allowed for this string is two.
 
  ```C++
 DWORD dwMSys;
