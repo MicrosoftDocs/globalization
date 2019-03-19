@@ -13,6 +13,6 @@ That’s what these condensed Quick Start versions on this page are meant for. T
 
 *	[German](/globalization/localization/ministyleguides/mini-style-guide-german)
 *	[Portuguese (Brazil)](/globalization/localization/ministyleguides/mini-style-guide-portuguese-brazil.md
-*	Language 3
+*	[Portuguese (Portugal)](/globalization/localization/ministyleguides/mini-style-guide-portuguese-portugal.md)
 
 Not yet available for your language? We’ll be adding more languages over the coming months. In the meantime, check out the [full versions](https://www.microsoft.com/en-us/Language/StyleGuides). 
