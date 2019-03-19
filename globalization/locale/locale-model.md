@@ -26,7 +26,7 @@ Most developers don’t need to worry what the user has set as their keyboard. M
 
 ![Figure 1 Hindi Traditional Keyboard](/media/hubs/globalization/IC866727.png "Hindi Traditional Keyboard") *Figure 1 Hindi Traditional Keyboard*
 
-If you do need to access the keyboard and its settings directly, <https://msdn.microsoft.com/library/ms646267(vs.85).aspx> provides this information.
+If you do need to access the keyboard and its settings directly, [About Keyboard Input](/windows/desktop/inputdev/about-keyboard-input) provides this information.
 
 ## System Locale
 
