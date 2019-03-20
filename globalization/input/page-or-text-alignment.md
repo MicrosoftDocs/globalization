@@ -16,7 +16,7 @@ To describe how a text flows into lines, one needs to know three things:
 
 Chinese may be written either horizontally (read left-to-right, then top-to-bottom as English is) or vertically (read top-to-bottom, then right-to-left)—sometimes in the same document! This is called a bi-orientational script; see the image below for examples of each orientation. Other East Asian languages such as Japanese (Kanji) and Yi also have the same text alignment.
 
-|**Text Direction and Progression**|**Example**|
+|**CSS Attribute**|**Text Direction and Progression**|**Example**|
 |---|---|---|---|
 |[default]|Left-to-right directionality in horizontal text. No inherent directionality in vertical text.|Armenian (Source: Universal Declaration of Human Rights, United Nations)| Քանզի մարդկային ընտանիքի բոլոր անդամներին ներհատուկ արժանապատվությունըև հավասար ու անօտարելի իրավունքները աշխարհի ազատության, արդարության ու խաղաղության հիմքն են.|
 |direction: rtl;|Right-to-left directionality in horizontal text. No inherent directionality in vertical text.|Hebrew (Source: Universal Declaration of Human Rights, United Nations)|<span lang="he" dir="rtl">הואיל והכרה בכבוד הטבעי אשר לכל בני משפהת האדם ובזכויותיהם השוות והבלתי נפקעות הוא יסוד החופש, הצדק והשלום בעולם.</span>|
