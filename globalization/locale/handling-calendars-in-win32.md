@@ -34,7 +34,7 @@ BOOL CALLBACK EnumCalendarInfoProc(LPTSTR lpCalendarInfoString, CALID Calendar)
 
 Execution of the previous code sample would give the following result on English (United States) and Arabic (Tunisia) user locales, respectively.
 
-![Available calendar types for English (US) and Arabic (Tunisia)](/media/hubs/globalization/IC4981.jpg "Available calendar types for English (US) and Arabic (Tunisia)") 
+![Available calendar types for English (US) and Arabic (Tunisia)](https://docs.microsoft.com/globalization/locale/images/Calendar_Types.jpg "Available calendar types for English (US) and Arabic (Tunisia)") 
 
 **Figure 1.** Available calendar types for English (United States) and Arabic (Tunisia).
 
