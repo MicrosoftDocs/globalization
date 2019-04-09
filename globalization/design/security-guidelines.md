@@ -9,7 +9,7 @@ ms.date: 11/16/2016
 
 Most software products have international versions that are part of multi-national networks around the world. Having one vulnerable computer on a corporate network, whether it is an English version or an international version, threatens the whole corporate security.
 
-***NOTICE*** *: This article is not a complete security threat model for international software. You must develop specific threat models and follow the necessary security precautions including design review, code review, and functional testing to meet the security requirements. International software threat models will vary depending on the technologies and methods used.*
+***NOTICE: This article is not a complete security threat model for international software. You must develop specific threat models and follow the necessary security precautions including design review, code review, and functional testing to meet the security requirements. International software threat models will vary depending on the technologies and methods used.***
 
 Basic software security requirements include protecting software against:
 
