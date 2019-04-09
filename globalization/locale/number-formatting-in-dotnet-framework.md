@@ -10,7 +10,16 @@ ms.date: 03/16/2016
 
 The *NumberFormatInfo* class defines how currency, decimal separators, and other numeric symbols are formatted and displayed based on culture. For example, the decimal number 10000.50 is formatted as 10,000.50 for the culture "en-US" and 10.000,50 for the culture "de-DE." An instance of *NumberFormatInfo* can be created for a specific cultureor the invariant culture, but not for a neutral culture. A neutral culture does not provide enough information to display the correct numeric format. Table 4-10 lists the standard format characters for each standard formatting pattern and the associated *NumberFormatInfo* property that can be set to modify this pattern.
 
-![Format Character](/media/hubs/globalization/IC11711.jpg "Format Character") 
+|Format Character|Description and Associated Properties|
+|---|---|
+|c, C|Currency format. *CurrencyNegativePattern*, *CurrencyPositivePattern*, *CurrencySymbol*, *CurrencyGroupSizes*, *CurrencyGroupSeperator*, *CurrencyDecimalDigits*, *CurrencyDecimalSeperator*|
+|d, D|Decimal format|
+|e, E|Scientific (exponential) format|
+|f, F|Fixed point format|
+|g, G|General format|
+|n, N|Number format. *NumberNegativePattern*, *NumberGroupSizes*, *NumberGroupSeperator*, *NumberDecimalDigits*, *NumberDecimalSeperator*|
+|r, R|Roundtrip format, which ensures that numbers converted to strings will have the same value when they are converted back to numbers.|
+|x, X|Hexadecimal format|
 
 **Table 1:** Standard format characters for basic formatting patterns and the associated NumberFormatInfo property used to modify these patterns.
 
