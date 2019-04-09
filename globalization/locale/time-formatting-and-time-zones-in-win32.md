@@ -26,7 +26,7 @@ GetTimeFormat(LOCALE_USER_DEFAULT, // predefined current user locale
 
 Execution of this code would give the following result on English (United States) and Punjabi user locales, respectively. (See Figure 1 below)
 
-![TimeFormat-Win32](/media/hubs/globalization/IC45886.jpg "TimeFormat-Win32") 
+![TimeFormat-Win32](https://docs.microsoft.com/globalization/locale/images/Punjabi_Time.jpg "TimeFormat-Win32") 
 
 **Figure 1:** Time formatted for English (United States) and Punjabi user locales
 
@@ -50,13 +50,24 @@ EnumTimeFormats(EnumTimeFormatsProc, // enumeration callback function
 
 Execution of this code would give the following result on English (United States) and French (France) user locales, respectively. (See Figure 2 below.)
 
-![FrenchTimeFormat](/media/hubs/globalization/IC88253.jpg "FrenchTimeFormat") 
+![FrenchTimeFormat](https://docs.microsoft.com/globalization/locale/images/French_Time.jpg "FrenchTimeFormat") 
 
 **Figure 2:** Time formats for English (United States) and French (France) user locales
 
 The obtained result (format picture) can then be used as an lpFormat argument in a call to *GetTimeFormat*. This allows you to use an alternative formatting for the time. The following elements can be used to construct a format-picture string. (See Table 1 below.) If you use spaces to separate the elements in the format string, these spaces will appear in the same location in the output string. The letters must adhere to the casing conventions shown in the table. (For example, the correct formatting for "Seconds with leading zero for single-digit seconds" would be "ss" not "SS".) Characters in the format string that are enclosed in single quotation marks will appear in the same location and will be unchanged in the output string.
 
-![](https://i-msdn.sec.s-msft.com/en-us/goglobal/bb688125.timepicStr(en-us,MSDN.10).jpg)
+|Picture|Meaning|
+|---|----|
+|h|Hours with no leading zero for single-digit hours; 12-hour clock.|
+|hh|Hours with leading zero for single-digit hours; 12-hour clock.|
+|H|Hours with no leading zero for single-digit hours; 24-hour clock.|
+|HH|Hours with leading zero for single-digit hours; 24-hour clock.|
+|m|Minutes with no leading zero for single-digit minutes.|
+|mm|Minutes with leading zero for single-digit minutes.|
+|s|Seconds with no leading zero for single-digit seconds.|
+|ss|Seconds with leading zero for single-digit seconds.|
+|t|One character time-market string, such as A or P.|
+|tt|Multicharacter time-market string, such as A.M. or P.M.|
 
 **Table 1:** Elements for constructing a format-picture string.
 
