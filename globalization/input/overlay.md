@@ -12,8 +12,8 @@ The remaining category of advanced text properties relates to text overlay. Thes
 
 The terms phonetic guide, *yomi*, *furigana*, or “ruby” are used somewhat interchangeably to refer to an annotative gloss placed above or to the right of characters to aid the user in pronunciation. (Although *yomi* and *furigana* are only used in a Japanese context.) This is particularly important for logographic languages where the reader may not be familiar with the character or the character has more than one pronunciation.
 
-![The word “Tokyo” with phonetic spelling](https://i-msdn.sec.s-msft.com/dynimg/IC868528.png "The word “Tokyo” with phonetic spelling")  ![The word “Tokyo” with phonetic spelling](https://i-msdn.sec.s-msft.com/dynimg/IC868530.png "The word “Tokyo” with phonetic spelling") 
-**Figure 1:** The word “Tokyo” with phonetic spelling
+![The word "Tokyo" with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Horizontal.png "The word "Tokyo" with phonetic spelling") ![The word "Tokyo" with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Vertical.png "The word "Tokyo" with phonetic spelling") 
+**Figure 1:** The word "Tokyo" with phonetic spelling
 
 The Worldwide Web Consortium [defines three levels of ruby support](https://www.w3.org/TR/jlreq/): mono ruby, group ruby, and jukugo ruby.
 
@@ -25,11 +25,11 @@ Other methods to emphasis text include underlining (or "side line" if the text i
 
 Emphasis mark are not supported in HTML. Attempting to save documents containing emphasis marks may result in conversion to underline for the alternative "emphasizing" effect, instead.
 
-![Emphasis marks on horizontal text](https://i-msdn.sec.s-msft.com/dynimg/IC868529.png "Emphasis marks on horizontal text") 
+![Emphasis marks on horizontal text](https://docs.microsoft.com/globalization/input/images/Emphasis_Marks_Horizontal.png "Emphasis marks on horizontal text") 
 
 **Figure 2:** Emphasis marks on horizontal text.
 
-![Emphasis marks on vertical text](https://i-msdn.sec.s-msft.com/dynimg/IC868532.png "Emphasis marks on vertical text") 
+![Emphasis marks on vertical text](https://docs.microsoft.com/globalization/input/images/Emphasis_Marks_Vertical.png "Emphasis marks on vertical text") 
 
 **Figure 3:** Emphasis marks on vertical text.
 
