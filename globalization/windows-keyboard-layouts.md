@@ -7,7 +7,7 @@ ms.date: 01/05/2017
 
 # Windows Keyboard Layouts
 
-![Windows keyboard](https://docs.microsoft.com/en-us/globalization/Keyboard.jpg "Windows keyboard")
+![Windows keyboard](https://docs.microsoft.com/globalization/Keyboard.jpg "Windows keyboard")
 
 Choose a keyboard below to view its layouts. To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
@@ -226,4 +226,4 @@ If you use a pop-up blocker, please update your allowable list to include this W
 
 ## Related Links
 
-- [Create your own keyboard layout using Microsoft Keyboard Layout Creator](https://support.microsoft.com/en-us/help/823010/the-microsoft-keyboard-layout-creator "Create your own keyboard layout using Microsoft Keyboard Layout Creator")
+- [Create your own keyboard layout using Microsoft Keyboard Layout Creator](https://support.microsoft.com/help/823010/the-microsoft-keyboard-layout-creator "Create your own keyboard layout using Microsoft Keyboard Layout Creator")
