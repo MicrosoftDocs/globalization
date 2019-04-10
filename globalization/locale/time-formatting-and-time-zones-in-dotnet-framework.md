@@ -88,10 +88,4 @@ Obviously the scripting technology does not offer the same flexibility to manipu
 
 ## References
 
-See the Microsoft documentation for details about the following APIs:
-
-* [EnumTimeFormats](/windows/desktop/api/winnls/nf-winnls-enumtimeformatsa)  
-* [GetTimeFormat](/windows/desktop/api/datetimeapi/nf-datetimeapi-gettimeformata)  
-* [GetTimeZoneInformation](/windows/desktop/api/timezoneapi/nf-timezoneapi-gettimezoneinformation)  
-* [SetTimeZoneInformation](/windows/desktop/api/timezoneapi/nf-timezoneapi-settimezoneinformation)  
 * [DateTime Structure for .NET](/dotnet/api/system.datetime)  

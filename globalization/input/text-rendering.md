@@ -49,7 +49,7 @@ Most platforms and browsers support correct text shaping automatically or by cal
 
 The simplest example of such shaping is a ligature. A ligature is a combination of two or more glyphs to form a single glyph. English uses the same process in typesetting (for example, ff, fi, fl, ffl, ffi), although far less frequently than other scripts. It is common in many scripts for multiple characters to combine into a single shape. The rules of ligature used in ligature processing can be very complex in some scripts, such as Arabic, while much simpler in others, such as the Latin script. These rules not only depend on the individual characters of a given script, but also on the selected font used to draw them. Depending on the script, certain fonts are known to define hundreds of ligatures, while some other fonts do not use ligatures at all. Ligatures may cause side effects such as cursor movement, text selection, and the positioning of diacritics relative to characters in scripts that support diacritics.
 
-A ligature example is the diphthong in English in which two vowels, “A” and “E”, unite to create a single sound glyph as following:
+A ligature example is the diphthong in English in which two vowels, "A" and "E", unite to create a single sound glyph as following:
 
 Æ = A + E ← ALT + 0198
 
@@ -57,7 +57,7 @@ A typical example is the ligature of Arabic Lam and Alef as shown below (reading
 
 ل + ا = لا ← ALT + 65275
 
-| **Individual Characters** |  **Without Ligatures** |  **With Ligatures** |
+|Individual Characters|Without Ligatures|With Ligatures|
 |----------------------|-------------------|-----------------|
 | ل م ح                     |  لمح                   |  لمحـ               |
 
@@ -101,7 +101,7 @@ Latin characters have a left-to-right (LTR) Unicode directional property and hen
 
 For these scripts, the logical order (the order in which the user enters text with a sequence of virtual-key inputs) and the visual order (the order in which characters are represented to the user) are different in most cases.
 
-![Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters](/media/hubs/globalization/IC868519.jpg "Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters")
+![Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters](https://docs.microsoft.com/globalization/input/images/BiDi_Text.jpg "Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters")
 
 **Figure**: Bidirectional text (Arabic) where the logical order (first row) and the visual order (second row) are not of the same sequence of characters
 
@@ -123,10 +123,10 @@ When a neutral character falls between two characters of the same directionality
 
 When a neutral character falls between two characters of the opposite directionality, it will assume the overall directionality of the whole paragraph or context. The following example shows the different scenarios of how the bidi algorithm renders text with neutral characters between characters of different directionalities: same directionality as the surrounding characters. Hence the bidi algorithm will render it as one run with the same directionality.
 
-| **Typed Text**               |  **Display in LTR Paragraph** |  **Display in RTL Paragraph** |
+| Typed Text             | Display in LTR Paragraph | Display in RTL Paragraph |
 |------------------------------|-------------------------------|-------------------------------|
-| “First” then “&” then “عربي” |  [First&]عربي                 |  first [&عربي]                |
-| then “&” then “Last”“عربي”   |  [&Last]عربي                  |  [عربي&]Last                  |
+| "First" then "&" then “عربي" |  [First&]عربي                 |  first [&عربي]                |
+| then "&" then "Last""عربي"   |  [&Last]عربي                  |  [عربي&]Last                  |
 
 Notice how the neutral character in each column is attached to a different character set. For example, in the first row, the neutral character is treated as an English character in the first column (assigned LTR directionality), but as an Arabic character in the second column (assigned an RTL directionality).
 
@@ -140,7 +140,7 @@ Both lines were typed in the following color order: red, black, blue, green, and
 
 [one] [two] [خمسة] [4] [ثلاثة]
 
-Notice that by simply typing “4” instead of “four,” the number will follow the directionality of the preceding character, and hence will follow the blue Arabic word (three) and appear to the left of it as continuation of the RTL text run.
+Notice that by simply typing "4" instead of "four," the number will follow the directionality of the preceding character, and hence will follow the blue Arabic word (three) and appear to the left of it as continuation of the RTL text run.
 
 ### Directionality Control Marks
 
@@ -163,13 +163,13 @@ Two other invisible but non-embedding directional control characters provided by
 
 All these text rendering issues can have implications for cursor movement. Unlike Latin script, which requires forward and backward movement of the caret only, some scripts demand that characters be displayed above, below, or to the left of previous characters. In Thai, for example, if the cursor is positioned after a base consonant, vowel, and tone mark, the cursor should skip back over all three characters when the user types the back arrow.
 
-![Cursor positioning](/media/hubs/globalization/IC868521.png "Cursor positioning")
+![Cursor positioning](https://docs.microsoft.com/globalization/input/images/Cursor_Pos.png "Cursor positioning")
 
 **Figure**: Cursor positioning
 
 For bidirectional scripts, the direction of the cursor movement may change depending on the direction of the text involved. For example, when using the arrow keys to move from right to left through Arabic and then English text in the same sentence, the insertion point moves in a right-to-left manner through the Arabic text and then continues at the rightmost character in the English word and progresses in a right-to-left manner.
 
-![Pressing the right-arrow key through Latin and Hebrew text](/media/hubs/globalization/IC868520.png "Pressing the right-arrow key through Latin and Hebrew text")
+![Pressing the right-arrow key through Latin and Hebrew text](https://docs.microsoft.com/globalization/input/images/Right_Arrow.png "Pressing the right-arrow key through Latin and Hebrew text")
 
 **Figure**: Pressing the right-arrow key through Latin and Hebrew text.
 

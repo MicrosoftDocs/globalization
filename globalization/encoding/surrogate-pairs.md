@@ -4,7 +4,7 @@
 
 ### Surrogate Pairs
 
-With the Unicode 16-bit encoding system, over 65,000 characters can be encoded (2 ^16^ = 65,536). However, the total number of characters that needs to be encoded has actually exceeded that limit (to accommodate the emojis and symbols, CJK extension of characters, and historic scripts). To find additional place for new characters, developers of the Unicode Standard decided to introduce the notion of surrogate pairs. With surrogate pairs, a Unicode code point from range U+D800 to U+DBFF (called "high surrogate") gets combined with another Unicode code point from range U+DC00 to U+DFFF (called "low surrogate") to generate a whole new character, allowing the encoding of over one million additional characters. Unlike multi-byte character set (MBCS) characters, high and low surrogates cannot be interpreted when they do not appear as part of a surrogate pair (one of the major challenges with lead-byte and trail-byte processing of MBCS text).
+With the Unicode 16-bit encoding system, over 65,000 characters can be encoded (2<sup>16</sup> = 65,536). However, the total number of characters that needs to be encoded has actually exceeded that limit (to accommodate the emojis and symbols, CJK extension of characters, and historic scripts). To find additional place for new characters, developers of the Unicode Standard decided to introduce the notion of surrogate pairs. With surrogate pairs, a Unicode code point from range U+D800 to U+DBFF (called "high surrogate") gets combined with another Unicode code point from range U+DC00 to U+DFFF (called "low surrogate") to generate a whole new character, allowing the encoding of over one million additional characters. Unlike multi-byte character set (MBCS) characters, high and low surrogates cannot be interpreted when they do not appear as part of a surrogate pair (one of the major challenges with lead-byte and trail-byte processing of MBCS text).
 
 These characters, encoded at code positions of U+10000 or higher, are synchronized with the international standard ISO/IEC 10646-2. In addition to two Private Use Areas—plane 15 (U+F0000-U+FFFFD) and plane 16 (U+100000-U+10FFFD)—three supplementary planes are defined:
 
@@ -30,5 +30,3 @@ For example, <span lang="ja">葛</span> \(U+845B) may also be represented as �
 ### End-User Defined Characters
 
 [End-user defined characters](https://msdn.microsoft.com/library/dd317802(v=vs.85).aspx) (EUDCs) and [Private Use Area](https://msdn.microsoft.com/library/dd317802(v=vs.85).aspx) (PUA) characters are used to represent custom characters that are shared across an entire corporation, organization, or government. They are often used to display names or words with custom characters unavailable in other fonts. These characters cannot be reliably shared across computers or systems.
-
-
