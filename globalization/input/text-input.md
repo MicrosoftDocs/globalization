@@ -12,7 +12,7 @@ Different languages have different keyboard layouts, and the characters of each 
 
 ## Ensure that the Application is fully Unicode enabled
 
-Do not assume user data will only be entered in your script; software should be [Unicode enabled](../encoding/encoding-overview). Users should also be able to use extended characters in all parts of your product, such as in:
+Do not assume user data will only be entered in your script; software should be [Unicode enabled](../encoding/encoding-overview.md). Users should also be able to use extended characters in all parts of your product, such as in:
 
 -   document text,
 -   file names,
