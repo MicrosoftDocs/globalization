@@ -34,7 +34,7 @@ Any time you change the first strong character from a left-to-right language to 
 
 The text direction and cultural expectations can impact other features. For example, lines with Japanese or Korean text will have the underline appear on the right, while Chinese (Simplified and Traditional scripts) on the left. The positions of punctuation marks, for example, the relative position of commas and full stops, differ between horizontal and vertical writing. Punctuation such as parentheses, quotation marks, book title marks (Chinese), ellipsis mark, dash, wavy dash (Japanese), proper noun mark (Chinese), wavy book title mark (Chinese), emphasis mark, and cho-on mark (Japanese) are all rotated 90 degrees when switching between horizontal and vertical text.
 
-![Underlined text in four scripts](/media/hubs/globalization/IC868534.png "Underlined text in four scripts")
+![Underlined text in four scripts](https://docs.microsoft.com/globalization/input/images/Underline_Text.png "Underlined text in four scripts")
 
 Figure 1: Underlined text in four scripts.
 

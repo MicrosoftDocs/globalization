@@ -8,7 +8,7 @@ ms.date: 03/16/2016
 
 # Time Formatting and Time Zones in .NET Framework
 
-The easiest and most efficient way of doing time formatting in the .NET world is to take advantage of the *DateTime* structure that provides methods such as *DateTime.ToString* and *DateTime.Parse*. These methods allow you to perform culture-sensitive operations on a *DateTime object*. Use the *DateTimeFormatInfo* class to format and display a *DateTime* based on culture. *DateTimeFormatInfo* defines how DateTime values are formatted and displayed, depending on the culture. For example, using the *LongTimePattern*, the time 4 hours P.M., 36 minutes and 15 seconds is formatted as 4:36:15 PM for the "en-US" culture and 16:36:15 for the "fr-FR" culture number-formatting standards. (For more information and code samples, see the [Date Formatting](date-formatting) article.)
+The easiest and most efficient way of doing time formatting in the .NET world is to take advantage of the *DateTime* structure that provides methods such as *DateTime.ToString* and *DateTime.Parse*. These methods allow you to perform culture-sensitive operations on a *DateTime object*. Use the *DateTimeFormatInfo* class to format and display a *DateTime* based on culture. *DateTimeFormatInfo* defines how DateTime values are formatted and displayed, depending on the culture. For example, using the *LongTimePattern*, the time 4 hours P.M., 36 minutes and 15 seconds is formatted as 4:36:15 PM for the "en-US" culture and 16:36:15 for the "fr-FR" culture number-formatting standards. (For more information and code samples, see the [Date Formatting](date-formatting.md) article.)
 
 Methods and properties in the *DateTime* structure always use the local time zone for calculations and comparisons. You should consider this when using the *DateTime.Parse* method and the *DateTime.ParseExact* method. These methods provide overloads that allow you to convert the string representation of a date and time to a *DateTime* type. You can also choose to format a *DateTime* for a specific culture. If you do not specify a time zone in the string that you pass to these methods, they return the parsed date and time without performing a time-zone adjustment. The date and time are based on the system's time-zone setting. If you specify a time-zone offset, these methods parse the date/time string, convert it to UTC, and then convert it to the time on the local system.
 
@@ -69,7 +69,7 @@ Another vital point to consider when creating an application that is locale-awar
 
 ## Time Formatting in Web Pages
 
-In **"Retrieving the Browser Language Setting"** in the [Locale Model](locale-model) article, you saw how to retrieve the current browser locale on the client side and how to set the global locale of your context or session to this value. After the appropriate locale has been set, you can easily format the time using FormatDateTime, a locale-aware function. Suppose you have retrieved the Chinese (Taiwan) locale as the primary browser locale ("zh-TW" is the default value for this locale). The following code saves the current context locale (matching the server's user locale), sets the locale to Chinese (Taiwan), formats the date in Chinese (Taiwan) format, and restores the original locale.
+In **"Retrieving the Browser Language Setting"** in the [Locale Model](locale-model.md) article, you saw how to retrieve the current browser locale on the client side and how to set the global locale of your context or session to this value. After the appropriate locale has been set, you can easily format the time using FormatDateTime, a locale-aware function. Suppose you have retrieved the Chinese (Taiwan) locale as the primary browser locale ("zh-TW" is the default value for this locale). The following code saves the current context locale (matching the server's user locale), sets the locale to Chinese (Taiwan), formats the date in Chinese (Taiwan) format, and restores the original locale.
 
 ```
 currentLocale = GetLocale
@@ -88,10 +88,4 @@ Obviously the scripting technology does not offer the same flexibility to manipu
 
 ## References
 
-See the Microsoft documentation for details about the following APIs:
-
-* [EnumTimeFormats](/windows/desktop/api/winnls/nf-winnls-enumtimeformatsa)  
-* [GetTimeFormat](/windows/desktop/api/datetimeapi/nf-datetimeapi-gettimeformata)  
-* [GetTimeZoneInformation](/windows/desktop/api/timezoneapi/nf-timezoneapi-gettimezoneinformation)  
-* [SetTimeZoneInformation](/windows/desktop/api/timezoneapi/nf-timezoneapi-settimezoneinformation)  
 * [DateTime Structure for .NET](/dotnet/api/system.datetime)  

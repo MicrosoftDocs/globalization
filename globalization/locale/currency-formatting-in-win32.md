@@ -21,9 +21,9 @@ GetCurrencyFormat(LOCALE\_USER\_DEFAULT, // a predefined value for user locale
 
 Execution of the previous code would give the following result on English (United States) and Danish user locales, respectively.
 
-![Currency format for English (United States) and Danish](/media/hubs/globalization/IC32596.jpg "Currency format for English (United States) and Danish") 
+![Currency format for English (United States) and Danish](https://docs.microsoft.com/globalization/locale/images/Danish_Currency.jpg "Currency format for English (United States) and Danish") 
 
-Figure 1 - Currency format for English (United States) and Danish.
+**Figure 1.** Currency format for English (United States) and Danish.
 
 With this approach, the number string is formatted to a locale-specific format and, more importantly, currency symbol! But suppose you want to represent $1,230.40 (U.S. dollars) to a Danish user. By using the first approach mentioned and formatting your string with current user locale settings (Danish), your string would in fact come out as kr 1.230,40. Of course, the main issue would be that you want to format your string in the Danish format, but you don't want to change your currency symbol (and in this case lose some of the value of your money in the transaction).
 
@@ -42,7 +42,7 @@ getlocaleinfo(locale\_user\_default, locale\_return\_number|locale\_icurrency, c
 // set euro as the default currency symbol.
 curformat.lpcurrencysymbol = text(:;"&gt;GetCurrencyFormat(LOCALE\_USER\_DEFAULT, // a predefined value for user locale
        0, // operation option
-       TEXT("123.40"), // input number (see MSDN for legal chars)
+       TEXT("123.40"), // input number (see Docs for legal chars)
        &CurFormat, // formatting specifications
        g\_szTemp, // output buffer
        MAX\_STR); // size of output buffer

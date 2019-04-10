@@ -24,10 +24,8 @@ But before localizers can start their work for the very first target language, t
 -   Should you decide to localize, the localizability test should be performed in parallel with the globalized functionality test.
 -   Localization must start as soon as the code is stable enough, and only after the initial localizability test.
 
-![Testing process required for shipping an internationlized product](/media/hubs/globalization/IC10646.gif "Testing process required for shipping an internationlized product") 
+![Testing process required for shipping an internationlized product](https://docs.microsoft.com/globalization/testing/images/WR_Testing_Approach.jpg "Testing process required for shipping an internationlized product") 
 
-**Figure 1** - Testing process required for shipping an internationalized product.
+**Figure 1**: Testing process required for shipping an internationalized product.
 
 Another key implication of globalization-and globalized testing-is the ability to expand the target market after the product is shipped. Thus, even if supporting a locale or language was not on your mind when the application was developed, you can re-evaluate later and move to a new market without changing the code. Globalized testing performed in the development cycle will ensure there are no serious problems with this move. Of course, some basic language-specific or locale-specific verification is required, but the amount can be significantly reduced compared to what was needed before releasing a language-specific application. When properly conducted, globalized testing will decrease the number of bugs, help you use resources more efficiently, and reduce costs down the road. The [next section](globalization-of-the-test.md) will show you how to prepare and carry out an effective globalized test that guarantees the globalization of the application, and will also discuss some common globalization problems.
-
-

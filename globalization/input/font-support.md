@@ -1,6 +1,4 @@
-
-
-# Script and Font Support in Windows<a name="content"></a>
+# <a name="content" /></a>Script and Font Support in Windows
 
 Since before Windows 2000, text-display support for new scripts has been added in each major release of Windows. This article describes changes made in each major release.
 

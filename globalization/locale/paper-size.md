@@ -11,15 +11,13 @@ ms.date: 11/14/2016
 Printing is a major concern that should be addressed at the early stages of your project. Printing is a World Ready (WR) sensitive issue due to the following factors:
 
 -   **Paper Size**: Paper sizes in the United States and Canada (such as letter, legal, and so on) do not satisfy the needs of all users in the world market. For example, most countries in Europe and Asia use a slightly larger standard known as “A4” (297 x 210 mm) that is slightly longer and narrower than the U.S. letter size (279 x 216 mm). Thus, if your application needs to print, you should allow the default paper size to be configurable. Win32 NLS APIs can help you detect the default paper size associated with a given locale. This information can be obtained from the [GetLocaleInfoEx](/windows/desktop/api/winnls/nf-winnls-getlocaleinfoex) *API with the LCType* flag set to LOCALE\_IPAPERSIZE. The returned value is one of the following.
-<blockquote>
-   
-| **Country** | **Format**  |
-|-------------|-------------|
-| 1           | U.S. Letter |
-| 5           | U.S. Legal  |
-| 8           | A3          |
-| 9           | A4          |
-</blockquote>
+
+|Country|Format |
+|---|---|
+|1|U.S. Letter|
+|5|U.S. Legal|
+|8|A3|
+|9|A4|
 
 See also [ISO 216 Standard Paper Size](http://en.wikipedia.org/wiki/ISO_216) for reference.
 -   **Character Sets**: Issues with by printer drivers and printer technologies are more likely as support for more languages is added. Ensure that the work you did to support Complex Script and bidirectional text extends to printing.

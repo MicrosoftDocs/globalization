@@ -60,7 +60,7 @@ Note how some scripts have one more digit than Latin or Arabic. This represents 
 
 The user can define preferred number-formatting parameters by making selections from the Numbers tab of the Customize Regional Options property sheet, within the Regional And Language Options property sheet. (See Figure 1 below.)
 
-![Number Format](/media/hubs/globalization/IC848906.jpg "Number Format") 
+![Number Format](https://docs.microsoft.com/globalization/locale/images/German_Numbers.jpg "Number Format") 
 
 **Figure 1:** Selecting the preferred number formatting.
 

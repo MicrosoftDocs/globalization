@@ -6,11 +6,11 @@
 
 Once you know what you are looking for, it is easy to identify source code that isn't properly set up for localization. The most extreme cases are populated with hard-coded strings, constants, and characters. Files containing hard-coded localizable elements are the biggest nightmare to deal with. Translators cannot easily translate the source-code files, especially if the code is continually evolving. Many translators are not programmers and might delete important details, such as closing quotation marks or semicolons, or they might translate programming keywords as well as strings. Then developers must take time to clean up these files so that they will compile correctly. Hard-coded elements are difficult to find because they do not show up until the software is localized. Figures 1 and 2 show some common problems that occur during localization.
 
-![Hard-coded string example 1](/media/hubs/globalization/IC150997.jpg "Hard-coded string example 1")
+![Hard-coded string example 1](https://docs.microsoft.com/globalization/localizability/images/Hardcoded.jpg "Hard-coded string example 1")
 
 **Figure 1:** The string "Unknown Modem" was hard-coded and thus went untranslated.
 
-![Hard-coded period](/media/hubs/globalization/IC35490.jpg "Hard-coded period")
+![Hard-coded period](https://docs.microsoft.com/globalization/localizability/images/Hardcoded_Period.jpg "Hard-coded period")
 
 **Figure 2:** The string is a text resource without a period at the end of sentence, and the period was hard-coded.
 

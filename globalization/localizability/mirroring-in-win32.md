@@ -10,7 +10,7 @@ With changes that the Windows team has made to the system's resource loader, you
 
 You can mirror applications by adding two left-to-right marks (LRMs)-represented by Unicode code point U+200E-in front of the *FileDescription* value of the version stamping. Figure below shows an English Notepad.exe file that has been mirrored with this approach.
 
-![Mirrored by adding two LRMs](/media/hubs/globalization/IC96246.jpg "Mirrored by adding two LRMs") 
+![Mirrored by adding two LRMs](https://docs.microsoft.com/globalization/localizability/images/Two_LRMs.jpg "Mirrored by adding two LRMs") 
 
 **Figure 1:** A Notepad.exe file that has been mirrored by adding two LRMs
 
@@ -24,7 +24,7 @@ Although you can activate mirroring through the localization process (with non- 
 
 By activating the mirroring layout on a per-process basis, all windows that are created after activation will be mirrored; but this activation will not affect the existing windows. This approach is very similar to noncompile mirroring, with the exception that the mirroring style within an application can be turned on and off at run time rather than at a binary level, as in the case of noncompile mirroring.
 
-You set the default direction to RTL for a process by calling [SetProcessDefaultLayout](https://msdn.microsoft.com/library/ms633542.aspx) (LAYOUT\_RTL). You can also turn off default mirroring by calling *SetProcessDefaultLayout(0)*. In addition, you can query the current default layout direction as follows:
+You set the default direction to RTL for a process by calling [SetProcessDefaultLayout](/windows/desktop/api/winuser/nf-winuser-setprocessdefaultlayout) (LAYOUT\_RTL). You can also turn off default mirroring by calling *SetProcessDefaultLayout(0)*. In addition, you can query the current default layout direction as follows:
 
 ```C++
 BOOL WINAPI
@@ -66,7 +66,7 @@ It's important to distinguish between a window and a dialog box (which does not 
 
 The only way to switch between mirrored and nonmirrored dialog resources at run time is to have two sets of dialog resources: one mirrored and one nonmirrored. The Dialog Properties property sheet within the resource editor of Microsoft Visual Studio 6 allows you to set the mirroring style of the dialog resources.
 
-![Setting the mirror style](/media/hubs/globalization/IC43275.jpg "Setting the mirror style") 
+![Setting the mirror style](https://docs.microsoft.com/globalization/localizability/images/Set_Mirroring.jpg "Setting the mirror style") 
 
 **Figure 2:** Setting the mirroring style of the dialog resources within the resource editor of Visual Studio 6
 
@@ -143,7 +143,7 @@ MoveWindow(hControl, rcControl.left - rcDialog.left, _
  rcControl.top - rcDialog.top, nWidth, nHeight, FALSE);
 ```
 
-This works fine when the dialog window has an LTR layout, and when the mapping mode of the client is MM\_TEXT. The new *x* position in client coordinates corresponds to the difference in the left edges of the control and the dialog box in screen coordinates. In a mirrored dialog box, however, the roles of left and right are reversed. You can remove the assumption from the previous code that near is left and far is right by using [MapWindowPoints](https://msdn.microsoft.com/library/dd145046.aspx) to go into client coordinates, as shown in the following code sample:
+This works fine when the dialog window has an LTR layout, and when the mapping mode of the client is MM\_TEXT. The new *x* position in client coordinates corresponds to the difference in the left edges of the control and the dialog box in screen coordinates. In a mirrored dialog box, however, the roles of left and right are reversed. You can remove the assumption from the previous code that near is left and far is right by using [MapWindowPoints](/windows/desktop/api/winuser/nf-winuser-mapwindowpoints) to go into client coordinates, as shown in the following code sample:
 
 ```C++
 RECT rcDialog;
@@ -169,17 +169,17 @@ There is a common theme in these examples. Instead of thinking in terms of the c
 
 Direction-sensitive graphics (such as bitmaps and icons) present another challenge with regard to mirroring. Some direction-sensitive graphics can have a different meaning when mirrored. For example, within an LTR layout in a browser, an arrow that points to the left represents the concept of going back to the previous page; an arrow that points to the right would signify going forward to the next page. When these arrows are mirrored for an RTL layout, the meaning will be just the opposite.
 
-![Direction-sensitive arrow](/media/hubs/globalization/IC156676.jpg "Direction-sensitive arrow") 
+![Direction-sensitive arrow](https://docs.microsoft.com/globalization/localizability/images/Direction_Arrow.jpg "Direction-sensitive arrow") 
 
-**Figure 7:** Example of a direction-sensitive arrow that changes meaning when mirrored
+**Figure 3:** Example of a direction-sensitive arrow that changes meaning when mirrored
 
 ------------------------------------------------------------------------
 
 Other graphics should not be mirrored at all, such as legal trademarks or logos because they will make no sense when laid out from right to left.
 
-![direction-sensitive graphic](/media/hubs/globalization/IC60268.jpg "direction-sensitive graphic") 
+![direction-sensitive graphic](https://docs.microsoft.com/globalization/localizability/images/Direction_Graphic.jpg "direction-sensitive graphic") 
 
-**Figure 8:** Example of a direction-sensitive graphic that should not be mirrored
+**Figure 4:** Example of a direction-sensitive graphic that should not be mirrored
 
 ------------------------------------------------------------------------
 
@@ -328,7 +328,3 @@ for(i =0; i< n; i++)
  (n - i - 1) * Width, 0, SRCCOPY);
  } 
 ```
-
-Specifying the width of each individual image will achieve the same effect on Windows 2000, Windows 98, or Windows Me as if you were to specify ILC\_PERITEMMIRROR on Windows XP.
-
-

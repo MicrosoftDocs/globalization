@@ -27,7 +27,13 @@ For more advanced number formatting in the Win32 programming model, the GetLocal
 
 Possible return values are shown in Table 1 below.
 
-![Number Formatting](/media/hubs/globalization/IC109839.jpg "Number Formatting") 
+|Value|Format (meaning)|
+|---|---|
+|0|Left parenthesis, number, right parenthesis. Example: (1.1)|
+|1|Negative sign, number. Example: -1.1|
+|2|Negative sign, space, number. Example: - 1.1|
+|3|Number, negative sign. Example: 1.1-|
+|4|Number, space, negative sign. Example: 1.1 -|
 
 **Table 1:** Return values of various LCType flags.
 
@@ -40,15 +46,19 @@ GetLocaleInfo(LOCALE\_USER\_DEFAULT, // LCID (current user locale)
           sizeof (g\_szTemp));       // size of buffer
 ```
 
-This code would produce the following result on English (US) and Farsi locales, respectively:
+This code would produce the following result on English (US) and Persian locales, respectively:
 
-![Native Digit](/media/hubs/globalization/IC124322.jpg "Native Digit") 
+![Native Digit](https://docs.microsoft.com/globalization/locale/images/Native_Digits.jpg "Native Digit") 
 
-**Figure 1:** Native digits for English (US) and Farsi.
+**Figure 1:** Native digits for English (US) and Persian.
 
 **Digit Substitution.** Digit substitution defines which set of digits (with its associated shapes) should be used for presenting numbers. This information can be retrieved with the LCType flag set to LOCALE\_IDIGITSUBSTITUTION. The table below shows the possible return values:
 
-![Digit Substitution](/media/hubs/globalization/IC35857.jpg "Digit Substitution") 
+|Value|Meaning|
+|---|---|
+|0|Content - The shape depends on the previous text in the same output.|
+|1|None/Arabic - Gives full Unicode compatability.|
+|2|Native - National shapes determined by LOCALE_SNATIVEDIGITS.|
 
 **Table 2:** Return values of LOCALE\_IDIGITSUBSTITUTION
 
