@@ -12,7 +12,7 @@ The remaining category of advanced text properties relates to text overlay. Thes
 
 The terms phonetic guide, *yomi*, *furigana*, or “ruby” are used somewhat interchangeably to refer to an annotative gloss placed above or to the right of characters to aid the user in pronunciation. (Although *yomi* and *furigana* are only used in a Japanese context.) This is particularly important for logographic languages where the reader may not be familiar with the character or the character has more than one pronunciation.
 
-![The word "Tokyo" with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Horizontal.png "The word "Tokyo" with phonetic spelling") ![The word "Tokyo" with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Vertical.png "The word "Tokyo" with phonetic spelling") 
+![The word 'Tokyo' with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Horizontal.png "The word 'Tokyo' with phonetic spelling") ![The word 'Tokyo' with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Vertical.png "The word 'Tokyo' with phonetic spelling") 
 **Figure 1:** The word "Tokyo" with phonetic spelling
 
 The Worldwide Web Consortium [defines three levels of ruby support](https://www.w3.org/TR/jlreq/): mono ruby, group ruby, and jukugo ruby.
@@ -37,6 +37,6 @@ Emphasis mark are not supported in HTML. Attempting to save documents containing
 
 Enclosed characters are characters surrounded by equilateral shapes such as triangle, square, diamond or circle - commonly used in East Asia to indicate symbols. Enclosed characters are not supported in HTML; attempting to save documents with enclosed characters may result in removing the enclosing effects and leaving the base character.
 
-![Example of enclosed characters](https://i-msdn.sec.s-msft.com/dynimg/IC868531.jpg "Example of enclosed characters") 
+![Example of enclosed characters](https://docs.microsoft.com/globalization/input/images/EnclosedCharacters.jpg "Example of enclosed characters") 
 
 **Figure 4:** Example of enclosed characters
