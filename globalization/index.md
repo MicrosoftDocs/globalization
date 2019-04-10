@@ -29,7 +29,7 @@ ms.date: 08/16/2016
         </a>
     </li>
     <li>
-        <a href="https://dev.windows.com/en-us/internationalization">
+        <a href="/windows/uwp/design/globalizing/globalizing-portal">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -96,7 +96,7 @@ Software internationalization has two facets:
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/library/dd318661(vs.85).aspx">
+        <a href="/windows/desktop/Intl/international-support">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -115,7 +115,7 @@ Software internationalization has two facets:
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/library/dd317708(vs.85).aspx">
+        <a href="/windows/desktop/Intl/about-national-language-support">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
