@@ -26,7 +26,7 @@ _Our style_: <span lang=tr>Alıcıya iletmek istediklerinizi buraya yazın.</spa
 
 English words may be a part of life in multinational companies or among developers. However, the target audience of Microsoft products also includes novice users or less experienced consumers from every aspect of life—such as students and teachers, small business owners, and government workers. This audience may not be familiar with those English words and their pronunciations. Always check recommended references for established Turkish translations of common terms.
 
-For example, the following terms have well-known Turkish translations and shouldn’t be left in English: _server_, _client_, _data_, _login_, _format_, _online_, _cloud_, _app_, _chat_, _spam_, and _junk_. 
+For example, the following terms have well-known Turkish translations and shouldn't be left in English: _server_, _client_, _data_, _login_, _format_, _online_, _cloud_, _app_, _chat_, _spam_, and _junk_. 
 
 Product and feature names may also be localized, but some of them are left in English. Be sure to check the references.
 
@@ -34,7 +34,7 @@ Product and feature names may also be localized, but some of them are left in En
 
 Be brief. Short and clear sentences are easier to understand. Avoid using heavily inflected long words, complex structures, and strings of nouns. Use modern and well-known words.
 
-If some part of the source text is unclear or more than one interpretation is possible, check the Instructions or Comments provided with the translation file. They may have the information you need to clear up the confusion. If this isn’t the case, you can contact the product team for clarification, when possible.
+If some part of the source text is unclear or more than one interpretation is possible, check the Instructions or Comments provided with the translation file. They may have the information you need to clear up the confusion. If this isn't the case, you can contact the product team for clarification, when possible.
 
 Support articles and product pages from Microsoft also present detailed information. Search online for information that will help you to better understand or clarify the context and avoid vague translations. 
 
@@ -52,7 +52,7 @@ _Our style_: <span lang=tr>Bu düğme, görev bölmesinin metin alanındaki içe
 
 The Microsoft voice allows for the use of culture-centric colloquialisms, idioms, and metaphors (collectively referred to as "colloquialisms").
 
--	Don’t replace the source colloquialism with a Turkish colloquialism unless it’s a perfect and natural fit for that context.
+-	Don't replace the source colloquialism with a Turkish colloquialism unless it's a perfect and natural fit for that context.
 -	Translate the intended meaning of the colloquialism in the source text, but only if the colloquialism's meaning is an integral part of the text that can't be omitted.
 -	If the colloquialism can be omitted without affecting the meaning of the text, omit it.
 
@@ -120,7 +120,7 @@ Users are addressed in the second-person plural, _siz_. Verbs also should be in 
 
 Turkish doesn't use please or sorry as much as English. Use please when the user is asked to do something inconvenient, is asked to wait, or is inconvenienced by the software. Use sorry only in error messages that result in serious problems for the customer, or when a product or service fails.
 
-More than one alternative exists in Turkish for the term sorry: _özür dileriz_ for serious problems, and _ne yazık ki_ or _maalesef_ in less severe cases. Sometimes it’s best to avoid it because the tone is excessive in Turkish. _Üzgünüz_ isn't a good option; it conveys that the material has been translated.
+More than one alternative exists in Turkish for the term sorry: _özür dileriz_ for serious problems, and _ne yazık ki_ or _maalesef_ in less severe cases. Sometimes it's best to avoid it because the tone is excessive in Turkish. _Üzgünüz_ isn't a good option; it conveys that the material has been translated.
 
 ## 8.	Different language, different punctuation rules
 
@@ -147,4 +147,3 @@ _Our style_: <span lang="tr">Web sitesi adresi</span>
 There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Turkish Style Guide](https://www.microsoft.com/en-us/Language/StyleGuides) and the following references:
 1.	<span lang="tr">Güncel Türkçe Sözlük ve Yazım Kılavuzu – TDK Web Sitesi (www.tdk.gov.tr)
 2.	Türkçe Sözlük ve Yazım Kılavuzu – Dil Derneği Sitesi (http://www.dildernegi.org.tr)</span>
-
