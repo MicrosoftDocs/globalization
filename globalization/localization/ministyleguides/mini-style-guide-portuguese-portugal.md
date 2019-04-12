@@ -1,6 +1,6 @@
 ---
 title: Portuguese (Portugal) Localization Style Guide
-description: 
+description: Are you helping with translation into Portuguese (Portugal), but don't have time to study all aspects of the Portuguese (Portugal) Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
 ms.date: 03/19/2019
 ---
 
