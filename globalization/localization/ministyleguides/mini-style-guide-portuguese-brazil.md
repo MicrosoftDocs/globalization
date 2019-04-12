@@ -1,6 +1,6 @@
 ---
 title: Portuguese (Brazil) Localization Style Guide
-description: 
+description: Are you helping with translation into Portuguese (Brazil) but don't have time to study all aspects of the Microsoft Portuguese (Brazil) Style Guide? Here are ten of the most important aspects to keep in mind.
 ms.date: 03/19/2019
 ---
 
