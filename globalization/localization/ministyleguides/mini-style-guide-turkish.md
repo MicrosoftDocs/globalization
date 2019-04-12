@@ -1,6 +1,6 @@
 ---
 title: Turkish Localization Style Guide
-description: 
+description: You are helping with translation into Turkish, but don't have time to study all aspects of the Turkish Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
 ms.date: 03/19/2019
 ---
 
