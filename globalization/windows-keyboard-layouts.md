@@ -7,7 +7,7 @@ ms.date: 01/05/2017
 
 # Windows Keyboard Layouts
 
-![Windows keyboard](https://docs.microsoft.com/globalization/Keyboard.jpg "Windows keyboard")
+![Windows keyboard](https://docs.microsoft.com/globalization/images/Keyboard.png "Windows keyboard")
 
 Choose a keyboard below to view its layouts. To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
