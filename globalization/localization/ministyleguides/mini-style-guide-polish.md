@@ -5,7 +5,7 @@ ms.date: 04/18/2019
 ---
 # Top 10 Tips for Microsoft Translation into Polish
 
-Are you helping with translation into Polish, but don't have time to study all aspects of the [Polish Style Guide](http://download.microsoft.com/download/3/e/6/3e688569-1e3f-48a4-a33c-07e6daaa57b4/pol-pol-StyleGuide.pdf)? Here are 10 of the most important aspects to keep in mind.
+Are you helping with translation into Polish, but don't have time to study all aspects of the [full Polish Style Guide](http://download.microsoft.com/download/3/e/6/3e688569-1e3f-48a4-a33c-07e6daaa57b4/pol-pol-StyleGuide.pdf)? Here are 10 of the most important aspects to keep in mind.
 
 ## 1.	Flexibility
 
@@ -22,7 +22,7 @@ _Not our style_: <span lang="pl">Priorytetyzacja aktualizacji społecznościowyc
 
 ## 2.	Word-for-word translation
 
-For a more fluent translation, avoid word-for-word translation. If words are translated directly without an overall understanding of the paragraph or page, the content will sound stiff and unnatural and may even appear ridiculous. Our customers will stop reading the text or even stop using our products. Split the text into different sentences, if necessary, to simplify.
+For a more fluent translation, avoid word-for-word translation. If words are translated directly without an overall understanding of the paragraph or page, the content will sound stiff and unnatural. Split the text into different sentences, if necessary, to simplify.
 
 **Example**
 
