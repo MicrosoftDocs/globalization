@@ -15,9 +15,10 @@ That's what these condensed Quick Start versions on this page are meant for. The
 *	[French](/globalization/localization/ministyleguides/mini-style-guide-french)
 *	[German](/globalization/localization/ministyleguides/mini-style-guide-german)
 *	[Hungarian](/globalization/localization/ministyleguides/mini-style-guide-hungarian)
+*	[Japanese](/globalization/localization/ministyleguides/mini-style-guide-japanese)
 *	[Polish](/globalization/localization/ministyleguides/mini-style-guide-polish)
 *	[Portuguese (Brazil)](/globalization/localization/ministyleguides/mini-style-guide-portuguese-brazil)
 *	[Portuguese (Portugal)](/globalization/localization/ministyleguides/mini-style-guide-portuguese-portugal)
 *	[Turkish](/globalization/localization/ministyleguides/mini-style-guide-turkish)
 
-Not yet available for your language? We'll be adding more languages over the coming months. In the meantime, check out the [full versions](https://www.microsoft.com/en-us/Language/StyleGuides).
+Not yet available for your language? We'll be adding more languages over the coming months. In the meantime, check out the [full versions](https://www.microsoft.com/Language/StyleGuides).
