@@ -15,30 +15,30 @@ Feel free to choose your own words to convey the intention of the original text.
 
 Use familiar, everyday language rather than the formal and technical language that is typically used in IT documents. Rather than using difficult Chinese characters, use Korean expressions that are easy to understand.
 
-Avoid using verbs like "<span lang=kr>수행</span>," "<span lang=kr>실행</span>," and "<span lang=kr>제공</span>" as expressions of descriptive nouns (<span lang=kr>작동, 동작, 설치, 제거, 검색, 감사</span>, and so on). And use "<span lang=kr>~세요</span>" instead of "<span lang=kr>~십시오</span>" as an ending form to properly address the tone and register. But you should use "<span lang=kr>~십시오</span>" when localizing license agreements or other legal content to express a formal tone.
+Avoid using verbs like "<span lang=ko>수행</span>," "<span lang=ko>실행</span>," and "<span lang=ko>제공</span>" as expressions of descriptive nouns (<span lang=ko>작동, 동작, 설치, 제거, 검색, 감사</span>, and so on). And use "<span lang=ko>~세요</span>" instead of "<span lang=ko>~십시오</span>" as an ending form to properly address the tone and register. But you should use "<span lang=ko>~십시오</span>" when localizing license agreements or other legal content to express a formal tone.
 
 **Example**
 
-_Our style_: <span lang=kr>다음 단원을 참조하세요.</span>
+_Our style_: <span lang=ko>다음 단원을 참조하세요.</span>
 
-_Not our style_: <span lang=kr>다음 단원을 참조하십시오.</span>
+_Not our style_: <span lang=ko>다음 단원을 참조하십시오.</span>
 
 **Example**
 
-_Our style_: <span lang=kr>파일을 사용하지 마세요.</span>
+_Our style_: <span lang=ko>파일을 사용하지 마세요.</span>
 
-_Not our style_: <span lang=kr>파일을 사용하지 마십시오.</span>
+_Not our style_: <span lang=ko>파일을 사용하지 마십시오.</span>
 
 **Example**
 
 [Legal content]
 
-_Our style_: <span lang=kr>Microsoft는 이러한 추가 조건에 관한 책임을 지지 않으므로 제3자가 귀하에게 제공한 모든 추가 조건을 검토하십시오.</span>
+_Our style_: <span lang=ko>Microsoft는 이러한 추가 조건에 관한 책임을 지지 않으므로 제3자가 귀하에게 제공한 모든 추가 조건을 검토하십시오.</span>
 
-_Not our style_: <span lang=kr>Microsoft는 이러한 추가 조건에 관한 책임을 지지 않으므로 제3자가 귀하에게 제공한 모든 추가 조건을 검토하세요.</span>
+_Not our style_: <span lang=ko>Microsoft는 이러한 추가 조건에 관한 책임을 지지 않으므로 제3자가 귀하에게 제공한 모든 추가 조건을 검토하세요.</span>
 
 ## 2.	Crisp and clear
-Write short and easy-to-read sentences. Avoid the passive voice; it is difficult to read and understand quickly. For example, use "<span lang=kr>됩니다" rather than "<span lang=kr>되어집니다</span>" and use "<span lang=kr>부르는</span>" rather than "<span lang=kr>불리는</span>."
+Write short and easy-to-read sentences. Avoid the passive voice; it is difficult to read and understand quickly. For example, use "<span lang=ko>됩니다" rather than "<span lang=ko>되어집니다</span>" and use "<span lang=ko>부르는</span>" rather than "<span lang=ko>불리는</span>."
 
 Use the kind of short, simple words that are spoken in everyday conversations. Short words also save space on-screen and are easier to read quickly. Try to use everyday words that customers in the Korean market are already accustomed to.
 
@@ -46,19 +46,19 @@ Use the kind of short, simple words that are spoken in everyday conversations. S
 
 _English_: Email address
 
-_Our style_: <span lang=kr>메일 주소</span>
+_Our style_: <span lang=ko>메일 주소</span>
 
 **Example**
 
 _English_: Online store
 
-_Our style_: <span lang=kr>온라인 스토어</span>
+_Our style_: <span lang=ko>온라인 스토어</span>
 
 **Example**
 
 _English_: Home page
 
-_Our style_: <span lang=kr>홈페이지</span>
+_Our style_: <span lang=ko>홈페이지</span>
 
 ## 3.	A natural tone and fluent translation
 
@@ -68,17 +68,17 @@ To achieve a fluent translation, avoid word-for-word translation. Strict word-fo
 
 _English_: Great for work and play
 
-_Our style_: <span lang=kr>업무와 여가를 함께</span>
+_Our style_: <span lang=ko>업무와 여가를 함께</span>
 
-_Not our style_: <span lang=kr>일과 놀이에 알맞음</span>
+_Not our style_: <span lang=ko>일과 놀이에 알맞음</span>
 
 **Example**
 
 _English_: These laptops are lightweight and loaded with memory so you can move fast and get work done when you have to—but also have beautiful displays and big sound, so you can sit back and enjoy HD movies when you want to.
 
-_Our style_: <span lang=kr>가벼우면서도 넉넉한 메모리를 제공하기 때문에 가지고 다니면서 필요할 때 작업할 수 있으며, 편한 자세로 앉아 HD 영화를 감상할 수도 있습니다.</span>
+_Our style_: <span lang=ko>가벼우면서도 넉넉한 메모리를 제공하기 때문에 가지고 다니면서 필요할 때 작업할 수 있으며, 편한 자세로 앉아 HD 영화를 감상할 수도 있습니다.</span>
 
-_Not our style_: <span lang=kr>이러한 랩톱은 가볍고 메모리가 탑재되어 있으므로 빠르게 이동할 수 있고 필요할 때 작업을 완료할 수 있을 뿐만 아니라 멋진 디스플레이와 큰 사운드를 제공하여 원하는 때에 앉아서 HD 영화를 즐길 수 있습니다.</span>
+_Not our style_: <span lang=ko>이러한 랩톱은 가볍고 메모리가 탑재되어 있으므로 빠르게 이동할 수 있고 필요할 때 작업을 완료할 수 있을 뿐만 아니라 멋진 디스플레이와 큰 사운드를 제공하여 원하는 때에 앉아서 HD 영화를 즐길 수 있습니다.</span>
 
 ## 4.	UI and UE terms and error messages
 
@@ -92,15 +92,15 @@ When UI terms are referenced in user education (UE) content (that is, documentat
 
 ### Error messages
 
-In general, error messages are translated into "<span lang=kr>~니다</span>" style, in which case, a period should be placed at the end of the Korean text even if the English sentence ends with different punctuation, such as a colon. However, if the English text is not a full sentence but rather a phrase, or it ends with a colon + placeholder, you can translate the text accordingly.
+In general, error messages are translated into "<span lang=ko>~니다</span>" style, in which case, a period should be placed at the end of the Korean text even if the English sentence ends with different punctuation, such as a colon. However, if the English text is not a full sentence but rather a phrase, or it ends with a colon + placeholder, you can translate the text accordingly.
 
 ## 5.	Country/regional standards
 
 ### Currency
 
 Use one of the following options when monetary amounts are given in Korean currency:
--	<span lang=kr>5,360.02원</span>
--	<span lang=kr>₩5,360.02</span>
+-	<span lang=ko>5,360.02원</span>
+-	<span lang=ko>₩5,360.02</span>
 
 ### Date and time
 
@@ -144,25 +144,25 @@ Trademarked names and the name Microsoft Corporation shouldn't be localized unle
 
 _English_: accessibility
 
-_Our style_: <span lang=kr>접근성</span>
+_Our style_: <span lang=ko>접근성</span>
 
-_Not our style_: <span lang=kr>내게 필요한 옵션</span>
+_Not our style_: <span lang=ko>내게 필요한 옵션</span>
 
 **Example**
 
 _English_: trusted connection
 
-_Our style_: <span lang=kr>신뢰할 수 있는 연결</span>
+_Our style_: <span lang=ko>신뢰할 수 있는 연결</span>
 
-_Not our style_: <span lang=kr>트러스트된 연결</span>
+_Not our style_: <span lang=ko>트러스트된 연결</span>
 
 **Example**
 
 _English_: Windows Movie Maker
 
-_Our style_: <span lang=kr>Windows 무비메이커</span>
+_Our style_: <span lang=ko>Windows 무비메이커</span>
 
-_Not our style_: <span lang=kr>윈도우 무비메이커</span>
+_Not our style_: <span lang=ko>윈도우 무비메이커</span>
 
 ## 7.	Translation of version strings
 
@@ -172,7 +172,7 @@ Product, feature, and component names are often located in the so-called "versio
 
 _English_: © 2019 Microsoft Corporation. All rights reserved.
 
-_Our style_: <span lang=kr>© 2019 Microsoft Corporation. 모든 권리 보유.</span>
+_Our style_: <span lang=ko>© 2019 Microsoft Corporation. 모든 권리 보유.</span>
 
 ## 8.	Abbreviations
 
@@ -186,9 +186,9 @@ Don't abbreviate the following words:
 
 _English_: Need assistance with your Microsoft product? 
 
-_Our style_: <span lang=kr>Microsoft 제품에 대해 도움이 필요하세요?</span>
+_Our style_: <span lang=ko>Microsoft 제품에 대해 도움이 필요하세요?</span>
 
-_Not our style_: <span lang=kr>MS 제품에 대해 도움이 필요하세요?</span>
+_Not our style_: <span lang=ko>MS 제품에 대해 도움이 필요하세요?</span>
 
 ## 9.	Acronyms
 
@@ -204,19 +204,19 @@ The English acronym should always come first, followed by the Korean translation
 
 _English_: USB (Universal Serial Bus)
 
-_Our style_: <span lang=kr>USB(범용 직렬 버스)</span>
+_Our style_: <span lang=ko>USB(범용 직렬 버스)</span>
 
 **Example**
 
 _English_: (IIS) Internet Information Services
 
-_Our style_: <span lang=kr>IIS(인터넷 정보 서비스)</span>
+_Our style_: <span lang=ko>IIS(인터넷 정보 서비스)</span>
 
 **Example**
 
 _English_: distinguished name (DN)
 
-_Our style_: <span lang=kr>DN(고유 이름)</span>
+_Our style_: <span lang=ko>DN(고유 이름)</span>
 
 ### Acronyms that are not localized
 
