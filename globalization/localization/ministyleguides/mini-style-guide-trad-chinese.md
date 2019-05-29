@@ -136,23 +136,23 @@ The following table lists the types of items that need to be enclosed [ ] and th
 
 |Type|Need [ ]?|English text|Translated text|
 |---|---|---|---|
-|Check box|Y|Select the Match Case check box.|選取 [大小寫須相符] 核取方塊。|
-|Combo box|Y|In the Font box, type or select the font that you want to use.|在 [字型大小] 下拉式方塊中，輸入或選取您想使用的大小。|
-|Command button|Y|Click OK.|按一下 [確定]。|
-|Menu|Y|The File menu|[檔案] 功能表|
-|Window||Untitled - Notepad window|[未命名 - 記事本] 視窗|
-|Folder|Y|My Favorites|[我的最愛]|
-|Field|Y|the Form field|[表單] 欄位|
-|Button|Y|the Unfold button|[展開] 按鈕|
-|Tab|Y|On the Tools menu, click Options, and then click the View tab.|在 [工具] 功能表中，依序按一下 [選項] 及 [檢視] 索引標籤。|
-|List box|Y|the Files of type list box|[檔案類型] 清單方塊|
-|View|Y|Full Screen view|[全螢幕] 檢視|
-|Dialog box|Y|The Options dialog box|[選項] 對話方塊|
-|View (not capitalized)|N|Switch to normal view.|切換到標準模式|
-|Window (not capitalized)|N|... in the document window ...|在文件視窗中|
-|File|N|Open the Letter to Joe file|打開檔案 Letter to Joe - 或 - 打開「給喬的信」這個檔案|
+|Check box|Y|Select the Match Case check box.|<span lang="zh-Hant">選取 [大小寫須相符] 核取方塊。</span>|
+|Combo box|Y|In the Font box, type or select the font that you want to use.|<span lang="zh-Hant">在 [字型大小] 下拉式方塊中，輸入或選取您想使用的大小。</span>|
+|Command button|Y|Click OK.|<span lang="zh-Hant">按一下 [確定]。</span>|
+|Menu|Y|The File menu|<span lang="zh-Hant">[檔案] 功能表</span>|
+|Window||Untitled - Notepad window|<span lang="zh-Hant">[未命名 - 記事本] 視窗</span>|
+|Folder|Y|My Favorites|<span lang="zh-Hant">[我的最愛]</span>|
+|Field|Y|the Form field|<span lang="zh-Hant">[表單] 欄位</span>|
+|Button|Y|the Unfold button|<span lang="zh-Hant">[展開] 按鈕</span>|
+|Tab|Y|On the Tools menu, click Options, and then click the View tab.|<span lang="zh-Hant">在 [工具] 功能表中，依序按一下 [選項] 及 [檢視] 索引標籤。</span>|
+|List box|Y|the Files of type list box|<span lang="zh-Hant">[檔案類型] 清單方塊</span>|
+|View|Y|Full Screen view|<span lang="zh-Hant">[全螢幕] 檢視</span>|
+|Dialog box|Y|The Options dialog box|<span lang="zh-Hant">[選項] 對話方塊</span>|
+|View (not capitalized)|N|Switch to normal view.|<span lang="zh-Hant">切換到標準模式</span>|
+|Window (not capitalized)|N|... in the document window ...|<span lang="zh-Hant">在文件視窗中</span>|
+|File|N|Open the Letter to Joe file|<span lang="zh-Hant">打開檔案 Letter to Joe - 或 - 打開「給喬的信」這個檔案</span>|
 |Location|N|C:\folder1\file.ext|C:\folder1\file.ext|
-|URL|N|Please link to http://www.microsoft.com/taiwan/ for more information.|如需詳細資訊，請連結至 http://www.microsoft.com/taiwan/|
+|URL|N|Please link to http://www.microsoft.com/taiwan/ for more information.|<span lang="zh-Hant">如需詳細資訊，請連結至 http://www.microsoft.com/taiwan/</span>|
 
 ## 6.	Spacing
 Spacing is an important consideration when localizing strings into Traditional Chinese.
@@ -200,7 +200,7 @@ Sensitive issues or issues that might offend the users in the target country or 
   - Art and graphics
   - Cultural content, such as encyclopedia content and other text where historical or political references are present
   
-Please translate "country" as "國家/地區" (country/region) to avoid political issues.
+Please translate "country" as "<span lang="zh-Hant">國家/地區</span>" (country/region) to avoid political issues.
 
 A thorough understanding of the culture of the target market is required for checking the appropriateness of cultural content, clip art, visual representations of religious symbols, and body and hand gestures.
 
