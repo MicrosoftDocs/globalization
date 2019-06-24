@@ -12,6 +12,7 @@ Our full localization style guides are available for download on the [Microsoft 
 That's what these condensed Quick Start versions on this page are meant for. They contain the top 10 most important rules from the full style guides. Use them as a quick reference for short projects where you just need to know the most essential rules.
 
 *	[Czech](/globalization/localization/ministyleguides/mini-style-guide-czech)
+*	[Chinese, Simplified](/globalization/localization/ministyleguides/mini-style-guide-sim-chinese)
 *	[Chinese, Traditional](/globalization/localization/ministyleguides/mini-style-guide-trad-chinese)
 *	[Dutch](/globalization/localization/ministyleguides/mini-style-guide-dutch)
 *	[French](/globalization/localization/ministyleguides/mini-style-guide-french)
