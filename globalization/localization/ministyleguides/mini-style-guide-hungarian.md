@@ -1,7 +1,7 @@
 ---
 title: Hungarian Localization Style Guide
 description: Are you helping with translation into Hungarian, but don't have time to study all aspects of the Hungarian Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
-ms.date: 04/12/2019
+ms.date: 07/16/2019
 ---
 
 # Top 10 Tips for Microsoft Translation into Hungarian
@@ -125,7 +125,7 @@ Use terminology from the [Microsoft Language Portal](https://www.microsoft.com/e
 
 ## 9.	Assure consistency
 
-Ensure your translation is consistent in terms of terminology, formatting, and content. Use the spell checker and other tools to assure quality.
+Ensure that your translation is consistent in terms of terminology, formatting, and content. Use the spell checker and other tools to assure quality.
 
 ## 10.	Use the right reference material
 
