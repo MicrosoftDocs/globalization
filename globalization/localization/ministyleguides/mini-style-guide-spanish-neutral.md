@@ -6,7 +6,7 @@ ms.date: 07/16/2019
 
 # Top 10 Tips for Microsoft Translation into Spanish (Neutral)
 
-Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the Spanish (Spain) Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the full [Spanish (Neutral) Style Guide](http://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Translate meaning not words
 
@@ -24,9 +24,9 @@ _Not our style_: <span lang="es-ES">Redescubre tu teclado</span>
 
 _English_: Simple sharing with anyone.
 
-_Our style_: <span lang="es-ES">Comparte fácilmente con quien quieras.</span>
+_Our style_: <span lang="es-ES">Comparte fácilmente con quien quieras</span>
 
-_Not our style_: <span lang="es-ES">Uso compartido simple con todos.</span>
+_Not our style_: <span lang="es-ES">Uso compartido simple con todos</span>
 
 ## 2. Use the right voice, tone, and level of formality
 
