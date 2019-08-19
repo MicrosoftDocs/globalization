@@ -200,7 +200,7 @@ In headings, captions, and the titles of tables and figures, capitalize only the
 
 _English_: Quick Reference Guide
 
-_Our style_: <span lang="es-ES">Guía de referencia rápida</span>
+_Our style_: <span lang="es">Guía de referencia rápida</span>
 
 ## 6. Pay attention to pronouns
 
@@ -210,9 +210,9 @@ For a more fluent text, avoid redundant pronouns in a sentence. In Spanish, omit
 
 _English_: Depending on your service agreement, you might pay more for call or text messages when your phone is roaming.
 
-_Our style_: <span lang="es-ES">Según el contrato de servicio, tal vez tengas que pagar más por llamadas o mensajes de texto cuando el teléfono esté en roaming.</span>
+_Our style_: <span lang="es">Según el contrato de servicio, tal vez tengas que pagar más por llamadas o mensajes de texto cuando el teléfono esté en roaming.</span>
 
-Remember that the form for the second-person plural in Spanish for Spain is "<span lang="es-ES">vosotros</span>" and not "<span lang="es-ES">ustedes</span>." If possible, use an alternative construction to avoid one or the other.
+Remember that the neutral form for the second-person plural in Neutral Spanish is "<span lang="es">ustedes</span>" and not "<span lang="es">vosotros.</span>" If possible, use an alternative construction to avoid one or the other.
 
 **Example**
 
@@ -220,15 +220,15 @@ _English_: Many of you are, for sure, familiar with Microsoft webcast
 
 _Our style_: <span lang="es-ES">Seguro que muchos ya conocen los webcast de Microsoft</span>
 
-_Not our style_: <span lang="es-ES">Seguro que muchos de ustedes conocen los webcast de Microsoft</span>
+_Not our style_: <span lang="es-ES">Seguro que muchos de vosotros conocéis los webcast de Microsoft</span>
 
-Check the correct use of _<span lang="es-ES">leísmo</span>_. Please make sure that the use of "<span lang="es-ES">le</span>" is grammatically correct when used instead of "<span lang="es-ES">lo</span>."
+Avoid "<span lang="es">leísmo</span>". Although this is sometimes acceptable in Spanish, in Neutral Spanish, we prefer the use of lo"
 
 **Example**
 
 _English_: This wizard will help you …
 
-_Our style_: <span lang="es-ES">Este asistente le ayudará a …</span>
+_Our style_: <span lang="es-ES">Este asistente lo ayudará a…</span>
 
 ## 7. Use simple tenses
 
