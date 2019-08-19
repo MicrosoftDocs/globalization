@@ -48,9 +48,11 @@ _English_: Be a presentation machine.
 
 _Our style_: <span lang="es">Conviértete en un experto en presentaciones.</span>
 
+<br>
+
 Shorter is always better. Long strings of text can cause issues for localization. Be concise but avoid abbreviations as much as possible because they can make the text less intuitive.
 
-### "<span lang="es-ES">Tú</span>" and "<span lang="es-ES">usted</span>" (informal _vs._ formal)
+### "<span lang="es">Tú</span>" and "<span lang="es">usted</span>" (informal _vs._ formal)
 The way of addressing the user is not uniform across Microsoft products for Spanish. Because different products have different uses and audiences, some have chosen to address the user with the familiar "<span lang="es-ES">tú</span>" and others with the formal (Office, for example). Always consult the Localization project manager if you are not sure about the treatment used in the product.
 
 ## 3. Pay attention to application, product, and feature names
