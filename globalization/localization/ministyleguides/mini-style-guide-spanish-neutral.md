@@ -246,7 +246,7 @@ _Our style_: <span lang="es-ES">Después de que instales la herramienta, aparece
 
 **Note on the subjunctive mode**: Do not avoid using the subjunctive. The subjunctive mode makes the text richer and more natural sounding. 
 
-The only point to remember is that, when either "<span lang="es-ES">cantara</span>" or "<span lang="es-ES">cantase</span>" could be used, the second option is more common in Spain, so use "<span lang="es-ES">cantase</span>" instead.
+The only point to remember is that, when either "<span lang="es-ES">cantara</span>" or "<span lang="es-ES">cantase</span>" could be used, the first option is more common in Latin America and the second is more common in Spain
 
 ## 8. Use Microsoft style for punctuation
 
