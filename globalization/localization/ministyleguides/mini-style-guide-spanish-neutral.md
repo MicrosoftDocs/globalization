@@ -1,18 +1,20 @@
 ---
 title: Spanish (Neutral) Localization Style Guide
 description: Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the Spanish (Neutral) Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+ms.author: pallep
 ms.date: 07/16/2019
+ms.prod: non-product-secific
 ---
 
 # Top 10 Tips for Microsoft Translation into Spanish (Neutral)
 
-Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the Spanish (Spain) Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the full [Spanish (Neutral) Style Guide](http://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Translate meaning not words
 
 The language in Microsoft products should have the "feel" of a product originally written in Spanish, with idiomatic syntax, while keeping a high level of terminology consistency for the best possible user experience. To achieve a fluent translation, word-for-word or literal translations should be avoided. If the concepts are translated without an overall understanding of the text, the content will not sound natural. To make the text easily understood, try to understand the whole intention of the sentence, paragraph, or page, and then rewrite as if you were writing the content from scratch. 
 
-**Example**
+**Examples**
 
 _English_: Rediscover your keyboard
 
@@ -20,13 +22,13 @@ _Our style_: <span lang="es-ES">Una nueva forma de usar tu teclado</span>
 
 _Not our style_: <span lang="es-ES">Redescubre tu teclado</span>
 
-**Examples**
+<br>
 
 _English_: Simple sharing with anyone.
 
-_Our style_: <span lang="es-ES">Comparte fácilmente con quien quieras.</span>
+_Our style_: <span lang="es">Comparte fácilmente con quien quieras</span>
 
-_Not our style_: <span lang="es-ES">Uso compartido simple con todos.</span>
+_Not our style_: <span lang="es">Uso compartido simple con todos</span>
 
 ## 2. Use the right voice, tone, and level of formality
 
@@ -36,22 +38,24 @@ The [Microsoft voice](/style-guide/brand-voice-above-all-simple-human) targets a
   -	Be pleasant and ensure explanations are as clear as is possible.
   -	Avoid slang and be careful with colloquialisms. It is acceptable to reassure and connect with customers in a conversational tone, but be professional in doing so.
 
-**Example**
+**Examples**
 
 _English_: Would you like to continue?
 
-_Our style_: <span lang="es-ES">¿Quieres continuar?</span>
+_Our style_: <span lang="es">¿Quieres continuar?</span>
 
-**Example**
+<br>
 
 _English_: Be a presentation machine.
 
-_Our style_: <span lang="es-ES">Conviértete en un experto en presentaciones.</span>
+_Our style_: <span lang="es">Conviértete en un experto en presentaciones.</span>
+
+<br>
 
 Shorter is always better. Long strings of text can cause issues for localization. Be concise but avoid abbreviations as much as possible because they can make the text less intuitive.
 
-### "<span lang="es-ES">Tú</span>" and "<span lang="es-ES">usted</span>" (informal _vs._ formal)
-The way of addressing the user is not uniform across Microsoft products for Spanish. Because different products have different uses and audiences, some have chosen to address the user with the familiar "<span lang="es-ES">tú</span>" and others with the formal (Office, for example). Always consult the Localization project manager if you are not sure about the treatment used in the product.
+### "<span lang="es">Tú</span>" and "<span lang="es">usted</span>" (informal _vs._ formal)
+The way of addressing the user is not uniform across Microsoft products for Spanish. Because different products have different uses and audiences, some have chosen to address the user with the familiar "<span lang="es-ES">tú</span>" and others with the formal (Office, for example). The topic “Tú/usted usage for different Microsoft products” in the [Spanish (Neutral) Style Guide](http://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) provides information about the treatment used for different products.
 
 ## 3. Pay attention to application, product, and feature names
 
@@ -65,7 +69,7 @@ When a product name contains a preposition, the preposition is usually translate
 
 _English_: Microsoft Visio Pro for Office 365
 
-_Our style_: <span lang="es-ES">Microsoft Visio Pro para Office 365</span>
+_Our style_: <span lang="es">Microsoft Visio Pro para Office 365</span>
 
 Visio and Office 365 are Microsoft trademarks; the preposition is translated.
 
@@ -75,7 +79,7 @@ Visio and Office 365 are Microsoft trademarks; the preposition is translated.
 
 _English_: File Manager
 
-_Our style_: <span lang="es-ES">Administrador de archivos</span>
+_Our style_: <span lang="es">Administrador de archivos</span>
 
 The feature name is translated because it is descriptive and it is not trademarked.
 
@@ -85,25 +89,25 @@ The feature name is translated because it is descriptive and it is not trademark
 
 _English_: Cortana
 
-_Our style_: <span lang="es-ES">Cortana</span> 
+_Our style_: <span lang="es">Cortana</span> 
 
 Cortana is not a descriptive feature name and is trademarked.
 
 ###	Wizard names
 
-Wizard names should follow the approved format when being translated into Spanish: **<span lang="es-ES">Asistente + para + noun or Asistente + para + infinitive + object</span>**.
+Wizard names should follow the approved format when being translated into Spanish: **<span lang="es">Asistente + para + noun or Asistente + para + infinitive + object</span>**.
 
 **Example**
 
 _English_: Sync Wizard
 
-_Our style_: <span lang="es-ES">Asistente para sincronización</span>
+_Our style_: <span lang="es">Asistente para sincronización</span>
 
 **Example**
 
 _English_: Add Role Wizard
 
-_Our style_: <span lang="es-ES">Asistente para agregar roles</span>
+_Our style_: <span lang="es">Asistente para agregar roles</span>
 
 ### Versions	
 
@@ -113,7 +117,7 @@ _Our style_: <span lang="es-ES">Asistente para agregar roles</span>
 
 _English_: MPEG-4 video codec version 1.0
 
-_Our style_: <span lang="es-ES">códec de vídeo MPEG-4 versión 1.0</span>
+_Our style_: <span lang="es">códec de vídeo MPEG-4 versión 1.0</span>
 
 ### All rights reserved
 
@@ -121,18 +125,18 @@ The string "All rights reserved" should be translated, using the approved transl
 
 ## 4. Avoid abbreviations and follow guidelines for acronyms
 
-In running text, avoid abbreviations. If you absolutely need to use an abbreviation, use the form listed in the new Ortografía de la lengua española or in [Appendix 2](http://buscon.rae.es/dpd/apendices/apendice2.html) of <span lang="es-ES">_Diccionario panhispánico de duda_</span>. Remember:
+In running text, avoid abbreviations. If you absolutely need to use an abbreviation, use the form listed in the new Ortografía de la lengua española or in [Appendix 2](http://buscon.rae.es/dpd/apendices/apendice2.html) of <span lang="es">_Diccionario panhispánico de duda_</span>. Remember:
   -	To avoid confusing the reader, do not abbreviate a word in such a way that the abbreviation could be confused with another word.
   -	Include a period at the end of an abbreviation.
-  -	Use abbreviations for days and months if necessary. Follow the guidelines in the [main Style Guide](https://www.microsoft.com/en-us/language/StyleGuides?rtc=1) or Regional Standards.
-  -	Don't treat words such as "<span lang="es-ES">metro</span>" or "<span lang="es-ES">litro</span>" as abbreviations. They are considered units of measure and should not end in a period. 
+  -	Use abbreviations for days and months if necessary. Follow the guidelines in the [main Style Guide](http://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) or Regional Standards.
+  -	Don't treat words such as "<span lang="es">metro</span>" or "<span lang="es-ES">litro</span>" as abbreviations. They are considered units of measure and should not end in a period. 
   -	Use a nonbreaking space between the numeral and the symbol, as per SI standards. For example: 30&nbsp;cm, 1&nbsp;h, 75&nbsp;%, 20&nbsp;°C.
 
 ### Acronyms
 
 Some well-known examples are WYSIWYG (What You See Is What You Get), DNS (Domain Name Server), and HTML (Hypertext Markup Language).
   -	Acronyms behave like nouns. If a gender is needed, it is that of the spelled-out form. In the case of non-Spanish words, the gender will depend on the use.
-  -	Acronyms have no plural, so no "–s" is added at the end. The number is indicated by the preceding determiner: <span lang="es-ES">los DVD, unos CD</span>. In the case of PC, the gender should be masculine, "<span lang="es-ES">el PC</span>." When the text refers to PCs and the Mac, please use "<span lang="es-ES">ordenador</span>."
+  -	Acronyms have no plural, so no "–s" is added at the end. The number is indicated by the preceding determiner: <span lang="es">los DVD, unos CD</span>. In the case of PC, however, to avoid the problem of conflicting gender in Spain and Latin America when using a determiner, use “en tus PC." If this is not possible in the context, the synonym equipo will be used instead of the acronym.
 
 **Localized acronyms**: If the acronym is widely used and well known to the audience, it should be used "as is" (without including the spelled-out term). However, if the acronym is not widely used or could be confused with another acronym, the recommendation is to spell out the term and include the acronym in brackets the first time the acronym appears in the text. Do not include <span lang="es-ES">por sus siglas en inglés</span>.
 
@@ -152,7 +156,7 @@ Acronyms that aren't localized: When an acronym will remain in English, consider
 
 _English_: This policy setting controls data exchange with other applications that use Dynamic Data Exchange (DDE).
 
-_Our style_: <span lang="es-ES">Esta configuración de directiva controla el intercambio de datos con otras aplicaciones que usan Intercambio dinámico de datos (DDE).</span>
+_Our style_: <span lang="es">Esta configuración de directiva controla el intercambio de datos con otras aplicaciones que usan Intercambio dinámico de datos (DDE).</span>
 
 OR
 
@@ -198,7 +202,7 @@ In headings, captions, and the titles of tables and figures, capitalize only the
 
 _English_: Quick Reference Guide
 
-_Our style_: <span lang="es-ES">Guía de referencia rápida</span>
+_Our style_: <span lang="es">Guía de referencia rápida</span>
 
 ## 6. Pay attention to pronouns
 
@@ -208,9 +212,9 @@ For a more fluent text, avoid redundant pronouns in a sentence. In Spanish, omit
 
 _English_: Depending on your service agreement, you might pay more for call or text messages when your phone is roaming.
 
-_Our style_: <span lang="es-ES">Según el contrato de servicio, tal vez tengas que pagar más por llamadas o mensajes de texto cuando el teléfono esté en roaming.</span>
+_Our style_: <span lang="es">Según el contrato de servicio, tal vez tengas que pagar más por llamadas o mensajes de texto cuando el teléfono esté en roaming.</span>
 
-Remember that the form for the second-person plural in Spanish for Spain is "<span lang="es-ES">vosotros</span>" and not "<span lang="es-ES">ustedes</span>." If possible, use an alternative construction to avoid one or the other.
+Remember that the neutral form for the second-person plural in Neutral Spanish is "<span lang="es">ustedes</span>" and not "<span lang="es">vosotros.</span>" If possible, use an alternative construction to avoid one or the other.
 
 **Example**
 
@@ -218,15 +222,15 @@ _English_: Many of you are, for sure, familiar with Microsoft webcast
 
 _Our style_: <span lang="es-ES">Seguro que muchos ya conocen los webcast de Microsoft</span>
 
-_Not our style_: <span lang="es-ES">Seguro que muchos de ustedes conocen los webcast de Microsoft</span>
+_Not our style_: <span lang="es-ES">Seguro que muchos de vosotros conocéis los webcast de Microsoft</span>
 
-Check the correct use of _<span lang="es-ES">leísmo</span>_. Please make sure that the use of "<span lang="es-ES">le</span>" is grammatically correct when used instead of "<span lang="es-ES">lo</span>."
+Avoid "<span lang="es">leísmo</span>". Although this is sometimes acceptable in Spanish, in Neutral Spanish, we prefer the use of "<span lang="es">lo</span>".
 
 **Example**
 
 _English_: This wizard will help you …
 
-_Our style_: <span lang="es-ES">Este asistente le ayudará a …</span>
+_Our style_: <span lang="es-ES">Este asistente lo ayudará a…</span>
 
 ## 7. Use simple tenses
 
@@ -244,7 +248,7 @@ _Our style_: <span lang="es-ES">Después de que instales la herramienta, aparece
 
 **Note on the subjunctive mode**: Do not avoid using the subjunctive. The subjunctive mode makes the text richer and more natural sounding. 
 
-The only point to remember is that, when either "<span lang="es-ES">cantara</span>" or "<span lang="es-ES">cantase</span>" could be used, the second option is more common in Spain, so use "<span lang="es-ES">cantase</span>" instead.
+The only point to remember is that, when either "<span lang="es-ES">cantara</span>" or "<span lang="es-ES">cantase</span>" could be used, the first option is more common in Latin America and the second is more common in Spain
 
 ## 8. Use Microsoft style for punctuation
 
@@ -373,10 +377,10 @@ Consider the meaning of the placeholder when translating strings, and move the p
 
 Use the spelling and grammar recommended in the following publications.
 
-These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Spain) Style Guide](https://www.microsoft.com/en-us/Language/StyleGuides) for guidance.
+These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Neutral) Style Guide](http://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) for guidance.
 
-1.	_Diccionario de la lengua española_, (Vigésima tercera edición), Real Academia Española, Madrid, Ed. Espasa-Calpe, 2014, or [online](http://www.rae.es/).
-2.	_Diccionario panhispánico de dudas_, Real Academia Española & Asociación de Academias de la Lengua Española, Madrid, Ed. Santillana, 2005 or [online](http://www.rae.es/recursos/diccionarios/dpd).
+1. _1.	Diccionario panhispánico de dudas_, Real Academia Española & Asociación de Academias de la Lengua Española, Madrid, Ed. Santillana, 2005, or [online here](http://www.rae.es/recursos/diccionarios/dpd).
+2. _Diccionario de la lengua española_, (Vigésima tercera edición), Real Academia Española, Madrid, Ed. Espasa-Calpe, 2014, or [online](http://www.rae.es/).
 3.	_Gramática de la lengua española_, Real Academia Española y Asociación de Academias de la Lengua Española, Madrid, Ed. Espasa-Calpe, 2009. Queries [online](http://aplica.rae.es/grweb/cgi-bin/buscar.cgi).
 4.	_Ortografía de la lengua española_, Academias de la Lengua Española, Ed. Espasa, 2010. Queries [online](http://aplica.rae.es/grweb/cgi-bin/buscar.cgi).
 

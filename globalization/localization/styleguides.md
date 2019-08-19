@@ -26,6 +26,7 @@ That's what these condensed Quick Start versions on this page are meant for. The
 *	[Portuguese (Portugal)](/globalization/localization/ministyleguides/mini-style-guide-portuguese-portugal)
 *	[Russian](/globalization/localization/ministyleguides/mini-style-guide-russian)
 *	[Spanish (Spain)](/globalization/localization/ministyleguides/mini-style-guide-spanish-spain)
+*	[Spanish (Neutral)](/globalization/localization/ministyleguides/mini-style-guide-spanish-neutral)
 *	[Swedish](/globalization/localization/ministyleguides/mini-style-guide-swedish)
 *	[Turkish](/globalization/localization/ministyleguides/mini-style-guide-turkish)
 
