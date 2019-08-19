@@ -53,7 +53,7 @@ _Our style_: <span lang="es">Conviértete en un experto en presentaciones.</span
 Shorter is always better. Long strings of text can cause issues for localization. Be concise but avoid abbreviations as much as possible because they can make the text less intuitive.
 
 ### "<span lang="es">Tú</span>" and "<span lang="es">usted</span>" (informal _vs._ formal)
-The way of addressing the user is not uniform across Microsoft products for Spanish. Because different products have different uses and audiences, some have chosen to address the user with the familiar "<span lang="es-ES">tú</span>" and others with the formal (Office, for example). Always consult the Localization project manager if you are not sure about the treatment used in the product.
+The way of addressing the user is not uniform across Microsoft products for Spanish. Because different products have different uses and audiences, some have chosen to address the user with the familiar "<span lang="es-ES">tú</span>" and others with the formal (Office, for example). The topic “Tú/usted usage for different Microsoft products” in the [Spanish (Neutral) Style Guide](http://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) provides information about the treatment used for different products.
 
 ## 3. Pay attention to application, product, and feature names
 
@@ -67,7 +67,7 @@ When a product name contains a preposition, the preposition is usually translate
 
 _English_: Microsoft Visio Pro for Office 365
 
-_Our style_: <span lang="es-ES">Microsoft Visio Pro para Office 365</span>
+_Our style_: <span lang="es">Microsoft Visio Pro para Office 365</span>
 
 Visio and Office 365 are Microsoft trademarks; the preposition is translated.
 
@@ -77,7 +77,7 @@ Visio and Office 365 are Microsoft trademarks; the preposition is translated.
 
 _English_: File Manager
 
-_Our style_: <span lang="es-ES">Administrador de archivos</span>
+_Our style_: <span lang="es">Administrador de archivos</span>
 
 The feature name is translated because it is descriptive and it is not trademarked.
 
@@ -87,25 +87,25 @@ The feature name is translated because it is descriptive and it is not trademark
 
 _English_: Cortana
 
-_Our style_: <span lang="es-ES">Cortana</span> 
+_Our style_: <span lang="es">Cortana</span> 
 
 Cortana is not a descriptive feature name and is trademarked.
 
 ###	Wizard names
 
-Wizard names should follow the approved format when being translated into Spanish: **<span lang="es-ES">Asistente + para + noun or Asistente + para + infinitive + object</span>**.
+Wizard names should follow the approved format when being translated into Spanish: **<span lang="es">Asistente + para + noun or Asistente + para + infinitive + object</span>**.
 
 **Example**
 
 _English_: Sync Wizard
 
-_Our style_: <span lang="es-ES">Asistente para sincronización</span>
+_Our style_: <span lang="es">Asistente para sincronización</span>
 
 **Example**
 
 _English_: Add Role Wizard
 
-_Our style_: <span lang="es-ES">Asistente para agregar roles</span>
+_Our style_: <span lang="es">Asistente para agregar roles</span>
 
 ### Versions	
 
@@ -115,7 +115,7 @@ _Our style_: <span lang="es-ES">Asistente para agregar roles</span>
 
 _English_: MPEG-4 video codec version 1.0
 
-_Our style_: <span lang="es-ES">códec de vídeo MPEG-4 versión 1.0</span>
+_Our style_: <span lang="es">códec de vídeo MPEG-4 versión 1.0</span>
 
 ### All rights reserved
 
@@ -123,18 +123,18 @@ The string "All rights reserved" should be translated, using the approved transl
 
 ## 4. Avoid abbreviations and follow guidelines for acronyms
 
-In running text, avoid abbreviations. If you absolutely need to use an abbreviation, use the form listed in the new Ortografía de la lengua española or in [Appendix 2](http://buscon.rae.es/dpd/apendices/apendice2.html) of <span lang="es-ES">_Diccionario panhispánico de duda_</span>. Remember:
+In running text, avoid abbreviations. If you absolutely need to use an abbreviation, use the form listed in the new Ortografía de la lengua española or in [Appendix 2](http://buscon.rae.es/dpd/apendices/apendice2.html) of <span lang="es">_Diccionario panhispánico de duda_</span>. Remember:
   -	To avoid confusing the reader, do not abbreviate a word in such a way that the abbreviation could be confused with another word.
   -	Include a period at the end of an abbreviation.
-  -	Use abbreviations for days and months if necessary. Follow the guidelines in the [main Style Guide](https://www.microsoft.com/en-us/language/StyleGuides?rtc=1) or Regional Standards.
-  -	Don't treat words such as "<span lang="es-ES">metro</span>" or "<span lang="es-ES">litro</span>" as abbreviations. They are considered units of measure and should not end in a period. 
+  -	Use abbreviations for days and months if necessary. Follow the guidelines in the [main Style Guide](http://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) or Regional Standards.
+  -	Don't treat words such as "<span lang="es">metro</span>" or "<span lang="es-ES">litro</span>" as abbreviations. They are considered units of measure and should not end in a period. 
   -	Use a nonbreaking space between the numeral and the symbol, as per SI standards. For example: 30&nbsp;cm, 1&nbsp;h, 75&nbsp;%, 20&nbsp;°C.
 
 ### Acronyms
 
 Some well-known examples are WYSIWYG (What You See Is What You Get), DNS (Domain Name Server), and HTML (Hypertext Markup Language).
   -	Acronyms behave like nouns. If a gender is needed, it is that of the spelled-out form. In the case of non-Spanish words, the gender will depend on the use.
-  -	Acronyms have no plural, so no "–s" is added at the end. The number is indicated by the preceding determiner: <span lang="es-ES">los DVD, unos CD</span>. In the case of PC, the gender should be masculine, "<span lang="es-ES">el PC</span>." When the text refers to PCs and the Mac, please use "<span lang="es-ES">ordenador</span>."
+  -	Acronyms have no plural, so no "–s" is added at the end. The number is indicated by the preceding determiner: <span lang="es">los DVD, unos CD</span>. In the case of PC, however, to avoid the problem of conflicting gender in Spain and Latin America when using a determiner, use “en tus PC." If this is not possible in the context, the synonym equipo will be used instead of the acronym.
 
 **Localized acronyms**: If the acronym is widely used and well known to the audience, it should be used "as is" (without including the spelled-out term). However, if the acronym is not widely used or could be confused with another acronym, the recommendation is to spell out the term and include the acronym in brackets the first time the acronym appears in the text. Do not include <span lang="es-ES">por sus siglas en inglés</span>.
 
@@ -154,7 +154,7 @@ Acronyms that aren't localized: When an acronym will remain in English, consider
 
 _English_: This policy setting controls data exchange with other applications that use Dynamic Data Exchange (DDE).
 
-_Our style_: <span lang="es-ES">Esta configuración de directiva controla el intercambio de datos con otras aplicaciones que usan Intercambio dinámico de datos (DDE).</span>
+_Our style_: <span lang="es">Esta configuración de directiva controla el intercambio de datos con otras aplicaciones que usan Intercambio dinámico de datos (DDE).</span>
 
 OR
 
