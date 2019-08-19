@@ -12,7 +12,7 @@ Are you helping with translation into Spanish (Neutral), but don't have time to 
 
 The language in Microsoft products should have the "feel" of a product originally written in Spanish, with idiomatic syntax, while keeping a high level of terminology consistency for the best possible user experience. To achieve a fluent translation, word-for-word or literal translations should be avoided. If the concepts are translated without an overall understanding of the text, the content will not sound natural. To make the text easily understood, try to understand the whole intention of the sentence, paragraph, or page, and then rewrite as if you were writing the content from scratch. 
 
-**Example**
+**Examples**
 
 _English_: Rediscover your keyboard
 
@@ -20,7 +20,7 @@ _Our style_: <span lang="es-ES">Una nueva forma de usar tu teclado</span>
 
 _Not our style_: <span lang="es-ES">Redescubre tu teclado</span>
 
-**Examples**
+
 
 _English_: Simple sharing with anyone.
 
