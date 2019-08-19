@@ -20,7 +20,7 @@ _Our style_: <span lang="es-ES">Una nueva forma de usar tu teclado</span>
 
 _Not our style_: <span lang="es-ES">Redescubre tu teclado</span>
 
-
+<br>
 
 _English_: Simple sharing with anyone.
 
