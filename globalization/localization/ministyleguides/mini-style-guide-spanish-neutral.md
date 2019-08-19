@@ -24,9 +24,9 @@ _Not our style_: <span lang="es-ES">Redescubre tu teclado</span>
 
 _English_: Simple sharing with anyone.
 
-_Our style_: <span lang="es-ES">Comparte fácilmente con quien quieras</span>
+_Our style_: <span lang="es">Comparte fácilmente con quien quieras</span>
 
-_Not our style_: <span lang="es-ES">Uso compartido simple con todos</span>
+_Not our style_: <span lang="es">Uso compartido simple con todos</span>
 
 ## 2. Use the right voice, tone, and level of formality
 
@@ -36,17 +36,17 @@ The [Microsoft voice](/style-guide/brand-voice-above-all-simple-human) targets a
   -	Be pleasant and ensure explanations are as clear as is possible.
   -	Avoid slang and be careful with colloquialisms. It is acceptable to reassure and connect with customers in a conversational tone, but be professional in doing so.
 
-**Example**
+**Examples**
 
 _English_: Would you like to continue?
 
-_Our style_: <span lang="es-ES">¿Quieres continuar?</span>
+_Our style_: <span lang="es">¿Quieres continuar?</span>
 
-**Example**
+<br>
 
 _English_: Be a presentation machine.
 
-_Our style_: <span lang="es-ES">Conviértete en un experto en presentaciones.</span>
+_Our style_: <span lang="es">Conviértete en un experto en presentaciones.</span>
 
 Shorter is always better. Long strings of text can cause issues for localization. Be concise but avoid abbreviations as much as possible because they can make the text less intuitive.
 
