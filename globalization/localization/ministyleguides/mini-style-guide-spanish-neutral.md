@@ -222,7 +222,7 @@ _Our style_: <span lang="es-ES">Seguro que muchos ya conocen los webcast de Micr
 
 _Not our style_: <span lang="es-ES">Seguro que muchos de vosotros conocéis los webcast de Microsoft</span>
 
-Avoid "<span lang="es">leísmo</span>". Although this is sometimes acceptable in Spanish, in Neutral Spanish, we prefer the use of lo"
+Avoid "<span lang="es">leísmo</span>". Although this is sometimes acceptable in Spanish, in Neutral Spanish, we prefer the use of "<span lang="es">lo</span>".
 
 **Example**
 
