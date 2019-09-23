@@ -113,7 +113,7 @@ Other scripts in Unicode 7.0 either are supported in other shaping engines or do
 
 For more background on the Universal Shaping Engine, see [Creating and supporting OpenType fonts for the Universal Shaping Engine](https://docs.microsoft.com/en-us/typography/script-development/use) .
 
-[Top of page](#content)
+[Top of page](#top)
 
 ## Windows 8.1<a name="_Windows_8.1"></a>
 
@@ -152,7 +152,7 @@ A significant font addition is the Segoe UI Emoji font, and color font support. 
 
 Another addition in Windows 8.1 is a collection of fonts with members optimized for different optical sizes: Sitka Small, Sitka Text, Sitka Subheading, Sitka Heading, Sitka Display, and Sitka Banner. These fonts are designed to be used together in documents with elements at different sizes to provide readability and typographic consistency. The Sitka fonts have basic Latin, Greek and Cyrillic coverage. They are intended for use for print or on-screen content, but not for UI.
 
-[Top of page](#content)
+[Top of page](#top)
 
 ## Windows 8<a name="_Windows_8"></a>
 
@@ -191,7 +191,7 @@ Among other significant updates to fonts from Windows 7 is the addition of supp
 
 In Windows 7, both Uniscribe and DirectWrite provided support for OpenType advanced typographic capabilities, including OpenType features, such as typographic small caps or stylistic sets, and language specific forms. This functionality was not supported in Windows UI frameworks, however. As a result, advanced typographic capabilities were never visible in the Windows shell and were not well supported in applications. These capabilities are better supported in Windows 8, enabling higher quality typography in the Windows Store apps developed for Windows 8. The CSS3 -ms-font-feature-settings property exposes OpenType capabilities and is supported in the MSHTML rendering engine used by IE10 and Windows Store apps built using HTML and JavaScript. For XAML, advanced OpenType capabilities that were supported in WPF and Silverlight are also supported in the Windows Runtime XAML framework.
 
-[Top of page](#content)
+[Top of page](#top)
 
 ## Windows 7<a name="_Windows_7"></a>
 
@@ -262,7 +262,7 @@ Windows Vista includes the Cambria Math font, which has additional tables used 
 
 Prior to Windows Vista, Uniscribe had Arabic, Hebrew and Thai shaping engines that worked with legacy, pre-OpenType fonts, but not for fonts that support those scripts using OpenType glyph substitution and positioning mechanisms. The versions of fonts for Arabic, Hebrew and Thai that shipped in Windows Vista were changed to use OpenType. This means that those fonts will not work with earlier versions of Uniscribe.
 
-[Top of page](#content)
+[Top of page](#top)
 
 ## Windows XP SP2<a name="_Windows_XP_SP2"></a>
 
@@ -276,7 +276,7 @@ The following table lists scripts newly supported in Windows XP SP2, and assoc
 
 As with Windows XP (RTM), the **Regional and Language Options** control panel (intl.cpl) has two option controls to enable “complex script and right-to-left languages” (Arabic, Hebrew, Thaana, Indic scripts and Thai) and CJK (Chinese, Japanese, Korean). One effect of these options is to enable the Uniscribe component within the text stack. Whereas in the RTM version, Uniscribe is not enabled by default in all SKUs, in SP2 it is always enabled by default.
 
-[Top of page](#content)
+[Top of page](#top)
 
 ## Windows XP<a name="_Windows_XP"></a>
 
@@ -298,7 +298,7 @@ This change, along with earlier changes in Windows 2000, to support supplementa
 
 Note: all of the scripts mentioned are supported on Windows XP, but enablement is not activated for all of them on all language versions of Windows XP. The **Regional and Language Options** control panel (intl.cpl) has two option controls: one to enable “complex script and right-to-left languages” (Arabic, Hebrew, Thaana, Indic scripts and Thai), and one to enable CJK (Chinese, Japanese, and Korean). Each of these may be enabled or disabled by default, depending on the language version. CJK fonts are not installed by default on non-CJK versions but are included in the distribution media and will be installed when CJK support is enabled.
 
-[Top of page](#content)
+[Top of page](#top)
 
 ## Windows 2000<a name="_Windows_2000"></a>
 
@@ -326,4 +326,4 @@ The sixteen language groups available on Windows 2000 are: Arabic, Armenian, Ba
 
 A *surrogates* shaping engine was also added to Uniscribe to allow display of Unicode supplementary-plane characters in the GDI text stack. (GDI supports wide characters but does not understand UTF-16 surrogate pairs.) See the [Surrogate Pairs and Variation Selectors](../encoding/surrogate-pairs.md) topic for details on the extent of support for supplementary-plan characters. Windows 2000 did not include fonts for any supplementary-plane characters.
 
-[Top of page](#content)
+[Top of page](#top)
