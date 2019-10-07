@@ -3,6 +3,7 @@ title: Number Formatting in Win32
 description: 
 ms.assetid: c71a439f-8f5a-4ddf-a754-cae3fa9127fa
 ms.date: 03/16/2016
+author: pallep
 ---
 
 
@@ -61,5 +62,3 @@ This code would produce the following result on English (US) and Persian locales
 |2|Native - National shapes determined by LOCALE_SNATIVEDIGITS.|
 
 **Table 2:** Return values of LOCALE_IDIGITSUBSTITUTION
-
-
