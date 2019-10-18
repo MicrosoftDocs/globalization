@@ -45,7 +45,7 @@ _English_: Do not use Print Without Saving so as not to lose your work.
 
 _Our style_: <span lang="pt-PT">Não use a opção Imprimir Sem Guardar para não perder o seu trabalho.</span>
 
-When a single source word translates into multiple target words (for example, Desktop), make sure to capitalise all applicable words (<span lang="pt-PT">Ambiente de Trabalho</span>).
+When a single source word translates into multiple target words (for example, Desktop), make sure to capitalize all applicable words (<span lang="pt-PT">Ambiente de Trabalho</span>).
 
 ## 4.	Acronyms	
 
