@@ -4,13 +4,11 @@ description:
 ms.assetid: f468cc75-fdc5-4716-a42f-91df92b89401
 ms.date: 03/16/2016
 ---
-
-
 # Time Formatting and Time Zones in Win32
 
 To format time in the default settings of a given locale or as specified by the user in the **Regional and Language Options** Control Panel, you can use GetTimeFormat. This function formats time—either a specified time or the local system time—as a time string for a specified locale.
 
-The following code sample displays the current system time for the current user locale, using the default time format for that locale: 
+The following code sample displays the current system time for the current user locale, using the default time format for that locale:
 
 ```cpp
 // Formats time as a time string for a specified locale.
@@ -26,7 +24,7 @@ GetTimeFormat(LOCALE_USER_DEFAULT, // predefined current user locale
 
 Execution of this code would give the following result on English (United States) and Punjabi user locales, respectively. (See Figure 1 below)
 
-![TimeFormat-Win32](https://docs.microsoft.com/globalization/locale/images/Punjabi_Time.jpg "TimeFormat-Win32") 
+![TimeFormat-Win32](./images/Punjabi_Time.jpg "TimeFormat-Win32")
 
 **Figure 1:** Time formatted for English (United States) and Punjabi user locales
 
@@ -36,7 +34,7 @@ As you saw in the previous example, the time formatting can be completely differ
 EnumTimeFormats(EnumTimeFormatsProc, // enumeration callback function
      LOCALE_USER_DEFAULT, // locale for which the enumeration is done
      NULL); // unused
- 
+
     // The callback function...
     BOOL CALLBACK EnumTimeFormatsProc(LPTSTR lpTimeFormatString)
      {
@@ -50,7 +48,7 @@ EnumTimeFormats(EnumTimeFormatsProc, // enumeration callback function
 
 Execution of this code would give the following result on English (United States) and French (France) user locales, respectively. (See Figure 2 below.)
 
-![FrenchTimeFormat](https://docs.microsoft.com/globalization/locale/images/French_Time.jpg "FrenchTimeFormat") 
+![FrenchTimeFormat](./images/French_Time.jpg "FrenchTimeFormat")
 
 **Figure 2:** Time formats for English (United States) and French (France) user locales
 
@@ -76,13 +74,13 @@ The obtained result (format picture) can then be used as an lpFormat argument in
 For example, to get the time string:
 
 ```
-"11:29:40 PM" 
+"11:29:40 PM"
 ```
 
 use the following picture string:
 
 ```
-"hh':'mm':'ss tt" 
+"hh':'mm':'ss tt"
 ```
 
 To retrieve information regarding the time parameters for a particular time zone that the user has selected, you can use the GetTimeZoneInformation function. These parameters control the translations between UTC and local time.
@@ -99,7 +97,7 @@ typedef struct _TIME_ZONE_INFORMATION
      WCHAR DaylightName[ 32 ];
      SYSTEMTIME DaylightDate;
      LONG DaylightBias
-    } 
+    }
     TIME_ZONE_INFORMATION, *PTIME_ZONE_INFORMATION;
 ```
 
@@ -108,9 +106,7 @@ The *Bias* parameter of the TIME\_ZONE\_INFORMATION structure is the difference,
 All translations between UTC time and local time are based on the following formula:
 
 ```
-UTC = local time + bias 
+UTC = local time + bias
 ```
 
-Unfortunately, Win32 APIs do not offer a solution to enumerate information relative to any other time zone than the one currently selected by the user. GetLocalTime and GetSystemTime will allow you to retrieve the current local and the UTC times, respectively. To convert the local time to UTC, you can use the LocalFileTimeToFileTime API. These are but two of the many Win32 APIs dealing with time. To learn about other functions, search for "time functions" on [http://msdn.microsoft.com.](http://msdn2.microsoft.com/)
-
-
+Unfortunately, Win32 APIs do not offer a solution to enumerate information relative to any other time zone than the one currently selected by the user. GetLocalTime and GetSystemTime will allow you to retrieve the current local and the UTC times, respectively. To convert the local time to UTC, you can use the LocalFileTimeToFileTime API. These are but two of the many Win32 APIs dealing with time. To learn about other functions, search for "time functions" on <https://docs.microsoft.com/>.
