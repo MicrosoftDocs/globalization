@@ -22,7 +22,7 @@ CRT locale support is built around the *(\_w)setlocale(category, locale)* call, 
 
 In order to set the rules for formatting locale-sensitive data in accordance with the user locale, the following calls can be executed:
 
-```C++
+```cpp
 _wsetlocale (LC_COLLATE, L(".OCP") );  // sets the sort order`
 _wsetlocale (LC_MONETARY, L(".OCP") ); // sets the currency formatting rules`
 _wsetlocale (LC_NUMERIC, L(".OCP") );  // sets the formatting of numerals`

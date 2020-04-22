@@ -36,8 +36,7 @@ On some occasions, you might want to create a basic form with settings and prope
 
 As its name suggests, the *MessageBox* class represents the message box; the *Show* method of this class displays a message box that can contain text, buttons, and symbols that inform and instruct the user. The *MessageBox* class fully supports RTL reading order and mirroring. The *Show* method of the *MessageBox* class takes constants defined in the *MessageBoxOptions* enumeration as parameters. These constants include *RtlReading* and *RightAlign,* both of which enable the message box to display bidirectional text. The following code illustrates how to display an Arabic message box:
 
-```VB
-[Visual Basic]
+```vb
 MessageBox.Show([put here your Arabic text],
 MessageBoxButtons.OK,
 MessageBoxIcon.Question,

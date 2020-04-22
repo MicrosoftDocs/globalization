@@ -10,7 +10,7 @@ ms.date: 03/16/2016
 
 Win32 NLS APIs can help you display currency data in a way that's locale-aware. The GetCurrencyFormat function formats a number string as a currency string for a specified locale. The code sample on the following page formats a number string into the user locale's default format:
 
-```C++
+```cpp
 GetCurrencyFormat(LOCALE\_USER\_DEFAULT, // a predefined value for user locale
       NULL, // operation option
       TEXT("123.40"), // input number (see MSDN for accepted chars)
@@ -29,7 +29,7 @@ With this approach, the number string is formatted to a locale-specific format a
 
 Another scenario would be the use of the euro. The .NET Framework and Windows set the default currency symbol to the euro for members of the eurozone. However, older versions of Windows, without any intervention, will still set the default currency symbol to the local currency for these countries or regions. To resolve the issue in the two scenarios just mentioned, you can take advantage of the lpFormat argument of GetCurrencyFormat. This argument is a pointer to a currency-formatting structure, where you can define your own formatting model and specify the currency symbol to be used following the formatting standard of a given locale. The following code sample uses the formatting for the currently selected user locale, but with the euro as the desired currency symbol. Here is how it works.
 
-```C++
+```cpp
 CURRENCYFMT CurFormat;
 // first fill in the currencyfmt structure with user locale-specific information.
 getlocaleinfo(locale\_user\_default, locale\_return\_number|locale\_idigits, &curformat.numdigits, str\_len):;

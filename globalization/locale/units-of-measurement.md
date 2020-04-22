@@ -25,7 +25,7 @@ Although you need to do your own conversions between the metric and US systems, 
 
 The system of measurement can be obtain from [GetLocaleInfoEx](/windows/desktop/api/winnls/nf-winnls-getlocaleinfoex) API with [LCTYPE](/windows/desktop/Intl/locale-information-constants#constants-used-in-the-lctype-parameter-of-getlocaleinfo-getlocaleinfoex-and-setlocaleinfo) flag set to *LOCALE\_IMEASURE*. The returned value is 0 if the metric system (Système International d'unités, or S.I.) is used, and 1 if the U.S. system is used. The maximum number of characters allowed for this string is two.
 
- ```C++
+ ```cpp
 DWORD dwMSys;
 GetLocaleInfo(LOCALE\_USER\_DEFAULT,     // locale identifier (current user locale)
 LOCALE\_IMEASURE|LOCALE\_RETURN\_NUMBER, // information type (measurement system)
