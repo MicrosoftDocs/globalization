@@ -1,6 +1,5 @@
 ---
 title: .NET Framework -- String.Format
-description: 
 ms.assetid: c1386557-8372-486b-b98e-6e84286e9255
 ms.date: 06/28/2016
 ---

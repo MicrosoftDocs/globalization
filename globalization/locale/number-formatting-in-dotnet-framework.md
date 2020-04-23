@@ -1,6 +1,5 @@
 ---
 title: Number Formatting in .NET Framework
-description: 
 ms.assetid: 81bc7141-92f0-432a-a241-eebfda454fd2
 ms.date: 03/16/2016
 ---

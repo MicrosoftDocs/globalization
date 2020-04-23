@@ -1,6 +1,5 @@
 ---
 title: Number Formatting in Win32
-description: 
 ms.assetid: c71a439f-8f5a-4ddf-a754-cae3fa9127fa
 ms.date: 03/16/2016
 author: pallep

@@ -1,8 +1,6 @@
 ---
 title: Browser Language Setting
-description: 
 ms.assetid: c2dd9e6d-6be7-4699-97ff-94cfe62fafff
-ms.date: 
 ---
 # Code Pages
 

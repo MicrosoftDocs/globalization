@@ -1,6 +1,5 @@
 ---
 title: Win32 -- FormatMessage
-description: 
 ms.assetid: 1092f86e-73fd-4aa6-a7bb-8ee908177416
 ms.date: 06/28/2016
 ---

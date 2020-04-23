@@ -1,6 +1,5 @@
 ---
 title: Time Formatting and Time Zones in .NET Framework
-description: 
 ms.assetid: fa7e723a-f23a-454c-9312-519145d55e96
 ms.date: 03/16/2016
 ---

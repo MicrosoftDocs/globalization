@@ -1,6 +1,5 @@
 ---
 title: Handling calendars in Win32
-description: 
 ms.assetid: dc16dec7-abcd-4b26-84d8-c229a5853329
 ms.date: 03/16/2016
 ---

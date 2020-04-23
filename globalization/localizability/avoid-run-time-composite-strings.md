@@ -1,6 +1,5 @@
 ---
 title: Avoid Run-Time Composite Strings
-description: 
 ms.assetid: 9b878fc7-44c8-4adb-94a5-13164d135eaf
 ms.date: 06/28/2016
 ---

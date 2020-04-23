@@ -1,6 +1,5 @@
 ---
 title: Time Formatting and Time Zones in Win32
-description: 
 ms.assetid: f468cc75-fdc5-4716-a42f-91df92b89401
 ms.date: 03/16/2016
 ---
