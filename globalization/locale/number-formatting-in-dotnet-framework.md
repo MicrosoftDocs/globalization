@@ -25,7 +25,7 @@ The *NumberFormatInfo* class defines how currency, decimal separators, and other
 
 The following code example displays an integer using the *NumberFormatInfo* standard currency format ("c") for the specified *CurrentCulture*.
 
-```C#
+```csharp
 using System.Globalization;
 public class TestClass
 {

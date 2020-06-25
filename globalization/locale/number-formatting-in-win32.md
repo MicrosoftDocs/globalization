@@ -11,7 +11,7 @@ author: pallep
 
 The easiest way to format numbers in a way that's locale-aware is to use the GetNumberFormat API. This API customizes the format of a number string for a specified locale. The following shows how the GetNumberFormat API is used to format a given number string for the current user locale (using the default settings for number formatting that the user has defined):
 
-```C++
+```cpp
 GetNumberFormat(LOCALE_USER_DEFAULT, // locale (current user locale)
           0,                           // options
           TEXT("1234567890.12345"),    // input string (see MSDN for legal chars)
@@ -40,7 +40,7 @@ Possible return values are shown in Table 1 below.
 
 **Native digits.** LCType flag set to LOCALE_SNATIVEDIGITS. Here is a code sample that deals with native digits:
 
-```C++
+```cpp
 GetLocaleInfo(LOCALE_USER_DEFAULT, // LCID (current user locale)
           LOCALE_SNATIVEDIGITS,     // information type (native digits)
           &g_szTemp,                // returned value
@@ -58,7 +58,7 @@ This code would produce the following result on English (US) and Persian locales
 |Value|Meaning|
 |---|---|
 |0|Content - The shape depends on the previous text in the same output.|
-|1|None/Arabic - Gives full Unicode compatability.|
+|1|None/Arabic - Gives full Unicode compatibility.|
 |2|Native - National shapes determined by LOCALE_SNATIVEDIGITS.|
 
 **Table 2:** Return values of LOCALE_IDIGITSUBSTITUTION

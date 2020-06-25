@@ -85,7 +85,7 @@ To mitigate against this, applications can call [GetNLSVersionEx](https://msdn.m
 
 The Array class provides an overloaded method that allows you to sort arrays based on the CultureInfo.CurrentCulture property. In the following example, an array of three strings is created. First, the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture) is set to "en-US" and the method is called. The resulting sort order is based on sorting conventions for the "en-US" culture. Next, the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture) is set to "da-DK" and the method is called again. Notice how the resulting sort order differs from the "en-US" results because the sorting conventions for the "da-DK" culture are used.
 
-```C#
+```csharp
     using System;
     using System.Threading ;
     using System.Globalization ;

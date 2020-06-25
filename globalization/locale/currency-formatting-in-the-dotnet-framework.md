@@ -12,7 +12,7 @@ The .NET format strings are useful if you want to convert one of the standard .N
 
 In the following code example, the ToString method displays the value of 100 as a currency-formatted string in the console's output window.
 
-```C#
+```csharp
 int MyInt = 100;
 String MyString = MyInt.ToString("C");
 Console.WriteLine(MyString);
@@ -24,7 +24,7 @@ The CurrencySymbol property of the RegionInfo class from the System.Globalizatio
 
 The following example uses code that is similar to the previous example. It sets the current culture to "fr-FR" and displays an integer to the console formatted as currency. The user's local currency settings are used to format the currency. Next, the culture is set to "fr-FR" using the CultureInfo constructor that accepts the useUserOverride parameter set to false. The number is then formatted using the .NET Framework default settings, and the euro currency symbol is displayed.
 
-```C#
+```csharp
 using System;
 using System.Globalization;
 using System.Threading;
@@ -60,7 +60,7 @@ If you execute this code in a Windows Forms application, the output appears as f
 
 Although most European Union countries now use the euro, there might be situations-such as for legacy reasons-where it is necessary to display both the euro and the older currencies in an application. The following code example creates a CultureInfo object for the culture "fr-FR" where the default currency is the euro. To display the currency symbol for the local currency, you must use the NumberFormatInfo.Clone method to clone a new NumberFormatInfo object for the CultureInfo object and replace the default currency symbol with a local currency symbol.
 
-```C#
+```csharp
 using System;
 using System.Globalization;
 using System.Threading;
