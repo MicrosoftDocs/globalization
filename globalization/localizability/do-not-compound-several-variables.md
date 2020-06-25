@@ -1,6 +1,5 @@
 ---
 title: Do Not Compound Several Variables
-description: 
 ms.assetid: 3fe50767-ebe0-4411-afff-d07f7490bed4
 ms.date: 06/28/2016
 ---

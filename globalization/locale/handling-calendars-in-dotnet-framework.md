@@ -1,6 +1,5 @@
 ---
 title: Handling calendars in .NET Framework
-description: 
 ms.assetid: 52135192-e034-47d3-8c22-4f988b8ffdc8
 ms.date: 03/16/2016
 ---

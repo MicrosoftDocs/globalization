@@ -1,6 +1,5 @@
 ---
 title: Currency Formatting in Win32
-description: 
 ms.assetid: ec54ea8e-7d6a-49a5-968f-347c463ad0f1
 ms.date: 03/16/2016
 ---
