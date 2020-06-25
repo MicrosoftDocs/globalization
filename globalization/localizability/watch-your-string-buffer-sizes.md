@@ -1,6 +1,5 @@
 ---
 title: Watch Your String Buffer Sizes
-description: 
 ms.assetid: c09cea43-364a-44db-9b7c-9ea0cea77b68
 ms.date: 10/20/2016
 ---

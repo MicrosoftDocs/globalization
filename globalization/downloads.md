@@ -1,6 +1,5 @@
 ---
 title: Tools and Download
-description: 
 ms.assetid: b684d6b5-315f-4384-9615-c5696b7bd0ec
 ms.date: 03/17/2016
 ---

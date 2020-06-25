@@ -1,6 +1,5 @@
 ---
 title: Fonts
-description: 
 ms.assetid: 9f4199db-a2d5-46bb-84aa-bb630f5fbd01
 ms.date: 03/16/2016
 ---

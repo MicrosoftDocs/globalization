@@ -18,7 +18,7 @@ When creating a locale-aware application, you'll need to consider handling of li
 
 In the past, as localized products were developed, language-sensitive issues—such as casing—were sometimes handled with what were thought of as well-designed, intelligent algorithms. For example, an uppercasing macro that relies on the code–point numbers of ASCII characters and the linear relationship between uppercase characters (A = 41) and lowercase characters (a = 61) can be written as:
 
-```C++
+```cpp
 #define ToUpper(ch) ((ch)&lt;='Z' ? (ch) : (ch)+'A' - 'a')
 ```
 

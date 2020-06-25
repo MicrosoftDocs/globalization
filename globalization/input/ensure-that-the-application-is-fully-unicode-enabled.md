@@ -1,6 +1,5 @@
 ---
 title: Ensure that the Application is fully Unicode enabled
-description: 
 ms.assetid: 496a1b05-4988-4661-b358-cc492fd29584
 ms.date: 04/21/2017
 ---
