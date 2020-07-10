@@ -1,6 +1,5 @@
 ---
 title: When Variables Are Necessary, Use Unique Names
-description: 
 ms.assetid: 889f8577-b7a3-42f1-8c2f-07f8b60f6078
 ms.date: 06/28/2016
 ---

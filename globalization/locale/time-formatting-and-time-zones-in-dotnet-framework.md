@@ -1,6 +1,5 @@
 ---
 title: Time Formatting and Time Zones in .NET Framework
-description: 
 ms.assetid: fa7e723a-f23a-454c-9312-519145d55e96
 ms.date: 03/16/2016
 ---
@@ -14,7 +13,7 @@ Methods and properties in the *DateTime* structure always use the local time zon
 
 Use the *DateTime.ToUniversalTime* method to convert a local *DateTime* to its UTC equivalent. To parse a date/time string and convert it to a UTC DateTime, use the *DateTimeStyles* enumeration *AdjustToUniversal* value with either the *DateTime.Parse* or *DateTime.ParseExact* method. These *DateTime* manipulations are illustrated in the following code example. This example creates a *DateTime* for the local time and then converts it to the UTC equivalent *DateTime*. Both types are converted to strings and written to the console. Notice that the strings differ by the UTC offset between the local time zone and UTC. (For more information on the UTC offset for various time zones, see the [TimeZone.GetUtcOffset](/dotnet/api/system.timezone.getutcoffset) method.) These strings are converted back to *DateTime* types using the *DateTime.ParseExact* method. To capture the time-zone information stored in *utcdt*, the *AdjustToUniversal* value must be specified as a parameter to the *DateTime.ParseExact* method.
 
-```C#
+```csharp
 using System;
 using System.Globalization;
 using System.Threading;

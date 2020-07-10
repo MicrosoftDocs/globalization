@@ -1,6 +1,5 @@
 ---
 title: Keyboards, Other Input Methods, and Text Predication
-description: 
 ms.assetid: b7be46c4-99d5-41f0-9902-b26cabc1d2bf
 ms.date: 04/21/2017
 ---

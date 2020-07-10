@@ -1,6 +1,5 @@
 ---
 title: Text Justification
-description: 
 ms.assetid: 4e216e20-9ba1-4402-9056-01ddf5fcd12c
 ms.date: 04/21/2017
 ---
