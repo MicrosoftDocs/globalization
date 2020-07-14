@@ -1,59 +1,46 @@
 - name: Globalization Overview
   href: index.yml
   items:
-  - name: Creating translated deliverables
+  - name: Delivering products globally
     items:
-    - name: Transcreation
-    - name: Games
-    - name: Videos and multimedia
-      items:
-      - name: Captioning
-      - name: Recreation
-  - name: International products
+    - name: Developing global products using agile methodologies
+    - name: Roles and responsibilities
+    - name: Exit criteria
+    - name: Simultaneous shipping
+    - name: Continuous deliveries
+  - name: Text support
     items:
-    - name: Legal requirements
-    - name: Phone number formats
-    - name: Mailing address formats
-    - name: Measurement units
-    - name: Default page sizes
-    - name: Payment methods
-    - name: Dictionaries and spell checkers
-    - name: Images, icons, and colors
-  - name: Locales and Encodings
-    items:
-    - name: Locales
-      items:
-      - name: ISO names
-      - name: LCID
-      - name: Fallback behaviors
-      - name: Scope
-    - name: Text encoding
+    - name: The Unicode standard
+    - name: Character and data encoding
       items:
       - name: Code pages and BOM
       - name: Surrogate pairs
       - name: Public use area
       - name: Maps and transforms
-      - name: Storing and writing text
-  - name: Locale-aware functionality
-    items:
-    - name: Number format
-      items:
-      - name: Currency format
-    - name: Date/Time format
+    - name: Storing and writing text
+    - name: Character exlusion
     - name: String normalization
     - name: Parsing input
     - name: Case mapping
-    - name: Punctuation and separators
-    - name: Collation and sorting
+    - name: User input
       items:
-      - name: Stemming
-    - name: Searching
+      - name: Hardware and software keyboards
+      - name: Keyboard layouts
+      - name: IMEs
+        items:
+        - name: Japanese
+        - name: Chinese
+        - name: Korean
+        - name: others
+      - name: Hotkeys and accelerators
+    - name: Domain names and email addresses
       items:
-      - name: Stemming
-    - name: Pluralization
-    - name: Text-to-speech
-  - name: Internationalization and strings
+      - name: Internationalized domain names (IDN)
+      - name: Email address internationalization (EAI)
+    - name: File systems
+  - name: String authoring for global reach
     items:
+    - name: Pluralization
     - name: Message formatting
       items:
       - name: Externalization
@@ -61,7 +48,49 @@
       - name: Concatenation
       - name: Variables
     - name: String repurposing
-    - name: Loc commenting
+    - name: Contextual metadata
+  - name: Language and location
+    items:
+    - name: Locale
+      items:
+      - name: Locale model
+      - name: Standard locale representation
+      - name: Other locale representations
+      - name: Fallback behaviors
+    - name: System and user settings
+      items:
+      - name: Identifying user preferences
+      - name: Language settings
+        items:
+        - name: Interface language
+        - name: Speech settings
+        - name: Dictionaries and spelling
+        - name: Collation and sorting
+    - name: Regional settings and formats
+      items:
+      - name: Industry standard for regional formats (CLDR)
+      - name: Numbers
+        items:
+        - name: Numeric systems
+        - name: Number formats
+          items:
+          - name: Currency formats
+      - name: Date and time
+        items:
+        - name: Calendars
+        - name: Time Zones
+        - name: Date and time formats
+      - name: Mailing address formats
+      - name: Telephone formats
+      - name: Units of measurement
+      - name: Default page sizes
+      - name: Punctuation and separators
+    - name: Payment methods
+    - name: Search
+      items:
+      - name: Stemming
+      - name: Word prediction
+    - name: Local laws and regulations
   - name: User Interface
     items:
     - name: Text
@@ -70,37 +99,50 @@
       - name: Fonts
         items:
         - name: Font technology
-        - name: Multi-script fonts
-        - name: Platform-specific issues
           items:
-          - name: Unity
-      - name: Ruby text
-      - name: Bidirectional text
-      - name: Text layout
-        items:
-        - name: Boundary analysis
-        - name: Typesetting
-        - name: Pagination
-        - name: Justification
-    - name: Layout
+          - name: OpenType
+          - name: The Universal Shaping Engine
+          - name: Multi-script fonts
+          - name: Platform-specific issues
+            items:
+            - name: Unity
+        - name: Text layout
+          items:
+          - name: Bidirectional text
+          - name: Boundaries
+          - name: Typesetting
+          - name: Pagination
+          - name: Justification
+          - name: Ruby
+      - name: Text-to-speech
+    - name: Interface Layout
       items:
       - name: Adaptive UI
-  - name: User input
+      - name: Mirroring
+    - name: Images, icons, and colors
+  - name: Validating internationalized products
     items:
-    - name: Hotkeys and accelerators
-    - name: Keyboard layouts
-    - name: IMEs
+    - name: Global test design
+    - name: Localizability testing
+    - name: Localization testing
       items:
-      - name: Japanese
-      - name: Chinese
-      - name: Korean
-      - name: others
-    - name: Excluded characters
+      - name: Linguistic validation
+      - name: In-context review
+    - name: Test case sample
+  - name: Creating translated deliverables
+    items:
+    - name: Terminology and translation memories
       items:
-      - name: URLs
-      - name: Email addresses
-      - name: File systems
-  - name: Language- and platform-specific functionality
+      - name: Microsoft Language Portal
+    - name: Software
+    - name: Documentation
+    - name: Games
+    - name: Videos and multimedia
+      items:
+      - name: Captioning
+      - name: Recreation
+    - name: Transcreation
+  - name: Platform-specific APIs
     items:
     - name: Globalization APIs
       items:
@@ -135,14 +177,28 @@
       - name: Date/Time
       - name: Number formatting
       - name: etc.
-  - name: Testing
-  - name: Internationalization, localization, and development
+  - name: Tools
     items:
-    - name: Agile
-  - name: Localization tools (internal-only)
-    items:
-    - name: Fabric/TDBuild
-    - name: iCMS
+    - name: Globalization tools
+      items:
+      - name: Microsoft Keyboard layout creator
+        href: https://www.microsoft.com/en-us/download/details.aspx?id=22339
+      - name: Windows Locale Builder Tool
+        href: https://www.microsoft.com/en-us/download/details.aspx?id=41158
+    - name: Localization & translation tools
+      items:
+      - name: Dynamics 365 Translation Service
+        href: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview
+      - name: Multilingual App Toolkit Editor
+        href: https://developer.microsoft.com/en-us/windows/downloads/multilingual-app-toolkit/
+      - name: Multilingual App Toolkit – Visual Studio Extension
+        href: https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308
+      - name: Microsoft Translator
+        href: https://www.bing.com/translator/
+      - name: Microsoft Custom Translator
+        href: https://hub.microsofttranslator.com/
+      - name: Bing Translator Widget
+        href: https://www.bing.com/webmaster/tools/translator/
   - name: References
     items:
     - name: Glossary
@@ -152,6 +208,10 @@
       href: http://cldr.unicode.org/
     - name: International Components for Unicode (ICU)
       href: http://site.icu-project.org/
+    - name: Microsoft Terminology Glossary
+      href: https://www.microsoft.com/en-us/Language/Terminology
+    - name: Microsoft Localization Style Guides
+      href: https://www.microsoft.com/en-us/language/StyleGuides
 
   - name: Stuff to keep
     items:
