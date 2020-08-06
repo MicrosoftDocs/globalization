@@ -216,7 +216,7 @@ In any case do not use forms such as "<span lang="ru">файл(-a, -ов)</span>
 
 _English_: %1 files are detected.
 
-_Our style_: <span lang="ru">Our style: Найдено файлов: %1.</span>
+_Our style_: <span lang="ru">Найдено файлов: %1.</span>
 
 _Not our style_: <span lang="ru">Найдено %1 файл(-a, -ов).</span>
 
