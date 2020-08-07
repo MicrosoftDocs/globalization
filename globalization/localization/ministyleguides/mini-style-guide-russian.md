@@ -216,7 +216,7 @@ In any case do not use forms such as "<span lang="ru">файл(-a, -ов)</span>
 
 _English_: %1 files are detected.
 
-_Our style_: <span lang="ru">Our style: Найдено файлов: %1.</span>
+_Our style_: <span lang="ru">Найдено файлов: %1.</span>
 
 _Not our style_: <span lang="ru">Найдено %1 файл(-a, -ов).</span>
 
@@ -238,7 +238,7 @@ _Not our style_: <span lang="ru">Нажимайте кнопку %1 секунд
 
 ## 10+. Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and [full Russian Style Guide](http://www.microsoft.com/en-us/language) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and [full Russian Style Guide](https://www.microsoft.com/en-us/language) and the following references:
 1. <span lang="ru">Правила русской орфографии и пунктуации. Полный академический справочник. — М.: Эксмо, 2009.
 2. Толковый словарь русского языка. Например, Ожегов С. И., Шведова Н. Ю. Толковый словарь русского языка / Российская академия наук. Институт русского языка им. В. В. Виноградова. — М.: ООО «ИТИ ТЕХНОЛОГИИ», 2003.
 3. Орфографический словарь. Например, Русский орфографический словарь / Российская академия наук. Институт русского языка им. В. В. Виноградова / О. Е. Иванова, В. В. Лопатин (отв. ред.), И. В. Нечаева, Л. К. Чельцова. — Москва, 2005.
