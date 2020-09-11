@@ -7,12 +7,10 @@ ms.date: 03/17/2016
 
 On this page, you'll find tools and resources you can download in support of your efforts to globalize your application.
 
-## [Microsoft keyboard layout creator](http://go.microsoft.com/fwlink/?LinkId=82315&clcid=0x409)
+## [Microsoft keyboard layout creator](https://go.microsoft.com/fwlink/?LinkId=82315&clcid=0x409)
 
 Download this tool to extend the international functionality of Windows-based systems by creating or modifying keyboard layouts. You can even use this tool to package layouts for delivery and installation.
 
 ## [Multilingual app toolkit](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit)
 
 The Multilingual App Toolkit (MAT) works with Visual Studio to streamline your localization workflow for Windows Store, Windows Phone and desktop apps. The toolkit helps you localize your apps with localization file management, translation support, and editing tools.
-
-

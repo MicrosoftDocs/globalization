@@ -187,4 +187,4 @@ If you are in doubt, consult the full Swedish Style Guide and the following refe
 3.	Rikstermbanken. Swedish terminology collection. http://www.rikstermbanken.se/
 4.	Språkrådet. General information on how to write correctly in the Swedish language. http://www.sprakradet.se/
 
-Another helpful reference is the [Windows User Experience Interaction Guidelines](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511258.aspx), which includes information about the user interface of Microsoft products.
+Another helpful reference is the [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/en-us/library/windows/desktop/aa511258.aspx), which includes information about the user interface of Microsoft products.

@@ -6,7 +6,7 @@ ms.date: 03/19/2019
 
 # Top 10 Tips for Microsoft Translation into Portuguese (Brazil)
 
-Are you helping with translation into Portuguese (Brazil) but don't have time to study all aspects of the [Microsoft Portuguese (Brazil) Style Guide](http://download.microsoft.com/download/1/d/1/1d15d7b2-8323-4f56-b863-7acdfe4fb4cf/por-bra-StyleGuide.pdf)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Portuguese (Brazil) but don't have time to study all aspects of the [Microsoft Portuguese (Brazil) Style Guide](https://download.microsoft.com/download/1/d/1/1d15d7b2-8323-4f56-b863-7acdfe4fb4cf/por-bra-StyleGuide.pdf)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Readability and fluency
 
@@ -209,7 +209,7 @@ _Our style_: <span lang="pt-BR">Sincronizar seus emails, contatos, calendários 
 
 ## 10.	Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Portuguese (Brazil) Style Guide](http://download.microsoft.com/download/1/d/1/1d15d7b2-8323-4f56-b863-7acdfe4fb4cf/por-bra-StyleGuide.pdf), the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides), and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Portuguese (Brazil) Style Guide](https://download.microsoft.com/download/1/d/1/1d15d7b2-8323-4f56-b863-7acdfe4fb4cf/por-bra-StyleGuide.pdf), the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides), and the following references:
 1.	Academia Brasileira de Letras. Vocabulário Ortográfico da Língua Portuguesa, 5ª edição, 2009
 2.	Cunha, Celso e Cintra, Lindley. Nova Gramática do Português Contemporâneo. Rio de Janeiro: Editora L&PM, 2ª edição, 2009
 3.	Ferreira, Aurélio Buarque de Holanda. Novo Dicionário da Língua Portuguesa.Rio de Janeiro: Editora Positivo; 5ª edição, 2010

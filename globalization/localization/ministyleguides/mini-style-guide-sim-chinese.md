@@ -12,7 +12,7 @@ Are you helping with translation into Simplfied Chinese, but don't have time to 
 
 It is important to check the existing reference materials when you are working on Microsoft projects, especially when you have questions. This includes terminology resources, the style guide, source materials, and the instructions given to you for a specific project. Below are some recommended reference materials.
  -	Microsoft Language Excellence [product-specific glossaries](https://usjs.partners.extranet.microsoft.com/us20/mils/Reference/zho-chn/Terminology/product-specific) on the JetStream Server
- -	[MSDN](http://msdn.microsoft.com/zh-cn/)
+ -	[MSDN](https://msdn.microsoft.com/zh-cn/)
  -	[TechNet](http://technet.microsoft.com/zh-cn/default.aspx)
 
 ## 2.	Keep the audience in mind

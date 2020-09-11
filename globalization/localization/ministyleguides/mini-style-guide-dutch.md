@@ -238,7 +238,7 @@ _Our style_: <span lang="nl">De bewerking is voltooid.</span>
 ## 10.	 Terminology and reference material
 
   - The consistent use of Microsoft-approved terminology in all localized products is one of the most reliable ways to achieve the required quality of the localized product.
-  - A helpful reference is the [Windows User Experience Interaction Guidelines](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511258.aspx).
+  - A helpful reference is the [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/en-us/library/windows/desktop/aa511258.aspx).
   - For more information about the points in this document, refer to the [full Dutch Style Guide](https://www.microsoft.com/en-us/language/StyleGuides?rtc=1).
   - For linguistic-specific matters, refer to:
     - Woordenlijst Nederlandse taal ('Groene boekje') (2005). Den Haag: SDU Uitgevers.

@@ -16,7 +16,7 @@ Basic software security requirements include protecting software against:
 - Crashes (denial of service)
 - Misbehavior (information disclosure and elevation of privileges)
 
-The [Security Developer Center](http://msdn2.microsoft.com/security/) explains these concepts in detail. This article presents some of the commonly known problems found in international software products and raises awareness of potential problems that may impact security when globalizing and localizing software products.
+The [Security Developer Center](https://msdn2.microsoft.com/security/) explains these concepts in detail. This article presents some of the commonly known problems found in international software products and raises awareness of potential problems that may impact security when globalizing and localizing software products.
 
 ## A Defensive Strategy
 
@@ -52,5 +52,3 @@ The guidelines below are provided to help the developer and tester through poten
 | **Date Verification** | Use of formatted date for verification can fail with certain Locales. | Algorithm that verifies expiration dates and time span lengths can be broken by changing the language settings when the algorithm uses a formatted date. These problems are commonly seen on the Web. <br />May not be an issue with a certificate-based security model because they verify against the DATE data type. |
 | **Risky APIs** | Dangerous APIs that are very common | An internet search will reveal the most recently document risky APIs. |
 | **Government Requirements** | | Local governments may have their own specific requirements, such as the French Encryption Declaration, you must be aware of these regulations. |
-
-

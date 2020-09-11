@@ -142,8 +142,8 @@ _Not our style_: <span lang="it">Sarei contento se vieni alla mia festa</span>
 
 ## 10+ Use the right reference material
 
-These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is possible, consult the other topics in the [style guide](http://download.microsoft.com/download/f/3/8/f389007c-663a-4774-96e0-dcbaf19ac436/it-it-StyleGuide.pdf) for guidance.
+These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is possible, consult the other topics in the [style guide](https://download.microsoft.com/download/f/3/8/f389007c-663a-4774-96e0-dcbaf19ac436/it-it-StyleGuide.pdf) for guidance.
  - [Microsoft Language Portal](http://www.microsoft.com/language/it-it/default.aspx)
- - [MSDN](http://msdn.microsoft.com/it-it/defaulthttp://technet.microsoft.com/it-it/default)
+ - [MSDN](https://msdn.microsoft.com/it-it/defaulthttp://technet.microsoft.com/it-it/default)
  - [TechNet](http://technet.microsoft.com/it-it/default)
  - [Microsoft Glossaries](http://www.microsoft.com/Language/it-it/Search.aspx)

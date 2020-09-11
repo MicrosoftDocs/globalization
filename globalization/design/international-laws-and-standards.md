@@ -10,7 +10,7 @@ The legal requirements for your software will vary by market and business. If yo
 
 ## **Security**
 
-The [Security Guidelines for International](security-guidelines.md) outlines things to consider at the intersection of internationalization and security. For information on security specifically, reference the [Security Developer Center](http://msdn2.microsoft.com/security/).
+The [Security Guidelines for International](security-guidelines.md) outlines things to consider at the intersection of internationalization and security. For information on security specifically, reference the [Security Developer Center](https://msdn2.microsoft.com/security/).
 
 ## **Privacy and International Law**
 
@@ -45,5 +45,3 @@ For any product that supplies a legal document, such as an End-User License Agre
 ## Laws or Standards Particular to Your Program
 
 For applications that target specific functionality—such as taxes or health care—keep in mind that different laws and standards apply and your program may be liable to adhere to those laws. You may need to conform to the US’s [Health Insurance Portability & Accountability Act (HIPAA)](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), the European Union’s (EU’s) [Data Protection laws](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules_en), such as GDPR, or Canada’s [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act) depending on the markets you are targeting.
-
-

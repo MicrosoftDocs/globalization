@@ -173,7 +173,7 @@ There are some cases where product names are translated. Such examples are packa
 These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is allowed in these sources, look for the recommended one in other sections of the style guide.
   - Revised Mandarin Chinese Dictionary: http://dict.revised.moe.edu.tw
   - Dictionary of Chinese Idioms: http://dict.idioms.moe.edu.tw
-  - MSDN: http://msdn.microsoft.com/zh-tw/default.aspx
+  - MSDN: https://msdn.microsoft.com/zh-tw/default.aspx
   - TechNet: http://technet.microsoft.com/zh-tw/default.aspx
   - Academic Glossaries by the National Academy for Educational Research: http://terms.naer.edu.tw/
   - Online Reference Materials by the National Languages Committee, Ministry of Education, R.O.C:
