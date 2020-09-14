@@ -1,8 +1,11 @@
-
+---
+title: Localizability Overview
+description: There are many many complications in most software projects that make it hard to localize
+---
 
 # Localizability Overview
 
-If you think that after anapplication designed for a single-market has been tested (and possibly launched) it is then an easy matter to generate localized software by just translating a handful of UI-strings…think again!
+If you think that after an application designed for a single-market has been tested (and possibly launched) it is then an easy matter to generate localized software by just translating a handful of UI-strings…think again!
 
 There are many many complications in most software projects that make it hard to localize:
 
@@ -29,5 +32,3 @@ The best way to move forward is to integrate "thinking about localization" in th
 The proposed framework exists of two pieces, the first part is the clear separation of resources in "functionality related resources" and "UI related resources," together with solving some of the current limitations and dependencies in the software. This we call the "language neutral product" (for more information, see [Isolating Localizable Resources](isolate-localizable-resources.md)).
 
 The second part of the proposed framework is pseudo localization. Pseudo localization is a simulated localized product. Every string gets replaced by a semi-random pseudo localized string. The product can then be tested for its localizability.
-
-

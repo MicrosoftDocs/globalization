@@ -1,4 +1,7 @@
-
+---
+title: Mirroring awareness
+description: For right to left (RTL) languages, not only does the text alignment and text reading order go from right to left, but also the UI elements layout should follow this natural direction of going from right to left.
+---
 
 # Mirroring Awareness
 

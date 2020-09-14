@@ -1,5 +1,6 @@
 ---
 title: Number Formatting in .NET Framework
+description: The *NumberFormatInfo* class defines how currency, decimal separators, and other numeric symbols are formatted and displayed based on culture.
 ms.assetid: 81bc7141-92f0-432a-a241-eebfda454fd2
 ms.date: 03/16/2016
 ---
@@ -55,5 +56,3 @@ kr100,00
 ```
 
 As when dealing with numbers, formatting conventions for addresses vary widely from one country to another. There are also discrepancies in the actual terms used when representing addresses that you will need to handle.
-
-

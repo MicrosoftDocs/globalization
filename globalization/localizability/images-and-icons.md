@@ -1,4 +1,7 @@
-
+---
+title: Using images and icons
+description: Since the beginning of graphical user interfaces (GUIs), images and icons have been a major part of well-designed architecture.
+---
 
 # Using Images and Icons
 

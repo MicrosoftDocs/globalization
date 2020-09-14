@@ -6,7 +6,7 @@ ms.date: 03/04/2019
 
 # Top 10 Tips for Microsoft Translation into Traditional Chinese
 
-Are you helping with translation into Traditional Chinese, but don't have time to study all aspects of the Traditional Chinese Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Traditional Chinese, but don't have time to study all aspects of the Traditional Chinese Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Sort order
 
@@ -152,7 +152,7 @@ The following table lists the types of items that need to be enclosed [ ] and th
 |Window (not capitalized)|N|... in the document window ...|<span lang="zh-Hant">在文件視窗中</span>|
 |File|N|Open the Letter to Joe file|<span lang="zh-Hant">打開檔案 Letter to Joe - 或 - 打開「給喬的信」這個檔案</span>|
 |Location|N|C:\folder1\file.ext|C:\folder1\file.ext|
-|URL|N|Please link to http://www.microsoft.com/taiwan/ for more information.|<span lang="zh-Hant">如需詳細資訊，請連結至 http://www.microsoft.com/taiwan/</span>|
+|URL|N|Please link to https://www.microsoft.com/taiwan/ for more information.|<span lang="zh-Hant">如需詳細資訊，請連結至 https://www.microsoft.com/taiwan/</span>|
 
 ## 6.	Spacing
 Spacing is an important consideration when localizing strings into Traditional Chinese.
@@ -173,8 +173,6 @@ There are some cases where product names are translated. Such examples are packa
 These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is allowed in these sources, look for the recommended one in other sections of the style guide.
   - Revised Mandarin Chinese Dictionary: http://dict.revised.moe.edu.tw
   - Dictionary of Chinese Idioms: http://dict.idioms.moe.edu.tw
-  - MSDN: http://msdn.microsoft.com/zh-tw/default.aspx
-  - TechNet: http://technet.microsoft.com/zh-tw/default.aspx
   - Academic Glossaries by the National Academy for Educational Research: http://terms.naer.edu.tw/
   - Online Reference Materials by the National Languages Committee, Ministry of Education, R.O.C:
     - Revised Handbook of Punctuation: http://english.moe.gov.tw/ct.asp?xItem=11428&ctNode=1873&mp=12 (For reference only; the rules described in the style guide have higher priority if there is discrepancy.)

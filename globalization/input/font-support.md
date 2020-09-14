@@ -1,5 +1,6 @@
 ---
 title: Script and Font Support in Windows
+description: Since before Windows 2000, text-display support for new scripts has been added in each major release of Windows. This article describes changes made in each major release.
 author: pallep
 ---
 
@@ -66,7 +67,7 @@ In Windows 8 and Windows 8.1, private-use-characters in the Segoe UI Symbol fo
 
 An important development in Windows 10 is the Universal Windows Platform (UWP): a converged app platform allowing a developer to create a single app that can run on all Windows devices. Windows fonts are one aspect of this convergence: Windows 10 introduces a recommended UWP font set that is common across all editions that support UWP, including Desktop, Server, Mobile and Xbox.
 
-For information regarding which fonts are included in the recommended Microsoft font set, complete details are provided in [Guidelines for fonts](https://docs.microsoft.com/en-us/windows/desktop/uxguide/vis-fonts). One important point to note is that the recommended font set does not include all of the weights for certain font families. In particular, due to the large size of East Asian fonts, only the regular weight of East Asian font families are included in the recommended font set.
+For information regarding which fonts are included in the recommended Microsoft font set, complete details are provided in [Guidelines for fonts](https://docs.microsoft.com/windows/desktop/uxguide/vis-fonts). One important point to note is that the recommended font set does not include all of the weights for certain font families. In particular, due to the large size of East Asian fonts, only the regular weight of East Asian font families are included in the recommended font set.
 
 A number of additional fonts are available for Desktop and Server, including all other fonts from previous releases. However, not all of these are pre-installed by default in all images. In order to make disk usage and font choices more relevant to users according to the languages that they use, a number of fonts have been moved into optional, on-demand packages. These packages are designed around the different scripts that fonts are primarily intended to support, and most are installed automatically by Windows Update when the associated languages are enabled in language settings (for example, by enabling a keyboard).
 
@@ -116,7 +117,7 @@ Balinese, Batak, Brahmi, Buginese, Buhid, Chakma, Cham, Duployan, Egyptian Hiero
 
 Other scripts in Unicode 7.0 either are supported in other shaping engines or do not require complex script handling.
 
-For more background on the Universal Shaping Engine, see [Creating and supporting OpenType fonts for the Universal Shaping Engine](https://docs.microsoft.com/en-us/typography/script-development/use) .
+For more background on the Universal Shaping Engine, see [Creating and supporting OpenType fonts for the Universal Shaping Engine](https://docs.microsoft.com/typography/script-development/use) .
 
 ## Windows 8.1<a name="_Windows_8.1"></a>
 

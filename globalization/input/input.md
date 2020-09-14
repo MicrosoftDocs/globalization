@@ -1,4 +1,7 @@
-
+---
+title: Input, Output, and Display
+description: The input, output, and display of data can be complicated when the user needs to enter/receive data in different languages.
+---
 
 # Input, Output, and Display
 

@@ -1,4 +1,7 @@
-
+---
+title: Isolate localizable resources
+description: Once you know what you are looking for, it is easy to identify source code that isn't properly set up for localization.
+---
 
 # Isolate Localizable Resources
 
@@ -72,5 +75,3 @@ Another good practice when working with resources is to not change resource iden
 This action is not without peril. Suppose that during an update process you decide that you need to change a resource identifier (leaving the text in the resource unchanged). By doing this, you have now made your translated resource repository unusable for your update because your code expects the text to be located somewhere else in the repository. Consequently, if you do nothing, you might get the wrong text. To avoid this, you would have to go in and change your translated resource by at least moving the old translation to the new location or by doing the translation all over again. The latter is contrary to the guiding principle of keeping required translations to a minimum.
 
 When dealing with resource repositories, you will save a lot of money if you remove unused strings and dialog boxes before having the resources localized. Translators and localizers have no way of knowing which of your strings are used and which are not. Thus all they do is what you tell them (such as to translate a particular resource file). For example, suppose one out of every 50 strings in your resources is not used. Referring back to the 25,000-string project, that means there are 500 strings in the resources that do not need to be translated. If you have 20 languages costing 42 cents per string to localize, those 500 strings end up using $4,200 of your budget-money that could have been allocated elsewhere.
-
-

@@ -1,5 +1,6 @@
 ---
 title: Currency Formatting in Win32
+description: Win32 NLS APIs can help you display currency data in a way that's locale-aware. 
 ms.assetid: ec54ea8e-7d6a-49a5-968f-347c463ad0f1
 ms.date: 03/16/2016
 ---
@@ -48,5 +49,3 @@ curformat.lpcurrencysymbol = text(:;"&gt;GetCurrencyFormat(LOCALE\_USER\_DEFAULT
 ```
 
 By following the code, the result of a currency symbol formatting for the Danish locale (with kr as default currency symbol) would be: € 123,40
-
-

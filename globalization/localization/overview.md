@@ -1,4 +1,7 @@
-
+---
+title: Localization introduction
+description: The final localized version of the original product should look and feel as if it had been designed in the user's home country.
+---
 
 # Localization Introduction
 
@@ -9,5 +12,3 @@ The features of a good localization tool include the ability to change dialog fo
 Establish clear guidelines for ensuring effective localization, for scheduling international releases, and for localization outsourcing. The initial product speci fications should consider localization as part of the product cycle. Delaying localization to the end of the cycle can delay the shipping date because of any unexpected localization problems that require code changes. The product team and the international marketing team should decide what the delta between the shipping dates for the original product and the localized product should be. If you are outsourcing localization, provide vendors with a localization kit.
 
 Content localization involves printed documentation, online content, and Help files. In contrast with software localization, content localization can usually be translated as one big piece, without the localizer ever having to wonder about strings or what their meaning is. The content should be written in a way that is compatible with localization tools. Additionally, the content's text needs to be isolated from the layout and structure tags. A localization strategy that is well planned and executed will help you produce a successful localization project.
-
-

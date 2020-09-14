@@ -1,4 +1,7 @@
-
+---
+title: Establishing Localization Guidelines
+description: High localization costs are incurred if the localization process is not run effectively.
+---
 
 # Establishing Localization Guidelines
 
