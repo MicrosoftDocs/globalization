@@ -1,5 +1,6 @@
 ---
 title: Overlay Text Properties
+description: The remaining category of advanced text properties relates to text overlay. These properties apply not just to the glyph, but to an entire text string.
 ms.assetid: b655122c-41ec-4408-bdd2-f4965044b5a2
 ms.date: 04/21/2017
 ---

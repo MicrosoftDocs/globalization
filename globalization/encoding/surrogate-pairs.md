@@ -1,4 +1,7 @@
-
+---
+title: Surrogate Pairs and Variation Selectors
+description: With the Unicode 16-bit encoding system, over 65,000 characters can be encoded 
+---
 
 # Surrogate Pairs and Variation Selectors
 

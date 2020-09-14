@@ -1,5 +1,6 @@
 ---
 title: Handling calendars in .NET Framework
+description: Similar to the Win32 paradigm - the .NET Framework handles dates in the Gregorian calendar by using data structures.
 ms.assetid: 52135192-e034-47d3-8c22-4f988b8ffdc8
 ms.date: 03/16/2016
 ---

@@ -64,12 +64,9 @@ The user can define preferred number-formatting parameters by making selections 
 
 **Figure 1:** Selecting the preferred number formatting.
 
-In addition to in-line numbers, there may be additional systems used for [numbered lists](https://support.office.com/en-us/article/Create-a-bulleted-or-numbered-list-9ff81241-58a8-4d88-8d8c-acab3006a23e). Examples include Roman numerals for many locales and Iroha for Japan.
+In addition to in-line numbers, there may be additional systems used for [numbered lists](https://support.office.com/article/Create-a-bulleted-or-numbered-list-9ff81241-58a8-4d88-8d8c-acab3006a23e). Examples include Roman numerals for many locales and Iroha for Japan.
 
 ### See more info in the below links:
 
  - [Number Formatting in Win32](number-formatting-in-win32.md)
  - [Number Formatting in .NET Framework](number-formatting-in-dotnet-framework.md)
-
-
-

@@ -1,4 +1,7 @@
-
+---
+title: Prioritizing componets for globalization testing
+description: Some components are more likely to have globalization problems than others, so part of globalizing the test means adapting your testing practices accordingly.
+---
 
 # Prioritizing Components for Globalization Testing
 
@@ -10,5 +13,3 @@ Some components are more likely to have globalization problems than others, so p
 -   Components that have had many globalization problems in the past.
 
 After determining which components are more likely to have serious globalization errors, choose a viable test platform in accordance with your particular circumstances.
-
-

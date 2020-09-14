@@ -79,7 +79,7 @@ _Not our style_: <span lang="hu">Kérjen engedélyt szüleitől a webhely megtek
 
 ## 5.	Keep product names in English
 
-This is the general rule: trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. Here is a [list of Microsoft trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/en-us.aspx).
+This is the general rule: trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. Here is a [list of Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx).
 
 Decline product names—except for those that are marked with a trademark (™) symbol or registered trademark (®) symbol—wherever you can and it's appropriate (_Skype-ban_, _Lynckel_, _Office-t_). You can also decline the names of websites and web pages (for example, _office.com-ról_, _microsoft.com-ot_). 
 

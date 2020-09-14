@@ -1,5 +1,6 @@
 ---
 title: Keep Sentences in a Single String
+description: It is important to keep sentences in a single string.
 ms.assetid: 93063b70-eb84-40d7-b586-2c2fd9196613
 ms.date: 03/16/2016
 ---
@@ -29,5 +30,3 @@ Translated back into English, this sentence literally means:
 "the user -dis, who him/herself last in the dialog box"
 "Authentication" logged has."
 Keeping the sentences in single strings allows automated translation tools to help your translators be more precise, more productive, and thus allow more cost savings for you.
-
-

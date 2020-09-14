@@ -12,6 +12,6 @@ On this page, you'll find tools and resources you can download in support of you
 
 Download this tool to extend the international functionality of Windows-based systems by creating or modifying keyboard layouts. You can even use this tool to package layouts for delivery and installation.
 
-## [Multilingual app toolkit](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit)
+## [Multilingual app toolkit](https://developer.microsoft.com/windows/develop/multilingual-app-toolkit)
 
 The Multilingual App Toolkit (MAT) works with Visual Studio to streamline your localization workflow for Windows Store, Windows Phone and desktop apps. The toolkit helps you localize your apps with localization file management, translation support, and editing tools.

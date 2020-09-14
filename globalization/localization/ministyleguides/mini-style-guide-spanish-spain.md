@@ -55,7 +55,7 @@ The way of addressing the user is not uniform across Microsoft products for Span
 
 ## 3. Pay attention to application, product, and feature names
 
-Application or product names are often trademarked or may be trademarked in the future and are therefore rarely translated. Occasionally, feature names are trademarked, too (for example, IntelliSense). A [list of Microsoft trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference.
+Application or product names are often trademarked or may be trademarked in the future and are therefore rarely translated. Occasionally, feature names are trademarked, too (for example, IntelliSense). A [list of Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference.
 
 When a product name contains a preposition, the preposition is usually translated. Always consult the product team to find out if a name should be translated.
 

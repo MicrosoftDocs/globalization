@@ -1,5 +1,6 @@
 ---
 title: Browser Language Setting
+description: It is recommended to use one of the Unicode encodings, but if you are working with legacy software you may need to continue to use older code pages.
 ms.assetid: c2dd9e6d-6be7-4699-97ff-94cfe62fafff
 ---
 # Code Pages
@@ -19,5 +20,3 @@ In order to allow for the storage of different languages in the same data stream
 Please note that if still supporting Win95/98/ME applications, you will need to convert the Unicode code points back to Window codepages. This is because Win95/98/ME GDI is ANSI based. But this is made easy with the functions **WideChartoMultiByte** and **MultiByteToWideChar**. See "[Unicode and Character Sets](https://msdn.microsoft.com/library/dd374083.aspx)" on MSDN.
 
 For information about encodings in web pages, please see [**[MLang]**](https://msdn.microsoft.com/library/aa767865.aspx) on MSDN.
-
-

@@ -38,7 +38,7 @@ _Our style_: <span lang="de">Mitarbeiter in Service und Produktion</span>
 
 _Not our style_: <span lang="de">Firstline Worker</span>
 
-This is a rough rule: [Trademarked names](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/en-us.aspx) and the name "Microsoft Corporation" often remain in English, unless an approved German name for the trademark is available. Application, product, and sometimes even feature names may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](https://www.microsoft.com/language) or contact the moderator if there is any doubt.
+This is a rough rule: [Trademarked names](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx) and the name "Microsoft Corporation" often remain in English, unless an approved German name for the trademark is available. Application, product, and sometimes even feature names may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](https://www.microsoft.com/language) or contact the moderator if there is any doubt.
 
 **Example**
 
@@ -56,7 +56,7 @@ _Not our style_: <span lang="de">Windows Desktop Application Program</span>
 
 ## 3.	Follow the tone and style of the original English
 
-[Microsoft voice](https://docs.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human) targets a broad set of users from technology enthusiasts to casual computer users. Translating Microsoft's voice into German means choosing words and grammatical structures that reflect the Microsoft style: clear and friendly, concise without sounding robot-like. But it also means considering the needs of the audience (e.g., children vs. adults) and the intent of the text (e.g., entertaining, informative, instructional).
+[Microsoft voice](https://docs.microsoft.com/style-guide/brand-voice-above-all-simple-human) targets a broad set of users from technology enthusiasts to casual computer users. Translating Microsoft's voice into German means choosing words and grammatical structures that reflect the Microsoft style: clear and friendly, concise without sounding robot-like. But it also means considering the needs of the audience (e.g., children vs. adults) and the intent of the text (e.g., entertaining, informative, instructional).
 
 **Example**
 

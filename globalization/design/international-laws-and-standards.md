@@ -15,7 +15,7 @@ The [Security Guidelines for International](security-guidelines.md) outlines thi
 
 ## **Privacy and International Law**
 
-Privacy is an important consideration in many countries. The [Supplier Data Protection Requirements](https://www.microsoft.com/en-us/download/details.aspx?id=45016) provides a good introduction on how to approach privacy.
+Privacy is an important consideration in many countries. The [Supplier Data Protection Requirements](https://www.microsoft.com/download/details.aspx?id=45016) provides a good introduction on how to approach privacy.
 
 ## **Intellectual Property, Copyright, and Piracy**
 

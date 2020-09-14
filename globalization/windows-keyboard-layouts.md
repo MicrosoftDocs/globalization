@@ -1,6 +1,6 @@
 ﻿---
 title: Windows Keyboard Layouts
-description: 
+description: Choose a keyboard below to view its layouts.
 ms.assetid: 24ef3b64-cbb6-4e69-aa01-ed800bff4e47
 ms.date: 01/05/2017
 ---

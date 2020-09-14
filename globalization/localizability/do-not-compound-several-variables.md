@@ -1,5 +1,6 @@
 ---
 title: Do Not Compound Several Variables
+description: There are times that variables are necessary because you might not know what needs to go in the string until run time.
 ms.assetid: 3fe50767-ebe0-4411-afff-d07f7490bed4
 ms.date: 06/28/2016
 ---

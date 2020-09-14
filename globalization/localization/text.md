@@ -1,4 +1,7 @@
-
+---
+title: Text
+description: Text translation is the most important aspect of localizing the software UI.
+---
 
 # Text
 

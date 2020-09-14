@@ -1,4 +1,7 @@
-
+---
+title: Encoding Overview
+description: The complex programming methods required for working with mixed-byte encodings, the involved process of creating new code pages every time another language requires computer support, and the importance of mixing and sharing information in a variety of languages across different systems were some of the factors motivating the creators of the Unicode encoding standard.
+---
 
 # Encoding Overview
 
@@ -23,5 +26,3 @@ In contrast, there are unusual characters that have very specific semantic rules
  ![Example Glyphs](https://docs.microsoft.com/globalization/encoding/images/Example_Glyphs.png "Example Glyphs") 
 
 **Figure 1:** Precomposed and composite glyphs
-
-

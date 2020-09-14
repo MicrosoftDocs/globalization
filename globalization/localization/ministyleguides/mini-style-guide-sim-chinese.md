@@ -61,7 +61,7 @@ _Our style_: <span lang="zh-Hans">在早期版本的 PowerPoint（已安装）�
 
 ## 5.	Be careful with elements that should not be translated
 
-When working on Microsoft projects, be aware that some words should not be translated. Application and product names are often trademarked or may be trademarked in the future, so they are rarely translated. Occasionally, feature names are trademarked too. Trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. Therefore, before translating these elements, first make sure that they are translatable. Verify that the term is not on the [list of Microsoft trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/default.aspx) before translating.
+When working on Microsoft projects, be aware that some words should not be translated. Application and product names are often trademarked or may be trademarked in the future, so they are rarely translated. Occasionally, feature names are trademarked too. Trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. Therefore, before translating these elements, first make sure that they are translatable. Verify that the term is not on the [list of Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) before translating.
 
 ## 6.	Be consistent in your translation
 

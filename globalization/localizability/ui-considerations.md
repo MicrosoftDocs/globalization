@@ -1,4 +1,7 @@
-
+---
+title: UI Considerations for Localization
+description: You need to know how to design your UI so that the localized content does not break the look and feel of your program.
+---
 
 # UI Considerations for Localization
 

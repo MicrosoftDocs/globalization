@@ -192,7 +192,7 @@ _Examples of product names that should not be declined_
 
 ## 10.	Reference materials
 
-There are plenty of other sources that can help you deliver the best result. You can also find more information about Microsoft writing style in general in the [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/whats-new). Other sources, apart from those already mentioned, include:
+There are plenty of other sources that can help you deliver the best result. You can also find more information about Microsoft writing style in general in the [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welcome/whats-new). Other sources, apart from those already mentioned, include:
 
 1.	http://prirucka.ujc.cas.cz/
 2.	https://www.korpus.cz/
