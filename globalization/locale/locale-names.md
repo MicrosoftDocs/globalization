@@ -1,4 +1,7 @@
-
+---
+title: Locale Names and LCID Deprecation
+description: For those developers still using LCIDs, it is recommended to move to local names as they are more robust than LCIDs and can support many more markets.
+---
 
 # Locale Names and LCID Deprecation
 
@@ -26,4 +29,3 @@ For example, LCID for English (US) (en-US) is 1033 which in binary is
 +-------------|----|------------------+
    Reserved   Sort id  Language id      
 ```
-

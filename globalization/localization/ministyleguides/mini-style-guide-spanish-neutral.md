@@ -3,7 +3,7 @@ title: Spanish (Neutral) Localization Style Guide
 description: Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the Spanish (Neutral) Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
 ms.author: pallep
 ms.date: 07/16/2019
-ms.prod: non-product-secific
+ms.prod: non-product-specific
 ---
 
 # Top 10 Tips for Microsoft Translation into Spanish (Neutral)
