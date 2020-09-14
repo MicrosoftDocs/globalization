@@ -1,6 +1,6 @@
 ---
 title: Page or Text Alignment
-description: When creating a locale–aware application, you'll need to consider handling of linguistic nuances.
+description: In typesetting and page layout, alignment is the setting of text flow or image placement relative to a page, column (measure), table cell or tab. 
 ms.assetid: 6b1de8ff-d50c-4b36-bd97-e3e7eda36406
 ms.date: 05/01/2017
 ---

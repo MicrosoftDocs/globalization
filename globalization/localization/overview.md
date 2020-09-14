@@ -1,6 +1,6 @@
 ---
 title: Localization introduction
-description: Localization of a product requires that the product be adapted to both the language and the culture of a particular market.
+description: The final localized version of the original product should look and feel as if it had been designed in the user's home country.
 ---
 
 # Localization Introduction
