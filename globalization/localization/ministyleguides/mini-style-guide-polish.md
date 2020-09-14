@@ -5,7 +5,7 @@ ms.date: 04/18/2019
 ---
 # Top 10 Tips for Microsoft Translation into Polish
 
-Are you helping with translation into Polish, but don't have time to study all aspects of the [full Polish Style Guide](http://download.microsoft.com/download/3/e/6/3e688569-1e3f-48a4-a33c-07e6daaa57b4/pol-pol-StyleGuide.pdf)? Here are 10 of the most important aspects to keep in mind.
+Are you helping with translation into Polish, but don't have time to study all aspects of the [full Polish Style Guide](https://download.microsoft.com/download/3/e/6/3e688569-1e3f-48a4-a33c-07e6daaa57b4/pol-pol-StyleGuide.pdf)? Here are 10 of the most important aspects to keep in mind.
 
 ## 1.	Flexibility
 
@@ -34,9 +34,9 @@ _Not our style_: <span lang="pl">Użyj tej funkcji do osiągnięcia swoich celó
 
 ## 3.	Terminology
 
-Use terminology from the [Microsoft Language Portal](https://www.microsoft.com/en-us/language) where applicable, for example for key terms, technical terms, and product names.
+Use terminology from the [Microsoft Language Portal](https://www.microsoft.com/Language) where applicable, for example for key terms, technical terms, and product names.
 
-Product and application names are often trademarked or may be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names are trademarked, too. Before translating any application, product, or feature name, verify that it's in fact translatable and not protected in any way. That information can be obtained from the [Microsoft trademarks list](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/en-us.aspx).
+Product and application names are often trademarked or may be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names are trademarked, too. Before translating any application, product, or feature name, verify that it's in fact translatable and not protected in any way. That information can be obtained from the [Microsoft trademarks list](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx).
 
 ## 4.	Capitalization
 

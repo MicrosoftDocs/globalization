@@ -6,14 +6,12 @@ ms.date: 06/24/2019
 
 # Top 10 Tips for Microsoft Translation into Simplfied Chinese
 
-Are you helping with translation into Simplfied Chinese, but don't have time to study all aspects of the Simplfied Chinese Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Simplfied Chinese, but don't have time to study all aspects of the Simplfied Chinese Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Check the provided reference materials
 
 It is important to check the existing reference materials when you are working on Microsoft projects, especially when you have questions. This includes terminology resources, the style guide, source materials, and the instructions given to you for a specific project. Below are some recommended reference materials.
  -	Microsoft Language Excellence [product-specific glossaries](https://usjs.partners.extranet.microsoft.com/us20/mils/Reference/zho-chn/Terminology/product-specific) on the JetStream Server
- -	[MSDN](http://msdn.microsoft.com/zh-cn/)
- -	[TechNet](http://technet.microsoft.com/zh-cn/default.aspx)
 
 ## 2.	Keep the audience in mind
 
@@ -63,7 +61,7 @@ _Our style_: <span lang="zh-Hans">在早期版本的 PowerPoint（已安装）�
 
 ## 5.	Be careful with elements that should not be translated
 
-When working on Microsoft projects, be aware that some words should not be translated. Application and product names are often trademarked or may be trademarked in the future, so they are rarely translated. Occasionally, feature names are trademarked too. Trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. Therefore, before translating these elements, first make sure that they are translatable. Verify that the term is not on the [list of Microsoft trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/default.aspx) before translating.
+When working on Microsoft projects, be aware that some words should not be translated. Application and product names are often trademarked or may be trademarked in the future, so they are rarely translated. Occasionally, feature names are trademarked too. Trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. Therefore, before translating these elements, first make sure that they are translatable. Verify that the term is not on the [list of Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) before translating.
 
 ## 6.	Be consistent in your translation
 
@@ -177,4 +175,4 @@ _English_: Fascinating places, winsome animals, intriguing art—find a theme th
 
 _Our style_: <span lang="zh-Hans">找到一款主题，激发你的兴趣，让它带你领略奇异的风景胜地、活泼可爱的动物和迷人的艺术杰作。</span>
 
-Hopefully, these top 10 rules are helpful. If you have time, it is highly recommended that you read the full [Simplified Chinese Style Guide](https://www.microsoft.com/en-us/Language/StyleGuides) for more detailed information.
+Hopefully, these top 10 rules are helpful. If you have time, it is highly recommended that you read the full [Simplified Chinese Style Guide](https://www.microsoft.com/Language/StyleGuides) for more detailed information.

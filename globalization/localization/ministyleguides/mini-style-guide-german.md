@@ -6,7 +6,7 @@ ms.date: 03/04/2019
 
 # Top 10 Tips for Microsoft Translation into German
 
-Are you helping with translation into German, but don't have time to study all aspects of the German Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into German, but don't have time to study all aspects of the German Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Translate sense not words
 
@@ -38,7 +38,7 @@ _Our style_: <span lang="de">Mitarbeiter in Service und Produktion</span>
 
 _Not our style_: <span lang="de">Firstline Worker</span>
 
-This is a rough rule: [Trademarked names](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/en-us.aspx) and the name "Microsoft Corporation" often remain in English, unless an approved German name for the trademark is available. Application, product, and sometimes even feature names may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](http://www.microsoft.com/language) or contact the moderator if there is any doubt.
+This is a rough rule: [Trademarked names](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx) and the name "Microsoft Corporation" often remain in English, unless an approved German name for the trademark is available. Application, product, and sometimes even feature names may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](https://www.microsoft.com/language) or contact the moderator if there is any doubt.
 
 **Example**
 
@@ -56,7 +56,7 @@ _Not our style_: <span lang="de">Windows Desktop Application Program</span>
 
 ## 3.	Follow the tone and style of the original English
 
-[Microsoft voice](https://docs.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human) targets a broad set of users from technology enthusiasts to casual computer users. Translating Microsoft's voice into German means choosing words and grammatical structures that reflect the Microsoft style: clear and friendly, concise without sounding robot-like. But it also means considering the needs of the audience (e.g., children vs. adults) and the intent of the text (e.g., entertaining, informative, instructional).
+[Microsoft voice](https://docs.microsoft.com/style-guide/brand-voice-above-all-simple-human) targets a broad set of users from technology enthusiasts to casual computer users. Translating Microsoft's voice into German means choosing words and grammatical structures that reflect the Microsoft style: clear and friendly, concise without sounding robot-like. But it also means considering the needs of the audience (e.g., children vs. adults) and the intent of the text (e.g., entertaining, informative, instructional).
 
 **Example**
 
@@ -211,7 +211,7 @@ _Not our style_: <span lang="de">STRASSE</span>
 
 ## 10.	Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [German Style Guide](http://www.microsoft.com/en-us/language) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [German Style Guide](https://www.microsoft.com/Language) and the following references:
 1.	Duden - Die deutsche Rechtschreibung, 27. Auflage, 2017
 2.	WAHRIG Wörterbuch der deutschen Sprache, von Renate Wahrig-Burfeind, Deutscher Taschenbuch Verlag, München 2012
 3.	Duden. Richtiges und gutes Deutsch. Bibliographisches Institut, Berlin; 7. Auflage, 2011

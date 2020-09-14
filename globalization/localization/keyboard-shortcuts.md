@@ -1,5 +1,6 @@
 ---
 title: Keyboard Shortcuts
+description: Keyboard shortcuts might need to be changed according to the translated text that contains these shortcuts.
 ms.assetid: 538348cd-554a-4d4d-a168-3a1c07133107
 ms.date: 03/16/2016
 ---

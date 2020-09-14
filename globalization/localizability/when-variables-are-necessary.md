@@ -1,5 +1,6 @@
 ---
 title: When Variables Are Necessary, Use Unique Names
+description: Although translators would love to have strings with no variables as well as strings that are repeated for usage in different contexts, there are times when it is necessary to use variables.
 ms.assetid: 889f8577-b7a3-42f1-8c2f-07f8b60f6078
 ms.date: 06/28/2016
 ---
@@ -56,5 +57,3 @@ The Swedish and Finnish translation, respectively, would be:
 
 "Liian vähän muistia tiedoston %2 %1."
 ```
-
-

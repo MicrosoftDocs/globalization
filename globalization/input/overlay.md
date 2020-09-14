@@ -1,5 +1,6 @@
 ---
 title: Overlay Text Properties
+description: The remaining category of advanced text properties relates to text overlay. These properties apply not just to the glyph, but to an entire text string.
 ms.assetid: b655122c-41ec-4408-bdd2-f4965044b5a2
 ms.date: 04/21/2017
 ---
@@ -11,7 +12,10 @@ The remaining category of advanced text properties relates to text overlay. Thes
 
 The terms phonetic guide, *yomi*, *furigana*, or “ruby” are used somewhat interchangeably to refer to an annotative gloss placed above or to the right of characters to aid the user in pronunciation. (Although *yomi* and *furigana* are only used in a Japanese context.) This is particularly important for logographic languages where the reader may not be familiar with the character or the character has more than one pronunciation.
 
-![The word 'Tokyo' with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Horizontal.png "The word 'Tokyo' with phonetic spelling") ![The word 'Tokyo' with phonetic spelling](https://docs.microsoft.com/globalization/input/images/Tokyo_Vertical.png "The word 'Tokyo' with phonetic spelling") 
+![The word 'Tokyo' with phonetic spelling - horizontal](images/Tokyo-Horizontal.png "The word 'Tokyo' with phonetic spelling - horizontal")
+
+![The word 'Tokyo' with phonetic spelling - vertical](images/Tokyo-Vertical.png "The word 'Tokyo' with phonetic spelling - vertical")
+
 **Figure 1:** The word "Tokyo" with phonetic spelling
 
 The Worldwide Web Consortium [defines three levels of ruby support](https://www.w3.org/TR/jlreq/): mono ruby, group ruby, and jukugo ruby.

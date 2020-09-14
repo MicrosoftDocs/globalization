@@ -1,4 +1,7 @@
-
+---
+title: Globalization testing approach
+description: Whenever a piece of code handles text or deals with locale-sensitive functionality, it has to be tested for proper functionality from the perspective of world-readiness.
+---
 
 # Globalization Testing Approach
 
@@ -19,5 +22,3 @@ Practical guidelines for globalization of your test go beyond breaking the code-
 You've seen the importance of globalizing your test as well as particular areas of functionality in which to search for globalization bugs. How do you now go about preparing a globalized test?
 
 Before testing is performed, there are several items to consider in preparation. For example, you'll need to determine priority levels for components that are going to be tested, choose a test platform, and create a proper testing environment.
-
-

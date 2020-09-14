@@ -1,5 +1,6 @@
 ---
 title: Text Justification
+description: Some scripts or cultures have special rules about how text is justified. 
 ms.assetid: 4e216e20-9ba1-4402-9056-01ddf5fcd12c
 ms.date: 04/21/2017
 ---
@@ -9,7 +10,7 @@ Some scripts or cultures have special rules about how text is justified. Justifi
 
 ## Justification within a Table
 
-For East Asian language, the first and last characters of each line (except the last) are aligned to the left and right margins, and lines are filled by adding or subtracting space between and within words. This is also called [distributed alignment](https://technet.microsoft.com/en-us/library/dd948449(v=office.12).aspx#gt_dae18ea5-2a98-4e10-9570-7f4ac695c6b8).
+For East Asian language, the first and last characters of each line (except the last) are aligned to the left and right margins, and lines are filled by adding or subtracting space between and within words. This is also called [distributed alignment](https://technet.microsoft.com/library/dd948449(v=office.12).aspx#gt_dae18ea5-2a98-4e10-9570-7f4ac695c6b8).
 
 ![Text Justification](https://docs.microsoft.com/globalization/input/images/Text_Just.png) 
 
@@ -34,5 +35,3 @@ Here is a typical Arabic text with and without kashida justification:
 ![Arabic text with kashida justification](https://docs.microsoft.com/globalization/input/images/Kashida_Just.png) 
 
 ![Arabic text without kashida justification](https://docs.microsoft.com/globalization/input/images/WO_Kashida_Just.png) 
-
-
