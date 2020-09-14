@@ -6,7 +6,7 @@ ms.date: 05/28/2019
 
 # Top 10 Tips for Microsoft Translation into Dutch
 
-Are you helping with translation into Dutch, but don't have time to study all aspects of the Dutch Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Dutch, but don't have time to study all aspects of the Dutch Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Clear and natural-sounding
   -	Avoid literal translations and long sentences. The general style should be clear and concise, sounding natural and to the point.
@@ -211,7 +211,7 @@ Refer to Microsoft names correctly when you use them.
   - Application and product names are often trademarked or may be trademarked in the future and are therefore rarely translated. Occasionally, feature names are trademarked, too.
   - Microsoft product names and nontranslated feature names are used without definite or indefinite articles in the English language. We treat them the same way in Dutch.
   - Version numbers always contain a period (for example, Version 4.2).
-  - Trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. A [list of Microsoft trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference. 
+  - Trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. A [list of Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference. 
 
 ## 9.	Do's and Don'ts
 
@@ -238,8 +238,8 @@ _Our style_: <span lang="nl">De bewerking is voltooid.</span>
 ## 10.	 Terminology and reference material
 
   - The consistent use of Microsoft-approved terminology in all localized products is one of the most reliable ways to achieve the required quality of the localized product.
-  - A helpful reference is the [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/en-us/library/windows/desktop/aa511258.aspx).
-  - For more information about the points in this document, refer to the [full Dutch Style Guide](https://www.microsoft.com/en-us/language/StyleGuides?rtc=1).
+  - A helpful reference is the [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/windows/desktop/aa511258.aspx).
+  - For more information about the points in this document, refer to the [full Dutch Style Guide](https://www.microsoft.com/language/StyleGuides?rtc=1).
   - For linguistic-specific matters, refer to:
     - Woordenlijst Nederlandse taal ('Groene boekje') (2005). Den Haag: SDU Uitgevers.
     - Van Dale Groot woordenboek van de Nederlandse taal (2005). Veertiende druk. Utrecht – Antwerpen: Van Dale Lexicografie.

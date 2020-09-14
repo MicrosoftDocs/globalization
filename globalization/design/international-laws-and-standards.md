@@ -1,5 +1,6 @@
 ---
 title: International Laws and Standards
+description: If your software is distributed globally, then it must adhere to all local laws. To understand your risks and obligations, you should consult an expert. Below are some basic guidelines to get you started.
 ms.assetid: 7520d2d5-a250-43ca-8318-1c740592004e
 ms.date: 11/16/2016
 ---

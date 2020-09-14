@@ -6,7 +6,7 @@ ms.date: 05/13/2019
 
 # Top 10 Tips for Microsoft Translation into Italian
 
-Are you helping with translation into Italian, but don't have time to study all aspects of the Italian Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Italian, but don't have time to study all aspects of the Italian Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Microsoft voice
 
@@ -78,7 +78,7 @@ The language in Microsoft products should "feel" as if it was originally written
 
 Use approved terminology where applicable, for example for key terms, technical terms, and product names. If you feel that an approved term doesn't fit with the Microsoft voice, send your concerns to your project manager.
 
-Microsoft Language Portal: https://www.microsoft.com/en-us/language/search
+Microsoft Language Portal: https://www.microsoft.com/language/search
 
 ## 7.	Country/region and language-specific standards
 
@@ -143,7 +143,5 @@ _Not our style_: <span lang="it">Sarei contento se vieni alla mia festa</span>
 ## 10+ Use the right reference material
 
 These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is possible, consult the other topics in the [style guide](https://download.microsoft.com/download/f/3/8/f389007c-663a-4774-96e0-dcbaf19ac436/it-it-StyleGuide.pdf) for guidance.
- - [Microsoft Language Portal](http://www.microsoft.com/language/it-it/default.aspx)
- - [MSDN](https://msdn.microsoft.com/it-it/defaulthttp://technet.microsoft.com/it-it/default)
- - [TechNet](http://technet.microsoft.com/it-it/default)
- - [Microsoft Glossaries](http://www.microsoft.com/Language/it-it/Search.aspx)
+ - [Microsoft Language Portal](https://www.microsoft.com/language/default.aspx)
+ - [Microsoft Glossaries](https://www.microsoft.com/Language/Search.aspx)

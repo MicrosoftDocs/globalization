@@ -6,7 +6,7 @@ ms.date: 05/13/2019
 
 # Top 10 Tips for Microsoft Translation into Swedish
 
-Are you helping with translation into Swedish, but don't have time to study all aspects of the Swedish Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Swedish, but don't have time to study all aspects of the Swedish Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Sense, not words
 
@@ -187,4 +187,4 @@ If you are in doubt, consult the full Swedish Style Guide and the following refe
 3.	Rikstermbanken. Swedish terminology collection. http://www.rikstermbanken.se/
 4.	Språkrådet. General information on how to write correctly in the Swedish language. http://www.sprakradet.se/
 
-Another helpful reference is the [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/en-us/library/windows/desktop/aa511258.aspx), which includes information about the user interface of Microsoft products.
+Another helpful reference is the [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/windows/desktop/aa511258.aspx), which includes information about the user interface of Microsoft products.

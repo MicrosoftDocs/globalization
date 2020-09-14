@@ -6,7 +6,7 @@ ms.date: 03/19/2019
 
 # Top 10 Tips for Microsoft Translation into Turkish
 
-You are helping with translation into Turkish, but don't have time to study all aspects of the Turkish Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+You are helping with translation into Turkish, but don't have time to study all aspects of the Turkish Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Meaning and intent of the original
 
@@ -144,6 +144,6 @@ _Our style_: <span lang="tr">Web sitesi adresi</span>
 
 ## 10. References
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Turkish Style Guide](https://www.microsoft.com/en-us/Language/StyleGuides) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Turkish Style Guide](https://www.microsoft.com/Language/StyleGuides) and the following references:
 1.	<span lang="tr">Güncel Türkçe Sözlük ve Yazım Kılavuzu – TDK Web Sitesi (www.tdk.gov.tr)
 2.	Türkçe Sözlük ve Yazım Kılavuzu – Dil Derneği Sitesi (http://www.dildernegi.org.tr)</span>

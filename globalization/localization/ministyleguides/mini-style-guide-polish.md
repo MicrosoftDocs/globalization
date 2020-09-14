@@ -34,7 +34,7 @@ _Not our style_: <span lang="pl">Użyj tej funkcji do osiągnięcia swoich celó
 
 ## 3.	Terminology
 
-Use terminology from the [Microsoft Language Portal](https://www.microsoft.com/en-us/language) where applicable, for example for key terms, technical terms, and product names.
+Use terminology from the [Microsoft Language Portal](https://www.microsoft.com/Language) where applicable, for example for key terms, technical terms, and product names.
 
 Product and application names are often trademarked or may be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names are trademarked, too. Before translating any application, product, or feature name, verify that it's in fact translatable and not protected in any way. That information can be obtained from the [Microsoft trademarks list](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/en-us.aspx).
 

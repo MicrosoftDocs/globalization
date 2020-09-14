@@ -61,9 +61,9 @@ _Our style_: <span lang="pt-BR">Convide seus amigos para jogar online.</span>
 
 ## 4.	Application, product, and feature names
 
-Trademarked names and the name _Microsoft Corporation_ shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. A list of [Microsoft trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference.
+Trademarked names and the name _Microsoft Corporation_ shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. A list of [Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference.
 
-Application and product names that are not descriptive names are often trademarked or can potentially be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names that aren't descriptive are trademarked, too (for example, IntelliSense). Before translating application, product, or feature names, check the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides) or contact the Microsoft team.
+Application and product names that are not descriptive names are often trademarked or can potentially be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names that aren't descriptive are trademarked, too (for example, IntelliSense). Before translating application, product, or feature names, check the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides) or contact the Microsoft team.
 
 When an application or product name contains a preposition, it's recommended that you translate the preposition, unless there are specific trademark or copyright instructions preventing the translation
 
@@ -155,7 +155,7 @@ _Our style_: <span lang="pt-BR">Falha ao relatar evento</span>
 
 ## 7.	Pronouns
 
-The use of personal pronouns is a powerful way to express all the attributes of the [Microsoft voice](https://docs.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human). The user is addressed directly through the use of first- and second-person pronouns such as "you." Third-person references, such as "user," are avoided as they sound formal and impersonal. When translating into Brazilian Portuguese, address the user as _você_ instead of _usuário_ or converting the sentence to passive voice.
+The use of personal pronouns is a powerful way to express all the attributes of the [Microsoft voice](https://docs.microsoft.com/style-guide/brand-voice-above-all-simple-human). The user is addressed directly through the use of first- and second-person pronouns such as "you." Third-person references, such as "user," are avoided as they sound formal and impersonal. When translating into Brazilian Portuguese, address the user as _você_ instead of _usuário_ or converting the sentence to passive voice.
 
 Avoid repeating pronouns in a sentence. In Brazilian Portuguese, omitting some pronouns when the meaning is clear from the context makes the text sound more natural.
 
@@ -209,7 +209,7 @@ _Our style_: <span lang="pt-BR">Sincronizar seus emails, contatos, calendários 
 
 ## 10.	Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Portuguese (Brazil) Style Guide](https://download.microsoft.com/download/1/d/1/1d15d7b2-8323-4f56-b863-7acdfe4fb4cf/por-bra-StyleGuide.pdf), the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides), and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Portuguese (Brazil) Style Guide](https://download.microsoft.com/download/1/d/1/1d15d7b2-8323-4f56-b863-7acdfe4fb4cf/por-bra-StyleGuide.pdf), the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides), and the following references:
 1.	Academia Brasileira de Letras. Vocabulário Ortográfico da Língua Portuguesa, 5ª edição, 2009
 2.	Cunha, Celso e Cintra, Lindley. Nova Gramática do Português Contemporâneo. Rio de Janeiro: Editora L&PM, 2ª edição, 2009
 3.	Ferreira, Aurélio Buarque de Holanda. Novo Dicionário da Língua Portuguesa.Rio de Janeiro: Editora Positivo; 5ª edição, 2010
