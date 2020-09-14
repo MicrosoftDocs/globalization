@@ -67,7 +67,8 @@ public class TestClass
 
 This code produces the following output:
 
-```The default calendar for the Thai (Thailand) culture is:
+```
+The default calendar for the Thai (Thailand) culture is:
 System.Globalization.ThaiBuddhistCalendar
 
 The optional calendars for the Thai (Thailand) culture are:
