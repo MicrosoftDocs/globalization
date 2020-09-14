@@ -14,7 +14,7 @@ In Swedish, for example, some vowels with an accent sort after "Z," whereas in o
 
 One important case where code frequently runs into problems is supporting users who use the Turkish alphabet. For these languages, there are four variation of the character i and they don’t map to the same casings as English or other languages. This is called the [Turkish-I problem](https://msdn.microsoft.com/library/ms973919.aspx#stringsinnet20_topic5).
 
-|                   | Lower Case Form  | Upper Case Form  |
+| Language | Lower Case Form  | Upper Case Form  |
 |-------------------| -----------------| -----------------|
 |English            | i (\\u0069)    | I (\\u0049)    |
 |Turkic undotted i  | ı (\\u0131)    | I (\\u0049)    |
@@ -86,61 +86,63 @@ To mitigate against this, applications can call [GetNLSVersionEx](https://msdn.m
 The Array class provides an overloaded method that allows you to sort arrays based on the CultureInfo.CurrentCulture property. In the following example, an array of three strings is created. First, the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture) is set to "en-US" and the method is called. The resulting sort order is based on sorting conventions for the "en-US" culture. Next, the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture) is set to "da-DK" and the method is called again. Notice how the resulting sort order differs from the "en-US" results because the sorting conventions for the "da-DK" culture are used.
 
 ```csharp
-    using System;
-    using System.Threading ;
-    using System.Globalization ;
+using System;
+using System.Threading ;
+using System.Globalization ;
 
-    public class SortKeySample 
-    {
-      public static void Main(String[] args )
-      {
-       String str1 = "Apple";
-       String str2 = "Æble";
+public class SortKeySample 
+{
+  public static void Main(String[] args )
+  {
+    String str1 = "Apple";
+    String str2 = "Æble";
 
-       // Set the CurrentCulture to "da-DK".
-       CultureInfo dk = new CultureInfo ("da-DK");
-       Thread.CurrentThread.CurrentCulture = dk ;
+    // Set the CurrentCulture to "da-DK".
+    CultureInfo dk = new CultureInfo ("da-DK");
+    Thread.CurrentThread.CurrentCulture = dk ;
 
-       // Create a culturally sensitive sort key for str1.
-       SortKey sc1 = dk.CompareInfo.GetSortKey ( str1);
+    // Create a culturally sensitive sort key for str1.
+    SortKey sc1 = dk.CompareInfo.GetSortKey ( str1);
 
-       // Create a culturally sensitive sort key for str2.
-       SortKey sc2 = dk.CompareInfo.GetSortKey ( str2);
+    // Create a culturally sensitive sort key for str2.
+    SortKey sc2 = dk.CompareInfo.GetSortKey ( str2);
 
-       // Compare the two sort keys and display the results.
+    // Compare the two sort keys and display the results.
 
-       int result1 = SortKey.Compare(sc1, sc2);
-       Console.WriteLine ("\nWhen the CurrentCulture is \"da-DK\",\n");
+    int result1 = SortKey.Compare(sc1, sc2);
+    Console.WriteLine ("\nWhen the CurrentCulture is \"da-DK\",\n");
 
-       Console.WriteLine ("\the result of comparing {0} with {1} is: {2}", str1, str2, result1);
+    Console.WriteLine ("\the result of comparing {0} with {1} is: {2}", str1, str2, result1);
 
-       // Set the CurrentCulture to "en-US".
-       CultureInfo enus = new CultureInfo ("en-US");
-       Thread.CurrentThread.CurrentCulture = enus ;
+    // Set the CurrentCulture to "en-US".
+    CultureInfo enus = new CultureInfo ("en-US");
+    Thread.CurrentThread.CurrentCulture = enus ;
 
-       // Create a culturally sensitive sort key for str1.
-       SortKey sc3 = enus.CompareInfo.GetSortKey (str1);
-       
-       // Create a culturally sensitive sort key for str1.
-       SortKey sc4 = enus.CompareInfo.GetSortKey (str2);
-       
-       // Compare the two sort keys and display the results.
-       int result2 = SortKey.Compare(sc3, sc4);
-       
-       Console.WriteLine (
-       "\nWhen the CurrentCulture is \"en-US\",\n");
-       Console.WriteLine ("\the result of comparing {0} with {1} is: {2}",str1, str2, result2);
-      }
-    }
+    // Create a culturally sensitive sort key for str1.
+    SortKey sc3 = enus.CompareInfo.GetSortKey (str1);
+    
+    // Create a culturally sensitive sort key for str1.
+    SortKey sc4 = enus.CompareInfo.GetSortKey (str2);
+    
+    // Compare the two sort keys and display the results.
+    int result2 = SortKey.Compare(sc3, sc4);
+    
+    Console.WriteLine (
+    "\nWhen the CurrentCulture is \"en-US\",\n");
+    Console.WriteLine ("\the result of comparing {0} with {1} is: {2}",str1, str2, result2);
+  }
+}
 ```
 
 This code produces the following output:
 
-    When the CurrentCulture is "da-DK", 
+```
+    When the CurrentCulture is "da-DK",
     the result of comparing Apple with Æble is: -1
 
     When the CurrentCulture is "en-US",
     the result of comparing Apple with Æble is: 1
+```
 
 #### Using Sort Keys in .Net
 

@@ -3,7 +3,7 @@ title: Browser Language Setting
 description: It is recommended to use one of the Unicode encodings, but if you are working with legacy software you may need to continue to use older code pages.
 ms.assetid: c2dd9e6d-6be7-4699-97ff-94cfe62fafff
 ---
-# Code Pages
+# Browser Language Setting
 
 It is recommended to use one of the Unicode encodings, but if you are working with legacy software you may need to continue to use older code pages.
 
