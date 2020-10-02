@@ -224,4 +224,4 @@ If you use a pop-up blocker, please update your allowable list to include this W
 
 ## Related Links
 
-- [Create your own keyboard layout using Microsoft Keyboard Layout Creator](https://support.microsoft.com/help/823010/the-microsoft-keyboard-layout-creator "Create your own keyboard layout using Microsoft Keyboard Layout Creator")
+- [Create your own keyboard layout using Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134 "Create your own keyboard layout using Microsoft Keyboard Layout Creator")
