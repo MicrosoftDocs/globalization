@@ -12,13 +12,18 @@
     items:
     - name: The Unicode standard
     - name: Character and data encoding
+      href: encoding/encoding-overview.md
       items:
       - name: Code pages and BOM
+        href: encoding/code-pages.md
       - name: Surrogate pairs
-      - name: Public use area
+        href: encoding/surrogate-pairs.md
+      - name: Private use area
+        href: encoding/pua.md
       - name: Maps and transforms
+        href: encoding/transformations-of-unicode-code-points.md
     - name: Storing and writing text
-    - name: Character exlusion
+    - name: Character exclusion
     - name: String normalization
     - name: Parsing input
     - name: Case mapping
@@ -40,6 +45,8 @@
     - name: File systems
   - name: String authoring for global reach
     items:
+    - name: Isolating localizable resources
+      href: localizability/isolate-localizable-resources.md
     - name: Pluralization
     - name: Message formatting
       items:
@@ -54,6 +61,7 @@
     - name: Locale
       items:
       - name: Locale model
+        href: locale/locale-model.md
       - name: Standard locale representation
       - name: Other locale representations
       - name: Fallback behaviors
@@ -65,7 +73,8 @@
         - name: Interface language
         - name: Speech settings
         - name: Dictionaries and spelling
-        - name: Collation and sorting
+        - name: Collation, sorting, and string comparison
+          href: locale/sorting-and-string-comparison.md
     - name: Regional settings and formats
       items:
       - name: Industry standard for regional formats (CLDR)
@@ -73,17 +82,27 @@
         items:
         - name: Numeric systems
         - name: Number formats
+          href: locale/number-formatting.md
           items:
           - name: Currency formats
+           href: locale/currency-formatting.md
       - name: Date and time
         items:
         - name: Calendars
+          href: locale/calendar-differences.md
         - name: Time Zones
-        - name: Date and time formats
+        - name: Date  formats
+          href: locale/date-formatting.md
+        - name: Time formats
+          href: locale/time-formatting.md
       - name: Mailing address formats
-      - name: Telephone formats
+        href: locale/addresses.md
+      - name: Telephone number formats
+        href: locale/telephone-number.md
       - name: Units of measurement
+        href: locale/units-of-measurement.md
       - name: Default page sizes
+        href: locale/paper-size.md
       - name: Punctuation and separators
     - name: Payment methods
     - name: Search
@@ -91,6 +110,7 @@
       - name: Stemming
       - name: Word prediction
     - name: Local laws and regulations
+      href: design/international-laws-and-standards.md
   - name: User Interface
     items:
     - name: Text
@@ -99,6 +119,7 @@
       - name: Fonts
         items:
         - name: Font technology
+          href: input/font-technology.md
           items:
           - name: OpenType
           - name: The Universal Shaping Engine
@@ -113,31 +134,42 @@
           - name: Typesetting
           - name: Pagination
           - name: Justification
+            href: input/text-justification.md
+          - name: Line and word breaking
+            href: input/line-and-word-breaking.md
           - name: Ruby
       - name: Text-to-speech
     - name: Interface Layout
       items:
       - name: Adaptive UI
       - name: Mirroring
+        href: input/mirroring.md
     - name: Images, icons, and colors
   - name: Validating internationalized products
+    href: testing/quality-assurance-for-world-readiness.md
     items:
     - name: Global test design
+      href: testing/globalization-of-the-test.md
     - name: Localizability testing
+      href: testing/localizability-testing.md
     - name: Localization testing
+      href: testing/localization-testing.md
       items:
       - name: Linguistic validation
       - name: In-context review
     - name: Test case sample
+      href: testing/sample-international-test-cases.md
   - name: Creating translated deliverables
+    href: localization/overview.md
     items:
-    - name: Terminology and translation memories
-      items:
-      - name: Microsoft Language Portal
-    - name: Software
-    - name: Documentation
-    - name: Games
-    - name: Videos and multimedia
+    - name: Managing terminology
+          items:
+          - name: Microsoft Language Portal
+    - name: Maintaining translation memories
+    - name: Software localization
+    - name: Documentation localization
+    - name: Games localization
+    - name: Videos and multimedia localization
       items:
       - name: Captioning
       - name: Recreation
