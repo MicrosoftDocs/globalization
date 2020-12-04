@@ -7,7 +7,7 @@ ms.date: 01/05/2017
 
 # Windows Keyboard Layouts
 
-Choose a keyboard below to view its layouts. To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
+Choose a keyboard below to view its layouts. To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them. Use the browser magnification feature to increase the size of the keyboards.
 
 <!-- If you use a pop-up blocker, please update your allowable list to include this Web site. Use the browser magnification feature to increase the size of the keyboards. -->
 
