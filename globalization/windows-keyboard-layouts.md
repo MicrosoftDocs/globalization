@@ -16,7 +16,8 @@ Choose a keyboard below to view its layouts. To see different keyboard states, m
 <p></p>
 <table>
 <tr><td>&nbsp;</td><td>Keyboard Name</td><td>Introduced</td></tr>
-<tr><td><a name="A"></a>A</td><td><a href="keyboards/kbdal.html">Albanian</a></td><td>pre-XP</td></tr>
+<tr><td><a name="A"></a>A</td><td><a href="keyboards/kbdadlm.html">ADLaM</a></td><td>10</td></tr>
+<tr><td>&nbsp;</td><td><a href="keyboardskbdal.html">Albanian</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbda1.html">Arabic (101)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbda2.html">Arabic (102)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbda3.html">Arabic (102) AZERTY</a></td><td>pre-XP</td></tr>
@@ -142,6 +143,7 @@ Choose a keyboard below to view its layouts. To see different keyboard states, m
 <tr><td>&nbsp;</td><td><a href="keyboards/kbdogham.html">Ogham</a></td><td>8</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbdolch.html">Ol Chiki</a></td><td>8.1</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbdoldit.html">Old Italic</a></td><td>8.1</td></tr>
+<tr><td>&nbsp;</td><td><a href="keyboards/kbdosa.html">Osage</a></td><td>10</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbdosm.html">Osmanya</a></td><td>8.1</td></tr>
 <tr><td><a name="P"></a>P</td><td><a href="keyboards/kbdpash.html">Pashto (Afghanistan)</a></td><td>Vista / Server 2008</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbdfa.html">Persian</a></td><td>pre-XP</td></tr>
