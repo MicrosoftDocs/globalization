@@ -17,7 +17,7 @@ Choose a keyboard below to view its layouts. To see different keyboard states, m
 <table>
 <tr><td>&nbsp;</td><td>Keyboard Name</td><td>Introduced</td></tr>
 <tr><td><a name="A"></a>A</td><td><a href="keyboards/kbdadlm.html">ADLaM</a></td><td>10</td></tr>
-<tr><td>&nbsp;</td><td><a href="keyboardskbdal.html">Albanian</a></td><td>pre-XP</td></tr>
+<tr><td>&nbsp;</td><td><a href="keyboards/kbdal.html">Albanian</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbda1.html">Arabic (101)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbda2.html">Arabic (102)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="keyboards/kbda3.html">Arabic (102) AZERTY</a></td><td>pre-XP</td></tr>
