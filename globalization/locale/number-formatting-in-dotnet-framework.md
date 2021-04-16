@@ -8,7 +8,7 @@ ms.date: 03/16/2016
 
 # Number Formatting in .NET Framework
 
-The *NumberFormatInfo* class defines how currency, decimal separators, and other numeric symbols are formatted and displayed based on culture. For example, the decimal number 10000.50 is formatted as 10,000.50 for the culture "en-US" and 10.000,50 for the culture "de-DE." An instance of *NumberFormatInfo* can be created for a specific cultureor the invariant culture, but not for a neutral culture. A neutral culture does not provide enough information to display the correct numeric format. Table 4-10 lists the standard format characters for each standard formatting pattern and the associated *NumberFormatInfo* property that can be set to modify this pattern.
+The *NumberFormatInfo* class defines how currency, decimal separators, and other numeric symbols are formatted and displayed based on culture. For example, the decimal number 10000.50 is formatted as 10,000.50 for the culture "en-US" and 10.000,50 for the culture "de-DE." An instance of *NumberFormatInfo* can be created for a specific culture or the invariant culture, but not for a neutral culture. A neutral culture does not provide enough information to display the correct numeric format. Table 4-10 lists the standard format characters for each standard formatting pattern and the associated *NumberFormatInfo* property that can be set to modify this pattern.
 
 |Format Character|Description and Associated Properties|
 |---|---|
