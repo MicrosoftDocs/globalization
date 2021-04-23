@@ -17,6 +17,7 @@ If you use a pop-up blocker, please update your allowable list to include this W
 <table>
 <tr><td>&nbsp;</td><td>Keyboard Name</td><td>Introduced</td></tr>
 <tr><td><a name="A"></a>A</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdal.html", "_blank", "height=130, width=347, scroll=no");'>Albanian</a></td><td>pre-XP</td></tr>
+<tr><td>&nbsp;</td><td>[Albanian](keyboards/kbdal.md)</td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbda1.html", "_blank", "height=130, width=347, scroll=no");'>Arabic (101)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbda2.html", "_blank", "height=130, width=347, scroll=no");'>Arabic (102)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbda3.html", "_blank", "height=130, width=347, scroll=no");'>Arabic (102) AZERTY</a></td><td>pre-XP</td></tr>
