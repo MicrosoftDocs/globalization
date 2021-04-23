@@ -3,6 +3,7 @@ title: Windows Keyboard Layouts
 description: 
 ms.assetid: 24ef3b64-cbb6-4e69-aa01-ed800bff4e47
 ms.date: 01/05/2017
+author: jowilco
 ---
 
 # Windows Keyboard Layouts
@@ -11,13 +12,14 @@ Choose a keyboard below to view its layouts. To see different keyboard states, m
 
 If you use a pop-up blocker, please update your allowable list to include this Web site. Use the browser magnification feature to increase the size of the keyboards.
 
+[Albanian](keyboards/kbdal.md)
+
 <table id="t01"><tr><td><a href="#A">A</a></td><td><a href="#B">B</a></td><td><a href="#C">C</a></td><td><a href="#D">D</a></td><td><a href="#E">E</a></td><td><a href="#F">F</a></td><td><a href="#G">G</a></td><td><a href="#H">H</a></td><td><a href="#I">I</a></td><td><a href="#J">J</a></td><td><a href="#K">K</a></td><td><a href="#L">L</a></td><td><a href="#M">M</a></td></tr>
 <tr><td><a href="#N">N</a></td><td><a href="#O">O</a></td><td><a href="#P">P</a></td><td>Q</td><td><a href="#R">R</a></td><td><a href="#S">S</a></td><td><a href="#T">T</a></td><td><a href="#U">U</a></td><td><a href="#V">V</a></td><td><a href="#W">W</a></td><td>X</td><td><a href="#Y">Y</a></td><td>Z</td></tr></table>
 <p></p>
 <table>
 <tr><td>&nbsp;</td><td>Keyboard Name</td><td>Introduced</td></tr>
 <tr><td><a name="A"></a>A</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbdal.html", "_blank", "height=130, width=347, scroll=no");'>Albanian</a></td><td>pre-XP</td></tr>
-<tr><td>&nbsp;</td><td>[Albanian](keyboards/kbdal.md)</td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbda1.html", "_blank", "height=130, width=347, scroll=no");'>Arabic (101)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbda2.html", "_blank", "height=130, width=347, scroll=no");'>Arabic (102)</a></td><td>pre-XP</td></tr>
 <tr><td>&nbsp;</td><td><a href="#" onclick='window.open("/globalization/keyboards/kbda3.html", "_blank", "height=130, width=347, scroll=no");'>Arabic (102) AZERTY</a></td><td>pre-XP</td></tr>
