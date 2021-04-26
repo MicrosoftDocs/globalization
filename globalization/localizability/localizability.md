@@ -1,4 +1,7 @@
-
+---
+title: Localizability
+description: Localizability is the process/practice to enable the software to be localized into different languages without any change to the source code.
+---
 
 # Localizability
 
@@ -16,5 +19,3 @@ For Right-To-Left (RTL) languages, not only does the text alignment and text rea
 
 [UI Considerations](ui-considerations.md)  
 UI elements may need to be re-sized for the localized software. The developer should consider the localized strings could be (much) longer than the English strings to implement the UI to handle them.
-
-

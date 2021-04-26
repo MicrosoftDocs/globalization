@@ -27,17 +27,14 @@ Like date and calendar formats, time formats are not constant throughout the wor
 
 **Important:** Changing the user locale or the locale variable does not adjust the time zone by default.
 
-![Time formatting for Greek user locale](https://docs.microsoft.com/en-gb/globalization/locale/Greek_Time.jpg "Time formatting for Greek user locale") 
+![Time formatting for Greek user locale](https://docs.microsoft.com/globalization/locale/Greek_Time.jpg "Time formatting for Greek user locale") 
 
 **Figure 1:** Time formatting for Greek user locale.
 
-![Time zone and daylight saving time](https://docs.microsoft.com/en-gb/globalization/locale/Time_Zone_DST.jpg "Time zone and daylight saving time") 
+![Time zone and daylight saving time](https://docs.microsoft.com/globalization/locale/Time_Zone_DST.jpg "Time zone and daylight saving time") 
 
 **Figure 2:** Time Zone page of Date And Time Properties property sheet.
 
 ### See more info in the below links:
  - [Time Formatting and Time Zones in Win32](time-formatting-and-time-zones-in-win32.md)
  - [Time Formatting and Time Zones in .NET Framework](time-formatting-and-time-zones-in-dotnet-framework.md)
-
-
-

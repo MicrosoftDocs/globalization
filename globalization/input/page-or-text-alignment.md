@@ -1,6 +1,6 @@
 ---
 title: Page or Text Alignment
-description: When creating a locale–aware application, you'll need to consider handling of linguistic nuances.
+description: In typesetting and page layout, alignment is the setting of text flow or image placement relative to a page, column (measure), table cell or tab. 
 ms.assetid: 6b1de8ff-d50c-4b36-bd97-e3e7eda36406
 ms.date: 05/01/2017
 ---
@@ -16,13 +16,13 @@ To describe how a text flows into lines, one needs to know three things:
 
 Chinese may be written either horizontally (read left-to-right, then top-to-bottom as English is) or vertically (read top-to-bottom, then right-to-left)—sometimes in the same document! This is called a bi-orientational script; see the image below for examples of each orientation. Other East Asian languages such as Japanese (Kanji) and Yi also have the same text alignment.
 
-|**CSS Attribute**|**Text Direction and Progression**|**Example**||
+|**CSS Attribute**|**Text Direction and Progression**|**Language**|**Example**|
 |---|---|---|---|
 |[default]|Left-to-right directionality in horizontal text. No inherent directionality in vertical text.|Armenian (Source: Universal Declaration of Human Rights, United Nations)| Քանզի մարդկային ընտանիքի բոլոր անդամներին ներհատուկ արժանապատվությունըև հավասար ու անօտարելի իրավունքները աշխարհի ազատության, արդարության ու խաղաղության հիմքն են.|
 |direction: rtl;|Right-to-left directionality in horizontal text. No inherent directionality in vertical text.|Hebrew (Source: Universal Declaration of Human Rights, United Nations)|<span lang="he" dir="rtl">הואיל והכרה בכבוד הטבעי אשר לכל בני משפהת האדם ובזכויותיהם השוות והבלתי נפקעות הוא יסוד החופש, הצדק והשלום בעולם.</span>|
-|writing-mode: vertical-lr;|Top to bottom directionality in vertical text. No inherent directionality in horizontal text.|Traditional Mongolian (Source: I. J. Schmidt Grammatik der mongolischen Sprache; St. Petersburg, 1831)|![Traditional Mongolian Script](https://docs.microsoft.com/en-us/globalization/input/images/Mongolian.JPG "Traditional Mongolian Script")|
-|writing-mode: vertical-rl;|Left to right directionality in horizontal text. Top to bottom directionality in vertical text.|Chinese (Source: Universal Declaration of Human Rights, United Nations)|![Traditional Chinese Script](https://docs.microsoft.com/en-us/globalization/input/images/TradChineseDir.jpg "Traditional Chinese Script")|
-|writing-mode: vertical-rl; transform: rotate(180deg);|Left to right directionality in horizontal text. Bottom to top directionality in vertical text.|Hanunó’o script (Source: Conklin, Harold. 1953. Hanunoo-English Vocabulary. Berkeley: University of California Press. \[University of California Publications in Linguistics 9:1-290\])|![Hanunó’o Script](https://docs.microsoft.com/en-us/globalization/input/images/Hanunoo.jpg "Hanunó’o Script")|
+|writing-mode: vertical-lr;|Top to bottom directionality in vertical text. No inherent directionality in horizontal text.|Traditional Mongolian (Source: I. J. Schmidt Grammatik der mongolischen Sprache; St. Petersburg, 1831)|![Traditional Mongolian Script](https://docs.microsoft.com/globalization/input/images/Mongolian.JPG "Traditional Mongolian Script")|
+|writing-mode: vertical-rl;|Left to right directionality in horizontal text. Top to bottom directionality in vertical text.|Chinese (Source: Universal Declaration of Human Rights, United Nations)|![Traditional Chinese Script](https://docs.microsoft.com/globalization/input/images/TradChineseDir.jpg "Traditional Chinese Script")|
+|writing-mode: vertical-rl; transform: rotate(180deg);|Left to right directionality in horizontal text. Bottom to top directionality in vertical text.|Hanunó’o script (Source: Conklin, Harold. 1953. Hanunoo-English Vocabulary. Berkeley: University of California Press. \[University of California Publications in Linguistics 9:1-290\])|![Hanunó’o Script](https://docs.microsoft.com/globalization/input/images/Hanunoo.jpg "Hanunó’o Script")|
 
 The following are general context rules for the reading order and alignment of text:
 
@@ -50,5 +50,3 @@ For bidirectional languages—such as Arabic and Hebrew—the text should be ali
 -   the default reading order is right-to-left;
 -   if they exist, column names and row names originate and increase from top-right corner leftwards and towards the bottom; and
 -   if they exist, tabs originate from either the top-right or the bottom-right side and increase towards the left.
-
-

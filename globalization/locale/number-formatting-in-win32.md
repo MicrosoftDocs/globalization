@@ -1,5 +1,6 @@
 ---
 title: Number Formatting in Win32
+description: The easiest way to format numbers in a way that's locale-aware is to use the GetNumberFormat API.
 ms.assetid: c71a439f-8f5a-4ddf-a754-cae3fa9127fa
 ms.date: 03/16/2016
 author: pallep

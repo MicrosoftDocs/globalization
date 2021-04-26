@@ -1,5 +1,6 @@
 ---
 title: Time Formatting and Time Zones in Win32
+description: To format time in the default settings of a given locale or as specified by the user in the **Regional and Language Options** Control Panel, you can use GetTimeFormat. 
 ms.assetid: f468cc75-fdc5-4716-a42f-91df92b89401
 ms.date: 03/16/2016
 ---

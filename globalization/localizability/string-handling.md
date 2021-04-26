@@ -1,4 +1,7 @@
-
+---
+title: String Handling for Localizability
+description: Once you have chosen a resource store, you can move on to the next area that causes a lot of localizability nightmares-the way strings are created for display in the UI or for placement in a persistent storage.
+---
 
 # String Handling for Localizability
 

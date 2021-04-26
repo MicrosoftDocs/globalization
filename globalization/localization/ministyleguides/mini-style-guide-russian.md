@@ -6,7 +6,7 @@ ms.date: 05/29/2019
 
 # Top 10 Tips for Microsoft Translation into Russian
 
-Are you helping with translation into Russian, but don't have time to study all aspects of the Russian Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/en-us/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Russian, but don't have time to study all aspects of the Russian Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.	Translate meaning not words
 
@@ -62,7 +62,7 @@ _Not our style_: <span lang="ru">Я прочитал и принимаю усл�
 
 ## 4.	Follow English pronouns, but adapt them to Russian style
 
-The use of personal pronouns is a powerful way to express all the attributes of the [Microsoft voice](/style-guide/brand-voice-above-all-simple-human). Please use <span lang="ru">вы, ваш</span> (in lowercase) rather than <span lang="ru">ты, твой</span> to address the user. Third-person references, such as <span lang="ru">пользователь</span>, are avoided as they sound formal and impersonal. The Russian Microsoft voice follows Engish (United States) voice if this does not impact grammar or create redundancy. For example, we translate "your" only in cases where it applies directly to the user or you are referring to something that belongs personally to them. We do not translate it when "your" fulfils a grammatical function or when it is obvious that something belongs to the user. Thus, we translate "your" in "your settings" (settings that the user personally made) or "your files" (the user's personal files). But we don't translate "your" in "your hand" (it's obvious that the user's, not somebody else's, hand is meant) or "connect your mouse" ("your mouse" here simply means "a mouse"). The same applies to using "I," "me," and "mine"—use them when the text focuses on the user, but do not translate each and every "I," "me," or "mine" and avoid unnatural structures. Please also remember that in some cases, "your" and "mine" correspond to the Russian pronoun "<span lang="ru">свой</span>."
+The use of personal pronouns is a powerful way to express all the attributes of the [Microsoft voice](/style-guide/brand-voice-above-all-simple-human). Please use <span lang="ru">вы, ваш</span> (in lowercase) rather than <span lang="ru">ты, твой</span> to address the user. Third-person references, such as <span lang="ru">пользователь</span>, are avoided as they sound formal and impersonal. The Russian Microsoft voice follows English (United States) voice if this does not impact grammar or create redundancy. For example, we translate "your" only in cases where it applies directly to the user or you are referring to something that belongs personally to them. We do not translate it when "your" fulfils a grammatical function or when it is obvious that something belongs to the user. Thus, we translate "your" in "your settings" (settings that the user personally made) or "your files" (the user's personal files). But we don't translate "your" in "your hand" (it's obvious that the user's, not somebody else's, hand is meant) or "connect your mouse" ("your mouse" here simply means "a mouse"). The same applies to using "I," "me," and "mine"—use them when the text focuses on the user, but do not translate each and every "I," "me," or "mine" and avoid unnatural structures. Please also remember that in some cases, "your" and "mine" correspond to the Russian pronoun "<span lang="ru">свой</span>."
 
 The usage of "we" generates the image of a team behind the software who cares about what the user is doing. Do not use <span lang="ru">корпорация Майкрософт</span> instead of <span lang="ru">мы, наш</span> in such cases. However, in technical contexts, the use of "we" might sound too personal in Russian, especially when it refers to a product or service rather than a team. In those contexts, "we" might need to be replaced by a more neutral translation.
 
@@ -216,7 +216,7 @@ In any case do not use forms such as "<span lang="ru">файл(-a, -ов)</span>
 
 _English_: %1 files are detected.
 
-_Our style_: <span lang="ru">Our style: Найдено файлов: %1.</span>
+_Our style_: <span lang="ru">Найдено файлов: %1.</span>
 
 _Not our style_: <span lang="ru">Найдено %1 файл(-a, -ов).</span>
 
@@ -238,7 +238,7 @@ _Not our style_: <span lang="ru">Нажимайте кнопку %1 секунд
 
 ## 10+. Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and [full Russian Style Guide](http://www.microsoft.com/en-us/language) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and [full Russian Style Guide](https://www.microsoft.com/Language) and the following references:
 1. <span lang="ru">Правила русской орфографии и пунктуации. Полный академический справочник. — М.: Эксмо, 2009.
 2. Толковый словарь русского языка. Например, Ожегов С. И., Шведова Н. Ю. Толковый словарь русского языка / Российская академия наук. Институт русского языка им. В. В. Виноградова. — М.: ООО «ИТИ ТЕХНОЛОГИИ», 2003.
 3. Орфографический словарь. Например, Русский орфографический словарь / Российская академия наук. Институт русского языка им. В. В. Виноградова / О. Е. Иванова, В. В. Лопатин (отв. ред.), И. В. Нечаева, Л. К. Чельцова. — Москва, 2005.

@@ -1,5 +1,6 @@
 ---
 title: .NET Framework -- String.Format
+description: The .NET Framework has a counterpart to Win32's FormatMessage—the String.Format method. 
 ms.assetid: c1386557-8372-486b-b98e-6e84286e9255
 ms.date: 06/28/2016
 ---
@@ -41,5 +42,3 @@ The .NET Framework has also added the idea of an argument placeholder to its Con
 ```csharp
 Console.Write("Not enough memory to {0} the file {1}", sFunc, sFile);
 ```
-
-
