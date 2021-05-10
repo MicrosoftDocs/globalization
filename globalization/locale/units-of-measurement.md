@@ -27,10 +27,10 @@ The system of measurement can be obtain from [GetLocaleInfoEx](/windows/desktop/
 
  ```cpp
 DWORD dwMSys;
-GetLocaleInfo(LOCALE\_USER\_DEFAULT,     // locale identifier (current user locale)
-LOCALE\_IMEASURE|LOCALE\_RETURN\_NUMBER, // information type (measurement system)
+GetLocaleInfo(LOCALE_USER_DEFAULT,     // locale identifier (current user locale)
+LOCALE_IMEASURE|LOCALE_RETURN_NUMBER, // information type (measurement system)
 &dwMSys,                                 // returned value
-sizeof (DWORD));
+sizeof (dwMSys) / sizeof(TCHAR));
 ```
 
 ### Units of Measurement in .NET Framework
