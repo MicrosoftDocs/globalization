@@ -38,7 +38,7 @@ When dealing with numeric values, there are six major items to pay attention to:
 | The Korean regularly uses both a Sino-Korean system and a native Korean system. Everything that can be counted will use one of the two systems, but seldom both. | <span lang="ko">하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉…</span>.|
 | Bengla                            | <span lang="bn">০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮ ৯</span>|
 | Devanagari (script used to write Hindi,Marathi, and other languages)| <span lang="hi">० १ २ ३ ४ ५ ६ ७ ८ ९</span>|
-| Gujarati                          | <span lang="gu">୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯</span>               |
+| Gujarati                          | <span lang="gu">૦ ૧ ૨ ૩ ૪ ૫ ૬ ૭ ૮ ૯</span>               |
 | Gurmukhi (one of the scripts used to write Punjabi) | <span lang="pa">੦ ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯ </span>|
 | Kannada                           |<span lang="kn">೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯</span>|
 | Malayalam                         | <span lang="ml">൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯</span>|
