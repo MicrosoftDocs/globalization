@@ -43,7 +43,7 @@ When dealing with numeric values, there are six major items to pay attention to:
 | Kannada                           |<span lang="kn">೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯</span>|
 | Malayalam                         | <span lang="ml">൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯</span>|
 | Odia                              | <span lang="or">୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯</span>|
-| Tami                              | <span lang="ta">௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯</span>|
+| Tamil                             | <span lang="ta">௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯</span>|
 | Telugu                            | <span lang="te">౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯</span>|
 | Thai                              | <span lang="th">๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙</span>|
 | Tibetan                           | <span lang="bo">༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩</span>|
