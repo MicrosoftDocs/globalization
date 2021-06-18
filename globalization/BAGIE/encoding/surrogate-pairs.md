@@ -15,6 +15,8 @@ These characters, encoded at code positions of U+10000 or higher, are synchroniz
 - Supplementary Ideographic Plane (SIP)-with code positions from U+20000 through U+2FFFF
 - Supplementary Special-purpose Plane (SSP)-with code positions from (SSP) U+E0000 through U+EFFFF
 
+<!-- Need to add Tertiary Ideographic Plane, etc-->
+
 The SMP, or Plane 1, contains several historic scripts and several sets of symbols: emoji and related symbols, historic scripts, musical symbols, and mathematical symbols. The SIP, or Plane 2, contains a very large collection of additional unified Han ideographs, also known as CJK Extensions B, C, D, and E, as well as additional CJK Compatibility ideographs. The SSP, or Plane 14, contains a set of tag characters and a variation selector supplement.
 
 ### Variation Selection
