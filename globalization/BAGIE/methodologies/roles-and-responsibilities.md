@@ -1,4 +1,4 @@
-# Roles and responsibilities 
+# Roles and responsibilities
 
 Goal: describe activities that need should happen for a successful global product.
 
