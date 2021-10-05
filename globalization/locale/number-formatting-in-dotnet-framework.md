@@ -27,24 +27,28 @@ The following code example displays an integer using the *NumberFormatInfo* stan
 
 ```csharp
 using System.Globalization;
-public class TestClass
+
+public class CurrencyFormatSample
 {
-     public static void Main()
-     {
-     int i = 100;
-     // Create a CultureInfo object for English in Belize.
-     CultureInfo bz = new CultureInfo("en-BZ");
-     // Display i formatted as currency for bz.
-     Console.WriteLine(i.ToString("c", bz));
-     // Create a CultureInfo object for English in the U.S.
-     CultureInfo us = new CultureInfo("en-US");
-     // Display i formatted as currency for us.
-     Console.WriteLine(i.ToString("c", us));
-     // Create a CultureInfo object for Danish in Denmark.
-     CultureInfo dk = new CultureInfo("da-DK");
-     // Display i formatted as currency for dk.
-     Console.WriteLine(i.ToString("c", dk));
-     }
+  public static void Main()
+  {
+    int i = 100;
+	
+    // Create a CultureInfo object for English in Belize.
+    CultureInfo bz = new CultureInfo("en-BZ");
+    // Display i formatted as currency for bz.
+    Console.WriteLine(i.ToString("c", bz));
+	
+    // Create a CultureInfo object for English in the U.S.
+    CultureInfo us = new CultureInfo("en-US");
+    // Display i formatted as currency for us.
+    Console.WriteLine(i.ToString("c", us));
+	
+    // Create a CultureInfo object for Danish in Denmark.
+    CultureInfo dk = new CultureInfo("da-DK");
+    // Display i formatted as currency for dk.
+    Console.WriteLine(i.ToString("c", dk));
+  }
 }
 ```
 
@@ -52,7 +56,8 @@ This code produces the following output:
 
 ```
 $100.00
-kr100,00
+$100.00
+100,00 kr.
 ```
 
 As when dealing with numbers, formatting conventions for addresses vary widely from one country to another. There are also discrepancies in the actual terms used when representing addresses that you will need to handle.
