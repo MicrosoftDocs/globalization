@@ -17,7 +17,7 @@ UTF-8 is commonly used in transmission via Internet protocols and in Web content
 - **UTF-16:** This is the 16-bit encoding form of the Unicode Standard where characters are assigned a unique 16-bit value, with the exception of characters encoded by surrogate pairs which consist of a pair of 16-bit values.
 The Unicode 16-bit encoding form is identical to the International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) transformation format UTF-16.
 In UTF-16, any characters that are mapped up to the number 65,535 are encoded as a single 16-bit value; characters mapped above the number 65,535 are encoded as pairs of 16-bit values.
-For more information on surrogate pairs, see "[Surrogate Pairs](https://docs.microsoft.com/globalization/encoding/surrogate-pairs)".
+For more information on surrogate pairs, see "[Surrogate Pairs](surrogate-pairs.md)".
 UTF-16 little-endian (UTF-16LE) is the encoding standard in the Windows operating system.
 
 - **UTF-32:** Each character is represented as a single 32-bit integer.

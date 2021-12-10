@@ -27,7 +27,7 @@ With the restricted space of the LCID it is impossible to provide a unique ident
 
 The deprecation of LCID began with Windows Vista, when APIs were added to recognize BCP 47 tags.
 Windows Vista also introduced custom locales, and those locales may not have an assigned LCID.
-Requests for new LCIDs for those locales would use the [LOCALE_CUSTOM_DEFAULT](https://docs.microsoft.com/windows/win32/intl/locale-custom-constants) or [LOCALE_CUSTOM_UNSPECIFIED](https://docs.microsoft.com/windows/win32/intl/locale-custom-constants) identifiers.  LOCALE_CUSTOM_DEFAULT if they locale happens to be the user default locale, otherwise LOCALE_CUSTOM_UNSPECIFIED.
+Requests for new LCIDs for those locales would use the [LOCALE_CUSTOM_DEFAULT](/windows/win32/intl/locale-custom-constants) or [LOCALE_CUSTOM_UNSPECIFIED](/windows/win32/intl/locale-custom-constants) identifiers.  LOCALE_CUSTOM_DEFAULT if they locale happens to be the user default locale, otherwise LOCALE_CUSTOM_UNSPECIFIED.
 
 Prior to Windows 8, the Windows team would assign new LCID values for each new locale added to Windows.
 However, starting with Windows 8, Windows started adding new locales that do ***not*** have a unique pre-assigned LCID value to identify them.

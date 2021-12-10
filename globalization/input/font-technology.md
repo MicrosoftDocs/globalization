@@ -66,7 +66,7 @@ The Noto family of fonts uses the model to create what appears as a single font 
 
 > [!NOTE]
 > Font linking requires specifying the priority of the fonts to be linked together as though in a chain.
-A font later in the chain can only _add_ glyphs to an earlier font; you cannot override or replace glyphs in the early font.
+> A font later in the chain can only _add_ glyphs to an earlier font; you cannot override or replace glyphs in the early font.
 
 If font linking is enabled on your device, you can examine the registry by enumerating the sub-keys of the registry key at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink` to determine the mappings of linked fonts to base fonts. 
 You can add links by using Regedit to create additional subkeys.
@@ -74,8 +74,9 @@ Once you have located the registry key that has just been mentioned, from the Ed
 On a new line in the dialog field "Value data" of the Edit Multi-String dialog box, enter the path and file name to link to, and face name of the font.
 Use a comma to separate the font file name and font face name.
 
-> [!CAUTION] Editing/modifying the font link entries in the Registry can be done, but is NOT supported by Microsoft.
-The wrong font link entry can leave the system unstable and impacts machine performance.
+> [!CAUTION]
+> Editing/modifying the font link entries in the Registry can be done, but is NOT supported by Microsoft.
+> The wrong font link entry can leave the system unstable and impacts machine performance.
 
 > [!NOTE]
 > After using Regedit to add the font linking, you have to log off Windows and log back on in order to have the newly-added font linking take effect.
@@ -111,7 +112,7 @@ MEIRYO.TTC,Meiryo,128,85
 
 indicates that the scaling algorithm should apply the scaling factors 128 and 85 whenever the given base font is linked to the Meiryo font.
 
-Note that [GDI+](https://docs.microsoft.com/windows/win32/gdiplus/-gdiplus-gdi-start) is not able to parse these scaling factors.
+Note that [GDI+](/windows/win32/gdiplus/-gdiplus-gdi-start) is not able to parse these scaling factors.
 Thus, references to fonts with scaling factors are repeated without these scaling factors.
 In GDI+, the first reference, with the scaling factors, will appear to be to an unrecognized font and will be ignored.
 In GDI, the second reference will be treated as redundant and ignored.

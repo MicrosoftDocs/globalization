@@ -8,10 +8,10 @@ ms.date: 03/16/2016
 # Handling calendars in .NET Framework
 
 Similar to the Win32 paradigm - the .NET Framework handles dates in the Gregorian calendar by using data structures.
-Therefore, when you use the methods provided by the [DateTime](https://docs.microsoft.com/dotnet/api/system.datetime) structure, you must be aware that the members such as the DateTime.Day property, the DateTime.Month property, the DateTime.Year property, and the DateTime.AddDays method are based on the Gregorian calendar.
+Therefore, when you use the methods provided by the [DateTime](/dotnet/api/system.datetime) structure, you must be aware that the members such as the DateTime.Day property, the DateTime.Month property, the DateTime.Year property, and the DateTime.AddDays method are based on the Gregorian calendar.
 Even if you change the current calendar in your application's code or change date and time settings through the Regional And Language Options property sheet, the Gregorian calendar is still used to perform the calculations for these methods.
 This functionality prevents the arithmetic performed by these methods from being corrupted by a user's settings.
-If you want to perform culture-sensitive date and time operations based on the current calendar, you must use the [DateTimeFormatInfo.Calendar](https://docs.microsoft.com/dotnet/api/system.globalization.datetimeformatinfo.calendar) property to call methods provided by the [Calendar](https://docs.microsoft.com/dotnet/api/system.web.ui.webcontrols.calendar) class such as **Calendar.GetDayOfMonth**, **Calendar.GetMonth**, **Calendar.GetYear**, and **Calendar.AddDays**.
+If you want to perform culture-sensitive date and time operations based on the current calendar, you must use the [DateTimeFormatInfo.Calendar](/dotnet/api/system.globalization.datetimeformatinfo.calendar) property to call methods provided by the [Calendar](/dotnet/api/system.web.ui.webcontrols.calendar) class such as **Calendar.GetDayOfMonth**, **Calendar.GetMonth**, **Calendar.GetYear**, and **Calendar.AddDays**.
 
 To handle native calendar types, the .NET Framework provides the Calendar class as well as the following Calendar implementations: GregorianCalendar, HebrewCalendar, HijriCalendar, JapaneseCalendar, JulianCalendar, KoreanCalendar, TaiwanCalendar, and ThaiBuddhistCalendar. Other things you can use include the CultureInfo class, which has a CultureInfo.Calendar property that specifies a culture's default calendar.
 The CultureInfo.OptionalCalendars property specifies the optional calendars supported by a culture.
@@ -25,50 +25,50 @@ using System;
 using System.Globalization;
 public class TestClass
 {
-    public static void Main()
-    {
-        // Create a CultureInfo object for Thai in Thailand.
-        CultureInfo th = new CultureInfo("th-TH");
-        DisplayCalendars(th);
-    }
-    protected static void DisplayCalendars(CultureInfo cultureinfo)
-    {
-        CultureInfo ci = new CultureInfo(cultureinfo.ToString());
-        // Display the default calendar for the culture.
-        if (ci.Calendar is GregorianCalendar)
-        {
-            Console.WriteLine("\\n\\n");
-            Console.WriteLine(
-                "The default calendar for the {0} culture is: \\n{1}\\n\\n",
-                    ci.DisplayName.ToString(), ci.Calendar.ToString() +
-                " subtype " +
-                ((GregorianCalendar)ci.Calendar).CalendarType.ToString());
-        }
-        else
-        {
-            Console.WriteLine("\\n\\n");
-            Console.WriteLine(
-                "The default calendar for the {0} culture is: \\n{1}\\n\\n",
-                    ci.DisplayName.ToString(), ci.Calendar.ToString());
-            // Display the optional calendars for the culture.
-            Console.WriteLine(
-                "The optional calendars for the {0} culture are: ",
-                    ci.DisplayName.ToString());
-            for (int i = ci.OptionalCalendars.GetLowerBound(0); i &lt;= ci.OptionalCalendars.GetUpperBound(0); i++)
-            {
-                if (ci.OptionalCalendars\[i\] is GregorianCalendar)
-                {
-                    // Display the calendar subtype.
-                    String CalStr = (ci.OptionalCalendars\[i\].ToString() +
-                    " subtype " +
-                    ((GregorianCalendar)ci.OptionalCalendars\[i\]).CalendarType.ToString());
-                    Console.WriteLine(CalStr);
-                }
-                else
-                    Console.WriteLine(ci.OptionalCalendars\[i\].ToString());
-            }
-        }
-    }
+   public static void Main()
+   {
+     // Create a CultureInfo object for Thai in Thailand.
+     CultureInfo th = new CultureInfo("th-TH");
+     DisplayCalendars(th);
+   }
+   protected static void DisplayCalendars(CultureInfo cultureinfo)
+   {
+     CultureInfo ci = new CultureInfo(cultureinfo.ToString());
+     // Display the default calendar for the culture.
+     if (ci.Calendar is GregorianCalendar)
+     {
+       Console.WriteLine("\\n\\n");
+       Console.WriteLine(
+         "The default calendar for the {0} culture is: \\n{1}\\n\\n",
+           ci.DisplayName.ToString(), ci.Calendar.ToString() +
+         " subtype " +
+         ((GregorianCalendar)ci.Calendar).CalendarType.ToString());
+     }
+     else
+     {
+       Console.WriteLine("\\n\\n");
+       Console.WriteLine(
+         "The default calendar for the {0} culture is: \\n{1}\\n\\n",
+           ci.DisplayName.ToString(), ci.Calendar.ToString());
+       // Display the optional calendars for the culture.
+       Console.WriteLine(
+         "The optional calendars for the {0} culture are: ",
+           ci.DisplayName.ToString());
+       for (int i = ci.OptionalCalendars.GetLowerBound(0); i &lt;= ci.OptionalCalendars.GetUpperBound(0); i++)
+       {
+         if (ci.OptionalCalendars\[i\] is GregorianCalendar)
+         {
+           // Display the calendar subtype.
+           String CalStr = (ci.OptionalCalendars\[i\].ToString() +
+           " subtype " +
+           ((GregorianCalendar)ci.OptionalCalendars\[i\]).CalendarType.ToString());
+           Console.WriteLine(CalStr);
+         }
+         else
+           Console.WriteLine(ci.OptionalCalendars\[i\].ToString());
+       }
+     }
+   }
 }
 ```
 

@@ -12,7 +12,7 @@ Mirroring gives a perfect RTL look and feel to the user interface.
 All language versions and flavors of Windows are already mirroring aware and a mirrored application can be created and executed on all Windows platforms (after Windows 2000).
 Figure 1 below displays an Arabic mirrored desktop where every element from the "Start" button to tree-view controls are mirrored.
 
-![Arabic Windows XP desktop](https://docs.microsoft.com/globalization/localizability/images/Arabic_Desktop.jpg "Arabic Windows XP desktop")
+![Arabic Windows XP desktop](./images/Arabic_Desktop.jpg "Arabic Windows XP desktop")
 
 **Figure 1:** Arabic Windows XP desktop
 
@@ -23,7 +23,7 @@ Mirroring is in fact nothing else than a coordinate transformation:
 - Origin (0,0) is in the upper right corner of a window
 - X scale factor = -1 (i.e. x values increase from right to left
 
-![Coordinate transformation](https://docs.microsoft.com/globalization/localizability/images/Coordinate_Trans.jpg "Coordinate transformation")
+![Coordinate transformation](./images/Coordinate_Trans.jpg "Coordinate transformation")
 
 **Figure 2:** Coordinate transformation
 
@@ -48,7 +48,7 @@ Here are a few examples:
 
 ### Reversed bitmap
 
-![Reversed bitmap](https://docs.microsoft.com/globalization/localizability/images/Reversed_Bitmap.jpg "Reversed bitmap")
+![Reversed bitmap](./images/Reversed_Bitmap.jpg "Reversed bitmap")
 
 This happens when the bitmap is drawn in a mirrored device context (DC).
 For compiled applications, you can turn the mirroring of the DC off by calling the SetLayout API.
@@ -58,7 +58,7 @@ For more info, see Solution and Code Samples section.
 
 ### Off the screen bitmap
 
-![Off the screen bitmap](https://docs.microsoft.com/globalization/localizability/images/Off_the_Screen.jpg "Off the screen bitmap")
+![Off the screen bitmap](./images/Off_the_Screen.jpg "Off the screen bitmap")
 
 The owner-drawn command or bitmap is being drawn outside the desired area because its coordinates are expecting the origin to be in the top-left of the window instead of the top-right.
 For compiled applications, use MapWindowPoints to get the coordinates of the destination rectangle.

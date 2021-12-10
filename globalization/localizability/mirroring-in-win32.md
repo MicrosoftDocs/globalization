@@ -18,7 +18,7 @@ This is a good approach to use when you want to mirror old components for which 
 You can mirror applications by adding two left-to-right marks (LRMs)-represented by Unicode code point U+200E-in front of the FileDescription value of the version stamping.
 Figure below shows an English Notepad.exe file that has been mirrored with this approach.
 
-![Mirrored by adding two LRMs](https://docs.microsoft.com/globalization/localizability/images/Two_LRMs.jpg "Mirrored by adding two LRMs")
+![Mirrored by adding two LRMs](./images/Two_LRMs.jpg "Mirrored by adding two LRMs")
 
 **Figure 1:** A Notepad.exe file that has been mirrored by adding two left-to-right marks
 
@@ -93,7 +93,7 @@ The second style is only if you want to prevent the inheritance from taking plac
 The only way to switch between mirrored and non-mirrored dialog resources at run time is to have two sets of dialog resources: one mirrored and one non-mirrored.
 The Dialog Properties property sheet within the resource editor of Microsoft Visual Studio 6 allows you to set the mirroring style of the dialog resources.
 
-![Setting the mirror style](https://docs.microsoft.com/globalization/localizability/images/Set_Mirroring.jpg "Setting the mirror style")
+![Setting the mirror style](./images/Set_Mirroring.jpg "Setting the mirror style")
 
 **Figure 2:** Setting the mirroring style of the dialog resources within the resource editor of Visual Studio 6
 
@@ -222,7 +222,7 @@ Some direction-sensitive graphics can have a different meaning when mirrored.
 For example, within an LTR layout in a browser, an arrow that points to the left represents the concept of going back to the previous page; an arrow that points to the right would signify going forward to the next page.
 When these arrows are mirrored for an RTL layout, the meaning will be just the opposite.
 
-![Direction-sensitive arrow](https://docs.microsoft.com/globalization/localizability/images/Direction_Arrow.jpg "Direction-sensitive arrow")
+![Direction-sensitive arrow](./images/Direction_Arrow.jpg "Direction-sensitive arrow")
 
 **Figure 3:** Example of a direction-sensitive arrow that changes meaning when mirrored
 
@@ -230,7 +230,7 @@ When these arrows are mirrored for an RTL layout, the meaning will be just the o
 
 Other graphics should not be mirrored at all, such as legal trademarks or logos because they will make no sense when laid out from right to left.
 
-![direction-sensitive graphic](https://docs.microsoft.com/globalization/localizability/images/Direction_Graphic.jpg "direction-sensitive graphic")
+![direction-sensitive graphic](./images/Direction_Graphic.jpg "direction-sensitive graphic")
 
 **Figure 4:** Example of a direction-sensitive graphic that should not be mirrored
 

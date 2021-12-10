@@ -131,4 +131,4 @@ Unfortunately, Win32 APIs do not offer a solution to enumerate information relat
 GetLocalTime and GetSystemTime will allow you to retrieve the current local and the UTC times, respectively.
 To convert the local time to UTC, you can use the LocalFileTimeToFileTime API.
 These are but two of the many Win32 APIs dealing with time.
-To learn about other functions, search for "time functions" on <https://docs.microsoft.com/>.
+To learn about other functions, search for "time functions" on </>.

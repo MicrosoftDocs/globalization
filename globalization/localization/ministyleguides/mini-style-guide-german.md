@@ -56,7 +56,7 @@ _Not our style_: <span lang="de">Windows Desktop Application Program</span>
 
 ## 3.	Follow the tone and style of the original English
 
-[Microsoft voice](https://docs.microsoft.com/style-guide/brand-voice-above-all-simple-human) targets a broad set of users from technology enthusiasts to casual computer users. Translating Microsoft's voice into German means choosing words and grammatical structures that reflect the Microsoft style: clear and friendly, concise without sounding robot-like. But it also means considering the needs of the audience (e.g., children vs. adults) and the intent of the text (e.g., entertaining, informative, instructional).
+[Microsoft voice](/style-guide/brand-voice-above-all-simple-human) targets a broad set of users from technology enthusiasts to casual computer users. Translating Microsoft's voice into German means choosing words and grammatical structures that reflect the Microsoft style: clear and friendly, concise without sounding robot-like. But it also means considering the needs of the audience (e.g., children vs. adults) and the intent of the text (e.g., entertaining, informative, instructional).
 
 **Example**
 

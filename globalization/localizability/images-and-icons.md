@@ -28,7 +28,7 @@ However, when the image was introduced in Europe, most people wanted to know wha
 A much better choice would have been-and still is-using an outline of a postal letter, since most people who understand the concept of mail would understand this image.
 (See **Figure 1**).
 
-![Use culturally-appropriate images](https://docs.microsoft.com/globalization/localizability/images/Mail.jpg "Use culturally-appropriate images")
+![Use culturally-appropriate images](./images/Mail.jpg "Use culturally-appropriate images")
 
 **Figure 1:** Earlier image used to represent mail, versus the newer and more culturally-appropriate image
 
@@ -40,7 +40,7 @@ Again, these images worked well here in the United States, but the concept of a 
 Even for some cultures that do understand the concept, wizards don't necessarily wear pointy hats.
 In still other cultures, a wizard represents something evil or destructive; it can even be a religious abomination, rather than something that is meant to enlighten or assist someone.
 
-![Culture-specific images for wizzard](https://docs.microsoft.com/globalization/localizability/images/Wizard.jpg "Culture-specific images for wizzard")
+![Culture-specific images for wizard](./images/Wizard.jpg "Culture-specific images for wizard")
 
 **Figure 2:** Culture-specific images formerly used to depict a software wizard
 
@@ -55,7 +55,7 @@ So instead of using an open hand to represent "stop," use the internationally-ac
 (See **Figures 3**.)
 In addition to the taboo factor, although using the image of an open hand might be understood in the United States as a way to indicate the action of stopping, this doesn't mean the image will be understood in other cultures.
 
-![Use the internationally-accepted stop sign](https://docs.microsoft.com/globalization/localizability/images/Stop.jpg "Use the internationally-accepted stop sign")
+![Use the internationally-accepted stop sign](./images/Stop.jpg "Use the internationally-accepted stop sign")
 
 **Figure 3:** Rather than using the hand to represent the action of stopping, use the internationally-accepted stop sign
 
@@ -66,7 +66,7 @@ Although the gesture might be accepted in the United States, there are other par
 Again, it is better to avoid using images involving a human body part, unless you are dealing with software that has a specific medical theme or context.
 Even then, be careful not to show a hand in some type of gesture.
 
-![Gesture used in the United States for OK](https://docs.microsoft.com/globalization/localizability/images/Okay.jpg "Gesture used in the United States for OK")
+![Gesture used in the United States for OK](./images/Okay.jpg "Gesture used in the United States for OK")
 
 **Figure 4:** Gesture used in the United States for "okay"
 
@@ -77,7 +77,7 @@ In some cultures, men and women are treated as complete equals; in others, one g
 Thus in some cultures Figure 5 would be offensive because it shows a woman standing above men in an apparently superior role.
 A better graphic to portray the same idea is in Figure 6, where the human figures are gender-neutral.
 
-![Potentially offensive graphic for its depiction of gender-assigned roles](https://docs.microsoft.com/globalization/localizability/images/Meeting_1.jpg "Potentially offensive graphic for its depiction of gender-assigned roles")
+![Potentially offensive graphic for its depiction of gender-assigned roles](./images/Meeting_1.jpg "Potentially offensive graphic for its depiction of gender-assigned roles")
 
 **Figure 5:** Example of a potentially offensive graphic for its depiction of gender-assigned roles
 
@@ -86,7 +86,7 @@ In this figure you cannot tell what race the people belong to.
 Some cultures feel the same way about ethnic-group roles in society as they do about gender roles.
 By adhering to the guideline of not showing skin (or skin color), you can feel safer that you are not generating content that has higher potential risk in a locale.
 
-![Example of an inoffensive graphic](https://docs.microsoft.com/globalization/localizability/images/Meeting_2.jpg "Example of an inoffensive graphic")
+![Example of an inoffensive graphic](./images/Meeting_2.jpg "Example of an inoffensive graphic")
 
 **Figure 6:** Example of an inoffensive graphic, since it avoids depicting gender-assigned roles
 

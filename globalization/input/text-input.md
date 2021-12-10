@@ -34,7 +34,7 @@ If you are using a standard control, you should have no need to worry about the 
 This will be handled for you automatically.
 Advanced applications (such as a text editor) that need to have full control over how input languages are handled should monitor and be able to respond to the user’s changes.
 
-You will find [keyboard input documentation on Docs](https://docs.microsoft.com/windows/win32/inputdev/using-keyboard-input).
+You will find [keyboard input documentation on Docs](/windows/win32/inputdev/using-keyboard-input).
 
 The exception may be for keyboard shortcuts. If you define a shortcut as Alt-S and there is no S on the keyboard, what does that mean for the user?
 

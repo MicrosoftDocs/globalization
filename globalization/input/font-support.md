@@ -73,7 +73,7 @@ In Windows 10, the Segoe MDL2 Assets font has been added to provide newer icono
 An important development in Windows 10 is the Universal Windows Platform (UWP): a converged app platform allowing a developer to create a single app that can run on all Windows devices.
 Windows fonts are one aspect of this convergence: Windows 10 introduces a recommended UWP font set that is common across all editions that support UWP, including Desktop, Server, Mobile and Xbox.
 
-For information regarding which fonts are included in the recommended Microsoft font set, complete details are provided in [Windows 7 Guidelines for fonts](https://docs.microsoft.com/windows/desktop/uxguide/vis-fonts).
+For information regarding which fonts are included in the recommended Microsoft font set, complete details are provided in [Windows 7 Guidelines for fonts](/windows/desktop/uxguide/vis-fonts).
 One important point to note is that the recommended font set does not include all of the weights for certain font families.
 In particular, due to the large size of East Asian fonts, only the regular weight of East Asian font families are included in the recommended font set.
 
@@ -133,7 +133,7 @@ Balinese, Batak, Brahmi, Buginese, Buhid, Chakma, Cham, Duployan, Egyptian Hiero
 
 Other scripts in Unicode 7.0 either are supported in other shaping engines or do not require complex script handling.
 
-For more background on the Universal Shaping Engine, see [Creating and supporting OpenType fonts for the Universal Shaping Engine](https://docs.microsoft.com/typography/script-development/use) .
+For more background on the Universal Shaping Engine, see [Creating and supporting OpenType fonts for the Universal Shaping Engine](/typography/script-development/use) .
 
 ## Windows 8.1
 

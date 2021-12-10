@@ -17,7 +17,7 @@ Or even within the same calendar, the first day of the week might start on anoth
 For instance, in most of the European countries that use the Gregorian calendar, the start of the week is Monday.
 Unlike English (United States), there are other locales that use more than one calendar type, such as Japanese.
 
-![Japanese calendar types](https://docs.microsoft.com/globalization/locale/images/Japanese_Calendars.jpg "Japnese calendar types")
+![Japanese calendar types](./images/Japanese_Calendars.jpg "Japanese calendar types")
 
 **Figure 1.** Available calendar types for Japanese regional setting
 

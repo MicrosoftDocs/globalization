@@ -48,7 +48,7 @@ _Our style_: <span lang=tr>Bu düğme, görev bölmesinin metin alanındaki içe
 
 ## 4.	Microsoft voice
 
-[Microsoft Voice](https://docs.microsoft.com/style-guide/brand-voice-above-all-simple-human) avoids an unnecessarily formal tone. The general style should be clear, friendly, and concise. Avoid slang, and be careful with colloquialisms.
+[Microsoft Voice](/style-guide/brand-voice-above-all-simple-human) avoids an unnecessarily formal tone. The general style should be clear, friendly, and concise. Avoid slang, and be careful with colloquialisms.
 
 The Microsoft voice allows for the use of culture-centric colloquialisms, idioms, and metaphors (collectively referred to as "colloquialisms").
 

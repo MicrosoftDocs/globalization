@@ -116,16 +116,16 @@ For a binary search or tree, this could cause entire sections of the data to bec
 Another example would be sorting in a language for which Windows does not have full support.
 A future update to Windows with improved language support could provide correct ordering for that language, invalidating any previously generated indices for that language.
 
-To mitigate against this, applications can call [GetNLSVersionEx](https://docs.microsoft.com/windows/win32/api/winnls/nf-winnls-getnlsversionex) with the COMPARE\_STRING flag and store the results along with the index.
+To mitigate against this, applications can call [GetNLSVersionEx](/windows/win32/api/winnls/nf-winnls-getnlsversionex) with the COMPARE\_STRING flag and store the results along with the index.
 The important bits of the NLSVERSIONINFOEX structure to compare are the dwNLSVersion, which will be updated if the general sorting rules change, and guidCustomVersion, which is effectively a GUID for each language and will change if the rules for a specific language change.
 
 ## Sorting and comparing in .NET Code
 
 The Array class provides an overloaded method that allows you to sort arrays based on the CultureInfo.CurrentCulture property.
 In the following example, an array of three strings is created.
-First, the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture) is set to "en-US" and the method is called.
+First, the [CurrentCulture](/dotnet/api/system.threading.thread.currentculture) is set to "en-US" and the method is called.
 The resulting sort order is based on sorting conventions for the "en-US" culture.
-Next, the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture) is set to "da-DK" and the method is called again.
+Next, the [CurrentCulture](/dotnet/api/system.threading.thread.currentculture) is set to "da-DK" and the method is called again.
 Notice how the resulting sort order differs from the "en-US" results because the sorting conventions for the "da-DK" culture are used.
 
 ```csharp
@@ -194,24 +194,24 @@ According to sort-key methodology, each character in a string is given several c
 A sort key serves as the repository of these weights for a particular string.
 For example, a sort key might contain a string of alphabetic weights, followed by a string of case weights, and so on.
 
-In the .NET Framework, the [SortKey](https://docs.microsoft.com/dotnet/api/system.globalization.sortkey) class maps strings to their sort keys and vice versa.
-You can use the [CompareInfo.GetSortKey](https://docs.microsoft.com/dotnet/api/system.globalization.compareinfo.getsortkey) method to create a sort key for a string that you specify.
+In the .NET Framework, the [SortKey](/dotnet/api/system.globalization.sortkey) class maps strings to their sort keys and vice versa.
+You can use the [CompareInfo.GetSortKey](/dotnet/api/system.globalization.compareinfo.getsortkey) method to create a sort key for a string that you specify.
 The resulting sort key for a specified string is a sequence of bytes that can differ depending upon the CurrentCulture and the CompareOptions that you specify.
 For example, if you specify IgnoreCase when creating a sort key, a string comparison operation using the sort key will ignore case.
 
-After you create a sort key for a string, you can pass it as a parameter to methods provided by the [SortKey](https://docs.microsoft.com/dotnet/api/system.globalization.sortkey) class.
-The [SortKey.Compare](https://docs.microsoft.com/dotnet/api/system.globalization.sortkey.compare) method allows you to compare sort keys.
-Because [SortKey.Compare](https://docs.microsoft.com/dotnet/api/system.globalization.sortkey.compare) performs a simple byte-by-byte comparison, it is much faster than using [String.Compare](https://docs.microsoft.com/dotnet/api/system.string.compare).
+After you create a sort key for a string, you can pass it as a parameter to methods provided by the [SortKey](/dotnet/api/system.globalization.sortkey) class.
+The [SortKey.Compare](/dotnet/api/system.globalization.sortkey.compare) method allows you to compare sort keys.
+Because [SortKey.Compare](/dotnet/api/system.globalization.sortkey.compare) performs a simple byte-by-byte comparison, it is much faster than using [String.Compare](/dotnet/api/system.string.compare).
 In applications that are sorting-intensive, you can improve performance by generating and storing sort keys for all the strings that the application uses.
 When a sort or comparison operation is required, you can use the sort keys rather than the strings.
 
 The previous code example creates sort keys for two strings when the CurrentCulture is set to "da-DK".
 It compares the two strings using the SortKey.Compare method and displays the results.
- [SortKey.Compare](https://docs.microsoft.com/dotnet/api/system.globalization.sortkey.compare) method returns a negative integer if string1 is less than string2, zero (0) if string1 and string2 are equal, and a positive integer if string1 is greater than string2.
-Next, the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture) is set to "en-US" culture, and sort keys are created for the same strings.
+ [SortKey.Compare](/dotnet/api/system.globalization.sortkey.compare) method returns a negative integer if string1 is less than string2, zero (0) if string1 and string2 are equal, and a positive integer if string1 is greater than string2.
+Next, the [CurrentCulture](/dotnet/api/system.threading.thread.currentculture) is set to "en-US" culture, and sort keys are created for the same strings.
 The sort keys for the strings are compared and the results are displayed.
-Notice that the sort results differ based upon the [CurrentCulture](https://docs.microsoft.com/dotnet/api/system.threading.thread.currentculture).
-Although the results of the following code example are identical to the results of comparing these strings in the [String.Compare](https://docs.microsoft.com/dotnet/api/system.string.compare) example given earlier, the [SortKey.Compare](https://docs.microsoft.com/dotnet/api/system.globalization.sortkey.compare) method is faster than the [String.Compare](https://docs.microsoft.com/dotnet/api/system.string.compare) method.
+Notice that the sort results differ based upon the [CurrentCulture](/dotnet/api/system.threading.thread.currentculture).
+Although the results of the following code example are identical to the results of comparing these strings in the [String.Compare](/dotnet/api/system.string.compare) example given earlier, the [SortKey.Compare](/dotnet/api/system.globalization.sortkey.compare) method is faster than the [String.Compare](/dotnet/api/system.string.compare) method.
 
 ### String normalization
 
@@ -224,8 +224,8 @@ For example, the glyph ä may be canonically represented by the following sets o
 |ä           | \\u00E4            |
 |a + ̈        |  \\u0061 + \\u0308 |
 
-- Use the [IsNormalized](https://docs.microsoft.com/dotnet/api/system.string.isnormalized) method to test whether a string is normalized to a particular normalization form.
-- Use the [Normalize](https://docs.microsoft.com/dotnet/api/system.string.normalize) method to create a string that is normalized to a particular normalization form.
+- Use the [IsNormalized](/dotnet/api/system.string.isnormalized) method to test whether a string is normalized to a particular normalization form.
+- Use the [Normalize](/dotnet/api/system.string.normalize) method to create a string that is normalized to a particular normalization form.
 - Many computer systems and standards tend to the Unicode Normalization Form C representation, however others lean toward Form D. If your applications gets input from more than one system it may see data in either form.
 
 ## Security Considerations

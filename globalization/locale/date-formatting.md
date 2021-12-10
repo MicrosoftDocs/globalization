@@ -74,7 +74,7 @@ Broken down:
 - Ordered that dates sort properly using a basic efficient string sort.
 
 .NET provides convenient formats for formatting a date designed for transmission (round-trip) (`"o"`), and universal/sortable format (`"U"`).
-See [Standard date and time format strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
+See [Standard date and time format strings](/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
 See also
 

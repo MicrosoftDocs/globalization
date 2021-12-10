@@ -24,11 +24,11 @@ When this is the case, make sure to leave room for the text to expand in your de
 For instance, notice the extra space allotted between the text "Digit grouping symbol" and the list-box control in **Figure 2**.
 In **Figure&nbsp;3**, you can see much of this extra space was used when the text was translated to German.
 
-![Dialog box with extra space](https://docs.microsoft.com/globalization/localizability/images/Extra_space_en.jpg "Dialog box with extra space")
+![Dialog box with extra space](/globalization/localizability/images/Extra_space_en.jpg "Dialog box with extra space")
 
 **Figure 2**: Example of a dialog box for which extra space has been allotted between the text field and the list-box control
 
-![Text field can expand during translation](https://docs.microsoft.com/globalization/localizability/images/Extra_space_de.jpg "Text field can expand during translation")
+![Text field can expand during translation](./images/Extra_space_de.jpg "Text field can expand during translation")
 
 **Figure 3**: Example of how a text field can expand during translation
 
@@ -87,7 +87,7 @@ CONTROL "Radio1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON |
 
 Or in Microsoft Visual Studio you can select the Multiline property in the particular control's property sheet. (See **Figure 7**.)
 
-![Multiline property](https://docs.microsoft.com/globalization/localizability/images/Multiline_Property.jpg "Multiline property")
+![Multiline property](./images/Multiline_Property.jpg "Multiline property")
 
 **Figure 7**: Multiline property set in a Visual Studio control's property sheet
 
@@ -96,7 +96,7 @@ Allowing multiple lines is important since localizers might not have accessto th
 **Figure 8** shows a dialog box that was well designed in the English-language version.
 When localized into German, however, the radio buttons' UI design was broken when the translated text was not allowed to wrap.
 
-![Result of not allowing controls to wrap text](https://docs.microsoft.com/globalization/localizability/images/No_wrap.jpg "Result of not allowing controls to wrap text")
+![Result of not allowing controls to wrap text](./images/No_wrap.jpg "Result of not allowing controls to wrap text")
 
 **Figure 8**: Result of not allowing controls to wrap text
 
@@ -104,7 +104,7 @@ Variables used in UI strings usually need extra space because you can never be s
 A good rule is to add one line per variable in the text box so that there is enough space for the localized text. In **Figure 9** the translation of the first sentence "Welcome to the %s Registration wizard." will require the entire first line.
 Thus the inserted text of the variable will extend the sentence onto a second line.
 
-![Allowing one line per variable in a text box](https://docs.microsoft.com/globalization/localizability/images/One_Line_Text_Box.jpg "Allowing one line per variable in a text box")
+![Allowing one line per variable in a text box](./images/One_Line_Text_Box.jpg "Allowing one line per variable in a text box")
 
 **Figure 9**: Example of allowing one line per variable in a text box
 
@@ -113,13 +113,13 @@ Most of the time this practice works.
 The only exception is when you have a string or button that has less than 10 characters.
 Take, for example, the following OK button:
 
-![OK button](https://docs.microsoft.com/globalization/localizability/images/OK_Button_en.jpg "OK button")
+![OK button](./images/OK_Button_en.jpg "OK button")
 
 If you followed the 30-percent rule, all you would do is leave space for one more character; but this does not hold true if you are localizing the text into Spanish.
 The verb for "accept" in Spanish is "aceptar" (which is used within the UI to mean "OK").
 However, the word "aceptar" is 250 percent bigger than the original text.
 
-![Spanish Accept](https://docs.microsoft.com/globalization/localizability/images/OK_Button_es.jpg "Spanish Accept")
+![Spanish Accept](./images/OK_Button_es.jpg "Spanish Accept")
 
 Therefore, the exception to the 30-percent rule is if the text has less than 10 characters, leave room for at least 400 percent growth.
 Remember that these are general rules, and all languages' UIs should be designed to look as good as possible, even in English.

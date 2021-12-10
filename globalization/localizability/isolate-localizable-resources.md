@@ -14,11 +14,11 @@ Then developers must take time to clean up these files so that they will compile
 Hard-coded elements are difficult to find because they do not show up until the software is localized.
 Figures 1 and 2 show some common problems that occur during localization.
 
-![Hard-coded string example 1](https://docs.microsoft.com/globalization/localizability/images/Hardcoded.jpg "Hard-coded string example 1")
+![Hard-coded string example 1](./images/Hardcoded.jpg "Hard-coded string example 1")
 
 **Figure 1:** The string "Unknown Modem" was hard-coded and thus went untranslated
 
-![Hard-coded period](https://docs.microsoft.com/globalization/localizability/images/Hardcoded_Period.jpg "Hard-coded period")
+![Hard-coded period](./images/Hardcoded_Period.jpg "Hard-coded period")
 
 **Figure 2:** The string is a text resource without a period at the end of sentence, and the period was hard-coded
 
@@ -98,7 +98,7 @@ if ( (_tcscmp(lpBuffer,TEXT("SYSTEM")) == 0) ||
 
 A better way to handle resources that come from localizable platforms is to use application programming interface (API) calls to get the system's localized values.
 The following example uses SHGetFolderPath, which will return the correct localized version of the path from one localized system to another localized system.
-For information on the different Shell calls, see [Windows Shell](https://docs.microsoft.com/windows/win32/shell/shell-entry).
+For information on the different Shell calls, see [Windows Shell](/windows/win32/shell/shell-entry).
 
 ```cpp
 TCHAR szPath[MAX_PATH];

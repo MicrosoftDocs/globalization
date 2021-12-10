@@ -51,7 +51,7 @@ Where are the capital letters in the strings below?
 - <span lang="ka">სად არიან ასოებით?</span> (Georgian)
 - <span lang="gu">જ્યાં મૂડી અક્ષરો છે?</span> (Gujarati)
 
-Developers are better served by using an API (for example, [ToUpper()](https://docs.microsoft.com/dotnet/api/system.string.toupper#System_String_ToUpper_System_Globalization_CultureInfo_) if they need to capitalize text.
+Developers are better served by using an API (for example, [ToUpper()](/dotnet/api/system.string.toupper#System_String_ToUpper_System_Globalization_CultureInfo_) if they need to capitalize text.
 Keep in mind that some capitalization is particular to a language, so designating the language to the API is an important step.
 Such as for addressing the "Turkish-İ problem".
 For English, the lowercase "i" maps to a dotless uppercase letter: "I."
@@ -59,7 +59,7 @@ However, in Turkish the lowercase "i" maps to a dotted uppercase letter: "<span 
 
 ## Text shaping
 
-Most platforms and browsers support correct text shaping automatically or by calling APIs (such as [DirectWrite](https://docs.microsoft.com/windows/win32/directwrite/direct-write-portal),
+Most platforms and browsers support correct text shaping automatically or by calling APIs (such as [DirectWrite](/windows/win32/directwrite/direct-write-portal),
 but testers and developers should be aware that scripts’ glyph shapes may change depending on the context and should ensure correct behavior in applications.
 
 ### Ligatures

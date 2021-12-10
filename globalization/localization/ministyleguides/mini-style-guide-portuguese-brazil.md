@@ -155,7 +155,7 @@ _Our style_: <span lang="pt-BR">Falha ao relatar evento</span>
 
 ## 7.	Pronouns
 
-The use of personal pronouns is a powerful way to express all the attributes of the [Microsoft voice](https://docs.microsoft.com/style-guide/brand-voice-above-all-simple-human). The user is addressed directly through the use of first- and second-person pronouns such as "you." Third-person references, such as "user," are avoided as they sound formal and impersonal. When translating into Brazilian Portuguese, address the user as _você_ instead of _usuário_ or converting the sentence to passive voice.
+The use of personal pronouns is a powerful way to express all the attributes of the [Microsoft voice](/style-guide/brand-voice-above-all-simple-human). The user is addressed directly through the use of first- and second-person pronouns such as "you." Third-person references, such as "user," are avoided as they sound formal and impersonal. When translating into Brazilian Portuguese, address the user as _você_ instead of _usuário_ or converting the sentence to passive voice.
 
 Avoid repeating pronouns in a sentence. In Brazilian Portuguese, omitting some pronouns when the meaning is clear from the context makes the text sound more natural.
 

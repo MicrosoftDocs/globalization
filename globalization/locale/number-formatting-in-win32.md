@@ -61,7 +61,7 @@ GetLocaleInfo(LOCALE_USER_DEFAULT, // LCID (current user locale)
 
 This code would produce the following result on English (US) and Persian locales, respectively:
 
-![Native Digit](https://docs.microsoft.com/globalization/locale/images/Native_Digits.jpg "Native Digit")
+![Native Digit](/globalization/locale/images/Native_Digits.jpg "Native Digit")
 
 **Figure 1:** Native digits for English (US) and Persian
 

@@ -19,18 +19,18 @@ For example, **Figure 1** is designed with an edit control in the middle of a se
 In its German localization, the edit control had to be repositioned so that what it represented could fit syntactically in the German translation.
 (See **Figure 2.**)
 
-![This edit control occurs in the middle of a sentence.](https://docs.microsoft.com/globalization/localizability/images/Mid_Sentence_en.jpg "This edit control occurs in the middle of a sentence.")
+![This edit control occurs in the middle of a sentence.](/globalization/localizability/images/Mid_Sentence_en.jpg "This edit control occurs in the middle of a sentence.")
 
 **Figure 1:** This edit control occurs in the middle of a sentence
 
-![When localized into German, the edit control had to be repositioned](https://docs.microsoft.com/globalization/localizability/images/Mid_Sentence_de.jpg "When localized into German, the edit control had to be repositioned")
+![When localized into German, the edit control had to be repositioned](./images/Mid_Sentence_de.jpg "When localized into German, the edit control had to be repositioned")
 
 **Figure 2:** When localized into German, the edit control had to be repositioned
 
 A better design is to rethink the whole phrase, so that the edit box can be removed from the sentence, so the localizer does not have to reposition the edit box.
 (See **Figure 3.**)
 
-![When localized into German, there is no need to reposition the edit control.](https://docs.microsoft.com/globalization/localizability/images/Mid_Sentence_Best.jpg "When localized into German, there is no need to reposition the edit control.")
+![When localized into German, there is no need to reposition the edit control.](./images/Mid_Sentence_Best.jpg "When localized into German, there is no need to reposition the edit control.")
 
 **Figure 3:** When localized into German, there is no need to reposition the edit control
 
@@ -47,7 +47,7 @@ Even when localizers have access to all the controls, sizing and hot-key issues 
 In Figure 16, the UI is not localizable because the button size cannot be extended to the length required for the translation without rearranging the button positions; also, rearranging is not possible because there is not enough space in the dialog box.
 Although rearranging button positions is costly and makes the UI inconsistent among languages, there might be times when it is necessary to do so.
 
-![This dialog box is not localizable](https://docs.microsoft.com/globalization/localizability/images/Not_Localizable.jpg "This dialog box is not localizable")
+![This dialog box is not localizable](./images/Not_Localizable.jpg "This dialog box is not localizable")
 
 **Figure 4:** This dialog box is not localizable because the button size cannot be extended without rearranging the position of the buttons, and there is not enough space for rearrangement.
 
@@ -55,7 +55,7 @@ Although rearranging button positions is costly and makes the UI inconsistent am
 Even if there were room for the expansion of the Edit Properties button, unless the Accept button is resized also, the Edit Properties button would be partially visible when it actually should be hidden.
 This causes a very unusual result in which buttons overlap.
 
-![Problem with hidden control](https://docs.microsoft.com/globalization/localizability/images/Hidden_Control.jpg "Problem with hidden control")
+![Problem with hidden control](./images/Hidden_Control.jpg "Problem with hidden control")
 
 **Figure 5:** Dialog box in which the Edit Properties button and the Accept button overlap.
 
@@ -67,7 +67,7 @@ Button sizes usually have to be adjusted to fit the length of the translation on
 Localizers have no way of telling which strings in the string table end up on which button at run time.
 (See **Figure 6.**)
 
-![Truncated text](https://docs.microsoft.com/globalization/localizability/images/Trunc_Text.jpg "Truncated text")
+![Truncated text](./images/Trunc_Text.jpg "Truncated text")
 
 **Figure 6:** The string "add job" ("Auftrag hinzufügen" in German) was stored as a text resource.
 Since the button cannot change its size at run time, part of the text is truncated.
@@ -78,7 +78,7 @@ The last area to consider when dealing with graphics involves embedded text.
 **Figure 7** displays an icon that a developer wants to use to indicate the function of opening a folder.
 To make sure that the user understands what to do, the developer has added the word "open" to the graphic.
 
-![Text in graphic](https://docs.microsoft.com/globalization/localizability/images/Text_in_Graphic.jpg "Text in graphic")
+![Text in graphic](./images/Text_in_Graphic.jpg "Text in graphic")
 
 **Figure 7:** Translating this embedded text will cost you valuable time and resources
 

@@ -42,6 +42,6 @@ sizeof (dwMSys) / sizeof(TCHAR));
 
 ## Units of Measurement in .NET Framework
 
-The [RegionInfo](https://docs.microsoft.com/dotnet/api/system.globalization.regioninfo) class from the [System.Globalization](https://docs.microsoft.com/dotnet/api/system.globalization) namespace contains information about the country or region.
-In contrast to [CultureInfo](https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo), RegionInfo does not represent preferences of the user and does not depend on the user's language or culture.
-A good example of this category of information is the [IsMetric](https://docs.microsoft.com/dotnet/api/system.globalization.regioninfo.ismetric) property of RegionInfo that gets a Boolean value indicating whether the country or region uses the metric system for measurements.
+The [RegionInfo](/dotnet/api/system.globalization.regioninfo) class from the [System.Globalization](/dotnet/api/system.globalization) namespace contains information about the country or region.
+In contrast to [CultureInfo](/dotnet/api/system.globalization.cultureinfo), RegionInfo does not represent preferences of the user and does not depend on the user's language or culture.
+A good example of this category of information is the [IsMetric](/dotnet/api/system.globalization.regioninfo.ismetric) property of RegionInfo that gets a Boolean value indicating whether the country or region uses the metric system for measurements.
