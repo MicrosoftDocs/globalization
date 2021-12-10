@@ -1,37 +1,45 @@
 ---
-title: Text Justification
-description: Some scripts or cultures have special rules about how text is justified. 
+title: Text justification
+description: Some scripts or cultures have special rules about how text is justified.
 ms.assetid: 4e216e20-9ba1-4402-9056-01ddf5fcd12c
 ms.date: 04/21/2017
 ---
-# Text Justification
+# Text justification
 
-Some scripts or cultures have special rules about how text is justified. Justification refers to how the text aligns with the margins of an object. The object can be page, a column, a table, a shape, etc.
+Some scripts or cultures have special rules about how text is justified.
+Justification refers to how the text aligns with the margins of an object.
+The object to be aligned with can be a page, a column, a table, a shape, and so on.
 
-## Justification within a Table
+## Justification within a table
 
-For East Asian language, the first and last characters of each line (except the last) are aligned to the left and right margins, and lines are filled by adding or subtracting space between and within words. This is also called [distributed alignment](https://technet.microsoft.com/library/dd948449(v=office.12).aspx#gt_dae18ea5-2a98-4e10-9570-7f4ac695c6b8).
+For East Asian language, the first and last characters of each line (except the last) are aligned to the left and right margins, and lines are filled by adding or subtracting space between and within words.
+This is also called distributed alignment: A formatting setting that spreads text evenly, both vertically and horizontally, between the edges of a cell, object, or page.
 
-![Text Justification](https://docs.microsoft.com/globalization/input/images/Text_Just.png) 
+![Text Justification](./images/Text_Just.png)
 
-## Thai Text Justification
+## Thai text justification
 
-The main difference between Thai text justification and English justification is that Thai places spaces between clusters while English distributes spaces between words.
+The main difference between Thai text justification and English justification is that Thai places space between clusters while English distributes space between words.
 
-Thai text without distributed justification
+Thai text _with_ distributed justification
 
-![Thai text without distributed justification](https://docs.microsoft.com/globalization/input/images/Thai_Just.png) 
+![Thai text with distributed justification](./images/Thai_Distrib_Just.png)
 
-Thai text with distributed justification
+Thai text _without_ distributed justification
 
-![Thai text with distributed justification](https://docs.microsoft.com/globalization/input/images/Thai_Distrib_Just.png) 
+![Thai text without distributed justification](./images/Thai_Just.png)
 
-## Kashida Justification
+## Kashida justification
 
-Kashida is a character elongation used in Arabic language to increase the length of the line connecting to characters (and it does not affect the sound or the meaning of the word), it’s also used in text justification instead of white-space. (Note that there may be multiple kashidas.)
+Kashida is character elongation used in Arabic to increase the length of the line connecting to characters.
+It does not affect the sound or the meaning of the word.
+It is also used in text justification instead of whitespace.
+Note that there may be multiple kashidas.
 
-Here is a typical Arabic text with and without kashida justification:
+Arabic text _with_ kashida justification:
 
-![Arabic text with kashida justification](https://docs.microsoft.com/globalization/input/images/Kashida_Just.png) 
+![Arabic text with kashida justification](./images/Kashida_Just.png)
 
-![Arabic text without kashida justification](https://docs.microsoft.com/globalization/input/images/WO_Kashida_Just.png) 
+Arabic text _without_ kashida justification:
+
+![Arabic text without kashida justification](./images/WO_Kashida_Just.png)
