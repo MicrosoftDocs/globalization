@@ -1,6 +1,6 @@
 ---
 title: Quick Start localization style guides
-description: Using the proper resource editor tools can make the localization of product resources quick and easy.
+description: These Quick Start localization style guides describe how things should read when translating from English into a different language.
 ms.date: 03/18/2019
 ---
 # Quick Start localization style guides
