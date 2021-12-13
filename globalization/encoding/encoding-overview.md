@@ -50,9 +50,9 @@ The [Common Locale Data Repository (CLDR)](http://cldr.unicode.org/) provides r
 
 Basing your software on the Unicode Standard is only one step in the internationalization process.
 You still need to write code that adapts to cultural preferences or language rules.
-For more information on other globalization considerations, see [Localizability overview](/globalization/localizability/overview "Localizability Overview"),
-[Locale model](../locale/locale-model "Locale model"), and
-[Input, display, and output](../input/text-input "Input, Display, and Output").
+For more information on other globalization considerations, see [Localizability overview](../localizability/overview.md "Localizability Overview"),
+[Locale model](../locale/locale-model.md "Locale model"), and
+[Input, display, and output](../input/text-input.md "Input, Display, and Output").
 
 As a further caveat, not all Unicode-based text processing is a matter of simple character-by-character parsing.
 Complex text-based operations such as hyphenation, line breaking, and glyph formation need to take into account the context in which they are being used (the relation to surrounding characters, for instance).
