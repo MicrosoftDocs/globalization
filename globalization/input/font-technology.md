@@ -94,7 +94,7 @@ Consider the difference in the visual height of English letters among Microsoft 
 
 | Microsoft Sans Serif | Traditional Arabic | Leelawadee  |
 |:---:|:---:|:---:|
-| ![Sans Serif](./images/SansSerif.jpg "The letter E in Sans Serif font") | ![Traditional Arabic](./images/TradArabic.jpg "The letter E in Traditional Arabic font") | ![Leelawadee](./images/Leelawadee.jpg "The letter E in Leelawadee font") |
+| ![Sans Serif E](./images/SansSerif.jpg "The letter E in Sans Serif font") | ![Traditional Arabic E](./images/TradArabic.jpg "The letter E in Traditional Arabic font") | ![Leelawadee E](./images/Leelawadee.jpg "The letter E in Leelawadee font") |
 
 Even though all of these are supposedly 8-point fonts, the apparent size of the English letters varies widely.
 Font fallback and font linking are no substitutes for choosing the right font in the first place.
