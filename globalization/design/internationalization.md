@@ -202,9 +202,10 @@ User interface is not limited to a graphical user interface, but also includes e
 
 - Does the feature incorporate components that are not translated for your target markets? How will you handle unsupported markets? What are the ramifications, fall back mechanisms, etc.?
 
-- If your feature has UI elements that combine to form a sentence, can the UI be reordered? For example, the recurrence dialog in the calendar is problematic and adds complexity to localization because the ordering of the sentence doesn’t make sense in non-English languages.
+- If your feature has UI elements that combine to form a sentence, can the UI be reordered?
+  For example, the recurrence dialog in the calendar is problematic and adds complexity to localization because the ordering of the sentence doesn’t make sense in non-English languages.
 
-    ![Re-ordering UI elements for localization](./images/Reorder_Elements.jpg "Re-ordering UI elements for localization")
+    ![Re-ordering UI elements for localization](../design/images/Reorder_Elements.jpg "Re-ordering UI elements for localization")
 
 - If your feature has images that contain text that requires translation, can you use a different image instead?
   Image translation adds complexity and extra cost to the localization process.
@@ -227,7 +228,7 @@ User interface is not limited to a graphical user interface, but also includes e
   For example, these controls are difficult to localize, especially if these controls require resizing and/or relocation.
   There is often no way for the translator to know which elements will display together.
   
-  ![Dialog buttons](./images/Not_Localizable.jpg "Dialog buttons")
+  ![Dialog buttons](../localizability/images/Not_Localizable.jpg "Dialog buttons")
 
 - Can all the components of the feature be mirrored for languages that are written right-to-left (RTL), such as animation, shadows, tree control, or tab order?
   For example, Hebrew users type from right to left and have a right to left workflow.

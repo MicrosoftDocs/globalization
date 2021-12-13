@@ -75,7 +75,7 @@ public class TimeZoneSample
 
 This code produces the following output:
 
-```DOS
+```console
 07/13/2001 04:00:00-07:00 
 07/13/2001 11:00:00-07:00 
 7/13/2001 4:00:00 AM 
@@ -101,7 +101,7 @@ Original = SetLocale(currentLocale)
 
 And the output would be:
 
-```DOS
+```console
 下午 04:16:08 
 ```
 

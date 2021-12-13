@@ -179,7 +179,7 @@ public class SortKeySample
 
 This code produces the following output:
 
-```DOS
+```console
     When the CurrentCulture is "da-DK",
     the result of comparing Apple with Æble is: -1
 

@@ -57,7 +57,7 @@ public class CurrencyFormatSample
 
 This code produces the following output:
 
-```DOS
+```console
 $100.00
 $100.00
 100,00 kr.

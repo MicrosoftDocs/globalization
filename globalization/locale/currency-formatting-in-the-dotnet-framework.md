@@ -63,7 +63,7 @@ public class EuroSymbolSample
 
 If you execute this code in a Windows Forms application, the output appears as follows:
 
-```DOS
+```console
      100,00 F
      100,00
 ```

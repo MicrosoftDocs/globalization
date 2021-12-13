@@ -74,7 +74,7 @@ public class TestClass
 
 This code produces the following console output:
 
-```DOS
+```console
 The default calendar for the Thai (Thailand) culture is:
 System.Globalization.ThaiBuddhistCalendar
 
