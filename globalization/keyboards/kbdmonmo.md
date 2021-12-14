@@ -9,4 +9,4 @@ author: jowilco
  
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them. 
  
-<iframe src="kbdmonmo.html"></iframe> 
+<iframe src="kbdmonmo.html" height="230"></iframe> 
