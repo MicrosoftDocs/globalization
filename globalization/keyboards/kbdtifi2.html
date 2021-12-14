@@ -1,4 +1,4 @@
-<HTML>
+<HTML lang="en">
 <HEAD>
 <TITLE>Tifinagh (Extended) Keyboard Layout</TITLE>
 <META name="description" content="Tifinagh (Extended) Keyboard">
@@ -12,28 +12,40 @@
                 switch (State)
                 {
                     case 0:
+                    case 8:
                         document.all.normalstate.style.display = 'none';
                         break;
                     case 1:
                         document.all.shiftstate.style.display = 'none';
                         break;
                     case 2:
+                    case 10:
                         document.all.altgrstate.style.display = 'none';
                         break;
                     case 3:
+                    case 11:
                         document.all.shiftaltgrstate.style.display = 'none';
                         break;
                     case 4:
+                    case 12:
                         document.all.normalstatecap.style.display = 'none';
                         break;
                     case 5:
                         document.all.shiftstatecap.style.display = 'none';
                         break;
                     case 6:
+                    case 14:
                         document.all.altgrstatecap.style.display = 'none';
                         break;
                     case 7:
+                    case 15:
                         document.all.shiftaltgrstatecap.style.display = 'none';
+                        break;
+                    case 9:
+                        document.all.shiftctrlstate.style.display = 'none';
+                        break;
+                    case 13:
+                        document.all.shiftctrlstatecap.style.display = 'none';
                         break;
                     default:
                         break;
@@ -41,28 +53,40 @@
                 switch (x)
                 {
                     case 0:
+                    case 8:
                         document.all.normalstate.style.display = '';
                         break;
                     case 1:
                         document.all.shiftstate.style.display = '';
                         break;
                     case 2:
+                    case 10:
                         document.all.altgrstate.style.display = '';
                         break;
                     case 3:
+                    case 11:
                         document.all.shiftaltgrstate.style.display = '';
                         break;
                     case 4:
+                    case 12:
                         document.all.normalstatecap.style.display = '';
                         break;
                     case 5:
                         document.all.shiftstatecap.style.display = '';
                         break;
                     case 6:
+                    case 14:
                         document.all.altgrstatecap.style.display = '';
                         break;
                     case 7:
+                    case 15:
                         document.all.shiftaltgrstatecap.style.display = '';
+                        break;
+                    case 9:
+                        document.all.shiftctrlstate.style.display = '';
+                        break;
+                    case 13:
+                        document.all.shiftctrlstatecap.style.display = '';
                         break;
                     default:
                         break;
@@ -189,572 +213,714 @@ function kill()
 <br><br><br><h3 align = center>Loading the keyboard layout, please wait....<h3>
     </DIV>
 <DIV ID=normalstate CLASS=normalstate STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/00b2.jpg" ALT="U+00b2 Superscript Two"  onmouseover = "popup('U+00b2 Superscript Two');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0026.jpg" ALT="U+0026 Ampersand"  onmouseover = "popup('U+0026 Ampersand');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d52.jpg" ALT="U+2d52 Tifinagh Letter Yap"  onmouseover = "popup('U+2d52 Tifinagh Letter Yap');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0022.jpg" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0027.jpg" ALT="U+0027 Apostrophe"  onmouseover = "popup('U+0027 Apostrophe');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0028.jpg" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002d.jpg" ALT="U+002d Hyphen-Minus"  onmouseover = "popup('U+002d Hyphen-Minus');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d64.jpg" ALT="U+2d64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)"  onmouseover = "popup('U+2d64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005f.jpg" ALT="U+005f Low Line"  onmouseover = "popup('U+005f Low Line');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2014.jpg" ALT="U+2014 Em Dash"  onmouseover = "popup('U+2014 Em Dash');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/200c.jpg" ALT="U+200c Zero Width Non-Joiner"  onmouseover = "popup('U+200c Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0029.jpg" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003d.jpg" ALT="U+003d Equals Sign"  onmouseover = "popup('U+003d Equals Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/00b2.png" ALT="U+00B2 Superscript Two"  onmouseover = "popup('U+00B2 Superscript Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0026.png" ALT="U+0026 Ampersand"  onmouseover = "popup('U+0026 Ampersand');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d52.png" ALT="U+2D52 Tifinagh Letter Yap"  onmouseover = "popup('U+2D52 Tifinagh Letter Yap');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0022.png" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0027.png" ALT="U+0027 Apostrophe"  onmouseover = "popup('U+0027 Apostrophe');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0028.png" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002d.png" ALT="U+002D Hyphen-Minus"  onmouseover = "popup('U+002D Hyphen-Minus');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d64.png" ALT="U+2D64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)"  onmouseover = "popup('U+2D64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005f.png" ALT="U+005F Low Line"  onmouseover = "popup('U+005F Low Line');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2014.png" ALT="U+2014 Em Dash"  onmouseover = "popup('U+2014 Em Dash');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/200c.png" ALT="U+200C Zero Width Non-Joiner"  onmouseover = "popup('U+200C Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0029.png" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003d.png" ALT="U+003D Equals Sign"  onmouseover = "popup('U+003D Equals Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d30.jpg" ALT="U+2d30 Tifinagh Letter Ya"  onmouseover = "popup('U+2d30 Tifinagh Letter Ya');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d63.jpg" ALT="U+2d63 Tifinagh Letter Yaz"  onmouseover = "popup('U+2d63 Tifinagh Letter Yaz');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d3b.jpg" ALT="U+2d3b Tifinagh Letter Yey"  onmouseover = "popup('U+2d3b Tifinagh Letter Yey');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d54.jpg" ALT="U+2d54 Tifinagh Letter Yar"  onmouseover = "popup('U+2d54 Tifinagh Letter Yar');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d5c.jpg" ALT="U+2d5c Tifinagh Letter Yat"  onmouseover = "popup('U+2d5c Tifinagh Letter Yat');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d62.jpg" ALT="U+2d62 Tifinagh Letter Yay"  onmouseover = "popup('U+2d62 Tifinagh Letter Yay');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d53.jpg" ALT="U+2d53 Tifinagh Letter Yu (Tuareg Yaw)"  onmouseover = "popup('U+2d53 Tifinagh Letter Yu (Tuareg Yaw)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d49.jpg" ALT="U+2d49 Tifinagh Letter Yi"  onmouseover = "popup('U+2d49 Tifinagh Letter Yi');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d44.jpg" ALT="U+2d44 Tifinagh Letter Yaa"  onmouseover = "popup('U+2d44 Tifinagh Letter Yaa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d43.jpg" ALT="U+2d43 Tifinagh Letter Yahh"  onmouseover = "popup('U+2d43 Tifinagh Letter Yahh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d6f.jpg" ALT="U+2d6f Tifinagh Modifier Letter Labialization Mark (Tamatart)"  onmouseover = "popup('U+2d6f Tifinagh Modifier Letter Labialization Mark (Tamatart)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0024.jpg" ALT="U+0024 Dollar Sign"  onmouseover = "popup('U+0024 Dollar Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d30.png" ALT="U+2D30 Tifinagh Letter Ya"  onmouseover = "popup('U+2D30 Tifinagh Letter Ya');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d63.png" ALT="U+2D63 Tifinagh Letter Yaz"  onmouseover = "popup('U+2D63 Tifinagh Letter Yaz');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d3b.png" ALT="U+2D3B Tifinagh Letter Yey"  onmouseover = "popup('U+2D3B Tifinagh Letter Yey');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d54.png" ALT="U+2D54 Tifinagh Letter Yar"  onmouseover = "popup('U+2D54 Tifinagh Letter Yar');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d5c.png" ALT="U+2D5C Tifinagh Letter Yat"  onmouseover = "popup('U+2D5C Tifinagh Letter Yat');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d62.png" ALT="U+2D62 Tifinagh Letter Yay"  onmouseover = "popup('U+2D62 Tifinagh Letter Yay');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d53.png" ALT="U+2D53 Tifinagh Letter Yu (Tuareg Yaw)"  onmouseover = "popup('U+2D53 Tifinagh Letter Yu (Tuareg Yaw)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d49.png" ALT="U+2D49 Tifinagh Letter Yi"  onmouseover = "popup('U+2D49 Tifinagh Letter Yi');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d44.png" ALT="U+2D44 Tifinagh Letter Yaa"  onmouseover = "popup('U+2D44 Tifinagh Letter Yaa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d43.png" ALT="U+2D43 Tifinagh Letter Yahh"  onmouseover = "popup('U+2D43 Tifinagh Letter Yahh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d6f.png" ALT="U+2D6F Tifinagh Modifier Letter Labialization Mark (Tamatart)"  onmouseover = "popup('U+2D6F Tifinagh Modifier Letter Labialization Mark (Tamatart)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0024.png" ALT="U+0024 Dollar Sign"  onmouseover = "popup('U+0024 Dollar Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d47.jpg" ALT="U+2d47 Tifinagh Letter Yaq"  onmouseover = "popup('U+2d47 Tifinagh Letter Yaq');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d59.jpg" ALT="U+2d59 Tifinagh Letter Yas"  onmouseover = "popup('U+2d59 Tifinagh Letter Yas');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d37.jpg" ALT="U+2d37 Tifinagh Letter Yad"  onmouseover = "popup('U+2d37 Tifinagh Letter Yad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d3c.jpg" ALT="U+2d3c Tifinagh Letter Yaf"  onmouseover = "popup('U+2d3c Tifinagh Letter Yaf');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d33.jpg" ALT="U+2d33 Tifinagh Letter Yag"  onmouseover = "popup('U+2d33 Tifinagh Letter Yag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d40.jpg" ALT="U+2d40 Tifinagh Letter Yah (Tuareg Yab)"  onmouseover = "popup('U+2d40 Tifinagh Letter Yah (Tuareg Yab)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d4a.jpg" ALT="U+2d4a Tifinagh Letter Yazh"  onmouseover = "popup('U+2d4a Tifinagh Letter Yazh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d3d.jpg" ALT="U+2d3d Tifinagh Letter Yak"  onmouseover = "popup('U+2d3d Tifinagh Letter Yak');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d4d.jpg" ALT="U+2d4d Tifinagh Letter Yal"  onmouseover = "popup('U+2d4d Tifinagh Letter Yal');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d4e.jpg" ALT="U+2d4e Tifinagh Letter Yam"  onmouseover = "popup('U+2d4e Tifinagh Letter Yam');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d51.jpg" ALT="U+2d51 Tifinagh Letter Tuareg Yang"  onmouseover = "popup('U+2d51 Tifinagh Letter Tuareg Yang');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/002a.jpg" ALT="U+002a Asterisk"  onmouseover = "popup('U+002a Asterisk');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d47.png" ALT="U+2D47 Tifinagh Letter Yaq"  onmouseover = "popup('U+2D47 Tifinagh Letter Yaq');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d59.png" ALT="U+2D59 Tifinagh Letter Yas"  onmouseover = "popup('U+2D59 Tifinagh Letter Yas');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d37.png" ALT="U+2D37 Tifinagh Letter Yad"  onmouseover = "popup('U+2D37 Tifinagh Letter Yad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d3c.png" ALT="U+2D3C Tifinagh Letter Yaf"  onmouseover = "popup('U+2D3C Tifinagh Letter Yaf');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d33.png" ALT="U+2D33 Tifinagh Letter Yag"  onmouseover = "popup('U+2D33 Tifinagh Letter Yag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d40.png" ALT="U+2D40 Tifinagh Letter Yah (Tuareg Yab)"  onmouseover = "popup('U+2D40 Tifinagh Letter Yah (Tuareg Yab)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d4a.png" ALT="U+2D4A Tifinagh Letter Yazh"  onmouseover = "popup('U+2D4A Tifinagh Letter Yazh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d3d.png" ALT="U+2D3D Tifinagh Letter Yak"  onmouseover = "popup('U+2D3D Tifinagh Letter Yak');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d4d.png" ALT="U+2D4D Tifinagh Letter Yal"  onmouseover = "popup('U+2D4D Tifinagh Letter Yal');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d4e.png" ALT="U+2D4E Tifinagh Letter Yam"  onmouseover = "popup('U+2D4E Tifinagh Letter Yam');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d51.png" ALT="U+2D51 Tifinagh Letter Tuareg Yang"  onmouseover = "popup('U+2D51 Tifinagh Letter Tuareg Yang');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/002a.png" ALT="U+002A Asterisk"  onmouseover = "popup('U+002A Asterisk');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/003c.jpg" ALT="U+003c Less-Than Sign"  onmouseover = "popup('U+003c Less-Than Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d61.jpg" ALT="U+2d61 Tifinagh Letter Yaw"  onmouseover = "popup('U+2d61 Tifinagh Letter Yaw');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d45.jpg" ALT="U+2d45 Tifinagh Letter Yakh"  onmouseover = "popup('U+2d45 Tifinagh Letter Yakh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d5b.jpg" ALT="U+2d5b Tifinagh Letter Yash"  onmouseover = "popup('U+2d5b Tifinagh Letter Yash');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d56.jpg" ALT="U+2d56 Tifinagh Letter Yagh"  onmouseover = "popup('U+2d56 Tifinagh Letter Yagh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d31.jpg" ALT="U+2d31 Tifinagh Letter Yab"  onmouseover = "popup('U+2d31 Tifinagh Letter Yab');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d4f.jpg" ALT="U+2d4f Tifinagh Letter Yan"  onmouseover = "popup('U+2d4f Tifinagh Letter Yan');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002c.jpg" ALT="U+002c Comma"  onmouseover = "popup('U+002c Comma');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003b.jpg" ALT="U+003b Semicolon"  onmouseover = "popup('U+003b Semicolon');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003a.jpg" ALT="U+003a Colon"  onmouseover = "popup('U+003a Colon');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0021.jpg" ALT="U+0021 Exclamation Mark"  onmouseover = "popup('U+0021 Exclamation Mark');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/003c.png" ALT="U+003C Less-Than Sign"  onmouseover = "popup('U+003C Less-Than Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d61.png" ALT="U+2D61 Tifinagh Letter Yaw"  onmouseover = "popup('U+2D61 Tifinagh Letter Yaw');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d45.png" ALT="U+2D45 Tifinagh Letter Yakh"  onmouseover = "popup('U+2D45 Tifinagh Letter Yakh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d5b.png" ALT="U+2D5B Tifinagh Letter Yash"  onmouseover = "popup('U+2D5B Tifinagh Letter Yash');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d56.png" ALT="U+2D56 Tifinagh Letter Yagh"  onmouseover = "popup('U+2D56 Tifinagh Letter Yagh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d31.png" ALT="U+2D31 Tifinagh Letter Yab"  onmouseover = "popup('U+2D31 Tifinagh Letter Yab');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d4f.png" ALT="U+2D4F Tifinagh Letter Yan"  onmouseover = "popup('U+2D4F Tifinagh Letter Yan');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002c.png" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003b.png" ALT="U+003B Semicolon"  onmouseover = "popup('U+003B Semicolon');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003a.png" ALT="U+003A Colon"  onmouseover = "popup('U+003A Colon');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0021.png" ALT="U+0021 Exclamation Mark"  onmouseover = "popup('U+0021 Exclamation Mark');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=shiftstate CLASS=shiftstate STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/200d.jpg" ALT="U+200d Zero Width Joiner"  onmouseover = "popup('U+200d Zero Width Joiner');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0031.jpg" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0032.jpg" ALT="U+0032 Digit Two"  onmouseover = "popup('U+0032 Digit Two');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0033.jpg" ALT="U+0033 Digit Three"  onmouseover = "popup('U+0033 Digit Three');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0034.jpg" ALT="U+0034 Digit Four"  onmouseover = "popup('U+0034 Digit Four');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0035.jpg" ALT="U+0035 Digit Five"  onmouseover = "popup('U+0035 Digit Five');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0036.jpg" ALT="U+0036 Digit Six"  onmouseover = "popup('U+0036 Digit Six');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0037.jpg" ALT="U+0037 Digit Seven"  onmouseover = "popup('U+0037 Digit Seven');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0038.jpg" ALT="U+0038 Digit Eight"  onmouseover = "popup('U+0038 Digit Eight');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0039.jpg" ALT="U+0039 Digit Nine"  onmouseover = "popup('U+0039 Digit Nine');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0030.jpg" ALT="U+0030 Digit Zero"  onmouseover = "popup('U+0030 Digit Zero');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/00b0.jpg" ALT="U+00b0 Degree Sign"  onmouseover = "popup('U+00b0 Degree Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002b.jpg" ALT="U+002b Plus Sign"  onmouseover = "popup('U+002b Plus Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/200d.png" ALT="U+200D Zero Width Joiner"  onmouseover = "popup('U+200D Zero Width Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0031.png" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0032.png" ALT="U+0032 Digit Two"  onmouseover = "popup('U+0032 Digit Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0033.png" ALT="U+0033 Digit Three"  onmouseover = "popup('U+0033 Digit Three');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0034.png" ALT="U+0034 Digit Four"  onmouseover = "popup('U+0034 Digit Four');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0035.png" ALT="U+0035 Digit Five"  onmouseover = "popup('U+0035 Digit Five');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0036.png" ALT="U+0036 Digit Six"  onmouseover = "popup('U+0036 Digit Six');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0037.png" ALT="U+0037 Digit Seven"  onmouseover = "popup('U+0037 Digit Seven');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0038.png" ALT="U+0038 Digit Eight"  onmouseover = "popup('U+0038 Digit Eight');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0039.png" ALT="U+0039 Digit Nine"  onmouseover = "popup('U+0039 Digit Nine');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0030.png" ALT="U+0030 Digit Zero"  onmouseover = "popup('U+0030 Digit Zero');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b0.png" ALT="U+00B0 Degree Sign"  onmouseover = "popup('U+00B0 Degree Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002b.png" ALT="U+002B Plus Sign"  onmouseover = "popup('U+002B Plus Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d36.jpg" ALT="U+2d36 Tifinagh Letter Yaj"  onmouseover = "popup('U+2d36 Tifinagh Letter Yaj');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d65.jpg" ALT="U+2d65 Tifinagh Letter Yazz"  onmouseover = "popup('U+2d65 Tifinagh Letter Yazz');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d57.jpg" ALT="U+2d57 Tifinagh Letter Tuareg Yagh"  onmouseover = "popup('U+2d57 Tifinagh Letter Tuareg Yagh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d55.jpg" ALT="U+2d55 Tifinagh Letter Yarr"  onmouseover = "popup('U+2d55 Tifinagh Letter Yarr');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d5f.jpg" ALT="U+2d5f Tifinagh Letter Yatt"  onmouseover = "popup('U+2d5f Tifinagh Letter Yatt');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d42.jpg" ALT="U+2d42 Tifinagh Letter Tuareg Yah"  onmouseover = "popup('U+2d42 Tifinagh Letter Tuareg Yah');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d4c.jpg" ALT="U+2d4c Tifinagh Letter Tuareg Yazh"  onmouseover = "popup('U+2d4c Tifinagh Letter Tuareg Yazh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d58.jpg" ALT="U+2d58 Tifinagh Letter Ayer Yagh (Adrar Yaj)"  onmouseover = "popup('U+2d58 Tifinagh Letter Ayer Yagh (Adrar Yaj)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d5d.jpg" ALT="U+2d5d Tifinagh Letter Yath"  onmouseover = "popup('U+2d5d Tifinagh Letter Yath');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d5e.jpg" ALT="U+2d5e Tifinagh Letter Yach"  onmouseover = "popup('U+2d5e Tifinagh Letter Yach');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2d60.jpg" ALT="U+2d60 Tifinagh Letter Yav"  onmouseover = "popup('U+2d60 Tifinagh Letter Yav');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/00a3.jpg" ALT="U+00a3 Pound Sign"  onmouseover = "popup('U+00a3 Pound Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d36.png" ALT="U+2D36 Tifinagh Letter Yaj"  onmouseover = "popup('U+2D36 Tifinagh Letter Yaj');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d65.png" ALT="U+2D65 Tifinagh Letter Yazz"  onmouseover = "popup('U+2D65 Tifinagh Letter Yazz');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d57.png" ALT="U+2D57 Tifinagh Letter Tuareg Yagh"  onmouseover = "popup('U+2D57 Tifinagh Letter Tuareg Yagh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d55.png" ALT="U+2D55 Tifinagh Letter Yarr"  onmouseover = "popup('U+2D55 Tifinagh Letter Yarr');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d5f.png" ALT="U+2D5F Tifinagh Letter Yatt"  onmouseover = "popup('U+2D5F Tifinagh Letter Yatt');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d42.png" ALT="U+2D42 Tifinagh Letter Tuareg Yah"  onmouseover = "popup('U+2D42 Tifinagh Letter Tuareg Yah');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d4c.png" ALT="U+2D4C Tifinagh Letter Tuareg Yazh"  onmouseover = "popup('U+2D4C Tifinagh Letter Tuareg Yazh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d58.png" ALT="U+2D58 Tifinagh Letter Ayer Yagh (Adrar Yaj)"  onmouseover = "popup('U+2D58 Tifinagh Letter Ayer Yagh (Adrar Yaj)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d5d.png" ALT="U+2D5D Tifinagh Letter Yath"  onmouseover = "popup('U+2D5D Tifinagh Letter Yath');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d5e.png" ALT="U+2D5E Tifinagh Letter Yach"  onmouseover = "popup('U+2D5E Tifinagh Letter Yach');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2d60.png" ALT="U+2D60 Tifinagh Letter Yav"  onmouseover = "popup('U+2D60 Tifinagh Letter Yav');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/00a3.png" ALT="U+00A3 Pound Sign"  onmouseover = "popup('U+00A3 Pound Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d48.jpg" ALT="U+2d48 Tifinagh Letter Tuareg Yaq"  onmouseover = "popup('U+2d48 Tifinagh Letter Tuareg Yaq');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d5a.jpg" ALT="U+2d5a Tifinagh Letter Yass"  onmouseover = "popup('U+2d5a Tifinagh Letter Yass');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d39.jpg" ALT="U+2d39 Tifinagh Letter Yadd"  onmouseover = "popup('U+2d39 Tifinagh Letter Yadd');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d35.jpg" ALT="U+2d35 Tifinagh Letter Berber Academy Yaj"  onmouseover = "popup('U+2d35 Tifinagh Letter Berber Academy Yaj');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d41.jpg" ALT="U+2d41 Tifinagh Letter Berber Academy Yah"  onmouseover = "popup('U+2d41 Tifinagh Letter Berber Academy Yah');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d4b.jpg" ALT="U+2d4b Tifinagh Letter Ahaggar Yazh"  onmouseover = "popup('U+2d4b Tifinagh Letter Ahaggar Yazh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d38.jpg" ALT="U+2d38 Tifinagh Letter Yadh"  onmouseover = "popup('U+2d38 Tifinagh Letter Yadh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d3a.jpg" ALT="U+2d3a Tifinagh Letter Yaddh"  onmouseover = "popup('U+2d3a Tifinagh Letter Yaddh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0025.jpg" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/00b5.jpg" ALT="U+00b5 Micro Sign"  onmouseover = "popup('U+00b5 Micro Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d48.png" ALT="U+2D48 Tifinagh Letter Tuareg Yaq"  onmouseover = "popup('U+2D48 Tifinagh Letter Tuareg Yaq');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d5a.png" ALT="U+2D5A Tifinagh Letter Yass"  onmouseover = "popup('U+2D5A Tifinagh Letter Yass');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d39.png" ALT="U+2D39 Tifinagh Letter Yadd"  onmouseover = "popup('U+2D39 Tifinagh Letter Yadd');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d35.png" ALT="U+2D35 Tifinagh Letter Berber Academy Yaj"  onmouseover = "popup('U+2D35 Tifinagh Letter Berber Academy Yaj');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d41.png" ALT="U+2D41 Tifinagh Letter Berber Academy Yah"  onmouseover = "popup('U+2D41 Tifinagh Letter Berber Academy Yah');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d4b.png" ALT="U+2D4B Tifinagh Letter Ahaggar Yazh"  onmouseover = "popup('U+2D4B Tifinagh Letter Ahaggar Yazh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d38.png" ALT="U+2D38 Tifinagh Letter Yadh"  onmouseover = "popup('U+2D38 Tifinagh Letter Yadh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d3a.png" ALT="U+2D3A Tifinagh Letter Yaddh"  onmouseover = "popup('U+2D3A Tifinagh Letter Yaddh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0025.png" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00b5.png" ALT="U+00B5 Micro Sign"  onmouseover = "popup('U+00B5 Micro Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/003e.jpg" ALT="U+003e Greater-Than Sign"  onmouseover = "popup('U+003e Greater-Than Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d3e.jpg" ALT="U+2d3e Tifinagh Letter Tuareg Yak"  onmouseover = "popup('U+2d3e Tifinagh Letter Tuareg Yak');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d46.jpg" ALT="U+2d46 Tifinagh Letter Tuareg Yakh"  onmouseover = "popup('U+2d46 Tifinagh Letter Tuareg Yakh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d3f.jpg" ALT="U+2d3f Tifinagh Letter Yakhh"  onmouseover = "popup('U+2d3f Tifinagh Letter Yakhh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d34.jpg" ALT="U+2d34 Tifinagh Letter Yaghh"  onmouseover = "popup('U+2d34 Tifinagh Letter Yaghh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d32.jpg" ALT="U+2d32 Tifinagh Letter Yabh"  onmouseover = "popup('U+2d32 Tifinagh Letter Yabh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d50.jpg" ALT="U+2d50 Tifinagh Letter Tuareg Yagn"  onmouseover = "popup('U+2d50 Tifinagh Letter Tuareg Yagn');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003f.jpg" ALT="U+003f Question Mark"  onmouseover = "popup('U+003f Question Mark');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002e.jpg" ALT="U+002e Full Stop"  onmouseover = "popup('U+002e Full Stop');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002f.jpg" ALT="U+002f Solidus"  onmouseover = "popup('U+002f Solidus');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/00a7.jpg" ALT="U+00a7 Section Sign"  onmouseover = "popup('U+00a7 Section Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/003e.png" ALT="U+003E Greater-Than Sign"  onmouseover = "popup('U+003E Greater-Than Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d3e.png" ALT="U+2D3E Tifinagh Letter Tuareg Yak"  onmouseover = "popup('U+2D3E Tifinagh Letter Tuareg Yak');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d46.png" ALT="U+2D46 Tifinagh Letter Tuareg Yakh"  onmouseover = "popup('U+2D46 Tifinagh Letter Tuareg Yakh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d3f.png" ALT="U+2D3F Tifinagh Letter Yakhh"  onmouseover = "popup('U+2D3F Tifinagh Letter Yakhh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d34.png" ALT="U+2D34 Tifinagh Letter Yaghh"  onmouseover = "popup('U+2D34 Tifinagh Letter Yaghh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d32.png" ALT="U+2D32 Tifinagh Letter Yabh"  onmouseover = "popup('U+2D32 Tifinagh Letter Yabh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d50.png" ALT="U+2D50 Tifinagh Letter Tuareg Yagn"  onmouseover = "popup('U+2D50 Tifinagh Letter Tuareg Yagn');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003f.png" ALT="U+003F Question Mark"  onmouseover = "popup('U+003F Question Mark');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002e.png" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002f.png" ALT="U+002F Solidus"  onmouseover = "popup('U+002F Solidus');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a7.png" ALT="U+00A7 Section Sign"  onmouseover = "popup('U+00A7 Section Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=altgrstate CLASS=altgrstate STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007e.jpg" ALT="U+007e Tilde"  onmouseover = "popup('U+007e Tilde');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0023.jpg" ALT="U+0023 Number Sign"  onmouseover = "popup('U+0023 Number Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007b.jpg" ALT="U+007b Left Curly Bracket"  onmouseover = "popup('U+007b Left Curly Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005b.jpg" ALT="U+005b Left Square Bracket"  onmouseover = "popup('U+005b Left Square Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007c.jpg" ALT="U+007c Vertical Line"  onmouseover = "popup('U+007c Vertical Line');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005c.jpg" ALT="U+005c Reverse Solidus"  onmouseover = "popup('U+005c Reverse Solidus');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005e.jpg" ALT="U+005e Circumflex Accent"  onmouseover = "popup('U+005e Circumflex Accent');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0040.jpg" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005d.jpg" ALT="U+005d Right Square Bracket"  onmouseover = "popup('U+005d Right Square Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007d.jpg" ALT="U+007d Right Curly Bracket"  onmouseover = "popup('U+007d Right Curly Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007e.png" ALT="U+007E Tilde"  onmouseover = "popup('U+007E Tilde');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0023.png" ALT="U+0023 Number Sign"  onmouseover = "popup('U+0023 Number Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007b.png" ALT="U+007B Left Curly Bracket"  onmouseover = "popup('U+007B Left Curly Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005b.png" ALT="U+005B Left Square Bracket"  onmouseover = "popup('U+005B Left Square Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007c.png" ALT="U+007C Vertical Line"  onmouseover = "popup('U+007C Vertical Line');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005c.png" ALT="U+005C Reverse Solidus"  onmouseover = "popup('U+005C Reverse Solidus');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005e.png" ALT="U+005E Circumflex Accent"  onmouseover = "popup('U+005E Circumflex Accent');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0040.png" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005d.png" ALT="U+005D Right Square Bracket"  onmouseover = "popup('U+005D Right Square Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007d.png" ALT="U+007D Right Curly Bracket"  onmouseover = "popup('U+007D Right Curly Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/20ac.jpg" ALT="U+20ac Euro Sign"  onmouseover = "popup('U+20ac Euro Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/00a4.jpg" ALT="U+00a4 Currency Sign"  onmouseover = "popup('U+00a4 Currency Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/20ac.png" ALT="U+20AC Euro Sign"  onmouseover = "popup('U+20AC Euro Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/00a4.png" ALT="U+00A4 Currency Sign"  onmouseover = "popup('U+00A4 Currency Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=shiftaltgrstate CLASS=shiftaltgrstate STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=normalstatecap CLASS=normalstatecap STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/00b2.jpg" ALT="U+00b2 Superscript Two"  onmouseover = "popup('U+00b2 Superscript Two');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0026.jpg" ALT="U+0026 Ampersand"  onmouseover = "popup('U+0026 Ampersand');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d52.jpg" ALT="U+2d52 Tifinagh Letter Yap"  onmouseover = "popup('U+2d52 Tifinagh Letter Yap');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0022.jpg" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0027.jpg" ALT="U+0027 Apostrophe"  onmouseover = "popup('U+0027 Apostrophe');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0028.jpg" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002d.jpg" ALT="U+002d Hyphen-Minus"  onmouseover = "popup('U+002d Hyphen-Minus');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2d64.jpg" ALT="U+2d64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)"  onmouseover = "popup('U+2d64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005f.jpg" ALT="U+005f Low Line"  onmouseover = "popup('U+005f Low Line');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2014.jpg" ALT="U+2014 Em Dash"  onmouseover = "popup('U+2014 Em Dash');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/200c.jpg" ALT="U+200c Zero Width Non-Joiner"  onmouseover = "popup('U+200c Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0029.jpg" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003d.jpg" ALT="U+003d Equals Sign"  onmouseover = "popup('U+003d Equals Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/00b2.png" ALT="U+00B2 Superscript Two"  onmouseover = "popup('U+00B2 Superscript Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0026.png" ALT="U+0026 Ampersand"  onmouseover = "popup('U+0026 Ampersand');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d52.png" ALT="U+2D52 Tifinagh Letter Yap"  onmouseover = "popup('U+2D52 Tifinagh Letter Yap');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0022.png" ALT="U+0022 Quotation Mark"  onmouseover = "popup('U+0022 Quotation Mark');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0027.png" ALT="U+0027 Apostrophe"  onmouseover = "popup('U+0027 Apostrophe');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0028.png" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002d.png" ALT="U+002D Hyphen-Minus"  onmouseover = "popup('U+002D Hyphen-Minus');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2d64.png" ALT="U+2D64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)"  onmouseover = "popup('U+2D64 Tifinagh Letter Tawellemet Yaz (Harpoon Yaz)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005f.png" ALT="U+005F Low Line"  onmouseover = "popup('U+005F Low Line');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2014.png" ALT="U+2014 Em Dash"  onmouseover = "popup('U+2014 Em Dash');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/200c.png" ALT="U+200C Zero Width Non-Joiner"  onmouseover = "popup('U+200C Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0029.png" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003d.png" ALT="U+003D Equals Sign"  onmouseover = "popup('U+003D Equals Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D30.jpg" ALT="U+2d30 Tifinagh Letter Ya"  onmouseover = "popup('U+2d30 Tifinagh Letter Ya');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D63.jpg" ALT="U+2d63 Tifinagh Letter Yaz"  onmouseover = "popup('U+2d63 Tifinagh Letter Yaz');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D3B.jpg" ALT="U+2d3b Tifinagh Letter Yey"  onmouseover = "popup('U+2d3b Tifinagh Letter Yey');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D54.jpg" ALT="U+2d54 Tifinagh Letter Yar"  onmouseover = "popup('U+2d54 Tifinagh Letter Yar');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D5C.jpg" ALT="U+2d5c Tifinagh Letter Yat"  onmouseover = "popup('U+2d5c Tifinagh Letter Yat');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D62.jpg" ALT="U+2d62 Tifinagh Letter Yay"  onmouseover = "popup('U+2d62 Tifinagh Letter Yay');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D53.jpg" ALT="U+2d53 Tifinagh Letter Yu (Tuareg Yaw)"  onmouseover = "popup('U+2d53 Tifinagh Letter Yu (Tuareg Yaw)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D49.jpg" ALT="U+2d49 Tifinagh Letter Yi"  onmouseover = "popup('U+2d49 Tifinagh Letter Yi');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D44.jpg" ALT="U+2d44 Tifinagh Letter Yaa"  onmouseover = "popup('U+2d44 Tifinagh Letter Yaa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D43.jpg" ALT="U+2d43 Tifinagh Letter Yahh"  onmouseover = "popup('U+2d43 Tifinagh Letter Yahh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D6F.jpg" ALT="U+2d6f Tifinagh Modifier Letter Labialization Mark (Tamatart)"  onmouseover = "popup('U+2d6f Tifinagh Modifier Letter Labialization Mark (Tamatart)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0024.jpg" ALT="U+0024 Dollar Sign"  onmouseover = "popup('U+0024 Dollar Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D30.png" ALT="U+2D30 Tifinagh Letter Ya"  onmouseover = "popup('U+2D30 Tifinagh Letter Ya');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D63.png" ALT="U+2D63 Tifinagh Letter Yaz"  onmouseover = "popup('U+2D63 Tifinagh Letter Yaz');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D3B.png" ALT="U+2D3B Tifinagh Letter Yey"  onmouseover = "popup('U+2D3B Tifinagh Letter Yey');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D54.png" ALT="U+2D54 Tifinagh Letter Yar"  onmouseover = "popup('U+2D54 Tifinagh Letter Yar');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D5C.png" ALT="U+2D5C Tifinagh Letter Yat"  onmouseover = "popup('U+2D5C Tifinagh Letter Yat');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D62.png" ALT="U+2D62 Tifinagh Letter Yay"  onmouseover = "popup('U+2D62 Tifinagh Letter Yay');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D53.png" ALT="U+2D53 Tifinagh Letter Yu (Tuareg Yaw)"  onmouseover = "popup('U+2D53 Tifinagh Letter Yu (Tuareg Yaw)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D49.png" ALT="U+2D49 Tifinagh Letter Yi"  onmouseover = "popup('U+2D49 Tifinagh Letter Yi');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D44.png" ALT="U+2D44 Tifinagh Letter Yaa"  onmouseover = "popup('U+2D44 Tifinagh Letter Yaa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D43.png" ALT="U+2D43 Tifinagh Letter Yahh"  onmouseover = "popup('U+2D43 Tifinagh Letter Yahh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D6F.png" ALT="U+2D6F Tifinagh Modifier Letter Labialization Mark (Tamatart)"  onmouseover = "popup('U+2D6F Tifinagh Modifier Letter Labialization Mark (Tamatart)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0024.png" ALT="U+0024 Dollar Sign"  onmouseover = "popup('U+0024 Dollar Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D47.jpg" ALT="U+2d47 Tifinagh Letter Yaq"  onmouseover = "popup('U+2d47 Tifinagh Letter Yaq');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D59.jpg" ALT="U+2d59 Tifinagh Letter Yas"  onmouseover = "popup('U+2d59 Tifinagh Letter Yas');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D37.jpg" ALT="U+2d37 Tifinagh Letter Yad"  onmouseover = "popup('U+2d37 Tifinagh Letter Yad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D3C.jpg" ALT="U+2d3c Tifinagh Letter Yaf"  onmouseover = "popup('U+2d3c Tifinagh Letter Yaf');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d33.jpg" ALT="U+2d33 Tifinagh Letter Yag"  onmouseover = "popup('U+2d33 Tifinagh Letter Yag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D40.jpg" ALT="U+2d40 Tifinagh Letter Yah (Tuareg Yab)"  onmouseover = "popup('U+2d40 Tifinagh Letter Yah (Tuareg Yab)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D4A.jpg" ALT="U+2d4a Tifinagh Letter Yazh"  onmouseover = "popup('U+2d4a Tifinagh Letter Yazh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d3d.jpg" ALT="U+2d3d Tifinagh Letter Yak"  onmouseover = "popup('U+2d3d Tifinagh Letter Yak');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D4D.jpg" ALT="U+2d4d Tifinagh Letter Yal"  onmouseover = "popup('U+2d4d Tifinagh Letter Yal');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D4E.jpg" ALT="U+2d4e Tifinagh Letter Yam"  onmouseover = "popup('U+2d4e Tifinagh Letter Yam');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2d51.jpg" ALT="U+2d51 Tifinagh Letter Tuareg Yang"  onmouseover = "popup('U+2d51 Tifinagh Letter Tuareg Yang');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/002a.jpg" ALT="U+002a Asterisk"  onmouseover = "popup('U+002a Asterisk');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D47.png" ALT="U+2D47 Tifinagh Letter Yaq"  onmouseover = "popup('U+2D47 Tifinagh Letter Yaq');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D59.png" ALT="U+2D59 Tifinagh Letter Yas"  onmouseover = "popup('U+2D59 Tifinagh Letter Yas');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D37.png" ALT="U+2D37 Tifinagh Letter Yad"  onmouseover = "popup('U+2D37 Tifinagh Letter Yad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D3C.png" ALT="U+2D3C Tifinagh Letter Yaf"  onmouseover = "popup('U+2D3C Tifinagh Letter Yaf');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d33.png" ALT="U+2D33 Tifinagh Letter Yag"  onmouseover = "popup('U+2D33 Tifinagh Letter Yag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D40.png" ALT="U+2D40 Tifinagh Letter Yah (Tuareg Yab)"  onmouseover = "popup('U+2D40 Tifinagh Letter Yah (Tuareg Yab)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D4A.png" ALT="U+2D4A Tifinagh Letter Yazh"  onmouseover = "popup('U+2D4A Tifinagh Letter Yazh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d3d.png" ALT="U+2D3D Tifinagh Letter Yak"  onmouseover = "popup('U+2D3D Tifinagh Letter Yak');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D4D.png" ALT="U+2D4D Tifinagh Letter Yal"  onmouseover = "popup('U+2D4D Tifinagh Letter Yal');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D4E.png" ALT="U+2D4E Tifinagh Letter Yam"  onmouseover = "popup('U+2D4E Tifinagh Letter Yam');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2d51.png" ALT="U+2D51 Tifinagh Letter Tuareg Yang"  onmouseover = "popup('U+2D51 Tifinagh Letter Tuareg Yang');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/002a.png" ALT="U+002A Asterisk"  onmouseover = "popup('U+002A Asterisk');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/003c.jpg" ALT="U+003c Less-Than Sign"  onmouseover = "popup('U+003c Less-Than Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D61.jpg" ALT="U+2d61 Tifinagh Letter Yaw"  onmouseover = "popup('U+2d61 Tifinagh Letter Yaw');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D45.jpg" ALT="U+2d45 Tifinagh Letter Yakh"  onmouseover = "popup('U+2d45 Tifinagh Letter Yakh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D5B.jpg" ALT="U+2d5b Tifinagh Letter Yash"  onmouseover = "popup('U+2d5b Tifinagh Letter Yash');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D56.jpg" ALT="U+2d56 Tifinagh Letter Yagh"  onmouseover = "popup('U+2d56 Tifinagh Letter Yagh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D31.jpg" ALT="U+2d31 Tifinagh Letter Yab"  onmouseover = "popup('U+2d31 Tifinagh Letter Yab');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D4F.jpg" ALT="U+2d4f Tifinagh Letter Yan"  onmouseover = "popup('U+2d4f Tifinagh Letter Yan');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002c.jpg" ALT="U+002c Comma"  onmouseover = "popup('U+002c Comma');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003b.jpg" ALT="U+003b Semicolon"  onmouseover = "popup('U+003b Semicolon');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003a.jpg" ALT="U+003a Colon"  onmouseover = "popup('U+003a Colon');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0021.jpg" ALT="U+0021 Exclamation Mark"  onmouseover = "popup('U+0021 Exclamation Mark');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/003c.png" ALT="U+003C Less-Than Sign"  onmouseover = "popup('U+003C Less-Than Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D61.png" ALT="U+2D61 Tifinagh Letter Yaw"  onmouseover = "popup('U+2D61 Tifinagh Letter Yaw');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D45.png" ALT="U+2D45 Tifinagh Letter Yakh"  onmouseover = "popup('U+2D45 Tifinagh Letter Yakh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D5B.png" ALT="U+2D5B Tifinagh Letter Yash"  onmouseover = "popup('U+2D5B Tifinagh Letter Yash');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D56.png" ALT="U+2D56 Tifinagh Letter Yagh"  onmouseover = "popup('U+2D56 Tifinagh Letter Yagh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D31.png" ALT="U+2D31 Tifinagh Letter Yab"  onmouseover = "popup('U+2D31 Tifinagh Letter Yab');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D4F.png" ALT="U+2D4F Tifinagh Letter Yan"  onmouseover = "popup('U+2D4F Tifinagh Letter Yan');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002c.png" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003b.png" ALT="U+003B Semicolon"  onmouseover = "popup('U+003B Semicolon');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003a.png" ALT="U+003A Colon"  onmouseover = "popup('U+003A Colon');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0021.png" ALT="U+0021 Exclamation Mark"  onmouseover = "popup('U+0021 Exclamation Mark');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=shiftstatecap CLASS=shiftstatecap STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/200d.jpg" ALT="U+200d Zero Width Joiner"  onmouseover = "popup('U+200d Zero Width Joiner');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0031.jpg" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0032.jpg" ALT="U+0032 Digit Two"  onmouseover = "popup('U+0032 Digit Two');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0033.jpg" ALT="U+0033 Digit Three"  onmouseover = "popup('U+0033 Digit Three');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0034.jpg" ALT="U+0034 Digit Four"  onmouseover = "popup('U+0034 Digit Four');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0035.jpg" ALT="U+0035 Digit Five"  onmouseover = "popup('U+0035 Digit Five');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0036.jpg" ALT="U+0036 Digit Six"  onmouseover = "popup('U+0036 Digit Six');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0037.jpg" ALT="U+0037 Digit Seven"  onmouseover = "popup('U+0037 Digit Seven');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0038.jpg" ALT="U+0038 Digit Eight"  onmouseover = "popup('U+0038 Digit Eight');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0039.jpg" ALT="U+0039 Digit Nine"  onmouseover = "popup('U+0039 Digit Nine');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0030.jpg" ALT="U+0030 Digit Zero"  onmouseover = "popup('U+0030 Digit Zero');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/00b0.jpg" ALT="U+00b0 Degree Sign"  onmouseover = "popup('U+00b0 Degree Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002b.jpg" ALT="U+002b Plus Sign"  onmouseover = "popup('U+002b Plus Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/200d.png" ALT="U+200D Zero Width Joiner"  onmouseover = "popup('U+200D Zero Width Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0031.png" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0032.png" ALT="U+0032 Digit Two"  onmouseover = "popup('U+0032 Digit Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0033.png" ALT="U+0033 Digit Three"  onmouseover = "popup('U+0033 Digit Three');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0034.png" ALT="U+0034 Digit Four"  onmouseover = "popup('U+0034 Digit Four');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0035.png" ALT="U+0035 Digit Five"  onmouseover = "popup('U+0035 Digit Five');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0036.png" ALT="U+0036 Digit Six"  onmouseover = "popup('U+0036 Digit Six');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0037.png" ALT="U+0037 Digit Seven"  onmouseover = "popup('U+0037 Digit Seven');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0038.png" ALT="U+0038 Digit Eight"  onmouseover = "popup('U+0038 Digit Eight');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0039.png" ALT="U+0039 Digit Nine"  onmouseover = "popup('U+0039 Digit Nine');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0030.png" ALT="U+0030 Digit Zero"  onmouseover = "popup('U+0030 Digit Zero');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b0.png" ALT="U+00B0 Degree Sign"  onmouseover = "popup('U+00B0 Degree Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002b.png" ALT="U+002B Plus Sign"  onmouseover = "popup('U+002B Plus Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D36.jpg" ALT="U+2d36 Tifinagh Letter Yaj"  onmouseover = "popup('U+2d36 Tifinagh Letter Yaj');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D65.jpg" ALT="U+2d65 Tifinagh Letter Yazz"  onmouseover = "popup('U+2d65 Tifinagh Letter Yazz');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D57.jpg" ALT="U+2d57 Tifinagh Letter Tuareg Yagh"  onmouseover = "popup('U+2d57 Tifinagh Letter Tuareg Yagh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D55.jpg" ALT="U+2d55 Tifinagh Letter Yarr"  onmouseover = "popup('U+2d55 Tifinagh Letter Yarr');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D5F.jpg" ALT="U+2d5f Tifinagh Letter Yatt"  onmouseover = "popup('U+2d5f Tifinagh Letter Yatt');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D42.jpg" ALT="U+2d42 Tifinagh Letter Tuareg Yah"  onmouseover = "popup('U+2d42 Tifinagh Letter Tuareg Yah');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D4C.jpg" ALT="U+2d4c Tifinagh Letter Tuareg Yazh"  onmouseover = "popup('U+2d4c Tifinagh Letter Tuareg Yazh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D58.jpg" ALT="U+2d58 Tifinagh Letter Ayer Yagh (Adrar Yaj)"  onmouseover = "popup('U+2d58 Tifinagh Letter Ayer Yagh (Adrar Yaj)');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D5D.jpg" ALT="U+2d5d Tifinagh Letter Yath"  onmouseover = "popup('U+2d5d Tifinagh Letter Yath');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D5E.jpg" ALT="U+2d5e Tifinagh Letter Yach"  onmouseover = "popup('U+2d5e Tifinagh Letter Yach');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/2D60.jpg" ALT="U+2d60 Tifinagh Letter Yav"  onmouseover = "popup('U+2d60 Tifinagh Letter Yav');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/00a3.jpg" ALT="U+00a3 Pound Sign"  onmouseover = "popup('U+00a3 Pound Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D36.png" ALT="U+2D36 Tifinagh Letter Yaj"  onmouseover = "popup('U+2D36 Tifinagh Letter Yaj');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D65.png" ALT="U+2D65 Tifinagh Letter Yazz"  onmouseover = "popup('U+2D65 Tifinagh Letter Yazz');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D57.png" ALT="U+2D57 Tifinagh Letter Tuareg Yagh"  onmouseover = "popup('U+2D57 Tifinagh Letter Tuareg Yagh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D55.png" ALT="U+2D55 Tifinagh Letter Yarr"  onmouseover = "popup('U+2D55 Tifinagh Letter Yarr');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D5F.png" ALT="U+2D5F Tifinagh Letter Yatt"  onmouseover = "popup('U+2D5F Tifinagh Letter Yatt');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D42.png" ALT="U+2D42 Tifinagh Letter Tuareg Yah"  onmouseover = "popup('U+2D42 Tifinagh Letter Tuareg Yah');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D4C.png" ALT="U+2D4C Tifinagh Letter Tuareg Yazh"  onmouseover = "popup('U+2D4C Tifinagh Letter Tuareg Yazh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D58.png" ALT="U+2D58 Tifinagh Letter Ayer Yagh (Adrar Yaj)"  onmouseover = "popup('U+2D58 Tifinagh Letter Ayer Yagh (Adrar Yaj)');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D5D.png" ALT="U+2D5D Tifinagh Letter Yath"  onmouseover = "popup('U+2D5D Tifinagh Letter Yath');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D5E.png" ALT="U+2D5E Tifinagh Letter Yach"  onmouseover = "popup('U+2D5E Tifinagh Letter Yach');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/2D60.png" ALT="U+2D60 Tifinagh Letter Yav"  onmouseover = "popup('U+2D60 Tifinagh Letter Yav');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/00a3.png" ALT="U+00A3 Pound Sign"  onmouseover = "popup('U+00A3 Pound Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D48.jpg" ALT="U+2d48 Tifinagh Letter Tuareg Yaq"  onmouseover = "popup('U+2d48 Tifinagh Letter Tuareg Yaq');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D5A.jpg" ALT="U+2d5a Tifinagh Letter Yass"  onmouseover = "popup('U+2d5a Tifinagh Letter Yass');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D39.jpg" ALT="U+2d39 Tifinagh Letter Yadd"  onmouseover = "popup('U+2d39 Tifinagh Letter Yadd');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D35.jpg" ALT="U+2d35 Tifinagh Letter Berber Academy Yaj"  onmouseover = "popup('U+2d35 Tifinagh Letter Berber Academy Yaj');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D41.jpg" ALT="U+2d41 Tifinagh Letter Berber Academy Yah"  onmouseover = "popup('U+2d41 Tifinagh Letter Berber Academy Yah');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D4B.jpg" ALT="U+2d4b Tifinagh Letter Ahaggar Yazh"  onmouseover = "popup('U+2d4b Tifinagh Letter Ahaggar Yazh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D38.jpg" ALT="U+2d38 Tifinagh Letter Yadh"  onmouseover = "popup('U+2d38 Tifinagh Letter Yadh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/2D3A.jpg" ALT="U+2d3a Tifinagh Letter Yaddh"  onmouseover = "popup('U+2d3a Tifinagh Letter Yaddh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0025.jpg" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/00b5.jpg" ALT="U+00b5 Micro Sign"  onmouseover = "popup('U+00b5 Micro Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D48.png" ALT="U+2D48 Tifinagh Letter Tuareg Yaq"  onmouseover = "popup('U+2D48 Tifinagh Letter Tuareg Yaq');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D5A.png" ALT="U+2D5A Tifinagh Letter Yass"  onmouseover = "popup('U+2D5A Tifinagh Letter Yass');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D39.png" ALT="U+2D39 Tifinagh Letter Yadd"  onmouseover = "popup('U+2D39 Tifinagh Letter Yadd');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D35.png" ALT="U+2D35 Tifinagh Letter Berber Academy Yaj"  onmouseover = "popup('U+2D35 Tifinagh Letter Berber Academy Yaj');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D41.png" ALT="U+2D41 Tifinagh Letter Berber Academy Yah"  onmouseover = "popup('U+2D41 Tifinagh Letter Berber Academy Yah');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D4B.png" ALT="U+2D4B Tifinagh Letter Ahaggar Yazh"  onmouseover = "popup('U+2D4B Tifinagh Letter Ahaggar Yazh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D38.png" ALT="U+2D38 Tifinagh Letter Yadh"  onmouseover = "popup('U+2D38 Tifinagh Letter Yadh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/2D3A.png" ALT="U+2D3A Tifinagh Letter Yaddh"  onmouseover = "popup('U+2D3A Tifinagh Letter Yaddh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0025.png" ALT="U+0025 Percent Sign"  onmouseover = "popup('U+0025 Percent Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00b5.png" ALT="U+00B5 Micro Sign"  onmouseover = "popup('U+00B5 Micro Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/003e.jpg" ALT="U+003e Greater-Than Sign"  onmouseover = "popup('U+003e Greater-Than Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D3E.jpg" ALT="U+2d3e Tifinagh Letter Tuareg Yak"  onmouseover = "popup('U+2d3e Tifinagh Letter Tuareg Yak');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D46.jpg" ALT="U+2d46 Tifinagh Letter Tuareg Yakh"  onmouseover = "popup('U+2d46 Tifinagh Letter Tuareg Yakh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D3F.jpg" ALT="U+2d3f Tifinagh Letter Yakhh"  onmouseover = "popup('U+2d3f Tifinagh Letter Yakhh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D34.jpg" ALT="U+2d34 Tifinagh Letter Yaghh"  onmouseover = "popup('U+2d34 Tifinagh Letter Yaghh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D32.jpg" ALT="U+2d32 Tifinagh Letter Yabh"  onmouseover = "popup('U+2d32 Tifinagh Letter Yabh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/2D50.jpg" ALT="U+2d50 Tifinagh Letter Tuareg Yagn"  onmouseover = "popup('U+2d50 Tifinagh Letter Tuareg Yagn');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/003f.jpg" ALT="U+003f Question Mark"  onmouseover = "popup('U+003f Question Mark');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002e.jpg" ALT="U+002e Full Stop"  onmouseover = "popup('U+002e Full Stop');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002f.jpg" ALT="U+002f Solidus"  onmouseover = "popup('U+002f Solidus');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/00a7.jpg" ALT="U+00a7 Section Sign"  onmouseover = "popup('U+00a7 Section Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/003e.png" ALT="U+003E Greater-Than Sign"  onmouseover = "popup('U+003E Greater-Than Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D3E.png" ALT="U+2D3E Tifinagh Letter Tuareg Yak"  onmouseover = "popup('U+2D3E Tifinagh Letter Tuareg Yak');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D46.png" ALT="U+2D46 Tifinagh Letter Tuareg Yakh"  onmouseover = "popup('U+2D46 Tifinagh Letter Tuareg Yakh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D3F.png" ALT="U+2D3F Tifinagh Letter Yakhh"  onmouseover = "popup('U+2D3F Tifinagh Letter Yakhh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D34.png" ALT="U+2D34 Tifinagh Letter Yaghh"  onmouseover = "popup('U+2D34 Tifinagh Letter Yaghh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D32.png" ALT="U+2D32 Tifinagh Letter Yabh"  onmouseover = "popup('U+2D32 Tifinagh Letter Yabh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2D50.png" ALT="U+2D50 Tifinagh Letter Tuareg Yagn"  onmouseover = "popup('U+2D50 Tifinagh Letter Tuareg Yagn');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003f.png" ALT="U+003F Question Mark"  onmouseover = "popup('U+003F Question Mark');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002e.png" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002f.png" ALT="U+002F Solidus"  onmouseover = "popup('U+002F Solidus');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a7.png" ALT="U+00A7 Section Sign"  onmouseover = "popup('U+00A7 Section Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=altgrstatecap CLASS=altgrstatecap STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007e.jpg" ALT="U+007e Tilde"  onmouseover = "popup('U+007e Tilde');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0023.jpg" ALT="U+0023 Number Sign"  onmouseover = "popup('U+0023 Number Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007b.jpg" ALT="U+007b Left Curly Bracket"  onmouseover = "popup('U+007b Left Curly Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005b.jpg" ALT="U+005b Left Square Bracket"  onmouseover = "popup('U+005b Left Square Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007c.jpg" ALT="U+007c Vertical Line"  onmouseover = "popup('U+007c Vertical Line');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005c.jpg" ALT="U+005c Reverse Solidus"  onmouseover = "popup('U+005c Reverse Solidus');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005e.jpg" ALT="U+005e Circumflex Accent"  onmouseover = "popup('U+005e Circumflex Accent');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0040.jpg" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/005d.jpg" ALT="U+005d Right Square Bracket"  onmouseover = "popup('U+005d Right Square Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/007d.jpg" ALT="U+007d Right Curly Bracket"  onmouseover = "popup('U+007d Right Curly Bracket');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007e.png" ALT="U+007E Tilde"  onmouseover = "popup('U+007E Tilde');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0023.png" ALT="U+0023 Number Sign"  onmouseover = "popup('U+0023 Number Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007b.png" ALT="U+007B Left Curly Bracket"  onmouseover = "popup('U+007B Left Curly Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005b.png" ALT="U+005B Left Square Bracket"  onmouseover = "popup('U+005B Left Square Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007c.png" ALT="U+007C Vertical Line"  onmouseover = "popup('U+007C Vertical Line');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005c.png" ALT="U+005C Reverse Solidus"  onmouseover = "popup('U+005C Reverse Solidus');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005e.png" ALT="U+005E Circumflex Accent"  onmouseover = "popup('U+005E Circumflex Accent');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0040.png" ALT="U+0040 Commercial At"  onmouseover = "popup('U+0040 Commercial At');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005d.png" ALT="U+005D Right Square Bracket"  onmouseover = "popup('U+005D Right Square Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007d.png" ALT="U+007D Right Curly Bracket"  onmouseover = "popup('U+007D Right Curly Bracket');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/20ac.jpg" ALT="U+20ac Euro Sign"  onmouseover = "popup('U+20ac Euro Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/00a4.jpg" ALT="U+00a4 Currency Sign"  onmouseover = "popup('U+00a4 Currency Sign');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/20ac.png" ALT="U+20AC Euro Sign"  onmouseover = "popup('U+20AC Euro Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/00a4.png" ALT="U+00A4 Currency Sign"  onmouseover = "popup('U+00A4 Currency Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=shiftaltgrstatecap CLASS=shiftaltgrstatecap STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG SRC="images/AltGr2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlstate CLASS=shiftctrlstate STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlstatecap CLASS=shiftctrlstatecap STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 
 </BODY>

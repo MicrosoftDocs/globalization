@@ -1,4 +1,4 @@
-<HTML>
+<HTML lang="en">
 <HEAD>
 <TITLE>Ol Chiki Keyboard Layout</TITLE>
 <META name="description" content="Ol Chiki Keyboard">
@@ -12,28 +12,40 @@
                 switch (State)
                 {
                     case 0:
+                    case 8:
                         document.all.normalstate.style.display = 'none';
                         break;
                     case 1:
                         document.all.shiftstate.style.display = 'none';
                         break;
                     case 2:
+                    case 10:
                         document.all.altgrstate.style.display = 'none';
                         break;
                     case 3:
+                    case 11:
                         document.all.shiftaltgrstate.style.display = 'none';
                         break;
                     case 4:
+                    case 12:
                         document.all.normalstatecap.style.display = 'none';
                         break;
                     case 5:
                         document.all.shiftstatecap.style.display = 'none';
                         break;
                     case 6:
+                    case 14:
                         document.all.altgrstatecap.style.display = 'none';
                         break;
                     case 7:
+                    case 15:
                         document.all.shiftaltgrstatecap.style.display = 'none';
+                        break;
+                    case 9:
+                        document.all.shiftctrlstate.style.display = 'none';
+                        break;
+                    case 13:
+                        document.all.shiftctrlstatecap.style.display = 'none';
                         break;
                     default:
                         break;
@@ -41,28 +53,40 @@
                 switch (x)
                 {
                     case 0:
+                    case 8:
                         document.all.normalstate.style.display = '';
                         break;
                     case 1:
                         document.all.shiftstate.style.display = '';
                         break;
                     case 2:
+                    case 10:
                         document.all.altgrstate.style.display = '';
                         break;
                     case 3:
+                    case 11:
                         document.all.shiftaltgrstate.style.display = '';
                         break;
                     case 4:
+                    case 12:
                         document.all.normalstatecap.style.display = '';
                         break;
                     case 5:
                         document.all.shiftstatecap.style.display = '';
                         break;
                     case 6:
+                    case 14:
                         document.all.altgrstatecap.style.display = '';
                         break;
                     case 7:
+                    case 15:
                         document.all.shiftaltgrstatecap.style.display = '';
+                        break;
+                    case 9:
+                        document.all.shiftctrlstate.style.display = '';
+                        break;
+                    case 13:
+                        document.all.shiftctrlstatecap.style.display = '';
                         break;
                     default:
                         break;
@@ -189,288 +213,430 @@ function kill()
 <br><br><br><h3 align = center>Loading the keyboard layout, please wait....<h3>
     </DIV>
 <DIV ID=normalstate CLASS=normalstate STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c51.jpg" ALT="U+1c51 Ol Chiki Digit One"  onmouseover = "popup('U+1c51 Ol Chiki Digit One');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c52.jpg" ALT="U+1c52 Ol Chiki Digit Two"  onmouseover = "popup('U+1c52 Ol Chiki Digit Two');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c53.jpg" ALT="U+1c53 Ol Chiki Digit Three"  onmouseover = "popup('U+1c53 Ol Chiki Digit Three');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c54.jpg" ALT="U+1c54 Ol Chiki Digit Four"  onmouseover = "popup('U+1c54 Ol Chiki Digit Four');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c55.jpg" ALT="U+1c55 Ol Chiki Digit Five"  onmouseover = "popup('U+1c55 Ol Chiki Digit Five');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c56.jpg" ALT="U+1c56 Ol Chiki Digit Six"  onmouseover = "popup('U+1c56 Ol Chiki Digit Six');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c57.jpg" ALT="U+1c57 Ol Chiki Digit Seven"  onmouseover = "popup('U+1c57 Ol Chiki Digit Seven');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c58.jpg" ALT="U+1c58 Ol Chiki Digit Eight"  onmouseover = "popup('U+1c58 Ol Chiki Digit Eight');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c59.jpg" ALT="U+1c59 Ol Chiki Digit Nine"  onmouseover = "popup('U+1c59 Ol Chiki Digit Nine');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c50.jpg" ALT="U+1c50 Ol Chiki Digit Zero"  onmouseover = "popup('U+1c50 Ol Chiki Digit Zero');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c51.png" ALT="U+1C51 Ol Chiki Digit One"  onmouseover = "popup('U+1C51 Ol Chiki Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c52.png" ALT="U+1C52 Ol Chiki Digit Two"  onmouseover = "popup('U+1C52 Ol Chiki Digit Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c53.png" ALT="U+1C53 Ol Chiki Digit Three"  onmouseover = "popup('U+1C53 Ol Chiki Digit Three');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c54.png" ALT="U+1C54 Ol Chiki Digit Four"  onmouseover = "popup('U+1C54 Ol Chiki Digit Four');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c55.png" ALT="U+1C55 Ol Chiki Digit Five"  onmouseover = "popup('U+1C55 Ol Chiki Digit Five');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c56.png" ALT="U+1C56 Ol Chiki Digit Six"  onmouseover = "popup('U+1C56 Ol Chiki Digit Six');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c57.png" ALT="U+1C57 Ol Chiki Digit Seven"  onmouseover = "popup('U+1C57 Ol Chiki Digit Seven');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c58.png" ALT="U+1C58 Ol Chiki Digit Eight"  onmouseover = "popup('U+1C58 Ol Chiki Digit Eight');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c59.png" ALT="U+1C59 Ol Chiki Digit Nine"  onmouseover = "popup('U+1C59 Ol Chiki Digit Nine');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c50.png" ALT="U+1C50 Ol Chiki Digit Zero"  onmouseover = "popup('U+1C50 Ol Chiki Digit Zero');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c5f.jpg" ALT="U+1c5f Ol Chiki Letter Laa"  onmouseover = "popup('U+1c5f Ol Chiki Letter Laa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c75.jpg" ALT="U+1c75 Ol Chiki Letter Ob"  onmouseover = "popup('U+1c75 Ol Chiki Letter Ob');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c66.jpg" ALT="U+1c66 Ol Chiki Letter Ih"  onmouseover = "popup('U+1c66 Ol Chiki Letter Ih');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c5c.jpg" ALT="U+1c5c Ol Chiki Letter Ag"  onmouseover = "popup('U+1c5c Ol Chiki Letter Ag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c6b.jpg" ALT="U+1c6b Ol Chiki Letter Ud"  onmouseover = "popup('U+1c6b Ol Chiki Letter Ud');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c61.jpg" ALT="U+1c61 Ol Chiki Letter Aaj"  onmouseover = "popup('U+1c61 Ol Chiki Letter Aaj');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c70.jpg" ALT="U+1c70 Ol Chiki Letter Edd"  onmouseover = "popup('U+1c70 Ol Chiki Letter Edd');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c79.jpg" ALT="U+1c79 Ol Chiki Gaahlaa Ttuddaag"  onmouseover = "popup('U+1c79 Ol Chiki Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c5f.png" ALT="U+1C5F Ol Chiki Letter Laa"  onmouseover = "popup('U+1C5F Ol Chiki Letter Laa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c75.png" ALT="U+1C75 Ol Chiki Letter Ob"  onmouseover = "popup('U+1C75 Ol Chiki Letter Ob');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c66.png" ALT="U+1C66 Ol Chiki Letter Ih"  onmouseover = "popup('U+1C66 Ol Chiki Letter Ih');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c5c.png" ALT="U+1C5C Ol Chiki Letter Ag"  onmouseover = "popup('U+1C5C Ol Chiki Letter Ag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c6b.png" ALT="U+1C6B Ol Chiki Letter Ud"  onmouseover = "popup('U+1C6B Ol Chiki Letter Ud');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c61.png" ALT="U+1C61 Ol Chiki Letter Aaj"  onmouseover = "popup('U+1C61 Ol Chiki Letter Aaj');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c70.png" ALT="U+1C70 Ol Chiki Letter Edd"  onmouseover = "popup('U+1C70 Ol Chiki Letter Edd');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c79.png" ALT="U+1C79 Ol Chiki Gaahlaa Ttuddaag"  onmouseover = "popup('U+1C79 Ol Chiki Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c73.jpg" ALT="U+1c73 Ol Chiki Letter Lo"  onmouseover = "popup('U+1c73 Ol Chiki Letter Lo');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c6e.jpg" ALT="U+1c6e Ol Chiki Letter Le"  onmouseover = "popup('U+1c6e Ol Chiki Letter Le');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c5a.jpg" ALT="U+1c5a Ol Chiki Letter La"  onmouseover = "popup('U+1c5a Ol Chiki Letter La');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c64.jpg" ALT="U+1c64 Ol Chiki Letter Li"  onmouseover = "popup('U+1c64 Ol Chiki Letter Li');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c69.jpg" ALT="U+1c69 Ol Chiki Letter Lu"  onmouseover = "popup('U+1c69 Ol Chiki Letter Lu');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c6f.jpg" ALT="U+1c6f Ol Chiki Letter Ep"  onmouseover = "popup('U+1c6f Ol Chiki Letter Ep');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c68.jpg" ALT="U+1c68 Ol Chiki Letter Ir"  onmouseover = "popup('U+1c68 Ol Chiki Letter Ir');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c60.jpg" ALT="U+1c60 Ol Chiki Letter Aak"  onmouseover = "popup('U+1c60 Ol Chiki Letter Aak');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c5b.jpg" ALT="U+1c5b Ol Chiki Letter At"  onmouseover = "popup('U+1c5b Ol Chiki Letter At');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c6a.jpg" ALT="U+1c6a Ol Chiki Letter Uc"  onmouseover = "popup('U+1c6a Ol Chiki Letter Uc');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c74.jpg" ALT="U+1c74 Ol Chiki Letter Ott"  onmouseover = "popup('U+1c74 Ol Chiki Letter Ott');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c73.png" ALT="U+1C73 Ol Chiki Letter Lo"  onmouseover = "popup('U+1C73 Ol Chiki Letter Lo');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c6e.png" ALT="U+1C6E Ol Chiki Letter Le"  onmouseover = "popup('U+1C6E Ol Chiki Letter Le');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c5a.png" ALT="U+1C5A Ol Chiki Letter La"  onmouseover = "popup('U+1C5A Ol Chiki Letter La');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c64.png" ALT="U+1C64 Ol Chiki Letter Li"  onmouseover = "popup('U+1C64 Ol Chiki Letter Li');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c69.png" ALT="U+1C69 Ol Chiki Letter Lu"  onmouseover = "popup('U+1C69 Ol Chiki Letter Lu');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c6f.png" ALT="U+1C6F Ol Chiki Letter Ep"  onmouseover = "popup('U+1C6F Ol Chiki Letter Ep');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c68.png" ALT="U+1C68 Ol Chiki Letter Ir"  onmouseover = "popup('U+1C68 Ol Chiki Letter Ir');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c60.png" ALT="U+1C60 Ol Chiki Letter Aak"  onmouseover = "popup('U+1C60 Ol Chiki Letter Aak');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c5b.png" ALT="U+1C5B Ol Chiki Letter At"  onmouseover = "popup('U+1C5B Ol Chiki Letter At');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c6a.png" ALT="U+1C6A Ol Chiki Letter Uc"  onmouseover = "popup('U+1C6A Ol Chiki Letter Uc');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c74.png" ALT="U+1C74 Ol Chiki Letter Ott"  onmouseover = "popup('U+1C74 Ol Chiki Letter Ott');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c77.jpg" ALT="U+1c77 Ol Chiki Letter Oh"  onmouseover = "popup('U+1c77 Ol Chiki Letter Oh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c78.jpg" ALT="U+1c78 Ol Chiki Mu Ttuddag"  onmouseover = "popup('U+1c78 Ol Chiki Mu Ttuddag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c62.jpg" ALT="U+1c62 Ol Chiki Letter Aam"  onmouseover = "popup('U+1c62 Ol Chiki Letter Aam');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c71.jpg" ALT="U+1c71 Ol Chiki Letter En"  onmouseover = "popup('U+1c71 Ol Chiki Letter En');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c63.jpg" ALT="U+1c63 Ol Chiki Letter Aaw"  onmouseover = "popup('U+1c63 Ol Chiki Letter Aaw');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c5e.jpg" ALT="U+1c5e Ol Chiki Letter Al"  onmouseover = "popup('U+1c5e Ol Chiki Letter Al');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c65.jpg" ALT="U+1c65 Ol Chiki Letter Is"  onmouseover = "popup('U+1c65 Ol Chiki Letter Is');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002c.jpg" ALT="U+002c Comma"  onmouseover = "popup('U+002c Comma');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002e.jpg" ALT="U+002e Full Stop"  onmouseover = "popup('U+002e Full Stop');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c6d.jpg" ALT="U+1c6d Ol Chiki Letter Uy"  onmouseover = "popup('U+1c6d Ol Chiki Letter Uy');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c77.png" ALT="U+1C77 Ol Chiki Letter Oh"  onmouseover = "popup('U+1C77 Ol Chiki Letter Oh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c78.png" ALT="U+1C78 Ol Chiki Mu Ttuddag"  onmouseover = "popup('U+1C78 Ol Chiki Mu Ttuddag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c62.png" ALT="U+1C62 Ol Chiki Letter Aam"  onmouseover = "popup('U+1C62 Ol Chiki Letter Aam');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c71.png" ALT="U+1C71 Ol Chiki Letter En"  onmouseover = "popup('U+1C71 Ol Chiki Letter En');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c63.png" ALT="U+1C63 Ol Chiki Letter Aaw"  onmouseover = "popup('U+1C63 Ol Chiki Letter Aaw');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c5e.png" ALT="U+1C5E Ol Chiki Letter Al"  onmouseover = "popup('U+1C5E Ol Chiki Letter Al');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c65.png" ALT="U+1C65 Ol Chiki Letter Is"  onmouseover = "popup('U+1C65 Ol Chiki Letter Is');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002c.png" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002e.png" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c6d.png" ALT="U+1C6D Ol Chiki Letter Uy"  onmouseover = "popup('U+1C6D Ol Chiki Letter Uy');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG src="images/Alt.jpg" width="40" height="20" /></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG src="images/Alt.png" ALT="Alt key." width="80" height="40" /></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=shiftstate CLASS=shiftstate STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/1c7b.jpg" ALT="U+1c7b Ol Chiki Relaa"  onmouseover = "popup('U+1c7b Ol Chiki Relaa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c7c.jpg" ALT="U+1c7c Ol Chiki Phaarkaa"  onmouseover = "popup('U+1c7c Ol Chiki Phaarkaa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/1c7b.png" ALT="U+1C7B Ol Chiki Relaa"  onmouseover = "popup('U+1C7B Ol Chiki Relaa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c7c.png" ALT="U+1C7C Ol Chiki Phaarkaa"  onmouseover = "popup('U+1C7C Ol Chiki Phaarkaa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c5d.jpg" ALT="U+1c5d Ol Chiki Letter Ang"  onmouseover = "popup('U+1c5d Ol Chiki Letter Ang');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c72.jpg" ALT="U+1c72 Ol Chiki Letter Err"  onmouseover = "popup('U+1c72 Ol Chiki Letter Err');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c67.jpg" ALT="U+1c67 Ol Chiki Letter Iny"  onmouseover = "popup('U+1c67 Ol Chiki Letter Iny');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c5d.png" ALT="U+1C5D Ol Chiki Letter Ang"  onmouseover = "popup('U+1C5D Ol Chiki Letter Ang');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c72.png" ALT="U+1C72 Ol Chiki Letter Err"  onmouseover = "popup('U+1C72 Ol Chiki Letter Err');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c67.png" ALT="U+1C67 Ol Chiki Letter Iny"  onmouseover = "popup('U+1C67 Ol Chiki Letter Iny');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c7a.jpg" ALT="U+1c7a Ol Chiki Mu-Gaahlaa Ttuddaag"  onmouseover = "popup('U+1c7a Ol Chiki Mu-Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c7a.png" ALT="U+1C7A Ol Chiki Mu-Gaahlaa Ttuddaag"  onmouseover = "popup('U+1C7A Ol Chiki Mu-Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c7d.jpg" ALT="U+1c7d Ol Chiki Ahad"  onmouseover = "popup('U+1c7d Ol Chiki Ahad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c6c.jpg" ALT="U+1c6c Ol Chiki Letter Unn"  onmouseover = "popup('U+1c6c Ol Chiki Letter Unn');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c76.jpg" ALT="U+1c76 Ol Chiki Letter Ov"  onmouseover = "popup('U+1c76 Ol Chiki Letter Ov');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c7f.jpg" ALT="U+1c7f Ol Chiki Punctuation Double Mucaad"  onmouseover = "popup('U+1c7f Ol Chiki Punctuation Double Mucaad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c7e.jpg" ALT="U+1c7e Ol Chiki Punctuation Mucaad"  onmouseover = "popup('U+1c7e Ol Chiki Punctuation Mucaad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c7d.png" ALT="U+1C7D Ol Chiki Ahad"  onmouseover = "popup('U+1C7D Ol Chiki Ahad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c6c.png" ALT="U+1C6C Ol Chiki Letter Unn"  onmouseover = "popup('U+1C6C Ol Chiki Letter Unn');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c76.png" ALT="U+1C76 Ol Chiki Letter Ov"  onmouseover = "popup('U+1C76 Ol Chiki Letter Ov');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c7f.png" ALT="U+1C7F Ol Chiki Punctuation Double Mucaad"  onmouseover = "popup('U+1C7F Ol Chiki Punctuation Double Mucaad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c7e.png" ALT="U+1C7E Ol Chiki Punctuation Mucaad"  onmouseover = "popup('U+1C7E Ol Chiki Punctuation Mucaad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG src="images/Alt.jpg" width="40" height="20" /></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG src="images/Alt.png" ALT="Alt key." width="80" height="40" /></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=normalstatecap CLASS=normalstatecap STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c51.jpg" ALT="U+1c51 Ol Chiki Digit One"  onmouseover = "popup('U+1c51 Ol Chiki Digit One');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c52.jpg" ALT="U+1c52 Ol Chiki Digit Two"  onmouseover = "popup('U+1c52 Ol Chiki Digit Two');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c53.jpg" ALT="U+1c53 Ol Chiki Digit Three"  onmouseover = "popup('U+1c53 Ol Chiki Digit Three');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c54.jpg" ALT="U+1c54 Ol Chiki Digit Four"  onmouseover = "popup('U+1c54 Ol Chiki Digit Four');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c55.jpg" ALT="U+1c55 Ol Chiki Digit Five"  onmouseover = "popup('U+1c55 Ol Chiki Digit Five');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c56.jpg" ALT="U+1c56 Ol Chiki Digit Six"  onmouseover = "popup('U+1c56 Ol Chiki Digit Six');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c57.jpg" ALT="U+1c57 Ol Chiki Digit Seven"  onmouseover = "popup('U+1c57 Ol Chiki Digit Seven');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c58.jpg" ALT="U+1c58 Ol Chiki Digit Eight"  onmouseover = "popup('U+1c58 Ol Chiki Digit Eight');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c59.jpg" ALT="U+1c59 Ol Chiki Digit Nine"  onmouseover = "popup('U+1c59 Ol Chiki Digit Nine');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c50.jpg" ALT="U+1c50 Ol Chiki Digit Zero"  onmouseover = "popup('U+1c50 Ol Chiki Digit Zero');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c51.png" ALT="U+1C51 Ol Chiki Digit One"  onmouseover = "popup('U+1C51 Ol Chiki Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c52.png" ALT="U+1C52 Ol Chiki Digit Two"  onmouseover = "popup('U+1C52 Ol Chiki Digit Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c53.png" ALT="U+1C53 Ol Chiki Digit Three"  onmouseover = "popup('U+1C53 Ol Chiki Digit Three');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c54.png" ALT="U+1C54 Ol Chiki Digit Four"  onmouseover = "popup('U+1C54 Ol Chiki Digit Four');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c55.png" ALT="U+1C55 Ol Chiki Digit Five"  onmouseover = "popup('U+1C55 Ol Chiki Digit Five');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c56.png" ALT="U+1C56 Ol Chiki Digit Six"  onmouseover = "popup('U+1C56 Ol Chiki Digit Six');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c57.png" ALT="U+1C57 Ol Chiki Digit Seven"  onmouseover = "popup('U+1C57 Ol Chiki Digit Seven');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c58.png" ALT="U+1C58 Ol Chiki Digit Eight"  onmouseover = "popup('U+1C58 Ol Chiki Digit Eight');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c59.png" ALT="U+1C59 Ol Chiki Digit Nine"  onmouseover = "popup('U+1C59 Ol Chiki Digit Nine');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c50.png" ALT="U+1C50 Ol Chiki Digit Zero"  onmouseover = "popup('U+1C50 Ol Chiki Digit Zero');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c5f.jpg" ALT="U+1c5f Ol Chiki Letter Laa"  onmouseover = "popup('U+1c5f Ol Chiki Letter Laa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c75.jpg" ALT="U+1c75 Ol Chiki Letter Ob"  onmouseover = "popup('U+1c75 Ol Chiki Letter Ob');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1C66.jpg" ALT="U+1c66 Ol Chiki Letter Ih"  onmouseover = "popup('U+1c66 Ol Chiki Letter Ih');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c5c.jpg" ALT="U+1c5c Ol Chiki Letter Ag"  onmouseover = "popup('U+1c5c Ol Chiki Letter Ag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c6b.jpg" ALT="U+1c6b Ol Chiki Letter Ud"  onmouseover = "popup('U+1c6b Ol Chiki Letter Ud');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1c61.jpg" ALT="U+1c61 Ol Chiki Letter Aaj"  onmouseover = "popup('U+1c61 Ol Chiki Letter Aaj');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1C70.jpg" ALT="U+1c70 Ol Chiki Letter Edd"  onmouseover = "popup('U+1c70 Ol Chiki Letter Edd');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1C79.jpg" ALT="U+1c79 Ol Chiki Gaahlaa Ttuddaag"  onmouseover = "popup('U+1c79 Ol Chiki Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c5f.png" ALT="U+1C5F Ol Chiki Letter Laa"  onmouseover = "popup('U+1C5F Ol Chiki Letter Laa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c75.png" ALT="U+1C75 Ol Chiki Letter Ob"  onmouseover = "popup('U+1C75 Ol Chiki Letter Ob');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1C66.png" ALT="U+1C66 Ol Chiki Letter Ih"  onmouseover = "popup('U+1C66 Ol Chiki Letter Ih');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c5c.png" ALT="U+1C5C Ol Chiki Letter Ag"  onmouseover = "popup('U+1C5C Ol Chiki Letter Ag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c6b.png" ALT="U+1C6B Ol Chiki Letter Ud"  onmouseover = "popup('U+1C6B Ol Chiki Letter Ud');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1c61.png" ALT="U+1C61 Ol Chiki Letter Aaj"  onmouseover = "popup('U+1C61 Ol Chiki Letter Aaj');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1C70.png" ALT="U+1C70 Ol Chiki Letter Edd"  onmouseover = "popup('U+1C70 Ol Chiki Letter Edd');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1C79.png" ALT="U+1C79 Ol Chiki Gaahlaa Ttuddaag"  onmouseover = "popup('U+1C79 Ol Chiki Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c73.jpg" ALT="U+1c73 Ol Chiki Letter Lo"  onmouseover = "popup('U+1c73 Ol Chiki Letter Lo');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c6e.jpg" ALT="U+1c6e Ol Chiki Letter Le"  onmouseover = "popup('U+1c6e Ol Chiki Letter Le');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c5a.jpg" ALT="U+1c5a Ol Chiki Letter La"  onmouseover = "popup('U+1c5a Ol Chiki Letter La');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c64.jpg" ALT="U+1c64 Ol Chiki Letter Li"  onmouseover = "popup('U+1c64 Ol Chiki Letter Li');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c69.jpg" ALT="U+1c69 Ol Chiki Letter Lu"  onmouseover = "popup('U+1c69 Ol Chiki Letter Lu');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c6f.jpg" ALT="U+1c6f Ol Chiki Letter Ep"  onmouseover = "popup('U+1c6f Ol Chiki Letter Ep');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c68.jpg" ALT="U+1c68 Ol Chiki Letter Ir"  onmouseover = "popup('U+1c68 Ol Chiki Letter Ir');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c60.jpg" ALT="U+1c60 Ol Chiki Letter Aak"  onmouseover = "popup('U+1c60 Ol Chiki Letter Aak');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c5b.jpg" ALT="U+1c5b Ol Chiki Letter At"  onmouseover = "popup('U+1c5b Ol Chiki Letter At');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1C6A.jpg" ALT="U+1c6a Ol Chiki Letter Uc"  onmouseover = "popup('U+1c6a Ol Chiki Letter Uc');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1c74.jpg" ALT="U+1c74 Ol Chiki Letter Ott"  onmouseover = "popup('U+1c74 Ol Chiki Letter Ott');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c73.png" ALT="U+1C73 Ol Chiki Letter Lo"  onmouseover = "popup('U+1C73 Ol Chiki Letter Lo');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c6e.png" ALT="U+1C6E Ol Chiki Letter Le"  onmouseover = "popup('U+1C6E Ol Chiki Letter Le');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c5a.png" ALT="U+1C5A Ol Chiki Letter La"  onmouseover = "popup('U+1C5A Ol Chiki Letter La');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c64.png" ALT="U+1C64 Ol Chiki Letter Li"  onmouseover = "popup('U+1C64 Ol Chiki Letter Li');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c69.png" ALT="U+1C69 Ol Chiki Letter Lu"  onmouseover = "popup('U+1C69 Ol Chiki Letter Lu');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c6f.png" ALT="U+1C6F Ol Chiki Letter Ep"  onmouseover = "popup('U+1C6F Ol Chiki Letter Ep');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c68.png" ALT="U+1C68 Ol Chiki Letter Ir"  onmouseover = "popup('U+1C68 Ol Chiki Letter Ir');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c60.png" ALT="U+1C60 Ol Chiki Letter Aak"  onmouseover = "popup('U+1C60 Ol Chiki Letter Aak');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c5b.png" ALT="U+1C5B Ol Chiki Letter At"  onmouseover = "popup('U+1C5B Ol Chiki Letter At');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1C6A.png" ALT="U+1C6A Ol Chiki Letter Uc"  onmouseover = "popup('U+1C6A Ol Chiki Letter Uc');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1c74.png" ALT="U+1C74 Ol Chiki Letter Ott"  onmouseover = "popup('U+1C74 Ol Chiki Letter Ott');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1C77.jpg" ALT="U+1c77 Ol Chiki Letter Oh"  onmouseover = "popup('U+1c77 Ol Chiki Letter Oh');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c78.jpg" ALT="U+1c78 Ol Chiki Mu Ttuddag"  onmouseover = "popup('U+1c78 Ol Chiki Mu Ttuddag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1C62.jpg" ALT="U+1c62 Ol Chiki Letter Aam"  onmouseover = "popup('U+1c62 Ol Chiki Letter Aam');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c71.jpg" ALT="U+1c71 Ol Chiki Letter En"  onmouseover = "popup('U+1c71 Ol Chiki Letter En');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1C63.jpg" ALT="U+1c63 Ol Chiki Letter Aaw"  onmouseover = "popup('U+1c63 Ol Chiki Letter Aaw');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c5e.jpg" ALT="U+1c5e Ol Chiki Letter Al"  onmouseover = "popup('U+1c5e Ol Chiki Letter Al');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c65.jpg" ALT="U+1c65 Ol Chiki Letter Is"  onmouseover = "popup('U+1c65 Ol Chiki Letter Is');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002c.jpg" ALT="U+002c Comma"  onmouseover = "popup('U+002c Comma');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/002e.jpg" ALT="U+002e Full Stop"  onmouseover = "popup('U+002e Full Stop');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c6d.jpg" ALT="U+1c6d Ol Chiki Letter Uy"  onmouseover = "popup('U+1c6d Ol Chiki Letter Uy');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1C77.png" ALT="U+1C77 Ol Chiki Letter Oh"  onmouseover = "popup('U+1C77 Ol Chiki Letter Oh');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c78.png" ALT="U+1C78 Ol Chiki Mu Ttuddag"  onmouseover = "popup('U+1C78 Ol Chiki Mu Ttuddag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1C62.png" ALT="U+1C62 Ol Chiki Letter Aam"  onmouseover = "popup('U+1C62 Ol Chiki Letter Aam');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c71.png" ALT="U+1C71 Ol Chiki Letter En"  onmouseover = "popup('U+1C71 Ol Chiki Letter En');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1C63.png" ALT="U+1C63 Ol Chiki Letter Aaw"  onmouseover = "popup('U+1C63 Ol Chiki Letter Aaw');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c5e.png" ALT="U+1C5E Ol Chiki Letter Al"  onmouseover = "popup('U+1C5E Ol Chiki Letter Al');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c65.png" ALT="U+1C65 Ol Chiki Letter Is"  onmouseover = "popup('U+1C65 Ol Chiki Letter Is');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002c.png" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002e.png" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c6d.png" ALT="U+1C6D Ol Chiki Letter Uy"  onmouseover = "popup('U+1C6D Ol Chiki Letter Uy');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG src="images/Alt.jpg" width="40" height="20" /></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG src="images/Alt.png" ALT="Alt key." width="80" height="40" /></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 <DIV ID=shiftstatecap CLASS=shiftstatecap STYLE="display: none">
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG SRC="images/1c7b.jpg" ALT="U+1c7b Ol Chiki Relaa"  onmouseover = "popup('U+1c7b Ol Chiki Relaa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c7c.jpg" ALT="U+1c7c Ol Chiki Phaarkaa"  onmouseover = "popup('U+1c7c Ol Chiki Phaarkaa');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG src="images/BackSp.jpg" width=40 height=20 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/1c7b.png" ALT="U+1C7B Ol Chiki Relaa"  onmouseover = "popup('U+1C7B Ol Chiki Relaa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c7c.png" ALT="U+1C7C Ol Chiki Phaarkaa"  onmouseover = "popup('U+1C7C Ol Chiki Phaarkaa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/Tab.jpg" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1C5D.jpg" ALT="U+1c5d Ol Chiki Letter Ang"  onmouseover = "popup('U+1c5d Ol Chiki Letter Ang');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1C72.jpg" ALT="U+1c72 Ol Chiki Letter Err"  onmouseover = "popup('U+1c72 Ol Chiki Letter Err');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-12" SRC="images/1C67.jpg" ALT="U+1c67 Ol Chiki Letter Iny"  onmouseover = "popup('U+1c67 Ol Chiki Letter Iny');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/EnterX.jpg" WIDTH=30 HEIGHT=42 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1C5D.png" ALT="U+1C5D Ol Chiki Letter Ang"  onmouseover = "popup('U+1C5D Ol Chiki Letter Ang');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1C72.png" ALT="U+1C72 Ol Chiki Letter Err"  onmouseover = "popup('U+1C72 Ol Chiki Letter Err');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/1C67.png" ALT="U+1C67 Ol Chiki Letter Iny"  onmouseover = "popup('U+1C67 Ol Chiki Letter Iny');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
 </TR></TABLE>
-<TABLE WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999><TR>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/CapsLock2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=40 Height=20 /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/1C7A.jpg" ALT="U+1c7a Ol Chiki Mu-Gaahlaa Ttuddaag"  onmouseover = "popup('U+1c7a Ol Chiki Mu-Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-25" SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/None.jpg" WIDTH=20 HEIGHT=0 /></TD>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/1C7A.png" ALT="U+1C7A Ol Chiki Mu-Gaahlaa Ttuddaag"  onmouseover = "popup('U+1C7A Ol Chiki Mu-Gaahlaa Ttuddaag');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position: relative; left: 0; top: -25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/NarrowShift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=30 HEIGHT=20 /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1C7D.jpg" ALT="U+1c7d Ol Chiki Ahad"  onmouseover = "popup('U+1c7d Ol Chiki Ahad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1C6C.jpg" ALT="U+1c6c Ol Chiki Letter Unn"  onmouseover = "popup('U+1c6c Ol Chiki Letter Unn');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1C76.jpg" ALT="U+1c76 Ol Chiki Letter Ov"  onmouseover = "popup('U+1c76 Ol Chiki Letter Ov');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c7f.jpg" ALT="U+1c7f Ol Chiki Punctuation Double Mucaad"  onmouseover = "popup('U+1c7f Ol Chiki Punctuation Double Mucaad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/1c7e.jpg" ALT="U+1c7e Ol Chiki Punctuation Mucaad"  onmouseover = "popup('U+1c7e Ol Chiki Punctuation Mucaad');" onmouseout="kill();" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/0000.jpg" WIDTH="20" HEIGHT="20" /></TD>
-<TD><IMG SRC="images/Shift2.jpg" STYLE=cursor:hand ALT="Click to change keyboard state"  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=52 HEIGHT=20 /></TD>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1C7D.png" ALT="U+1C7D Ol Chiki Ahad"  onmouseover = "popup('U+1C7D Ol Chiki Ahad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1C6C.png" ALT="U+1C6C Ol Chiki Letter Unn"  onmouseover = "popup('U+1C6C Ol Chiki Letter Unn');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1C76.png" ALT="U+1C76 Ol Chiki Letter Ov"  onmouseover = "popup('U+1C76 Ol Chiki Letter Ov');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c7f.png" ALT="U+1C7F Ol Chiki Punctuation Double Mucaad"  onmouseover = "popup('U+1C7F Ol Chiki Punctuation Double Mucaad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1c7e.png" ALT="U+1C7E Ol Chiki Punctuation Mucaad"  onmouseover = "popup('U+1C7E Ol Chiki Punctuation Mucaad');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
-<TABLE STYLE="position:relative; left:0; top:-25" WIDTH=320 HEIGHT=20 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#999999>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Alt.jpg" WIDTH=40 HEIGHT=20></TD>
-<TD><IMG SRC="images/Key4.jpg" WIDTH=158 HEIGHT=20></TD>
-<TD><IMG src="images/Alt.jpg" width="40" height="20" /></TD>
-<TD><IMG SRC="images/Control.jpg" WIDTH=40 HEIGHT=20></TD></TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG src="images/Alt.png" ALT="Alt key." width="80" height="40" /></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlstate CLASS=shiftctrlstate STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/20b9.png" ALT="U+20B9 Indian Rupee Sign"  onmouseover = "popup('U+20B9 Indian Rupee Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG src="images/Alt.png" ALT="Alt key." width="80" height="40" /></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlstatecap CLASS=shiftctrlstatecap STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/20b9.png" ALT="U+20B9 Indian Rupee Sign"  onmouseover = "popup('U+20B9 Indian Rupee Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-22" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/EnterX.png" ALT="Enter key." WIDTH=60 HEIGHT=84 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH=40 HEIGHT=0 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position: relative; left: 0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE STYLE="position:relative; left:0; top:-44" WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG src="images/Alt.png" ALT="Alt key." width="80" height="40" /></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 
 </BODY>
