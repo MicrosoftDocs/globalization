@@ -19,10 +19,10 @@ Localizers translate strings and make other localization changes such as changin
 Since technical experience is such an integral part of localization, localizers should possess technical resources in addition to language skills.
 
 Localizing an operating system or complex software project is somewhat different from translating literature.
-While the latter requires more than excellent language skills, the localization of an operating system definitely requires extensive knowledge about the product and related fields-besides some solid language skills in both the source and target language.
+While translating literature requires more-than-excellent language skills, the localization of an operating system definitely requires extensive knowledge about the product and related fields in addition to some solid language skills in both the source and target language.
 It's hard to translate a sentence like "Precreate CR for domain %s1 (a DN) allowing server %s2 (a full DNS name) to dcpromo." when you have no idea at all what a CR or DN could possibly be.
-Thus, a Ph.D. in linguistics is not necessarily the right qualification for this kind of task, though it probably helps to produce grammatically correct sentences in the target language.
-Without some in-depth knowledge of the product, a localizer won't be able to make sense of the source text, and thus won't be able to translate the text adequately in the target language.
+Thus, a Ph.D. in linguistics is not necessarily the right qualification for this kind of task (though it probably helps to produce grammatically correct sentences in the target language).
+Without some in-depth knowledge of the product, a localizer may not be able to make sense of the source text, and thus won't be able to translate the text adequately in the target language.
 The technical level, however, can vary widely.
 For the localization of a rich application or an operating system, technical skills and knowledge of the product are essential.
 On the other hand, for the localization of a children's game that contains a lot of spoken text, language skills are much more important and there's still enough time to get familiar with the product while working on it.

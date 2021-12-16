@@ -33,7 +33,7 @@ _Our style_: <span lang="pt-BR">Lembre-se dos aniversários de seus amigos e fam
 
 ## 2. Friendly and conversational tone
 
-Microsoft's brand personality comes through in our voice and tone—what we say and how we say it. Microsoft voice targets a broad set of users from technology enthusiasts and casual computer users. Translating Microsoft voice into Brazilian Portuguese means choosing words and grammatical structures that reflect the same style as the source text. It also means considering the needs of the audience and the intent of the text. In general, the style should be clear and friendly. Use language that resembles conversation observed in everyday settings as opposed to the formal, technical language that is often used for technical and commercial content.
+Microsoft's brand personality comes through in our voice and tone: what we say and how we say it. Microsoft voice targets a broad set of users from technology enthusiasts and casual computer users. Translating Microsoft voice into Brazilian Portuguese means choosing words and grammatical structures that reflect the same style as the source text. It also means considering the needs of the audience and the intent of the text. In general, the style should be clear and friendly. Use language that resembles conversation observed in everyday settings as opposed to the formal, technical language that is often used for technical and commercial content.
 
 Example:
 

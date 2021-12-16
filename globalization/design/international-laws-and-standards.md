@@ -15,14 +15,11 @@ Here are some basic guidelines to get you started.
 ## Security
 
 The [Security guidelines for international](security-guidelines.md) outlines things to consider at the intersection of internationalization and security.
-<!-- $BROKEN_LINK
-For information on security specifically, reference the [Security Developer Center](https://msdn2.microsoft.com/security/). -->
+For information on security specifically, see [Microsoft Security Engineering](https://www.microsoft.com/en-us/securityengineering).
 
 ## Privacy and international law
 
-Privacy is an important consideration in many countries. Consider the General Data Protection Regulation (GDPR) in the European Union (EU), which applies to anyone doing business in or with the EU.
-<!-- $BROKEN_LINK
-The [Supplier data protection requirements](https://www.microsoft.com/download/details.aspx?id=45016) provides a good introduction on how to approach privacy. -->
+Privacy is an important consideration in many countries. Consider the General Data Protection Regulation (GDPR) in the European Union (EU), which applies to anyone doing business in or with the EU. See [EUR-Lex -32018R1725](https://eur-lex.europa.eu/legal-content/TXT/?uri=CELEX:32018R1725) for official versions of the regulation.
 
 ## Intellectual property, copyright, and piracy
 
@@ -48,7 +45,10 @@ the description of the extent and the conditions of guarantee,
 as well as in announcements (including advertising) intended for the general public.
 
 In Canada by its constitution, both French and English are official languages. In addition to the requirement that government services be available in both languages, there are further laws that “places obligations on private actors in Canadian society to provide access to goods or services in both official languages (such as the requirement that food products be labeled in both English and French).”
-For more information, please see the Wikipedia article on [Official Bilingualism in Canada](http://en.wikipedia.org/wiki/Bilingualism_in_Canada).
+
+English and French are a fundamental characteristic of the Canadian identity, and the importance of language rights is clearly recognized in the Canadian Charter of Rights and Freedoms, part of the Constitution Act of 1982.
+There are laws requiring access to goods or services in both official languages.
+For more information, please see [About official languages and bilingualism](https://www.canada.ca/en/canadian-heritage/services/official-languages-bilingualism/about.html).
 
 Other markets have their own laws and new laws are added by countries periodically.
 
@@ -62,10 +62,10 @@ For example, China requires that software and services support the national stan
 
 For any product that supplies a legal document, such as an End-User License Agreement (EULA).
 You will need to engage a lawyer that understands EULA legislation, international law, and nuances of providing a document in a particular language that varies in different jurisdictions.
-For example,  English for the United States and the United Kingdom, or French for Canada and France.
+For example, English for the United States and the United Kingdom, or French for Canada and France.
 Additionally, you may need to engage a translation agency that specializes in legal translation to ensure your company does not open itself to risk.
 
 ## Laws or standards particular to your program
 
 For applications that target specific functionality — such as taxes or health care — keep in mind that different laws and standards apply and your program may be liable to adhere to those laws.
-For example, you may need to conform to the US [Health Insurance Portability & Accountability Act (HIPAA)](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), the European Union (EU) [Data Protection laws](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules_en), such as GDPR, or Canada’s [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act) depending on the markets you are targeting.
+For example, you may need to conform to the US [Health Insurance Portability & Accountability Act (HIPAA)](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), the European Union (EU) such as GDPR ([EUR-Lex -32018R1725](https://eur-lex.europa.eu/legal-content/TXT/?uri=CELEX:32018R1725) for official versions of the regulation), or Canada’s [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act) depending on the markets you are targeting.

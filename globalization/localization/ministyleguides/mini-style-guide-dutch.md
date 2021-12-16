@@ -222,16 +222,16 @@ Refer to Microsoft names correctly when you use them.
 - Version numbers always contain a period (for example, Version 4.2).
 - Trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. A [list of Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference.
 
-## 9. Do's and Don'ts
+## 9. Guidance
 
-### Do's
+Do:
 
 - Generally, address end users by using the formal form of address: "u." However, the informal form ("<span lang="nl">je</span>") should be used for some content, such as marketing content.
 - Refer to Microsoft names correctly when you use them.
 - Use "datums" as the plural form of "datum."
 - Translate the English word "then" with "<span lang="nl">vervolgens</span>."
 
-### Don'ts
+Don't:
 
 - "Please" and "sorry" are not translated.
 - "Successfully" is usually not included in the Dutch translation.
