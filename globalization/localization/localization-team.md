@@ -50,4 +50,4 @@ Consistent translation lookup tables are useful to ensure correct translation of
 These lookup tables can be created as part of the localization process and can be reviewed after translation is finished.
 
 In addition to using good tools and having localization team members who perform defined functions, you should also have some basic process guidelines in place that will enable localization to run smoothly.
-The following section discusses some basic areas that you should consider.
+
