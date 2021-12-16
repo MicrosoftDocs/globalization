@@ -22,13 +22,14 @@ UTF-16 little-endian (UTF-16LE) is the encoding standard in the Windows operatin
 
 - **UTF-32:** Each character is represented as a single 32-bit integer.
 
-The table below shows two characters encoded in a code page and Unicode, using UTF-16 and UTF-8.
+The table below shows two characters encoded in a code page and Unicode, using UTF-16, UTF-32, and UTF-8.
 
 | Encoding |  **A**  | <span lang="zh-Hans">**院**</span> | Byte Count |
 |----------|---------|------------------------------------|------------|
-| MBCS     |  41   | 89, 40     | 2 |
-| UTF-16   |  0041 | 9662       | 2 |
-| UTF-8    |  41   | E9, 99, A2 | 3 |
+| MBCS     | 41       | 89, 40     | 2 |
+| UTF-8    | 41       | E9, 99, A2 | 3 |
+| UTF-16   | 0041     | 9662       | 2 |
+| UTF-32   | 00000041 | 00009662   | 4 |
 
 **Table 1:** The character "A" and the CJK character encoded in code pages and in Unicode with both UTF-16 and UTF-8.
 
@@ -37,7 +38,7 @@ Table 2 shows the relationship between Unicode code points and their UTF-8 encod
 The starting byte of a sequence of bytes in a UTF-8 encoded character tells how many bytes are used to encode that character.
 All the following bytes start with the bits `10` and the x's denote the binary representation of the encoding within the given range.
 
-| Unicode Range (UTF-32)  | UTF-8 Encoded Bytes (binary) |
+| Unicode Code Point Range | UTF-8 Encoded Bytes (binary) |
 |-------------------------|---------------------|
 | `0x00000000-0x0000007F` | **`0`**`xxxxxxx` |
 | `0x00000080-0x000007FF` | **`110`**`xxxxx`, **`10`**`xxxxxx` |

@@ -20,10 +20,9 @@ Basic software security requirements include protecting software against:
 - Crashes (denial of service)
 - Misbehavior (information disclosure and elevation of privileges)
 
-<!-- BROKEN_LINK
-The [Security Developer Center](https://msdn2.microsoft.com/security/) explains these concepts in detail.-->
-
 This article presents some of the commonly known problems found in international software products and raises awareness of potential problems that may impact security when globalizing and localizing software products.
+
+See [Microsoft Security Engineering](https://www.microsoft.com/securityengineering) to discover the security engineering practices used at Microsoft to build and operate highly secure applications and services.
 
 ## A defensive strategy
 
@@ -63,4 +62,4 @@ The guidelines below are provided to help the developer and tester through poten
 | | Homograph Attacks | Unicode equivalents from outside of ANSI script can be used to trick the user into going to a different site/server etc. This becomes a larger issue with introduction of IDN - International Domain names. The basic example is writing `https://www.microsoft.com` with a Cyrillic “o” or a “0” zero.<br />[IDN homograph attack](https://en.wikipedia.org/wiki/IDN_homograph_attack) |
 | **Date verification** | Use of formatted date for verification can fail with certain Locales. | Algorithm that verifies expiration dates and time span lengths can be broken by changing the language settings when the algorithm uses a formatted date. These problems are commonly seen on the Web. <br />May not be an issue with a certificate-based security model because they verify against the DATE data type. |
 | **Risky APIs** | Dangerous APIs that are very common | An internet search will reveal the most recently documented risky APIs. |
-| **Government requirements** | Risk of government non-compliance actions (fines, recalls)| Local governments may have their own specific requirements, such as the French Encryption Declaration. You must be aware of these regulations. |
+| **Government requirements** | Risk of government non-compliance actions (fines, recalls)| Local governments may have their own specific requirements, such as the French Encryption Declaration (see [Encryption control | Agence nationale de la sécurité des systèmes d'information](https://www.ssi.gouv.fr/en/regulation/cryptology/)). You must be aware of these regulations. |

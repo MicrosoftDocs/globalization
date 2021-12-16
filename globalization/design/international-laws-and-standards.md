@@ -56,12 +56,12 @@ Other markets have their own laws and new laws are added by countries periodical
 
 Some markets may require you to register your software before it can be distributed or sold in that market.
 The perquisites and processes vary by market.
-For example, China requires that software and services support the national standard:  [GB18030 code page](https://en.wikipedia.org/wiki/GB_18030).
+For example, China requires that software and services support the national standard: [GB18030 code page](https://en.wikipedia.org/wiki/GB_18030).
 
 ## End-User License Agreement (EULA)
 
-For any product that supplies a legal document, such as an End-User License Agreement (EULA).
-You will need to engage a lawyer that understands EULA legislation, international law, and nuances of providing a document in a particular language that varies in different jurisdictions.
+For any product that supplies a legal document, such as an End-User License Agreement (EULA),
+you will need to engage a lawyer that understands EULA legislation, international law, and nuances of providing a document in a particular language that varies in different jurisdictions.
 For example, English for the United States and the United Kingdom, or French for Canada and France.
 Additionally, you may need to engage a translation agency that specializes in legal translation to ensure your company does not open itself to risk.
 

@@ -40,7 +40,7 @@ Regardless of the coding methodology you use, there is a basic workflow to incor
 
 1. **Develop**
 
-   Code and verify the product can work in multiple markets—without the need for redesign.
+   Code and verify the product can work in multiple markets, without the need for redesign.
    Use internationalization libraries.
    Set up internationalization metrics and adhere to your own standards.
    Ensure the product can be translated when you’re ready to release in those markets.
@@ -61,7 +61,7 @@ Regardless of the coding methodology you use, there is a basic workflow to incor
 
 Coding for world-readiness may have an impact upon implementation across the entire product, most importantly in the user interface design.
 Below is a list questions to ask yourself when designing for internationalization.
-The reason for this "one size fits all" user interface policy is all about saving time and money — and providing the experience the customer expects.
+The reason for this "one size fits all" user interface policy is all about saving time, saving money, and providing the experience the customer expects.
 
 ### Market Adaptability
 
@@ -84,7 +84,7 @@ The reason for this "one size fits all" user interface policy is all about savin
 - Do all components of your feature support Unicode?
   Unicode encompasses virtually all characters used widely in computers today and standardizes encoding schemes to process it efficiently.
   When application components don’t support the Unicode standard, they commonly misinterpret text coming from other components, which eventually results in unpredictable consequences ranging from corrupted output text to hangs and crashes.
-  Supporting Unicode makes efficient multilingual text processing possible and is the only way to support some language texts for which there are no code pages (e.g. Hindi).
+  Supporting Unicode makes efficient multilingual text processing possible and is the recommended way to support language texts for which there are no code pages (e.g. Hindi).
 
 - Does the feature send or receive data to or from other features, components, or applications?
   For example, Unicode SQL data may be stored as UTF-16, but a web component may use UTF-8.
@@ -221,8 +221,8 @@ User interface is not limited to a graphical user interface, but also includes e
   Some scripts have tall risers and descenders or accent characters that will expand beyond typical English or Latin script text.
 
 - Clipping and truncation can change meaning in profound or offensive ways.
-  Ensure you understand how the meaning can be changed if you clip part of the word (in particular accents) in other scripts.
-  Removing the accents can change the meaning of a word—probably to something you didn’t intend!
+  Ensure you understand how the meaning can be changed if you clip part of the word, either horizontally or vertically.
+  Removing an accent can change the meaning of a word: probably to something you didn’t intend!
 
 - Does your feature have dialogs that contain elements that display content dynamically?
   For example, these controls are difficult to localize, especially if these controls require resizing and/or relocation.
@@ -240,12 +240,10 @@ User interface is not limited to a graphical user interface, but also includes e
   Some fonts may not even have an italic form.
   Consider the impact to your design if you need to use other method to differentiate text or allow alternate emphasis methods for non-Latin text.
 
-- Capitalization can matter—or is not applicable.
+- Capitalization can matter, or is not applicable depending on language.
 
   - Using all lower-case is not linguistically appropriate in all languages.
-    For example, automatic un-capitalization for German would lead to grammatically wrong sentences: certain types of words, like nouns, names, gerunds, must start with upper case.
-    There are some people who use lowercase throughout for their communication, but they may be considered extremely informal or flippant.
-    The user can still understand the meaning if all is lowercase (even though it’s not always that easy), but is generally inappropriate.
+    For example, automatic un-capitalization for German would lead to grammatically incorrect sentences: certain types of words, like nouns, names, gerunds, must start with upper case.
 
   - Using all upper-case may not provide a design change for scripts that have no casing.
     Ensure automatic capitalization is using the correct rules or the meaning of the word could be changed (Turkish and Greek are particularly problematic).

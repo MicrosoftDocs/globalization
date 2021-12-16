@@ -8,7 +8,7 @@ ms.date: 01/09/2019
 
 Unicode has three defined ranges that are not assigned any particular character but instead may be used by individuals and organizations.
 As long as there is agreement between parties, then the Private Use Area (PUA) may be used to display characters currently not in the Unicode standard.
-Private-use characters are sometimes also referred to as [End User-Defined Characters](/windows/desktop/intl/eudc-registry-entries) (EUDC) or vendor-defined characters (VDC).
+Private-use characters are sometimes also referred to as [End User-Defined Characters](/windows/desktop/intl/eudc-registry-entries) (EUDC) or Vendor-Defined Characters (VDC).
 
 Given that the characters are user defined, the same code point may have different meanings in different contexts.
 An end-user needs to have the appropriate font to display the character they are expecting.
