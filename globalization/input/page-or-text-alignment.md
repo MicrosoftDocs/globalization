@@ -17,9 +17,8 @@ To describe how a text flows into lines, one needs to answer three questions:
 - Which way do the lines stack (what is the block progression)?
 - Which way do the glyphs face (what is the glyph orientation: i.e. do the glyphs need to be rotated if the flow changes)?
 
-Chinese may be written either horizontally (read left-to-right, then top-to-bottom as English is) or vertically (read top-to-bottom, then right-to-left), sometimes in the same document!
+Chinese and other languages such as Japanese (Kanji) and Yi may be written either horizontally (read left-to-right, then top-to-bottom as English is) or vertically (read top-to-bottom, then right-to-left). Both directions may be present in the same document.
 This is called a bi-orientational script; see the table below for examples of each orientation.
-Other East Asian languages such as Japanese (Kanji) and Yi also have the same text alignment.
 
 | CSS | Text direction and progression | Language | Source | Example |
 | --- | --- | --- | --- | --- |

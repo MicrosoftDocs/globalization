@@ -6,7 +6,7 @@ ms.date: 04/21/2017
 ---
 # Overlay text properties
 
-The remaining category of advanced text properties relates to text overlay.
+Another category of advanced text properties relates to text overlay.
 These properties apply not just to the glyph, but to an entire text string.
 
 ## Phonetic guides, yomi, furigana, or "ruby" text
@@ -27,7 +27,7 @@ The Worldwide Web Consortium [defines three levels of ruby support](https://www.
 
 ## Emphasizing text
 
-Due to the nature of the characters used by East Asian languages, bolding often makes the characters unreadable.
+Due to the nature of the characters used by East Asian languages, bolding may make the characters unreadable, especially at smaller font sizes.
 Therefore, emphasis points are used to emphasize certain text.
 Note that Simplified Chinese differs in that the emphasis mark is to the left of or below the text, instead of to the right or above the character.
 

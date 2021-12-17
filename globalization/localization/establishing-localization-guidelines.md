@@ -62,7 +62,6 @@ Keeping track of the words that are actually translated for each handoff is impo
 The localized product can also be tested by a third party, preferably by native speakers of the target language.
 Finally, the localization manager needs to make sure that there is a good archiving system of all files that are sent to and received from vendors.
 
-So far this chapter has dealt mainly with software localization, in which changes are made to a program's resources.
-The final section of this chapter examines the second component of localization: content localization.
-Like software localization, content localization presents its own challenges.
-However, there are some notable differences between the two.
+So far this topic has dealt mainly with software localization, in which changes are made to a program's resources.
+Another important consideration is content localization. "Content" means documentation, user assistance, interactive media, video, and other content that is not part of a software user interface.
+Like software localization, content localization presents its own challenges, and are some notable differences between the two.

@@ -12,9 +12,10 @@ Graphical user interface components of the software product might need to be rev
 Use images that are not geared toward a particular culture or locale, and avoid including text within graphics.
 These practices will help minimize the localization of graphics, which is very expensive and often causes the shipping of the product to be delayed.
 
-You may also need to retake UI screen shots for the localized versions of the product.
+You may also choose to re-take screen shots using the localized versions of the product.
 Icons that have a particular directional orientation - such as Undo and Repeat - will need to be localized for bidirectional languages in order to be locale-aware.
 (For more information, see [Mirroring Awareness](../localizability/mirroring-awareness.md).)
+
 The same concept applies to music and video.
 For instance, suppose you want to use music to indicate that the computer is calculating an equation.
 Because the famous U.S. game show "Jeopardy" uses a particular musical theme to indicate that a contestant is thinking of an answer to the game-show host's question, you decide to include the music in your application.

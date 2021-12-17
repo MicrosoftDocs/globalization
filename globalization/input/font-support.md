@@ -123,7 +123,7 @@ Moving these fonts into optional packages provides over 220 MB of disk savings f
 Another significant international development in Windows 10 is the introduction of a new complex-script shaping engine — the Universal Shaping Engine — that allows any complex script in Unicode 7.0 to be shaped correctly even if the script is not yet supported by a system-provided font.
 Users have the option to install a suitable OpenType font for correct shaping behavior for any script in Unicode 7.0.
 
-Note: While the Windows platform is able to support display of additional Unicode 7.0 scripts using non-system fonts, this doesn’t not guarantee that this will work in all apps.
+Note: While the Windows platform is able to support display of additional Unicode 7.0 scripts using non-system fonts, it doesn’t  guarantee that this will work in all apps.
 In particular, apps that do their own low-level text-display processing may not display a script correctly unless they were explicitly designed to support that script, even if they call platform APIs that use the universal shaping engine.
 Also note that platform frameworks do not provide font fallback behavior using non-system fonts.
 

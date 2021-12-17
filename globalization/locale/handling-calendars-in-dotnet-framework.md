@@ -7,13 +7,14 @@ ms.date: 03/16/2016
 
 # Handling calendars in .NET Framework
 
-Similar to the Win32 paradigm - the .NET Framework handles dates in the Gregorian calendar by using data structures.
+The .NET Framework handles dates using data structures and the Gregorian calendar.
 Therefore, when you use the methods provided by the [DateTime](/dotnet/api/system.datetime) structure, you must be aware that the members such as the DateTime.Day property, the DateTime.Month property, the DateTime.Year property, and the DateTime.AddDays method are based on the Gregorian calendar.
 Even if you change the current calendar in your application's code or change date and time settings through the Regional And Language Options property sheet, the Gregorian calendar is still used to perform the calculations for these methods.
 This functionality prevents the arithmetic performed by these methods from being corrupted by a user's settings.
 If you want to perform culture-sensitive date and time operations based on the current calendar, you must use the [DateTimeFormatInfo.Calendar](/dotnet/api/system.globalization.datetimeformatinfo.calendar) property to call methods provided by the [Calendar](/dotnet/api/system.web.ui.webcontrols.calendar) class such as **Calendar.GetDayOfMonth**, **Calendar.GetMonth**, **Calendar.GetYear**, and **Calendar.AddDays**.
 
-To handle native calendar types, the .NET Framework provides the Calendar class as well as the following Calendar implementations: GregorianCalendar, HebrewCalendar, HijriCalendar, JapaneseCalendar, JulianCalendar, KoreanCalendar, TaiwanCalendar, and ThaiBuddhistCalendar. Other things you can use include the CultureInfo class, which has a CultureInfo.Calendar property that specifies a culture's default calendar.
+To handle other calendar types, the .NET Framework provides the Calendar class as well as the following Calendar implementations: GregorianCalendar, HebrewCalendar, HijriCalendar, JapaneseCalendar, JulianCalendar, KoreanCalendar, TaiwanCalendar, and ThaiBuddhistCalendar.
+Other things you can use include the CultureInfo class, which has a CultureInfo.Calendar property that specifies a culture's default calendar.
 The CultureInfo.OptionalCalendars property specifies the optional calendars supported by a culture.
 
 The following code example in C\# creates CultureInfo objects for the culture "th-TH" (Thai in Thailand) and displays the default and optional calendars for each culture.

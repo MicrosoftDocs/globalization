@@ -33,16 +33,16 @@ A much better choice would have been-and still is-using an outline of a postal l
 **Figure 1:** Earlier image used to represent mail, versus the newer and more culturally-appropriate image
 
 Another example of an image that can have varying interpretations from one culture to another involves the concept of a "wizard."
-A wizard was used in earlier UIs to represent assistance for doing something the user might not understand.
+A wizard was used in earlier user interfaces to represent assistance for doing something the user might not understand.
 Based on Americans' experience with wizards like Merlin in the King Arthur stories, pointed caps and magic wands were used to depict this concept.
 (See **Figure 2**).
-Again, these images worked well here in the United States, but the concept of a wizard is foreign to many other cultures.
+Again, these images worked well in the US, but the concept of a wizard is foreign to many other cultures.
 Even for some cultures that do understand the concept, wizards don't necessarily wear pointy hats.
 In still other cultures, a wizard represents something evil or destructive; it can even be a religious abomination, rather than something that is meant to enlighten or assist someone.
 
 ![Culture-specific images for wizard](./images/Wizard.jpg "Culture-specific images for wizard")
 
-**Figure 2:** Culture-specific images formerly used to depict a software wizard
+**Figure 2:** Culture-specific images formerly used to depict a software "wizard"
 
 ### Avoid showing flesh or body parts
 
@@ -106,7 +106,7 @@ As much as possible, it's important to avoid including content that could offend
 Software has been banned in some countries and regions simply because a map showed that a disputed piece of land belonged to another country.
 Maps are very graphic and obvious statements about a government's sovereignty, so a user associated with the disputed piece of land would know very quickly if the maps are accurate or not.
 In addition to maps, flags can be a very sensitive piece of content.
-For example, a flag in a UI that represented an unrecognized country was very upsetting to a nearby government, causing that government to ban a product on the basis of the unrecognized national flag.
+For example, a flag in a user interface that represented an unrecognized country was very upsetting to a nearby government, causing that government to ban a product on the basis of the unrecognized national flag.
 Both of the incidents just mentioned emphasize one of the most misused group of graphics: political symbols, maps, and flags.
 Most unknowing developers use flags as a graphical way to display a particular language, country, or region, but that is not what a flag represents.
 Flags are nationalistic; they represent ideals, boundaries, and political beliefs, but they do not represent a language.

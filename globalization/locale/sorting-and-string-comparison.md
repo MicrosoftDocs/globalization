@@ -272,7 +272,7 @@ Technically, what is commonly referred to "Stroke Count" or "Stroke" sort order 
 In these languages, common components of characters are identified called "radicals."
 Characters are then grouped by their primary radical, then ordered by the number of pen strokes within each radical.
 When there is no obvious radical or more than one radical, convention governs which is used for sorting.
-For example, the Chinese character for "mother" (<span lang="ja">媽</span>) is sorted as a thirteen-stroke character under the three-stroke primary radical (<span lang="ja">女</span>).
+For example, the character for "mother" (<span lang="ja">媽</span>) is sorted as a thirteen-stroke character under the three-stroke primary radical (<span lang="ja">女</span>).
 
 The radical-and-stroke system is cumbersome compared to an alphabetical system in which there are a few characters, all unambiguous.
 The choice of which components of a logograph comprise separate radicals and which radical is primary is not always clear-cut.
@@ -310,7 +310,7 @@ Whereas in Hong Kong, users commonly sort by using stroke order.
 
 ### Korean sorting
 
-Korean is sorted based on the Hangul pronunciation of the Hangul and Hanja code-points.
+Korean is sorted based on the Hangeul pronunciation of the Hangeul and Hanja code-points.
 
 ## Find and replace
 
@@ -324,7 +324,7 @@ In addition to the core support, applications may choose to add support for addi
 
 - Match Alef Hamza (languages written the Arabic script)
 
-- Hanja with Phonetic Hangul (Korean)
+- Hanja with Phonetic Hangeul (Korean)
 
 - Match Half- and Full-Width Forms (Japanese)
 
@@ -378,11 +378,11 @@ For example, if Match Alef Hamza is unchecked, then searching for <span lang="ar
 On the other hand, if Match Alef Hamza is checked, then the Alef and Alef Hamza must match that of the text used in the Find and Replace dialog.
 Therefore, searching for <span lang="ar">(احمد)</span> will not find <span lang="ar">(أحمد)</span>.
 
-### Hanja with phonetic Hangul
+### Hanja with phonetic Hangeul
 
-The "Hanja with phonetic Hangul" option is used to find words written in either the hanja (Han or "Chinese script") or Hangul (native Korean script).
+The "Hanja with phonetic Hangeul" option is used to find words written in either the hanja (Han or "Chinese script") or Hangeul (native Korean script).
 See [Korean mixed script](https://en.wikipedia.org/wiki/Korean_mixed_script) for more details.
-For example, the terms <span lang="ko">한자</span> and <span lang="ko">漢字</span> both mean "Hangul."
+For example, the terms <span lang="ko">한자</span> and <span lang="ko">漢字</span> both mean "Hangeul."
 
 ### Full and half-width forms
 

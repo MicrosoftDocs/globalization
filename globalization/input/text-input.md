@@ -12,7 +12,6 @@ What if a user tries to enter data in several different languages?
 In this case, the process becomes much more complicated.
 
 Different languages have different keyboard layouts, and the characters of each language might fall into different character sets that require separate fonts.
-How can Microsoft Windows-based applications juggle multiple keyboards, character sets, and fonts?
 With all these challenges in mind, Microsoft Windows supports standard mechanisms for multilingual data input, output, and display.
 This section covers the many ways to handle each of these areas.
 
@@ -32,9 +31,9 @@ Users should also be able to use extended characters in all parts of your produc
 
 If you are using a standard control, you should have no need to worry about the user’s input method.
 This will be handled for you automatically.
-Advanced applications (such as a text editor) that need to have full control over how input languages are handled should monitor and be able to respond to the user’s changes.
+Advanced applications (such as a text editor) will require significant development to handle keyboard and input language changes, IME messages, bi-directional scripts, and other text-handling concerns.
 
-You will find [keyboard input documentation on Docs](/windows/win32/inputdev/using-keyboard-input).
+See [Using Keyboard Input](/windows/win32/inputdev/using-keyboard-input) for detailed information on handling keyboard input in Windows.
 
 The exception may be for keyboard shortcuts. If you define a shortcut as Alt-S and there is no S on the keyboard, what does that mean for the user?
 

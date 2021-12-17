@@ -13,7 +13,7 @@ ms.date: 03/16/2016
 > which use a locale name to identify a locale instead of an LCID.
 > See [Locale names and LCID deprecation](locale-names.md) for more information.
 
-As you probably noticed in the last code sample, one of the arguments of the enumeration callback function for date formats is the calendar type (CALID).
+In the [.NET code sample](handling-calendars-in-dotnet-framework.md), one of the arguments of the enumeration callback function for date formats is the calendar type (CALID).
 As mentioned earlier, for some locales more than one calendar type is available.
 For example, if the user locale is set to Hebrew, then the enumeration would return long-date formats for both Gregorian and Hebrew lunar calendars.
 For most of the applications, the basic functionality made available by [GetDateFormatW](/windows/win32/api/datetimeapi/nf-datetimeapi-getdateformatw), which allows the date to be represented in the currently selected calendar and format, is enough.
@@ -36,10 +36,10 @@ CAL_SCALNAME); // calendar info (return the calendar name)
 // The callback function will look like:
 BOOL CALLBACK EnumCalendarInfoProc(LPTSTR lpCalendarInfoString, CALID Calendar)
 {
-    if (!lpCalendarInfoString)
-        return FALSE;
-    MessageBox(NULL, g_szBuf2, TEXT(&Calendars names&), MB_OK);
-    return TRUE;
+    if (!lpCalendarInfoString)
+        return FALSE;
+    MessageBox(NULL, g_szBuf2, TEXT(&Calendars names&), MB_OK);
+    return TRUE;
 }
 ```
 

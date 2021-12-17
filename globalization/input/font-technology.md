@@ -75,7 +75,7 @@ On a new line in the dialog field "Value data" of the Edit Multi-String dialog b
 Use a comma to separate the font file name and font face name.
 
 > [!CAUTION]
-> Editing/modifying the font link entries in the Registry can be done, but is NOT supported by Microsoft.
+> While it is possible to Edit/modify the font link entries in the Registry, it is NOT recommended or supported by Microsoft.
 > The wrong font link entry can leave the system unstable and impacts machine performance.
 
 > [!NOTE]
@@ -96,9 +96,9 @@ Consider the difference in the visual height of English letters among Microsoft 
 |:---:|:---:|:---:|
 | ![Sans Serif E](./images/SansSerif.jpg "The letter E in Sans Serif font") | ![Traditional Arabic E](./images/TradArabic.jpg "The letter E in Traditional Arabic font") | ![Leelawadee E](./images/Leelawadee.jpg "The letter E in Leelawadee font") |
 
-Even though all of these are supposedly 8-point fonts, the apparent size of the English letters varies widely.
-Font fallback and font linking are no substitutes for choosing the right font in the first place.
-Rather, these mechanisms are simply a means of preventing the user from manually selecting a font; additionally, they prevent user interface text from being displayed as a default glyph.
+Even though all of these are nominally 8-point fonts, the apparent size of the English letters varies widely.
+Font fallback and font linking are not a substitute for choosing the right font in the first place.
+Rather, these mechanisms are simply a means of preventing the user from being forced to manually select a font, and they prevent user interface text from being displayed as a default glyph.
 
 Even so, when font linking occurs, the system will attempt scale the linked font with the aim of making the glyphs from the linked font appear to match in size the glyphs from the base font.
 In previous versions the scaling algorithm was found not to give satisfactory results in all scenarios; in particular, it did not give good results when linking to new East Asian fonts that have no embedded bitmaps.
@@ -122,7 +122,7 @@ In GDI, the second reference will be treated as redundant and ignored.
 Font substitution is implemented by an application to replace a request for a font that is not available into one that is available.
 In general, applications use PANOSE information (a set of numeric values summarizing the font’s style) to find the most appropriate matching font.
 
-The Windows operating system also allows enabling font substitution but this should be considered a last resort approach.
+The Windows operating system allows enabling font substitution but this should be considered a last resort approach.
 Windows substitution logic is also sensitive to charsets, so that a request for Arial with Western charset (0) can be translated into a request for Arial with Greek charset (161), for instance.
 Windows font substitution is set with the registry entries under the key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes`.
 The registry entry of “Helvetica” with the value of “Arial”, for instance, indicates to substitute Helvetica font with Arial font; and the registry entry of “Arial,0” with the value of “Arial,161” will substitute Arial with ANSI\_CHAERSET to Arial with GREEK\_CHARSET.

@@ -6,12 +6,15 @@ ms.date: 03/16/2016
 ---
 # Time formatting
 
-Like date and calendar formats, time formats are not constant throughout the world. Although each representation of time basically displays the hour, minutes, and seconds, their presentation order and separators vary greatly. In fact, there might be many differences between regions within the same country. The time formatting might differ from one culture to another in one of the following three ways:
+Like date and calendar formats, time formats are not constant throughout the world.
+Although each representation of time basically displays the hour, minutes, and seconds, their presentation order and separators vary greatly.
+In fact, there might be many differences between regions within the same country.
+The time formatting might differ from one culture to another in one of the following three ways:
 
 1. The use of either a 12-hour or 24-hour clock.
 
-   Most European and Asian locales use the 24-hour clock instead of the 12-hour A.M./P.M. model used in the United States.
-   Also, A.M./P.M. can be rendered in the language of the country, and in some languages comes before the time and not after it.
+   Most European and Asian locales use the 24-hour clock compared to the 12-hour (AM/PM) model used in the United States.
+   In 12-hour formats, the meridian indicator can be rendered in the language of the country, and can appear before or after the hour, depending on region.
 
 2. The character used to separate hours, minutes, and seconds.
 
@@ -20,9 +23,10 @@ Like date and calendar formats, time formats are not constant throughout the wor
 
 3. The storage and display of time zones.
 
-   One way that's frequently used to represent the time zone is to display GMT (Greenwich Mean Time) or its modern replacement UTC (Coordinated Universal Time) as the base.
-   This is then followed by the time zone, which is indicated as a positive or negative offset in hours and minutes.
-   Some time zones use 30-minute or 45-minute offsets.
+   One way that is frequently used to represent the time zone is to display UTC (Coordinated Universal Time) as the base, or the older GMT (Greenwich Mean Time).
+   This is then followed by the time zone, which is indicated as a positive or negative offset from UTC in hours and minutes.
+   You cannot assume a time zone offset is whole number of hours.
+   Some time zones have 30-minute or 45-minute offsets.
    For example, the time zone for Bengaluru, India, would be displayed as UTC +5:30, and for Chatham Island, New Zealand, it would be UTC +12:45.
    Another way to display time zones is by using names for the local time zones.
    If you do so, you must take the following into account:
@@ -31,11 +35,12 @@ Like date and calendar formats, time formats are not constant throughout the wor
 
     - Time-zone abbreviations are not unique.
 
-    - Not all countries use daylight saving time, and daylight saving time does not start and end on the same day in every country.
+    - Not all countries use daylight saving time, and the transition moment varies by country/region.
 
-    - One time zone might have many different names, depending on the country and the language.
+    - One time zone might have many different names, depending on the country/region and the language.
 
-**Important:** Changing the user locale or the locale variable does not adjust the time zone by default.
+> [!IMPORTANT]
+> Changing the user locale or the locale variable does not adjust the time zone by default.
 
 ![Time formatting for Greek user locale](./images/Greek_Time.jpg "Time formatting for Greek user locale")
 
