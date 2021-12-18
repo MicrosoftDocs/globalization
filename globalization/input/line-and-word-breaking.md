@@ -17,7 +17,7 @@ Other languages also have word and line-breaking rules of their own.
 For these languages, world–ready software applications cannot conveniently base line–breaking and word–wrapping algorithms on a space character or on western hyphenation rules.
 They must follow different guidelines.
 
-Take Japanese, for example. Japanese line breaking is based on the *kinsoku* rules: you can break lines between any two characters, with several exceptions.
+Take Japanese, for example. Japanese line breaking is based on the kinsoku rules: you can break lines between any two characters, with several exceptions.
 The first exception is that a line of text cannot end with any _leading_ characters – such as opening quotation marks, opening parentheses, and currency signs – that shouldn't be separated from succeeding characters.
 The second exception is that a line of text cannot begin with any _following_ characters — such as closing quotation marks, closing parentheses, and punctuation marks – that shouldn't be separated from preceding characters.
 The third exception is that certain overflow characters such as punctuation are allowed to extend beyond the right margin for horizontal text or below the bottom margin for vertical text.

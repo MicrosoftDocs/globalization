@@ -8,7 +8,7 @@ ms.date: 05/01/2017
 
 In typesetting and page layout, alignment is the setting of text flow or image placement relative to a page, column (measure), table cell or tab.
 Type alignment sometimes referred to as “text alignment”, “text justification”, “type justification”, or “document direction.”
-Additionally, this may be referred to as _reading order_.
+Additionally, this may be referred to as "reading order".
 Reading order describes the order in which a block of text is displayed, sometimes in contrast with how the text is entered or stored, which is normally in logical order.
 
 To describe how a text flows into lines, one needs to answer three questions:

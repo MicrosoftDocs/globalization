@@ -216,14 +216,14 @@ In Thai, for example, if the cursor is positioned after a base consonant, vowel,
 
 ![Cursor positioning](./images/Cursor_Pos.png "Cursor positioning")
 
-**Figure 1**: Cursor positioning
+**Figure 2**: Cursor positioning
 
 For bidirectional scripts, the direction of the cursor movement may change depending on the direction of the text involved.
 For example, when using the arrow keys to move from right to left through Arabic and then English text in the same sentence, the insertion point moves in a right-to-left manner through the Arabic text and then continues at the rightmost character in the English word and progresses in a right-to-left manner.
 
 ![Pressing the right-arrow key through Latin and Hebrew text](./images/Right-Arrow.png "Pressing the right-arrow key through Latin and Hebrew text")
 
-**Figure 2**: Pressing the right-arrow key through Latin and Hebrew text
+**Figure 3**: Pressing the right-arrow key through Latin and Hebrew text
 
 Similarly, backspace, highlighting, and double-clicking should work correctly.
 
