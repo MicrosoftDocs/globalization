@@ -8,12 +8,12 @@ ms.date: 03/19/2019
 
 Are you helping with translation into Portuguese (Portugal), but don't have time to study all aspects of the Portuguese (Portugal) Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
 
-## 1.	General
+## 1. General
 
--	Translate meaning, not words. If a translated sentence is hard to understand or incomprehensible to you (or anyone else), it's likely that you didn't understand it. Always make sure that you understand every single word in the source text, and research how the same things are said in Portugal.
--	When a glossary term is very generic, try to expand the translation slightly to make your translation unambiguous. For example, translating drive simply as unit doesn't always convey an unambiguous meaning. In such cases, consider translating it as _<span lang="pt-PT">unidade de disco</span>_, _<span lang="pt-PT">unidade de banda</span>_, _<span lang="pt-PT">unidade USB</span>_—whatever is applicable in the specific context.
--	To search for terms only on Portuguese (Portugal) websites, add **site:.pt** to your search string in the browser.
--	Words to watch out for: 
+- Translate meaning, not words. If a translated sentence is hard to understand or incomprehensible to you (or anyone else), it's likely that you didn't understand it. Always make sure that you understand every single word in the source text, and research how the same things are said in Portugal.
+- When a glossary term is very generic, try to expand the translation slightly to make your translation unambiguous. For example, translating drive simply as unit doesn't always convey an unambiguous meaning. In such cases, consider translating it as _<span lang="pt-PT">unidade de disco</span>_, _<span lang="pt-PT">unidade de banda</span>_, _<span lang="pt-PT">unidade USB</span>_—whatever is applicable in the specific context.
+- To search for terms only on Portuguese (Portugal) websites, add **site:.pt** to your search string in the browser.
+- Words to watch out for:
 
 |English|Portuguese (Portugal)|
 |---|---|
@@ -29,17 +29,17 @@ Are you helping with translation into Portuguese (Portugal), but don't have time
 |set to|<span lang="pt-PT">definir como</span>|
 |website|<span lang="pt-PT">site</span>|
 
-## 2.	Spelling
+## 2. Spelling
 
 Post-reform Portuguese (Portugal) spelling rules apply.
 
 When a word can be spelled in two ways, apply the spelling that reflects standard Portuguese (Lisbon) pronunciation. If the dictionary lists two acceptable variations, for example, the translation of character, refer to the approved glossaries.
 
-## 3.	Capitalization
+## 3. Capitalization
 
-Follow the capitalization style (that is, Title Case or Sentence case) that's used in the source text. 
+Follow the capitalization style (that is, Title Case or Sentence case) that's used in the source text.
 
-**Example**
+Example:
 
 _English_: Do not use Print Without Saving so as not to lose your work.
 
@@ -47,11 +47,11 @@ _Our style_: <span lang="pt-PT">Não use a opção Imprimir Sem Guardar para nã
 
 When a single source word translates into multiple target words (for example, Desktop), make sure to capitalize all applicable words (<span lang="pt-PT">Ambiente de Trabalho</span>).
 
-## 4.	Acronyms	
+## 4. Acronyms 
 
-For the plural form of acronyms, add a lower-case _s_. 
+For the plural form of acronyms, add a lower-case _s_.
 
-**Example**
+Example:
 
 |English|Portuguese|
 |---|---|
@@ -60,15 +60,15 @@ For the plural form of acronyms, add a lower-case _s_.
 |Enter a URL.|<span lang="pt-PT">Introduza um URL.</span>|
 |Enter URLs.|<span lang="pt-PT">Introduza URLs.</span>|
 
-## 5.	Audience
+## 5. Audience
 
 All audiences must be addressed using formal wording (verb in third-person singular). An exception is made for gaming audiences, which are to be addressed informally (second-person singular).
 
-## 6.	Preposition (<span lang="pt-PT">regência verbal</span>)
+## 6. Preposition (<span lang="pt-PT">regência verbal</span>)
 
 Examples of incorrect versus correct prepositions:
 
-**Example**
+Example:
 
 |English|Not our style|Our style|
 |---|---|---|
@@ -76,19 +76,19 @@ Examples of incorrect versus correct prepositions:
 |register (something) with|<span lang="pt-PT">registar com</span>|<span lang="pt-PT">registar em</span>|
 |set (something) to|<span lang="pt-PT">definir para</span>|<span lang="pt-PT">definir como</span>|
 
-## 7.	Possessive Pronouns
+## 7. Possessive Pronouns
 
 Only translate the possessive pronouns his/her/its and their as _<span lang="pt-PT">respetivo(s)</span>_ when the intended meaning is indeed corresponding. Some translators believe that using _respetivo_ to translate the English possessive pronouns is common practice, but more often than not it results in an incorrect or ambiguous translation. Just use _<span lang="pt-PT">seu(s)</span>_ or _<span lang="pt-PT">sua(s)</span>_ unless this results in ambiguity. Otherwise, use _<span lang="pt-PT">dele(s)</span>_ or _<span lang="pt-PT">dela(s)</span>_, or omit the pronoun altogether where appropriate. Note that ambiguous translations are penalized in reviews.
 
-## 8.	Quotation Marks
+## 8. Quotation Marks
 
 In a sentence that includes a quotation, place the end-of-sentence mark, such as a period or question mark, outside the quotation mark unless the punctuation is part of the quotation. In that case, place the punctuation inside the quotation marks.
 
-## 9.	Numbers
+## 9. Numbers
 
-When translating large numbers, please remember that English (US), Portuguese (Brazil) and Portuguese (Portugal) number names differ greatly. 
+When translating large numbers, please remember that English (US), Portuguese (Brazil) and Portuguese (Portugal) number names differ greatly.
 
-**Example**
+Example:
 
 |English (US)|Portuguese (Brazil)|Portuguese (Portugal)|
 |---|---|---|
@@ -98,11 +98,11 @@ When translating large numbers, please remember that English (US), Portuguese (B
 
 As regards separators, the decimal separator is a comma, and the thousands separator is a period.  
 
-**Example**
+Example:
 
 20.356,51
 
-## 10.	 Infinitive vs. Imperative
+## 10.  Infinitive vs. Imperative
 
 All instructions to the user must be translated using the imperative (_<span lang="pt-PT">faça</span>_), not the infinitive (_<span lang="pt-PT">fazer</span>_). For instance, a dialog box presents the user with the following instructions.
 
@@ -111,9 +111,9 @@ All instructions to the user must be translated using the imperative (_<span lan
 |Open the file to edit its contents.|<span lang="pt-PT">Abra o ficheiro para editar o conteúdo.</span>|
 |Close the file to continue|<span lang="pt-PT">Feche o ficheiro para continuar</span>|
 
-All commands from the user to the software as well as all descriptions of commands, keystroke functions, and so on, must be translated using the infinitive (<span lang="pt-PT">fazer</span>). 
+All commands from the user to the software as well as all descriptions of commands, keystroke functions, and so on, must be translated using the infinitive (<span lang="pt-PT">fazer</span>).
 
-**Example**
+Example:
 
 |English|Our style|
 |---|---|
@@ -121,7 +121,7 @@ All commands from the user to the software as well as all descriptions of comman
 |Open the file and edit contents.|<span lang="pt-PT">Abrir ficheiro e editar conteúdo.</span>|
 |Open\nOpen file in Excel|<span lang="pt-PT">Open\nAbrir ficheiro no Excel</span>|
 
-**Example**
+Example:
 
 |English|Our style|
 |---|---|

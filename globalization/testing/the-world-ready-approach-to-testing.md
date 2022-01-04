@@ -24,7 +24,7 @@ But before localizers can start their work for the very first target language, t
 -   Should you decide to localize, the localizability test should be performed in parallel with the globalized functionality test.
 -   Localization must start as soon as the code is stable enough, and only after the initial localizability test.
 
-![Testing process required for shipping an internationlized product](https://docs.microsoft.com/globalization/testing/images/WR_Testing_Approach.jpg "Testing process required for shipping an internationlized product") 
+![Testing process required for shipping an internationlized product](./images/WR_Testing_Approach.jpg "Testing process required for shipping an internationlized product") 
 
 **Figure 1**: Testing process required for shipping an internationalized product.
 

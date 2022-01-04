@@ -1,13 +1,13 @@
 ﻿---
-title: Windows Keyboard Layouts
+title: Windows keyboard layouts
 description: Choose a keyboard below to view its layouts.
 ms.date: 01/05/2017
 author: jowilco
 ---
 
-# Windows Keyboard Layouts
+# Windows keyboard layouts
 
-Choose a keyboard below to view its layouts.
+Choose a keyboard below to view its layout.
 
 | &nbsp; | Keyboard Name | Introduced |
 | ------ | ------------- | ---------- |
@@ -220,4 +220,4 @@ Choose a keyboard below to view its layouts.
 
 ## Related Links
 
-- [Create your own keyboard layout using Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134 "Create your own keyboard layout using Microsoft Keyboard Layout Creator")
+- [Download Microsoft Keyboard Layout Creator](https://www.microsoft.com/download/details.aspx?id=102134 "Create your own keyboard layout using Microsoft Keyboard Layout Creator")
