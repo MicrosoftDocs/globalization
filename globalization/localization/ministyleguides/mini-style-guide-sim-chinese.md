@@ -17,7 +17,7 @@ It is important to check the existing reference materials when you are working o
 
 The purpose of any translation is to convey information to the audience, which is consistent with the Microsoft commitment to empowering people to achieve more. This means you should choose the right words for the audience and avoid clumsy, unnatural-sounding sentences and word-for-word translation. In a word, readability is the first priority. To achieve that readability, make sure that you understand the source text completely, and then rewrite just like you are writing the contents yourself.
 
-**Example**
+Example:
 
 _English_: The best of work and play.
 
@@ -29,7 +29,7 @@ _Not our style_: <span lang="zh-Hans">最棒的工作和娱乐。</span>
 
 When translating into Simplified Chinese, write in a way that reflects the Microsoft voice, which means choosing words and grammatical structures that reflect the same style as the source text. The general style should be clear, friendly, and concise. Text that is written in the Microsoft voice reflects the short, simple words spoken in everyday conversations and avoids an unnecessarily formal tone.
 
-**Example**
+Example:
 
 _English_: Something bad happened! Unable to locate downloaded files to create your bootable USB flash drive.
 
@@ -43,7 +43,7 @@ When you are translating, follow the Simplified Chinese standards for grammar, s
 
 Refer to the full Style Guide for information about how to use punctuation correctly.
 
-**Example**
+Example:
 
 Example in software localization: 
 
@@ -51,7 +51,7 @@ _English_: Add additional metadata (such as validation)
 
 _Our style_: <span lang="zh-Hans">添加其他元数据 (如验证)。</span>
 
-**Example**
+Example:
 
 Example in documentation localization:
 
@@ -67,7 +67,7 @@ When working on Microsoft projects, be aware that some words should not be trans
 
 For the best user experience, it is important to use consistent terminology, language style, and text formatting in the localized content. Translate all menus, menu items, commands, buttons, check boxes, and other user interface items consistently in the localized product. To make sure you are using consistent terminology, search for Microsoft approved term translations. As for language style, ensure that the target translation is natural sounding and empathetic, not robot-like.
 
-**Example**
+Example:
 
 _English_: Not enough memory to process this command.
 
@@ -77,7 +77,7 @@ _Not our style_: <span lang="zh-Hans">没有足够的内存来处理这个命令
 
 With respect to text formatting, follow the Chinese language convention, especially in software translation. For example, the convention of translating strings with keyboard shortcuts is "translated text(&Uppercase letter)" and no space is needed between the translated text and ( ).
 
-**Example**
+Example:
 
 _English_: Exit
 
@@ -87,7 +87,7 @@ _Our style_: <span lang="zh-Hans">退出(&E)</span>
 
 Microsoft prefers clarity and getting to the point because that manner of expression is usually friendlier and less formal. In addition, it can save space and is easy to read. Please make sure every word has a job to do, and keep the translation as concise as possible.
 
-**Example**
+Example:
 
 _English_: If you want to continue, click …
 
@@ -99,7 +99,7 @@ _Not our style_: <span lang="zh-Hans">如果希望继续进行，请单击...</s
 
 "Translationese" is overly literal or word-for-word translation. The result is awkward or ungrammatical text. When working on Microsoft projects, you may need to modify or rewrite the translated text to make it sound appropriate and natural to the audience. Be flexible and read your translation aloud to make sure your translation will be easy for the audience to read.
 
-**Example**
+Example:
 
 _English_: In short, your stuff and your info aren’t limited to any single PC or device. Because you’re bigger than any box.
 
@@ -107,7 +107,7 @@ _Our style_: <span lang="zh-Hans">总之，你的资料和信息不会受限于�
 
 _Not our style_: <span lang="zh-Hans">总之，你的资料和信息不会限制于任何一个电脑或设备。因为你比他们更大。</span>
 
-**Example**
+Example:
 
 _English_: Serious. Fun.
 
@@ -121,13 +121,13 @@ Use the level of formality that is appropriate for the content. For most Microso
 
 For pronouns, if it's needed, use "<span lang="zh-Hans">你</span>" instead of "<span lang="zh-Hans">您</span>." In text that addresses an older person or someone of a high rank or position, you can use the respectful form "<span lang="zh-Hans">您</span>."
 
-**Example**
+Example:
 
 _English_: If we modify this agreement, we will send you a notice.
 
 _Our style_: <span lang="zh-Hans">如果我们修改本协议，会向你发送通知。</span>
 
-**Example**
+Example:
 
 _English_: As a guest, you can …
 
@@ -137,7 +137,7 @@ _Our style_: <span lang="zh-Hans">作为来宾，您可以…</span>
 
 You may be asked to translate different kinds of content, such as merchandising content, advertising campaigns, PR materials, support content, and product user interface text. Each type has its own special considerations, so you should adjust your translation approach accordingly. For example, for merchandising content, apart from conciseness and clearness, it should also be interesting and engaging.
 
-**Example**
+Example:
 
 _English_: Great for work and play
 
@@ -145,7 +145,7 @@ _Our style_: <span lang="zh-Hans">工作娱乐两相宜</span>
 
 As for advertising campaigns, all copy should be short, simple, and direct in order to increase the credibility of the product as well as of the brand.
 
-**Example**
+Example:
 
 _English_: See something, share something
 
@@ -153,7 +153,7 @@ _Our style_: <span lang="zh-Hans">所见皆可共享</span>
 
 For PR materials, the copy should be faithful to the tone of the source text, but it should use the approved translations (especially the approved terminology) of key messaging.
 
-**Example**
+Example:
 
 _English_: Windows 8 can connect you to your files, photos, people, and settings, wherever you sign in.
 
@@ -161,7 +161,7 @@ _Our style_: <span lang="zh-Hans">无论从哪里登录，Windows 8 都能让你
 
 Support content should be translated using the approved and established terminology in Term Studio, and then edited for readability, clarity, and accuracy.
 
-**Example**
+Example:
 
 _English_: If you're just getting started, and you need to install your printer, see Install a printer for information about how to set up your printer.
 
@@ -169,7 +169,7 @@ _Our style_: <span lang="zh-Hans">如果你刚开始使用并需要安装打印�
 
 In product user interface text, the tone should be light, entertaining, conversational, engaging, and authentic.
 
-**Example**
+Example:
 
 _English_: Fascinating places, winsome animals, intriguing art—find a theme that strikes your fancy.
 

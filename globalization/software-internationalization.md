@@ -9,103 +9,103 @@ ms.date: 07/14/2017
 
 ## Introduction
 
-With the growing software market far beyond the English-speaking world, it's important for the software to support various text and data formats to reach all the potential customers. To make that happen, the most important step is to design the software with the internationalization in mind.
+With the growing software market far beyond the English-speaking world, it's important for the software to be world-ready for all potential customers.
+To make that happen, the most important step is to design the software with globalization in mind.
 
+The following sections provide some generic information about the concepts of globalization, localizability, and localization.
 
-The below sections provide some generic information about the internationalization concepts—globalization, localizability, and localization. 
+## Data encoding
 
-## Data Encoding
+* [Encoding overview](/globalization/encoding/encoding-overview)
 
-* [Encoding Overview](https://docs.microsoft.com/globalization/encoding/encoding-overview)
+* [Transformation of Unicode code points](/globalization/encoding/transformations-of-unicode-code-points)
 
-* [Transformation of Unicode Code Points](https://docs.microsoft.com/globalization/encoding/transformations-of-unicode-code-points)
+* [Byte order mark (file signature)](/globalization/encoding/byte-order-mark)
 
-* [Byte Order Mark](https://docs.microsoft.com/globalization/encoding/byte-order-mark)
+* [Surrogate pairs](/globalization/encoding/surrogate-pairs)
 
-* [Surrogate Pairs](https://docs.microsoft.com/globalization/encoding/surrogate-pairs)
-
-* [Code Pages](https://docs.microsoft.com/globalization/encoding/code-pages)
+* [Code pages](/globalization/encoding/code-pages)
 
 ## Locale and Culture Awareness
 
-* [Using Locale Model](https://docs.microsoft.com/globalization/locale/locale-model)
+* [Using the locale model](/globalization/locale/locale-model)
 
-* [Sorting and String Comparison](https://docs.microsoft.com/globalization/locale/sorting-and-string-comparison)
+* [Sorting and string comparison](/globalization/locale/sorting-and-string-comparison)
 
-* [Calendar Differences](https://docs.microsoft.com/globalization/locale/calendar-differences)
+* [Calendars](/globalization/locale/calendar-differences)
 
-* [Date Formatting](https://docs.microsoft.com/globalization/locale/date-formatting)
+* [Date formatting](/globalization/locale/date-formatting)
 
-* [Time Formatting](https://docs.microsoft.com/globalization/locale/time-formatting)
+* [Time formatting](/globalization/locale/time-formatting)
 
-* [Currency Formatting](https://docs.microsoft.com/globalization/locale/currency-formatting)
+* [Currency Formatting](/globalization/locale/currency-formatting)
 
-* [Number Formatting](https://docs.microsoft.com/globalization/locale/number-formatting)
+* [Number formatting](/globalization/locale/number-formatting)
 
-* [Addresses](https://docs.microsoft.com/globalization/locale/addresses)
+* [Addresses](/globalization/locale/addresses)
 
-* [Telephone Number](https://docs.microsoft.com/globalization/locale/telephone-number)
+* [Telephone numbers](/globalization/locale/telephone-number)
 
-* [Paper Size](https://docs.microsoft.com/globalization/locale/paper-size)
+* [Paper size](/globalization/locale/paper-size)
 
-* [Units of Measurement](https://docs.microsoft.com/globalization/locale/units-of-measurement)
+* [Units of measurement](/globalization/locale/units-of-measurement)
 
-## Input, Output, and Display
+## Input, output, and display
 
-* [Text Input, Output, and Display](https://docs.microsoft.com/globalization/input/text-input)
+* [Text input, output, and display](/globalization/input/text-input)
 
-* [Text Rendering](https://docs.microsoft.com/globalization/input/text-rendering)
+* [Text rendering](/globalization/input/text-rendering)
 
-* [Page or Text Alignment](https://docs.microsoft.com/globalization/input/page-or-text-alignment)
+* [Page or text alignment](/globalization/input/page-or-text-alignment)
 
-* [Text Justification](https://docs.microsoft.com/globalization/input/text-justification)
+* [Text justification](/globalization/input/text-justification)
 
-* [Font Technology](https://docs.microsoft.com/globalization/input/font-technology)
+* [Font tchnology](/globalization/input/font-technology)
 
-* [Line and Word Breaking](https://docs.microsoft.com/globalization/input/line-and-word-breaking)
+* [Line and word breaking](/globalization/input/line-and-word-breaking)
 
-* [Mirroring](https://docs.microsoft.com/globalization/input/mirroring)
+* [Mirroring](/globalization/input/mirroring)
 
-* [Overlay Text Properties](https://docs.microsoft.com/globalization/input/overlay)
+* [Overlay text properties](/globalization/input/overlay)
 
 ## Localizability
 
-* [Localizability Overview](https://docs.microsoft.com/globalization/localizability/overview)
+* [Localizability overview](/globalization/localizability/overview)
 
-* [Isolate Localizable Resources](https://docs.microsoft.com/globalization/localizability/isolate-localizable-resources)
+* [Isolate localizable resources](/globalization/localizability/isolate-localizable-resources)
 
-* [String Handling](https://docs.microsoft.com/globalization/localizability/string-handling) 
+* [String handling](/globalization/localizability/string-handling)
 
-* [Mirroring Awareness](https://docs.microsoft.com/globalization/localizability/mirroring-awareness)
+* [Mirroring awareness](/globalization/localizability/mirroring-awareness)
 
-* [UI Considerations](https://docs.microsoft.com/globalization/localizability/ui-considerations)
+* [UI considerations](/globalization/localizability/ui-considerations)
 
 ## Localization
 
-* [Localization Overview](https://docs.microsoft.com/globalization/localization/overview)
+* [Localization overview](/globalization/localization/overview)
 
-* [Localization Elements](https://docs.microsoft.com/globalization/localization/localization-elements)
+* [Localization elements](/globalization/localization/localization-elements)
 
-* [Localization Tools](https://docs.microsoft.com/globalization/localization/localization-tools)
+* [Localization tools](/globalization/localization/localization-tools)
 
-* [Localization Team](https://docs.microsoft.com/globalization/localization/localization-team)
+* [Localization team](/globalization/localization/localization-team)
 
-* [Establishing Localization Guidelines](https://docs.microsoft.com/globalization/localization/establishing-localization-guidelines)
+* [Establishing localization guidelines](/globalization/localization/establishing-localization-guidelines)
 
-* [Content Localization](https://docs.microsoft.com/globalization/localization/content-localization)
+* [Content localization](/globalization/localization/content-localization)
 
-## Testing for World Readiness
+## Testing for world readiness
 
-* [Quality Assurance for World-Readiness](https://docs.microsoft.com/globalization/testing/quality-assurance-for-world-readiness)
+* [Quality assurance for world-readiness](/globalization/testing/quality-assurance-for-world-readiness)
 
-* [The World-Ready Approach to Testing](https://docs.microsoft.com/globalization/testing/the-world-ready-approach-to-testing)
+* [The world-ready approach to testing](/globalization/testing/the-world-ready-approach-to-testing)
 
-* [Globalization of the Test](https://docs.microsoft.com/globalization/testing/globalization-of-the-test)
+* [Testing globalization](/globalization/testing/globalization-of-the-test)
 
-* [Localizability Testing](https://docs.microsoft.com/globalization/testing/localizability-testing)
+* [Testing localizability](/globalization/testing/localizability-testing)
 
-* [Localization Testing](https://docs.microsoft.com/globalization/testing/localization-testing)
+* [Testing localization](/globalization/testing/localization-testing)
 
-* [The Role of Test Tools](https://docs.microsoft.com/globalization/testing/the-role-of-test-tools)
+* [The role of test tools](/globalization/testing/the-role-of-test-tools)
 
-* [Sample International Test Cases](https://docs.microsoft.com/globalization/testing/sample-international-test-cases)
+* [Sample world-ready test cases](/globalization/testing/sample-international-test-cases)

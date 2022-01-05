@@ -5,7 +5,8 @@ description: The DIR attribute can be used for mirroring text in Web Forms.
 
 # Mirroring in .NET Framework
 
-As was true for Web content, the DIR attribute can be used for mirroring text in Web Forms. The *RightToLeft* property-from the *Control* class-is valuable for providing RTL support for Windows Forms, whereas the *MessageBox* class supports RTL and mirroring for message boxes. In the sections that follow, you will learn how to take advantage of this support.
+As was true for Web content, the DIR attribute can be used for mirroring text in Web Forms.
+The RightToLeft property-from the *Control* class-is valuable for providing RTL support for Windows Forms, whereas the *MessageBox* class supports RTL and mirroring for message boxes. In the sections that follow, you will learn how to take advantage of this support.
 
 ### Mirrored Web Forms
 
