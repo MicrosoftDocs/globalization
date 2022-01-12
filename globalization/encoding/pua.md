@@ -1,25 +1,15 @@
 ---
-title: Private Use Area
-description: The Private Use Area (PUA) may be used to display characters currently not in the Unicode standard. 
-ms.date: 01/09/2019
+title: Unicode Private Use Area (PUA)
+description: The Private Use Area (PUA) may be used to handle characters currently not in the Unicode standard. 
 ---
 
 # Private Use Area (PUA)
 
-Unicode has three defined ranges that are not assigned any particular character but instead may be used by individuals and organizations.
-As long as there is agreement between parties, then the Private Use Area (PUA) may be used to display characters currently not in the Unicode standard.
-Private-use characters are sometimes also referred to as [End User-Defined Characters](/windows/desktop/intl/eudc-registry-entries) (EUDC) or Vendor-Defined Characters (VDC).
+<!-- Interesting, but doesn't appear to have been updated since 2008 
 
-Given that the characters are user defined, the same code point may have different meanings in different contexts.
-An end-user needs to have the appropriate font to display the character they are expecting.
-For example, many web designers create a symbol web font for site icons.
-These fonts may make use of the PUA ranges to encode their symbols.
+Michael Everson and John Cowan
 
-Conversely, if a user or an application installs a font that has characters defined in the PUA there may be unexpected results.
-Some of the definitions are documented — others are not.
+> The purpose of the ConScript Unicode Registry (CSUR) is to coordinate the assignment of blocks out of the Unicode Private Use Area (E000-F8FF and 000F0000-0010FFFF) to constructed/artificial scripts, including scripts for constructed/artificial languages.
 
-It is not recommended to use PUA characters provided by the operating system or platform to avoid conflicts with the usage of certain individuals and organizations.
-
-## Related Content
-
-- [Private-Use Characters, Noncharacters & Sentinels FAQ](http://www.unicode.org/faq/private_use.html)
+See [ConScript Unicode Registry](https://www.evertype.com/standards/csur/)
+-->

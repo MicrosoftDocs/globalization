@@ -2,272 +2,366 @@ items:
 - name: Globalization Overview
   href: index.yml
   items:
-  - name: Downloads
-    href: downloads.md
-  - name: Documentation
+  - name: Delivering products globally
+    href: methodology/index.md
     items:
-    - name: Internationalization for Windows applications
-      href: /windows/desktop/Intl/international-support
-    - name: .NET globalization
-      href: /dotnet/api/system.globalization
-    - name: Windows keyboard layouts
-      href: windows-keyboard-layouts.md
-    - name: Globalization and localization
-      href: /windows/uwp/design/globalizing/globalizing-portal
-    - name: National Language Support (NLS) reference
-      href: /windows/desktop/Intl/national-language-support-reference
+    - name: Global products under agile development
+      href: methodology/agile.md
+    - name: Roles and responsibilities
+      href: methodology/roles-and-responsibilities.md
+    - name: Exit criteria
+      href: methodology/exit-criteria.md
+    - name: Simultaneous shipping
+      href: methodology/simultaneous-shipping.md
+    - name: Continuous delivery
+      href: methodology/continuous-delivery.md
+  - name: Text support
+    items:
+    - name: Character and data encoding
+      href: encoding/encoding-overview.md
+      items:
+      - name: The Unicode standard
+        href: encoding/unicode-standard.md
+      - name: Surrogate pairs
+        href: encoding/surrogate-pairs.md
+      - name: Private use area
+        href: encoding/pua.md
+      - name: Maps and transforms
+        href: encoding/maps-and-transforms.md
+      - name: Code pages
+        href: encoding/code-pages.md
+    - name: Storing and writing text
+      href: text/storing-and-writing-text.md
+    - name: Character exclusion
+      href: text/character exclusion.md
+    - name: String normalization
+      href: text/string-normalization.md
+    - name: Parsing input
+      href: text/parsing-input.md
+    - name: Case mapping
+      href: text/case-mapping.md
+    - name: User input
+      href: input/index.md
+      items:
+      - name: Hardware and software keyboards
+        href: input/keyboards.md
+      - name: Windows keyboard layouts
+        href: windows-keyboard-layouts.md
+      - name: Input Method Editors (IME)
+        href: input/input-method-editors.md
+        items:
+        - name: Japanese IME
+          href: /windows/win32/dxtecharts/installing-and-using-input-method-editors#japanese-ime
+        - name: Korean IME
+          href: /windows/win32/dxtecharts/installing-and-using-input-method-editors#korean-ime
+        - name: Simplified Chinese IME
+          href: /windows/win32/dxtecharts/installing-and-using-input-method-editors#simplified-chinese-ime
+        - name: Traditional Chinese IME
+          href: /windows/win32/dxtecharts/installing-and-using-input-method-editors#traditional-chinese-ime
+      - name: Hotkeys and accelerators
+        href: input/hotkeys-accelerators.md
+    - name: Domain names and email addresses
+      items:
+      - name: Internationalized domain names (IDN)
+        href: reference/idn.md
+      - name: Email address internationalization (EAI)
+        href: reference/eai.md
+    - name: File systems
+      href: platform/file-system.md
+  - name: String authoring for global reach
+    items:
+    - name: Isolating localizable resources
+      href: localizability/isolate-localizable-resources.md
+    - name: Pluralization
+      href: internationalization/pluralization.md
+    - name: Message formatting
+      href: internationalization/message-formatting.md
+      items:
+      - name: Externalization
+        href: internationalization/externalization.md
+      - name: Non-localizable text
+        href: internationalization/non-localizable-text.md
+      - name: Concatenation
+        href: internationalization/concatenation.md
+      - name: Variables (placeholders)
+        href: internationalization/variables.md
+    - name: String repurposing
+      href: internationalization/string-repurposing.md
+    - name: Contextual metadata
+      href: internationalization/contextual-metadata.md
+  - name: Language and location
+    items:
+    - name: Locale
+      href: locale/locale.md
+      items:
+      - name: Locale model
+        href: ../locale/locale-model.md
+      - name: Standard locale representation
+        href: locale/standard-locale-representation.md
+      - name: Other locale representations
+        href: locale/other-locale-representations.md
+      - name: Fallback behaviors
+        href: locale/fallback-behaviors.md
+    - name: System and user settings
+      href: locale/system-user-settings.md
+      items:
+      - name: Identifying user preferences
+        href: locale/user-preferences.md
+      - name: Language settings
+        href: locale/language-settings.md
+        items:
+        - name: User interface language
+          href: locale/ui-language.md
+        - name: Speech settings
+          href: locale/speech-settings.md
+        - name: Dictionaries and spelling
+          href: locale/dictionaries-spelling.md
+        - name: Collation, sorting, and string comparison
+          href: locale/sorting-and-string-comparison.md
+    - name: Regional settings and formats
+      href: locale/index.md
+      items:
+      - name: Industry standard for regional formats (CLDR)
+        href: reference/cldr.md
+      - name: Numbers
+        href: locale/number-formatting.md
+        items:
+        - name: Numeric systems
+          href: locale/numeric-systems.md
+        - name: Number formats
+          href: ../locale/number-formatting.md
+          items:
+          - name: Currency formats
+            href: locale/currency-formatting.md
+      - name: Date and time
+        href: locale/date-time.md
+        items:
+        - name: Calendars
+          href: ../locale/calendar-differences.md
+        - name: Time Zones
+          href: locale/time-zones.md
+        - name: Date formats
+          href: ../locale/date-formatting.md
+        - name: Time formats
+          href: ../locale/time-formatting.md
+      - name: Mailing address formats
+        href: ../locale/addresses.md
+      - name: Telephone number formats
+        href: ../locale/telephone-number.md
+      - name: Units of measurement
+        href: ../locale/units-of-measurement.md
+      - name: Default page sizes
+        href: ../locale/paper-size.md
+      - name: Punctuation and separators
+        href: internationalization/punctuation-separators.md
+    - name: Payment methods
+      href: internationalization/payment-methods.md
+    - name: Search
+      href: internationalization/search.md
+      items:
+      - name: Stemming
+        href: internationalization/stemming.md
+      - name: Word prediction
+        href: internationalization/word-prediction.md
+    - name: Local laws and regulations
+      href: design/international-laws-and-standards.md
+  - name: User Interface
+    href: fonts-layout/user-interface.md
+    items:
+    - name: Text
+      href: fonts-layout/text.md
+      items:
+      - name: Emoji
+        href: fonts-layout/emoji.md
+      - name: Fonts
+        href: fonts-layout/fonts.md
+        items:
+        - name: Font technology
+          href: input/font-technology.md
+          items:
+          - name: OpenType
+            href: reference/opentype.md
+          - name: The Universal Shaping Engine
+            href: reference/universal-shaping-engine.md
+          - name: Multi-script fonts
+            href: fonts-layout/multi-script-fonts.md
+          - name: Platform-specific issues
+            href: fonts-layout/platform-specific-issues.md
+            items:
+            - name: Unity
+              href: platform/unity.md
+        - name: Text layout
+          href: fonts-layout/text-layout.md
+          items:
+          - name: Bidirectional text
+            href: fonts-layout/bidirectional-text.md
+          - name: Boundaries
+            href: fonts-layout/boundaries.md
+          - name: Typesetting
+            href: fonts-layout/typesetting.md
+          - name: Pagination
+            href: fonts-layout/pagination.md
+          - name: Justification
+            href: input/text-justification.md
+          - name: Line and word breaking
+            href: input/line-and-word-breaking.md
+          - name: Ruby
+            href: fonts-layout/ruby.md
+      - name: Text-to-speech
+        href: locale/text-to-speech.md
+    - name: Interface Layout
+      href: fonts-layout/interface-layout.md
+      items:
+      - name: Adaptive UI
+        href: fonts-layout/adaptive-ui.md
+      - name: Mirroring
+        href: input/mirroring.md
+    - name: Images, icons, and colors
+      href: fonts-layout/images-icons-colors.md
+  - name: Validating internationalized products
+    href: testing/quality-assurance-for-world-readiness.md
+    items:
+    - name: Global test design
+      href: testing/globalization-of-the-test.md
+    - name: Localizability testing
+      href: testing/localizability-testing.md
+    - name: Localization testing
+      href: testing/localization-testing.md
+      items:
+      - name: Linguistic validation
+        href: testing/linguistic-validation.md
+      - name: In-context review
+        href: testing/in-context-review.md
+    - name: Test case sample
+      href: testing/sample-international-test-cases.md
+  - name: Creating translated deliverables
+    href: localization/overview.md
+    items:
+    - name: Managing terminology
+      href: methodology/managing-terminology.md
+      items:
+      - name: Microsoft Language Portal
+        href: reference/microsoft-language-portal.md
+    - name: Maintaining translation memories
+      href: methodology/translation-memories.md
+    - name: Software localization
+      href: methodology/software-localization.md
+    - name: Content localization
+      href: methodology/content-localization.md
+    - name: Game localization
+      href: methodology/game-localization.md
+    - name: Video and multimedia localization
+      href: media/video-multimedia.md
+      items:
+      - name: Captioning
+        href: media/captioning.md
+      - name: Re-creation
+        href: media/re-creation.md
+    - name: Transcreation
+      href: methodology/transcreation.md
+  - name: Platform-specific APIs
+    items:
+    - name: Globalization APIs
+      href: platform/globalization-apis.md
+      items:
+      - name: .NET Globalization
+        href: platform/dotnet-globalization.md
+      - name: Windows Globalization
+        href: platform/windows-globalization.md
+      - name: International Components for Unicode (ICU)
+        href: reference/icu.md
+      - name: Globalize.js
+        href: reference/globalizedotjs.md
+    - name: C# (.NET)
+      href: platform/dotnet-csharp/dotnet-csharp.md
+      items:
+      - name: Date/Time
+        href: platform/dotnet-csharp/date-time.md
+      - name: Number formatting
+        href: platform/dotnet-csharp/number-formatting.md
+      - name: etc.
+    - name: Universal Windows Platform (UWP)
+      href: platform/uwp/uwp.md
+      items:
+      - name: Date/Time
+        href: platform/uwp/date-time.md
+      - name: Number formatting
+        href: platform/uwp/number-formatting.md
+      - name: etc.
+    - name: Win32 NLS
+      href: platform/win32/win32.md
+      items:
+      - name: Date/Time
+        href: platform/win32/date-time.md
+      - name: Number formatting
+        href: platform/win32/number-formatting.md
+      - name: etc.
+    - name: JavaScript
+      href: platform/javascript/javascript.md
+      items:
+      - name: ReactJS
+        href: platform/javascript/reactjs/reactjs.md
+        items:
+        - name: Date/Time
+          href: platform/javascript/reactjs/date-time.md
+        - name: Number formatting
+          href: platform/javascript/reactjs/number-formatting.md
+      - name: Globalize.js
+        href: reference/globalizedotjs.md
+    - name: Java
+      href: platform/java/java.md
+      items:
+      - name: Date/Time
+        href: platform/java/date-time.md
+      - name: Number formatting
+        href: platform/java/number-formatting.md
+      - name: etc.
+  - name: Tools
+    href: tools/index.md
+    items:
+    - name: Globalization tools
+      items:
+      - name: Microsoft Keyboard layout creator
+        href: https://www.microsoft.com/en-us/download/details.aspx?id=102134
+      - name: Windows Locale Builder Tool
+        href: https://www.microsoft.com/en-us/download/details.aspx?id=41158
+    - name: Localization & translation tools
+      items:
+      - name: Dynamics 365 Translation Service
+        href: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview
+      - name: Multilingual App Toolkit Editor
+        href: https://developer.microsoft.com/en-us/windows/downloads/multilingual-app-toolkit/
+      - name: Multilingual App Toolkit – Visual Studio Extension
+        href: https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308
+      - name: Microsoft Translator
+        href: https://www.bing.com/translator/
+      - name: Microsoft Custom Translator
+        href: https://hub.microsofttranslator.com/
+      - name: Bing Translator Widget
+        href: https://www.bing.com/webmaster/tools/translator/
+  - name: References
+    href: reference/index.md
+    items:
+    - name: Glossary
+      href: reference/glossary.md
     - name: Unicode
       href: http://www.unicode.org/
     - name: Common Language Data Repository (CLDR)
       href: http://cldr.unicode.org/
-    - name: Internationalization
-      expanded: true
-      items:
-      - name: Software internationalization
-        href: software-internationalization.md
-      - name: Design
-        href: design/internationalization.md
-      - name: Security Guidelines for International
-        href: design/security-guidelines.md
-      - name: International laws and standards
-        href: design/international-laws-and-standards.md
-    - name: Data encoding
-      items:
-      - name: Overview
-        href: encoding/data-encoding.md
-      - name: Encoding overview
-        href: encoding/encoding-overview.md
-      - name: Transformation of Unicode code points
-        href: encoding/transformations-of-unicode-code-points.md
-      - name: Byte Order Mark (BOM)
-        href: encoding/byte-order-mark.md
-      - name: Surrogate pairs
-        href: encoding/surrogate-pairs.md
-      - name: Private Use Area (PUA)
-        href: encoding/pua.md
-      - name: Code pages
-        href: encoding/code-pages.md
-    - name: Locale and culture awareness
-      items:
-      - name: Overview
-        href: locale/locale-and-culture.md
-      - name: Using the locale model
-        href: locale/locale-model.md
-      - name: Additional information about locales
-        items:
-        - name: Locale names and LCID deprecation
-          href: locale/locale-names.md
-        - name: Input locale
-          href: locale/input-locale.md
-        - name: System locale
-          href: locale/system-locale.md
-        - name: Thread locale
-          href: locale/thread-locale.md
-        - name: UI language
-          href: locale/ui-language.md
-        - name: User locale
-          href: locale/user-locale.md
-        - name: Language groups and language collections
-          href: locale/language-groups-and-language-collections.md
-        - name: Location or geographic ID
-          href: locale/location-or-geographic-id.md
-        - name: Browser language setting
-          href: locale/browser-language-setting.md
-      - name: Sorting and string comparison
-        href: locale/sorting-and-string-comparison.md
-      - name: World calendars
-        href: locale/calendar-differences.md
-      - name: Date Formatting
-        href: locale/date-formatting.md
-      - name: Time Formatting
-        href: locale/time-formatting.md
-      - name: Currency Formatting
-        href: locale/currency-formatting.md
-      - name: Number Formatting
-        href: locale/number-formatting.md
-      - name: Addresses
-        href: locale/addresses.md
-      - name: Telephone Number
-        href: locale/telephone-number.md
-      - name: Paper Size
-        href: locale/paper-size.md
-      - name: Units of Measurement
-        href: locale/units-of-measurement.md
-    - name: Input, Output, and Display
-      items:
-      - name: Overview
-        href: input/input.md
-      - name: Text Input, Output, and Display
-        href: input/text-input.md
-      - name: Text Rendering
-        href: input/text-rendering.md
-      - name: Page or Text Alignment
-        href: input/page-or-text-alignment.md
-      - name: Text Justification
-        href: input/text-justification.md
-      - name: Font Technology
-        href: input/font-technology.md
-      - name: Script and Font Support in Windows
-        href: input/font-support.md
-      - name: Line and Word Breaking
-        href: input/line-and-word-breaking.md
-      - name: Mirroring
-        href: input/mirroring.md
-      - name: Overlay Text Properties
-        href: input/overlay.md
-      - name: Console Globalization
-        href: input/console-globalization.md
-    - name: Localizability
-      items:
-      - name: Overview
-        href: localizability/localizability.md
-      - name: Localizability Overview
-        href: localizability/overview.md
-      - name: Isolate Localizable Resources
-        href: localizability/isolate-localizable-resources.md
-      - name: String Handling
-        items:
-        - name: Overview
-          href: localizability/string-handling.md
-        - name: Avoid Run-Time Composite Strings
-          href: localizability/avoid-run-time-composite-strings.md
-        - name: When Variables Are Necessary, Use Unique Names
-          href: localizability/when-variables-are-necessary.md
-        - name: Win32—FormatMessage
-          href: localizability/win32-formatmessage.md
-        - name: .NET Framework—String.Format
-          href: localizability/dotnet-framework-string-format.md
-        - name: Do Not Compound Several Variables
-          href: localizability/do-not-compound-several-variables.md
-        - name: Keep Sentences in a Single String
-          href: localizability/keep-sentences-in-a-single-string.md
-        - name: Watch Your String Buffer Sizes
-          href: localizability/watch-your-string-buffer-sizes.md
-      - name: Mirroring Awareness
-        href: localizability/mirroring-awareness.md
-      - name: UI Considerations
-        items:
-        - name: Overview
-          href: localizability/ui-considerations.md
-        - name: Element Resizing
-          href: localizability/element-resizing.md
-        - name: Web Resizing Issues
-          href: localizability/web-resizing-issues.md
-        - name: Localizability of UI Controls
-          href: localizability/localizability-of-ui-controls.md
-        - name: Using Images and Icons
-          href: localizability/images-and-icons.md
-    - name: Localization
-      items:
-      - name: Overview
-        href: localization/localization.md
-      - name: Localization Introduction
-        href: localization/overview.md
-      - name: Localization Elements
-        items:
-        - name: Overview
-          href: localization/localization-elements.md
-        - name: Text
-          href: localization/text.md
-        - name: Layout
-          href: localization/layout.md
-        - name: Graphics and Multimedia
-          href: localization/graphics-and-multimedia.md
-        - name: Keyboard Shortcuts
-          href: localization/keyboard-shortcuts.md
-        - name: Fonts
-          href: localization/fonts.md
-        - name: Locale Data and Character Sets
-          href: localization/locale-data-and-character-sets.md
-        - name: Build Process and Packaging
-          href: localization/build-process-and-packaging.md
-      - name: Localization Tools
-        href: localization/localization-tools.md
-      - name: Localization Team
-        href: localization/localization-team.md
-      - name: Establishing Localization Guidelines
-        href: localization/establishing-localization-guidelines.md
-      - name: Content Localization
-        href: localization/content-localization.md
-      - name: Localization Style Guides
-        items:
-        - name: Quick Start Localization Style Guides
-          href: localization/styleguides.md
-        - name: Czech
-          href: localization/ministyleguides/mini-style-guide-czech.md
-        - name: Chinese, Simplified
-          href: localization/ministyleguides/mini-style-guide-sim-chinese.md
-        - name: Chinese, Traditional
-          href: localization/ministyleguides/mini-style-guide-trad-chinese.md
-        - name: Dutch
-          href: localization/ministyleguides/mini-style-guide-dutch.md
-        - name: French
-          href: localization/ministyleguides/mini-style-guide-french.md
-        - name: German
-          href: localization/ministyleguides/mini-style-guide-german.md
-        - name: Hungarian
-          href: localization/ministyleguides/mini-style-guide-hungarian.md
-        - name: Italian
-          href: localization/ministyleguides/mini-style-guide-italian.md
-        - name: Japanese
-          href: localization/ministyleguides/mini-style-guide-japanese.md
-        - name: Korean
-          href: localization/ministyleguides/mini-style-guide-korean.md
-        - name: Polish
-          href: localization/ministyleguides/mini-style-guide-polish.md
-        - name: Portuguese (Brazil)
-          href: localization/ministyleguides/mini-style-guide-portuguese-brazil.md
-        - name: Portuguese (Portugal)
-          href: localization/ministyleguides/mini-style-guide-portuguese-portugal.md
-        - name: Russian
-          href: localization/ministyleguides/mini-style-guide-russian.md
-        - name: Spanish (Spain)
-          href: localization/ministyleguides/mini-style-guide-spanish-spain.md
-        - name: Spanish (Neutral)
-          href: localization/ministyleguides/mini-style-guide-spanish-neutral.md
-        - name: Swedish
-          href: localization/ministyleguides/mini-style-guide-swedish.md
-        - name: Turkish
-          href: localization/ministyleguides/mini-style-guide-turkish.md
-    - name: Testing for World Readiness
-      items:
-      - name: Overview
-        href: testing/testing-for-world-readiness.md
-      - name: Quality Assurance for World-Readiness
-        href: testing/quality-assurance-for-world-readiness.md
-      - name: The World-Ready Approach to Testing
-        href: testing/the-world-ready-approach-to-testing.md
-      - name: Globalization of the Test
-        items:
-        - name: Overview
-          href: testing/globalization-of-the-test.md
-        - name: Testing Approach
-          href: testing/testing-approach.md
-        - name: Prioritizing the Components
-          href: testing/prioritizing-the-components.md
-        - name: Choosing a Test Platform
-          href: testing/choosing-a-test-platform.md
-        - name: Creating the Test Environment
-          href: testing/creating-the-test-environment.md
-        - name: Globalizing Your Test Data
-          href: testing/globalizing-your-test-data.md
-        - name: Identify the Problems
-          href: testing/identify-globalization-problem.md
-      - name: Localizability Testing
-        href: testing/localizability-testing.md
-      - name: Localization Testing
-        href: testing/localization-testing.md
-      - name: The Role of Test Tools
-        href: testing/the-role-of-test-tools.md
-      - name: Sample International Test Cases
-        items:
-        - name: Overview
-          href: testing/sample-international-test-cases.md
-        - name: Test Cases for Deployment and General Functionality
-          href: testing/test-cases-for-deployment-and-general-functionality.md
-        - name: Test Cases for Text Handling
-          href: testing/test-cases-for-locale-awareness.md
-        - name: Test Cases for Locale Awareness
-          href: testing/test-cases-for-localizability.md
-        - name: Test Cases for Localizability
-          href: testing/test-cases-for-text-handling.md
+    - name: International Components for Unicode (ICU)
+      href: http://site.icu-project.org/
+    - name: Microsoft Terminology Glossary
+      href: https://www.microsoft.com/Language/Terminology
+    - name: Microsoft Localization Style Guides
+      href: https://www.microsoft.com/language/StyleGuides
+
+  - name: Stuff to keep
+    items:
+    - name: .NET System.Globalization namespace
+      href: dotnet/api/system.globalization
+    - name: Internationalization for Windows Applications
+      href: /windows/desktop/Intl/international-support
+    - name: Windows globalization and localization
+      href: /windows/uwp/design/globalizing/globalizing-portal
+    - name: Windows National Language Support (NLS) reference
+      href: /windows/desktop/Intl/national-language-support-reference
