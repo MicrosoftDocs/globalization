@@ -17,12 +17,16 @@
             if (theme == 'dark') {
                 document.body.style.backgroundColor = '#171717';
             }
-            else if (theme == 'high-contrast') {
+            if (theme == 'high-contrast') {
                 document.body.style.backgroundColor = '#000000';
             }
-            else {
+            if (theme == 'light') {
                 document.body.style.backgroundColor = '#FFFFFF';
             }
+            else {
+                //docs.microsoft.com theme has not been set yet. Default to browser theme.
+            }
+
         }
         function chooseState(x) {
             switch (State) {
