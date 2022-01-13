@@ -12,10 +12,10 @@
     parent.window.addEventListener('theme-changed', SetBackgroundColor);
     function SetBackgroundColor() {
         var theme = localStorage.getItem('theme');
-        if (theme == 'dark' || theme == 'high-contrast') {
+        if (theme == 'dark') {
             document.body.style.backgroundColor = '#171717';
         }
-        if (theme == 'high-contrast') {
+        else if (theme == 'high-contrast') {
             document.body.style.backgroundColor = '#000000';
         }
         else {
