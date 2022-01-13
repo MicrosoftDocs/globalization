@@ -13,6 +13,9 @@
     function SetBackgroundColor() {
         var theme = localStorage.getItem('theme');
         if (theme == 'dark' || theme == 'high-contrast') {
+            document.body.style.backgroundColor = '#171717';
+        }
+        if (theme == 'high-contrast') {
             document.body.style.backgroundColor = '#000000';
         }
         else {
