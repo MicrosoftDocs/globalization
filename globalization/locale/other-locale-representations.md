@@ -4,13 +4,16 @@ descriptions: There are a number of other locale identification systems that you
 ---
 # Other locale representations
 
-### LCID
+## LCID
 
-https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-lcid/
+The protocol specification for LCID is: [Windows Language Code Identifier (LCID) Reference](/openspecs/windows_protocols/ms-lcid/).
 
-### ISO/IEC 15897
+## ISO/IEC 15897:2011
 
-https://www.iso.org/standard/50707.html
+<!-- Not a very useful reference because the standard itself is behind a paywall
+[Information technology — User interfaces — Procedures for the registration of cultural elements](https://www.iso.org/standard/50707.html)
+-->
 
 Description of each one and examples of locales
+
 Small table of comparative ids
