@@ -6,9 +6,12 @@ ms.date: 05/22/2020
 
 # Internationalization checklist
 
+Here is a summary of areas that should be validated to ensure localizability.
+
 ## Operating system support
 
 - If appropriate, all application languages should run on all supported operating system languages using data in any language.
+  The language of a user's data may not be the same language as the application's user interface, and may be multilingual.
 
 ## Reading and saving data to files
 
@@ -19,35 +22,35 @@ ms.date: 05/22/2020
 ## Localizability
 
 - All strings are externalized to translatable resource file.
-- Concatenation is never used to assemble sentence fragments.
-- Strings are never reused in multiple contexts.
-- If supported in the resource file format, context is provided to translators.
-- Locked/non-localizable strings are clearly annotated.
+- Concatenation is never used to assemble messages or user interface labels.
+- Individual strings are not used in multiple contexts.
+- Context is provided to translators.
+- Non-localizable strings are clearly annotated (locked).
 - Text and messages are devoid of slang and cultural references.
-- Consistent and correct terminology is used in strings
+- Consistent and correct terminology is used in strings.
 
-## Locale/Cultural Awareness
+## Locale and Cultural Awareness
 
-- [Collation, comparison, and search](../locale/sorting-and-string-comparison.md)
-- Text conversion (e.g. upper/lower case, text-to-speech, digits to words)
+The conventions and formats of various kinds of data vary by locale.
+A global application must be able to handle user's data by the conventions and standards of the user's locale.
+
+- [Sorting, comparison, and search](../locale/sorting-and-string-comparison.md)
+- [Case mapping](../text/case-mapping.md)]
 - [Number formatting](../locale/number-formatting.md)
 - [Currency formatting](../locale/currency-formatting.md)
-- [Date formatting](../locale/date-formatting.md)
-- [Calendar differences](../locale/calendar-differences.md)
-- [Time formatting](../locale/time-formatting.md)
-- Time zones, daylight saving time
-- Address formats
-- [Telephone numbers/Telephone number formats](../locale/telephone-number.md)
-- [Measurement Units](../locale/units-of-measurement.md)
+- [Calendars, date, and time](locale/calendar-date-time.md)
+- [Postal address formats](locale/address-formats.md)
+- [Telephone number formatting](../locale/telephone-number.md)
+- [Measurement units](../locale/measurement-units.md)
 - [Paper and envelope size](../locale/paper-size.md)
-- Payment methods
-- Punctuation, separators
-- Spell-checker or thesaurus/dictionary support
-- Parsing, validation (e.g. full-width vs. half-width digits)
+- [Payment methods](../internationalization/payment-methods.md)
+- [Punctuation, separators](../internationalization/punctuation-separators.md)
+- [Spell-checker or thesaurus/dictionary support](../locale/dictionaries-spelling.md)
+- [Text parsing and validation](../text/parsing-input.md)
 
 ## Display
 
-- Responsive design (avoid hardcoding, graceful truncation/wrapping, etc.)
+- Responsive design (avoid hard coding positions, graceful truncation/wrapping, etc.)
 - Honor system defaults
 - Font support
 - Keyboard and IME support

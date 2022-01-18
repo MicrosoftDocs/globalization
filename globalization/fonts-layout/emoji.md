@@ -1,6 +1,6 @@
 ---
 title: Emoji
-description: Originally meaning "pictograph", the word emoji comes from Japanese e (like 'e' as in 'e-mail') + moji ("character").
+description: Originally meaning "pictograph", the word emoji comes from Japanese e (like 'e' as in 'e-mail') plus moji ("character").
 ---
 
 # Emoji

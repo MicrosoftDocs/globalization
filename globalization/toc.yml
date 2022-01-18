@@ -6,7 +6,7 @@ items:
     href: methodology/index.md
     items:
     - name: Global products under agile development
-      href: methodology/agile.md
+      href: methodology/agile-development.md
     - name: Roles and responsibilities
       href: methodology/roles-and-responsibilities.md
     - name: Exit criteria
@@ -26,12 +26,10 @@ items:
         href: encoding/surrogate-pairs.md
       - name: Private use area
         href: encoding/pua.md
-      - name: Maps and transforms
-        href: encoding/maps-and-transforms.md
       - name: Code pages
         href: encoding/code-pages.md
-    - name: Storing and writing text
-      href: text/storing-and-writing-text.md
+    - name: Storing
+      href: text/storing-text.md
     - name: Character exclusion
       href: text/character exclusion.md
     - name: String normalization
@@ -72,19 +70,19 @@ items:
     items:
     - name: Isolating localizable resources
       href: localizability/isolate-localizable-resources.md
-    - name: Pluralization
-      href: internationalization/pluralization.md
     - name: Message formatting
       href: internationalization/message-formatting.md
       items:
-      - name: Externalization
+      - name: Resource externalization
         href: internationalization/externalization.md
       - name: Non-localizable text
         href: internationalization/non-localizable-text.md
-      - name: Concatenation
+      - name: String concatenation
         href: internationalization/concatenation.md
       - name: Variables (placeholders)
         href: internationalization/variables.md
+      - name: Pluralization
+        href: internationalization/pluralization.md
     - name: String repurposing
       href: internationalization/string-repurposing.md
     - name: Contextual metadata
@@ -96,12 +94,10 @@ items:
       items:
       - name: Locale model
         href: ../locale/locale-model.md
-      - name: Standard locale representation
-        href: locale/standard-locale-representation.md
-      - name: Other locale representations
-        href: locale/other-locale-representations.md
-      - name: Fallback behaviors
-        href: locale/fallback-behaviors.md
+      - name: Locale naming
+        href: locale/standard-locale-naming.md
+      - name: Locale Fallback
+        href: locale/fallback.md
     - name: System and user settings
       href: locale/system-user-settings.md
       items:
@@ -121,39 +117,39 @@ items:
     - name: Regional settings and formats
       href: locale/index.md
       items:
-      - name: Industry standard for regional formats (CLDR)
+      - name: Common Locale Data Repository (CLDR)
         href: reference/cldr.md
+      - name: Calendars, date, and time
+        href: locale/calendar-date-time.md
+        items:
+        - name: Calendars
+          href: ../locale/calendars.md
+        - name: Date formats
+          href: ../locale/date-formatting.md
+        - name: Time formats
+          href: ../locale/time-formatting.md
+        - name: Time Zones
+          href: locale/time-zones.md
       - name: Numbers
         href: locale/number-formatting.md
         items:
-        - name: Numeric systems
-          href: locale/numeric-systems.md
+        - name: Numeric notation
+          href: locale/numeric-notation.md
         - name: Number formats
           href: ../locale/number-formatting.md
           items:
           - name: Currency formats
             href: locale/currency-formatting.md
-      - name: Date and time
-        href: locale/date-time.md
-        items:
-        - name: Calendars
-          href: ../locale/calendar-differences.md
-        - name: Time Zones
-          href: locale/time-zones.md
-        - name: Date formats
-          href: ../locale/date-formatting.md
-        - name: Time formats
-          href: ../locale/time-formatting.md
-      - name: Mailing address formats
-        href: ../locale/addresses.md
-      - name: Telephone number formats
-        href: ../locale/telephone-number.md
-      - name: Units of measurement
-        href: ../locale/units-of-measurement.md
-      - name: Default page sizes
+      - name: Paper sizes
         href: ../locale/paper-size.md
       - name: Punctuation and separators
         href: internationalization/punctuation-separators.md
+      - name: Postal addresses
+        href: ../locale/addresses.md
+      - name: Telephone numbers
+        href: ../locale/telephone-numbers.md
+      - name: Units of measurement
+        href: ../locale/measurement-units.md
     - name: Payment methods
       href: internationalization/payment-methods.md
     - name: Search
@@ -168,47 +164,44 @@ items:
   - name: User Interface
     href: fonts-layout/user-interface.md
     items:
-    - name: Text
-      href: fonts-layout/text.md
+    - name: Fonts
+      href: fonts-layout/fonts.md
       items:
+      - name: Font technology
+        href: input/font-technology.md
+        items:
+        - name: OpenType
+          href: reference/opentype.md
+        - name: The Universal Shaping Engine
+          href: reference/universal-shaping-engine.md
+        - name: Multi-script fonts
+          href: fonts-layout/multi-script-fonts.md
+        - name: Platform-specific issues
+          href: fonts-layout/platform-specific-issues.md
+          items:
+          - name: Unity
+            href: platform/unity.md
+    - name: Text layout
+      href: fonts-layout/text-layout.md
+      items:
+      - name: Bidirectional text
+        href: fonts-layout/bidirectional-text.md
+      - name: Boundaries
+        href: fonts-layout/boundaries.md
+      - name: Typesetting
+        href: fonts-layout/typesetting.md
+      - name: Pagination
+        href: fonts-layout/pagination.md
+      - name: Justification
+        href: input/text-justification.md
+      - name: Line and word breaking
+        href: input/line-and-word-breaking.md
+      - name: Ruby
+        href: fonts-layout/ruby.md
       - name: Emoji
         href: fonts-layout/emoji.md
-      - name: Fonts
-        href: fonts-layout/fonts.md
-        items:
-        - name: Font technology
-          href: input/font-technology.md
-          items:
-          - name: OpenType
-            href: reference/opentype.md
-          - name: The Universal Shaping Engine
-            href: reference/universal-shaping-engine.md
-          - name: Multi-script fonts
-            href: fonts-layout/multi-script-fonts.md
-          - name: Platform-specific issues
-            href: fonts-layout/platform-specific-issues.md
-            items:
-            - name: Unity
-              href: platform/unity.md
-        - name: Text layout
-          href: fonts-layout/text-layout.md
-          items:
-          - name: Bidirectional text
-            href: fonts-layout/bidirectional-text.md
-          - name: Boundaries
-            href: fonts-layout/boundaries.md
-          - name: Typesetting
-            href: fonts-layout/typesetting.md
-          - name: Pagination
-            href: fonts-layout/pagination.md
-          - name: Justification
-            href: input/text-justification.md
-          - name: Line and word breaking
-            href: input/line-and-word-breaking.md
-          - name: Ruby
-            href: fonts-layout/ruby.md
-      - name: Text-to-speech
-        href: locale/text-to-speech.md
+    - name: Text-to-speech
+      href: locale/text-to-speech.md
     - name: Interface Layout
       href: fonts-layout/interface-layout.md
       items:
@@ -218,11 +211,24 @@ items:
         href: input/mirroring.md
     - name: Images, icons, and colors
       href: fonts-layout/images-icons-colors.md
-  - name: Validating internationalized products
+  - name: Testing and validating a globalized product
     href: testing/quality-assurance-for-world-readiness.md
     items:
     - name: Global test design
       href: testing/globalization-of-the-test.md
+      items:
+      - name: Testing approach
+        href: testing-approach.md
+      - name: Prioritize components
+        href: prioritize-components.md
+      - name: Choose a test platform
+        href: choose-a-test-platform.md
+      - name: Create the test environment
+        href: create-the-test-environment.md
+      - name: Globalize test data
+        href: globalize-test-data.md
+      - name: Identify the problems
+        href: identify-globalization-problem.md
     - name: Localizability testing
       href: testing/localizability-testing.md
     - name: Localization testing
@@ -232,9 +238,18 @@ items:
         href: testing/linguistic-validation.md
       - name: In-context review
         href: testing/in-context-review.md
-    - name: Test case sample
+    - name: Test case samples
       href: testing/sample-international-test-cases.md
-  - name: Creating translated deliverables
+      items:
+      - name: Test Cases for Deployment and General Functionality
+        href: test-cases-for-deployment-and-general-functionality.md
+      - name: Test Cases for Text Handling
+        href: test-cases-for-text-handling.md
+      - name: Test Cases for Locale Awareness
+        href: test-cases-for-locale-awareness.md
+      - name: Test Cases for Localizability
+        href: test-cases-for-localizability.md
+  - name: Localization
     href: localization/overview.md
     items:
     - name: Managing terminology
