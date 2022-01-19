@@ -16,6 +16,6 @@ The first step to test the world-readiness of a product is to verify that its fu
 
 [Create the test environment](create-the-test-environment.md)
 
-[Globalize test data](globalize-test-data.md)
+[Globalize test data](globalizing-test-data.md)
 
 [Identify the problems](identify-globalization-problem.md)

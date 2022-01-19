@@ -1,5 +1,5 @@
 items:
-- name: Globalization Overview
+- name: Globalization
   href: index.yml
   items:
   - name: Delivering products globally
@@ -28,12 +28,10 @@ items:
         href: encoding/pua.md
       - name: Code pages
         href: encoding/code-pages.md
-    - name: Storing
+    - name: Storing text
       href: text/storing-text.md
-    - name: Character exclusion
-      href: text/character exclusion.md
-    - name: String normalization
-      href: text/string-normalization.md
+    - name: Normalization
+      href: text/text-normalization.md
     - name: Parsing input
       href: text/parsing-input.md
     - name: Case mapping
@@ -66,37 +64,37 @@ items:
         href: reference/eai.md
     - name: File systems
       href: platform/file-system.md
-  - name: String authoring for global reach
+  - name: Resource authoring for global reach
     items:
+    - name: Resource externalization
+      href: internationalization/externalization.md
+    - name: Non-localizable text and resources
+      href: internationalization/non-localizable-text.md
     - name: Isolating localizable resources
-      href: localizability/isolate-localizable-resources.md
+      href: internationalization/isolate-localizable-resources.md
+    - name: Contextual metadata
+      href: internationalization/contextual-metadata.md
     - name: Message formatting
       href: internationalization/message-formatting.md
       items:
-      - name: Resource externalization
-        href: internationalization/externalization.md
-      - name: Non-localizable text
-        href: internationalization/non-localizable-text.md
       - name: String concatenation
         href: internationalization/concatenation.md
-      - name: Variables (placeholders)
-        href: internationalization/variables.md
+      - name: Replaceable text
+        href: internationalization/replaceable-text.md
       - name: Pluralization
         href: internationalization/pluralization.md
     - name: String repurposing
       href: internationalization/string-repurposing.md
-    - name: Contextual metadata
-      href: internationalization/contextual-metadata.md
   - name: Language and location
     items:
     - name: Locale
       href: locale/locale.md
       items:
-      - name: Locale model
-        href: ../locale/locale-model.md
-      - name: Locale naming
+      - name: Standard locale naming
         href: locale/standard-locale-naming.md
-      - name: Locale Fallback
+      - name: Other locale identification
+        href: locale/other-locale-naming.md
+      - name: Locale fallback
         href: locale/fallback.md
     - name: System and user settings
       href: locale/system-user-settings.md
@@ -123,11 +121,11 @@ items:
         href: locale/calendar-date-time.md
         items:
         - name: Calendars
-          href: ../locale/calendars.md
+          href: locale/calendars.md
         - name: Date formats
-          href: ../locale/date-formatting.md
+          href: locale/date-formatting.md
         - name: Time formats
-          href: ../locale/time-formatting.md
+          href: locale/time-formatting.md
         - name: Time Zones
           href: locale/time-zones.md
       - name: Numbers
@@ -136,20 +134,20 @@ items:
         - name: Numeric notation
           href: locale/numeric-notation.md
         - name: Number formats
-          href: ../locale/number-formatting.md
+          href: locale/number-formatting.md
           items:
           - name: Currency formats
             href: locale/currency-formatting.md
       - name: Paper sizes
-        href: ../locale/paper-size.md
+        href: locale/paper-size.md
       - name: Punctuation and separators
         href: internationalization/punctuation-separators.md
       - name: Postal addresses
-        href: ../locale/addresses.md
+        href: locale/addresses.md
       - name: Telephone numbers
-        href: ../locale/telephone-numbers.md
+        href: locale/telephone-numbers.md
       - name: Units of measurement
-        href: ../locale/measurement-units.md
+        href: locale/measurement-units.md
     - name: Payment methods
       href: internationalization/payment-methods.md
     - name: Search
@@ -160,9 +158,9 @@ items:
       - name: Word prediction
         href: internationalization/word-prediction.md
     - name: Local laws and regulations
-      href: design/international-laws-and-standards.md
+      href: internationalization/international-laws-and-standards.md
   - name: User Interface
-    href: fonts-layout/user-interface.md
+    href: fonts-layout/interface-layout.md
     items:
     - name: Fonts
       href: fonts-layout/fonts.md
@@ -218,17 +216,17 @@ items:
       href: testing/globalization-of-the-test.md
       items:
       - name: Testing approach
-        href: testing-approach.md
+        href: testing/testing-approach.md
       - name: Prioritize components
-        href: prioritize-components.md
+        href: testing/prioritize-components.md
       - name: Choose a test platform
-        href: choose-a-test-platform.md
+        href: testing/choose-a-test-platform.md
       - name: Create the test environment
-        href: create-the-test-environment.md
+        href: testing/create-the-test-environment.md
       - name: Globalize test data
-        href: globalize-test-data.md
+        href: testing/globalize-test-data.md
       - name: Identify the problems
-        href: identify-globalization-problem.md
+        href: testing/identify-globalization-problem.md
     - name: Localizability testing
       href: testing/localizability-testing.md
     - name: Localization testing
@@ -242,13 +240,13 @@ items:
       href: testing/sample-international-test-cases.md
       items:
       - name: Test Cases for Deployment and General Functionality
-        href: test-cases-for-deployment-and-general-functionality.md
+        href: testing/test-cases-for-deployment-and-general-functionality.md
       - name: Test Cases for Text Handling
-        href: test-cases-for-text-handling.md
+        href: testing/test-cases-for-text-handling.md
       - name: Test Cases for Locale Awareness
-        href: test-cases-for-locale-awareness.md
+        href: testing/test-cases-for-locale-awareness.md
       - name: Test Cases for Localizability
-        href: test-cases-for-localizability.md
+        href: testing/test-cases-for-localizability.md
   - name: Localization
     href: localization/overview.md
     items:

@@ -4,7 +4,7 @@ description: Test data should be multilingual Unicode text different from the sy
 ms.assetid: d5c50681-f03c-4145-b40f-090e887bcb75
 ---
 
-# Globalizing Your Test Data
+# Globalizing test data
 
 After the environment has been set for globalized testing, your regular test cases must be run with special attention paid to potential globalization problems.
 The test data must match the test.
@@ -48,8 +48,8 @@ Examples of indirect string input are host names, user names, and folder names t
 If your application deals with information of this kind, make sure this data is multilingual when your tests are running.
 
 In a small number of cases the range of characters in the test input might be somewhat limited, in accordance with the design limitations.
-Set these tests in a globalized environment. (See "[Creating the Test Environment](creating-the-test-environment.md)".)
+Set these tests in a globalized environment. (See "[Create the test environment](create-the-test-environment.md)".)
 It might be hard to enter all of these test inputs manually if you do not know the languages in which you are preparing your test data.
 A simple Unicode text generator can be very helpful at this point.
 
-In addition to globalizing test data that will catch problems and validate functionality, as you conduct your test and view the results you should be able to recognize how some of the globalization problems mentioned in "[Creating the Test Environment](creating-the-test-environment.md)".
+In addition to globalizing test data that will catch problems and validate functionality, as you conduct your test and view the results you should be able to recognize how some of the globalization problems mentioned in "[Create the test environment](create-the-test-environment.md)".

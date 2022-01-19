@@ -38,9 +38,9 @@ A global application must be able to handle user's data by the conventions and s
 - [Case mapping](../text/case-mapping.md)]
 - [Number formatting](../locale/number-formatting.md)
 - [Currency formatting](../locale/currency-formatting.md)
-- [Calendars, date, and time](locale/calendar-date-time.md)
-- [Postal address formats](locale/address-formats.md)
-- [Telephone number formatting](../locale/telephone-number.md)
+- [Calendars, date, and time](../locale/calendar-date-time.md)
+- [Postal address formats](../locale/address-formats.md)
+- [Telephone number formatting](../locale/telephone-numbers.md)
 - [Measurement units](../locale/measurement-units.md)
 - [Paper and envelope size](../locale/paper-size.md)
 - [Payment methods](../internationalization/payment-methods.md)

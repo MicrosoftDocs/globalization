@@ -4,3 +4,5 @@ description: The user's preference for language and locale affects the layout of
 ---
 
 # User interface layout
+
+## Mirroring

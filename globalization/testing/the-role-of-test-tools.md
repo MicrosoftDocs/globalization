@@ -22,7 +22,7 @@ Automation of test runs, however, involves more than just running old, trusty te
 Test tools that check functionality of an application's UI can be broken when the tested application is translated.
 Even when not affected by translation, test results may be incorrect if the tool verifies dates, for example, and assumes that the date format is fixed.
 (Of course, in globalized applications, the date format varies according to locale and region.
-See [Locale Model](../locale/locale-model.md).)
+See [Locale](../locale/locale.md).)
 The inability to use international test data can also make a test tool unusable.
 
 In order to avoid these and similar problems, developers of test tools must follow the same rules as the developers of globalized software do.

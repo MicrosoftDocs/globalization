@@ -127,7 +127,7 @@ For example, Chinese, Japanese, and Korean require special input methods such as
   - If a particular technology is not available for all languages, what will happen for those users?
 
 - Does the control (e.g., RichEdit, .NET, ActiveX, WPF, etc.) support all the [Unicode](http://www.unicode.org/) languages?
-  Please note that “support” does not mean the user interface languages, but the languages the user can type into the application.
+  Here we mean the languages the user can type into the application, and not just the user interface languages,
   Is the functionality consistent across platforms (client, server, mobile)?
   If not, what will you do to expand the support to match the rest of the user’s experience in your program?
 
@@ -206,13 +206,13 @@ User interface is not limited to a graphical user interface, but also includes e
 - If your feature has UI elements that combine to form a sentence, can the UI be reordered?
   For example, the recurrence dialog in the calendar is problematic and adds complexity to localization because the ordering of the sentence doesn’t make sense in non-English languages.
 
-    ![Re-ordering UI elements for localization](../design/images/Reorder_Elements.jpg "Re-ordering UI elements for localization")
+  ![Re-ordering UI elements for localization](images/reorder-elements.jpg)
 
 - If your feature has images that contain text that requires translation, can you use a different image instead?
   Image translation adds complexity and extra cost to the localization process.
   It is recommended to create generic images or icons that work for all languages.
-  ![English font button](./images/English_Font_Button.png "English font button") English versus
-  ![Arabic font button](./images/Arabic_Font_Button.png "Arabic font button") Arabic
+  ![English font button](./images/english-font-button.png) English versus
+  ![Arabic font button](./images/arabic-font-button.png) Arabic
 
 - If your feature has user interface elements, can they be designed to dynamically expand for other languages?
   For example, a date navigator shows days of the week abbreviated with two letters for English (Su, Mo, Tu) and expands to three-letter abbreviations for Turkish.
@@ -225,16 +225,15 @@ User interface is not limited to a graphical user interface, but also includes e
   Ensure you understand how the meaning can be changed if you clip part of the word, either horizontally or vertically.
   Removing an accent can change the meaning of a word: probably to something you didn’t intend!
 
-- Does your feature have dialogs that contain elements that display content dynamically?
-  For example, these controls are difficult to localize, especially if these controls require resizing and/or relocation.
-  There is often no way for the translator to know which elements will display together.
+- Does your feature have dialogs that contain elements that show and hide content aor controls dynamically?
+  These controls are difficult to localize, especially if these controls require moving or resizing.
+  There is often no way for the translator to know which elements will display together, and where they will appear.
+  It may be a better option to define multiple static dialog templates.
   
-  ![Dialog buttons](../localizability/images/Not_Localizable.jpg "Dialog buttons")
-
 - Can all the components of the feature be mirrored for languages that are written right-to-left (RTL), such as animation, shadows, tree control, or tab order?
   For example, Hebrew users type from right to left and have a right to left workflow.
   They have a poor experience when panes in the modules are not mirrored consistently.
-  The navigation pane is mirrored correctly, but the message list is not.
+  Consider when a navigation pane is mirrored correctly, but a message list next to it is not.
   As a result, the message list and navigation pane scroll bars are side-by-side, making it difficult for the user to pick the correct scroll bar to use.
 
 - Italic, bold, and underline are not universal for all scripts or locales.
@@ -253,4 +252,4 @@ User interface is not limited to a graphical user interface, but also includes e
   There is no color that needs to be avoided in every case.
   More important is to ensure you are aware of meanings in various contexts.
   In some cases, your choice of color may have unintended interpretations.
-  The [International Color Guide](http://www.office.xerox.com/small-business/tips/color-guide/enus.html) has more information.
+  The [Xerox International Color Guide](http://www.office.xerox.com/small-business/tips/color-guide/enus.html) has more information.

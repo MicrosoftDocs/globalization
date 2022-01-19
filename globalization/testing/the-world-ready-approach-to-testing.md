@@ -17,7 +17,7 @@ Even if the settings for certain locales were similar, you couldn't assume the a
 You can make testing easier and more efficient by globalizing the functional tests.
 Once you've verified that the application is globalized, you know that it supports any locale and any language.
 
-See [International design](../mothodology/international-design.md).
+See [International design](../methodology/international-design.md).
 
 Unlike older test processes, the world-ready approach renders unnecessary the software development concept called "enabling."
 When done correctly, a world-ready application can handle all the languages that are supported by the underlying platform.
@@ -29,7 +29,7 @@ Now you only need to check how well the product is adapted for a given locale or
 Since the adaptation to a locale mostly involves translation, localization testing requires limited technical expertise.
 Instead, language proficiency becomes the major requirement for the tester.
 
-See [Localization Testing](localization-testing.md).
+See [Localization testing](localization-testing.md).
 
 Testing is not the only area that benefits from a global-ready application.
 The entire localization process in general becomes less complex and requires fewer resources.

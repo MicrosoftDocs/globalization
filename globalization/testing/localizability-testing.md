@@ -10,9 +10,9 @@ ms.date: 04/05/2017
 The purpose of localizability testing is to verify that the user interface of the program being tested can be easily translated to any target language without re-engineering or making code modifications.
 Since localizability bugs must be fixed in the code of the application, they must be looked for at the earliest stage of development possible.
 By doing so, you can circumvent having to fix bugs for every language version at a later point.
-(See [Designing for Internationalization](../design/internationalization.md).)
+
 Paradoxically, the problems that cause bugs to appear in the first place usually only become apparent once localization is done.
-Furthermore, since localization often occurs only after the code is complete and reaches a certain degree of stability, there is inevitably a long time span between an application's development and its localization.
+Localization often occurs only after the code is complete and reaches a certain degree of stability, there is inevitably a gap between an application's development and its localization.
 There are four things you can do to resolve this contradiction.
 
 ## Run a pseudo-localized version of a program
@@ -27,7 +27,7 @@ Besides detecting localizability bugs, pseudo-localization often reveals globali
 As a result, testing a pseudo-localized application can potentially be central to verifying that an application is world-ready.
 
 An area often forgotten in localizability testing is the pseudo-mirroring test, which can be implemented as part of pseudo-localization.
-If you want to distribute your software to markets where the text and user interface of the programs display from right to left, you should follow the development and design rules outlined in [Mirroring](../input/mirroring.md) to allow mirroring of the UI.
+If you want to distribute your software to markets where the text and user interface of the programs display from right to left, you should follow the development and design rules outlined in [User interface layout](../fonts-layout/interface-layout.md) to allow mirroring of the UI.
 Pseudo-mirroring then verifies that these rules were applied.
 Testers do not need to wait for the localizers to mirror the UI of the application: pseudo-mirroring can be applied to the code.
 When conducting the pseudo-mirroring test, you can allow the UI text to remain unchanged and to be displayed as usual; only the windows and text alignment will be mirrored.
