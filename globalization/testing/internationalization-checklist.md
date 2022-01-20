@@ -36,8 +36,8 @@ A global application must be able to handle user's data by the conventions and s
 
 - [Sorting, comparison, and search](../locale/sorting-and-string-comparison.md)
 - [Case mapping](../text/case-mapping.md)]
-- [Number formatting](../locale/number-formatting.md)
-- [Currency formatting](../locale/currency-formatting.md)
+- [Number formatting](../locale/number-formats.md)
+- [Currency formatting](../locale/currency-formats.md)
 - [Calendars, date, and time](../locale/calendar-date-time.md)
 - [Postal address formats](../locale/addresses.md)
 - [Telephone number formatting](../locale/telephone-numbers.md)

@@ -1,6 +1,6 @@
 ---
-title: Currency Formatting
+title: Currency formats
 description: The currency symbol and its placement, and the convention for negative-amounts can vary in different regions.
 ---
 
-# Currency Formatting
+# Currency formats
