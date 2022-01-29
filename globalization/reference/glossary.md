@@ -60,7 +60,7 @@ See also: character code
 
 ## Content Management System (CMS)
 
-
+A software system for managing a body of content.
 
 ## Double-Byte Character Set (DBCS)
 
@@ -72,6 +72,8 @@ See also: codepage, MBCS, SBCS
 When used in the context of globalization, an encoding is a scheme whereby text is represented as a sequence of bytes.
 
 ## internationalization
+
+The process of making an application usable in multiple locales, according to the locale preference of the user.
 
 ## globalization
 
@@ -85,12 +87,12 @@ For example, the characters A and E may be displayed using the composite glyph Ã
 
 ## localization
 
-The process of adapting a product so that it is suitable for use in another locale.
+The process of adapting a product so that it is suitable for use in a specific locale, including translating the applications user interface and user assistance.).
 
 ## machine translation (MT)
 
-Automated translation, commonly by way of statistical methods, neural-networks, or other artificial intelligence.
-Machine translation may be used as a substitute for human translation if the result meets your quality goals.
+Automated translation, commonly by way of statistical methods, neural-networks, or other artificial intelligence techniques.
+Machine translation (MT) may be used as a substitute for human translation if the result meets your quality goals.
 More frequently, MT is used to assist human translators by providing suggested translations of a text.
 
 ## Multi-Byte Character Set (MBCS)
@@ -111,6 +113,12 @@ Resources that have not been exposed to localization are readily apparent in a p
 A character set that is encoded as a stream of single bytes.
 
 See also: codepage, DBCS, MBCS
+
+## transcreation
+
+The process of creating new content unique to a locale, borrowing the general look, feel, and voice of existing source content.
+Transcreation is used when a literal translation of the source material is inadequate.
+Marketing material is often prepared by transcreation rather than translation.
 
 ## translation
 

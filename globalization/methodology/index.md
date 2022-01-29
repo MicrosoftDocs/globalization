@@ -1,15 +1,47 @@
 ---
-title: Delivering products globally
-description: Delivering products globally should be understood as providing customers with rich experiences that they can feel as developed specifically for them.
+title: Global product delivery
+description: Global product delivery means giving each customer a rich experience that feels like it was created specifically for them.
 ---
 
-# Delivering products globally
+# Global product delivery
 
-Delivering products globally should be understood as providing customers with rich experiences that they can feel as developed specifically for them, matching their local expectations that go beyond the functionality.
-Is is particularly important to be intentional and specific about the scope of the intended audience (countries, regions and languages), bearing in mind that there could be legal or regulatory hurdles to tackle.
-Knowing your markets and audience will allow you to have a better impact, and make your product and organization more relevant to your end-users.
+Global product delivery means giving each customer a rich experience that goes beyond the basic function of the product.
+As a customer, the product feels like it was created specifically for you.
+The product feels like it belongs to your culture, language, and region.
 
-Delivering software products worldwide is a complex process that involves many disciplines within an organization,
-including contributors from research and development, content development, legal, marketing, operations, procurement, finance, localization, sales, support, and several others.
+World-readiness can be challenging to retrofit to an existing application.
+There are issues in all aspects of product development: planning, methodology, architecture, implementation, build, and test.
+Building global awareness and localizability into the application from the start is far less expensive in the long run.
+Even if your initial release is in only one language, a world-ready application can reach more markets.
+When you're ready to localize into to more languages, the cost is lower because your organization and the application are already prepared.
 
-This guide provide a high-level description and a short examples on how each of these roles participate in the delivery of a global product.
+When planning, be intentional and specific about the scope of your audience by country, region, and language.
+
+Know your markets and audiences to be more relevant to your customers.
+We all come with an intuitive sense of what is acceptable and expected based on our own cultural and regional experience.
+The experiences of people elsewhere in the world can be remarkably different.
+Consider these aspects, that may vary widely by locale and language:
+
+- Education
+- Literacy
+- Experience with computers
+- Proficiency in another language (such as English)
+- Access to technology and bandwidth
+
+To avoid surprises when you release your product, research the legal and regulatory requirements for each locale.
+
+Delivering software products worldwide can be a complex process that involves many disciplines within an organization.
+Global product delivery requires awareness and participation from:
+
+- Research and development
+- Content development
+- Legal affairs
+- Marketing
+- Operations
+- Procurement
+- Finance
+- Localization
+- Sales and support
+
+This guide provides a high-level description and short examples on how each role participates in global product delivery.
+Start with: [Global products under agile development](agile-development.md).
