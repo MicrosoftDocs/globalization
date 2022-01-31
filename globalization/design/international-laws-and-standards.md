@@ -19,7 +19,7 @@ For information on security specifically, see [Microsoft Security Engineering](h
 
 ## Privacy and international law
 
-Privacy is an important consideration in many countries. Consider the General Data Protection Regulation (GDPR) in the European Union (EU), which applies to anyone doing business in or with the EU. See [EUR-Lex -32018R1725](https://eur-lex.europa.eu/legal-content/TXT/?uri=CELEX:32018R1725) for official versions of the regulation.
+Privacy is an important consideration in many countries. For example, the General Data Protection Regulation (GDPR) in the European Union (EU) applies to anyone doing business in or with the EU. For information about GDPR, and for information about how to honor rights and fulfill GDPR obligations when using Microsoft products and services, please see [General Data Protection Regulation Summary](/compliance/regulatory/gdpr).
 
 ## Intellectual property, copyright, and piracy
 
@@ -68,4 +68,4 @@ Additionally, you may need to engage a translation agency that specializes in le
 ## Laws or standards particular to your program
 
 For applications that target specific functionality — such as taxes or health care — keep in mind that different laws and standards apply and your program may be liable to adhere to those laws.
-For example, you may need to conform to the US [Health Insurance Portability & Accountability Act (HIPAA)](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), the European Union (EU) such as GDPR ([EUR-Lex -32018R1725](https://eur-lex.europa.eu/legal-content/TXT/?uri=CELEX:32018R1725) for official versions of the regulation), or Canada’s [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act) depending on the markets you are targeting.
+For example, you may need to conform to the US [Health Insurance Portability & Accountability Act (HIPAA)](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), the European Union (EU) regulations such as GDPR ([General Data Protection Regulation Summary](/compliance/regulatory/gdpr)), or Canada’s [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act) depending on the markets you are targeting.
