@@ -5,7 +5,7 @@ description: A faster cadence of development and release requires continuous del
 
 # Continuous delivery
 
-A fully agile development model with continuous integration and continuous delivery calls for continuous localization.
+A rapid development model with continuous integration and continuous delivery calls for continuous localization.
 
 In a classic development model, localization handoffs happen at the end of a major milestone, such as "visual freeze".
 These handoffs can be large and may take a long time to be handed back.
