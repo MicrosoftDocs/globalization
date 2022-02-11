@@ -1,19 +1,24 @@
 ---
-title: Global products under agile development
-Description: Some form of agile is the prevalent development methodology today and requires an integrated strategy for a global product.
+title: Global products and rapid development
+description: Rapid development methodology is prevalent today and requires an integrated strategy for a global product.
 ---
 
-# Global products under agile development
+# Global products under rapid development
 
-Agile development, under many different variants, is perhaps  the most common development methodology used in the software industry.
-Under such methodology, functionality updates are more frequent (daily, weekly, monthly sprints) as opposed to long yearly milestones.
-Planning for the next milestone/sprint happens on-the-fly, depending on customer feedback, strategy updates, and other factors.
-Once a sprint is delivered, it becomes harder to go back and fix issues with previous implementations, since people working on those features (feature crew) may have moved on to other features for the upcoming sprint, and there's no guarantee that those previous features will remain the same; they may significantly change or be removed.
-So, it is important to ensure that the particularities of international development are addressed at the right time.
+Rapid development is perhaps the most common development methodology used in the software industry today.
+You may encounter the strategy under the term "Agile", or some variant of agile.
+In contrast with classical development methodologies, cycles are fast, with daily, weekly, or monthly sprints that deliver finished functionality.
 
-Consider addressing the following aspects of international development:
+Global and international requirements can fundamentally affect the design and implementation of every component in an application or system.
+That's why it's vital to start with a baseline that enables localization, even you are not actually translating anything yet.
 
-- [Roles and responsibilities](roles-and-responsibilities.md)
-- [Continuous delivery](continuous-delivery.md)
-- [Simultaneous shipping](simultaneous-shipping.md)
-- [Exit criteria](exit-criteria.md)
+Once a feature is delivered, it can become difficult to go back and re-engineer for globalization.
+People working on those features (the feature crew) may have moved on to other features for the next sprint.
+
+Globalization and international development concerns are best addressed within each sprint when a feature is created.
+This is the same principle described in [Start early](index.md#start-early), but applied to the sprint.
+The more aspects of globalization that you can address within the sprint, the fewer bugs and issues that will have to be addressed downstream.
+
+Once you have the overview of the strategy and processes, you can get into more detailed implementation considerations:
+
+- [International design](international-design.md)
