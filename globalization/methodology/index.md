@@ -10,7 +10,7 @@ description: A great global product has a rich experience that feels like it was
 >
 > &#x2014; Nelson Mandela
 
-A great global product has a rich experience that goes beyond the basic function of the product.
+A great global product has an experience that goes beyond the basic function of the product.
 As a customer, the product feels like it was created specifically for you, no matter where you live or the language you speak.
 It feels like it belongs to your culture, language, and region.
 
@@ -69,16 +69,15 @@ Certain features may be regulated or restricted, particularly encryption and ant
 ## Roles
 
 Delivering software products worldwide can be a complex process that involves many disciplines within an organization.
-Global product delivery requires awareness and participation from:
+Global product delivery can require awareness and participation from:
 
-- Research and development
-- Content development
+- Development
+- Content creation
 - Legal affairs
 - Marketing
 - Operations
 - Procurement
 - Finance
-- Localization
 - Sales and support
 
 See [Roles and responsibilities](roles-and-responsibilities.md)
@@ -101,7 +100,7 @@ When starting a project, it's vital to get these fundamentals in place:
 
 3. Produce and test localized builds.
 
-   [Pseudolocalization](pseudolocalization.md)) is an excellent strategy to enable build and test without the cost of translation.
+   [Pseudolocalization](pseudolocalization.md) is an excellent strategy to enable build and test without the cost of translation.
 
 4. Validate the localization round-trip.
 
