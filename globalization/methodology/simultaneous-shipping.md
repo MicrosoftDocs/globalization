@@ -1,6 +1,6 @@
 ---
 title: Simultaneous shipping
-descritpion: Simultaneous shipping means to release all localized versions of a given software product, together with the source version.
+description: Simultaneous shipping means to release all localized versions of a given software product, together with the source version.
 ---
 # Simultaneous shipping
 
