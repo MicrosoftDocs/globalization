@@ -5,32 +5,38 @@ description: Every development milestone should have a set of indicators for key
 
 # Localization exit criteria
 
-Every development milestone, short or long, agile or waterfall, should have a set of indicators for key areas to ensure the quality and thustworthiness of the target milestone.
-Some of these areas are security, privacy, accessibility, reliability, performance. Internationalization should also be included as one of these key areas, to ensure that your software fullfils customer expectations associated with their localation, including language, regional formats, and several other factors.
+Every development milestone, short or long, Agile or waterfall, should have a set of key performance indicators (KPIs) to ensure the quality of a deliverable.
+Some of the areas typically covered by a KPI  are security, privacy, accessibility, reliability, and performance.
+Internationalization should also be included as one of these key areas.
+You may use whatever name you wish for this area.
+You can call it any one of "globalization", "localization", "international", or "world-readiness".
+Use whatever term is understood and meaningful for your organization.
 
-Creating an internationalization exit criteria should be done even if your release is only targeting English as a language. English is widely spoken in many locations worlwide.
+Creating an "international" exit criteria should be done even if your release is only targeting English as a language.
+English is widely spoken in many locations worldwide.
 
-Internationalization readiness involves several layers of product development, including user research, architectural and design considerations, programming (coding), localizability, legal and compliance requirements.
-Although the delivery of such requirements can be prioritized and staggered across several milestones, depending on the global scope of the intended releases, some of them have strong downstream dependencies.
-If those foundational aspects are not addressed from the very beginning, trying to incorporate them in the later milestones could prove to be very costly.
-In some cases it would require redesigning and refactoring efforts.
+World readiness involves several layers of product development.
+Areas include user research, architectural and design considerations, programming (coding), localizability, and legal compliance requirements.
+Although the delivery of such requirements can be prioritized and staggered across several sprints, some requirements have strong downstream dependencies.
+If foundational aspects aren't addressed from the very beginning, trying to incorporate them in later sprints could prove to be costly.
+Redesign and refactoring efforts are required in some cases, which can be more expensive to incorporate later.
 
-These are some of the aspects that you should include in your internationalization exit criteria:
+Some of the aspects that you should include in your exit criteria:
 
-- Text support requirements
+- Separation of localizable resources
 
-- String authoring conventions
+- Text handling and display support
 
-- Language and location considerations
+- String authoring
 
-- User interface and layout requirements
+- Language and location selection
 
-Such aspects are usually validated through testing, more specifically:
+- User interface and layout
 
-- Global test design
+Such aspects are validated through testing.
+For more information about testing and validation:
 
-- Localizability testing
-
-- Localization testing
-
-- Test case samples
+- [Global test design](../testing/globalization-of-the-test.md)
+- [Localizability testing](../testing/localizability-testing.md)
+- [Localization testing](../testing/localization-testing.md)
+- [Test case samples](../testing/sample-international-test-cases.md)
