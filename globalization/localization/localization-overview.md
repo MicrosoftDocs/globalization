@@ -1,6 +1,6 @@
 ---
 title: Localization Overview - How localization works
-description: This article explains the localization process at a high level. You can jump off from here to read more details for the strategies to localize various types of content.
+description: This article helps you understand the process of localization and strategies for localizing different types of content.
 ---
 
 # Localization overview
@@ -13,9 +13,9 @@ description: This article explains the localization process at a high level. You
 
 ## Localization strategy by content type
 
-Software, content, and game localization each have their particular characteristics that drive different localization strategies.
+Software, content, and game localization each have particular characteristics that drive different localization strategies.
 
-"Content" includes user assistance (help), marketing materials, License Agreements, images, video, and so on.
+"Content" includes user assistance (help), marketing materials, license agreements, images, video, and so on.
 These materials don't possess a unique and durable identifier for each unit of localization.
 Content is localized a whole file at a time.
 

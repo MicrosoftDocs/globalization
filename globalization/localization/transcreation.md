@@ -13,6 +13,10 @@ It is often used in marketing and advertising content, or in any area where dire
 This strategy may be necessary for highly language-dependent features of a product.
 Examples may include:
 
-- Spelling and grammar
-- Predictive text
-- Search (for example, creating synonym lists for search terms)
+- Domain-specific features. Consider "Tax" versus "VAT", for example.
+- Predictive text features.
+- Dictionary, thesaurus, grammar, and spelling features.
+- Search features. For example, creating synonym lists for search terms.
+- Different features or content for a specific market.
+- Highlighting different features of the product for a given market in marketing material.
+- Comparisons to other products/competitors in a given market in marketing material.

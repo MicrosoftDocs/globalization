@@ -1,6 +1,10 @@
 ---
 title: Localize content
-description: Documentation and user assistance content localization works a bit differently from string-based localization used for user interface or messages.
+description: Localizing documentation and user assistance involves adapting and translating your existing content. Recycling existing translation involves additional challenges.
 ---
 
 # Content localization
+
+Localizing documentation and user assistance involves adapting and translating your existing content.
+
+Recycling existing translation involves additional challenges.

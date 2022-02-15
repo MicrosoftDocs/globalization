@@ -56,7 +56,7 @@ See:
 
 - [Localize software](../localization/localize-software.md)
 - [Localize content](../localization/localize-content.md)
-- [Localize Game](../localization/localize-games.md)
+- [Localize games](../localization/localize-games.md)
 
 ## Regulations
 

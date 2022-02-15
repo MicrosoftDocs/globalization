@@ -5,15 +5,15 @@ description: Every development milestone should have a set of indicators for key
 
 # Localization exit criteria
 
-Every development milestone, short or long, Agile or waterfall, should have a set of key performance indicators (KPIs) to ensure the quality of a deliverable.
-Some of the areas typically covered by a KPI  are security, privacy, accessibility, reliability, and performance.
+Every development milestone, short or long, Agile or waterfall, should have a set of key metrics to ensure the quality of a deliverable.
+Some of the areas typically covered by a metric are security, privacy, accessibility, reliability, and performance.
 Internationalization should also be included as one of these key areas.
-You may use whatever name you wish for this area.
-You can call it any one of "globalization", "localization", "international", or "world-readiness".
+
+Your "international" metric might be called "globalization", "localization", "international", or "world-readiness".
 Use whatever term is understood and meaningful for your organization.
 
-Creating an "international" exit criteria should be done even if your release is only targeting English as a language.
-English is widely spoken in many locations worldwide.
+An international exit criteria should be created even if your release is only targeting English as a language.
+A global-ready application has more market opportunities because English is widely understood.
 
 World readiness involves several layers of product development.
 Areas include user research, architectural and design considerations, programming (coding), localizability, and legal compliance requirements.
