@@ -96,6 +96,23 @@ A glyph is commonly referred to as a "character", but this term isn't precise.
 A glyph may be a composite of multiple characters or a combination of a base character with modifiers (diacritics).
 For example, the characters A and E may be displayed using the composite glyph Æ, and the letter a with an acute accent is the glyph á.
 
+## locale
+
+The term "locale" is used both to refer to a locale's name (locale code) and to refer to a body of locale-specific properties identified by that name.
+
+A locale name is generally formed from the code for the language, an optional script code, and the code for a country or region.
+
+A locale can refer to a set of data containing the locale-specific information required to format dates, times, numbers, and currency.
+The locale also contains characteristics such as:
+
+* system of measurement
+* calendar
+* currency symbol ($, €, ¥, £, ฿, ₱, ₭, ...)
+* currency code (USD, AUD, GBP, EUR, INR, DKK, YEN, ...)
+
+The Common Locale Data Repository (CLDR) is a standardized source of locale data.
+CLDR is used by libraries such as the International Components for Unicode (ICU), globalize.js, Windows APIs, and .NET.
+
 ## localization
 
 The process of adapting a product so that it's suitable for use in a specific locale, including translating the applications user interface and user assistance.
@@ -140,6 +157,22 @@ Resources that have not been exposed to localization are readily apparent.
 A character set that is encoded as a stream of single bytes.
 
 See also: [codepage](#codepage), [DBCS](#dbcs), [MBCS](#mbcs)
+
+## script
+
+In the context of text handling and Unicode, a script is the writing system used to write a particular language.
+Some languages are commonly written in multiple scripts.
+For example, Japanese documents often contain text in the Han, Katakana, Hiragana, and Latin scripts.
+
+A script code may be included in the name of a locale when it is important to distinguish the writing system.
+For example, to distinguish Serbian Cyrillic (`sr-cyrl`) from Serbian Latin (`sr-latn`).
+The script code is usually omitted from the locale name when there is an unambiguous primary script for a language, such as Latin (`latn`) for English.
+
+See also:
+
+* [locale](#locale)
+* [Unicode Script Property - Unicode.org](http://www.unicode.org/reports/tr24)
+* [ISO 15924 Alphabetical Code List - Unicode.org](https://www.unicode.org/iso15924/iso15924-codes.html)
 
 ## segmentation
 

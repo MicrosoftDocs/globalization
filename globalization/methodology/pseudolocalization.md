@@ -46,7 +46,7 @@ Windows defines three pseudo-locales that you can use to test your application.
 [Pseudo Locales](/windows/win32/intl/pseudo-locales) lists the ones available in Windows:
 
 | Pseudo-locale | Locale name |
-| -- | -- |
+| --- | --- |
 | Base                | qps-ploc  |
 | Mirrored            | qps-plocm |
 | East Asian-language | qps-ploca |
@@ -57,11 +57,12 @@ Care must be taken to use locales that follow the rules for locale identifiers.
 
 When Microsoft was pioneering pseudo localization in Windows, they used tk-TM (Turkmen - Turkmenistan):
 a valid locale name and one that Windows wasn't shipping at the time.
-This choice did't work out well when the next release of Windows included tk-TM as a real locale.
+This choice didn't work out well when the next release of Windows included tk-TM as a real locale.
 The collision caused many bugs, especially in the build and testing systems that assumed tk-TM was the pseudo-locale.
 Lesson learned: use locale names that are well-formed but will never describe a real language or locale.
 
-You may find references using ps-PS as a pseudo locale, but this can be interpreted as Pashto (Palestinian Authority).It's a well-formed locale name, but not one that makes very much sense.
+You may find references using ps-PS as a pseudo locale, but ps-PS can be interpreted as Pashto (Palestinian Authority).
+It's a well-formed locale name, but not one that makes very much sense.
 Pashto isn't commonly spoken in that region.
 
 <!--
