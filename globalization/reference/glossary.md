@@ -14,7 +14,7 @@ For example, en-US (United States) content can be produced by adapting en-GB (Gr
 Similarly, fr-FR content (France) is often adapted for fr-CA (Canada).
 Adaptation can be much less expensive than producing new translations.
 Much of the adaptation process is a direct replacement of words or phrases with different spellings or terminology.
-In some cases, human review and post-editing is used along with automated adaptation.
+In some cases, human review and post-editing are used along with automated adaptation.
 
 ## ANSI
 
@@ -98,12 +98,12 @@ For example, the characters A and E may be displayed using the composite glyph Ã
 
 ## locale
 
-The term "locale" is used both to refer to a locale's name (locale code) and to refer to a body of locale-specific properties identified by that name.
+A body of properties identified by locale name (sometimes called "locale code").
 
-A locale name is generally formed from the code for the language, an optional script code, and the code for a country or region.
+A locale name is formed from the language code, an optional script code, and the code for a country or region.
 
-A locale can refer to a set of data containing the locale-specific information required to format dates, times, numbers, and currency.
-The locale also contains characteristics such as:
+A locale contains the locale-specific information required to format dates, times, numbers, and currency.
+The locale also contains information such as:
 
 * system of measurement
 * calendar
@@ -111,7 +111,7 @@ The locale also contains characteristics such as:
 * currency code (USD, AUD, GBP, EUR, INR, DKK, YEN, ...)
 
 The Common Locale Data Repository (CLDR) is a standardized source of locale data.
-CLDR is used by libraries such as the International Components for Unicode (ICU), globalize.js, Windows APIs, and .NET.
+CLDR is used by libraries such as the International Components for Unicode (ICU), globalize.js, Windows NLS APIs, and .NET APIs.
 
 ## localization
 
@@ -150,7 +150,7 @@ For example, pseudo-translation may wrap and lengthen text to uncover truncation
 It can also add accents and characters from other scripts to uncover rendering and font issues.
 
 The transformation remains understandable enough that the product can still be used and tested without knowing a foreign language.
-Resources that have not been exposed to localization are readily apparent.
+Resources that haven't been exposed to localization are readily apparent.
 
 ## <a name="sbcs"></a>Single-Byte Character Set (SBCS)
 
@@ -164,9 +164,9 @@ In the context of text handling and Unicode, a script is the writing system used
 Some languages are commonly written in multiple scripts.
 For example, Japanese documents often contain text in the Han, Katakana, Hiragana, and Latin scripts.
 
-A script code may be included in the name of a locale when it is important to distinguish the writing system.
+A script code may be included in a locale name when it's important to distinguish the writing system.
 For example, to distinguish Serbian Cyrillic (`sr-cyrl`) from Serbian Latin (`sr-latn`).
-The script code is usually omitted from the locale name when there is an unambiguous primary script for a language, such as Latin (`latn`) for English.
+The script code is omitted from the locale name when there's an unambiguous primary script for a language, such as Latin (`latn`) for English.
 
 See also:
 
@@ -176,12 +176,15 @@ See also:
 
 ## segmentation
 
-In localization, segmentation is the process of breaking up a source text into independently-translatable units.
-The ideal segment is a sentences, but the process works well in practice without perfect identification of sentence boundaries.
+In localization, segmentation is the process of breaking up a source text into translation units.
+Each translation unit that can be translated independently.
+The ideal segment is a sentence, but the process works well in practice without perfect identification of sentence boundaries.
 
-When localizing content (documentation or other prose), segmentation is always used.
-When localizing software string resources, each string is treated a translatable unit and segmentation is generally not used.
-Although, some localization vendors or systems may provide segmentation for software strings as an option.
+Segmentation is always used when localizing content (documentation or other prose).
+For software string resources, each string is treated a translatable unit.
+Some localization vendors or systems may provide segmentation for software strings as an option.
+
+A [translation memory](#tm) stores translations for each translation unit so that translations can be recycled.
 
 ## transcreation
 
@@ -193,31 +196,37 @@ Marketing material is often prepared by transcreation rather than translation.
 
 The process of producing text, graphics, or other material in a target language from material in a source language.
 
-## <a name="tm"></a>translation memory (TM)
+## <a name="tm"></a>Translation Memory (TM)
 
 A database or repository containing the translations of source text to one or more target languages.
 
 A translation memory can reduce the costs of translation by recycling existing translations of source text.
 The translation provided may be based on an exact match of the source text, a "fuzzy" (similarity) match, or a best fit based on an algorithm.
 
-Each entry in a TM may contain additional context information to help provide better matching for a given source text.
+Each entry in a TM may also contain context information to help provide better matching for a given source text.
 Context information may include:
 
-- source file name
-- resource identifier
-- adjacent text
-- digest or hash of adjacent text
+* source file name
+* resource identifier
+* adjacent text
+* digest or hash of adjacent text
 
 The result of querying a TM for the translation of a segment may be a list of candidates, ranked by a confidence level.
 The confidence is often expressed as a percentage match.
 
 Translation memories are also used to train machine translation models.
 
+## translation unit
+
+A unit of text that can be translated independently.
+In software localization, each string resource is a translation unit.
+In content localization, the source text undergoes [segmentation](#segmentation) to generate a set of translation units.
+
 ## transliteration
 
 The process of transforming content in one script to another script.
 For example, Serbian may be semi-automatically transliterated between Cyrillic and Latin.
-Depending on the language and the scripts, transliteration may be completely automated or combined with post-editing by a human being.
+Depending on the language and the scripts, transliteration may be automated or combined with post-editing by a human being.
 Whether automated or semi-automated, the cost of translation is reduced by the technique.
 
 ## UTF-8

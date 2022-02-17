@@ -84,4 +84,4 @@ In particular, localization testing of the UI and linguistics should cover items
 It's also a good idea to check that everything you are going to distribute in a local market complies with the local laws and regulations.
 This includes not only the license agreement but also online Help and other user documentation.
 
-You've now seen the importance of globalized testing, localizability testing, and localization testing in terms of ensuring both that a product is world-ready and that it is suitable for worldwide distribution.
+You've now seen the importance of globalized testing, localizability testing, and localization testing in terms of ensuring both that a product is world-ready and that it's suitable for worldwide distribution.

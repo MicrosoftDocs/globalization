@@ -27,7 +27,7 @@ Make sure that locale-sensitive data in your application (numbers, dates, time, 
 
 However, Language settings do not cover all locale-specific functionality.
 For example, you cannot see the current sort order there.
-Thus, it is important to have a test plan covering all aspects of functionality related to locale before you start your test.
+Thus, it's important to have a test plan covering all aspects of functionality related to locale before you start your test.
 You can use the National Language Support (NLS) and the .NET Framework documentation as a starting point for this plan.
 Use this documentation for finding exactly what locale information you'll need to retrieve dynamically, and then apply those requirements to your project.
 

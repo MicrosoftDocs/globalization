@@ -13,7 +13,7 @@ Among the factors that can affect your decision are the functionality of your sy
 
 Even if you are targeting a broader range of operating systems, Windows can be a good fit for your primary test platform.
 This operating system gives you the flexibility with language and locale settings, in addition to native support for a broad range of languages and locales.
-In fact, by adjusting these settings, even when you run a localized application on an English version of Windows, the application will still behave as though it is running on a localized platform.
+In fact, by adjusting these settings, even when you run a localized application on an English version of Windows, the application will still behave as though it's running on a localized platform.
 Thus you can simulate varying language and regional environments on one machine, according to which language and locales you set.
 
 You can also use other install language packs on English Windows.

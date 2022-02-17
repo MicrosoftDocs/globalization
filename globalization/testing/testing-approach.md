@@ -14,7 +14,7 @@ Among these ideas, an application or a component is considered globalized if:
 
 Whenever a piece of code handles text or deals with locale-sensitive functionality, it has to be tested for proper functionality from the perspective of world-readiness.
 Code that has been globalized can process data (text) in multiple scripts and can adjust itself to the environment (in terms of language settings, for instance).
-Verifying functionality can be planned as a separate test pass, but it is better to fit it into regular functional testing.
+Verifying functionality can be planned as a separate test pass, but it's better to fit it into regular functional testing.
 
 Practical guidelines for globalization of your test go beyond breaking the code-page dependency in the test data and checking the cultural accuracy (which means matching the user's language settings).
 To make testing more effective in searching for globalization bugs, target specific functionality and create an environment where this functionality is likely to break. Here are some of the areas of functionality that testers should verify:
