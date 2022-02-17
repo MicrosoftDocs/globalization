@@ -54,9 +54,9 @@ There isn't a universal way to do localization.
 The type of content or software you're creating will drive varying strategies.
 See:
 
-- [Software localization](software-localization.md)
-- [Content localization](content-localization.md)
-- [Game localization](game-localization.md)
+- [Localize software](../localization/localize-software.md)
+- [Localize content](../localization/localize-content.md)
+- [Localize games](../localization/localize-games.md)
 
 ## Regulations
 
@@ -107,4 +107,4 @@ When starting a project, it's vital to get these fundamentals in place:
 These fundamentals should be maintained for the entire lifecycle of the product.
 
 Once you've set a strong baseline, you can start iterating!
-See [Global products and rapid development](agile-development.md).
+See [Global products and rapid development](rapid-development.md).

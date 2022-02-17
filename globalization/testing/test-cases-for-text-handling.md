@@ -13,7 +13,7 @@ This article contains some sample test cases for text handling.
 
 Enter text while switching between different keyboard layouts and Input Method Editors (IMEs).
 Verify the ability of the application to accept input from various input methods, regardless of other locale settings.
-Either check that multilingual input is enabled with all supported input methods or that it is blocked for all languages except supported ones.
+Either check that multilingual input is enabled with all supported input methods or that it's blocked for all languages except supported ones.
 
 **Applicability:** Applications that allow for interactive text input
 
