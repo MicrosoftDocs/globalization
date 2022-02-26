@@ -1,8 +1,6 @@
 ---
 title: International design
-description: It's important to think about internationalization from the very beginning of a software project.
-ms.assetid: 12240d5d-6de0-4f78-8d4c-faf1e4b17b31
-ms.date: 11/15/2016
+description: It's important to think about internationalization from the very beginning of a software project. This article provides an extensive checklist of things to examine.
 ---
 
 # International design
@@ -14,6 +12,8 @@ The user interface design is the most affected, but globalization must be consid
 
 A universal policy to consider globalization is all about saving time and money, and providing the experience customers expect.
 World-readiness should be examined for every component of an application.
+
+This article can be considered a check-list of points to cover when reviewing world-readiness.
 
 ## What makes a feature world ready?
 
@@ -127,10 +127,10 @@ Here a list questions to ask yourself when designing for internationalization:
 
 ## Internet protocols
 
-* If your feature processes and displays various internet protocols, does it support non-Latin characters such as www<span></span>.café.<span></span>com, <span lang="el">χρήστη@μηχανή.ελ</span>, <span lang="ar">http:// مثال.إختبار</span>, or \\\\<span lang="zh-Hans">公司</span>\\<span lang="zh-Hans">单位</span>\\<span lang="zh-Hans">文件</span>.docx.
+* If your feature processes and displays various internet protocols or paths, does it support international characters such as in **:::no-loc text="www.café.com":::**, ***:::no-loc text="χρήστη@μηχανή.ελ*":::**, **:::no-loc text="http:// مثال.إختبار":::**, or **:::no-loc text="\\\\>公司\\单位\\文件.docx":::**.
 
 * Double-encoding is a frequently seen defect when two components use HTML- or URL-encoding.
-  Instead of "Documents partagés" (Shared Documents) the user sees "Documents partag&\#233;s".
+  Instead of ":::no-loc text="Documents partagés":::" (Shared Documents) the user sees ":::no-loc text="Documents partag&\#233;s":::".
   The resulting string isn't human readable.
 
 * Have you considered the entire process flow?
@@ -187,25 +187,29 @@ Here a list questions to ask yourself when designing for internationalization:
   Proper handling of text boundaries can affect features such as:
 
   * character counting
+  * word counting
   * justification
-  * character width calculation
+  * character and line width calculation
   * line breaking
   * cursor movement
   * selection
 
-* If your feature has shortcut keys or accelerators, do the key-combinations vary by different keyboard languages?
+* If your feature has shortcut keys or accelerators, do the key combinations vary by different keyboard languages?
 
   For example, in some European languages, some characters are typed with a sequence of AltGr then another key. AltGr (Alternate Graphics) maps to Alt+Ctrl.
   If a shortcut key is Alt+Ctrl+*key*, then the user will never be able to type those characters.
 
 ## Locale support
 
-It's best to use existing APIs, such Windows NLS, .NET, or ICU to address the following issues.
+Whenever possible, use existing APIs such Windows NLS, .NET, or ICU to address the following issues.
+Creating your own globalization methods can require extensive research and development, and may require local domain expertise.
+If you do find a need for a custom implementation, consider using the Common Locale Data Repository (CLDR) as a source of locale data.
+The CLDR is developed by local domain experts across the world.
 
 * If your feature uses date and time, a calendar, or a calendar control, does it allow usage of different calendar types? For example:
 
   * If your feature displays date or time, does it allow different date or time format ordering?
-    For example, Japanese dates are often in the order of era, year, month, and date (<span lang="ja">平成 22年 12月 05日</span>).
+    For example, Japanese dates are often in the order of era, year, month, and date (平成 22年 12月 05日).
 
   * Consider how different calendars may affect your features.
     Does your month picker support the 13 months found in the Hebrew Lunar calendar during a leap year?
@@ -218,11 +222,11 @@ It's best to use existing APIs, such Windows NLS, .NET, or ICU to address the fo
   * Turkish people place the percentage symbol (%) on the left side of a number (%20).
 
 * Does your feature display, input, send, receive, save or load whole numbers, decimals, percentages, negative numbers, or non-ASCII numbers?
-  Here's a sample of digits from other locales:<span lang="ar">١</span>,<span lang="ar">٢</span>, <span lang="th">๒</span>, <span lang="th">๓</span>.
+  Here's a sample of digits from other locales: :::no-loc text="**١**,**٢**, **๒**, **๓**":::.
 
 * Does the feature display, input, send or receive, and save or load numbers as currency?
 
-  Bahrain, for example, uses three decimal places in their currency format (<span lang="ar">د.ب.‏1,234.456</span>).
+  Bahrain, for example, uses three decimal places in their currency format (**:::no-loc text="د.ب.‏1,234.456":::**).
   If you hard-code the decimal to two places, your feature won't meet user expectations.
 
 * If your feature sorts a range of text, can the user specify the correct sort order that matches their cultural expectations for that data?
@@ -260,7 +264,7 @@ User interface isn't limited to a graphical user interface, but also includes er
 
 * If your feature has UI strings, are all the strings available to be translated?
 
-  For example, all UI is required to be translated by the [Toubon Law](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) in France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) in Canada.
+  For example, all UI is required to be translated by the [:::no-loc text="Toubon"::: Law](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) in France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) in Canada.
 
 * Does the feature incorporate components that aren't translated for your target markets? How will you handle unsupported markets? What are the ramifications, fall back mechanisms, etc.?
 
@@ -281,7 +285,7 @@ User interface isn't limited to a graphical user interface, but also includes er
 * If your feature has user interface elements, can they be designed to dynamically expand for other languages?
 
   For example, a date navigator shows days of the week abbreviated with two letters for English (Su, Mo, Tu) and expands to three-letter abbreviations for Turkish.
-  Keep in mind that text may expand vertically _and_ horizontally.
+  Keep in mind that text may expand both vertically and horizontally.
   Allow for text to expand horizontally.
   The length of words will increase in some languages, such as German, Finnish, and Czech.
   But also design for text to increase vertically.
