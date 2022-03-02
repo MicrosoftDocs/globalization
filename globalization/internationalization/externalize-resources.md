@@ -4,42 +4,45 @@ description: Localization requires strings and other localizable resources to be
 ---
 
 # Externalize localizable resources
+<!-- NOTE this article is not yet complete -->
+<!-- Add paragraph about externalization of non-loc resources -->
 
 ## Separate localizable and non-localizable resources
 
 ## Avoid repurposing strings
 
 Developers with a mindset for efficiency may be tempted to use the same string for multiple purposes.
-Reusing a string falls apart in a localized product because the context where a string is used is different.
+However, while the same string may work in many places in the source language, the translation appropriate for one context may not apply in another context.
 If the string isn't separated for each use, it may not be possible to provide a single translation that works for all uses of that string.
 A compromise translation creates confusion or incorrect results for international users.
 
 A word or phrase in the source language may have multiple meanings, and be understood in context.
-WHen translated, however, different contexts may require a different translation to make sense.
+When translated, however, different contexts may require a different translation to make sense.
+One-word strings used in menus, buttons, or as insertions in formatted strings, can be a problem.
+Words that are both nouns and verbs are a common source of issues in translation.
+The word "Click" for example is both a noun and a verb, and the translation may differ for each usage.
 
-Translation is typically priced by the word, so using multiple strings containing the same text may seem that it would increase the cost.
-This isn't the case because modern translation systems use a translation memory (TM).
-A translator's editor will suggest existing translations from the TM for similar or duplicate strings.
-For high-confidence matches, it will automatically add the translation and flag it for review by the translator.
-Reviewing is faster and lower cost than defining a new translation.
+Something as simple as "Yes" or "No" on a button may need different translation in context.
+For example, in Japanese, "Yes" may be translated as はい (Yes) or 有効 (Effective or Enabled)and, and "No" may be translated as いいえ (No) or 無効 (Disabled).
+If only a single resource is used to represent all uses of the word, the translation may not work everywhere it is used.
 
-In many cases, a TM match is appropriate, but may need to differ depending on context.
 In cases where the context demands a different translation, having the separate string allows the translator to provide the optimal translation.
-Without a separate string, the translator is forced to make compromises that may be flawed for the context.
-Contextual metadata for localizable resources (resource commenting) is important when the same term is used in multiple places.
+Without a separate string, the translator is forced to make compromises that may be flawed.
 
 ## Provide context for localizable resources
 
 Translation is never a word-by-word substitution.
-The choice of words and the information a sentence or word needs to convey is highly dependent on the context where it's used.
-A resource by itself isn't sufficient context for a translator to rely on.
-You can’t assume that the translator is aware of the file name or things close by.
-Modern resource formats and localization tools allow resource commenting.
-Developers should provide extensive comments to provide context.
+The information that a sentence or word needs to convey is highly dependent on the context where a string used.
+A word or sentence by itself isn't sufficient context for a translator.
+You cannot rely on your translators to know your product well.
+Developers provide context for resources through resource commenting (sometimes call "contextual metadata").
 
 A resource comment should explain where a string appears in the user interface and what it relates to.
-The comment can explain when and where the message is displayed to the user.
+The comment can explain the conditions under which the message is displayed.
 If the string contains technical terms or application jargon, the usage should be explained.
+
+If the string is a format string containing placeholders, it is particularly important to document the part of speech and meaning of each placeholder.
+See [Message formatting](..\internationalization/message-formatting.md) for more detailed guidance on message formatting.
 
 ## Non-localizable text
 

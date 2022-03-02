@@ -79,7 +79,7 @@ When used in the context of globalization, an encoding is a scheme whereby text 
 The entire process of bringing software to worldwide markets, including [globalization](#globalization), [localizability](#localizability), and [localization](#localization).
 Internationalization may also include special market customization (also known as "Marketization".
 
-You may see internationalization referred to by the shorthand **i18n**.
+You may see internationalization referred to by the shorthand **I18n**. The "18" refers to the number of omitted letters between "I" and "n".
 
 ## globalization
 
@@ -90,7 +90,7 @@ The application can operate correctly in all locales, and it can be localized (t
 It honors user and system settings for language, culture, country/region, and related data formatting.
 The code will support any combination of editing language, user locale, or user interface language with a single worldwide binary.
 
-You may see globalization referred to by the shorthand **g11n**.
+You may see globalization referred to by the shorthand **G11n**. The "11" refers to the number of omitted letters between "G" and "n"..
 
 ## glyph
 
@@ -121,7 +121,7 @@ CLDR is used by libraries such as the International Components for Unicode (ICU)
 
 The process of adapting a product so that it's suitable for use in a specific locale, including translating the applications user interface and user assistance.
 
-You may see localization referred to by the shorthand **l10n**.
+You may see localization referred to by the shorthand **L10n**. The "10" refers to the number of omitted letters between "L" and "n".
 
 ## localizability
 
@@ -244,7 +244,14 @@ Whether automated or semi-automated, the cost of translation is reduced by the t
 
 An encoding of Unicode using a sequence of bytes.
 
-## XLIFF
+## <a name=xliff></a> XML Localization Interchange File Format (XLIFF)
 
-An industry standard XML-based file format for localization.
+XLIFF is an industry standard XML-based file format for localization.
 You may hear it pronounced "x-leaf".
+
+The XLIFF standard is a product of the [:::no-loc text="OASIS XML Localisation Interchange File Format (XLIFF) TC":::](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=xliff) ("TC" stands for "Technical Committee").
+
+The following versions of the standard are in current use in the localization industry:
+
+* [XLIFF 1.2](https://www.oasis-open.org/standard/xliffv1-2/)
+* [XLIFF 2.1](https://www.oasis-open.org/standard/xliffv2-1/)

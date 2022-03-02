@@ -1,6 +1,6 @@
 ---
 title: International design
-description: It's important to think about internationalization from the very beginning of a software project. This article provides an extensive checklist of things to examine.
+description: It's important to think about internationalization from the very beginning of a software project. This article provides an extensive checklist of internationalization requirements when developing software.
 ---
 
 # International design
@@ -201,7 +201,7 @@ Here a list questions to ask yourself when designing for internationalization:
 
 ## Locale support
 
-Whenever possible, use existing APIs such Windows NLS, .NET, or ICU to address the following issues.
+Whenever possible, use existing locale APIs such Windows NLS, .NET, or ICU.
 Creating your own globalization methods can require extensive research and development, and may require local domain expertise.
 If you do find a need for a custom implementation, consider using the Common Locale Data Repository (CLDR) as a source of locale data.
 The CLDR is developed by local domain experts across the world.
@@ -209,7 +209,7 @@ The CLDR is developed by local domain experts across the world.
 * If your feature uses date and time, a calendar, or a calendar control, does it allow usage of different calendar types? For example:
 
   * If your feature displays date or time, does it allow different date or time format ordering?
-    For example, Japanese dates are often in the order of era, year, month, and date (平成 22年 12月 05日).
+    For example, Japanese dates are often in the order of era, year, month, and date (:::no-loc text="平成 22年 12月 05日":::).
 
   * Consider how different calendars may affect your features.
     Does your month picker support the 13 months found in the Hebrew Lunar calendar during a leap year?
@@ -221,8 +221,23 @@ The CLDR is developed by local domain experts across the world.
 
   * Turkish people place the percentage symbol (%) on the left side of a number (%20).
 
-* Does your feature display, input, send, receive, save or load whole numbers, decimals, percentages, negative numbers, or non-ASCII numbers?
-  Here's a sample of digits from other locales: :::no-loc text="**١**,**٢**, **๒**, **๓**":::.
+* Does your feature display, input, send, receive, save or load whole numbers, decimals, percentages, negative numbers, or numbers using digits other than 0-9?
+
+  Here's a sample of digits from other locales:
+:::no-loc text="&#x0661;":::,
+:::no-loc text="&#x0662;":::,
+:::no-loc text="&#x0663;":::,
+:::no-loc text="&#x07C1;":::,
+:::no-loc text="&#x07C2;":::,
+:::no-loc text="&#x07C3;":::,
+:::no-loc text="&#x0967;":::,
+:::no-loc text="&#x0968;":::,
+:::no-loc text="&#x0969;":::,
+:::no-loc text="&#x0BE7;":::,
+:::no-loc text="&#x0BE8;":::,
+:::no-loc text="&#x0BE9;":::,
+:::no-loc text="๒":::,
+:::no-loc text="๓":::
 
 * Does the feature display, input, send or receive, and save or load numbers as currency?
 
@@ -264,9 +279,12 @@ User interface isn't limited to a graphical user interface, but also includes er
 
 * If your feature has UI strings, are all the strings available to be translated?
 
-  For example, all UI is required to be translated by the [:::no-loc text="Toubon"::: Law](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) in France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) in Canada.
+  All UI is required to be available in French for products marketed in France and both French and English for products marketed in Canada.
+  See the [:::no-loc text="Toubon"::: Law](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) for France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) for Canada.
 
-* Does the feature incorporate components that aren't translated for your target markets? How will you handle unsupported markets? What are the ramifications, fall back mechanisms, etc.?
+* Does the feature incorporate components that aren't translated for your target markets?
+
+  How will you handle unsupported markets? What are the ramifications, and fall back mechanisms?
 
 * If your feature has UI elements that combine to form a sentence, can the UI be reordered?
   For example, the recurrence dialog in the calendar below is problematic.
@@ -274,7 +292,7 @@ User interface isn't limited to a graphical user interface, but also includes er
 
   ![Re-ordering UI elements for localization](images/reorder-elements.jpg)
 
-* If your feature has images that contain text that requires translation, can you use a different image instead?
+* If your feature has images that contain text that requires translation, can you use a generic image instead?
 
   Image translation adds complexity and extra cost to the localization process.
   It's recommended to create generic images or icons that work for all languages.
@@ -292,7 +310,7 @@ User interface isn't limited to a graphical user interface, but also includes er
   Some scripts have tall risers and descenders or accent characters that will expand beyond typical English or Latin script text.
 
 * Clipping and truncation can change meaning in profound or offensive ways.
-  Ensure you understand how the meaning can be changed if you clip part of the word, either horizontally or vertically.
+  Ensure you understand how the meaning can be changed if you clip part of a word, either horizontally or vertically.
   Removing an accent can change the meaning of a word: probably to something you didn’t intend!
 
 * Does your feature have dialogs that contain elements that show and hide content or controls dynamically?

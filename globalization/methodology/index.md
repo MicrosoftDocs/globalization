@@ -28,7 +28,7 @@ When planning, be intentional and specific about the scope of your audience by c
 Know your markets and audiences to be more relevant to your customers.
 We all come with an intuitive sense of what is acceptable and expected based on our own cultural and regional experience.
 The experiences of people elsewhere in the world can be remarkably different.
-Stereotypical or inauthentic representations—or lack of diverse representation—can turn customers away.
+Stereotypical, inauthentic, or lack of diverse representation can turn customers away.
 
 Consider these aspects, that may vary widely by locale and language:
 
@@ -104,13 +104,13 @@ When you're ready to localize into to more languages and markets, the cost is lo
 
 When starting a project, it's vital to get these fundamentals in place as early as possible:
 
-1. Separate localizable from non-localizable resources and [externalize localizable resources](../internationalization/externalize-resources.md).
+1. [Externalize resources](../internationalization/externalize-resources.md), and separate localizable from non-localizable resources.
 
 2. Produce and test localized builds.
 
    [Pseudolocalization](pseudolocalization.md) is an excellent strategy to enable build and test without the cost of translation.
 
-3. Validate the localization round-trip.
+3. Validate the localization round-trip from development to translator and back.
 
 This baseline should be maintained for the entire lifecycle of the product.
 

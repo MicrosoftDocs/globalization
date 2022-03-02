@@ -9,6 +9,10 @@ As with all aspects of product development, a role framework is useful for under
 A large organization may have specialists that fulfill each of these specific roles.
 In a small organization, individuals may cover more of the roles described here.
 
+Not everyone needs to be an expert.
+In a larger team, you can use the use the "champion" concept: individuals become champions for a particular area and develop expertise.
+To develop depth in a team, trade off the champions role over time, where each champion steps back from a front line role, to take a mentor role for the next champion.
+
 To establish this framework, we define two areas of work in the internationalization pipeline:
 
 * **upstream** tasks at the source level

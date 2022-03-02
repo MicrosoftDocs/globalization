@@ -38,6 +38,6 @@ The localization test load is thereby spread over the product lifecycle, instead
 Continuous localization is even more efficient when there's a tight integration with your development system.
 A service provider may have APIs or tools that create a direct connection between your development system and the provider's translation management system.
 An integrated system connection avoids an error-prone manual process of transferring and integrating localization files.
-At Microsoft, many teams are now using a system where localization happens directly during the build process.
+At Microsoft, many teams use a system where resource localization happens directly during the primary build process.
 
 Continuous localization may demand adjustments to the business model and service agreements with localization suppliers.
