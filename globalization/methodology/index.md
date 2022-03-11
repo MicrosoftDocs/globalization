@@ -97,14 +97,14 @@ When you build global awareness and localizability into your product and process
 In our experience, world-readiness can be quite challenging to retrofit to an existing application.
 For a pre-existing application, many components may need to be redesigned, particularly in the user interface.
 
-Even if your initial release is in only one language, a world-ready application can already reach more markets.
+Even if your initial release is in only one language, a world-ready application can reach more markets.
 When you're ready to localize into to more languages and markets, the cost is lower because your organization and the application are prepared.
 
 ## <a name="baseline"></a>Minimum baseline for localizability
 
 When starting a project, it's vital to get these fundamentals in place as early as possible:
 
-1. [Externalize resources](../internationalization/externalize-resources.md), and separate localizable from non-localizable resources.
+1. [Externalize resources](../internationalization/externalize-resources.md), separating localizable from non-localizable resources.
 
 2. Produce and test localized builds.
 
@@ -112,9 +112,16 @@ When starting a project, it's vital to get these fundamentals in place as early 
 
 3. Validate the localization round-trip from development to translator and back.
 
+   Perform an early pilot, perhaps with minimal content and only one or a few languages, to minimize surprises later.
+
+4. Implement the ability to choose the language and locale.
+
+   Having a means to select the language and locale independently from the language and locale of the platform makes it easy to develop, test, and debug with a minimum of friction.
+   Plus, it's a useful feature for users.
+
 This baseline should be maintained for the entire lifecycle of the product.
 
-Once you've set a strong baseline, you can start iterating!
+Once you've set a strong baseline, you can start iterating.
 For each sprint or milestone, evaluate your status and progress by defining [exit criteria](exit-criteria.md).
 
 For next steps, see [Global products and rapid development](rapid-development.md).

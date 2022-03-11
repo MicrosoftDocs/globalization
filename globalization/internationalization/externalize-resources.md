@@ -23,8 +23,11 @@ Words that are both nouns and verbs are a common source of issues in translation
 The word "Click" for example is both a noun and a verb, and the translation may differ for each usage.
 
 Something as simple as "Yes" or "No" on a button may need different translation in context.
-For example, in Japanese, "Yes" may be translated as はい (Yes) or 有効 (Effective or Enabled)and, and "No" may be translated as いいえ (No) or 無効 (Disabled).
-If only a single resource is used to represent all uses of the word, the translation may not work everywhere it is used.
+For example, in Japanese, "Yes" may be translated as :::no-loc text="はい"::: (Yes) or :::no-loc text="有効"::: (Effective or Enabled).
+"No" may be translated as :::no-loc text="いいえ"::: (No) or :::no-loc text="無効"::: (Disabled).
+Which translation is correct depends on the context.
+If "Yes" and "No" are button labels in a message box or user prompt, the correct translation will depend on exactly what the message says.
+If only a single resource is used to represent all uses of the word, the translation may not work everywhere it's used.
 
 In cases where the context demands a different translation, having the separate string allows the translator to provide the optimal translation.
 Without a separate string, the translator is forced to make compromises that may be flawed.
@@ -34,14 +37,14 @@ Without a separate string, the translator is forced to make compromises that may
 Translation is never a word-by-word substitution.
 The information that a sentence or word needs to convey is highly dependent on the context where a string used.
 A word or sentence by itself isn't sufficient context for a translator.
-You cannot rely on your translators to know your product well.
+You can’t rely on your translators to know your product well.
 Developers provide context for resources through resource commenting (sometimes call "contextual metadata").
 
 A resource comment should explain where a string appears in the user interface and what it relates to.
 The comment can explain the conditions under which the message is displayed.
 If the string contains technical terms or application jargon, the usage should be explained.
 
-If the string is a format string containing placeholders, it is particularly important to document the part of speech and meaning of each placeholder.
+If the string is a format string containing placeholders, it's particularly important to document the part of speech and meaning of each placeholder.
 See [Message formatting](..\internationalization/message-formatting.md) for more detailed guidance on message formatting.
 
 ## Non-localizable text

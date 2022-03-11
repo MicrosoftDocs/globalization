@@ -1,24 +1,22 @@
 ---
 title: Roles and responsibilities
-description: All members of a product team have roles and responsibilities with respect to globalization and localization. This article describes a role framework to help understand the jobs to be done.
+description: All members of a product team have roles and responsibilities with respect to globalization and localization. This article describes a role framework to help understand the work to be done.
 ---
 
 # Roles and responsibilities
 
-As with all aspects of product development, a role framework is useful for understanding the jobs to be done for localization.
+As with all aspects of product development, a role framework is useful for understanding the work to be done for localization.
 A large organization may have specialists that fulfill each of these specific roles.
 In a small organization, individuals may cover more of the roles described here.
 
-Not everyone needs to be an expert.
+Not everyone needs to be an expert, but everyone should have some awareness of internationalization basics.
 In a larger team, you can use the use the "champion" concept: individuals become champions for a particular area and develop expertise.
-To develop depth in a team, trade off the champions role over time, where each champion steps back from a front line role, to take a mentor role for the next champion.
+The champion is the local expert in a subject, acting as a resource for the rest of the team.
+To develop depth in a team, trade off the champion role over time, where each champion steps back from a front line role and mentors the next champion.
 
-To establish this framework, we define two areas of work in the internationalization pipeline:
+## Source roles
 
-* **upstream** tasks at the source level
-* **downstream** tasks for localization target locales
-
-## Upstream  roles
+The roles and responsibilities at source set the stage for doing actual localization..
 
 * architect
 * designer
@@ -28,9 +26,11 @@ To establish this framework, we define two areas of work in the internationaliza
 * user experience designer
 * project management (tracking and scheduling)
 
-## Downstream roles
+## Localization roles
 
-* developer
+These are the roles involved in the actual localization process.
+
+* localization tools development
 * tester
 * translator
 * local content creator
@@ -38,7 +38,7 @@ To establish this framework, we define two areas of work in the internationaliza
 * project manager (translation coordination)
 
 The timing for engaging in the activities for each role is critical.
-If world-readiness isn't considered at each step, particularly in the upstream activities, the ability to create localized versions is at risk and fixing it's expensive.
+If world-readiness isn't considered at each step, particularly in the fundamental enabling activities, the ability to create localized versions is at risk and fixing it is expensive.
 
 ## Responsibilities
 
@@ -46,12 +46,12 @@ Another perspective is to examine the activities that each role is responsible f
 
 Managerial activities include:
 
-* Design global features
-* Define [exit criteria](exit-criteria.md) to measure international status and progress
-* Define visual style guides, including mirroring
-* Define content style guides, covering terminology and usage.
+* Design global features.
+* Define [exit criteria](exit-criteria.md) to measure international status and progress.
+* Define visual style guides, including mirroring.
+* Define content style guides, covering terminology and usage. These are consumed by both developers and translators.
 * Establish issue tracking for the localization process and locale-specific issues.
-* Schedule alignments between development and the translation provider
+* Schedule alignments between development and the translation provider.
 
 Technical activities include:
 
@@ -60,6 +60,7 @@ Technical activities include:
   * Comment resources
   * Create the translation pipeline
   * Create localized builds
+* Implement language and region detection and user selection
 * Employ globalization APIs
-* Validate (test) functionality
 * Validate localizability
+* Validate (test) functionality

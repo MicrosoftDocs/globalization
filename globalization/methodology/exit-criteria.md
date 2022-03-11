@@ -6,7 +6,7 @@ description: Every development milestone should have a set of indicators for key
 # Localization exit criteria
 
 Every development milestone, whether it's a sprint or a major checkpoint, should have a set of key metrics to ensure the quality of a deliverable.
-Kay areas covered by a metric include:
+Key areas covered by a metric include:
 
 * Accessibility
 * Internationalization

@@ -8,13 +8,15 @@ description: How do you verify that your product is localizable without actually
 Pseudolocalization is a strategy where you can verify that your product is localizable without actually localizing into a real language.
 Pseudolocalization is informally referred to as simply "pseudo" when you're working in the context of localization.
 
-## Pseudo translation
+## Pseudotranslation
 
-Pseudo translation is an automated transformation of source text.
+Pseudotranslation is an automated transformation of source text.
 It simulates common effects of translation that commonly cause issues with a product.
 The transformation remains understandable enough that the product can still be used and tested without knowing a foreign language.
 
 Resources that haven't been exposed to localization are readily apparent because they won't be pseudo-translated.
+
+The pseudotranslation process will:
 
 - Add accents and characters from other scripts.
 
@@ -27,15 +29,17 @@ Resources that haven't been exposed to localization are readily apparent because
   In practice, there can be extreme cases where a string may be 200% or even 400% longer when translated into a real language.
   Strings that are one or two words commonly grow proportionally longer than longer strings.
 
+  Expanded strings reveal layout and truncation issues.
+
 - Pad text to the expansion length using characters from other scripts, such as Greek, Cyrillic, Asian, and Indic scripts.
 
-  Adding text from other scripts can reveal clipping and font-handling issues.
+  Adding text from other scripts helps reveal clipping and font-handling issues.
 
 - Add delimiters to the start and end of each string.
-  For example, wrap the string in a pair of `^` .
+  For example, wrap the string in a pair of caret characters (`^`).
 
-  Wrapping a string instantly reveals truncations in the product user interface because the delimiter will be missing.
-  Concatenations will also be revealed by the occurrence of `^^` in displayed text.
+  Wrapping a string instantly reveals truncations in the product user interface because the delimiter is missing.
+  Concatenations will also be revealed by the occurrence of paired delimiters embedded in the displayed text.
 
 ## Pseudo locales
 
@@ -55,14 +59,14 @@ Windows defines three pseudo-locales that you can use to test your application.
 
 Care must be taken to use locales that follow the rules for locale identifiers.
 
-When Microsoft was pioneering pseudo localization in Windows, they used tk-TM (Turkmen - Turkmenistan):
+When Microsoft was pioneering pseudolocalization in Windows, they used tk-TM (Turkmen - Turkmenistan):
 a valid locale name and one that Windows wasn't shipping at the time.
 This choice didn't work out well when the next release of Windows included tk-TM as a real locale.
 The collision caused many bugs, especially in the build and testing systems that assumed tk-TM was the pseudo-locale.
 Lesson learned: use locale names that are well-formed but will never describe a real language or locale.
 
 You may find references using ps-PS as a pseudo locale, but ps-PS can be interpreted as Pashto (Palestinian Authority).
-It's a well-formed locale name, but not one that makes very much sense.
+While ps-PS is a well-formed locale name, it's not one that makes very much sense.
 Pashto isn't commonly spoken in that region.
 
 <!--
@@ -80,4 +84,5 @@ If you look at RFC4646 (Tags for Identifying Languages) section 2.2.1.3:
 > These codes MAY be used for non-registered primary language subtags (instead of using private use subtags following 'x-').
 
 The Windows pseudo locales all start with `qps`, so they are in the allowed reserved range.
+This is the best practice for naming pseudo-locales.
 
