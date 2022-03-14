@@ -97,7 +97,7 @@ When you build global awareness and localizability into your product and process
 In our experience, world-readiness can be quite challenging to retrofit to an existing application.
 For a pre-existing application, many components may need to be redesigned, particularly in the user interface.
 
-Even if your initial release is in only one language, a world-ready application can reach more markets.
+Even if your initial release is in only one language, a world-ready application can reach more markets because it supports the local formatting conventions for calendar, date, time, numbers, and currency.
 When you're ready to localize into to more languages and markets, the cost is lower because your organization and the application are prepared.
 
 ## <a name="baseline"></a>Minimum baseline for localizability
@@ -116,8 +116,8 @@ When starting a project, it's vital to get these fundamentals in place as early 
 
 4. Implement the ability to choose the language and locale.
 
-   Having a means to select the language and locale independently from the language and locale of the platform makes it easy to develop, test, and debug with a minimum of friction.
-   Plus, it's a useful feature for users.
+   Having a means to select the language and locale independently from the language and locale of the platform makes it easy to develop, test, and debug.
+   Plus, it's a useful feature for multilingual users.
 
 This baseline should be maintained for the entire lifecycle of the product.
 

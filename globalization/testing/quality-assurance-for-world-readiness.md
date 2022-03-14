@@ -6,6 +6,10 @@ ms.assetid: 6ba1dbde-55ae-4495-be7f-03473e2aca30
 
 # Quality assurance for world-readiness
 
+<!-- TODO: QA as a separate organization is disappearing in a devops world 
+Recast all the 'testing' content in terms of tqa activities (whoever does it).
+-->
+
 The goal of ensuring world-readiness has a wider scope and requires more forethought than merely testing localized applications.
 It must start early on by determining the necessary criteria for globalization.
 Then the Quality Assurance (QA) organization must make sure that those implicit requirements are met throughout design and development.

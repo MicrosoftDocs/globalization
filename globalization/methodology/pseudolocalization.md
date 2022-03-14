@@ -16,7 +16,7 @@ The transformation remains understandable enough that the product can still be u
 
 Resources that haven't been exposed to localization are readily apparent because they won't be pseudo-translated.
 
-The pseudotranslation process will:
+A pseudotranslation process can:
 
 - Add accents and characters from other scripts.
 
@@ -59,7 +59,7 @@ Windows defines three pseudo-locales that you can use to test your application.
 
 Care must be taken to use locales that follow the rules for locale identifiers.
 
-When Microsoft was pioneering pseudolocalization in Windows, they used tk-TM (Turkmen - Turkmenistan):
+When Microsoft was pioneering pseudolocalization for Windows, they used tk-TM (Turkmen - Turkmenistan):
 a valid locale name and one that Windows wasn't shipping at the time.
 This choice didn't work out well when the next release of Windows included tk-TM as a real locale.
 The collision caused many bugs, especially in the build and testing systems that assumed tk-TM was the pseudo-locale.

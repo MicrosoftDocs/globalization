@@ -23,11 +23,12 @@ Words that are both nouns and verbs are a common source of issues in translation
 The word "Click" for example is both a noun and a verb, and the translation may differ for each usage.
 
 Something as simple as "Yes" or "No" on a button may need different translation in context.
+If "Yes" and "No" are button labels in a message box or user prompt, the correct translation will depend on exactly what the message says.
+If only a single resource is used to represent all uses of the word, the translation may not work everywhere it's used.
+
 For example, in Japanese, "Yes" may be translated as :::no-loc text="はい"::: (Yes) or :::no-loc text="有効"::: (Effective or Enabled).
 "No" may be translated as :::no-loc text="いいえ"::: (No) or :::no-loc text="無効"::: (Disabled).
 Which translation is correct depends on the context.
-If "Yes" and "No" are button labels in a message box or user prompt, the correct translation will depend on exactly what the message says.
-If only a single resource is used to represent all uses of the word, the translation may not work everywhere it's used.
 
 In cases where the context demands a different translation, having the separate string allows the translator to provide the optimal translation.
 Without a separate string, the translator is forced to make compromises that may be flawed.
