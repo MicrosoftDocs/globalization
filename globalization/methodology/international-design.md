@@ -288,7 +288,7 @@ User interface isn't limited to a graphical user interface, but also includes er
 
 * If your feature has UI elements that combine to form a sentence, can the UI be reordered?
   For example, the recurrence dialog in the calendar below is problematic.
-  It adds complexity to translation because the ordering doesn’t make sense in other languages.
+  The order does not make sense in some languages.
 
   ![Re-ordering UI elements for localization](images/reorder-elements.jpg)
 
