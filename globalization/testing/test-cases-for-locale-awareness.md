@@ -1,39 +1,51 @@
 ---
 title: Test cases for locale awareness
 description: Globalization test cases for verifying the data in various regional settings.
-ms.assetid: 7263c020-837b-478b-8c94-e59aeb913c8d
 ---
 
 # Test cases for locale awareness
 
+In general, applications should provide default options that reflect the user's locale, and allow the user to override defaults.
+
 ## Locale-independent data persistence
 
-Applications must store and retrieve documents containing locale-sensitive data (such as the date, time, and numeric information); check that this data is stored in a locale-neutral form.
-It must be formatted for display purposes only and must follow the rules of the settings on the reviewer's system.
+Applications must store and retrieve documents containing locale-sensitive data (such as the date, time, and numeric information).
+Check that this data is stored in a universal, locale-neutral form.
+This data is then formatted for display and follows the user's locale.
 
 **Applicability**: All applications that store data in an external persistent storage.
 
- Adherence to locale standards
- Verify that locale-specific data (such as the time, date, currency, and numeric values) can be entered, interpreted, stored, and retrieved according to the rules set by the user locale. Specifically, verify that: A.M./P.M. symbols are not hard-coded for the time values; different time and date formats can be used, including different separators; dates in different calendars can be entered and edited; positive and negative number formats are recognized correctly; neither the dollar sign nor any other symbol is hard-coded as a currency symbol.
+## Adherence to locale standards
+
+Verify that data can be entered, interpreted, stored, and retrieved in a manner consistent with the user's locale.
+Examples of locale-specific data are date, time, currency, and numbers.
+
+Currency values should be stored with the unit of currency, and formatted with the corresponding currency symbol for display.
 
 **Applicability**: All applications
 
 ## Dynamic usage of format separators
 
- Verify that date, time, and numeric values are entered with data separators; make sure the separators are not hard-coded in the application, but rather are defined based on the current user-locale settings.
+Verify that date, time, and numeric values are parsed using locale-aware methods.
+Make sure the separators or "picture" "formats are derived from locale data or localized data in the application.
 
 **Applicability**: Applications that allow you to enter formatted data.
 
 ## Paper and envelope sizes
 
-In accordance with the selected locale setting, check that applications pick the appropriate default paper and envelope sizes for correctly formatting information that's going to be printed.
-However, be sure to let the user override those settings.
-Verify that applications relay information about the proper default paper size to the printing device.
+For information that is going to be printed, check the appropriate default paper and envelope sizes are based on the user's locale.
+Give the user the ability to choose paper size and orientation.
+Verify that the application relays this information to the printing device.
 
 **Applicability**: Applications that format printable information.
 
-## Measurement-systems independence
+## Measurement-system independence
 
-Verify that applications that use real physical dimensions for formatting graphic and text data utilize the measurement system (metric or U.S. Customary System) corresponding to the user's locale settings.
+Verify that physical dimensions use the measurement system corresponding to the user's locale by default.
+The measurement system is usually a choice between the Metric system or the U.S. Customary System.
+A good application will also allow the user to override the default units with a choice of units or measurement system.
 
-**Applicability**: Applications that use real physical dimensions for formatting graphic and text data.
+The unit of measurement should be stored with the data.
+Or, an application may store data normalized to a fixed measure, then convert and format the value for display and input.
+
+**Applicability**: Applications that use real physical dimensions.
