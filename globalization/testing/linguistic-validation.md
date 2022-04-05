@@ -39,5 +39,6 @@ Samples may be chosen randomly or focus on known or probable problem areas.
 
 * Perform linguistic validation in the context of the running application.
 More problems can be observed when the linguistic validation is performed in the context of the user's experience, rather than at the resource level.
-For areas that may be challenging to see in-context, such as error messages, the validation must be performed at the resource level.
 See [In-Context Review (ICR)](in-context-review.md) for more information.
+
+* For areas that may be challenging to see in-context, such as error messages, the validation must be performed at the resource level.
