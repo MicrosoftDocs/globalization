@@ -50,11 +50,13 @@ When reviewing your code, be sure it meets the following requirements:
 
 ## <a name="pseudo"></a>Run a pseudolocalized version of the application
 
-Pseudolocalization can be the most effective way of finding localizability bugs, which are otherwise only detected when translating the application.
+Pseudolocalization (informally, "pseudo") can be the most effective way of finding localizability bugs, which are otherwise only detected when translating the application.
 Pseudolocalization gives you a "translation" without the cost of an actual translation.
 You can create pseudolocalized resources using the [Multilingual App Toolkit](/windows/uwp/design/globalizing/use-mat), or other translation tools.
 
-Once you pseudolocalize your program, test its functionality.
+See [Pseudolocalization](../methodology/pseudolocalization.md) for general information on pseudo.
+
+Once you pseudolocalize your application, test its functionality.
 Pseudolocalized applications should function no differently than their un-localized version.
 Besides detecting localizability bugs, pseudolocalization often reveals globalization problems as well.
 As a result, testing a pseudolocalized application can potentially be central to verifying that an application is world-ready.

@@ -7,7 +7,8 @@ ms.assetid: 022e7dc6-3be9-433b-8554-d356bdf751c1
 # Identify globalization problems
 
 The most serious globalization problem is functionality loss.
-This problem can surface either immediately, such as when a language is changed, or later, such as when accessing input data, such as non-Latin character input.
+This problem can surface immediately, such as when a language or locale is changed.
+Or, the problem might surface later, such as when accessing non-Latin character input.
 
 Some functionality problems manifest themselves in the form of display problems.
 The following are some common ones that you might see:
@@ -35,10 +36,8 @@ You can use the National Language Support (NLS) and the .NET Framework documenta
 Use this documentation for finding exactly what locale information you'll need to retrieve dynamically, and then apply those requirements to your project.
 
 When planning and running tests, remember that globalization is wider in scope than just supporting one particular language.
-The test you use to verify that code has been globalized might not seem to duplicate a realistic usage scenario.
-The settings of a particular globalized test may look a bit unnatural.
-Think about cars being tested in extreme weather conditions.
-Obviously the deserts of Arizona in midsummer or the frozen Alaskan tundra in midwinter don't represent typical driving conditions.
+The test you use to verify that code has been globalized might not replicate a realistic user scenario.
+The settings of a particular globalized test may look unnatural or extreme.
 However, by covering a wide range of conditions, the test will produce more comprehensive results.
 Similarly, your test should include potential markets you might not have considered or even heard of, and the multiple ways in which your product might be used.
 

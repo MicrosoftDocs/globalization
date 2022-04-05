@@ -8,7 +8,6 @@ description: Choosing a platform for the test is not enough to guarantee that th
 Choosing a platform for testing is not enough to guarantee that the test is globalized and that no globalization problems are left in the code.
 The static properties of the platform such as names of the system folders, built-in account names, and so on are only one part of the picture; you'll also need to consider those properties that can be manipulated.
 For instance, you can configure language and cultural preferences of Windows through different settings of system and user locales.
-You should tune these settings to exercise the potential problem areas of the application.
 
 You can use the following test settings to detect some typical globalization problems.
 

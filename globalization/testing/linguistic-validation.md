@@ -10,7 +10,7 @@ In this step of the validation process, a target language expert reviews transla
 
 Performing linguistic validation can be a critical early step when first engaging a translation supplier or piloting a new language.
 
-A linguistic reviewer looks at the following aspects of the translated content:
+A linguistic reviewer looks at the following aspects:
 
 | Aspect                     | Description |
 | -------------------------- | ----------- |
@@ -38,6 +38,6 @@ Samples may be chosen randomly or focus on known or probable problem areas.
 * Consider whether to use the same translation supplier or engage a third-party reviewer to ensure an objective validation.
 
 * Perform linguistic validation in the context of the running application.
-This type of linguistic validation is known as [In-Context Review (ICR)](in-context-review.md).
 More problems can be observed when the linguistic validation is performed in the context of the user's experience, rather than at the resource level.
-For more information, see [In-Context Review (ICR)](in-context-review.md).
+For areas that may be challenging to see in-context, such as error messages, the validation must be performed at the resource level.
+See [In-Context Review (ICR)](in-context-review.md) for more information.

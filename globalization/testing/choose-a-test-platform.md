@@ -15,17 +15,16 @@ Among the factors that can affect your decision are:
 * availability of the operating system for testing.
 
 Even if you're targeting a broader range of operating systems, Windows can be a good fit as your primary test platform.
-Windows gives you the flexibility with language and locale settings, in addition to native support for a broad range of languages and locales.
-
-By adjusting the Windows language and locale settings, the application will behave as though it's running on a localized platform.
-Thus you can simulate varying language and regional environments on one machine, according to which language and locales you set.
+Windows gives you extensive flexibility to change language and locale settings, without having to install a different version of the OS.
+Windows has native support for a broad range of languages and locales, and supports the addition of custom locales.
+By adjusting the Windows language and locale settings, you can simulate varying language and regional environments on a single machine.
 
 Even if the application has not been translated yet, you can begin testing its international regional support using pseudo locales.
 Windows includes the three pseudo locales :::no-loc text="qps-ploc":::, :::no-loc text="qps-plocm":::, and :::no-loc text="qps-ploca":::.
-The pseudo locales have been optimized for uncovering issues with proper locale support in an application.
+The pseudo locales have been optimized for uncovering issues with the usage of locales in an application.
 For more information on using pseudo locales, see [Pseudolocalization](../methodology/pseudolocalization.md).
   
-You can also use other language packs on Windows.
+You can also use additional language support on Windows.
 This is especially useful if your code implements a multilingual UI and has to adjust to the UI settings of the operating system.
 This approach is a more easily implemented alternative to installing multiple localized versions of the operating system.
 

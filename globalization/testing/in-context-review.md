@@ -39,7 +39,7 @@ Screen shots are often an artifact available from a product's testing process or
 
 In addition to the linguistic aspects in the article [Linguistic validation](linguistic-validation.md), ICR can discover other important issues that may not be apparent when reviewing translated text in isolation.
 
-Using [pseudolocalization](../methodology/pseudolocalization.md) can reveal many of these potential problems before you reach ICR.
+Using [pseudolocalization](../methodology/pseudolocalization.md) ("pseudo") can reveal many of these potential problems before you reach ICR.
 With pseudo, you don't need a target language expert and you review only once, not per-language.
 Using pseudo and fixing the issues before you perform ICR can help make your ICR more efficient.
 However, pseudolocalization is not a replacement for ICR.
@@ -54,7 +54,8 @@ Possible issues to be found by in-context review:
 * Mistranslation, perhaps due to lack of contextual comments.
 
 * Truncation: translated text that is cut off in the user interface due to it's length.
-Pseudolocalization will find many truncation issues, but will miss specific increases in translated text length.
+Pseudolocalization will find many truncation issues, but pseudo will miss some increases in translated text length.
+This is because pseudo applies an average proportional growth factor that does not capture specific extreme cases.
 
 * Clipping: Missing or partial characters due to characters that extend beyond the typical bounds.
 Examples include diacritics, stacked diacritics, and characters with long ascenders or descenders.

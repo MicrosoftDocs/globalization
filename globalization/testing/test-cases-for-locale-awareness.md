@@ -27,7 +27,7 @@ Currency values should be stored with the unit of currency, and formatted with t
 ## Dynamic usage of format separators
 
 Verify that date, time, and numeric values are parsed using locale-aware methods.
-Make sure the separators or "picture" "formats are derived from locale data or localized data in the application.
+Make sure the separators or formatting templates are derived from locale data or localized data in the application.
 
 **Applicability**: Applications that allow you to enter formatted data.
 
@@ -42,7 +42,7 @@ Verify that the application relays this information to the printing device.
 ## Measurement-system independence
 
 Verify that physical dimensions use the measurement system corresponding to the user's locale by default.
-The measurement system is usually a choice between the Metric system or the U.S. Customary System.
+The measurement system is usually a choice between the Metric system or the U.S. Customary System/Imperial system.
 A good application will also allow the user to override the default units with a choice of units or measurement system.
 
 The unit of measurement should be stored with the data.

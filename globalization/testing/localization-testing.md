@@ -1,11 +1,11 @@
 ---
 title: Localization testing
-description: Localization testing will test the user interface. This can be done after globalization test is complete.
+description: Localization testing will exercise the user interface with a focus on localized functionality and appearance.
 ---
 
 # Localization testing
 
-Once you have developed world-ready software, localization and, by extension, localization testing becomes possible .
+Once you have developed world-ready software, localization and, by extension, localization testing becomes possible.
 If you do decide to localize, you should be familiar with the scope and purpose of localization testing.
 
 Localization testing checks how well the build has been translated into a particular target language.

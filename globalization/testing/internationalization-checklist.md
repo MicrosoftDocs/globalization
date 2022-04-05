@@ -10,7 +10,7 @@ Here is a summary of areas that should be validated to ensure localizability.
 ## Operating system support
 
 * If appropriate, all application languages should run on all supported operating system languages using data in any language.
- The user's data may not be in the same language as the application's user interface, and may be multilingual.
+ The user's data may not be in the same language or script as the application's user interface, and may be multilingual.
 
 ## Reading and saving data to files
 
@@ -18,7 +18,7 @@ Here is a summary of areas that should be validated to ensure localizability.
 
 * Data written in the application running one language should be able to be read when the application is running any other supported language.
 
-* If the written file is intended for use with a third-party application, ensure that the third-party application can read the file correctly once data in different languages is included.
+* If the written file is intended for use with a third-party application, ensure that the third-party application can read the file correctly once data in different languages and scripts is included.
 
 ## Localizability
 
