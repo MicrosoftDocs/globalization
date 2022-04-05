@@ -20,10 +20,10 @@ Linguistic reviewers should be provided the following resources:
 
 * Product documentation in both the source language and the target language.
 
-* An agreed format for recording and reporting issues.
-This can be access to the product's issue tracking system, spreadsheets, documents, or email.
+* An agreed format and facility for recording and reporting issues.
+Issue reporting can be via access to the product's issue tracking system, spreadsheets, documents, or email.
 
-* A guide to your localization issue taxonomy. See [Issue taxonomy](issue-taxonomy.md) for more information.
+* A guide to your localization issue taxonomy. For more information, see [Issue taxonomy](issue-taxonomy.md).
 
 * Instructions for reaching as much of the user interface for an application as possible.
 You may be able to use your existing written test scenarios to aid the reviewer.
@@ -32,8 +32,8 @@ You may be able to use your existing written test scenarios to aid the reviewer.
 The reviewer supplies language and cultural expertise, and the product partner provides product knowledge and familiarity.
 The product partner will know the extent and workflow of an application and can quickly operate the UI to reach all areas of the product.
 
-* If a working application can't be provided to the reviewer, or some areas of the application are difficult to reach, the reviewer can work from screen shots.
-Screen shots are often an artifact available from a product's testing process or automation.
+* If a working application can't be provided to the reviewer or some areas of the application are difficult to reach, the reviewer can work from screenshots.
+Screenshots are often an artifact available from a product's testing process or automation.
 
 ## Problems found by in-context review
 
@@ -42,7 +42,7 @@ In addition to the linguistic aspects in the article [Linguistic validation](lin
 Using [pseudolocalization](../methodology/pseudolocalization.md) ("pseudo") can reveal many of these potential problems before you reach ICR.
 With pseudo, you don't need a target language expert and you review only once, not per-language.
 Using pseudo and fixing the issues before you perform ICR can help make your ICR more efficient.
-However, pseudolocalization is not a replacement for ICR.
+However, pseudolocalization isn't a replacement for ICR.
 In-context review will find unique language and locale issues that won't be found in pseudo.
 
 Possible issues to be found by in-context review:
@@ -51,11 +51,10 @@ Possible issues to be found by in-context review:
 
 * Over-translated text.
 
-* Mistranslation, perhaps due to lack of contextual comments.
+* Mistranslation, possibly due to lack of contextual comments.
 
-* Truncation: translated text that is cut off in the user interface due to it's length.
-Pseudolocalization will find many truncation issues, but pseudo will miss some increases in translated text length.
-This is because pseudo applies an average proportional growth factor that does not capture specific extreme cases.
+* Truncation: translated text that is cut off in the user interface due to its length.
+Pseudolocalization will find many truncation issues, but it will miss cases where a specific translation exceeds the  growth factor supplied by pseudo.
 
 * Clipping: Missing or partial characters due to characters that extend beyond the typical bounds.
 Examples include diacritics, stacked diacritics, and characters with long ascenders or descenders.
@@ -70,7 +69,7 @@ Examples include diacritics, stacked diacritics, and characters with long ascend
 
 * Improper list forms for the language.
 
-* Culturally-appropriate or inappropriate functionality.
+* Culturally appropriate or inappropriate functionality.
 
 * Missing locale-specific functionality. Examples include:
   * Missing sort by stroke order for Chinese.
@@ -83,4 +82,4 @@ Examples include diacritics, stacked diacritics, and characters with long ascend
 
 * Problems with the input or presentation of people's names.
 
-* Problems with data formats. These are issues with the presentation of numbers, dates, times, calendars, currency, addresses, telephone numbers, and so on.
+* Problems with data formats. There can be issues with the presentation of numbers, dates, times, calendars, currency, addresses, telephone numbers, and so on.

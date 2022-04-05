@@ -1,6 +1,6 @@
 ---
 title: Globalize test data
-description: Test data should be multilingual Unicode text different from the system locale. Use mixed scripts or Unicode-only text to discover codepage dependencies.
+description: Test data should be multilingual Unicode text different from the system locale. Use mixed scripts or Unicode-only text to discover codepage or other encoding dependencies.
 ---
 
 # Globalize test data
@@ -9,7 +9,9 @@ After the environment has been set for globalized testing, your regular test cas
 The test data must match the test.
 Use a mix of scripts such as Latin, Cyrillic, Armenian, Georgian, Thai, and Indic languages.
 
-Some particular areas of functionality might require special test data.
+The rest of this article describes Some particular areas of functionality might require special test data.
+These examples are just a few of the possibilities.
+A realistic test suite will cover more.
 
 ## Letter case
 
@@ -37,21 +39,21 @@ In Turkish, the letters sort in the order `I ı İ i` (U+0049, U+0131, U+0130, U
 Note that this order is not the same as the order of the values of the letter's Unicode code points.
 
 China has two different sort orders, one by pronunciation and one by stroke order.
-The results will vary based on the sort order the user choses.
+The results will vary based on the sort order the user chooses.
 
 | Pronunciation Order | Unicode Value | PinYin | Stroke Order | Unicode Value | PinYin |
 |--- | --- | --- | --- | --- | --- |
-| 䠀 | U+4800  | chang | 𠀀 | U+20000 | he |
-| 㠀 | U+3800  | dao   | 㐀 | U+3400  | qiu |
-| 䀀 | U+4000  | fan   | 䄀 | U+4100  | huo |
-| 䘀 | U+4600  | fu    | 䀀 | U+4000  | fan |
-| 𠀀 | U+20000 | he    | 䐀 | U+4400  | ji |
-| 䄀 | U+4100  | huo   | 㠀 | U+3800  | dao |
-| 䐀 | U+4400  | ji    | 㔀 | U+3500  | qing |
-| 𣀀 | U+23000 | lei   | 䠀 | U+4800  | chang |
-| 㔀 | U+3500  | qing  | 㘀 | U+3600  | zuo |
-| 㐀 | U+3400  | qiu   | 𣀀 | U+23000 | lei |
-| 㘀 | U+3600  | zuo   | 䘀 | U+4600  | fu |
+| :::no-loc text="䠀"::: | U+4800  | :::no-loc text="chang"::: | :::no-loc text="𠀀"::: | U+20000 | :::no-loc text="he"::: |
+| :::no-loc text="㠀"::: | U+3800  | :::no-loc text="dao":::   | :::no-loc text="㐀"::: | U+3400  | :::no-loc text="qiu"::: |
+| :::no-loc text="䀀"::: | U+4000  | :::no-loc text="fan":::   | :::no-loc text="䄀"::: | U+4100  | :::no-loc text="huo"::: |
+| :::no-loc text="䘀"::: | U+4600  | :::no-loc text="fu":::    | :::no-loc text="䀀"::: | U+4000  | :::no-loc text="fan"::: |
+| :::no-loc text="𠀀"::: | U+20000 | :::no-loc text="he":::    | :::no-loc text="䐀"::: | U+4400  | :::no-loc text="ji"::: |
+| :::no-loc text="䄀 ":::| U+4100  | :::no-loc text="huo":::   | :::no-loc text="㠀"::: | U+3800  | :::no-loc text="dao"::: |
+| :::no-loc text="䐀 ":::| U+4400  | :::no-loc text="ji":::    | :::no-loc text="㔀"::: | U+3500  | :::no-loc text="qing"::: |
+| :::no-loc text="𣀀"::: | U+23000 | :::no-loc text="lei":::   | :::no-loc text="䠀"::: | U+4800  | :::no-loc text="chang"::: |
+| :::no-loc text="㔀"::: | U+3500  | :::no-loc text="qing":::  | :::no-loc text="㘀"::: | U+3600  | :::no-loc text="zuo"::: |
+| :::no-loc text="㐀"::: | U+3400  | :::no-loc text="qiu":::   | :::no-loc text="𣀀"::: | U+23000 | :::no-loc text="lei"::: |
+| :::no-loc text="㘀"::: | U+3600  | :::no-loc text="zuo":::   | :::no-loc text="䘀"::: | U+4600  | :::no-loc text="fu"::: |
 
 ## Text processing and storage
 

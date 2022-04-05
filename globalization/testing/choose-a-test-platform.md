@@ -19,18 +19,19 @@ Windows gives you extensive flexibility to change language and locale settings, 
 Windows has native support for a broad range of languages and locales, and supports the addition of custom locales.
 By adjusting the Windows language and locale settings, you can simulate varying language and regional environments on a single machine.
 
-Even if the application has not been translated yet, you can begin testing its international regional support using pseudo locales.
+Even if the application hasn't been translated yet, you can begin testing its international regional support using pseudo locales.
 Windows includes the three pseudo locales :::no-loc text="qps-ploc":::, :::no-loc text="qps-plocm":::, and :::no-loc text="qps-ploca":::.
 The pseudo locales have been optimized for uncovering issues with the usage of locales in an application.
 For more information on using pseudo locales, see [Pseudolocalization](../methodology/pseudolocalization.md).
   
-You can also use additional language support on Windows.
-This is especially useful if your code implements a multilingual UI and has to adjust to the UI settings of the operating system.
+You can also use multiple language support on Windows.
+Multiple language support is especially useful if your code implements a multilingual UI and has to adjust to the UI settings of the operating system.
 This approach is a more easily implemented alternative to installing multiple localized versions of the operating system.
 
 Another test platform you can use is the localized build of the target operating system.
 If the tested application is to be localized into certain languages, these languages are the obvious choice for the platform.
-If the target operating system is Windows, other language versions of the operating system can be used too, even if the UI language does not match the language of your application.
-By using this configuration, you check how your application interacts with a localized system, where names of the system folders, built-in accounts, fonts, and other system objects might be different from what you get with an English or other language system.
+If the target operating system is Windows, other language versions of the operating system can be used too, even if the UI language doesn't match the language of your application.
+By using this configuration, you check how your application interacts with a localized system.
+In this configuration, names of the system folders, built-in accounts, fonts, and other system objects can be different.
 
 Once you've chosen a test platform, the next step is to [create the test environment](create-the-test-environment.md).
