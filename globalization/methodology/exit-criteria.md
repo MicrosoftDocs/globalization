@@ -44,7 +44,7 @@ Some of the aspects that you should include in your "international" exit criteri
 Such aspects are validated through testing.
 For more information about testing and validation, see:
 
-* [Global test design](../testing/globalization-of-the-test.md)
+* [Global test design](../testing/globalize-the-test.md)
 * [Localizability testing](../testing/localizability-testing.md)
 * [Localization testing](../testing/localization-testing.md)
 * [Test case samples](../testing/sample-international-test-cases.md)

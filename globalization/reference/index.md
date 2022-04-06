@@ -1,10 +1,10 @@
 ---
 title: References
-description: This article provides links to helpful globalization information on the web.
+description: This article provides links to helpful globalization tools and information on the web.
 ---
 # References
 
-Helpful globalization tools from Microsoft:
+Globalization tools from Microsoft:
 
 * [Multilingual App Toolkit Editor](https://developer.microsoft.com/en-us/windows/downloads/multilingual-app-toolkit/)
 * [Multilingual App Toolkit – Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308)
@@ -14,7 +14,7 @@ Helpful globalization tools from Microsoft:
 * [Microsoft Keyboard layout creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134)
 * [Windows Locale Builder Tool](https://www.microsoft.com/en-us/download/details.aspx?id=41158)
 
-Helpful globalization information on the web can be found at:
+Globalization information on the web can be found at:
 
 * [Unicode](http://www.unicode.org/)
 * [Common Language Data Repository (CLDR)](http://cldr.unicode.org/)

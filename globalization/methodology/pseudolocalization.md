@@ -41,6 +41,11 @@ A pseudotranslation process can:
   Wrapping a string instantly reveals truncations in the product user interface because the delimiter is missing.
   Concatenations will also be revealed by the occurrence of paired delimiters embedded in the displayed text.
 
+## Pseudotranslation tools
+
+Pseudotranslation is supported by the [Multilingual App Toolkit Editor](https://developer.microsoft.com/en-us/windows/downloads/multilingual-app-toolkit/).
+Commercial and open source localization tools may provide an option for pseudotranslation.
+
 ## Pseudo locales
 
 You can discover issues with formatting and parsing numbers, dates, times, and currency by using a pseudo locale.
@@ -54,6 +59,9 @@ Windows defines three pseudo-locales that you can use to test your application.
 | Base                | qps-ploc  |
 | Mirrored            | qps-plocm |
 | East Asian-language | qps-ploca |
+
+You can test with pseudo locales even if you are not using pseudotranslation, or have not enabled it yet.  
+<!-- Does CLDR include pseudo locales? -->
 
 ### Locale identifiers for pseudo
 

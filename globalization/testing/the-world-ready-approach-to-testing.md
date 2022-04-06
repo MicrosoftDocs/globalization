@@ -1,8 +1,6 @@
 ---
 title: A world-ready approach to testing
 description: World-ready testing reduces redundancy in test runs on localized products and helps make simultaneous release possible.
-ms.assetid: a6b10a4c-a8b4-4ccb-9c1e-d5f82adcacc0
-ms.date: 04/03/2017
 ---
 
 # A world-ready approach to testing
@@ -31,7 +29,7 @@ Instead, language proficiency becomes the major requirement for the tester.
 
 See [Localization testing](localization-testing.md).
 
-Testing is not the only area that benefits from a global-ready application.
+Testing isn't the only area that benefits from a global-ready application.
 The entire localization process in general becomes less complex and requires fewer resources.
 
 The following list is just a few examples of how the localization process becomes more efficient:
@@ -56,9 +54,9 @@ Most importantly, the figure reinforces some key ideas about globalizing the QA 
 **Figure 1**: Testing process for shipping an internationalized product.
 
 Another key implication of globalization-and globalized testing-is the ability to expand the target market after the initial product is shipped.
-Even if supporting a locale or language was not on your mind when the application was developed, you can reevaluate later and move to a new market without changing the code.
+Even if supporting a locale or language wasn't on your mind when the application was developed, you can reevaluate later and move to a new market without changing the code.
 Globalized testing performed in the development cycle will ensure there are no serious problems with this move.
-Some basic language-specific or locale-specific verification is required, but the amount can be significantly reduced compared to what was needed before releasing a language-specific application.
+Some basic language-specific or locale-specific verification is required, but the amount can be reduced compared to what was needed before releasing a language-specific application.
 When properly conducted, globalized testing will decrease the number of bugs, help you use resources more efficiently, and reduce costs down the road.
 
-[Globalization of the test](globalization-of-the-test.md) will show you how to prepare and carry out an effective globalized test.
+[Globalization of the test](globalize-the-test.md) will show you how to prepare and carry out an effective globalized test.
