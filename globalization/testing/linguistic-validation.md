@@ -9,6 +9,12 @@ Linguistic validation can be an important step in ensuring quality translations 
 In this step of the validation process, a target language expert reviews translations to ensure that they're correct.
 
 Performing linguistic validation can be a critical early step when first engaging a translation supplier or piloting a new language.
+In early phases of a product, linguistic validation is typically focused on samples of localized resources and content in isolation.
+Later on, review can be conducted in the context of the running application ([In-Context Review (ICR)](in-context-review.md)).
+Ideally, you do both early linguistic validation, and in-context review before release.
+
+The review should be performed by native speakers of the language.
+Using in-country reviewers is highly recommended to ensure that the localized content is aligned with target market expectations.
 
 A linguistic reviewer looks at the following aspects:
 
@@ -24,7 +30,7 @@ A linguistic reviewer looks at the following aspects:
 | Cultural appropriateness   | Is the translation a good fit for the target culture? The translation may be too literal a translation of the source text. |
 | Correct formats for data   | Is the formatting of data correct for the target culture? |
 
-While linguistic review is primarily focused on the linguistic aspects of the translation, the reviewer will naturally observe other problems that can occur during localization.
+While linguistic review is primarily focused on the linguistic and cultural aspects of the translation, the reviewer will naturally observe other problems that can occur during localization.
 All issues should be captured and reported in the review process.
 
 The following recommendations can improve the effectiveness of linguistic review:
@@ -37,8 +43,11 @@ Samples may be chosen randomly or focus on known or probable problem areas.
 
 * Consider whether to use the same translation supplier or engage a third-party reviewer to ensure an objective validation.
 
-* Perform linguistic validation in the context of the running application.
-More problems can be observed when the linguistic validation is performed in the context of the user's experience, rather than at the resource level.
-See [In-Context Review (ICR)](in-context-review.md) for more information.
+* For languages like Spanish, French, or Arabic, the expectations around in-country reviews need to be clearly set.
+  There are many different countries and regions where these languages are spoken, with significant vocabulary and terminology differences among them.
+  So having a clear linguistic strategy for these languages very early on in the product development process can be important.
+  The most common strategy for such languages is to release a single "neutral" version of the language that can be made acceptable among target markets.
+  For some languages like Portuguese, the differences between Brazil and Portugal are so significant that the "neutral" language may not be appropriate.
 
-* For areas that may be challenging to see in-context, such as error messages, the validation must be performed at the resource level.
+* In-country reviews also help validate the need for adding extra language variants to cater for significant linguistic differences among markets
+  Market size may be a significant factor in choosing to add a specific regional variant of a language, such as for French (Canada), and Spanish (Mexico).

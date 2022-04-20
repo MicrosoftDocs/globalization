@@ -1,12 +1,15 @@
 ---
 title: Pseudolocalization
-description: How do you verify that your product is localizable without actually localizing into a real language? By faking it with pseudo-localization.
+description: How do you verify that your product is localizable without actually localizing into a real language? By faking it with pseudolocalization.
 ---
 
 # Pseudolocalization
 
-Pseudolocalization is a strategy where you can verify that your product is localizable without actually localizing into a real language.
 Pseudolocalization is informally referred to as simply "pseudo" when you're working in the context of localization.
+
+Pseudolocalization is a strategy where you can verify that your product is localizable without actually localizing into a real language.
+Pseudo enables the discovery of many potential issues in localization, separately from any actual translation.
+The pseudo strategy can be applied in the earliest phases of development before translation begins.
 
 ## Pseudotranslation
 
@@ -14,22 +17,24 @@ Pseudotranslation is an automated transformation of source text.
 It simulates common effects of translation that commonly cause issues with a product.
 The transformation remains understandable enough that the product can still be used and tested without knowing a foreign language.
 
+While pseudo can help discover many potential issues with localization, it isn't a complete replacement for validating the translated application.
+
 Resources that haven't been exposed to localization are readily apparent because they won't be pseudo-translated.
 
 A pseudotranslation process can:
 
 - Add accents and characters from other scripts.
 
-  For example, the letter `a` is transformed into any one of `äáàāāǎǎăăåå`, selected at random.
-  A parallel transformation is applied to other letters.
+  For example, the letter `a` is replaced by any one of `αäáàāāǎǎăăåå` selected at random.
+  The digits 1-9 can be replaced by circled digits &#x2460;-&#x2468; (U+2460 - U+2468).
+  A similar replacement can be applied to other characters.
 
 - Expand the string to simulate the longer strings that result from translation.
+  Expanded strings reveal layout and truncation issues.
 
   When the source language is English, a good heuristic is to lengthen the text by 40%.
   In practice, there can be extreme cases where a string may be 200% or even 400% longer when translated into a real language.
-  Strings that are one or two words commonly grow proportionally longer than longer strings.
-
-  Expanded strings reveal layout and truncation issues.
+  Strings that are one or two words commonly grow proportionally longer than strings with more words.
 
 - Pad text to the expansion length using characters from other scripts, such as Greek, Cyrillic, Asian, and Indic scripts.
 
@@ -39,12 +44,15 @@ A pseudotranslation process can:
   For example, wrap the string in a pair of caret characters (`^`).
 
   Wrapping a string instantly reveals truncations in the product user interface because the delimiter is missing.
-  Concatenations will also be revealed by the occurrence of paired delimiters embedded in the displayed text.
+  Concatenations will also be revealed by paired delimiters embedded in the displayed text.
+
+- Add a unique identifier so that you can easily locate the resource in the source.
+  The identifier can be a hash of the resource identifier or some other data to uniquely identify the resource.
 
 ## Pseudotranslation tools
 
-Pseudotranslation is supported by the [Multilingual App Toolkit Editor](https://developer.microsoft.com/en-us/windows/downloads/multilingual-app-toolkit/).
-Commercial and open source localization tools may provide an option for pseudotranslation.
+Pseudotranslation is supported by the [Multilingual App Toolkit Editor](https://developer.microsoft.com/windows/downloads/multilingual-app-toolkit/).
+Commercial and open source localization tools may also provide an option for pseudotranslation.
 
 ## Pseudo locales
 
@@ -60,7 +68,7 @@ Windows defines three pseudo-locales that you can use to test your application.
 | Mirrored            | qps-plocm |
 | East Asian-language | qps-ploca |
 
-You can test with pseudo locales even if you are not using pseudotranslation, or have not enabled it yet.  
+You can test with pseudo locales even if you aren't using pseudotranslation, or haven't enabled it yet.  
 <!-- Does CLDR include pseudo locales? -->
 
 ### Locale identifiers for pseudo
@@ -92,5 +100,3 @@ If you look at RFC4646 (Tags for Identifying Languages) section 2.2.1.3:
 > These codes MAY be used for non-registered primary language subtags (instead of using private use subtags following 'x-').
 
 The Windows pseudo locales all start with `qps`, so they are in the allowed reserved range.
-This is the best practice for naming pseudo-locales.
-

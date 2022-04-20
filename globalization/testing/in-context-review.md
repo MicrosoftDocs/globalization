@@ -10,6 +10,8 @@ ICR means performing [linguistic validation](linguistic-validation.md) in the co
 For documentation, the reviewer uses the same presentation medium that user's see.
 More problems can be observed when the linguistic validation is performed in the context of the user's experience, rather than at the resource level.
 
+The criteria for choosing in-context reviewers are the same as for [linguistic validation](linguistic-validation.md).
+
 ## How to perform in-context review
 
 Linguistic reviewers should be provided the following resources:
