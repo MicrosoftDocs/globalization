@@ -7,8 +7,8 @@ description: How do you verify that your product is localizable without actually
 
 Pseudolocalization is informally referred to as simply "pseudo" when you're working in the context of localization.
 
-Pseudolocalization is a strategy where you can verify that your product is localizable without actually localizing into a real language.
-Pseudo enables the discovery of many potential issues in localization, separately from any actual translation.
+With pseudo, you can verify that your product is localizable without actually localizing into a real language.
+Many potential issues in localization can be discovered independently from actual translation.
 The pseudo strategy can be applied in the earliest phases of development before translation begins.
 
 ## Pseudotranslation
@@ -29,12 +29,15 @@ A pseudotranslation process can:
   The digits 1-9 can be replaced by circled digits &#x2460;-&#x2468; (U+2460 - U+2468).
   A similar replacement can be applied to other characters.
 
-- Expand the string to simulate the longer strings that result from translation.
+- Expand the string to simulate the longer strings that can result from translation.
   Expanded strings reveal layout and truncation issues.
 
   When the source language is English, a good heuristic is to lengthen the text by 40%.
   In practice, there can be extreme cases where a string may be 200% or even 400% longer when translated into a real language.
   Strings that are one or two words commonly grow proportionally longer than strings with more words.
+
+  Translations can also be shorter than the source text.
+  Shrinkage generally causes fewer issues than growth and is challenging to simulate, so isn't used with pseudo.
 
 - Pad text to the expansion length using characters from other scripts, such as Greek, Cyrillic, Asian, and Indic scripts.
 
