@@ -1,6 +1,6 @@
 ---
 title: Localizability of user interface controls
-description: A major localizability consideration for the UI involves UI controls.
+description: A major localizability consideration for the UI involves UI controls. 
 ---
 
 # Localizability of user interface controls

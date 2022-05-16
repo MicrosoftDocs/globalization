@@ -1,6 +1,6 @@
 ---
 title: Traditional Chinese Localization Style Guide
-description: Are you helping with translation into Traditional Chinese, but don't have time to study all aspects of the Traditional Chinese Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Traditional Chinese, but aren't able to study all the Traditional Chinese Style Guide? Here are the ten most important aspects.
 ms.date: 03/04/2019
 ---
 
@@ -38,11 +38,11 @@ Bold and italic style should be avoided for Traditional Chinese characters. For 
 
 Example:
 
-_English_: For more information, see the _Office 2010 Migration Guide_.
+_English_: :::no-loc text="For more information, see the _Office 2010 Migration Guide_":::.
 
-_Our style_: <span lang="zh-Hant">如需詳細資訊，請參閱《Office 2010 移轉指南》。</span>
+_Our style_: :::no-loc text="如需詳細資訊，請參閱《Office 2010 移轉指南》。":::
 
-_Not our style_: <span lang="zh-Hant">如需詳細資訊，請參閱 _Office 2010 移轉指南_。</span>
+_Not our style_: :::no-loc text="如需詳細資訊，請參閱 _Office 2010 移轉指南_。":::
 
 Exceptions:
 
@@ -51,41 +51,41 @@ Exceptions:
 
 Example:
 
-_English_: The user **can't** be removed once all other users are removed.
+_English_: :::no-loc text="The user **can't** be removed once all other users are removed":::.
 
-_Our style_: <span lang="zh-Hant">移除所有其他使用者之前，**無法**移除該使用者。</span>
+_Our style_: :::no-loc text="移除所有其他使用者之前，**無法**移除該使用者。":::
 
-_Not our style_: <span lang="zh-Hant">移除所有其他使用者之前，「無法」移除該使用者。</span>
+_Not our style_: :::no-loc text="移除所有其他使用者之前，「無法」移除該使用者。":::
 
 Bold style used to indicate user input should be kept as is.
 
 Example:
 
-_English_: Type **a:\setup**
+_English_: :::no-loc text="Type **a:\setup**":::
 
-_Our style_: <span lang="zh-Hant">輸入 **a:\setup**</span>
+_Our style_: :::no-loc text="輸入 **a:\setup**":::
 
-_Not our style_: <span lang="zh-Hant">輸入a:\setup</span>
+_Not our style_: :::no-loc text="輸入a:\setup":::
 
 _Italic_ style for placeholders should be replaced with **bold** style.
 
 Example:
 
-_English_: Type _password_
+_English_: :::no-loc text="Type _password_":::
 
-_Our style_: <span lang="zh-Hant">輸入**密碼**</span>
+_Our style_: :::no-loc text="輸入**密碼**":::
 
-_Not our style_: <span lang="zh-Hant">輸入_密碼_</span>
+_Not our style_: :::no-loc text="輸入_密碼_":::
 
 For UI terms in documentation and Help, move the UI term out of the \<bold>, \<italic>, or \<ui> tag, and enclose it with half-width square brackets ([ ]).
 
 Example:
 
-_English_: Click **Open** to open it.
+_English_: :::no-loc text="Click **Open** to open it.":::
 
-_Our style_: <span lang="zh-Hant">按一下 [開啟] 以開啟它。</span>
+_Our style_: :::no-loc text="按一下 [開啟] 以開啟它。":::
 
-_Not our style_: <span lang="zh-Hant">按一下 **開啟** 以開啟它。</span>
+_Not our style_: :::no-loc text="按一下 **開啟** 以開啟它。":::
 
 **Exception**: For a placeholder in the UI that will be replaced by actual text or text input by the user at runtime, replace the _Italic_ style with **Bold** style per the previous instruction.
 
@@ -126,7 +126,7 @@ Use the English colon (:) when translating UI. The Traditional Chinese colon (�
 In Traditional Chinese, please follow the rules as follows for quotation marks:
 
 - **UI**: In US source strings, you may find software references surrounded by English quotation marks. In Traditional Chinese, UI strings should be enclosed with [ ].
-- **Properties, reserved words, and parameters**: Keep the quotation marks as they appear in English. There’s no need to enclose these items with [ ].
+- **Properties, reserved words, and parameters**: Keep the quotation marks as they appear in English. There's no need to enclose these items with [ ].
 - **Titles of user guides, chapters, and sections**: Use《》for the titles of works such as books and manuals. Use ＜＞ for chapters and sections.
 - **Quoted passages, new terms, and emphasis**: Use「」for these scenarios.
 
@@ -142,23 +142,23 @@ The following table lists the types of items that need to be enclosed [ ] and th
 
 |Type|Need [ ]?|English text|Translated text|
 |---|---|---|---|
-|Check box|Y|Select the Match Case check box.|<span lang="zh-Hant">選取 [大小寫須相符] 核取方塊。</span>|
-|Combo box|Y|In the Font box, type or select the font that you want to use.|<span lang="zh-Hant">在 [字型大小] 下拉式方塊中，輸入或選取您想使用的大小。</span>|
-|Command button|Y|Click OK.|<span lang="zh-Hant">按一下 [確定]。</span>|
-|Menu|Y|The File menu|<span lang="zh-Hant">[檔案] 功能表</span>|
-|Window||Untitled - Notepad window|<span lang="zh-Hant">[未命名 - 記事本] 視窗</span>|
-|Folder|Y|My Favorites|<span lang="zh-Hant">[我的最愛]</span>|
-|Field|Y|the Form field|<span lang="zh-Hant">[表單] 欄位</span>|
-|Button|Y|the Unfold button|<span lang="zh-Hant">[展開] 按鈕</span>|
-|Tab|Y|On the Tools menu, click Options, and then click the View tab.|<span lang="zh-Hant">在 [工具] 功能表中，依序按一下 [選項] 及 [檢視] 索引標籤。</span>|
-|List box|Y|the Files of type list box|<span lang="zh-Hant">[檔案類型] 清單方塊</span>|
-|View|Y|Full Screen view|<span lang="zh-Hant">[全螢幕] 檢視</span>|
-|Dialog box|Y|The Options dialog box|<span lang="zh-Hant">[選項] 對話方塊</span>|
-|View (not capitalized)|N|Switch to normal view.|<span lang="zh-Hant">切換到標準模式</span>|
-|Window (not capitalized)|N|... in the document window ...|<span lang="zh-Hant">在文件視窗中</span>|
-|File|N|Open the Letter to Joe file|<span lang="zh-Hant">打開檔案 Letter to Joe - 或 - 打開「給喬的信」這個檔案</span>|
+|Check box|Y|:::no-loc text="Select the Match Case check box.":::|:::no-loc text="選取 [大小寫須相符] 核取方塊。":::|
+|Combo box|Y|:::no-loc text="In the Font box, type or select the font that you want to use.":::|:::no-loc text="在 [字型大小] 下拉式方塊中，輸入或選取您想使用的大小。":::|
+|Command button|Y|:::no-loc text="Click OK.":::|:::no-loc text="按一下 [確定]。":::|
+|Menu|Y|:::no-loc text="The File menu":::|:::no-loc text="[檔案] 功能表":::|
+|Window||:::no-loc text="Untitled - Notepad window":::|:::no-loc text="[未命名 - 記事本] 視窗":::|
+|Folder|Y|:::no-loc text="My Favorites":::|:::no-loc text="[我的最愛]":::|
+|Field|Y|:::no-loc text="the Form field":::|:::no-loc text="[表單] 欄位":::|
+|Button|Y|:::no-loc text="the Unfold button":::|:::no-loc text="[展開] 按鈕":::|
+|Tab|Y|:::no-loc text="On the Tools menu, click Options, and then click the View tab.":::|:::no-loc text="在 [工具] 功能表中，依序按一下 [選項] 及 [檢視] 索引標籤。":::|
+|List box|Y|:::no-loc text="the Files of type list box":::|:::no-loc text="[檔案類型] 清單方塊":::|
+|View|Y|:::no-loc text="Full Screen view":::|:::no-loc text="[全螢幕] 檢視":::|
+|Dialog box|Y|:::no-loc text="The Options dialog box":::|:::no-loc text="[選項] 對話方塊":::|
+|View (not capitalized)|N|:::no-loc text="Switch to normal view.":::|:::no-loc text="切換到標準模式":::|
+|Window (not capitalized)|N|:::no-loc text="... in the document window ...":::|:::no-loc text="在文件視窗中":::|
+|File|N|:::no-loc text="Open the Letter to Joe file":::|:::no-loc text="打開檔案 Letter to Joe - 或 - 打開「給喬的信」這個檔案":::|
 |Location|N|C:\folder1\file.ext|C:\folder1\file.ext|
-|URL|N|Please link to <https://www.microsoft.com/taiwan/> for more information.|<span lang="zh-Hant">如需詳細資訊，請連結至 <https://www.microsoft.com/taiwan/></span>|
+|URL|N|:::no-loc text="Please link to <https://www.microsoft.com/taiwan/> for more information.":::|:::no-loc text="如需詳細資訊，請連結至 <https://www.microsoft.com/taiwan/>":::|
 
 ## 6. Spacing
 
@@ -208,7 +208,7 @@ Sensitive issues or issues that might offend the users in the target country or 
 - Art and graphics
 - Cultural content, such as encyclopedia content and other text where historical or political references are present
   
-Please translate "country" as "<span lang="zh-Hant">國家/地區</span>" (country/region) to avoid political issues.
+Please translate "country" as ":::no-loc text="國家/地區":::" (country/region) to avoid political issues.
 
 A thorough understanding of the culture of the target market is required for checking the appropriateness of cultural content, clip art, visual representations of religious symbols, and body and hand gestures.
 
@@ -220,7 +220,7 @@ Example:
 
 _English_: Please click OK to continue.
 
-_Our style_: <span lang="zh-Hant">請按一下 [\\[]確定[\\]] 繼續。</span>
+_Our style_: :::no-loc text="請按一下 [\\[]確定[\\]] 繼續。":::
 
 **Note**: This is because in .msi files, variables are enclosed in [ ]. Therefore, we need to escape the brackets.
 
@@ -230,4 +230,4 @@ Example:
 
 _English_: The ProcessName property contains the name of the process.
 
-_Our style_: <span lang="zh-Hant">ProcessName 屬性包含處理程序名稱。</span>
+_Our style_: :::no-loc text="ProcessName 屬性包含處理程序名稱。":::

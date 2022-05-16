@@ -1,6 +1,6 @@
 ---
 title: French Localization Style Guide
-description: Are you helping with translation into French, but don't have time to study all aspects of the French Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into French, but don't have time to study all of the French Style Guide? Here are the ten most important aspects.
 ms.date: 04/12/2019
 ---
 
@@ -18,9 +18,9 @@ Are you helping with translation into French, but don't have time to study all a
 
 Example:
 
-_English_: You are connected to the internet.
+_English_: :::no-loc text="You are connected to the internet.":::
 
-_Our style_: <span lang="fr">Vous êtes connecté à Internet.</span>
+_Our style_: :::no-loc text="Vous êtes connecté à Internet.":::
 
 ## 2. Punctuation
 
@@ -30,21 +30,21 @@ _Our style_: <span lang="fr">Vous êtes connecté à Internet.</span>
 - Don't use exclamation points just because they appear in the source. Use stronger words.
 - As with exclamation points, use question marks judiciously.
 - Use colons to introduce lists and explanations. You may use a colon at the end of an introductory phrase even if it's not a complete sentence. Don't use a colon to introduce only one idea (unless it's a quotation or an explanation).
-- Don't overuse capital letters, even if they’re used in the English text.
+- Don't overuse capital letters, even if they're used in the English text.
 
 Example:
 
-_English_: How to Create a File
+_English_: :::no-loc text="How to Create a File":::
 
-_Our style_: <span lang="fr">Création d'un fichier</span>
+_Our style_: :::no-loc text="Création d'un fichier":::
 
-- In French, it’s recommended to replace the dash (–) with a period, comma, or parentheses when the dash is used to emphasize something or introduce a nonessential element.
+- In French, it's recommended to replace the dash (–) with a period, comma, or parentheses when the dash is used to emphasize something or introduce a nonessential element.
 
 Example:
 
-_English_: Each table in your database should store facts about a single subject—about customers, for example, or products.
+_English_: :::no-loc text="Each table in your database should store facts about a single subject—about customers, for example, or products.":::
 
-_Our style_: <span lang="fr">Chacune des tables de votre base de données devrait se limiter à un seul sujet, tel que clients ou produits, par exemple.</span>
+_Our style_: :::no-loc text="Chacune des tables de votre base de données devrait se limiter à un seul sujet, tel que clients ou produits, par exemple.":::
 
 ## 3. Nonbreaking spaces
 
@@ -52,7 +52,7 @@ Remember that in French, a nonbreaking space is required before the following pu
 
 Also use nonbreaking spaces in the following instances:
 
-- Between _chapitre_ or _annexe_ and its number or letter
+- Between :::no-loc text="_chapitre":::_ or _:::no-loc text="annexe":::_ and its number or letter
 - As a thousand separator
 - Between a unit of measure or currency and the number that goes with it
 - Between any items that should not be divided onto separate lines
@@ -64,9 +64,9 @@ The general rule for French is to spell out cardinal numbers from zero to nine u
 
 Example:
 
-_Our style_: <span lang="fr">La mise à niveau vers la version 10.1 prendra cinq à dix minutes.</span>
+_Our style_: :::no-loc text="La mise à niveau vers la version 10.1 prendra cinq à dix minutes.":::
 
-_Our style_: <span lang="fr">Le temps de chargement est estimé à 11 secondes.</span>
+_Our style_: :::no-loc text="Le temps de chargement est estimé à 11 secondes.":::
 
 ## 5. Acronyms
 
@@ -81,7 +81,7 @@ When the acronym isn't localized, on the first occurrence, write its full name i
 
 Example:
 
-_Our style_: <span lang="fr">Si cette application gère l´échange dynamique de données (DDE, Dynamic Data Exchange) ou la liaison et l´incorporation d´objets (OLE, Object Linking and Embedding), vous pouvez également y coller avec liaison un document graphique. Les abonnements et le DDE ne sont disponibles que si vous utilisez la version 7.0.</span>
+_Our style_: :::no-loc text="Si cette application gère l´échange dynamique de données (DDE, Dynamic Data Exchange) ou la liaison et l´incorporation d´objets (OLE, Object Linking and Embedding), vous pouvez également y coller avec liaison un document graphique. Les abonnements et le DDE ne sont disponibles que si vous utilisez la version 7.0.":::
 
 ## 6. Verbs
 
@@ -99,7 +99,7 @@ Example:
 
 _English_: Contact your administrator.
 
-_Our style_: <span lang="fr">Contactez l'administrateur.</span>
+_Our style_: :::no-loc text="Contactez l'administrateur.":::
 
 ## 8. Bulleted lists
 
@@ -107,28 +107,28 @@ If the bulleted items are complete sentences, each begins with a capital letter 
 
 **Example 1**
 
-_Our style_: <span lang="fr">Our style: Vous pouvez obtenir plus d´informations dans les chapitres suivants de cette deuxième partie.
+_Our style_: :::no-loc text="Vous pouvez obtenir plus d´informations dans les chapitres suivants de cette deuxième partie":::.
 
-- Le chapitre 6 traite des lettres types.
-- Le chapitre 7 traite des étiquettes et autres documents à fusionner.</span>
+- :::no-loc text="Le chapitre 6 traite des lettres types.":::
+- :::no-loc text="Le chapitre 7 traite des étiquettes et autres documents à fusionner.":::
 
 If the bulleted items continue an introductory phrase, each begins with a capital and ends with no final punctuation.
 
 **Example 2**
 
-_Our style_: <span lang="fr">Vous avez le choix entre les options suivantes :
+_Our style_: :::no-loc text="Vous avez le choix entre les options suivantes"::::
 
-- Alignement contre la marge gauche
-- Alignement contre la marge droite
-- Centrage entre les deux marges</span>
+- :::no-loc text="Alignement contre la marge gauche":::
+- :::no-loc text="Alignement contre la marge droite":::
+- :::no-loc text="Centrage entre les deux marges":::
 
 **Example 3**
 
-_Our style_: <span lang="fr">Avant d'ouvrir un autre fichier, vous pouvez :
+_Our style_: :::no-loc text="Avant d'ouvrir un autre fichier, vous pouvez"::::
 
-- Enregistrer le premier fichier et le fermer
-- Fermer le premier fichier sans l'enregistrer
-- Ne pas fermer le premier fichier</span>
+- :::no-loc text="Enregistrer le premier fichier et le fermer":::
+- :::no-loc text="Fermer le premier fichier sans l'enregistrer":::
+- :::no-loc text="Ne pas fermer le premier fichier":::
 
 Also, consistency should always be maintained among bulleted items in a given list: please use only nouns (see Example 2), only infinitives (see Example 3), only sentences (see Example 1), and so on, whether the English text is consistent or not.
 
@@ -140,15 +140,15 @@ Keep the period (don't replace it with a comma) when translating the version num
 
 Example:
 
-_English_: Version 11.1
+_English_: :::no-loc text="Version 11.1":::
 
-_Our style_: <span lang="fr">Version 11.1</span>
+_Our style_: :::no-loc text="Version 11.1":::
 
 ## 10. Reference material
 
 There is more, of course. If you have questions, consult the terminology, translation, and [full French Style Guide](https://www.microsoft.com/Language/StyleGuides). You can use these dictionaries when in doubt:
 
-- Le Trésor de la Langue Française Informatisé (<http://atilf.atilf.fr>)
-- Le Petit Robert, ROBERT, Paul, Paris : Dictionnaire Le Robert
-- Le Petit Larousse, Éditions Larousse
-- Le bon usage, GREVISSE, Maurice, Paris-Gembloux : Duculot
+- :::no-loc text="Le Trésor de la Langue Française Informatisé"::: (<http://atilf.atilf.fr>)
+- :::no-loc text="Le Petit Robert, ROBERT, Paul, Paris : Dictionnaire Le Robert":::
+- :::no-loc text="Le Petit Larousse, Éditions Larousse":::
+- :::no-loc text="Le bon usage, GREVISSE, Maurice, Paris-Gembloux : Duculot":::

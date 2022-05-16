@@ -1,6 +1,6 @@
 ---
 title: Hungarian Localization Style Guide
-description: Are you helping with translation into Hungarian, but don't have time to study all aspects of the Hungarian Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Hungarian, but don't have time to study all of the Hungarian Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
 ms.date: 07/16/2019
 ---
 
@@ -18,17 +18,17 @@ Example:
 
 _English_: Don't let the creativity stop
 
-_Our style_: <span lang="hu">Tartsa ébren kreativitását.</span>
+_Our style_: :::no-loc text="Tartsa ébren kreativitását.":::
 
-_Not our style_: <span lang="hu">Ne hagyja leállni kreativitását.</span>
+_Not our style_: :::no-loc text="Ne hagyja leállni kreativitását.":::
 
 Example:
 
 _English_: iOS is a popular platform for creating apps that are touch first, fun, and engaging.
 
-_Our style_: <span lang="hu">Az iOS népszerű platform szórakoztató és lebilincselő érintésvezérléses alkalmazások létrehozására.</span>
+_Our style_: :::no-loc text="Az iOS népszerű platform szórakoztató és lebilincselő érintésvezérléses alkalmazások létrehozására.":::
 
-_Not our style_: <span lang="hu">Az iOS egy népszerű platform olyan alkalmazások létrehozására, amelyek elsőre megérintik, szórakoztatják és lebilincselik a felhasználókat.</span>
+_Not our style_: :::no-loc text="Az iOS egy népszerű platform olyan alkalmazások létrehozására, amelyek elsőre megérintik, szórakoztatják és lebilincselik a felhasználókat.":::
 
 ## 2. Follow the tone and style of the English original
 
@@ -38,13 +38,13 @@ Example:
 
 _English_: You can choose:…
 
-_Our style_: <span lang="hu">A következő lehetőségekből választhat:…</span>
+_Our style_: :::no-loc text="A következő lehetőségekből választhat:…":::
 
-_Not our style_: <span lang="hu">Itt választhatja:…</span>
+_Not our style_: :::no-loc text="Itt választhatja:…":::
 
 ## 3. Follow English pronouns, but adapt to Hungarian style
 
-The use of personal pronouns is a powerful way to express all the attributes of the Microsoft voice. Third-person references, such as "user," are avoided because they sound formal and impersonal. Address the user as “you” to convey an awareness than the reader is a real individual, not some anonymous person.
+The use of personal pronouns is a powerful way to express all the attributes of the Microsoft voice. Third-person references, such as "user," are avoided because they sound formal and impersonal. Address the user as "you" to convey an awareness than the reader is a real individual, not some anonymous person.
 
 The use of "we" to refer to Microsoft evokes the image of a team behind the software who cares about what the user is doing.
 In technical contexts, the use of "we" might sound too personal in Hungarian and might need to be replaced by a more neutral translation even if "we" is used in the source text. Always check the use of pronouns in context.
@@ -53,9 +53,9 @@ Example:
 
 _English_: We found issues.
 
-_Our style_: <span lang="hu">Problémák jelentkeztek.</span>
+_Our style_: :::no-loc text="Problémák jelentkeztek.":::
 
-_Not our style_: <span lang="hu">Problémákat találtunk.</span>
+_Not our style_: :::no-loc text="Problémákat találtunk.":::
 
 ## 4. Strike the right level of formality
 
@@ -65,23 +65,23 @@ Example:
 
 _English_: What you can do next:
 
-_Our style_: <span lang="hu">Az alábbiak szerint folytathatja:</span>
+_Our style_: :::no-loc text="Az alábbiak szerint folytathatja:":::
 
-_Not our style_: <span lang="hu">Amit a következőkben választhatsz:</span>
+_Not our style_: :::no-loc text="Amit a következőkben választhatsz:":::
 
 Example:
 
 _English_: Ask your parent for permission to see this website.
 
-_Our style_: <span lang="hu">Kérdezd meg szüleid, hogy megnézheted-e ezt a webhelyet.</span>
+_Our style_: :::no-loc text="Kérdezd meg szüleid, hogy megnézheted-e ezt a webhelyet.":::
 
-_Not our style_: <span lang="hu">Kérjen engedélyt szüleitől a webhely megtekintésére.</span>
+_Not our style_: :::no-loc text="Kérjen engedélyt szüleitől a webhely megtekintésére.":::
 
 ## 5. Keep product names in English
 
 This is the general rule: trademarked names and the name Microsoft Corporation shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. Here is a [list of Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx).
 
-Decline product names—except for those that are marked with a trademark (™) symbol or registered trademark (®) symbol—wherever you can and it's appropriate (_Skype-ban_, _Lynckel_, _Office-t_). You can also decline the names of websites and web pages (for example, _office.com-ról_, _microsoft.com-ot_).
+Decline product names—except for those that are marked with a trademark (&trade;) symbol or registered trademark (&reg;) symbol—wherever you can and it's appropriate (_Skype-ban_, _Lynckel_, _Office-t_). You can also decline the names of websites and web pages (for example, _office.com-ról_, _microsoft.com-ot_).
 
 The names of applications, products, and sometimes even features may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](https://www.microsoft.com/language), or contact the project manager if you have questions about whether a name is trademarked. For the correct translation of product and service names (if they are translatable), refer to Trademarks section.
 
@@ -89,17 +89,17 @@ Example:
 
 _English_: Azure Advanced Threat Protection
 
-_Our style_: <span lang="hu">Azure Advanced Threat Protection</span>
+_Our style_: :::no-loc text="Azure Advanced Threat Protection":::
 
-_Not our style_: <span lang="hu">Azure Komplex veszélyforrások elleni védelem</span>
+_Not our style_: :::no-loc text="Azure Komplex veszélyforrások elleni védelem":::
 
 Example:
 
 _English_: Windows Desktop Application Program
 
-_Our style_: <span lang="hu">asztali Windows-alkalmazás program</span>
+_Our style_: :::no-loc text="asztali Windows-alkalmazás program":::
 
-_Not our style_: <span lang="hu">Windows Desktop Application Program</span>
+_Not our style_: :::no-loc text="Windows Desktop Application Program":::
 
 ## 6. Avoid long or complex compounds
 
