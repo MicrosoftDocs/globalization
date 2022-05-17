@@ -16,7 +16,7 @@ Try to understand the whole intention of the sentences, paragraphs, and pages, a
 
 Example:
 
-_English_: Upload your video, and go
+_English_: :::no-loc text="Upload your video, and go":::
 
 _Not our style_: :::no-loc text="Carregue o seu vídeo e vá":::
 
@@ -24,8 +24,7 @@ _Our style_: :::no-loc text="Carregue o seu vídeo rapidamente":::
 
 Example:
 
-_
-_English_: Keep track of your friends' and family's special days.
+_English_: :::no-loc text="Keep track of your friends' and family's special days.":::
 
 _Not our style_: :::no-loc text="Controle as datas especiais dos amigos e da família.":::
 
@@ -37,7 +36,7 @@ Microsoft's brand personality comes through in our voice and tone: what we say a
 
 Example:
 
-_English_: Stay in the know. Turn on desktop notifications.
+_English_: :::no-loc text="Stay in the know. Turn on desktop notifications.":::
 
 _Our style_: :::no-loc text="Fique por dentro. Ative as notificações da área de trabalho.":::
 
@@ -47,13 +46,13 @@ Shorter is always better. Lengthy strings of text can cause issues for localizat
 
 Example:
 
-_English_: Would you like to continue?
+_English_: :::no-loc text="Would you like to continue?":::
 
 _Our style_: :::no-loc text="Quer continuar?":::
 
 Example:
 
-_English_: Have some fun with friends and invite them to play one of the many games online.
+_English_: :::no-loc text="Have some fun with friends and invite them to play one of the many games online.":::
 
 _Our style_: :::no-loc text="Convide seus amigos para jogar online.":::
 
@@ -69,18 +68,18 @@ Example:
 
 _**Trademarked product name that contains a preposition**_
 
-_English_: Microsoft Visio Pro for Office 365
+_English_: :::no-loc text="Microsoft Visio Pro for Office 365":::
 
 _Our style_: :::no-loc text="Microsoft Visio Pro para Office 365"::: (Visio and Office 365 are Microsoft trademarks; the preposition is translated.)
 
 _**Descriptive feature name**_
-_English_: File Plan Manager
+_English_: :::no-loc text="File Plan Manager":::
 
 _Our style_: :::no-loc text="Gerenciador de Planos de Arquivos"::: (The feature name is translated, as it is descriptive and it is not trademarked.)
 
 _**Trademarked feature name**_
 
-_English_: Cortana
+_English_: :::no-loc text="Cortana":::
 
 _Our style_: :::no-loc text="Cortana"::: (Cortana is not a descriptive feature name and is trademarked.)
 
@@ -92,7 +91,7 @@ Acronyms are words made up of the initial letters of major parts of a compound t
 
 Example:
 
-_English_: Time Series Insights (LTS)
+_English_: :::no-loc text="Time Series Insights (LTS)":::
 
 _Our style_: :::no-loc text="Time Series Insights (armazenamento a longo prazo)"::: (The spelled-out form is much more user friendly and intuitive than the acronym.)
 
@@ -102,7 +101,7 @@ _Our style_: :::no-loc text="Time Series Insights (armazenamento a longo prazo)"
 
 Example:
 
-_English_: The IR is the compute infrastructure used by Azure Data Factory to provide the following data integration capabilities across different network environments.
+_English_: :::no-loc text="The IR is the compute infrastructure used by Azure Data Factory to provide the following data integration capabilities across different network environments.":::
 
 _Our style_: :::no-loc text="O IR (tempo de execução de integração) é a infraestrutura de computação usada pelo Azure Data Factory para fornecer as seguintes funcionalidades de integração de dados entre diferentes ambientes de rede.":::
 (This is first time the acronym is used in the page.)
@@ -121,15 +120,15 @@ Example:
 
 _English_
 
-> Learning Paths
+> :::no-loc text="Learning Paths":::
 >
-> Follow a guided learning path to build practical job skills you can start using right away.
+> :::no-loc text="Follow a guided learning path to build practical job skills you can start using right away.":::
 
 _Our style_
 
-> <span lang="pt-BR">Roteiros de aprendizagem
+> :::no-loc text="Roteiros de aprendizagem":::
 >
-> Siga um roteiro de aprendizagem guiado para desenvolver habilidades de trabalho práticas e começar a usá-las imediatamente.</span>
+> :::no-loc text="Siga um roteiro de aprendizagem guiado para desenvolver habilidades de trabalho práticas e começar a usá-las imediatamente.":::
 
 Capitalization of topic tiles in Brazilian Portuguese is sentence case, therefore, :::no-loc text="**R**oteiros de **a**prendizagem.":::
 
@@ -139,7 +138,7 @@ The source (English) capitalization is followed when translating UI labels. In s
 
 Example:
 
-_English_: Clean Up Folder
+_English_: :::no-loc text="Clean Up Folder":::
 
 _Our style_: :::no-loc text="Limpar Pasta":::
 
@@ -147,7 +146,7 @@ _Our style_: :::no-loc text="Limpar Pasta":::
 
 Example:
 
-_English_: Failed to Report Event
+_English_: :::no-loc text="Failed to Report Event":::
 
 _Our style_: :::no-loc text="Falha ao relatar evento":::
 
@@ -159,7 +158,7 @@ Avoid repeating pronouns in a sentence. In Brazilian Portuguese, omitting some p
 
 Example:
 
-_English_: Depending on your service agreement, you might pay more for call or text messages when your phone is roaming.
+_English_: :::no-loc text="Depending on your service agreement, you might pay more for call or text messages when your phone is roaming.":::
 
 _Our style_: :::no-loc text="Dependendo do contrato de serviço, você pode pagar mais por ligações ou SMS quando o telefone estiver em roaming.":::
 
@@ -169,7 +168,7 @@ _Our style_: :::no-loc text="Dependendo do contrato de serviço, você pode paga
 
 Example:
 
-_English_: Make sure to run Windows Update.
+_English_: :::no-loc text="Make sure to run Windows Update.":::
 
 _Our style_: <span lang="pt-BR">Não deixe de executar o Windows Update.
 
@@ -177,7 +176,7 @@ _Our style_: <span lang="pt-BR">Não deixe de executar o Windows Update.
 
 Example:
 
-_English_: With the new Azure Monitor service in place, we **will be retiring** the "classic" monitoring and alerting platform.
+_English_: :::no-loc text="With the new Azure Monitor service in place, we **will be retiring** the "classic" monitoring and alerting platform.":::
 
 _Our style_: :::no-loc text="Com o novo serviço do Azure Monitor pronto, **descontinuaremos** a plataforma de monitoramento e alerta "clássicos".":::
 
@@ -193,7 +192,7 @@ Follow the standard punctuation rules used in Brazilian Portuguese. To promote a
 
 Example:
 
-_English_: NOTE: This purchase can't be charged to your mobile phone account. A different payment method has been selected.
+_English_: :::no-loc text="NOTE: This purchase can't be charged to your mobile phone account. A different payment method has been selected.":::
 
 _Our style_: :::no-loc text="OBSERVAÇÃO: esta compra não pode ser debitada na conta do seu celular. Um outro método de pagamento foi selecionado.":::
 
@@ -201,7 +200,7 @@ _Our style_: :::no-loc text="OBSERVAÇÃO: esta compra não pode ser debitada na
 
 Example:
 
-_English_: Sync your mail, contacts, calendar, and tasks
+_English_: :::no-loc text="Sync your mail, contacts, calendar, and tasks":::
 
 _Our style_: :::no-loc text="Sincronizar seus emails, contatos, calendários e tarefas":::
 
