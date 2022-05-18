@@ -4,10 +4,20 @@ description: Localization requires strings and other localizable resources to be
 ---
 
 # Externalize localizable resources
-<!-- NOTE this article is not yet complete -->
-<!-- Add paragraph about externalization of non-loc resources -->
+
+Localizable resources are separated from code ("externalized") so that they can be independently processed without modifying a product's source code.
+
+Some programming environments provide facilities to maintain source text in the code, extracting localizable text during the build or a separate process.
+Keeping the source text in the code can be a convenience for developers, but has some disadvantages.
+Changes to source text that are needed for correctness or localizability requires a rebuild and retest, which can be undesirable.
 
 ## Separate localizable and non-localizable resources
+
+Keeping non-localizable resources separate from localizable resources lowers the risk of over-localization and can reduce the complexity of localization.
+Where using separate files can't be used, resource commenting can be used to distinguish localizable from non-localizable resources.
+Some localization tools provide a formal mechanism for excluding selected resources from localization.
+Exclusion from localization may be specified by an attribute in the resource file schema, or a special notation used in comments.
+For example, a tool may recognize `{Locked}` in a resource comment to "lock" the string and prevent it's localization.
 
 ## Avoid repurposing strings
 
@@ -45,7 +55,7 @@ A resource comment should explain where a string appears in the user interface a
 The comment can explain the conditions under which the message is displayed.
 If the string contains technical terms or application jargon, the usage should be explained.
 
-If the string is a format string containing placeholders, it's particularly important to document the part of speech and meaning of each placeholder.
+If the string is a format string containing placeholders, it's important to document the part of speech and meaning of each placeholder.
 <!-- NYI See [Message formatting](..\internationalization/message-formatting.md) for more detailed guidance on message formatting. -->
 
 ## Non-localizable text

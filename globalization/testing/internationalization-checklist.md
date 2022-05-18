@@ -42,17 +42,29 @@ The conventions and formats of various kinds of data vary by locale.
 A global application must be able to handle user's data by the conventions and standards of the user's locale.
 
 * [Calendars, date, and time](../locale/calendar-differences.md)
+
 <!--NYI * [Case mapping](../text/case-mapping.md)] -->
+
 * [Currency formatting](../locale/currency-formatting.md)
+
 * [Measurement units](../locale/units-of-measurement.md)
+
 * [Number formatting](../locale/number-formatting.md)
+
 * [Paper and envelope size](../locale/paper-size.md)
+
 <!--NYI * [Payment methods](../internationalization/payment-methods.md) -->
+
 * [Postal address formats](../locale/addresses.md)
+
 <!-- NYI * [Punctuation, separators](../internationalization/punctuation-separators.md) -->
+
 * [Sorting, comparison, and search](../locale/sorting-and-string-comparison.md)
+
 <!-- NYI * [Spell-checker or thesaurus/dictionary support](../locale/dictionaries-spelling.md) -->
+
 * [Telephone number formatting](../locale/telephone-number.md)
+
 <!-- NYI * [Text parsing and validation](../text/parsing-input.md) -->
 
 ## Display
