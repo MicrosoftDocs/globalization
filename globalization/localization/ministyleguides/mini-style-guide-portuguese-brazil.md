@@ -1,6 +1,6 @@
 ---
 title: Portuguese (Brazil) Localization Style Guide
-description: Are you helping with translation into Portuguese (Brazil) but don't have time to study all aspects of the Microsoft Portuguese (Brazil) Style Guide? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Portuguese (Brazil) but don't have time to study all of the Microsoft Portuguese (Brazil) Style Guide? Here are the ten most important aspects.
 ms.date: 03/19/2019
 ---
 
@@ -16,20 +16,19 @@ Try to understand the whole intention of the sentences, paragraphs, and pages, a
 
 Example:
 
-_English_: Upload your video, and go
+_English_: :::no-loc text="Upload your video, and go":::
 
-_Not our style_: <span lang="pt-BR">Carregue o seu vídeo e vá</span>
+_Not our style_: :::no-loc text="Carregue o seu vídeo e vá":::
 
-_Our style_: <span lang="pt-BR">Carregue o seu vídeo rapidamente</span>
+_Our style_: :::no-loc text="Carregue o seu vídeo rapidamente":::
 
 Example:
 
-_
-_English_: Keep track of your friends' and family's special days.
+_English_: :::no-loc text="Keep track of your friends' and family's special days.":::
 
-_Not our style_: <span lang="pt-BR">Controle as datas especiais dos amigos e da família.</span>
+_Not our style_: :::no-loc text="Controle as datas especiais dos amigos e da família.":::
 
-_Our style_: <span lang="pt-BR">Lembre-se dos aniversários de seus amigos e familiares.</span>
+_Our style_: :::no-loc text="Lembre-se dos aniversários de seus amigos e familiares.":::
 
 ## 2. Friendly and conversational tone
 
@@ -37,9 +36,9 @@ Microsoft's brand personality comes through in our voice and tone: what we say a
 
 Example:
 
-_English_: Stay in the know. Turn on desktop notifications.
+_English_: :::no-loc text="Stay in the know. Turn on desktop notifications.":::
 
-_Our style_: <span lang="pt-BR">Fique por dentro. Ative as notificações da área de trabalho.</span>
+_Our style_: :::no-loc text="Fique por dentro. Ative as notificações da área de trabalho.":::
 
 ## 3. Brevity
 
@@ -47,15 +46,15 @@ Shorter is always better. Lengthy strings of text can cause issues for localizat
 
 Example:
 
-_English_: Would you like to continue?
+_English_: :::no-loc text="Would you like to continue?":::
 
-_Our style_: <span lang="pt-BR">Quer continuar?</span>
+_Our style_: :::no-loc text="Quer continuar?":::
 
 Example:
 
-_English_: Have some fun with friends and invite them to play one of the many games online.
+_English_: :::no-loc text="Have some fun with friends and invite them to play one of the many games online.":::
 
-_Our style_: <span lang="pt-BR">Convide seus amigos para jogar online.</span>
+_Our style_: :::no-loc text="Convide seus amigos para jogar online.":::
 
 ## 4. Application, product, and feature names
 
@@ -69,20 +68,20 @@ Example:
 
 _**Trademarked product name that contains a preposition**_
 
-_English_: Microsoft Visio Pro for Office 365
+_English_: :::no-loc text="Microsoft Visio Pro for Office 365":::
 
-_Our style_: <span lang="pt-BR">Microsoft Visio Pro para Office 365</span> (Visio and Office 365 are Microsoft trademarks; the preposition is translated.)
+_Our style_: :::no-loc text="Microsoft Visio Pro para Office 365"::: (Visio and Office 365 are Microsoft trademarks; the preposition is translated.)
 
 _**Descriptive feature name**_
-_English_: File Plan Manager
+_English_: :::no-loc text="File Plan Manager":::
 
-_Our style_: <span lang="pt-BR">Gerenciador de Planos de Arquivos</span> (The feature name is translated, as it is descriptive and it is not trademarked.)
+_Our style_: :::no-loc text="Gerenciador de Planos de Arquivos"::: (The feature name is translated, as it is descriptive and it is not trademarked.)
 
 _**Trademarked feature name**_
 
-_English_: Cortana
+_English_: :::no-loc text="Cortana":::
 
-_Our style_: <span lang="pt-BR">Cortana</span> (Cortana is not a descriptive feature name and is trademarked.)
+_Our style_: :::no-loc text="Cortana"::: (Cortana is not a descriptive feature name and is trademarked.)
 
 ## 5. Handling acronyms
 
@@ -92,9 +91,9 @@ Acronyms are words made up of the initial letters of major parts of a compound t
 
 Example:
 
-_English_: Time Series Insights (LTS)
+_English_: :::no-loc text="Time Series Insights (LTS)":::
 
-_Our style_: <span lang="pt-BR">Time Series Insights (armazenamento a longo prazo)</span> (The spelled-out form is much more user friendly and intuitive than the acronym.)
+_Our style_: :::no-loc text="Time Series Insights (armazenamento a longo prazo)"::: (The spelled-out form is much more user friendly and intuitive than the acronym.)
 
 **Don't translate** Most technical acronyms aren't translated because they are known by the target audience in Brazil in English. The localized, spelled-out form should follow the acronym the first time that the acronym appears (space permitting). In the subsequent occurrences, only the acronym should be used.  
 
@@ -102,16 +101,16 @@ _Our style_: <span lang="pt-BR">Time Series Insights (armazenamento a longo praz
 
 Example:
 
-_English_: The IR is the compute infrastructure used by Azure Data Factory to provide the following data integration capabilities across different network environments.
+_English_: :::no-loc text="The IR is the compute infrastructure used by Azure Data Factory to provide the following data integration capabilities across different network environments.":::
 
-_Our style_: <span lang="pt-BR">O IR (tempo de execução de integração) é a infraestrutura de computação usada pelo Azure Data Factory para fornecer as seguintes funcionalidades de integração de dados entre diferentes ambientes de rede.</span>
+_Our style_: :::no-loc text="O IR (tempo de execução de integração) é a infraestrutura de computação usada pelo Azure Data Factory para fornecer as seguintes funcionalidades de integração de dados entre diferentes ambientes de rede.":::
 (This is first time the acronym is used in the page.)
 
 Example:
 
 _English_: Graphic Interchange Format (.gif)
 
-_Our style_: <span lang="pt-BR">formato GIF</span>
+_Our style_: :::no-loc text="formato GIF":::
 
 ## 6. Capitalization
 
@@ -121,17 +120,17 @@ Example:
 
 _English_
 
-> Learning Paths
+> :::no-loc text="Learning Paths":::
 >
-> Follow a guided learning path to build practical job skills you can start using right away.
+> :::no-loc text="Follow a guided learning path to build practical job skills you can start using right away.":::
 
 _Our style_
 
-> <span lang="pt-BR">Roteiros de aprendizagem
+> :::no-loc text="Roteiros de aprendizagem":::
 >
-> Siga um roteiro de aprendizagem guiado para desenvolver habilidades de trabalho práticas e começar a usá-las imediatamente.</span>
+> :::no-loc text="Siga um roteiro de aprendizagem guiado para desenvolver habilidades de trabalho práticas e começar a usá-las imediatamente.":::
 
-Capitalization of topic tiles in Brazilian Portuguese is sentence case, therefore, <span lang="pt-BR">**R**oteiros de **a**prendizagem.</span>
+Capitalization of topic tiles in Brazilian Portuguese is sentence case, therefore, :::no-loc text="**R**oteiros de **a**prendizagem.":::
 
 **Capitalization of UI strings**
 
@@ -139,17 +138,17 @@ The source (English) capitalization is followed when translating UI labels. In s
 
 Example:
 
-_English_: Clean Up Folder
+_English_: :::no-loc text="Clean Up Folder":::
 
-_Our style_: <span lang="pt-BR">Limpar Pasta</span>
+_Our style_: :::no-loc text="Limpar Pasta":::
 
 **Note**: This rule doesn't apply to error messages. Normally, the source text uses sentence case in error messages, but it's not rare to see error messages using title-case capitalization in the source files. For Brazilian Portuguese, sentence case should be used in error messages.
 
 Example:
 
-_English_: Failed to Report Event
+_English_: :::no-loc text="Failed to Report Event":::
 
-_Our style_: <span lang="pt-BR">Falha ao relatar evento</span>
+_Our style_: :::no-loc text="Falha ao relatar evento":::
 
 ## 7. Pronouns
 
@@ -159,9 +158,9 @@ Avoid repeating pronouns in a sentence. In Brazilian Portuguese, omitting some p
 
 Example:
 
-_English_: Depending on your service agreement, you might pay more for call or text messages when your phone is roaming.
+_English_: :::no-loc text="Depending on your service agreement, you might pay more for call or text messages when your phone is roaming.":::
 
-_Our style_: <span lang="pt-BR">Dependendo do contrato de serviço, você pode pagar mais por ligações ou SMS quando o telefone estiver em roaming.</span>
+_Our style_: :::no-loc text="Dependendo do contrato de serviço, você pode pagar mais por ligações ou SMS quando o telefone estiver em roaming.":::
 
 ## 8. Verbs
 
@@ -169,7 +168,7 @@ _Our style_: <span lang="pt-BR">Dependendo do contrato de serviço, você pode p
 
 Example:
 
-_English_: Make sure to run Windows Update.
+_English_: :::no-loc text="Make sure to run Windows Update.":::
 
 _Our style_: <span lang="pt-BR">Não deixe de executar o Windows Update.
 
@@ -177,9 +176,9 @@ _Our style_: <span lang="pt-BR">Não deixe de executar o Windows Update.
 
 Example:
 
-_English_: With the new Azure Monitor service in place, we **will be retiring** the "classic" monitoring and alerting platform.
+_English_: :::no-loc text="With the new Azure Monitor service in place, we **will be retiring** the "classic" monitoring and alerting platform.":::
 
-_Our style_: <span lang="pt-BR">Com o novo serviço do Azure Monitor pronto, **descontinuaremos** a plataforma de monitoramento e alerta "clássicos".</span>
+_Our style_: :::no-loc text="Com o novo serviço do Azure Monitor pronto, **descontinuaremos** a plataforma de monitoramento e alerta "clássicos".":::
 
 ## 9. Punctuation
 
@@ -193,17 +192,17 @@ Follow the standard punctuation rules used in Brazilian Portuguese. To promote a
 
 Example:
 
-_English_: NOTE: This purchase can't be charged to your mobile phone account. A different payment method has been selected.
+_English_: :::no-loc text="NOTE: This purchase can't be charged to your mobile phone account. A different payment method has been selected.":::
 
-_Our style_: <span lang="pt-BR">OBSERVAÇÃO: esta compra não pode ser debitada na conta do seu celular. Um outro método de pagamento foi selecionado.</span>
+_Our style_: :::no-loc text="OBSERVAÇÃO: esta compra não pode ser debitada na conta do seu celular. Um outro método de pagamento foi selecionado.":::
 
 **Commas** English and Brazilian Portuguese don't share the same rule for the use of commas in a list of three or more items. In English, a comma should be included before the conjunction. In Brazilian Portuguese, there is no comma before the conjunction.
 
 Example:
 
-_English_: Sync your mail, contacts, calendar, and tasks
+_English_: :::no-loc text="Sync your mail, contacts, calendar, and tasks":::
 
-_Our style_: <span lang="pt-BR">Sincronizar seus emails, contatos, calendários e tarefas</span>
+_Our style_: :::no-loc text="Sincronizar seus emails, contatos, calendários e tarefas":::
 
 ## 10. Use the right reference material
 

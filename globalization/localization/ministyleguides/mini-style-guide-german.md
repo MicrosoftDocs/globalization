@@ -1,6 +1,6 @@
 ---
 title: German Localization Style Guide
-description: Are you helping with translation into German, but don't have time to study all aspects of the German Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into German, but don't have time to study all of the German Style Guide? Here are the ten most important aspects.
 ms.date: 03/04/2019
 ---
 
@@ -16,9 +16,9 @@ Example:
 
 _English_: Compose your vision within the cloud.
 
-_Our style_: <span lang="de">Lassen Sie Ihrer Kreativität freien Lauf.</span>
+_Our style_: :::no-loc text="Lassen Sie Ihrer Kreativität freien Lauf.":::
 
-_Not our style_: <span lang="de">Realisieren Sie in der Cloud Ihre Vision.</span>
+_Not our style_: :::no-loc text="Realisieren Sie in der Cloud Ihre Vision.":::
 
 ## 2. Keep product names in English
 
@@ -28,15 +28,15 @@ Example:
 
 _English_: to upload
 
-_Our style_: <span lang="de">hochladen</span>
+_Our style_: :::no-loc text="hochladen":::
 
-_Not our style_: <span lang="de">uploaden</span>
+_Not our style_: :::no-loc text="uploaden":::
 
 _English_: firstline worker
 
-_Our style_: <span lang="de">Mitarbeiter in Service und Produktion</span>
+_Our style_: :::no-loc text="Mitarbeiter in Service und Produktion":::
 
-_Not our style_: <span lang="de">Firstline Worker</span>
+_Not our style_: :::no-loc text="Firstline Worker":::
 
 This is a rough rule: [Trademarked names](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx) and the name "Microsoft Corporation" often remain in English, unless an approved German name for the trademark is available. Application, product, and sometimes even feature names may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](https://www.microsoft.com/language) or contact the moderator if there is any doubt.
 
@@ -44,15 +44,15 @@ Example:
 
 _English_: Microsoft Office 365 Developer Technical Preview
 
-_Our style_: <span lang="de">Microsoft Office 365 Developer Technical Preview</span>
+_Our style_: :::no-loc text="Microsoft Office 365 Developer Technical Preview":::
 
-_Not our style_: <span lang="de">Microsoft Office 365 Betaversion für Entwickler</span>
+_Not our style_: :::no-loc text="Microsoft Office 365 Betaversion für Entwickler":::
 
 _English_: Windows Desktop Application Program
 
-_Our style_: <span lang="de">Windows-Desktopanwendungsprogramm</span>
+_Our style_: :::no-loc text="Windows-Desktopanwendungsprogramm":::
 
-_Not our style_: <span lang="de">Windows Desktop Application Program</span>
+_Not our style_: :::no-loc text="Windows Desktop Application Program":::
 
 ## 3. Follow the tone and style of the original English
 
@@ -62,33 +62,33 @@ Example:
 
 _English_: You can:…
 
-_Our style_: <span lang="de">Sie haben folgende Möglichkeiten:…</span>
+_Our style_: :::no-loc text="Sie haben folgende Möglichkeiten:…":::
 
-_Not our style_: <span lang="de">Hier kannst du…</span>
+_Not our style_: :::no-loc text="Hier kannst du…":::
 
 ## 4. Choose gender-neutral language
 
-Regardless of the audience, avoid gender stereotypes and aim to be as gender-neutral as possible. For example, instead of using phrases which specifically mention genders, use general language that includes all genders. A good solution is the use of the plural or abstraction (e.g., _<span lang="de">-Arbeitskraft, Schulungspersonal, Fachhilfe</span>_). Where gender specificity cannot be avoided without sounding awkward, choose inclusive language to cover all genders.
+Regardless of the audience, avoid gender stereotypes and aim to be as gender-neutral as possible. For example, instead of using phrases which specifically mention genders, use general language that includes all genders. A good solution is the use of the plural or abstraction (e.g., _:::no-loc text="-Arbeitskraft, Schulungspersonal, Fachhilfe":::_). Where gender specificity cannot be avoided without sounding awkward, choose inclusive language to cover all genders.
 
-In short text or text strings, for titles, or when a group is composed of women and men, make conscious choices. Acceptable approaches are camel casing (e.g., _<span lang="de">DoktorandIn</span>_) or a slash (e.g., _<span lang="de">Entwickler/in</span>_). Do not use an underscore (e.g., _<span lang="de">Mitarbeiter_innen</span>_).
+In short text or text strings, for titles, or when a group is composed of women and men, make conscious choices. Acceptable approaches are camel casing (e.g., _:::no-loc text="DoktorandIn":::_) or a slash (e.g., _:::no-loc text="Entwickler/in":::_). Do not use an underscore (e.g., _:::no-loc text="Mitarbeiter_innen":::_).
 
 Example:
 
 _English_: This recipient may not answer, as their status is set to "Out of office."
 
-_Our style_: <span lang="de">Sie erhalten möglicherweise keine Antwort, da dieser Kontakt den Status "Abwesend" hat.</span>
+_Our style_: :::no-loc text="Sie erhalten möglicherweise keine Antwort, da dieser Kontakt den Status "Abwesend" hat.":::
 
-_Not our style_: <span lang="de">Diese(r) Empfänger(in) antwortet möglicherweise nicht, da er/sie den Status "Abwesend" hat.</span>
+_Not our style_: :::no-loc text="Diese(r) Empfänger(in) antwortet möglicherweise nicht, da er/sie den Status "Abwesend" hat.":::
 
-When you use gender-neutral pronouns (e.g. <span lang="de">man, jemand, niemand, wer</span>), be consistent and follow through. Passive voice is a typical of the German language. While the Microsoft style is active, passive voice may be used to achieve gender-neutral language.
+When you use gender-neutral pronouns (e.g. :::no-loc text="man, jemand, niemand, wer":::), be consistent and follow through. Passive voice is a typical of the German language. While the Microsoft style is active, passive voice may be used to achieve gender-neutral language.
 
 Example:
 
 _English_: You must not discriminate someone because of their age.
 
-_Our style_: <span lang="de">Niemand darf aufgrund seines Alters benachteiligt werden.</span>
+_Our style_: :::no-loc text="Niemand darf aufgrund seines Alters benachteiligt werden.":::
 
-_Not our style_: <span lang="de">Niemand darf aufgrund des Alters benachteiligt werden.</span>
+_Not our style_: :::no-loc text="Niemand darf aufgrund des Alters benachteiligt werden.":::
 
 Passive voice is a typical aspect of the German language. While Microsoft style is active, passive voice can be used to achieve gender-neutral language.
 
@@ -98,9 +98,9 @@ Example:
 
 _English_: Jane Doe is our HR director. She is our expert for human resources.
 
-_Our style_: <span lang="de">Erika Müller ist Personalchefin. Sie ist unsere Expertin in Sachen Personal.</span>
+_Our style_: :::no-loc text="Erika Müller ist Personalchefin. Sie ist unsere Expertin in Sachen Personal.":::
 
-_Not our style_: <span lang="de">Erika Müller ist Personalchef. Sie ist unser Experte in Sachen Personal.</span>
+_Not our style_: :::no-loc text="Erika Müller ist Personalchef. Sie ist unser Experte in Sachen Personal.":::
 
 ## 5. Follow English pronouns, but adapt to German style
 
@@ -112,31 +112,31 @@ Example:
 
 _English_: We found issues.
 
-_Our style_: <span lang="de">Es sind Probleme aufgetreten.</span>
+_Our style_: :::no-loc text="Es sind Probleme aufgetreten.":::
 
-_Not our style_: <span lang="de">Wir haben Probleme gefunden.</span>
+_Not our style_: :::no-loc text="Wir haben Probleme gefunden.":::
 
 ## 6. Strike the right formality
 
-German is a more formal language. Most notably, we have the formal (<span lang="de">Sie</span>) and the informal way (<span lang="de">Du</span>) of addressing people. It has become more common to address others with the informal <span lang="de">Du</span>, particularly in advertisements or gaming contexts. While Microsoft's voice is generally less formal, consistency is important. To assure that all translators use the same approach, we recommend using Sie, unless you are addressing children under 18.
+German is a more formal language. Most notably, we have the formal (:::no-loc text="Sie":::) and the informal way (:::no-loc text="Du":::) of addressing people. It has become more common to address others with the informal :::no-loc text="Du":::, particularly in advertisements or gaming contexts. While Microsoft's voice is generally less formal, consistency is important. To assure that all translators use the same approach, we recommend using Sie, unless you are addressing children under 18.
 
 Example:
 
 _English_: What you can do next:
 
-_Our style_: <span lang="de">Sie können wie folgt fortfahren:</span>
+_Our style_: :::no-loc text="Sie können wie folgt fortfahren:":::
 
-_Not our style_: <span lang="de">Was du als nächstes machen kannst:</span>
+_Not our style_: :::no-loc text="Was du als nächstes machen kannst:":::
 
 _English_: Ask your parent for permission to see this website.
 
-_Our style_: <span lang="de">Frag deine Eltern, ob du diese Website anzeigen darfst.</span>
+_Our style_: :::no-loc text="Frag deine Eltern, ob du diese Website anzeigen darfst.":::
 
-_Not our style_: <span lang="de">Bitten Sie Ihre Eltern um Erlaubnis, ob Sie diese Webseite anzeigen dürfen.</span>
+_Not our style_: :::no-loc text="Bitten Sie Ihre Eltern um Erlaubnis, ob Sie diese Webseite anzeigen dürfen.":::
 
 ## 7. Break up long compounds
 
-German words can be very long (e.g., _<span lang="de">.NET Framework Windows-Ressourcenlokalisierungs-Editor</span>_). Overly complex compounds (_<span lang="de">Komposita</span>_) should be avoided as they are unintuitive and become a usability issue. Compounds should be understandable and clear. The entry for _<span lang="de">Kompositum</span>_ in Duden has details. Here are the most important guidelines for Microsoft material.
+German words can be very long (e.g., _:::no-loc text=".NET Framework Windows-Ressourcenlokalisierungs-Editor":::_). Overly complex compounds (_:::no-loc text="Komposita":::_) should be avoided as they are unintuitive and become a usability issue. Compounds should be understandable and clear. The entry for _:::no-loc text="Kompositum":::_ in Duden has details. Here are the most important guidelines for Microsoft material.
 
 Words with three or fewer components are spelt as one word.
 
@@ -144,9 +144,9 @@ Example:
 
 _English_: default home page
 
-_Our style_: <span lang="de">Standardhomepage</span>
+_Our style_: :::no-loc text="Standardhomepage":::
 
-_Not our style_: <span lang="de">Standard-Homepage</span>
+_Not our style_: :::no-loc text="Standard-Homepage":::
 
 Words with four components are hyphenated.
 
@@ -154,9 +154,9 @@ Example:
 
 _English_: home page file name
 
-_Our style_: <span lang="de">Homepage-Dateiname</span>
+_Our style_: :::no-loc text="Homepage-Dateiname":::
 
-_Not our style_: <span lang="de">Homepagedateiname</span>
+_Not our style_: :::no-loc text="Homepagedateiname":::
 
 English product names are spelt just like they are in English.
 
@@ -164,9 +164,9 @@ Example:
 
 _English_: Skype Manager Administrator
 
-_Our style_: <span lang="de">Skype Manager Administrator</span>
+_Our style_: :::no-loc text="Skype Manager Administrator":::
 
-_Not our style_: <span lang="de">Skype-Manager-Administrator</span>
+_Not our style_: :::no-loc text="Skype-Manager-Administrator":::
 
 A hyphen is placed between a product name and a term to set the product name off from the word that follows in a compound. This rule applies even if the word that follows is an English term. The only exception is a product name directly followed by the term "Setup," because Setup is treated as a product name.
 
@@ -174,15 +174,15 @@ Example:
 
 _English_: Dynamics 365 home page
 
-_Our style_: <span lang="de">Dynamics 365-Homepage</span>
+_Our style_: :::no-loc text="Dynamics 365-Homepage":::
 
-_Not our style_: <span lang="de">Dynamics 365 Homepage</span>
+_Not our style_: :::no-loc text="Dynamics 365 Homepage":::
 
 _English_: Office Setup Assistant
 
-_Our style_: <span lang="de">Office-Setup-Assistent</span>
+_Our style_: :::no-loc text="Office-Setup-Assistent":::
 
-_Not our style_: <span lang="de">Office Setup Assistent</span>
+_Not our style_: :::no-loc text="Office Setup Assistent":::
 
 ## 8. Avoid abbreviations
 
@@ -192,21 +192,21 @@ Example:
 
 _English_: GPS
 
-_Our style_: <span lang="de">Navigationssystem</span>
+_Our style_: :::no-loc text="Navigationssystem":::
 
-_Not our style_: <span lang="de">GPS</span>
+_Not our style_: :::no-loc text="GPS":::
 
-## 9. Use <span lang="de">ß</span> where appropriate
+## 9. Use :::no-loc text="ß"::: where appropriate
 
-The letter <span lang="de">ẞ</span> (<span lang="de">ß - ẞ</span>) is now an official letter in German orthography. Use it to replace the capital "SS" in words that are written in capital letters.
+The letter :::no-loc text="ẞ"::: (:::no-loc text="ß - ẞ":::) is now an official letter in German orthography. Use it to replace the capital "SS" in words that are written in capital letters.
 
 Example:
 
 _English_: STREET
 
-_Our style_: <span lang="de">STRAẞE</span>
+_Our style_: :::no-loc text="STRAẞE":::
 
-_Not our style_: <span lang="de">STRASSE</span>
+_Not our style_: :::no-loc text="STRASSE":::
 
 ## 10. Use the right reference material
 

@@ -1,6 +1,6 @@
 ---
 title: Turkish Localization Style Guide
-description: You are helping with translation into Turkish, but don't have time to study all aspects of the Turkish Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: You are helping with translation into Turkish, but don't have time to study all of the Turkish Style Guide? Here are the ten most important aspects.
 ms.date: 03/19/2019
 ---
 
@@ -16,11 +16,11 @@ You may need to add words to convey the intended meaning, or omit words or phras
 
 Example:
 
-_English_: This is where you would type the words that you wish to say to your recipient.
+_English_: :::no-loc text="This is where you would type the words that you wish to say to your recipient.":::
 
-_Not our style_: <span lang=tr>Buraya, alıcınıza söylemek istediğiniz sözcükleri yazın.</span>
+_Not our style_: :::no-loc text="Buraya, alıcınıza söylemek istediğiniz sözcükleri yazın.":::
 
-_Our style_: <span lang=tr>Alıcıya iletmek istediklerinizi buraya yazın.</span>
+_Our style_: :::no-loc text="Alıcıya iletmek istediklerinizi buraya yazın.":::
 
 ## 2. Preference for Turkish over English terms
 
@@ -40,11 +40,11 @@ Support articles and product pages from Microsoft also present detailed informat
 
 Example:
 
-_English_: That button uses a JavaScript method to insert the contents of the task pane text area as rich content in Word.
+_English_: :::no-loc text="That button uses a JavaScript method to insert the contents of the task pane text area as rich content in Word.":::
 
-_Not our style_: <span lang=tr>Bu düğme, görev bölmesinde bulunan metin alanı içeriklerini Word içinde zengin içerikler olarak eklemek üzere JavaScript yöntemi kullanmaktadır.</span>
+_Not our style_: :::no-loc text="Bu düğme, görev bölmesinde bulunan metin alanı içeriklerini Word içinde zengin içerikler olarak eklemek üzere JavaScript yöntemi kullanmaktadır.":::
 
-_Our style_: <span lang=tr>Bu düğme, görev bölmesinin metin alanındaki içerikleri Word'e zengin içerik olarak eklemek için bir JavaScript yönteminden yararlanır.</span>
+_Our style_: :::no-loc text="Bu düğme, görev bölmesinin metin alanındaki içerikleri Word'e zengin içerik olarak eklemek için bir JavaScript yönteminden yararlanır.":::
 
 ## 4. Microsoft voice
 
@@ -58,11 +58,11 @@ The Microsoft voice allows for the use of culture-centric colloquialisms, idioms
 
 Example:
 
-_English_: Aww, we love our users, too bad we can't keep in touch.
+_English_: :::no-loc text="Aww, we love our users, too bad we can't keep in touch.":::
 
-_Not our style_: <span lang=tr>Ayy, kullanıcılarımızı çok severiz. Sizinle iletişim kuramayacak mıyız?</span>
+_Not our style_: :::no-loc text="Ayy, kullanıcılarımızı çok severiz. Sizinle iletişim kuramayacak mıyız?":::
 
-_Our style_: <span lang=tr>Kullanıcılarımızla iletişimde olmayı seviyoruz. Bunu yapamayacağımıza üzüldük.</span>
+_Our style_: :::no-loc text="Kullanıcılarımızla iletişimde olmayı seviyoruz. Bunu yapamayacağımıza üzüldük.":::
 
 ## 5. Pronouns
 
@@ -70,29 +70,29 @@ Use personal pronouns instead of passive voice. Third-person references, such as
 
 Example:
 
-_English_: Please wait and we'll let you know when this is done.
+_English_: :::no-loc text="Please wait and we'll let you know when this is done.":::
 
-_Our style_: <span lang="tr">Lütfen bekleyin. İşlem tamamlandığında haber vereceğiz.</span>
+_Our style_: :::no-loc text="Lütfen bekleyin. İşlem tamamlandığında haber vereceğiz.":::
 
 Omitting pronouns is a common mistake in Turkish translations. At the same time, overusing them might result in awkward and unnatural-sounding text.
 
 Example:
 
-_English_: To make the sentence more understandable, you should consider simplifying it.
+_English_: :::no-loc text="To make the sentence more understandable, you should consider simplifying it.":::
 
-_Not our style_: <span lang=tr>Cümlenin daha anlaşılır olması için siz bunu sadeleştirmelisiniz.</span>
+_Not our style_: :::no-loc text="Cümlenin daha anlaşılır olması için siz bunu sadeleştirmelisiniz.":::
 
-_Our style_: <span lang=tr>Daha anlaşılır olması için cümleyi sadeleştirmelisiniz.</span>
+_Our style_: :::no-loc text="Daha anlaşılır olması için cümleyi sadeleştirmelisiniz.":::
 
 In some cases, subject pronouns can be rendered as null (hidden) subjects, but to do this, the subject of the sentence should be clear, and it should have the same grammatical structure with the subject of the previous sentence.
 
 Example:
 
-_English_: The key will only display after clicking the Save button in the footer. It will not be displayed later.
+_English_: :::no-loc text="The key will only display after clicking the Save button in the footer. It will not be displayed later.":::
 
-_Not our style_: <span lang=tr>Anahtarın görüntülenmesi için alt bilgideki Kaydet düğmesine tıklamak gerekir. Bir daha görüntülenmez.</span>
+_Not our style_: :::no-loc text="Anahtarın görüntülenmesi için alt bilgideki Kaydet düğmesine tıklamak gerekir. Bir daha görüntülenmez.":::
 
-_Our style_: <span lang=tr>Anahtar yalnızca alt bilgideki Kaydet düğmesine tıklandıktan sonra görüntülenir. Daha sonra görüntülenmez.</span>
+_Our style_: :::no-loc text="Anahtar yalnızca alt bilgideki Kaydet düğmesine tıklandıktan sonra görüntülenir. Daha sonra görüntülenmez.":::
 
 ## 6. Grammar choices for a natural tone
 
@@ -100,19 +100,19 @@ The conjunction _and_ is not used as frequently in Turkish as it is in English. 
 
 Example:
 
-_English_: Remove one or more recipients and try again.
+_English_: :::no-loc text="Remove one or more recipients and try again.":::
 
-_Not our style_: <span lang="tr">Bir veya daha fazla alıcıyı silin ve tekrar deneyin.</span>
+_Not our style_: :::no-loc text="Bir veya daha fazla alıcıyı silin ve tekrar deneyin.":::
 
-_Our style_: <span lang="tr">Bir veya daha fazla alıcıyı silip tekrar deneyin.</span>
+_Our style_: :::no-loc text="Bir veya daha fazla alıcıyı silip tekrar deneyin.":::
 
 Contractions help to keep things neat. Avoid using separate words for _eğer_, _ise_, _ile_, and so on.
 
 Example:
 
-_Not our style_: <span lang="tr">Eğer bu öğeyi siler iseniz buradaki araç ile görüntüleyemezsiniz.</span>
+_Not our style_: :::no-loc text="Eğer bu öğeyi siler iseniz buradaki araç ile görüntüleyemezsiniz.":::
 
-_Our style_: <span lang="tr">Bu öğeyi silerseniz buradaki araçla görüntüleyemezsiniz.</span>
+_Our style_: :::no-loc text="Bu öğeyi silerseniz buradaki araçla görüntüleyemezsiniz.":::
 
 ## 7. Translations of _you_, _please_, and _sorry_
 
@@ -136,15 +136,15 @@ Avoid double spaces after periods and between words—even if the source has the
 
 Example:
 
-_English_: Website address
+_English_: :::no-loc text=" Website address":::
 
-_Not our style_: <span lang="tr">Web Sitesi adresi</span>
+_Not our style_: :::no-loc text="Web Sitesi adresi":::
 
-_Our style_: <span lang="tr">Web sitesi adresi</span>
+_Our style_: :::no-loc text="Web sitesi adresi":::
 
 ## 10. References
 
 There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Turkish Style Guide](https://www.microsoft.com/Language/StyleGuides) and the following references:
 
-1. <span lang="tr">Güncel Türkçe Sözlük ve Yazım Kılavuzu – TDK Web Sitesi (www.tdk.gov.tr)
-2. Türkçe Sözlük ve Yazım Kılavuzu – Dil Derneği Sitesi (<http://www.dildernegi.org.tr>)</span>
+1. :::no-loc text="Güncel Türkçe Sözlük ve Yazım Kılavuzu – TDK Web Sitesi (www.tdk.gov.tr)":::
+2. :::no-loc text="Türkçe Sözlük ve Yazım Kılavuzu – Dil Derneği Sitesi (<http://www.dildernegi.org.tr>)":::

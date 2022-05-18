@@ -1,6 +1,6 @@
 ---
 title: Polish Localization Style Guide
-description: Are you helping with translation into Polish, but don't have time to study all aspects of the Polish Style Guide? Here are 10 of the most important aspects to keep in mind.
+description: Are you helping with translation into Polish, but don't have time to study all of the Polish Style Guide? Here are the ten most important aspects.
 ms.date: 04/18/2019
 ---
 # Top 10 Tips for Microsoft Translation into Polish
@@ -18,7 +18,7 @@ _English_: Prioritizing your social updates is just another way Messenger helps 
 _Our style_: <span lang="pl">Messenger dba o Twoje relacje z najbliższymi osobami, pokazując aktualności
 społecznościowe w widocznym miejscu.</span>
 
-_Not our style_: <span lang="pl">Priorytetyzacja aktualizacji społecznościowych jest po prostu innym sposobem, w jaki Messenger pomaga zachować łączność z osobami, które mają największe znaczenie.</span>
+_Not our style_: :::no-loc text="Priorytetyzacja aktualizacji społecznościowych jest po prostu innym sposobem, w jaki Messenger pomaga zachować łączność z osobami, które mają największe znaczenie.":::
 
 ## 2. Word-for-word translation
 
@@ -28,9 +28,9 @@ Example:
 
 _English_: Use this feature to achieve your goals.
 
-_Our style_: <span lang="pl">Dzięki tej funkcji osiągniesz zamierzone cele.</span>
+_Our style_: :::no-loc text="Dzięki tej funkcji osiągniesz zamierzone cele.":::
 
-_Not our style_: <span lang="pl">Użyj tej funkcji do osiągnięcia swoich celów.</span>
+_Not our style_: :::no-loc text="Użyj tej funkcji do osiągnięcia swoich celów.":::
 
 ## 3. Terminology
 
@@ -49,9 +49,9 @@ Example:
 
 _English_: Try Again
 
-_Our style_: <span lang="pl">Spróbuj ponownie</span>
+_Our style_: :::no-loc text="Spróbuj ponownie":::
 
-_Not our style_: <span lang="pl">Spróbuj Ponownie</span>
+_Not our style_: :::no-loc text="Spróbuj Ponownie":::
 
 ## 5. Gender
 
@@ -61,9 +61,9 @@ Example:
 
 _English_: Forgot your password?
 
-_Our style_: <span lang="pl">Nie pamiętasz hasła?</span>
+_Our style_: :::no-loc text="Nie pamiętasz hasła?":::
 
-_Not our style_: <span lang="pl">Zapomniałeś hasła?</span>
+_Not our style_: :::no-loc text="Zapomniałeś hasła?":::
 
 ## 6. Modifiers
 
@@ -75,9 +75,9 @@ Example:
 
 _English_: All Word commands
 
-_Our style_: <span lang="pl">Wszystkie polecenia programu Word</span>
+_Our style_: :::no-loc text="Wszystkie polecenia programu Word":::
 
-_Not our style_: <span lang="pl">Wszystkie polecenia Worda</span>
+_Not our style_: :::no-loc text="Wszystkie polecenia Worda":::
 
 ## 7. Possessive adjectives and pronouns
 
@@ -91,15 +91,15 @@ In Polish, the use of pronouns is limited. Although the actual translation depen
 - Second-person forms (which address the user directly) are preferred when the program or a wizard is telling the user what to do.
 - Third-person references ("user") should be avoided.
 
-Personal and possessive pronouns referring to the user (_<span lang="pl">Ty, Twój, Twojego</span>_, and so on) should always start with a capital letter.
+Personal and possessive pronouns referring to the user (_:::no-loc text="Ty, Twój, Twojego":::_, and so on) should always start with a capital letter.
 
 Example:
 
 _English_: This program cannot be run on your computer.
 
-_Our style_: <span lang="pl">Programu nie można uruchomić na tym komputerze.</span>
+_Our style_: :::no-loc text="Programu nie można uruchomić na tym komputerze.":::
 
-_Not our style_: <span lang="pl">Tego programu nie można uruchomić na Twoim komputerze.</span>
+_Not our style_: :::no-loc text="Tego programu nie można uruchomić na Twoim komputerze.":::
 
 ## 8. Dashes and hyphens
 
@@ -111,10 +111,10 @@ Example:
 
 _Our style_:
 
-- <span lang="pl">Bielsko-Biała</span>
-- <span lang="pl">w DOS-ie</span>
-- <span lang="pl">30-procentowy</span>
-- <span lang="pl">16- i 32-bitowe</span>
+- :::no-loc text="Bielsko-Biała":::
+- :::no-loc text="w DOS-ie":::
+- :::no-loc text="30-procentowy":::
+- :::no-loc text="16- i 32-bitowe":::
 
 The en-dash (&ndash;) is used as a minus sign, usually with spaces before and after. It's also used in number ranges, such as those specifying page numbers. No spaces are used around the en-dash in this case.
 
@@ -122,28 +122,28 @@ Example:
 
 _Our style_:
 
-- <span lang="pl">ZAROBKI – WYDATKI = 2 000 000</span>
-- <span lang="pl">Opis ten podano na ss. 236–238</span>
-- <span lang="pl">w latach 1989–1991</span>
+- :::no-loc text="ZAROBKI – WYDATKI = 2 000 000":::
+- :::no-loc text="Opis ten podano na ss. 236–238":::
+- :::no-loc text="w latach 1989–1991":::
 
 The em dash (&mdash;) should be used only to emphasize an isolated element or introduce an element that's not essential to the meaning conveyed by the sentence.
 
 Example:
 
-_Our style_: <span lang="pl">Microsoft Excel — Pomoc</span>
+_Our style_: :::no-loc text="Microsoft Excel — Pomoc":::
 
 ## 9. Quotation marks
 
-Quotation marks are used when referring to quoted text. The correct Polish quotation marks are lower-upper („ ”).
+Quotation marks are used when referring to quoted text. The correct Polish quotation marks are lower-upper („ ").
 In English, when the text between quotation marks appears at the end of the sentence, the period may appear inside the quotation marks. In Polish, the period should go outside the quotation marks. Even if the whole sentence is between quotation marks, the period goes outside.
 
 Example:
 
 _English_: Field "{0}" is required
 
-_Our style_: <span lang="pl">Pole „{0}” jest wymagane</span>
+_Our style_: :::no-loc text="Pole „{0}" jest wymagane":::
 
-_Not our style_: <span lang="pl">Pole "{0}" jest wymagane</span>
+_Not our style_: :::no-loc text="Pole "{0}" jest wymagane":::
 
 ## 10. Recommended normative references
 
@@ -151,6 +151,6 @@ Use the Polish language and terminology as described and used in the following n
 
 Before adopting a new term, make sure an equivalent term doesn't already exist. Verify the spelling and hyphenation of new terms. Check Polish language dictionaries, Microsoft product glossaries and reference materials, competitive products' documentation and websites, and standards organizations such as the [Polski Komitet Normalizacyjny](https://pkn.pl/) (Polish committee for standardization or PKN).
 
-1. <span lang="pl">Słownik poprawnej polszczyzny</span>, PWN, the latest edition
-2. <span lang="pl">Słownik języka polskiego</span>, PWN, the latest edition
-3. <span lang="pl">Nowy słownik ortograficzny języka polskiego</span>, PWN, the latest edition
+1. :::no-loc text="Słownik poprawnej polszczyzny":::, PWN, the latest edition
+2. :::no-loc text="Słownik języka polskiego":::, PWN, the latest edition
+3. :::no-loc text="Nowy słownik ortograficzny języka polskiego":::, PWN, the latest edition

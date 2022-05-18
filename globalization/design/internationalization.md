@@ -1,11 +1,11 @@
 ---
-title: International design
+title: Internationalization
 description: When working on any software project it is important to think about internationalization from the very beginning of its design.
 ms.assetid: 12240d5d-6de0-4f78-8d4c-faf1e4b17b31
 ms.date: 11/15/2016
 ---
 
-# International design
+# Internationalization
 
 When working on any software project it is important to think about internationalization from the very beginning of its design.
 While you may not choose to translate the user interface for the first iteration or release,
@@ -43,8 +43,8 @@ Regardless of the coding methodology you use, there is a basic workflow to incor
    Code and verify the product can work in multiple markets, without the need for redesign.
    Use internationalization libraries.
    Set up internationalization metrics and adhere to your own standards.
-   Ensure the product can be translated when you’re ready to release in those markets.
-   In an agile world, your code needs to be “done”: world-ready by the end of the sprint.
+   Ensure the product can be translated when you're ready to release in those markets.
+   In an agile world, your code needs to be "done": world-ready by the end of the sprint.
    No separate special effort as you might have seen in other models.
 
 1. **Translate**
@@ -55,7 +55,7 @@ Regardless of the coding methodology you use, there is a basic workflow to incor
 1. **Iterate**
 
    Few products are static entities.
-   Once you’ve been through the cycle once, you will need to continue to practice internationalization in all future iterations.
+   Once you've been through the cycle once, you will need to continue to practice internationalization in all future iterations.
 
 ## Designing for internationalization
 
@@ -83,7 +83,7 @@ The reason for this "one size fits all" user interface policy is all about savin
 
 - Do all components of your feature support Unicode?
   Unicode encompasses virtually all characters used widely in computers today and standardizes encoding schemes to process it efficiently.
-  When application components don’t support the Unicode standard, they commonly misinterpret text coming from other components, which eventually results in unpredictable consequences ranging from corrupted output text to hangs and crashes.
+  When application components don't support the Unicode standard, they commonly misinterpret text coming from other components, which eventually results in unpredictable consequences ranging from corrupted output text to hangs and crashes.
   Supporting Unicode makes efficient multilingual text processing possible and is the recommended way to support language texts for which there are no code pages (e.g. Hindi).
 
 - Does the feature send or receive data to or from other features, components, or applications?
@@ -101,12 +101,12 @@ The reason for this "one size fits all" user interface policy is all about savin
   - A co-worker in California sends a meeting request to a co-worker in New York.
     Both co-workers meet at the correct time even though they are in two different time zones.
 
-  - Is latency considered in the scenario? What happens if someone doesn’t respond in X amount of time due to time zone differences?
+  - Is latency considered in the scenario? What happens if someone doesn't respond in X amount of time due to time zone differences?
 
 ### Internet protocols
 
 - If your feature processes and displays various internet protocols, does it support non-Latin characters such as www<span></span>.café.<span></span>com, <span lang="el">χρήστη@μηχανή.ελ</span>, <span lang="ar">http:// مثال.إختبار</span>, or \\\\<span lang="zh-Hans">公司</span>\\<span lang="zh-Hans">单位</span>\\<span lang="zh-Hans">文件</span>.docx.
-- Double-encoding is frequently seen when two different components use HTML encoding; instead of “Documents partagés” (Shared Documents) the user sees “Documents partag&\#233;s”. The resulting string is not human readable.
+- Double-encoding is frequently seen when two different components use HTML encoding; instead of "Documents partagés" (Shared Documents) the user sees "Documents partag&\#233;s". The resulting string is not human readable.
 - Have you considered the entire process flow?
   - When processing data, host names, URLs/IRIs, UNC paths, or email addresses, when is the conversion happening? What is doing the conversion?
   - Is your feature handing off the information in the format the receiving component is expecting?
@@ -126,9 +126,9 @@ For example, Chinese, Japanese, and Korean require special input methods such as
   - If a particular technology is not available for all languages, what will happen for those users?
 
 - Does the control (e.g., RichEdit, .NET, ActiveX, WPF, etc.) support all the [Unicode](http://www.unicode.org/) languages?
-  Please note that “support” does not mean the user interface languages, but the languages the user can type into the application.
+  Please note that "support" does not mean the user interface languages, but the languages the user can type into the application.
   Is the functionality consistent across platforms (client, server, mobile)?
-  If not, what will you do to expand the support to match the rest of the user’s experience in your program?
+  If not, what will you do to expand the support to match the rest of the user's experience in your program?
 
 - Will your document retain its formatting when round-tripping between client, mobile, and Web experiences?
   For example, what happens if a user opens a document on their mobile device?
@@ -148,8 +148,8 @@ For example, Chinese, Japanese, and Korean require special input methods such as
   This may impact features such as character counting, justification, character width calculation, line breaking, cursor movement, and selection.
 
 - If your feature has shortcut keys or accelerators, do the key-combinations vary by different keyboard languages?
-  For example, in some European languages, some characters can only be typed when you type the Alternate Graphics (AltGr) key first, which maps to the “Alt+Ctrl” sequence.
-  If the feature has a shortcut key identical to “Alt+Ctrl”, then the user will never be able to type those characters because it conflicts with the feature’s shortcut key.
+  For example, in some European languages, some characters can only be typed when you type the Alternate Graphics (AltGr) key first, which maps to the "Alt+Ctrl" sequence.
+  If the feature has a shortcut key identical to "Alt+Ctrl", then the user will never be able to type those characters because it conflicts with the feature's shortcut key.
 
 ### Locale support
 
@@ -174,10 +174,10 @@ It is best to use common APIs, such NLS, .NET, or ICU to address the following i
 
   - Does the feature allow the user to format numbers as currency?
     Does it display, input, send or receive, and save or load currency numbers?
-    For example, Bahrain uses three decimal places in their currency format (<span lang="ar">د.ب.‏1,234.456</span>), if you hard-code the decimal places to two places your feature will not meet the user’s expectations.
+    For example, Bahrain uses three decimal places in their currency format (<span lang="ar">د.ب.‏1,234.456</span>), if you hard-code the decimal places to two places your feature will not meet the user's expectations.
 
   - If your feature sorts a range of data, can the user specify the correct sort order that matches their cultural expectations?
-    For example, in Norwegian, the “ø” character is sorted after “z”.
+    For example, in Norwegian, the "ø" character is sorted after "z".
     If a user asks for a range of data of h-q, they would be surprised to see items starting with the ø character in their results.
     Each language sorts uniquely, and some cultures define more than one sort order for their language.
 
@@ -203,7 +203,7 @@ User interface is not limited to a graphical user interface, but also includes e
 - Does the feature incorporate components that are not translated for your target markets? How will you handle unsupported markets? What are the ramifications, fall back mechanisms, etc.?
 
 - If your feature has UI elements that combine to form a sentence, can the UI be reordered?
-  For example, the recurrence dialog in the calendar is problematic and adds complexity to localization because the ordering of the sentence doesn’t make sense in non-English languages.
+  For example, the recurrence dialog in the calendar is problematic and adds complexity to localization because the ordering of the sentence doesn't make sense in non-English languages.
 
     ![Re-ordering UI elements for localization](../design/images/Reorder_Elements.jpg "Re-ordering UI elements for localization")
 
@@ -222,7 +222,7 @@ User interface is not limited to a graphical user interface, but also includes e
 
 - Clipping and truncation can change meaning in profound or offensive ways.
   Ensure you understand how the meaning can be changed if you clip part of the word, either horizontally or vertically.
-  Removing an accent can change the meaning of a word: probably to something you didn’t intend!
+  Removing an accent can change the meaning of a word: probably to something you didn't intend!
 
 - Does your feature have dialogs that contain elements that display content dynamically?
   For example, these controls are difficult to localize, especially if these controls require resizing and/or relocation.
