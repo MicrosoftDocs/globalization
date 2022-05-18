@@ -1,127 +1,36 @@
 items:
-- name: Globalization Overview
+- name: Globalization
   href: index.yml
   items:
-  - name: Downloads
-    href: downloads.md
-  - name: Documentation
-    items:
-    - name: Internationalization for Windows applications
-      href: /windows/desktop/Intl/international-support
-    - name: .NET globalization
-      href: /dotnet/api/system.globalization
-    - name: Windows keyboard layouts
-      href: windows-keyboard-layouts.md
-    - name: Globalization and localization
-      href: /windows/uwp/design/globalizing/globalizing-portal
-    - name: National Language Support (NLS) reference
-      href: /windows/desktop/Intl/national-language-support-reference
-    - name: Unicode
-      href: http://www.unicode.org/
-    - name: Common Language Data Repository (CLDR)
-      href: http://cldr.unicode.org/
+    - name: Delivering products globally
+      href: methodology/global-product-delivery.md
+      items:
+      - name: Global products under rapid development
+        href: methodology/rapid-development.md
+      - name: Roles and responsibilities
+        href: methodology/roles-and-responsibilities.md
+      - name: Simultaneous shipping
+        href: methodology/simultaneous-shipping.md
+      - name: Continuous localization
+        href: methodology/continuous-localization.md
+      - name: Exit criteria
+        href: methodology/exit-criteria.md
     - name: Internationalization
       expanded: true
       items:
-      - name: Software internationalization
+      - name: Overview
         href: software-internationalization.md
-      - name: Design
+      - name: International Design
         href: design/internationalization.md
       - name: Security Guidelines for International
         href: design/security-guidelines.md
       - name: International laws and standards
         href: design/international-laws-and-standards.md
-    - name: Data encoding
-      items:
-      - name: Overview
-        href: encoding/data-encoding.md
-      - name: Encoding overview
-        href: encoding/encoding-overview.md
-      - name: Transformation of Unicode code points
-        href: encoding/transformations-of-unicode-code-points.md
-      - name: Byte Order Mark (BOM)
-        href: encoding/byte-order-mark.md
-      - name: Surrogate pairs
-        href: encoding/surrogate-pairs.md
-      - name: Private Use Area (PUA)
-        href: encoding/pua.md
-      - name: Code pages
-        href: encoding/code-pages.md
-    - name: Locale and culture awareness
-      items:
-      - name: Overview
-        href: locale/locale-and-culture.md
-      - name: Using the locale model
-        href: locale/locale-model.md
-      - name: Additional information about locales
-        items:
-        - name: Locale names and LCID deprecation
-          href: locale/locale-names.md
-        - name: Input locale
-          href: locale/input-locale.md
-        - name: System locale
-          href: locale/system-locale.md
-        - name: Thread locale
-          href: locale/thread-locale.md
-        - name: UI language
-          href: locale/ui-language.md
-        - name: User locale
-          href: locale/user-locale.md
-        - name: Language groups and language collections
-          href: locale/language-groups-and-language-collections.md
-        - name: Location or geographic ID
-          href: locale/location-or-geographic-id.md
-        - name: Browser language setting
-          href: locale/browser-language-setting.md
-      - name: Sorting and string comparison
-        href: locale/sorting-and-string-comparison.md
-      - name: World calendars
-        href: locale/calendar-differences.md
-      - name: Date Formatting
-        href: locale/date-formatting.md
-      - name: Time Formatting
-        href: locale/time-formatting.md
-      - name: Currency Formatting
-        href: locale/currency-formatting.md
-      - name: Number Formatting
-        href: locale/number-formatting.md
-      - name: Addresses
-        href: locale/addresses.md
-      - name: Telephone Number
-        href: locale/telephone-number.md
-      - name: Paper Size
-        href: locale/paper-size.md
-      - name: Units of Measurement
-        href: locale/units-of-measurement.md
-    - name: Input, Output, and Display
-      items:
-      - name: Overview
-        href: input/input.md
-      - name: Text Input, Output, and Display
-        href: input/text-input.md
-      - name: Text Rendering
-        href: input/text-rendering.md
-      - name: Page or Text Alignment
-        href: input/page-or-text-alignment.md
-      - name: Text Justification
-        href: input/text-justification.md
-      - name: Font Technology
-        href: input/font-technology.md
-      - name: Script and Font Support in Windows
-        href: input/font-support.md
-      - name: Line and Word Breaking
-        href: input/line-and-word-breaking.md
-      - name: Mirroring
-        href: input/mirroring.md
-      - name: Overlay Text Properties
-        href: input/overlay.md
-      - name: Console Globalization
-        href: input/console-globalization.md
     - name: Localizability
       items:
       - name: Overview
         href: localizability/localizability.md
-      - name: Localizability Overview
+      - name: Localizability Introduction
         href: localizability/overview.md
       - name: Isolate Localizable Resources
         href: localizability/isolate-localizable-resources.md
@@ -229,45 +138,133 @@ items:
           href: localization/ministyleguides/mini-style-guide-swedish.md
         - name: Turkish
           href: localization/ministyleguides/mini-style-guide-turkish.md
-    - name: Testing for World Readiness
+    - name: Data encoding
       items:
       - name: Overview
-        href: testing/testing-for-world-readiness.md
-      - name: Quality Assurance for World-Readiness
-        href: testing/quality-assurance-for-world-readiness.md
-      - name: The World-Ready Approach to Testing
-        href: testing/the-world-ready-approach-to-testing.md
-      - name: Globalization of the Test
+        href: encoding/data-encoding.md
+      - name: Encoding Introduction
+        href: encoding/encoding-overview.md
+      - name: Transformation of Unicode code points
+        href: encoding/transformations-of-unicode-code-points.md
+      - name: Byte Order Mark (BOM)
+        href: encoding/byte-order-mark.md
+      - name: Surrogate pairs
+        href: encoding/surrogate-pairs.md
+      - name: Private Use Area (PUA)
+        href: encoding/pua.md
+      - name: Code pages
+        href: encoding/code-pages.md
+    - name: Locale and culture awareness
+      items:
+      - name: Overview
+        href: locale/locale-and-culture.md
+      - name: Using the locale model
+        href: locale/locale-model.md
+      - name: Additional information about locales
         items:
-        - name: Overview
-          href: testing/globalization-of-the-test.md
-        - name: Testing Approach
-          href: testing/testing-approach.md
-        - name: Prioritizing the Components
-          href: testing/prioritizing-the-components.md
-        - name: Choosing a Test Platform
-          href: testing/choosing-a-test-platform.md
-        - name: Creating the Test Environment
-          href: testing/creating-the-test-environment.md
-        - name: Globalizing Your Test Data
-          href: testing/globalizing-your-test-data.md
-        - name: Identify the Problems
-          href: testing/identify-globalization-problem.md
-      - name: Localizability Testing
-        href: testing/localizability-testing.md
-      - name: Localization Testing
-        href: testing/localization-testing.md
-      - name: The Role of Test Tools
-        href: testing/the-role-of-test-tools.md
-      - name: Sample International Test Cases
-        items:
-        - name: Overview
-          href: testing/sample-international-test-cases.md
-        - name: Test Cases for Deployment and General Functionality
-          href: testing/test-cases-for-deployment-and-general-functionality.md
-        - name: Test Cases for Text Handling
-          href: testing/test-cases-for-locale-awareness.md
-        - name: Test Cases for Locale Awareness
-          href: testing/test-cases-for-localizability.md
-        - name: Test Cases for Localizability
-          href: testing/test-cases-for-text-handling.md
+        - name: Locale names and LCID deprecation
+          href: locale/locale-names.md
+        - name: Input locale
+          href: locale/input-locale.md
+        - name: System locale
+          href: locale/system-locale.md
+        - name: Thread locale
+          href: locale/thread-locale.md
+        - name: UI language
+          href: locale/ui-language.md
+        - name: User locale
+          href: locale/user-locale.md
+        - name: Language groups and language collections
+          href: locale/language-groups-and-language-collections.md
+        - name: Location or geographic ID
+          href: locale/location-or-geographic-id.md
+        - name: Browser language setting
+          href: locale/browser-language-setting.md
+      - name: Sorting and string comparison
+        href: locale/sorting-and-string-comparison.md
+      - name: World calendars
+        href: locale/calendar-differences.md
+      - name: Date Formatting
+        href: locale/date-formatting.md
+      - name: Time Formatting
+        href: locale/time-formatting.md
+      - name: Currency Formatting
+        href: locale/currency-formatting.md
+      - name: Number Formatting
+        href: locale/number-formatting.md
+      - name: Addresses
+        href: locale/addresses.md
+      - name: Telephone Number
+        href: locale/telephone-number.md
+      - name: Paper Size
+        href: locale/paper-size.md
+      - name: Units of Measurement
+        href: locale/units-of-measurement.md
+    - name: Input, Output, and Display
+      items:
+      - name: Overview
+        href: input/input.md
+      - name: Text Input, Output, and Display
+        href: input/text-input.md
+      - name: Text Rendering
+        href: input/text-rendering.md
+      - name: Page or Text Alignment
+        href: input/page-or-text-alignment.md
+      - name: Text Justification
+        href: input/text-justification.md
+      - name: Font Technology
+        href: input/font-technology.md
+      - name: Script and Font Support in Windows
+        href: input/font-support.md
+      - name: Line and Word Breaking
+        href: input/line-and-word-breaking.md
+      - name: Mirroring
+        href: input/mirroring.md
+      - name: Overlay Text Properties
+        href: input/overlay.md
+      - name: Console Globalization
+        href: input/console-globalization.md
+    - name: Testing and validating a globalized product
+      href: testing/quality-assurance-for-world-readiness.md
+      items:
+      - name: Internationalization Checklist
+        href: testing/internationalization-checklist.md
+      - name: Global test design
+        href: testing/globalize-the-test.md
+      - name: Testing approach
+        href: testing/testing-approach.md
+      - name: Prioritize components
+        href: testing/prioritize-components.md
+      - name: Choose a test platform
+        href: testing/choose-a-test-platform.md
+      - name: Create the test environment
+        href: testing/create-the-test-environment.md
+      - name: Globalize test data
+        href: testing/globalize-test-data.md
+      - name: Identify the problems
+        href: testing/identify-globalization-problem.md
+      - name: Classify localization issues
+        href: testing/issue-taxonomy.md
+    - name: Internationalization for Windows applications
+      items:
+      - name: Internationalization for Windows applications
+        href: /windows/desktop/Intl/international-support
+      - name: .NET globalization
+        href: /dotnet/api/system.globalization
+      - name: Windows keyboard layouts
+        href: windows-keyboard-layouts.md
+      - name: Globalization and localization
+        href: /windows/uwp/design/globalizing/globalizing-portal
+      - name: National Language Support (NLS) reference
+        href: /windows/desktop/Intl/national-language-support-reference
+    - name: Reference
+      href: reference/index.md
+      items:
+      - name: Tools and information on the web
+        href: reference/index.md
+      - name: Microsoft language portal
+        href: reference/microsoft-language-portal.md
+      - name: OpenType
+        href: reference/opentype.md
+      - name: Glossary
+        href: reference/glossary.md

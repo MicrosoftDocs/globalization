@@ -1,6 +1,6 @@
 ---
 title: Italian Localization Style Guide
-description: Are you helping with translation into Italian, but don't have time to study all aspects of the Italian Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Italian, but don't have time to study all aspects of the Italian Style Guide? Here are the ten most important aspects.
 ms.date: 05/13/2019
 ---
 
@@ -34,17 +34,17 @@ Example:
 
 _English_: to reference
 
-_Our style_: <span lang="it">vedere</span>
+_Our style_: :::no-loc text="vedere":::
 
-_Not our style_: <span lang="it">fare riferimento a</span>
+_Not our style_: :::no-loc text="fare riferimento a":::
 
 Example:
 
 _English_: can
 
-_Our style_: <span lang="it">riuscire a</span>
+_Our style_: :::no-loc text="riuscire a":::
 
-_Not our style_: <span lang="it">essere in grado di</span>
+_Not our style_: :::no-loc text="essere in grado di":::
 
 ## 4. Short word forms and everyday words
 
@@ -57,17 +57,17 @@ Example:
 
 _English_: PC
 
-_Our style_: <span lang="it">PC</span>
+_Our style_: :::no-loc text="PC":::
 
-_Not our style_: <span lang="it">personal computer</span>
+_Not our style_: :::no-loc text="personal computer":::
 
 Example:
 
 _English_: app
 
-_Our style_: <span lang="it">app</span>
+_Our style_: :::no-loc text="app":::
 
-_Not our style_: <span lang="it">applicazione</span>
+_Not our style_: :::no-loc text="applicazione":::
 
 ## 5. Localization considerations
 
@@ -108,17 +108,17 @@ Example:
 
 _English_: Setting Up Printer's Options
 
-_Our style_: <span lang="it">Impostazione delle opzioni della stampante</span>
+_Our style_: :::no-loc text="Impostazione delle opzioni della stampante":::
 
-_Not our style_: <span lang="it">Impostazione delle Opzioni della Stampante</span>
+_Not our style_: :::no-loc text="Impostazione delle Opzioni della Stampante":::
 
 Example:
 
 _English_: Edit Movie
 
-_Our style_: <span lang="it">Modifica filmato</span>
+_Our style_: :::no-loc text="Modifica filmato":::
 
-_Not our style_: <span lang="it">Modifica Filmato</span>
+_Not our style_: :::no-loc text="Modifica Filmato":::
 
 ## 9. Gender
 
@@ -128,7 +128,7 @@ Example:
 
 _English_: New documents and dimensions
 
-_Our style_: <span lang="it">Nuovi documenti e dimensioni</span>
+_Our style_: :::no-loc text="Nuovi documenti e dimensioni":::
 
 ## 10. The subjunctive mood
 
@@ -138,9 +138,9 @@ Example:
 
 _English_: I would be happy if you came to my party.
 
-_Our style_: <span lang="it">Sarei contento se venissi alla mia festa</span>
+_Our style_: :::no-loc text="Sarei contento se venissi alla mia festa":::
 
-_Not our style_: <span lang="it">Sarei contento se vieni alla mia festa</span>
+_Not our style_: :::no-loc text="Sarei contento se vieni alla mia festa":::
 
 ## 10+ Use the right reference material
 

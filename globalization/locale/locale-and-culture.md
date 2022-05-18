@@ -37,5 +37,5 @@ Like addresses, the format for telephone numbers around the world varies signifi
 [Paper Size](/globalization/locale/paper-size)  
 It's important to set the paper size correctly if your application supports the print function.
 
-[Units of Measurement](/globalization/locale/units-of-measurement) 
+[Units of Measurement](/globalization/locale/units-of-measurement)
 Throughout the world things are measured using different units and scales. The most popular one used is the metric system (meters, liters, grams, etc). Where as the US still uses the imperial system (feet, inches, pounds, etc).

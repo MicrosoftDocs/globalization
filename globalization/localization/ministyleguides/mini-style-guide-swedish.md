@@ -1,6 +1,6 @@
 ---
 title: Swedish Localization Style Guide
-description: Are you helping with translation into Swedish, but don't have time to study all aspects of the Swedish Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Swedish, but don't have time to study all of the Swedish Style Guide? Here are the ten most important aspects.
 ms.date: 05/13/2019
 ---
 
@@ -16,9 +16,9 @@ Example:
 
 _English_: When a pinned site is launched from the taskbar, the browser frame and navigational controls integrate the site's icon and primary color, providing an experience that's tailored to the site you're viewing.
 
-_Our style_: <span lang="sv">När du klickar på en webbplats i Aktivitetsfältet anpassas webbläsarens ram och navigeringsfält efter webbplatsen ikon och färg. På så sätt får du en skräddarsydd inramning av webbplatsen du besöker.</span>
+_Our style_: :::no-loc text="När du klickar på en webbplats i Aktivitetsfältet anpassas webbläsarens ram och navigeringsfält efter webbplatsen ikon och färg. På så sätt får du en skräddarsydd inramning av webbplatsen du besöker.":::
 
-_Not our style_: <span lang="sv">När en fäst webbplats körs från Aktivitetsfältet integrerar webbläsarramen och navigeringskontrollerna webbplatsens ikon och primära färg och tillhandahåller en upplevelse som är skräddarsydd efter webbplatsen du tittar på.</span>
+_Not our style_: :::no-loc text="När en fäst webbplats körs från Aktivitetsfältet integrerar webbläsarramen och navigeringskontrollerna webbplatsens ikon och primära färg och tillhandahåller en upplevelse som är skräddarsydd efter webbplatsen du tittar på.":::
 
 It is also common in English to repeat words in a sentence. To achieve a natural tone in the Swedish translation, do not repeat words more than is necessary.
 
@@ -26,9 +26,9 @@ Example:
 
 _English_: When using an agent, this agent is the default agent for clients when none is specified.
 
-_Our style_: <span lang="sv">Den här agenten används som standard för klienter om inget annat anges.</span>
+_Our style_: :::no-loc text="Den här agenten används som standard för klienter om inget annat anges.":::
 
-_Not our style_: <span lang="sv">När en agent används är denna agent standardagent för klienter om inget annat anges.</span>
+_Not our style_: :::no-loc text="När en agent används är denna agent standardagent för klienter om inget annat anges.":::
 
 ## 2. Choices that reflect the Microsoft voice
 
@@ -38,9 +38,9 @@ Example:
 
 _English_: Fast and responsive web experiences. All-around fast.
 
-_Our style_: <span lang="sv">Surfa snabbare och få en bättre webbupplevelse. Grym prestanda!</span>
+_Our style_: :::no-loc text="Surfa snabbare och få en bättre webbupplevelse. Grym prestanda!":::
 
-_Not our style_: <span lang="sv">Snabba och responsiva webbupplevelser. Alltid snabba.</span>
+_Not our style_: :::no-loc text="Snabba och responsiva webbupplevelser. Alltid snabba.":::
 
 ## 3. Product names and terms
 
@@ -50,49 +50,49 @@ Example:
 
 _English_: firstline worker
 
-_Our style_: <span lang="sv">service- och produktionsmedarbetare</span>
+_Our style_: :::no-loc text="service- och produktionsmedarbetare":::
 
-_Not our style_: <span lang="sv">firstline-medarbetare</span>
+_Not our style_: :::no-loc text="firstline-medarbetare":::
 
 Example:
 
 _English_: Microsoft Office 365 Developer Technical Preview
 
-_Our style_: <span lang="sv">Microsoft Office 365 Developer Technical Preview</span>
+_Our style_: :::no-loc text="Microsoft Office 365 Developer Technical Preview":::
 
-_Not our style_: <span lang="sv">Microsoft Office 365 Betaversion för utvecklare</span>
+_Not our style_: :::no-loc text="Microsoft Office 365 Betaversion för utvecklare":::
 
 ## 4. Verbs and tense
 
-In the US English source text, simple verb tenses help to convey the clarity of the Microsoft voice. The easiest tense to understand is the simple present, like we use in this guide. Avoid the future tense unless you are describing something that will really happen in the future and the simple present tense is inapplicable. In translations, avoid using "<span lang="sv">kommer att</span>" and use the present tense instead.
+In the US English source text, simple verb tenses help to convey the clarity of the Microsoft voice. The easiest tense to understand is the simple present, like we use in this guide. Avoid the future tense unless you are describing something that will really happen in the future and the simple present tense is inapplicable. In translations, avoid using ":::no-loc text="kommer att":::" and use the present tense instead.
 
 Example:
 
 _English_: If you press the button, the message will be sent.
 
-_Our style_: <span lang="sv">Om du trycker på knappen skickas meddelandet.</span> _OR_ <span lang="sv">Tryck på knappen, så skickas meddelandet.</span>
+_Our style_: :::no-loc text="Om du trycker på knappen skickas meddelandet."::: _OR_ :::no-loc text="Tryck på knappen, så skickas meddelandet.":::
 
-_Not our style_: <span lang="sv">Om du trycker på knappen kommer meddelandet att skickas.</span>
+_Not our style_: :::no-loc text="Om du trycker på knappen kommer meddelandet att skickas.":::
 
 ## 5. The use of pronouns
 
-The use of personal pronouns is a powerful way to express all the attributes of the Microsoft voice. Note, that the excessive use of "we" in Swedish is not recommended. Third-person references, such as "user," are avoided as they sound formal and impersonal. Addressing the user by first- or second-person conveys the meaning that this person is not anonymous. Excessive use of the first and second pronoun (<span lang="sv">min, mitt, mina, din, ditt, dina</span>) is however not recommended. Use it only when needed to clarify / distinguish (your files vs. somebody else's).
+The use of personal pronouns is a powerful way to express all the attributes of the Microsoft voice. Note, that the excessive use of "we" in Swedish is not recommended. Third-person references, such as "user," are avoided as they sound formal and impersonal. Addressing the user by first- or second-person conveys the meaning that this person is not anonymous. Excessive use of the first and second pronoun (:::no-loc text="min, mitt, mina, din, ditt, dina":::) is however not recommended. Use it only when needed to clarify / distinguish (your files vs. somebody else's).
 
 Example:
 
 _English_: Users can change when new updates get installed.
 
-_Our style_: <span lang="sv">Du kan ändra när uppdateringar installeras.</span>
+_Our style_: :::no-loc text="Du kan ändra när uppdateringar installeras.":::
 
-_Not our style_: <span lang="sv">Användare kan ändra när nya uppdateringar installeras.</span>
+_Not our style_: :::no-loc text="Användare kan ändra när nya uppdateringar installeras.":::
 
 Example:
 
 _English_: You can change your settings when you have opened your program.
 
-_Our style_: <span lang="sv">Du kan ändra inställningarna när du har öppnat programmet.</span>
+_Our style_: :::no-loc text="Du kan ändra inställningarna när du har öppnat programmet.":::
 
-_Not our style_: <span lang="sv">Du kan ändra dina inställningar när du har öppnat ditt program.</span>
+_Not our style_: :::no-loc text="Du kan ändra dina inställningar när du har öppnat ditt program.":::
 
 ## 6. Compounds
 
@@ -102,29 +102,29 @@ Example:
 
 _English_: Supersonic aeroplane motor.
 
-_Our style_: <span lang="sv">Motor för överljudsflygplan.</span>
+_Our style_: :::no-loc text="Motor för överljudsflygplan.":::
 
-_Not our style_: <span lang="sv">Överljudsflygplansmotor.</span> _OR_ <span lang="sv">överljud flygplans motor.</span>
+_Not our style_: :::no-loc text="Överljudsflygplansmotor."::: _OR_ :::no-loc text="överljud flygplans motor.":::
 
 ## 7. If and To clauses
 
-A commonly used construction in US user guides are clauses starting with "If" or "To" followed by an imperative. Different structures are recommended in Swedish. Do not automatically translate "If you want to" with "<span lang="sv">Om du vill</span>" or "To open the window" with "<span lang="sv">För att öppna fönstret</span>".
+A commonly used construction in US user guides are clauses starting with "If" or "To" followed by an imperative. Different structures are recommended in Swedish. Do not automatically translate "If you want to" with ":::no-loc text="Om du vill":::" or "To open the window" with ":::no-loc text="För att öppna fönstret":::".
 
 Example:
 
 _English_: If you want to open Notepad, click Start.
 
-_Our style_: <span lang="sv">Klicka på Start för att öppna Notepad.</span>
+_Our style_: :::no-loc text="Klicka på Start för att öppna Notepad.":::
 
-_Not our style_: <span lang="sv">För att öppna Notepad, klicka på Start.</span>
+_Not our style_: :::no-loc text="För att öppna Notepad, klicka på Start.":::
 
 Example:
 
 _English_: Select New in the File menu to create a new document.
 
-_Our style_: <span lang="sv">Klicka Skapa ett nytt dokument genom att välja Nytt på Arkiv-menyn.</span>
+_Our style_: :::no-loc text="Klicka Skapa ett nytt dokument genom att välja Nytt på Arkiv-menyn.":::
 
-_Not our style_: <span lang="sv">För att skapa ett nytt dokument, välj Nytt på Arkiv-menyn.</span>
+_Not our style_: :::no-loc text="För att skapa ett nytt dokument, välj Nytt på Arkiv-menyn.":::
 
 ## 8. Use of commas
 
@@ -134,31 +134,31 @@ Example:
 
 _English_: If you know the basics of MS-DOS, you can skip chapter 2.
 
-_Our style_: <span lang="sv">Om du känner till grunderna i MS-DOS kan du hoppa över kapitel 2.</span>
+_Our style_: :::no-loc text="Om du känner till grunderna i MS-DOS kan du hoppa över kapitel 2.":::
 
-_Not our style_: <span lang="sv">Om du känner till grunderna i MS-DOS, kan du hoppa över kapitel 2.</span>
+_Not our style_: :::no-loc text="Om du känner till grunderna i MS-DOS, kan du hoppa över kapitel 2.":::
 
 Example:
 
 _English_: Computer manuals, especially those for a US audience, are often unnecessarily talkative.
 
-_Our style_: <span lang="sv">Datorhandböcker, i synnerhet amerikanska, är ofta onödigt pratiga.</span>
+_Our style_: :::no-loc text="Datorhandböcker, i synnerhet amerikanska, är ofta onödigt pratiga.":::
 
-_Not our style_: <span lang="sv">Datorhandböcker i synnerhet amerikanska är ofta onödigt pratiga.</span>
+_Not our style_: :::no-loc text="Datorhandböcker i synnerhet amerikanska är ofta onödigt pratiga.":::
 
 ## 9. Titles
 
 In English, the titles for chapters usually begin with "How to …" or with phrases such as "Working with …" or "Using .…" Use the following guidelines for the Swedish version of Microsoft documentation.
 
-Use the infinitive form of verbs without the infinitive marker "<span lang="sv">att</span>":
+Use the infinitive form of verbs without the infinitive marker ":::no-loc text="att":::":
 
 Example:
 
 _English_: Opening a document
 
-_Our style_: <span lang="sv">Öppna ett dokument</span>
+_Our style_: :::no-loc text="Öppna ett dokument":::
 
-_Not our style_: <span lang="sv">Att öppna ett dokument</span>
+_Not our style_: :::no-loc text="Att öppna ett dokument":::
 
 For nouns in documentation headings (not chapter titles), use the same form (singular or plural) as in the source text.
 
@@ -166,19 +166,19 @@ Example:
 
 _English_: Add comments to a PowerPoint presentation.
 
-_Our style_: <span lang="sv">Lägga till kommentarer i en PowerPoint-presentation.</span>
+_Our style_: :::no-loc text="Lägga till kommentarer i en PowerPoint-presentation.":::
 
-_Not our style_: <span lang="sv">Tillägg av kommentarer i en PowerPoint-presentation.</span>
+_Not our style_: :::no-loc text="Tillägg av kommentarer i en PowerPoint-presentation.":::
 
-For the lowest-level heading that appears directly above an instruction, use the form "<span lang="sv">Så här …</span>"
+For the lowest-level heading that appears directly above an instruction, use the form ":::no-loc text="Så här …":::"
 
 Example:
 
 _English_: Saving a file
 
-_Our style_: <span lang="sv">Så här sparar du en fil</span>
+_Our style_: :::no-loc text="Så här sparar du en fil":::
 
-_Not our style_: <span lang="sv">Att spara en fil</span>
+_Not our style_: :::no-loc text="Att spara en fil":::
 
 ## 10. Reference materials
 

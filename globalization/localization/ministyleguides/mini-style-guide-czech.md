@@ -1,6 +1,6 @@
 ---
 title: Czech Localization Style Guide
-description: Are you helping with translation into Czech, but don't have time to study all aspects of the Czech Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Czech, but don't have time to study all of the Czech Style Guide? Here are the ten most important aspects.
 ms.date: 03/04/2019
 ---
 
@@ -18,9 +18,9 @@ Example:
 
 _English_: Crashes happen. The power goes out. The network goes down.
 
-_Our style_: <span lang="cs">Bohužel není vždycky všechno bez problémů. Může vám spadnout počítač, vypnou elektřinu nebo vypadne síť.</span>
+_Our style_: :::no-loc text="Bohužel není vždycky všechno bez problémů. Může vám spadnout počítač, vypnou elektřinu nebo vypadne síť.":::
 
-_Not our style_: <span lang="cs">Havárie se stávají. Dojde k výpadku elektrické energie. Může být nedostupná síť.</span>
+_Not our style_: :::no-loc text="Havárie se stávají. Dojde k výpadku elektrické energie. Může být nedostupná síť.":::
 
 ## 2. Level of formality
 
@@ -28,9 +28,9 @@ Avoid words and phrases that sound too formal. Either look for more informal alt
 
 Example:
 
-_Our style_: <span lang="cs">ale, přestože, sice, už, který, dál, nejdřív, nejde, teď, zkusit znovu, potom, jestli, tady, zrušit, pokud chcete, …</span>
+_Our style_: :::no-loc text="ale, přestože, sice, už, který, dál, nejdřív, nejde, teď, zkusit znovu, potom, jestli, tady, zrušit, pokud chcete, …":::
 
-_Not our style_: <span lang="cs">ač, avšak, již, jež, nadále, nejprve, nelze, nyní, opakovat akci, poté, zda, zde, chcete-li, storno, …</span>
+_Not our style_: :::no-loc text="ač, avšak, již, jež, nadále, nejprve, nelze, nyní, opakovat akci, poté, zda, zde, chcete-li, storno, …":::
 
 ## 3. Word-for-word translation
 
@@ -38,19 +38,19 @@ In order to achieve a fluent translation, you should avoid translating word for 
 
 Example:
 
-_English_: Users can control their desktops.
+_English_: :::no-loc text="Users can control their desktops.":::
 
-_Our style_: <span lang="cs">Uživatelé si můžou upravit plochu podle svých představ.</span>
+_Our style_: :::no-loc text="Uživatelé si můžou upravit plochu podle svých představ.":::
 
-_Not our style_: <span lang="cs">Uživatelé mohou řídit vzhled své plochy.</span>
+_Not our style_: :::no-loc text="Uživatelé mohou řídit vzhled své plochy.":::
 
 Example:
 
-_English_: Protect your files in case of a crash–turn on AutoRecover and AutoSave
+_English_: :::no-loc text="Protect your files in case of a crash–turn on AutoRecover and AutoSave":::
 
-_Our style_: <span lang="cs">Zapnutí automatického obnovení a automatického uložení (abyste nepřišli o soubory, když vám spadne počítač)</span>
+_Our style_: :::no-loc text="Zapnutí automatického obnovení a automatického uložení (abyste nepřišli o soubory, když vám spadne počítač)":::
 
-_Not our style_: <span lang="cs">Ochrana vašich souborů pro případ chyby – zapnutím automatického obnovení a automatického uložení</span>
+_Not our style_: :::no-loc text="Ochrana vašich souborů pro případ chyby – zapnutím automatického obnovení a automatického uložení":::
 
 ## 4. Gender
 
@@ -60,23 +60,23 @@ When addressing the user, ensure gender neutrality by means of the second-person
 
 Example:
 
-_English_: Ensure you have closed all the files.
+_English_: :::no-loc text="Ensure you have closed all the files.":::
 
-_Our style_: <span lang="cs">Ujistěte se, že jste zavřeli všechny soubory.</span>
+_Our style_: :::no-loc text="Ujistěte se, že jste zavřeli všechny soubory.":::
 
-However, there are situations where gender cannot be avoided or the expression of both genders is preferred instead of using the neutral form with the descriptor _<span lang="cs">uživatel</span>_ (for example, in content with a less formal tone). In such a case, include both the masculine and feminine gender.
+However, there are situations where gender cannot be avoided or the expression of both genders is preferred instead of using the neutral form with the descriptor _:::no-loc text="uživatel":::_ (for example, in content with a less formal tone). In such a case, include both the masculine and feminine gender.
 
 Example:
 
-_English_: {ut1} has updated this group with a better chat experience.
+_English_: :::no-loc text="{ut1} has updated this group with a better chat experience.":::
 
-_Our style_: <span lang="cs">{ut1} aktualizoval(a) tuto skupinu novou verzí chatu.</span> _or_ <span lang="cs">{ut1} aktualizoval/a tuto skupinu novou verzí chatu.</span>
+_Our style_: :::no-loc text="{ut1} aktualizoval(a) tuto skupinu novou verzí chatu."::: _or_ :::no-loc text="{ut1} aktualizoval/a tuto skupinu novou verzí chatu:::.":::
 
 In dynamic strings, such as the greeting in a mail-merge document, it is recommended to omit the user name placeholder entirely or use both genders (or both, as appropriate) to ensure gender neutrality. Note that the feminine form precedes the masculine.
 
 Example:
 
-_Our style_: <span lang="cs">Vážená paní / Vážený pane</span>
+_Our style_: :::no-loc text="Vážená paní / Vážený pane":::
 
 ## 5. Terminology and glossaries
 
@@ -96,7 +96,7 @@ Example:
 
 _English_: Such operations will require consultations within the UN and the OSCE.
 
-_Our style_: <span lang="cs">Taková operace se neobejde bez konzultací v rámci OSN a OBSE.</span>
+_Our style_: :::no-loc text="Taková operace se neobejde bez konzultací v rámci OSN a OBSE.":::
 
 ### Unlocalized acronyms
 
@@ -106,7 +106,7 @@ Example:
 
 _English_: The function is affected by the BIOS error.
 
-_Our style_: <span lang="cs">Funkci ovlivňuje chyba systému BIOS.</span>
+_Our style_: :::no-loc text="Funkci ovlivňuje chyba systému BIOS.":::
 
 ## 7. Possessives
 
@@ -118,19 +118,19 @@ Example:
 
 _English_: A new window appears on your desktop.
 
-_Our style_: <span lang="cs">Na ploše se otevře nové okno.</span>
+_Our style_: :::no-loc text="Na ploše se otevře nové okno.":::
 
 Example:
 
 _English_: Download the file to your computer.
 
-_Our style_: <span lang="cs">Stáhněte si soubor na svůj počítač.</span>
+_Our style_: :::no-loc text="Stáhněte si soubor na svůj počítač.":::
 
 Example:
 
 _English_: The email server rejected your username.
 
-_Our style_: <span lang="cs">E-mailový server odmítl vaše uživatelské jméno.</span>
+_Our style_: :::no-loc text="E-mailový server odmítl vaše uživatelské jméno.":::
 
 ## 8. Progressive action
 
@@ -140,17 +140,17 @@ Example:
 
 _English_: Waiting for server …
 
-_Our style_: <span lang="cs">Čeká se na server…</span>
+_Our style_: :::no-loc text="Čeká se na server…":::
 
-_Not our style_: <span lang="cs">Čekání na server…</span>
+_Not our style_: :::no-loc text="Čekání na server…":::
 
 Example:
 
 _English_: Checking compatibility …
 
-_Our style_: <span lang="cs">Kontrolujte se kompatibilita…</span>
+_Our style_: :::no-loc text="Kontrolujte se kompatibilita…":::
 
-_Not our style_: <span lang="cs">Probíhá kontrola kompatibility…</span>
+_Not our style_: :::no-loc text="Probíhá kontrola kompatibility…":::
 
 However, if the subject of the segment is unexpressed, use the general style guide rule for progressive action.
 
@@ -158,37 +158,37 @@ Example:
 
 _English_: Saving …
 
-_Our style_: <span lang="cs">Ukládání…</span>
+_Our style_: :::no-loc text="Ukládání…":::
 
 Example:
 
 _English_: Waiting …
 
-_Our style_: <span lang="cs">Systém/aplikace čeká…</span>
+_Our style_: :::no-loc text="Systém/aplikace čeká…":::
 
 ## 9. Declining product names
 
-In some cases, it is appropriate to decline the product name. But in some cases the product name should not be declined, and in this case an appropriate generic word should be used before the product name, and this generic word should be declined. However, never use the _-ovský/á/é_ endings (_wordovský_, _excelovský_, _accessovská_, _outlookovský_), although they are also grammatically correct.
+In some cases, it is appropriate to decline the product name. But in some cases the product name should not be declined, and in this case an appropriate generic word should be used before the product name, and this generic word should be declined. However, never use the _:::no-loc text="-ovský/á/é":::_ endings (:::no-loc text="_wordovský_, _excelovský_, _accessovská_, _outlookovský_":::), although they are also grammatically correct.
 
 Examples of declined product names:
 
-- ve Wordu
-- v Microsoft Excelu
-- ve Skypu
-- v Bingu
-- na Facebooku
-- v Exchangi
-- wordový dokument (also dokument Wordu, dokument z Wordu, dokument aplikace Word)
-- excelový sešit
-- instalace Office
-- skypové číslo/jméno
-- skypová zpráva/hovor…
+- :::no-loc text="ve Wordu":::
+- :::no-loc text="v Microsoft Excelu":::
+- :::no-loc text="ve Skypu":::
+- :::no-loc text="v Bingu":::
+- :::no-loc text="na Facebooku":::
+- :::no-loc text="v Exchangi":::
+- :::no-loc text=" wordový dokument"::: (also :::no-loc text="dokument Wordu":::, :::no-loc text="dokument z Wordu":::, :::no-loc text="dokument aplikace Word":::)
+- :::no-loc text="excelový sešit":::
+- :::no-loc text="instalace Office":::
+- :::no-loc text="skypové číslo/jméno":::
+- :::no-loc text="skypová zpráva/hovor…":::
 
 Examples of product names that should not be declined:
 
-- v Office
-- kredit Skype
-- účet Skype…
+- :::no-loc text="v Office":::
+- :::no-loc text="kredit Skype":::
+- :::no-loc text="účet Skype…":::
 
 ## 10. Reference materials
 

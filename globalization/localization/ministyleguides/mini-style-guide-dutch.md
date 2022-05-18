@@ -1,7 +1,7 @@
 ---
 title: Dutch Localization Style Guide
-description: Are you helping with translation into Dutch, but don't have time to study all aspects of the Dutch Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
-ms.date: 05/28/2019
+description: Are you helping with translation into Dutch, but don't have time to study all of the Dutch Style Guide? Here are the ten most important aspects.
+ms.date: 5/16/2022
 ---
 
 # Top 10 Tips for Microsoft Translation into Dutch
@@ -20,7 +20,7 @@ Example:
 
 |English|Our style|Not our style|
 |---|---|---|
-|Developers can go to the application management site to find the apps they are looking for.|<span lang="nl">Ontwikkelaars kunnen op de site voor applicatiebeheer de apps vinden die ze nodig hebben.</span>|<span lang="nl">Ontwikkelaars kunnen naar de site voor applicatiebeheer gaan om de apps te vinden die ze nodig hebben.</span>|
+|Developers can go to the application management site to find the apps they are looking for.|:::no-loc text="Ontwikkelaars kunnen op de site voor applicatiebeheer de apps vinden die ze nodig hebben.":::|:::no-loc text="Ontwikkelaars kunnen naar de site voor applicatiebeheer gaan om de apps te vinden die ze nodig hebben.":::|
 
 ## 2. Simple, readable text
 
@@ -32,25 +32,25 @@ The [Microsoft voice](/style-guide/brand-voice-above-all-simple-human) avoids an
 |as well as|… en …</span>|<span lang="nl">zowel … als …|
 |refer to|deze, de</span> (or leave out)|<span lang="nl">betreffende|
 |from|vanaf</span>|<span lang="nl">met ingang van|
-|in conjunction with|Avoid these phrases, and try to rephrase the sentences while keeping the general meaning.|<span lang="nl">ten aanzien van met betrekking tot in verband met</span>|
+|in conjunction with|Avoid these phrases, and try to rephrase the sentences while keeping the general meaning.|:::no-loc text="ten aanzien van met betrekking tot in verband met":::|
 
 Sometimes the text may be split into separate sentences to avoid that sentences become unnecessarily long and complex. Often you can omit descriptors to make the text snappier and get to the point faster.
 
 |English|Not our style|Our style|
 |---|---|---|
-|You may also find it easier to write complex formulas if parts of those formulas contain named, shorter formulas.|<span lang="nl">U kunt het ook gemakkelijker vinden om complexe formules te schrijven als onderdelen van die formules benoemde, korte formules bevatten.</span>|<span lang="nl">Complexe formules zijn ook eenvoudiger samen te stellen als ze bestaan uit kleinere formules die een naam hebben.</span>|
-|When you have finished selecting your product, click the Next button.|<span lang="nl">Wanneer u het product geselecteerd hebt, klikt u op de knop Volgende.</span>|<span lang="nl">Klik op de knop Volgende als u het product hebt geselecteerd.</span>|
+|You may also find it easier to write complex formulas if parts of those formulas contain named, shorter formulas.|:::no-loc text="U kunt het ook gemakkelijker vinden om complexe formules te schrijven als onderdelen van die formules benoemde, korte formules bevatten.":::|:::no-loc text="Complexe formules zijn ook eenvoudiger samen te stellen als ze bestaan uit kleinere formules die een naam hebben.":::|
+|When you have finished selecting your product, click the Next button.|:::no-loc text="Wanneer u het product geselecteerd hebt, klikt u op de knop Volgende.":::|:::no-loc text="Klik op de knop Volgende als u het product hebt geselecteerd.":::|
 
 ## 3. Verbs
 
-To convey the clarity of the Microsoft voice, use simple tenses. Avoid using the future tense unless you have to describe something that clearly will happen in the future. So, in general, try to use the simple present tense (<span lang="nl">onvoltooid tegenwoordige tijd</span>) or the simple past tense (<span lang="nl">onvoltooid verleden tijd</span>).
+To convey the clarity of the Microsoft voice, use simple tenses. Avoid using the future tense unless you have to describe something that clearly will happen in the future. So, in general, try to use the simple present tense (:::no-loc text="onvoltooid tegenwoordige tijd":::) or the simple past tense (:::no-loc text="onvoltooid verleden tijd":::).
 
 Example:
 
 |English|Not our style|Our style|
 |---|---|---|
-|If you are using an older version of the tool, the new features may not work.|<span lang="nl">Als u een verouderde versie van dit programma had gebruikt, zou het mogelijk zijn dat de nieuwe functies niet werken.</span>|<span lang="nl">Als u een verouderde versie van het hulpprogramma gebruikt, werken nieuwe functies misschien niet.</span>|
-|This will still work in two centuries.|<span lang="nl">Over twee eeuwen, zal dit nog steeds werken.</span>|<span lang="nl">Dit werkt over twee eeuwen nog steeds.</span>|
+|If you are using an older version of the tool, the new features may not work.|:::no-loc text="Als u een verouderde versie van dit programma had gebruikt, zou het mogelijk zijn dat de nieuwe functies niet werken.":::|:::no-loc text="Als u een verouderde versie van het hulpprogramma gebruikt, werken nieuwe functies misschien niet.":::|
+|This will still work in two centuries.|:::no-loc text="Over twee eeuwen, zal dit nog steeds werken.":::|:::no-loc text="Dit werkt over twee eeuwen nog steeds.":::|
 
 In written texts, the finite verb should be placed before the past participle.
 
@@ -58,13 +58,13 @@ Example:
 
 |English|Not our style|Our style|
 |---|---|---|
-|After you install the software, you must configure it.|<span lang="nl">Nadat u de software geïnstalleerd hebt, dient u deze te configureren.</span>|<span lang="nl">Nadat u de software hebt geïnstalleerd, dient u deze te configureren.</span>|
+|After you install the software, you must configure it.|:::no-loc text="Nadat u de software geïnstalleerd hebt, dient u deze te configureren.":::|:::no-loc text="Nadat u de software hebt geïnstalleerd, dient u deze te configureren.":::|
 
 However, this only applies if the past participle is treated as a verb (indicating an action), and not as an adjective (indicating a state).
 
 ## 4. Adjectives and compounds
 
-Possessive adjectives are typically used frequently in English, but in Microsoft translations, the use of the second-person possessive, as in "<span lang="nl">uw computer</span>," is to be avoided.
+Possessive adjectives are typically used frequently in English, but in Microsoft translations, the use of the second-person possessive, as in ":::no-loc text="uw computer":::," is to be avoided.
 
 Compound adjectives: Where possible, English compound adjectives should not be translated literally but described instead.
 
@@ -72,8 +72,8 @@ Example:
 
 |English|Our style|
 |---|---|
-|copy-protected disk|<span lang="nl">tegen kopiëren beveiligde schijf</span>|
-|double-density disk|<span lang="nl">diskette met dubbele dichtheid</span>|
+|:::no-loc text="copy-protected disk":::|:::no-loc text="tegen kopiëren beveiligde schijf":::|
+|:::no-loc text="double-density disk":::|:::no-loc text="diskette met dubbele dichtheid":::|
 
 Compound adjectives that start with "non-" in English get a hyphen behind the word "niet" in Dutch.
 
@@ -81,7 +81,7 @@ Example:
 
 |English|Our style|
 |---|---|
-|nonprofit|<span lang="nl">non-profit</span>|
+|:::no-loc text="nonprofit":::|:::no-loc text="non-profit":::|
 
 The parts of a compound noun in English are often separated by a space or hyphen. In Dutch, however, we usually write compounds as a single word.
 
@@ -89,10 +89,10 @@ Example:
 
 |English|Our style|
 |---|---|
-|text object|<span lang="nl">tekstobject</span>|
-|cyber attack|<span lang="nl">cyberaanval</span>|
+|:::no-loc text="text object":::|:::no-loc text="tekstobject":::|
+|:::no-loc text="cyber attack":::|:::no-loc text="cyberaanval":::|
 
-To improve readability, Microsoft uses the hyphen in compounds with brand names. For example, "<span lang="nl">Esso-tankstation</span>."
+To improve readability, Microsoft uses the hyphen in compounds with brand names. For example, ":::no-loc text="Esso-tankstation":::."
 
 An English compound that has been accepted into Dutch is written as a single word. This also applies to compounds that have two or three components in English. In case of a vowel clash, or if one of the components is an acronym, a single letter, a digit, or a symbol, we use a hyphen.
 
@@ -100,10 +100,10 @@ Example:
 
 |English|Our style|
 |---|---|
-|account manager|<span lang="nl">accountmanager</span>|
-|Human Resources department|<span lang="nl">humanresourcesafdeling</span>|
-|VGA card|<span lang="nl">VGA-kaart</span>|
-|600MHz processor|<span lang="nl">600MHz-processor</span>|
+|:::no-loc text="account manager":::|:::no-loc text="accountmanager":::|
+|:::no-loc text="Human Resources department":::|:::no-loc text="humanresourcesafdeling":::|
+|:::no-loc text="VGA card":::|:::no-loc text="VGA-kaart":::|
+|:::no-loc text="600MHz processor":::|:::no-loc text="600MHz-processor":::|
 
 The following words, and others like them, are separated by spaces because they are considered word groups instead of compounds: "low budget," "slow motion."
 
@@ -113,16 +113,16 @@ Example:
 
 |English|Our style|
 |---|---|
-|Use online|<span lang="nl">online gebruiken</span>|
-|Online file|<span lang="nl">onlinebestand</span>|
+|:::no-loc text="Use online":::|:::no-loc text="online gebruiken":::|
+|:::no-loc text="Online file":::|:::no-loc text="onlinebestand":::|
 
 In the following situations, compounds are spelled with a hyphen. There may be other situations where using a hyphen aids clarity.
 
-- An optional hyphen can be used between the components ("bodyart" and also "body-art," "<span lang="nl">knowhowovereenkomst</span>" and also "<span lang="nl">knowhow-overeenkomst</span>").
+- An optional hyphen can be used between the components ("bodyart" and also "body-art," ":::no-loc text="knowhowovereenkomst":::" and also ":::no-loc text="knowhow-overeenkomst":::").
 
-- If the final letter of one component and the first letter of the next can spell a diphthong ("<span lang="nl">tweeklank</span>"), use a hyphen.
+- If the final letter of one component and the first letter of the next can spell a diphthong (":::no-loc text="tweeklank":::"), use a hyphen.
 
-- Use a hyphen in certain combinations that are treated as compounds, such as combinations with equally important parts ("singer-songwriter"), compounds that also have a hyphen in English ("up-to-date"), combinations in which the left part is "no" or "non" ("non-profit," "<span lang="nl">no-nonsensepolitiek</span>"), and combinations whose right part is an English prepositional adverb ("lay-out," "<span lang="nl">back-upbestand</span>," "stand-by," "<span lang="nl">all-invakantie</span>").
+- Use a hyphen in certain combinations that are treated as compounds, such as combinations with equally important parts ("singer-songwriter"), compounds that also have a hyphen in English ("up-to-date"), combinations in which the left part is "no" or "non" ("non-profit," ":::no-loc text="no-nonsensepolitiek":::"), and combinations whose right part is an English prepositional adverb ("lay-out," ":::no-loc text="back-upbestand":::," "stand-by," ":::no-loc text="all-invakantie":::").
   
 ## 5. When (not) to CAPITALIZE
 
@@ -134,10 +134,10 @@ Example:
 
 |English|Our style|
 |---|---|
-|Start|<span lang="nl">Start</span>|
-|Advanced Search|<span lang="nl">Geavanceerd zoeken</span>|
-|My preferences|<span lang="nl">Mijn voorkeuren</span>|
-|Site Login|<span lang="nl">Site aanmelden</span>|
+|:::no-loc text="Start":::|:::no-loc text="Start":::|
+|:::no-loc text="Advanced Search":::|:::no-loc text="Geavanceerd zoeken":::|
+|:::no-loc text="My preferences":::|:::no-loc text="Mijn voorkeuren":::|
+|:::no-loc text="Site Login":::|:::no-loc text="Site aanmelden":::|
 
 ### Each descriptor of a graphic for functional element
 
@@ -145,8 +145,8 @@ Example:
 
 |English|Our style|
 |---|---|
-|Click the Search button|<span lang="nl">Klik op de knop Zoeken</span>|
-|Click the Options tab|<span lang="nl">Klik op het tabblad Opties</span>|
+|:::no-loc text="Click the Search button":::|:::no-loc text="Klik op de knop Zoeken":::|
+|:::no-loc text="Click the Options tab":::|:::no-loc text="Klik op het tabblad Opties":::|
 
 ### When referring to UI elements
 
@@ -154,7 +154,7 @@ Example:
 
 |English|Our style|
 |---|---|
-|Choose a state from the list and click Search|<span lang="nl">Kies een provincie uit de lijst en klik op Zoeken</span>|
+|:::no-loc text="Choose a state from the list and click Search":::|:::no-loc text="Kies een provincie uit de lijst en klik op Zoeken":::|
 
 ### Product names
 
@@ -168,7 +168,7 @@ Example:
 
 |English|Our style|Not our style|
 |---|---|---|
-|Windows Live Toolbar: The fastest search results. Free download Windows Live Toolbar|Windows Live Toolbar: De snelste zoekresultaten. Download Windows Live Toolbar gratis</span>|<span lang="nl">Windows Live Toolbar: de Snelste Zoekresultaten. Download Windows Live Toolbar Gratis!</span>|
+|:::no-loc text="Windows Live Toolbar: The fastest search results. Free download Windows Live Toolbar":::|:::no-loc text="Windows Live Toolbar: De snelste zoekresultaten. Download Windows Live Toolbar gratis":::|:::no-loc text="Windows Live Toolbar: de Snelste Zoekresultaten. Download Windows Live Toolbar Gratis!":::|
 
 ## 6. Colons and bulleted lists
 
@@ -178,7 +178,7 @@ Example:
 
 |English|Our style|
 |---|---|
-|Note: Using the ruler, you can set the margins in different sections of the document.|<span lang="nl">Opmerking: met behulp van de liniaal kunt u de marges instellen in verschillende secties van het document.</span>|
+|:::no-loc text="Note: Using the ruler, you can set the margins in different sections of the document.":::|:::no-loc text="Opmerking: met behulp van de liniaal kunt u de marges instellen in verschillende secties van het document.":::|
 
 If the colon is followed by more than one sentence, the first word after the colon is capitalized.
 
@@ -186,32 +186,32 @@ Example:
 
 |English|Our style|
 |---|---|
-|Scenario: You are the account manager for the Garden Company and you want to view and print a letter. The letter serves as a response to a request for information about a project that you want to carry out during a science market.|<span lang="nl">Scenario: U bent de accountmanager van The Garden Company en u wilt een brief bekijken en afdrukken. De brief dient als antwoord op een verzoek om informatie over een project dat u tijdens een wetenschapsmarkt wilt uitvoeren.</span>|
+|:::no-loc text="Scenario: You are the account manager for the Garden Company and you want to view and print a letter. The letter serves as a response to a request for information about a project that you want to carry out during a science market.":::|:::no-loc text="Scenario: U bent de accountmanager van The Garden Company en u wilt een brief bekijken en afdrukken. De brief dient als antwoord op een verzoek om informatie over een project dat u tijdens een wetenschapsmarkt wilt uitvoeren.":::|
 
 ## 7. Acronyms
 
-Acronyms are words made up of the initial letters of major parts of a compound term. In Dutch, we differentiate between <span lang="nl">**letterwoorden**</span> and <span lang="nl">**initiaalwoorden**</span>. A <span lang="nl">letterwoord</span> is a word that is formed by the first letters of a name or any other word group, which is read as a word. An <span lang="nl">initiaalwoord</span> is a word that is formed by the first letters of a name or any other word group, but which is read as a series of letters. The most important rule is that we write an <span lang="nl">initiaalwoord</span> or a <span lang="nl">letterwoord</span> without any periods.
+Acronyms are words made up of the initial letters of major parts of a compound term. In Dutch, we differentiate between :::no-loc text="**letterwoorden**"::: and :::no-loc text="**initiaalwoorden**":::. A :::no-loc text="letterwoord"::: is a word that is formed by the first letters of a name or any other word group, which is read as a word. An :::no-loc text="initiaalwoord"::: is a word that is formed by the first letters of a name or any other word group, but which is read as a series of letters. The most important rule is that we write an :::no-loc text="initiaalwoord"::: or a :::no-loc text="letterwoord"::: without any periods.
 
-<span lang="nl">Letterwoorden:
+:::no-loc text="Letterwoorden"::::
 
-- BuZa
-- havo
-- pin (persoonlijk identificatienummer)
+- :::no-loc text="BuZa":::
+- :::no-loc text="havo":::
+- :::no-loc text="pin (persoonlijk identificatienummer)":::
 
-Initiaalwoorden:
+:::no-loc text="Initiaalwoorden"::::
 
-- pdf
-- pc
-- btw
-- NS
+- :::no-loc text="pdf":::
+- :::no-loc text="pc":::
+- :::no-loc text="btw":::
+- :::no-loc text="NS":::
 
-Letterwoorden</span> without capital letters don't include any hyphen or apostrophe that is part of the compound term. For <span lang="nl">letterwoorden</span> that do have capital letters, and for <span lang="nl">initiaalwoorden</span>, the capital letter is retained.
+:::no-loc text="Letterwoorden"::: without capital letters don't include any hyphen or apostrophe that is part of the compound term. For :::no-loc text="letterwoorden"::: that do have capital letters, and for :::no-loc text="initiaalwoorden":::, the capital letter is retained.
 
-- <span lang="nl">aidsvirus
-- latrelatie
-- tv-kijker
-- btw-tarief
-- RAM-geheugen</span>
+- :::no-loc text="aidsvirus":::
+- :::no-loc text="latrelatie":::
+- :::no-loc text="tv-kijker":::
+- :::no-loc text="btw-tarief":::
+- :::no-loc text="RAM-geheugen":::
 
 ## 8. Applications, products, and trademarks
 
@@ -226,21 +226,21 @@ Refer to Microsoft names correctly when you use them.
 
 Do:
 
-- Generally, address end users by using the formal form of address: "u." However, the informal form ("<span lang="nl">je</span>") should be used for some content, such as marketing content.
+- Generally, address end users by using the formal form of address: ":::no-loc text="u.":::" However, the informal form (":::no-loc text="je":::") should be used for some content, such as marketing content.
 - Refer to Microsoft names correctly when you use them.
-- Use "datums" as the plural form of "datum."
-- Translate the English word "then" with "<span lang="nl">vervolgens</span>."
+- Use ":::no-loc text="datums":::" as the plural form of ":::no-loc text="datum":::."
+- Translate the English word ":::no-loc text="then":::" with ":::no-loc text="vervolgens":::."
 
 Don't:
 
-- "Please" and "sorry" are not translated.
-- "Successfully" is usually not included in the Dutch translation.
+- ":::no-loc text="Please":::" and ":::no-loc text="sorry":::" are not translated.
+- ":::no-loc text="Successfully":::" is usually not included in the Dutch translation.
 
 Example:
 
-_English_: The operation was successfully completed. 
+_English_: :::no-loc text="The operation was successfully completed.":::
 
-_Our style_: <span lang="nl">De bewerking is voltooid.</span>
+_Our style_: :::no-loc text="De bewerking is voltooid.":::
 
 - Attaching a genitive "s" to (trademarked) product names is not feasible, as it could be interpreted as a modification of such names.
 - Avoid personifying program names.
