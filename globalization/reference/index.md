@@ -9,7 +9,7 @@ Globalization tools from Microsoft:
 * [Multilingual App Toolkit Editor](https://developer.microsoft.com/en-us/windows/downloads/multilingual-app-toolkit/)
 * [Multilingual App Toolkit – Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308)
 * [Microsoft Translator](https://www.bing.com/translator/)
-* [Microsoft Custom Translator](https://hub.microsofttranslator.com/)
+* [Microsoft Custom Translator](https://portal.customtranslator.azure.ai/)
 * [Bing Translator Widget](https://www.bing.com/webmaster/tools/translator/)
 * [Microsoft Keyboard layout creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134)
 * [Windows Locale Builder Tool](https://www.microsoft.com/en-us/download/details.aspx?id=41158)
