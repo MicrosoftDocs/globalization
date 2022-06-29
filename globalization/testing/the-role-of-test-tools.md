@@ -44,4 +44,4 @@ Second, try to make the tool useful for multilingual testing:
 
 - Isolate resources from the code in a way that's easy to localize.
   For example, they can be an include file defining text constants.
-  As a result, localizers will be able to translate the external resource file, and your tool will run with a localized UI.
+  As a result, translators will be able to translate the external resource file, and your tool will run with a localized UI.

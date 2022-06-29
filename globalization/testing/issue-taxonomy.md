@@ -1,6 +1,6 @@
 ---
 title: Classify localization issues
-description: A wide variety of issues related to globalization and localization can appear in your product. Managing these issues is easier with a taxonomy to classify the issues.
+description: Managing globalization and localization issues in a product is easier with a taxonomy to classify the issues.
 --- 
 
 # Classify localization issues
@@ -37,4 +37,4 @@ Here's one possible taxonomy of localization issues:
 | String format         | String is constructed through formatting or interpolation that isn't translatable. |
 | Target error          | Incorrect translation: a typo, spelling, terminology, or grammatical error in a translated string. |
 | Untranslated          | String isn't available for translation. The string is hard-coded in source code, not included in scope of localized resource files, or incorrectly locked. If using continuous localization, the string may not have reached translators yet. The string may be new and not translated yet. |
-| (Other)               | Root cause is unknown or the issue doesn’t fit any of the other field value descriptions. |
+| (Other)               | Root cause is unknown or the issue doesn't fit any of the other field value descriptions. |
