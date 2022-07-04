@@ -29,7 +29,7 @@ These are supported using the new Segoe UI Historic font:
 
 | New scripts | Region where script is from | Fonts | Comments on language usage |
 | ----------- | --------------------------- | ----- | -------------------------- |
-| Brahmi                    | Indian subcontinent | Segoe UI Historic | Historic< |
+| Brahmi                    | Indian subcontinent | Segoe UI Historic | Historic |
 | Carian                    | Europe              | Segoe UI Historic | Historic |
 | Cypriot                   | Europe              | Segoe UI Historic | Historic |
 | Egyptian Hieroglyphs      | Middle East         | Segoe UI Historic | Historic |
