@@ -196,5 +196,5 @@ There are plenty of other sources that can help you deliver the best result. You
 
 - <http://prirucka.ujc.cas.cz/>
 - <https://www.korpus.cz/>
-- <http://www.ujc.cas.cz/oddeleni/index.php?page=poradna>
+- <https://ujc.avcr.cz/>
 - <https://support.skype.com/en/>
