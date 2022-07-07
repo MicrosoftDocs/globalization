@@ -144,7 +144,7 @@ _Not our style_: :::no-loc text="Sarei contento se vieni alla mia festa":::
 
 ## 10+ Use the right reference material
 
-These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is possible, consult the other topics in the [style guide](https://download.microsoft.com/download/f/3/8/f389007c-663a-4774-96e0-dcbaf19ac436/it-it-StyleGuide.pdf) for guidance.
+These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is possible, consult the other topics in the [style guide](https://www.microsoft.com/Language/StyleGuides) for guidance.
 
 - [Microsoft Language Portal](https://www.microsoft.com/language/default.aspx)
 - [Microsoft Glossaries](https://www.microsoft.com/Language/Search.aspx)

@@ -210,7 +210,7 @@ _Not our style_: :::no-loc text="STRASSE":::
 
 ## 10. Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [German Style Guide](https://www.microsoft.com/Language) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [German Style Guide](https://www.microsoft.com/Language/StyleGuides) and the following references:
 
 1. Duden - Die deutsche Rechtschreibung, 27. Auflage, 2017
 2. WAHRIG Wörterbuch der deutschen Sprache, von Renate Wahrig-Burfeind, Deutscher Taschenbuch Verlag, München 2012
