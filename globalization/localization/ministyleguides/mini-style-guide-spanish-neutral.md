@@ -375,7 +375,7 @@ Consider the meaning of the placeholder when translating strings, and move the p
 
 Use the spelling and grammar recommended in the following publications.
 
-These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Neutral) Style Guide](https://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) for guidance.
+These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Neutral) Style Guide](https://www.microsoft.com/Language/StyleGuides) for guidance.
 
 1. _1. Diccionario panhispánico de dudas_, Real Academia Española & Asociación de Academias de la Lengua Española, Madrid, Ed. Santillana, 2005, or [online here](http://www.rae.es/recursos/diccionarios/dpd).
 2. _Diccionario de la lengua española_, (Vigésima tercera edición), Real Academia Española, Madrid, Ed. Espasa-Calpe, 2014, or [online](http://www.rae.es/).
