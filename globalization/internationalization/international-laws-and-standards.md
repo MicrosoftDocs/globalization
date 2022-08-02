@@ -42,7 +42,7 @@ instructions for use (whether on paper, audio, through an online resource, or bu
 the description of the extent and the conditions of guarantee,
 as well as in announcements (including advertising) intended for the general public.
 
-In  Canada by its constitution, both French and English are official languages. In addition to the requirement that government services be available in both languages, there are further laws that "places obligations on private actors in Canadian society to provide access to goods or services in both official languages (such as the requirement that food products be labeled in both English and French)."
+In Canada by its constitution, both French and English are official languages. In addition to the requirement that government services be available in both languages, there are further laws that "places obligations on private actors in Canadian society to provide access to goods or services in both official languages (such as the requirement that food products be labeled in both English and French)."
 
 English and French are a fundamental characteristic of the Canadian identity, and the importance of language rights is clearly recognized in the Canadian Charter of Rights and Freedoms, part of the Constitution Act of 1982.
 There are laws requiring access to goods or services in both official languages.
