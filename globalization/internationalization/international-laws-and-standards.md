@@ -10,8 +10,7 @@ Here are some basic guidelines to get you started.
 
 ## Security
 
-[Security guidelines for international](security-guidelines.md) outlines things to consider at the intersection of internationalization and security.
-For information on security, see [Microsoft Security Engineering](https://www.microsoft.com/securityengineering).
+With the proliferation of support for languages, scripts, and glyphs, software internationalization has a direct impact on security. For example, you might consider validating user-supplied URLs to avoid IDN homograph attacks. To learn about the security engineering practices used at Microsoft to build and operate highly secure apps and services, please see [Microsoft Security Engineering](https://www.microsoft.com/securityengineering).
 
 ## Privacy and international law
 
