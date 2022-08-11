@@ -53,7 +53,7 @@ Other markets have their own laws and new laws are added by countries periodical
 
 ## Language reforms
 
-Some markets have local regulatory boards that specify official spelling, grammar, and terminology for a given language. You should consider complying with these regulations. For example, the German orthography reform of 1996 (Reform der deutschen Rechtschreibung von 1996) led to a mandate of the use of new spelling rules in schools and public administration. For more information about German orthography, see the German-language "Council for German Orthography" site [Rat für deutsche Rechtschreibung](https://www.rechtschreibrat.com).
+Some markets have local regulatory boards that specify official spelling, grammar, and terminology for a given language. You should consider complying with these regulations. For example, Reform der deutschen Rechtschreibung von 1996 (German orthography reform of 1996) led to a mandate of the use use of new spelling rules in schools and public administration. For more information about German orthography, see [Rat für deutsche Rechtschreibung (Council for German Orthography)](https://www.rechtschreibrat.com).
 
 ## Entry to market
 
