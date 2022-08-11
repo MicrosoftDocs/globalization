@@ -61,9 +61,9 @@ Some markets may require you to register your software before it can be distribu
 The perquisites and processes vary by market.
 For example, China requires that software and services support the national standard: [GB18030 code page](https://en.wikipedia.org/wiki/GB_18030).
 
-## End-User License Agreement (EULA)
+## License terms
 
-An End-User License Agreement (EULA) is a legal document that defines the contract between the software publisher and the end-user. For any product that supplies a legal document, you should engage a lawyer that understands the laws of the country in which the document will apply. It's probably best to create separate documents for each target country, rather than to write one document and translate it for each country. If you intend to use the same document in multiple markets, you may need to engage a translation agency that specializes in legal translation to reduce risk to your company.
+For any product that supplies a legal document for licensing, also known as the End-User License Agreement (EULA), you should engage a lawyer that understands the laws of the country in which the document will apply. It's probably best to create separate documents for each target country, rather than to write one document and translate it for each country. If you intend to use the same document in multiple markets, you may need to engage a translation agency that specializes in legal translation to reduce risk to your company.
 
 ## Laws or standards particular to your program
 
