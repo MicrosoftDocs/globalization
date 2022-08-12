@@ -1,6 +1,7 @@
 ---
 title: Mirroring in the .NET Framework
 description: The DIR attribute can be used for mirroring text in Web Forms. 
+ms.topic: reference
 ---
 
 # Mirroring in .NET Framework

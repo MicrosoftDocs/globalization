@@ -2,6 +2,7 @@
 title: Number formatting in .NET Framework
 description: The *NumberFormatInfo* class defines how currency, decimal separators, and other numeric symbols are formatted and displayed based on culture.
 ms.assetid: 81bc7141-92f0-432a-a241-eebfda454fd2
+ms.topic: reference
 ms.date: 03/16/2016
 ---
 

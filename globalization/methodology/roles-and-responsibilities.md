@@ -1,6 +1,8 @@
 ---
 title: Roles and responsibilities
 description: All members of a product team have roles and responsibilities with respect to globalization and localization. This article describes a role framework to help understand the work to be done.
+author: PaulDempsey-ms
+ms.date: 6/7/2022
 ---
 
 # Roles and responsibilities

@@ -2,6 +2,7 @@
 title: Globalize the test
 description: Globalizing the tests will check for world-readiness at the same time  as you check the general functionality of a core product's entire system.
 ms.assetid: 30a049cf-a939-4eb0-b1f5-45c779ed63e7
+ms.topic: navigation
 ---
 
 # Globalize the test

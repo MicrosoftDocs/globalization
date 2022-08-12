@@ -1,6 +1,7 @@
 ---
 title: Input, output, and display
 description: The input, output, and display of data can be complicated when the user needs to enter/receive data in different languages.
+ms.topic: navigation
 ---
 
 # Input, output, and display

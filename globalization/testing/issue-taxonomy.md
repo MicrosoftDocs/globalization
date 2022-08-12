@@ -1,6 +1,8 @@
 ---
 title: Classify localization issues
 description: Managing globalization and localization issues in a product is easier with a taxonomy to classify the issues.
+author: PaulDempsey-ms
+ms.date: 6/7/2022
 --- 
 
 # Classify localization issues

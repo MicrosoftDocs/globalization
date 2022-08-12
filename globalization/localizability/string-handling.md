@@ -1,6 +1,7 @@
 ---
 title: String handling for localizability
 description: Once you have chosen a resource store, you can move on to the next area that causes a lot of localizability nightmares-the way strings are created for display in the UI or for placement in a persistent storage.
+ms.topic: navigation
 ---
 
 # String handling for localizability

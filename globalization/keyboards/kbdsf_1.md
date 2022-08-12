@@ -1,7 +1,8 @@
 ---
 title: Luxembourgish Keyboard
-description: An interactive representation of the Windows LuxembourgishKeyboard. To see different keyboard states, click or move the mouse over the state keys.
+description: An interactive representation of the Windows Luxembourgish keyboard. To see different keyboard states, click or move the mouse over the state keys.
 ms.date: 04/26/2021
+ms.topic: ui-reference
 author: jowilco
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Sami Extended Finland-Sweden Keyboard
-description: An interactive representation of the Windows Sami Extended Finland-SwedenKeyboard. To see different keyboard states, click or move the mouse over the state keys.
+description: An interactive representation of the Windows Sami Extended Finland-Sweden keyboard. To see different keyboard states, click or move the mouse over the state keys.
 ms.date: 04/26/2021
+ms.topic: ui-reference
 author: jowilco
 ---
 

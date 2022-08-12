@@ -1,7 +1,8 @@
 ---
 title: Inuktitut - Latin Keyboard
-description: An interactive representation of the Windows Inuktitut - LatinKeyboard. To see different keyboard states, click or move the mouse over the state keys.
+description: An interactive representation of the Windows Inuktitut - Latin keyboard. To see different keyboard states, click or move the mouse over the state keys.
 ms.date: 04/26/2021
+ms.topic: ui-reference
 author: jowilco
 ---
 

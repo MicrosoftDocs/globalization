@@ -1,6 +1,7 @@
 ---
 title: Localizability
 description: Localizability is the process/practice to enable the software to be localized into different languages without any change to the source code.
+ms.topic: navigation
 ---
 
 # Localizability

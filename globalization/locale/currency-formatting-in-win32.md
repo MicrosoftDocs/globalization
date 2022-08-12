@@ -2,6 +2,7 @@
 title: Currency formatting in Win32
 description: Win32 NLS APIs can help you display currency data in a way that's locale-aware. 
 ms.assetid: ec54ea8e-7d6a-49a5-968f-347c463ad0f1
+ms.topic: reference
 ms.date: 03/16/2016
 ---
 # Currency formatting in Win32

@@ -2,6 +2,7 @@
 title: Time formatting and time zones in .NET Framework
 description: The easiest and most efficient way of doing time formatting in the .NET world is to take advantage of the *DateTime* structure that provides methods such as *DateTime.ToString* and *DateTime.Parse*.
 ms.assetid: fa7e723a-f23a-454c-9312-519145d55e96
+ms.topic: reference
 ms.date: 03/16/2016
 ---
 

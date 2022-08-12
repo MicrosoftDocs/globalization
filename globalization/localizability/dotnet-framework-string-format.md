@@ -2,6 +2,7 @@
 title: .NET Framework -- String.Format
 description: The .NET Framework has a counterpart to Win32's FormatMessage—the String.Format method. 
 ms.assetid: c1386557-8372-486b-b98e-6e84286e9255
+ms.topic: reference
 ms.date: 06/28/2016
 ---
 # .NET Framework—String.Format

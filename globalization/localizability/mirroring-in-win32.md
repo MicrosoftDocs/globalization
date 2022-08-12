@@ -1,6 +1,7 @@
 ---
 title: Mirroring in Win32
 description: To minimize the amount of rewriting needed for applications to support mirroring, system components have control over the mirroring state of the UI objects.
+ms.topic: reference
 ---
 
 # Mirroring in Win32

@@ -2,6 +2,7 @@
 title: Currency formatting in the .NET Framework
 description: The .NET format strings are useful if you want to convert one of the standard .NET Framework data types to a string that represents that type in some other format.
 ms.assetid: 773de803-6a2b-4690-9cce-9b3e6f24529e
+ms.topic: reference
 ms.date: 03/16/2016
 ---
 # Currency formatting in the .NET Framework
