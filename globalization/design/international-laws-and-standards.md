@@ -23,7 +23,7 @@ Privacy is an important consideration in many countries. For example, the Genera
 
 Intellectual property, copyright, and piracy laws vary widely by market.
 In many markets, you may be subject to legal action if you violate local laws.
-Some countries have signed international copyright laws, such as the [TRIPS Agreement 1994](https://en.wikipedia.org/wiki/Agreement_on_Trade-Related_Aspects_of_Intellectual_Property_Rights "Agreement on Trade-Related Aspects of Intellectual Property Rights") and/or the [Berne Convention 1928](https://en.wikipedia.org/wiki/Berne_Convention_for_the_Protection_of_Literary_and_Artistic_Works "Berne Convention for the Protection of Literary and Artistic Works") .
+Some countries have signed international copyright laws, such as the [TRIPS Agreement 1994](https://www.wto.org/english/tratop_e/trips_e/trips_e.htm "Agreement on Trade-Related Aspects of Intellectual Property Rights") and/or the [Berne Convention 1928](https://www.wipo.int/treaties/en/ip/berne/ "Berne Convention for the Protection of Literary and Artistic Works").
 If using another entity's components — open-source or not — it is important to understand the license agreement associated with that code and to adhere to that agreement.
 
 ## Encryption declaration
@@ -36,7 +36,7 @@ Your product may need to submit the necessary approvals to the French government
 
 ## Language laws
 
-[*La Loi de Toubon*](https://en.wikipedia.org/wiki/Toubon_Law) (Toubon Law) applies to products and services sold in France, no matter which country they're from.
+[La Loi de Toubon (Toubon Law)](https://www.legifrance.gouv.fr/loda/id/LEGITEXT000005616341/) applies to products and services sold in France, no matter which country they're from.
 It requires the use of the French language in the designation, marketing, presentation (i.e., labels, leaflets, catalogues, brochures, order forms, product sheets, delivery slips, etc.),
 instructions for use (whether on paper, audio, through an online resource, or built into the software),
 the description of the extent and the conditions of guarantee,
@@ -54,7 +54,7 @@ Other markets have their own laws and new laws are added by countries periodical
 
 Some markets may require you to register your software before it can be distributed or sold in that market.
 The perquisites and processes vary by market.
-For example, China requires that software and services support the national standard: [GB18030 code page](https://en.wikipedia.org/wiki/GB_18030).
+For example, China requires that software and services support the national standard: [GB18030 code page](https://icu-project.org/docs/papers/gb18030.html)
 
 ## End-User License Agreement (EULA)
 
@@ -66,4 +66,4 @@ Additionally, you may need to engage a translation agency that specializes in le
 ## Laws or standards particular to your program
 
 For applications that target specific functionality — such as taxes or health care — keep in mind that different laws and standards apply and your program may be liable to adhere to those laws.
-For example, you may need to conform to the US [Health Insurance Portability & Accountability Act (HIPAA)](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), the European Union (EU) regulations such as GDPR ([General Data Protection Regulation Summary](/compliance/regulatory/gdpr)), or Canada's [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://en.wikipedia.org/wiki/Personal_Information_Protection_and_Electronic_Documents_Act) depending on the markets you are targeting.
+For example, you may need to conform to the US [Health Insurance Portability & Accountability Act (HIPAA)](https://www.govinfo.gov/app/details/PLAW-104publ191) regulations, the European Union [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/legal-content/TXT/?uri=CELEX:32018R1725) regulations, or the Canadian [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) regulations depending on target markets.

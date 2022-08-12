@@ -277,7 +277,7 @@ For example, the character for "mother" (<span lang="ja">媽</span>) is sorted a
 The radical-and-stroke system is cumbersome compared to an alphabetical system in which there are a few characters, all unambiguous.
 The choice of which components of a logograph comprise separate radicals and which radical is primary is not always clear-cut.
 As a result, the logographic languages often supplement radical-and-stroke ordering with alphabetic sorting of a phonetic conversion of the logographs.
-For example, the [kanji](http://en.wikipedia.org/wiki/Kanji) word Tōkyō (<span lang="ja">東京</span>), the Japanese name of Tokyo can be sorted as if it were spelled out in the Japanese characters of the [hiragana syllabary](http://en.wikipedia.org/wiki/Hiragana) as "to-u-ki-yo-u" (<span lang="ja">とうきょう</span>), using the conventional sorting order for these characters, this is "phonetic" sorting.
+For example, the kanji word Tōkyō (<span lang="ja">東京</span>), the Japanese name of Tokyo can be sorted as if it were spelled out in the Japanese characters of the hiragana syllabary as "to-u-ki-yo-u" (<span lang="ja">とうきょう</span>), using the conventional sorting order for these characters, this is "phonetic" sorting.
 
 ### Japanese sorting
 
@@ -300,12 +300,12 @@ The second list is acceptable when phonetic sorting is not available and has to 
 
 ### Simplified Chinese sorting
 
-Simplified Chinese generally uses the [Pinyin](http://en.wikipedia.org/wiki/Pinyin) pronunciation sort order, but other sort orders are commonly offered to end-users.
+Simplified Chinese generally uses the Pinyin pronunciation sort order, but other sort orders are commonly offered to end-users.
 Windows also provides the Surname sorting option for people’s names.
 
 ### Traditional Chinese sorting
 
-Taiwan has one system based on the pronunciation in [Bopomofo](http://en.wikipedia.org/wiki/Bopomofo) order and this is the prevalent system for collating Chinese in Taiwan.
+Taiwan has one system based on the pronunciation in Bopomofo order and this is the prevalent system for collating Chinese in Taiwan.
 Whereas in Hong Kong, users commonly sort by using stroke order.
 
 ### Korean sorting
@@ -381,7 +381,6 @@ Therefore, searching for <span lang="ar">(احمد)</span> will not find <span l
 ### Hanja with phonetic Hangeul
 
 The "Hanja with phonetic Hangeul" option is used to find words written in either the hanja (Han or "Chinese script") or Hangeul (native Korean script).
-See [Korean mixed script](https://en.wikipedia.org/wiki/Korean_mixed_script) for more details.
 For example, the terms <span lang="ko">한자</span> and <span lang="ko">漢字</span> both mean "Hangeul."
 
 ### Full and half-width forms
