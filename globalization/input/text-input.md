@@ -51,10 +51,10 @@ In some cases, multiple IMEs are available for the same language.
 For languages with extremely large character sets, the IME presents a candidate window based on the text entry.
 The candidates usually have a one-to-many relationship to the text typed.
 There are two basic models within this category.
-The first is used for languages such as Japanese where there exist defined phonetic systems ([hiragana](https://en.wikipedia.org/wiki/Hiragana) and [katakana](https://en.wikipedia.org/wiki/Katakana)) that can be used to enter most words.
-The conversion is from the phonetic forms to the more formal [kanji](https://en.wikipedia.org/wiki/Kanji).
+The first is used for languages such as Japanese where there exist defined phonetic systems (hiragana and katakana) that can be used to enter most words.
+The conversion is from the phonetic forms to the more formal kanji.
 The second is where there is not a phonetic system within the language, so transliteration using the Latin script is used.
-An example of this is the [pīnyīn](https://en.wikipedia.org/wiki/Pinyin) system used for Chinese.
+An example of this is the pīnyīn system used for Chinese.
 Technically, any simple writing system language could be used, but the Latin script and keyboard is most common.
 For both systems, the user enters text in a phonetic form and can then select the final character(s) they want.
 That input is converted to a list of potential candidates for the final characters and the user selects the desired text.

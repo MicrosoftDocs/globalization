@@ -5,7 +5,7 @@ description: For those developers still using LCIDs, it is recommended to move t
 
 # Locale names and LCID deprecation
 
-In the modern and managed worlds developers have been using Locale Names (a.k.a., [IETF language tags,](http://en.wikipedia.org/wiki/IETF_language_tag) locale tags, language tags, culture tags, culture codes, [BCP 47](https://tools.ietf.org/html/bcp47) tags, ll-cc, “en-US”, et cetera) for some time, but in other contexts LCID (locale identifier) codes continue to be used.
+In the modern and managed worlds developers have been using Locale Names (a.k.a., [BCP 47](https://tools.ietf.org/html/bcp47) tags, locale tags, language tags, culture tags, culture codes, ll-cc, “en-US”, et cetera) for some time, but in other contexts LCID (locale identifier) codes continue to be used.
 For those developers still using LCID, it is recommended to move to locale names as they are more robust than LCIDs and can support many more markets.
 
 ## What is a locale?

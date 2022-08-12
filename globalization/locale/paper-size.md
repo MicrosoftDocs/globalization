@@ -28,7 +28,7 @@ The returned value is one of the following.
 | 8 | A3 |
 | 9 | A4 |
 
-See also [ISO 216 Standard Paper Size](http://en.wikipedia.org/wiki/ISO_216) for reference.
+See also [ISO 216](https://www.iso.org/standard/36631.html).
 
 ## Character sets
 

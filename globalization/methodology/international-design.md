@@ -86,7 +86,7 @@ Here a list questions to ask yourself when designing for internationalization:
   For example, if students are a target audience for your feature, how does student life differ in China, Mexico, and the US?
 
 * Will your feature support any country or regional standards or legal requirements that would affect your feature?
-  For example, the Chinese government requires any software distributed in China to support the [GB18030](https://en.wikipedia.org/wiki/GB_18030) encoding system.
+  For example, the Chinese government requires any software distributed in China to support the [GB18030](https://icu-project.org/docs/papers/gb18030.html) encoding system.
 
 * Can your feature be turned on or off for a given market or language?
   For example, Japanese users expect personnel information to be presented in a hierarchical manner, by department.
@@ -282,7 +282,7 @@ User interface isn't limited to a graphical user interface, but also includes er
 * If your feature has UI strings, are all the strings available to be translated?
 
   All UI is required to be available in French for products marketed in France and both French and English for products marketed in Canada.
-  See the [:::no-loc text="Toubon"::: Law](http://en.wikipedia.org/wiki/Toubon_Law#Provisions_of_the_law) for France and the [Quebec Law 101](http://en.wikipedia.org/wiki/Bilingualism_in_Canada) for Canada.
+  See the [:::no-loc text="Toubon"::: Law](https://www.legifrance.gouv.fr/loda/id/LEGITEXT000005616341/) for France and [National Assembly of Québec: Bill 96](http://m.assnat.qc.ca/en/travaux-parlementaires/projets-loi/projet-loi-96-42-1.html "An Act respecting French, the official and common language of Québec") for Canada.
 
 * Does the feature incorporate components that aren't translated for your target markets?
 

@@ -68,8 +68,6 @@ See [Standard date and time format strings](/dotnet/standard/base-types/standard
 
 See also
 
-- [Wikipedia: ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
-
 - [ISO 8601 - Date and time format](https://www.iso.org/iso-8601-date-and-time-format.html)
 
 - [W3C Quality Tips: Use international date format (ISO)](https://www.w3.org/QA/Tips/iso-date)
