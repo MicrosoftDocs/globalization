@@ -2,6 +2,7 @@
 title: Testing for world readiness
 description: The software design and development process must be globalized to achieve world-readiness. Globalization testing is the quality assurance process.
 ms.assetid: 4435d9f8-6888-4ca7-b1af-9cb5094c66fd
+ms.topic: navigation
 ---
 
 # Testing for world readiness

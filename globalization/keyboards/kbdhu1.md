@@ -1,7 +1,8 @@
 ---
 title: Hungarian 101-key Keyboard
-description: An interactive representation of the Windows Hungarian 101-keyKeyboard. To see different keyboard states, click or move the mouse over the state keys.
+description: An interactive representation of the Windows Hungarian 101-key keyboard. To see different keyboard states, click or move the mouse over the state keys.
 ms.date: 04/26/2021
+ms.topic: ui-reference
 author: jowilco
 ---
 

@@ -2,6 +2,7 @@
 title: Software Internationalization
 description: Fundamentals about software internationalization, which includes globalization, localizability, localization, and testing world readiness.
 ms.assetid: 9c23e01d-81c8-4e00-8b1f-068bb63713c4
+ms.topic: navigation
 ms.date: 07/14/2017
 ---
 

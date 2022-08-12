@@ -2,6 +2,7 @@
 title: Handling calendars in Win32
 description: As you probably noticed in the last code sample, one of the arguments of the enumeration callback function for date formats is the calendar type (CALID).
 ms.assetid: dc16dec7-abcd-4b26-84d8-c229a5853329
+ms.topic: reference
 ms.date: 03/16/2016
 ---
 # Handling calendars in Win32

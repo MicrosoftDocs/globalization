@@ -1,6 +1,8 @@
 ---
 title: Globalization glossary
 description: A glossary of terms used in globalization, localization, and internationalization.
+author: v-pdempsey
+ms.date: 6/7/2022
 ---
 
 # Globalization glossary

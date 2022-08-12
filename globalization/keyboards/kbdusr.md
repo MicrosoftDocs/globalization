@@ -1,7 +1,8 @@
 ---
 title: United States-Dvorak for right hand Keyboard
-description: An interactive representation of the Windows United States-Dvorak for right handKeyboard. To see different keyboard states, click or move the mouse over the state keys.
+description: An interactive representation of the Windows United States-Dvorak for right hand keyboard. To see different keyboard states, click or move the mouse over the state keys.
 ms.date: 04/26/2021
+ms.topic: ui-reference
 author: jowilco
 ---
 

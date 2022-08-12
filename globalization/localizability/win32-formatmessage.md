@@ -2,6 +2,7 @@
 title: Win32 -- FormatMessage
 description: 'Win32 supports two resource types for storing strings: string tables and message tables.'
 ms.assetid: 1092f86e-73fd-4aa6-a7bb-8ee908177416
+ms.topic: reference
 ms.date: 06/28/2016
 ---
 # Win32—FormatMessage

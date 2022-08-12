@@ -2,6 +2,7 @@
 title: Localization elements
 description: The UI elements should be stored in the resource files of a program or in some other resource repository.
 ms.assetid: 61190a53-b3ab-4f78-8f32-a7e9ee4cdd9f
+ms.topic: navigation
 ms.date: 03/16/2016
 ---
 # Localization elements

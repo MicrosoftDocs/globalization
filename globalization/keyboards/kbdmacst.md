@@ -1,7 +1,8 @@
 ---
 title: Macedonian (FYROM) - Standard Keyboard
-description: An interactive representation of the Windows Macedonian (FYROM) - StandardKeyboard. To see different keyboard states, click or move the mouse over the state keys.
+description: An interactive representation of the Windows Macedonian (FYROM) - Standard keyboard. To see different keyboard states, click or move the mouse over the state keys.
 ms.date: 04/26/2021
+ms.topic: ui-reference
 author: jowilco
 ---
 

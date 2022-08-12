@@ -2,6 +2,7 @@
 title: Localization
 description: Localization of a product requires that the product be adapted to both the language and the culture of a particular market.
 ms.assetid: 9bf5fe8e-090a-4db7-991b-83f04b3f1afd
+ms.topic: navigation
 ms.date: 03/16/2016
 ---
 # Software Localization

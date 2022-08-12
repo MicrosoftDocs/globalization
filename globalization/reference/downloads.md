@@ -1,6 +1,7 @@
 ---
 title: Tools and downloads
 description: On this page, you'll find tools and resources from Microsoft that you can download in support of your efforts to globalize your application.
+ms.topic: navigation
 ---
 # Tools and Downloads
 

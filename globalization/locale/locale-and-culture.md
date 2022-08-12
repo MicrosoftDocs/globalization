@@ -2,6 +2,7 @@
 title: Locale and Culture Awareness
 description: "To represent the data correctly, the software needs to be aware of the user's locale."
 ms.assetid: 9b9cd170-03dc-48b9-aeee-c1a8e32f0559
+ms.topic: navigation
 ms.date: 03/16/2016
 ---
 

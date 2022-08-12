@@ -1,6 +1,8 @@
 ---
 title: Pseudolocalization
 description: How do you verify that your product is localizable without actually localizing into a real language? By faking it with pseudolocalization.
+author: v-pdempsey
+ms.date: 6/7/2022
 ---
 
 # Pseudolocalization

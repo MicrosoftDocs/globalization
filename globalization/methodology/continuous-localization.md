@@ -1,6 +1,8 @@
 ---
 title:  Continuous localization
 description: A faster cadence of development and release requires continuous delivery of localized content.
+author: v-pdempsey
+ms.date: 6/7/2022
 --- 
 
 # Continuous localization
