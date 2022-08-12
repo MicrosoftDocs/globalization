@@ -1,7 +1,7 @@
 ---
 title: Global product delivery
 description: A great global product has a rich experience that feels like it was created specifically for you, no matter where you live or the language you speak.
-author: v-pdempsey
+author: PaulDempsey-ms
 ms.date: 6/7/2022
 ---
 

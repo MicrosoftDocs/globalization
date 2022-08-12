@@ -1,7 +1,7 @@
 ---
 title: International design
 description: It's important to think about internationalization from the very beginning of a software project. This article provides an extensive checklist of internationalization requirements when developing software.
-author: v-pdempsey
+author: PaulDempsey-ms
 ms.date: 6/7/2022
 ---
 

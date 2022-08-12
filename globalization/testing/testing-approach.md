@@ -1,7 +1,7 @@
 ---
 title: Globalization testing approach
 description: Whenever a piece of code handles text or deals with locale-sensitive functionality, it has to be tested for proper functionality from the perspective of world-readiness.
-author: v-pdempsey
+author: PaulDempsey-ms
 ms.date: 6/7/2022
 ---
 
