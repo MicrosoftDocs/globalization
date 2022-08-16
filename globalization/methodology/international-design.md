@@ -215,7 +215,7 @@ The CLDR is developed by local domain experts across the world.
 
   * Consider how different calendars may affect your features.
     Does your month picker support the 13 months found in the Hebrew Lunar calendar during a leap year?
-    Weekdays aren't always Monday through Friday. Many countries use Saturday as the first day of the week.
+    Weekdays aren't always Monday through Friday. Many countries and regions use Saturday as the first day of the week.
 
 * If your feature displays numbers, does it allow different number formats? For example:
 

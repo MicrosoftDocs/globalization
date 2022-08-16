@@ -47,7 +47,7 @@ In still other cultures, a wizard represents something evil or destructive; it c
 ### Avoid showing flesh or body parts
 
 There are as many different attitudes about displaying the exposed human body as there are shades of gray.
-What is considered taboo in one culture or country can be widely accepted in another.
+What is considered taboo in one culture or country/region can be widely accepted in another.
 These varying attitudes range from the body needing to be completely covered to the acceptance of bikinis.
 With the widespread use of the Internet and global communications, you will never know for sure who will see or use your products.
 Thus the best practice is not to display skin or even use a body part to convey a concept.
@@ -103,7 +103,7 @@ When it comes to governments and politics, it is very important to realize that 
 Thus when localizing for a specific market, you must take into account the local government's expectations for content.
 As much as possible, it's important to avoid including content that could offend the local government, either by challenging its authority or by criticizing it through support of a rival government or faction.
 
-Software has been banned in some countries and regions simply because a map showed that a disputed piece of land belonged to another country.
+Software has been banned in some countries and regions simply because a map showed that a disputed piece of land belonged to another country/region.
 Maps are very graphic and obvious statements about a government's sovereignty, so a user associated with the disputed piece of land would know very quickly if the maps are accurate or not.
 In addition to maps, flags can be a very sensitive piece of content.
 For example, a flag in a user interface that represented an unrecognized country was very upsetting to a nearby government, causing that government to ban a product on the basis of the unrecognized national flag.

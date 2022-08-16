@@ -1,12 +1,12 @@
 ---
 title: World calendars
-description: The Gregorian calendar is used in most English-speaking countries, but globalized software should take into consideration other calendars
+description: The Gregorian calendar is used in most English-speaking countries/regions, but globalized software should take into consideration other calendars
 ms.assetid: c1e89637-67a7-4604-bcb1-86f0d5a41e83
 ms.date: 03/16/2016
 ---
 # World calendars
 
-The Gregorian calendar is used in most English speaking countries, but world-ready products should also take into consideration other calendar systems in use worldwide.
+The Gregorian calendar is used in most English speaking countries and regions, but world-ready products should also take into consideration other calendar systems in use worldwide.
 For example, there are the Japanese, the Buddhist era, the Hijri, the Hebrew lunar, the Taiwan calendar. and more.
 One of the major differences between calendars is that each calendar could have a different year value.
 For example, the Gregorian year 2016 is the twenty-eighth year in the Japanese Heisei era and the year 1437 in the Hijri calendar.

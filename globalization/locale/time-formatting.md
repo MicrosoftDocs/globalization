@@ -8,13 +8,13 @@ ms.date: 03/16/2016
 
 Like date and calendar formats, time formats are not constant throughout the world.
 Although each representation of time basically displays the hour, minutes, and seconds, their presentation order and separators vary greatly.
-In fact, there might be many differences between regions within the same country.
+In fact, there might be many differences between areas within the same country/region.
 The time formatting might differ from one culture to another in one of the following three ways:
 
 1. The use of either a 12-hour or 24-hour clock.
 
    Most European and Asian locales use the 24-hour clock compared to the 12-hour (AM/PM) model used in the United States.
-   In 12-hour formats, the meridian indicator can be rendered in the language of the country, and can appear before or after the hour, depending on region.
+   In 12-hour formats, the meridian indicator can be rendered in the language of the country/region, and can appear before or after the hour.
 
 2. The character used to separate hours, minutes, and seconds.
 
@@ -31,11 +31,11 @@ The time formatting might differ from one culture to another in one of the follo
    Another way to display time zones is by using names for the local time zones.
    If you do so, you must take the following into account:
 
-    - Not all countries use local names.
+    - Not all countries/regions use local names.
 
     - Time-zone abbreviations are not unique.
 
-    - Not all countries use daylight saving time, and the transition moment varies by country/region.
+    - Not all countries/regions use daylight saving time, and the transition moment varies by country/region.
 
     - One time zone might have many different names, depending on the country/region and the language.
 
