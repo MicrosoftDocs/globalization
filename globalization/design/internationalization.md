@@ -162,7 +162,7 @@ It is best to use common APIs, such NLS, .NET, or ICU to address the following i
 
   - Consider how different calendars may impact all your features.
     Does your month picker support the 13 months found in the Hebrew Lunar calendar during a leap year?
-    In addition, weekdays are not always Monday through Friday. Many countries use Saturday as the first day of the week.
+    In addition, weekdays are not always Monday through Friday. Many countries or regions use Saturday as the first day of the week.
 
 - If your feature displays numbers, does it allow different number formats? For example:
 

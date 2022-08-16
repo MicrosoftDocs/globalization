@@ -25,7 +25,7 @@ and being relevant in each market.
 
 ## Market and cultural awareness
 
-When planning, be intentional and specific about the scope of your audience by country, region, and language.
+When planning, be intentional and specific about the scope of your audience by country/region and language.
 
 Know your markets and audiences to be more relevant to your customers.
 We all come with an intuitive sense of what is acceptable and expected based on our own cultural and regional experience.

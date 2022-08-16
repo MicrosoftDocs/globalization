@@ -306,7 +306,7 @@ Windows also provides the Surname sorting option for people’s names.
 ### Traditional Chinese sorting
 
 Taiwan has one system based on the pronunciation in Bopomofo order and this is the prevalent system for collating Chinese in Taiwan.
-Whereas in Hong Kong, users commonly sort by using stroke order.
+Whereas in Hong Kong SAR, users commonly sort by using stroke order.
 
 ### Korean sorting
 

@@ -64,5 +64,5 @@ $100.00
 100,00 kr.
 ```
 
-As when dealing with numbers, formatting conventions for addresses vary widely from one country to another.
+As when dealing with numbers, formatting conventions for addresses vary widely from one country/region to another.
 There are also discrepancies in the actual terms used when representing addresses that you will need to handle.

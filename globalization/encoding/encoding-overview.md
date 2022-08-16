@@ -15,7 +15,7 @@ Unicode is an especially good fit for the age of the Internet, since the worldwi
 The World Wide Web Consortium (W3C) has recognized this fact and now expects all new RFCs to use Unicode for text.
 Many other products and standards now require or allow use of Unicode; for example, XML, HTML, Microsoft JScript, Java, Perl, Rust, and C#.
 Today, Unicode is the *de facto* character encoding standard accepted by all major computer companies.
-While ISO 10646 is the corresponding worldwide *de jure* standard approved by all ISO member countries, the two standards include identical character repertoires and binary representations.
+While ISO 10646 is the corresponding worldwide *de jure* standard approved by all ISO members, the two standards include identical character repertoires and binary representations.
 
 Unicode encompasses virtually all characters used widely in computers today.
 It is capable of addressing more than 1.1 million code points.

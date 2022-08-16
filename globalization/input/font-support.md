@@ -246,7 +246,7 @@ The following table lists scripts newly supported in Windows 7, and associated 
 
 Note: The Segoe UI Symbol font contains a subset of Unicode-encoded symbols. It is not a symbol charset-encoded font.
 
-In Windows 7, some true bold fonts were added to support better user interface display for Bengali, Devanagari, Gujarati, Gurmukhi, Kannada, Khmer, Lao, Malayalam, Oriya, Sinhala, Tamil and Telugu script.
+In Windows 7, some true bold fonts were added to support better user interface display for Bangla, Devanagari, Gujarati, Gurmukhi, Kannada, Khmer, Lao, Malayalam, Odia, Sinhala, Tamil and Telugu script.
 Some fonts for already-supported scripts were updated to include support for Unicode 5.1.
 
 Windows 7 added support for Unicode variation-selector sequences for Phags-pa script and math symbols.

@@ -14,7 +14,7 @@ Currency formatting needs to take into consideration these following locale-sens
 
 - **Negative-amounts** — Several of the ways to display negative amounts are:
 
-| Description | Country | Formatting |
+| Description | Country/Region | Formatting |
 |---|---|---|
 | The negative sign before both the currency symbol and number.         | UK            | -£127.54 |
 |                                                                       | France        | -127,54 € |

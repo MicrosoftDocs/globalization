@@ -12,7 +12,7 @@ Printing is a globalization-sensitive issue due to the factors in this topic.
 ## Paper size
 
 Paper sizes conventionally used in any given region do not satisfy the needs of all users in the world market.
-Most countries in Europe and Asia use an international standard known as the A-series.
+Most countries/regions in Europe and Asia use an international standard known as the A-series.
 A4, for example (297 x 210 mm) is slightly longer and narrower than the 8 1/2 x 11 inch letter size (279 x 216 mm) commonly used in the US and Canada.
 There are standardized B, C, and D series, and many specialized sizes, including those based on historical printing and publishing sizes.
 Thus, if your application needs to print, you should allow the default paper size to be configurable.
@@ -21,7 +21,7 @@ Win32 NLS APIs can help you select an appropriate default paper size associated 
 This information can be obtained from the [GetLocaleInfoEx](/windows/desktop/api/winnls/nf-winnls-getlocaleinfoex) API with the LCType flag set to LOCALE\_IPAPERSIZE.
 The returned value is one of the following.
 
-| Country code | Format |
+| Country/Region code | Format |
 | --- | --- |
 | 1 | U.S. Letter |
 | 5 | U.S. Legal |

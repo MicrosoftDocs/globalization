@@ -38,7 +38,7 @@ Execution of this code would give the following result on English (United States
 **Figure 1:** Time formatted for English (United States) and Punjabi user locales
 
 As you saw in the previous example, the time formatting can be completely different from one locale to another.
-In this case, the use of a leading 0 in the hour representation, as well as the actual translation and positioning of P.M., change based on country and cultural standards.
+In this case, the use of a leading 0 in the hour representation, as well as the actual translation and positioning of P.M., change based on country/region and cultural standards.
 But even within the same locale or culture there is a variety of possible ways to format time: short or long formatting.
 The EnumTimeFormats function enumerates the time formats that are available for a specified locale.
 It does so by passing (to a callback function that an application defines) a pointer to a buffer that contains a time format.

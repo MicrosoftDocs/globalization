@@ -8,7 +8,7 @@ ms.date: 01/24/2017
 
 For many use cases, date formatting is not constant through out the world.
 Although each date basically displays the year, month, and day, their presentation order and separators vary greatly.
-In fact, there may be differences between regions within the same country.
+In fact, there may be differences between areas within the same country or region.
 
 ## Long and short data formats
 
