@@ -1,6 +1,7 @@
 ---
 title: Emoji
 description: Originally meaning "pictograph", the word emoji comes from Japanese e (like 'e' as in 'e-mail') plus moji ("character").
+ms.date: 01/01/2022
 ---
 
 # Emoji

@@ -1,6 +1,7 @@
 ---
 title: Globalize test data
 description: Test data should be multilingual Unicode text different from the system locale. Use mixed scripts or Unicode-only text to discover codepage or other encoding dependencies.
+ms.date: 01/01/2022
 ---
 
 # Globalize test data

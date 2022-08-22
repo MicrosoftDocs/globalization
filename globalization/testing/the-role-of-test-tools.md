@@ -1,6 +1,8 @@
 ---
 title: The role of test tools
 description: Using automated test tools is an effective way to verify the functionality of localized products or to test the degree of a product's globalization.
+author: PaulDempsey-ms
+ms.date: 6/7/2022
 ---
 
 # The role of test tools

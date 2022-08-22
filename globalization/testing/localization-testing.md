@@ -1,6 +1,7 @@
 ---
 title: Localization testing
 description: Localization testing will exercise the user interface with a focus on localized functionality and appearance.
+ms.date: 01/01/2022
 ---
 
 # Localization testing
@@ -24,14 +25,14 @@ The rest of this article covers some of the general areas on which to focus when
 
 Localization testing should focus on several general areas.
 The first involves things that are often changed during localization, such as the user interface and user assistance content.
-The second consists of culture-specific, language-specific, and country-specific areas.
+The second consists of culture-specific, language-specific, and country- or region-specific areas.
 Examples include configurable components such as region defaults and the default language, as well as language-specific and region-specific or market-specific functionality.
 Consider spelling checkers, speech engines, and so on.
 You should also test the availability of drivers for local hardware.
 
 Pay specific attention to customization that could not be automated using infrastructure provided by your platform or language globalization services.
 For example, check that formatting of mailing addresses is locale-specific and that parts of the user's name are ordered correctly.
-The order in which surname and first name appear varies according to country.
+The order in which surname and first name appear varies according to country/region.
 For instance, some Muslim countries and certain regions in India use a different name order than that used in English.
 People may have single names, multi-part names, or names that otherwise do not fit the *first-last* patten.
 Functionality of this kind is often implemented by an application: testing must verify its correctness.
@@ -70,7 +71,7 @@ In particular, localization testing of the UI and linguistics should cover items
 
 - Check usability of the user interface.
 
-- Asses cultural appropriateness.
+- Assess cultural appropriateness.
 
 - Check for politically sensitive content.
 

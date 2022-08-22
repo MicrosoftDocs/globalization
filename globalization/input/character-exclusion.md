@@ -1,6 +1,7 @@
 ---
 title: Character exclusion
 description: In certain languages such as Thai, specific character sequences are not allowed and should be filtered on input.
+ms.date: 01/01/2022
 ---
 
 # Character exclusion

@@ -1,6 +1,8 @@
 ---
 title: Simultaneous shipping
 description: Simultaneous shipping (or "sim-ship") means to release all localized versions of a given software product together with the original development version.
+author: PaulDempsey-ms
+ms.date: 6/7/2022
 ---
 # Simultaneous shipping
 

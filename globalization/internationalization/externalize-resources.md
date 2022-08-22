@@ -1,6 +1,7 @@
 ---
 title: Externalize localizable resources
 description: Localization requires strings and other localizable resources to be separated from code and non-localizable resources (externalized).
+ms.date: 01/01/2022
 ---
 
 # Externalize localizable resources

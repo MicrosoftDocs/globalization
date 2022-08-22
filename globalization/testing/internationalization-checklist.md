@@ -1,6 +1,8 @@
 ---
 title: Internationalization Checklist
 description: A summary of areas that should be validated to ensure localizability.
+ms.date: 01/01/2022
+ms.topic: checklist
 ---
 
 # Internationalization checklist

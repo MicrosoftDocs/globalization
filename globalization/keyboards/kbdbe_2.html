@@ -1,217 +1,218 @@
 <HTML lang="en">
 <HEAD>
-<TITLE>Belgian French Keyboard Layout</TITLE>
-<META name="description" content="Belgian French Keyboard">
-<META name="ms.locale" content="EN-US">
-<META name="color-scheme" content="dark light">
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-<SCRIPT LANGUAGE="JavaScript">
-         var State = 0;
-            var Clicked = 0;
-            function chooseState(x)
-            {
-                switch (State)
-                {
-                    case 0:
-                    case 8:
-                        document.all.normalstate.style.display = 'none';
-                        break;
-                    case 1:
-                        document.all.shiftstate.style.display = 'none';
-                        break;
-                    case 2:
-                    case 10:
-                        document.all.altgrstate.style.display = 'none';
-                        break;
-                    case 3:
-                    case 11:
-                        document.all.shiftaltgrstate.style.display = 'none';
-                        break;
-                    case 4:
-                    case 12:
-                        document.all.normalstatecap.style.display = 'none';
-                        break;
-                    case 5:
-                        document.all.shiftstatecap.style.display = 'none';
-                        break;
-                    case 6:
-                    case 14:
-                        document.all.altgrstatecap.style.display = 'none';
-                        break;
-                    case 7:
-                    case 15:
-                        document.all.shiftaltgrstatecap.style.display = 'none';
-                        break;
-                    case 9:
-                        document.all.shiftctrlstate.style.display = 'none';
-                        break;
-                    case 13:
-                        document.all.shiftctrlstatecap.style.display = 'none';
-                        break;
-                    default:
-                        break;
-                }
-                switch (x)
-                {
-                    case 0:
-                    case 8:
-                        document.all.normalstate.style.display = '';
-                        break;
-                    case 1:
-                        document.all.shiftstate.style.display = '';
-                        break;
-                    case 2:
-                    case 10:
-                        document.all.altgrstate.style.display = '';
-                        break;
-                    case 3:
-                    case 11:
-                        document.all.shiftaltgrstate.style.display = '';
-                        break;
-                    case 4:
-                    case 12:
-                        document.all.normalstatecap.style.display = '';
-                        break;
-                    case 5:
-                        document.all.shiftstatecap.style.display = '';
-                        break;
-                    case 6:
-                    case 14:
-                        document.all.altgrstatecap.style.display = '';
-                        break;
-                    case 7:
-                    case 15:
-                        document.all.shiftaltgrstatecap.style.display = '';
-                        break;
-                    case 9:
-                        document.all.shiftctrlstate.style.display = '';
-                        break;
-                    case 13:
-                        document.all.shiftctrlstatecap.style.display = '';
-                        break;
-                    default:
-                        break;
-                }
+    <TITLE>
+        Belgian French Keyboard Layout
+    </TITLE>
+    <META name="description" content="Belgian French Keyboard">
+    <META name="ms.locale" content="EN-US">
+    <META name="color-scheme" content="dark light">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <SCRIPT LANGUAGE="JavaScript">
+        var State = 0;
+        var Clicked = 0;
+        document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+        parent.window.addEventListener('theme-changed', SetBackgroundColor);
+        function SetBackgroundColor() {
+            var theme = localStorage.getItem('theme');
+            if (theme == 'dark') {
+                document.body.style.backgroundColor = '#171717';
             }
-            function keyOpen()
-            {
-                document.all.loading.style.display = 'none';
-                document.all.normalstate.style.display = '';
+            if (theme == 'high-contrast') {
+                document.body.style.backgroundColor = '#000000';
             }
-            function MouseOver(x)
-            {
-                if ((Clicked != 1) && ((State & x) == 0))
-                {
-                    chooseState(State | x);
-                }
-                Clicked = 0;
+            if (theme == 'light') {
+                document.body.style.backgroundColor = '#FFFFFF';
             }
-            function MouseOut(x)
-            {
-                if ((State & x) == 0)
-                {
-                    State |= x;
-                    chooseState(State ^ x);
-                    State ^= x;
-                }
+            else {
+                //docs.microsoft.com theme has not been set yet. Default to browser theme.
             }
-            function Click(x)
-            {
+
+        }
+        function chooseState(x) {
+            switch (State) {
+                case 0:
+                case 8:
+                    document.all.normalstate.style.display = 'none';
+                    break;
+                case 1:
+                    document.all.shiftstate.style.display = 'none';
+                    break;
+                case 2:
+                case 10:
+                    document.all.altgrstate.style.display = 'none';
+                    break;
+                case 3:
+                case 11:
+                    document.all.shiftaltgrstate.style.display = 'none';
+                    break;
+                case 4:
+                case 12:
+                    document.all.normalstatecap.style.display = 'none';
+                    break;
+                case 5:
+                    document.all.shiftstatecap.style.display = 'none';
+                    break;
+                case 6:
+                case 14:
+                    document.all.altgrstatecap.style.display = 'none';
+                    break;
+                case 7:
+                case 15:
+                    document.all.shiftaltgrstatecap.style.display = 'none';
+                    break;
+                case 9:
+                    document.all.shiftctrlstate.style.display = 'none';
+                    break;
+                case 13:
+                    document.all.shiftctrlstatecap.style.display = 'none';
+                    break;
+                default:
+                    break;
+            }
+            switch (x) {
+                case 0:
+                case 8:
+                    document.all.normalstate.style.display = '';
+                    break;
+                case 1:
+                    document.all.shiftstate.style.display = '';
+                    break;
+                case 2:
+                case 10:
+                    document.all.altgrstate.style.display = '';
+                    break;
+                case 3:
+                case 11:
+                    document.all.shiftaltgrstate.style.display = '';
+                    break;
+                case 4:
+                case 12:
+                    document.all.normalstatecap.style.display = '';
+                    break;
+                case 5:
+                    document.all.shiftstatecap.style.display = '';
+                    break;
+                case 6:
+                case 14:
+                    document.all.altgrstatecap.style.display = '';
+                    break;
+                case 7:
+                case 15:
+                    document.all.shiftaltgrstatecap.style.display = '';
+                    break;
+                case 9:
+                    document.all.shiftctrlstate.style.display = '';
+                    break;
+                case 13:
+                    document.all.shiftctrlstatecap.style.display = '';
+                    break;
+                default:
+                    break;
+            }
+        }
+        function keyOpen() {
+            document.all.loading.style.display = 'none';
+            document.all.normalstate.style.display = '';
+        }
+        function MouseOver(x) {
+            if ((Clicked != 1) && ((State & x) == 0)) {
+                chooseState(State | x);
+            }
+            Clicked = 0;
+        }
+        function MouseOut(x) {
+            if ((State & x) == 0) {
+                State |= x;
                 chooseState(State ^ x);
                 State ^= x;
-                if ((State & x) == 0)
-                {
-                    Clicked = 1;
-                }
-                else
-                {
-                    Clicked = 0;
-                }
             }
-</SCRIPT>
+        }
+        function Click(x) {
+            chooseState(State ^ x);
+            State ^= x;
+            if ((State & x) == 0) {
+                Clicked = 1;
+            }
+            else {
+                Clicked = 0;
+            }
+        }
+    </SCRIPT>
+</HEAD>
+<BODY onLoad="keyOpen()">
+    <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt
+        solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
+    <script type="text/javascript" language="javascript">
+        Xoffset = 10;    // modify these values to ...
+        Yoffset = 10;    // change the popup position.
 
-     </HEAD>
-     <BODY onLoad="keyOpen()">
-        <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
-           <script type="text/javascript" language="javascript">
-            Xoffset = 10;    // modify these values to ...
-            Yoffset = 10;    // change the popup position.
+        var old, skn, iex = (document.all), yyy = -1000;
 
-            var old, skn, iex = (document.all), yyy = -1000;
+        var ns4 = document.layers
+        var ns6 = document.getElementById && !document.all
+        var ie4 = document.all
 
-            var ns4 = document.layers
-var ns6 = document.getElementById && !document.all
-var ie4 = document.all
+        if (window.opera) ns6 = true;
 
-if (window.opera) ns6 = true;
-
-            if (ns4)
-                skn = document.glosso
-            else if (ns6)
-                skn = document.getElementById("glosso").style
-            else if (ie4)
-                skn = document.all.glosso.style
-if (ns4) document.captureEvents(Event.MOUSEMOVE);
-            else
-            {
-                skn.visibility = "visible"
+        if (ns4)
+            skn = document.glosso
+        else if (ns6)
+            skn = document.getElementById("glosso").style
+        else if (ie4)
+            skn = document.all.glosso.style
+        if (ns4) document.captureEvents(Event.MOUSEMOVE);
+        else {
+            skn.visibility = "visible"
             skn.display = "none"
+        }
+        document.onmousemove = get_mouse;
+        function popup(msg) {
+            var content = msg;
+            yyy = Yoffset;
+            if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible" }
+            if (ns6) { document.getElementById("glosso").innerHTML = content; skn.display = '' }
+            //if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
+        }
+        function get_mouse(e) {
+            var blont = document.getElementById("glosso").innerHTML;
+            var x = (ns4 || ns6) ? e.pageX : event.x + document.body.scrollLeft;
+            if ((x > 110) && (x < 220)) {
+                if (blont.length > 25) x -= 40;
+
+                x = x - 65;
             }
-
-            document.onmousemove = get_mouse;
-
-            function popup(msg)
-            {
-                var content = msg;
-                yyy = Yoffset;
-                if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible"}
-                if (ns6) { document.getElementById("glosso").innerHTML = content; skn.display = ''}
-                //if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
+            if (x > 220) {
+                if (blont.length > 25) {
+                    x = x - 40;
+                }
+                if (blont.length > 45) {
+                    x = x - 40;
+                }
+                if (blont.length > 65) {
+                    x = x - 30;
+                }
+                x = x - 110;
             }
-
-
-            function get_mouse(e)
-            {
-                var blont = document.getElementById("glosso").innerHTML;
-                var x = (ns4 || ns6) ? e.pageX :event.x+document.body.scrollLeft;
-       if((x > 110)&&(x< 220)) {
-       if(blont.length>25) x -= 40;
-	       
-	       x= x - 65;}
-       if(x>220) {
-       if(blont.length>25) {
-	       x = x - 40;}
-       if(blont.length>45) {
-	       x = x - 40;}
-       if(blont.length>65) {
-	       x = x - 30;}
-       	x= x - 110;}
-
-       
-        skn.left=x+Xoffset;
-        
-        var y = (ns4 || ns6) ? e.pageY :event.y+document.documentElement.scrollTop;
-		if(y > 65){
-    y = y - 40;
-} else {
-    y = y + 18;
-}
-skn.top=y;
-
-//alert(content);
-
-}
-
-function kill()
-{
-    yyy = -1000;
-    if (ns4) { skn.visibility = "hidden"; }
-    else if (ns6 || ie4)
-        skn.display = "none"
-}
-
-</script><DIV ID=loading CLASS=loading>
-<br><br><br><h3 align = center>Loading the keyboard layout, please wait....<h3>
+            skn.left = x + Xoffset;
+            var y = (ns4 || ns6) ? e.pageY : event.y + document.documentElement.scrollTop;
+            if (y > 65) {
+                y = y - 40;
+            } else {
+                y = y + 18;
+            }
+            skn.top = y;
+            //alert(content);
+        }
+        function kill() {
+            yyy = -1000;
+            if (ns4) { skn.visibility = "hidden"; }
+            else if (ns6 || ie4)
+                skn.display = "none"
+        }
+    </script>
+    <DIV ID=loading CLASS=loading>
+        <br><br><br>
+        <h3 align=center>Loading the keyboard layout, please wait....<h3>
     </DIV>
 <DIV ID=normalstate CLASS=normalstate STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>

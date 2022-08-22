@@ -1,6 +1,7 @@
 ---
 title: Testing localizability
 description: Localizability testing verifies if the user interface of the program can be translated to any target language without code modifications.
+ms.date: 01/01/2022
 ---
 
 # Testing localizability

@@ -1,7 +1,9 @@
 ---
 title: Transcreation localization strategy
 description: Transcreation is the process of adapting content from one language to another while maintaining its intent, style, tone, and context. 
+ms.date: 01/01/2022
 ---
+
 # Transcreation localization strategy
 
 Transcreation is the process of adapting content from one language or culture to another while maintaining essential aspects of the source.

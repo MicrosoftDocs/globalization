@@ -1,6 +1,7 @@
 ---
 title: Quality assurance for world-readiness
 description: The goal of ensuring world-readiness has a wider scope and requires more fore-thought than merely testing localized applications.
+ms.date: 01/01/2022
 ---
 
 # Quality assurance for world-readiness
@@ -12,7 +13,7 @@ Then the Quality Assurance (QA) process must make sure that those implicit requi
 For software products shipped to multiple markets, a single world-ready binary dramatically simplifies QA.
 By using a single binary, you only have to deal with one product built for one specification.
 The product is built by one development team. and there's only one binary that is tested, tracked, and supported later on.
-Expanding the target markets of the product becomes easier and more efficient because you don't need to completely retest the world-ready binary to sell it in another country.
+Expanding the target markets of the product becomes easier and more efficient because you don't need to completely retest the world-ready binary to sell it in another country/region.
 
 Software design and development can easily break world-readiness when:
 

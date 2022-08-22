@@ -1,6 +1,8 @@
 ---
 title: International Components for Unicode (ICU)
 description: International Components for Unicode (ICU) is a mature, widely used set of open-source globalization APIs, using the Common Locale Data Repository (CLDR) as the source of locale data.
+ms.topic: article
+ms.date: 01/01/2022
 ---
 
 # International Components for Unicode (ICU)

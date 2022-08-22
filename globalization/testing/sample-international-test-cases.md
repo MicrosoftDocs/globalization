@@ -1,7 +1,8 @@
 ---
 title: Sample international test cases
 description: This article summarizes a set of sample international test cases.
-ms.assetid: 3c24a50b-70ef-4c67-95bd-17e4d4699211
+ms.date: 01/01/2022
+ms.topic: navigation
 ---
 
 # Sample international test cases

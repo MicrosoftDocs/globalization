@@ -1,6 +1,7 @@
 ---
 title: Address formats
 description: The format of postal addresses across the globe vary widely.
+ms.date: 01/01/2022
 ---
 
 # Address formats
