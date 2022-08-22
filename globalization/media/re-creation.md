@@ -1,6 +1,7 @@
 ---
 title: Re-creation localization strategy
 description: One localization strategy is to re-create an asset in the target language.
+ms.date: 01/01/2022
 ---
 
 # Re-creation localization strategy

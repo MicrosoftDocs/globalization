@@ -1,6 +1,7 @@
 ---
 title: Search
 description: A friendly search facility allows the discovery of content using a variety of words to refer to the same thing. The synonyms of a given word will vary widely by language, so you can't simply translate your source language synonyms.
+ms.date: 01/01/2022
 ---
 
 # Search

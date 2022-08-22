@@ -1,7 +1,6 @@
 ---
 title: Mirroring
 description: Complex scripts refer to the languages, where the characters are not laid out in a simple left-to-right progression.
-ms.assetid: 437a9601-a54c-4c91-bb64-52c4d1b62e86
 ms.date: 04/26/2017
 ---
 # Mirroring

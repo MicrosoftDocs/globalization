@@ -1,6 +1,8 @@
 ---
 title: Localization exit criteria
 description: Every development milestone should have a set of indicators for key areas to ensure quality. This article suggests ways of defining localization exit criteria for these milestones.
+author: PaulDempsey-ms
+ms.date: 6/7/2022
 ---
 
 # Localization exit criteria

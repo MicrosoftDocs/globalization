@@ -1,6 +1,7 @@
 ---
 title: Creating the test environment for globalization testing
 description: Choosing a platform for the test is not enough to guarantee that the test is globalized and that no globalization problems are left in the code.
+ms.date: 01/01/2022
 ---
 
 # Creating a test environment for globalization testing

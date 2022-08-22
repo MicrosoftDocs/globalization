@@ -1,6 +1,8 @@
 ---
 title: OpenType font format
 description: OpenType is a font format developed jointly by Microsoft and Adobe as an extension of Apple's TrueType font format. Since that time Adobe and Microsoft have continued to work together updating and refining the specification.
+ms.topic: article
+ms.date: 01/01/2022
 ---
 # OpenType font format
 

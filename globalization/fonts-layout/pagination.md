@@ -1,6 +1,7 @@
 ---
 title: Pagination
 description: This article covers globalization concerns in pagination and page layout.
+ms.date: 01/01/2022
 ---
 # Pagination
 

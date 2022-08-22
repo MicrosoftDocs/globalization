@@ -1,6 +1,7 @@
 ---
 title: Test cases for deployment and general functionality
 description: This article outlines some globalization test cases for deployment and functionality.
+ms.date: 01/01/2022
 ---
 
 # Test cases for deployment and general functionality

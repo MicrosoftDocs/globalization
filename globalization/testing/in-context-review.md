@@ -1,6 +1,7 @@
 ---
 title: In-context review (ICR)
 description: In-context review (ICR) can be the key to ensure high quality localized and translated experience for international users.
+ms.date: 01/01/2022
 ---
 
 # In-context review (ICR)

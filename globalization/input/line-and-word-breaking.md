@@ -1,6 +1,7 @@
 ---
 title: Line and word breaking
 description: A global application must handle line and word boundaries for global data.
+ms.date: 01/01/2022
 ---
 
 # Line and word breaking

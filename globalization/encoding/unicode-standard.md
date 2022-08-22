@@ -1,6 +1,7 @@
 ---
 title: The Unicode standard
 description: Unicode is an encoding standard that encompasses all world languages and scripts.
+ms.date: 01/01/2022
 ---
 
 # The Unicode standard

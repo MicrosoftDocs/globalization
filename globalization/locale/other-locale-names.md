@@ -1,6 +1,7 @@
 ---
 title: Other locale representations
 descriptions: There are a number of other locale identification systems that you should be aware of, such as LCID (obsolete Windows Locale Identifier).
+ms.date: 01/01/2022
 ---
 # Other locale representations
 

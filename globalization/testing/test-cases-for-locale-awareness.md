@@ -1,6 +1,7 @@
 ---
 title: Test cases for locale awareness
 description: Globalization test cases for verifying the data in various regional settings.
+ms.date: 01/01/2022
 ---
 
 # Test cases for locale awareness

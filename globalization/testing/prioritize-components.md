@@ -1,6 +1,7 @@
 ---
 title: Prioritize components for globalization testing
 description: Some components are more likely to have globalization problems than others, so part of globalizing the test means adapting your testing practices accordingly.
+ms.date: 01/01/2022
 ---
 
 # Prioritize components for globalization testing

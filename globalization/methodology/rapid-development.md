@@ -1,6 +1,8 @@
 ---
 title: Global products and rapid development
 description: Rapid development methodology is prevalent today and requires an integrated strategy for a global product.
+author: PaulDempsey-ms
+ms.date: 6/7/2022
 ---
 
 # Global products under rapid development

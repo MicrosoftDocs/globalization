@@ -1,7 +1,7 @@
 ---
 title: Transformations of Unicode code points (encoding)
 description: Brief description about the Unicode encodings.
-ms.assetid: 6b8a5c90-424f-4254-9c98-8311e1f53594
+ms.date: 01/01/2022
 ---
 
 # Transformations of Unicode code points
