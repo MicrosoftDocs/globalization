@@ -10,14 +10,12 @@ ms.date: 01/01/2022
 
 Your product contains many terms that are specific to it, and whose translation you should control carefully. You use terminology lists (in the form of term bases or glossaries) to manage these terms. Some of these terms you want translated in a specific way; some you don't want translated at all. For example, product names are often not translated. Company names are almost never translated. Your terminology lists should be developed in collaboration between internal teams (marketing, software, documentation, and linguistic engineers) and external (LSP) teams. Like translation memories, they need to be curated. Terminology lists can be linked to TMs, giving all translators access to the same resources and reference material.
 
-Like TMs, terminology lists have a standard XML interchange format, called TermBase eXchange (TBX). You can obtain the ISO 30042 TermBase eXchange (TBX) standard [here](https://www.iso.org/standard/62510.html/).
-
 Here are some overall process recommendations:
 
 - Stabilize source terms early and front-load your localization with translating those terms.
 - Try as much as possible to automate your term extraction process (term mining). Consider the use of AI solutions.
-- Use a centralized terminology management system that all stakeholders can use.
-- Notify stakeholders of terminology changes. 
+- Use a centralized terminology management system.
+- Notify stakeholders of terminology changes.
 
 ## The importance of establishing terminology early
 
@@ -29,11 +27,25 @@ New software products often bring along new technologies and brand-new terms tha
 
 You should have developed a terminology list for your product before you begin the localization process. In fact, the terminology list will improve the clarity and consistency of the product itself, translations aside. Because the terminology list can be used by the UI developers, the documentation team, and the marketing term, there will be a consistent presentation in all these areas.
 
-The list will be essential in the translation process. There are several approaches to extracting the terms for the list from your product. Your product designers, software developers, QA personnel, marketers, sales personnel, and writers can submit terms as candidates for the terminology list as they develop the product. Then terminologists can curate the list. The terminologists should work with the product managers to improve the terminology in the product. There are also tools for extracting terms from your software and documentation. These tools can have a linguistic approach, identifying the part of speech and even adding annotations. There are also tools that perform a purely statistical analysis, looking for things like how often the term appears. As with the manually developed terminology list, these entries will have to be curated by terminologists.
+The list will be essential in the translation process. There are several approaches to extracting the terms for the list from your product. One approach is to have your product designers, software developers, QA personnel, marketers, sales personnel, and writers submit terms as candidates for the terminology list as they develop the product.
+
+There are also tools for extracting terms from your software and documentation. Some of these tools can have a linguistic approach, identifying the part of speech and even adding annotations. Other tools perform a purely statistical analysis, looking for things like how often the term appears. As with the manually developed terminology list, these entries will have to be curated by terminologists.
 
 ## Employing a centralized terminology management system
 
-To avoid inconsistent terminology across products and product versions, you should have a centralized repository for all terms. This repository should be accessible and contributed to by all stakeholders: product managers, project managers, marketers, terminologists, engineers, QA, and translators themselves. The system could be as simple as a spreadsheet or webpage with terms. It could be an internally developed database/front end. It could be a commercial terminology management system. CAT tools, utilizing TBX for interchange, can automate storage of terms and enforcement of consistency. A common problem is that different translation projects of a product produce different translation of the same terms. A centralized management system can spot and flag these inconsistencies in time to correct them.
+To avoid inconsistent terminology across products and product versions, you should have a centralized repository for all terms. A common problem is that different translation projects of a product produce different translations of the same terms. A centralized management system can spot and flag these inconsistencies in time to correct them. This system should be accessible and contributed to by all stakeholders: product managers, project managers, marketers, terminologists, engineers, QA, and translators themselves. The system could be as simple as a spreadsheet or webpage with terms. It could be an internally developed database/front end. It could be a commercial terminology management system. CAT tools can automate storage of terms and enforcement of consistency.
+
+### TBX
+
+Like TMs, terminology lists have a standard XML interchange format, called TermBase eXchange (TBX). You can obtain the ISO 30042 TermBase eXchange (TBX) standard [here](https://www.iso.org/standard/62510.html/).
+
+TXB has multiple uses, including:
+
+- CAT tools can use TBX knowledge to find terms and accompanying metadata in terminology lists and send them to the translator.
+- Data mining tools can export TBX information from terminology lists for product analysis.
+- Authoring tools can use TBX knowledge to find terms and accompanying metadata in monolingual terminology lists and send them to authors.
+
+Because they're XML, TBX files can exchange data with XLIFF and TMX. See [Localization file formats](localization-file-formats.md).
 
 ## Considerations for terminology changes
 
@@ -44,34 +56,19 @@ Terminology changes can have far-reaching effects. Consider the following effect
 - Cost: more changes bring more rework, and a higher cost.
 - Quality: terminology changes may introduce inconsistencies and/or inaccuracies to your product.
 
-## The importance of context
+### The importance of metadata
 
-Words can have multiple meanings (that is, can be homographs) depending on the contexts in which they're used. For example, the word "address" in software can have several meanings. It's crucial that your terminology list contains metadata describing the context in which the term is being used. TBX allows you to add a wealth of metadata, including the following information:
+It's crucial that your terminology list contains metadata describing the provenance, the description, and the use for each term. This metadata could include the following information (and much else):
 
 - Part of speech (for example, "address" can be a noun or a verb, and the translation for usage as a verb is likely to differ from the translation for usage as a noun)
-- Usage note (for example, is "address" indicating a location in memory, an email identifier, a network node identifier, a URL, or what?)
+- Usage note (for example, if you have two similar terms, you might want to differentiate in which contexts each term is appropriate)
 - Grammatical gender (for example, masculine, feminine, neuter, or other)
 - Term type (for example, standard text, international scientific term, equation, abbreviation, many others)
+- The source from which the entry was imported
+- The person who provided the information
+- Descriptive information like definition, quantity, and subject field.
 
-This metadata, when presented to translators via the CAT tool they're using, can be indispensable. For example, supposing translators see the sentence "A program can fetch the current contents of the byte at a given memory address and it can store a given value into that byte." The CAT tool might fetch the following metadata from the term base (along with the source and target segments) and present it along with the suggested translation "addresse" to the translator:
-```
-<termEntry id="myterm">
-  <descrip type="definition">A number specifying a location in memory where data is stored</descrip>
-  <langSet xml:lang="en-US">
-    <tig>
-      <term>address</term>
-      <termNote type="partOfSpeech">Noun</termNote>
-    </tig>
-  </langSet>
-  <langSet xml:lang="fr-FR"> 
-    <tig>
-      <term>adresse</term>
-      <termNote type="partOfSpeech">Verb</termNote>
-    </tig>
-  </langSet>
-</termEntry>
-```
-When translators see the metadata "A number specifying a location in memory where data is stored," they can be confident that "addresse" is the correct translation for this term. 
+When the CAT tool presents terms to the translator, the accompanying metadata can be a decisive factor for choosing the correct translation.
 
 ## Translating terms
 
@@ -91,7 +88,7 @@ In addition to product names and people's names that we've discussed above, ther
 
 ### Acronyms and abbreviations
 
-Acronyms can vary in different languages because they usually follow the order of the words they expand to, or because the translation for the source is a difference word sequence. For example, the French equivalent acronym for "DTP" is "PAO" (from the translation "Publication assistée par ordinateur"). The abbreviations for single words can differ as well. For example, the abbreviation for the French word "gigaoctet" (French for "gigabyte") is "Go". The Microsoft Style Guides for different languages often include a list of abbreviations that are different that language. See [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides?rtc=1).
+Acronyms can vary in different languages because they usually follow the order of the words they expand to, or because the translation for the source is a different word sequence. For example, the French equivalent acronym for "DTP" is "PAO" (from the translation "Publication assistée par ordinateur"). The abbreviations for single words can differ as well. For example, the abbreviation for the French word "gigaoctet" (French for "gigabyte") is "Go". The Microsoft Style Guides for different languages often include a list of abbreviations that are different in that language. See the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides?rtc=1).
 
 ### Excluded terms (vulgarities, sensitive terms)
 
