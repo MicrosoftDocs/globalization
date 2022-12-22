@@ -22,7 +22,7 @@ Let's compare long and short date formats between Mexico, Japan, and the United 
 
 Obviously, the names of the months and days of the week are different from locale to locale.
 However, there are other notable differences as well.
-For Mexico, the day comes before the month, everything is lowercase and the article "de" ia used.
+For Mexico, the day comes before the month, everything is lowercase and the article "de" is used.
 In Japan, the day of the week is not displayed and the translations for "year", "month" and "day" act like numeric separators.
 In the US, the full weekday name is followed by the month name and day number, then the year.
 
