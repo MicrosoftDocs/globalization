@@ -16,12 +16,12 @@ When implementing the language settings for your application, it is important to
 
 The different variables of a language that your users should be able to set include the following:
 
-- User interface language (#56152)
-- Typing, which includes support for different keyboard layouts, text prediction, and additional settings, such as composing ideograms using dedicated input devices (#75880)
-- Handwriting, which includes support for handwriting on a touchscreen device (#75881)
-- Speech, which includes support for voice recognition and text-to-speech (TTS) (#56153)
-- Dictionaries and spelling (#56154)
-- Collation, sorting, and string comparison (#56155)
+- [User interface language](ui-language.md)
+- [Typing settings](typing-settings.md), which includes support for different keyboard layouts, text prediction, and additional settings, such as composing ideograms using dedicated input devices
+- [Handwriting settings](handwriting-settings.md), which includes support for handwriting on a touchscreen device
+- [Speech settings](speech-settings.md), which includes support for voice recognition and text-to-speech (TTS)
+- [Dictionaries and spelling](dictionaries-spelling.md)
+- [Collation, sorting, and string comparison](sorting-and-string-comparison.md)
 
 Language settings are closely related to regional settings. Regional settings include:
 

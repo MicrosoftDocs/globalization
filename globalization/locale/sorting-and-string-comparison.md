@@ -32,40 +32,45 @@ Because each language sorts uniquely and sorting rules tend to be complex, imple
 
 This section gives examples of language-specific conventions that affect sorting.
 
-### Combinations of letters
+### Special letters, characters, and symbols
+
+#### Combinations of letters
+
 Until 1994, CH and LL were treated as single letters in Spanish. But after the Spanish Academy changed their ruling, CH is collated between CG and CI, and LL between LK and LM.
 
-### Characters with diacritics
+#### Characters with diacritics
 
 A diacritic is a glyph (a typographical mark) added to a letter or to a basic glyph. Some diacritics are called accents. Characters with diacritics can be treated as distinct letters or equivalent to the unaccented letter.
 
 For example, letters with umlaut are treated as the corresponding non-umlauted letters in German. However, in a German phonebook, umlauts are sorted as combinations of letters, because some German surnames appear in both forms, for example Müller and Mueller. In Arabic, Hamza, which is created diacritically, can be considered the 29th letter even though there are only 28 “full” letters. Some French dictionary ordering traditions use backward secondary sorting for accented letters, meaning they are sorted by the last accented letter in a word.
 
-### Equivalent letters
+#### Equivalent letters
 
 V and W are now treated as separate letters in Swedish, but before 2006 W was treated as a version of V. In German, ß is sorted as SS.
 
-### Accented letters
+#### Accented letters
 
-See Characters with diacritics.
+See [Characters with diacritics](#characters-with-diacritics).
 
-### Lowercase vs uppercase
+#### Lowercase vs uppercase
 
-In some cases, the sorting order might be affected by lowercase or uppercase letters. Many modern scripts, such as Latin, Greek, Cyrillic, and Armenian have case, but not all do. For a detailed explanation, refer to Case mapping.
+In some cases, the sorting order might be affected by lowercase or uppercase letters. Many modern scripts, such as Latin, Greek, Cyrillic, and Armenian have case, but not all do. For a detailed explanation, refer to [Case mapping](../text/case-mapping.md).
 
-### Punctuation, symbols and spaces
+#### Punctuation, symbols and spaces
 
 Punctuation, including spaces, and symbols such as the kashida in Arabic might affect the sorting order.
 
-### Sorting standards
+### Standards and normalization
+
+#### Sorting standards
 
 There are standards, national or otherwise, that define collation for a given language. For example, the Japanese Industrial Standards (JIS) include JIS X 4061:1996 which defines collation of Japanese character strings. Unicode is another standard, used with most writing systems in the world. It aims to define a code point for each written character, as well as some symbols, emojis, and control and formatting codes. A code point is a number instead of a visual glyph, making collation possible for computers. This way a given character is defined abstractly, leaving its visual representation to individual systems and applications. For various historical reasons, some basically identical characters do have multiple code points, however.
 
-### Normalization
+#### Normalization
 
 Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. For example, the latin small letter a with diaeresis (umlaut) might be represented by either the character ä (U+00E4) or a (U+0041) with the combining diaeresis character ¨ (U+0308).
 
-For a detailed explanation, refer to String normalization.
+For a detailed explanation, refer to [String normalization](../text/text-normalization.md).
 
 ## Market-specific sorting examples
 
