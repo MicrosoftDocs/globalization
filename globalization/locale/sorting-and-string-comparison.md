@@ -1,6 +1,6 @@
 ---
 title: Collation, sorting, and string comparison
-description: In the world-ready applications, the alphabetical order can vary among languages, and the conventions for sequencing items can also be quite different.
+description: In world-ready applications, the alphabetical order can vary among languages, and the conventions for sequencing items can also be quite different.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.

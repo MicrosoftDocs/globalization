@@ -1,6 +1,6 @@
 ---
 title: Typing settings
-description: TBA.
+description: Typing settings control how users can input text and commands with their keyboards or similar devices.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.

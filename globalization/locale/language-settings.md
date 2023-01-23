@@ -26,7 +26,7 @@ The different variables of a language that your users should be able to set incl
 Language settings are closely related to regional settings. Regional settings include:
 
 - Numbers: For example, how are numbers, including currencies, formatted.
-- Calendars, date, and time: For example, how are dates formatted, what kind of time zones are used, and which day starts a new week.
+- Calendars, date, and time: For example, how dates are formatted, what kind of time zones are used, and which day starts a new week.
 - Postal address formats
 - Telephone number formats
 - Units of measurement

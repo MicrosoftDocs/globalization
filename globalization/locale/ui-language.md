@@ -1,6 +1,6 @@
 ---
 title: User interface language
-description: TBA.
+description: Users want to be able to select the main user interface language and sometimes additional languages as well.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
