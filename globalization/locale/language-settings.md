@@ -20,7 +20,7 @@ The different variables of a language that your users should be able to set incl
 - [Typing settings](typing-settings.md), which includes support for different keyboard layouts, text prediction, and additional settings, such as composing ideograms using dedicated input devices
 - [Handwriting settings](handwriting-settings.md), which includes support for handwriting on a touchscreen device
 - [Speech settings](speech-settings.md), which includes support for voice recognition and text-to-speech (TTS)
-<-- - [Dictionaries and spelling](dictionaries-spelling.md)-->
+<!-- [Dictionaries and spelling](dictionaries-spelling.md) -->
 - Dictionaries and spelling
 - [Collation, sorting, and string comparison](sorting-and-string-comparison.md)
 

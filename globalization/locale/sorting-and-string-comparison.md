@@ -70,7 +70,7 @@ There are standards, national or otherwise, that define collation for a given la
 
 Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. For example, the latin small letter a with diaeresis (umlaut) might be represented by either the character ä (U+00E4) or a (U+0041) with the combining diaeresis character ¨ (U+0308).
 
-<-- For a detailed explanation, refer to [String normalization](../text/text-normalization.md). -->
+<!-- For a detailed explanation, refer to [String normalization](../text/text-normalization.md). -->
 
 ## Market-specific sorting examples
 
