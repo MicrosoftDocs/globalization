@@ -16,7 +16,6 @@ Typing settings control how users interact with their systems and applications u
 - French spell checking: Traditional and new spellings
 - German spell checking: Pre and post-reform rules
 - Spanish spell checking: Tuteo and voseo verb forms
-
 <!-- For more information about these additional settings, refer to [Dictionaries and spelling](dictionaries-spelling.md). -->
 
 Some languages whose spelling is based on ideograms, like Chinese (Simplified), Japanese, or Korean, require the use of [Input Method Editors (IME)](../input/text-input.md#enable-input-method-editors-imes-and-text-prediction) for typing. IMEs allow users to compose ideograms using input devices that do not support the native ideograms of that language.
