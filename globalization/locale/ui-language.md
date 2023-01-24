@@ -1,22 +1,17 @@
 ---
 title: User interface language
-description: This variable allows each user to select the language of the UI for such things as dialog boxes, menus, and Help files.
-ms.assetid: de2ab910-0b17-405c-8e28-faa418af5f1c
-ms.date: 02/23/2017
+description: Users want to be able to select the main user interface language and sometimes additional languages as well.
+author: m-kauppinen
+ms.author: v-mikau
+ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.date: 01/10/2023
+
 ---
+
 # User interface language
 
-> [!NOTE]
-> This topic contains legacy information regarding older versions of Windows.
+Users of a globalized system expect that they can select the language they prefer for the user interface of the operating system (OS) and applications they run on it. The default language will typically be determined by the language selected during the installation or will be specified by the operating system or browser. Users might need to change the language later. Additional languages may come preinstalled, or users may need to download and install language packs to have support for the languages they need. Multilingual users might even want to have several languages enabled in the system at once.
 
-This variable allows each user to select the language of the user interface for such things as dialog boxes, menus, and help files.
-This option is only available on the MUI Pack of Windows XP Professional and on the MultiLanguage version of Windows 2000 Professional.
+Users may want to use applications in a language that is different than the operating system language. For example, Windows 11 supports a "Windows display language" and one or more "Preferred languages". The selected Windows display language is the language Windows uses for its core features such as Settings and File Explorer. Preferred languages are an ordered list that Microsoft Store apps use: they appear in the first language on the list that a given app supports.
 
-It's important to distinguish between the system UI language and the user UI language.
-Though it is true that the user UI language is sometimes the same as the system UI, in other instances it is not.
-The system language is the language of the localized version that was used to set up Windows 2000 Professional or Windows XP Professional.
-All menus, dialog boxes, error messages, and Help files are in this language, except on multilanguage versions (such as on the MUI Pack of Windows XP Professional and the MultiLanguage version of Windows 2000 Professional), where the user can select a different language.
-
-The user UI language on a non-MUI machine would be the same as the system UI language.
-With MUI, however, the user can change the language by clicking the Languages tab within the Regional And Language Options.
-To see the effect of this change, the user will have to log off and then log back on.
+Application developers must make a choice for the applications that they produce. An application can default to the OS display language, the “preferred language,” or the language/locale set in the user’s browser (for applications that run inside a browser). An app could also have its own language settings that are independent from any of the operating system or browser settings.
