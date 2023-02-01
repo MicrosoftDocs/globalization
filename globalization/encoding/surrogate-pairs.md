@@ -38,12 +38,10 @@ There are two sets of variants defined by Unicode:
 Similar to surrogate pairs, the code point sequence is comprised of a base character followed by the variation selector (U+FE00-U+FE0F and U+E0100-U+E01EF, abbreviated VS1-VS16 and VS17-VS256).
 
 For example, the character U+845B (“edible bean; surname”) may have a variation selector applied:
-- U+845B: as used in the name of the Nishi-Kasai railway station: <span lang="ja">西葛西駅</span>
-  <iframe src="char845B.html" height="80"></iframe>
-- ���U+845B with VS17/U+E0100 applied: as used in the name of Katsuragi City in Nara prefecture: <span lang="ja">葛&#xe0100;城市</span>
-  <iframe src="char845BVS17.html" height="80"></iframe>
-
-<iframe src="char845B.html" height="40"></iframe>
+- U+845B: as used in the name of the Nishi-Kasai railway station: <span lang="ja">&#x897F;&#x845B;&#x897F;&#x99C5;</span>
+  <iframe src="char845B.html" height="60"></iframe>
+- U+845B with U+E0100 (VS17): as used in the name of Katsuragi City in Nara prefecture: <span lang="ja">&#x897F;&#xe0100;&#xe57CE;&#xe5E02;</span>
+  <iframe src="char845BVS17.html" height="60"></iframe>
 
 You will need a font that has defined this character for it to correctly display.
 
