@@ -38,8 +38,8 @@ There are two sets of variants defined by Unicode:
 Similar to surrogate pairs, the code point sequence is comprised of a base character followed by the variation selector (U+FE00-U+FE0F and U+E0100-U+E01EF, abbreviated VS1-VS16 and VS17-VS256).
 
 For example, the character U+845B (“edible bean; surname”) may have a variation selector applied:
-- U+845B: <span lang="ja"><big>葛</big></span> 
-- 󠄀U+845B with VS17/U+E0100 applied: <span lang="ja"><big>葛&#xe0100;</big></span> 
+- U+845B: <span lang="ja">葛</span>, as used in the name of the railway station <span lang="ja">西葛西駅</span> ([<span lang="ja-Latn">Nishi-Kasi</span>](https://en.wikipedia.org/wiki/Nishi-Kasai_Station))
+- 󠄀U+845B with VS17/U+E0100 applied: <span lang="ja">葛&#xe0100;</span>, as used in the name of the city <span lang="ja">葛&#xe0100;城市</span> ([<span lang="ja-Latn">Katsuragi</span>](https://en.wikipedia.org/wiki/Katsuragi,_Nara))
 
 You will need a font that has defined this character for it to correctly display.
 
