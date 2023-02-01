@@ -27,7 +27,7 @@ The SMP, or Plane 1, contains several historic scripts and several sets of symbo
 
 ## Variation Selection
 
-Although the Unicode standard represents a large number of characters, the forms the glyphs take can vary from font to font and from culture to culture. A simple is example is the difference between <iframe src="serif.html" height="10"></iframe> and <iframe src="sansserif.html"></iframe>. For these types of difference there is no need to encode a different code point. This difference is mainly stylistic and is easily recognizable as the same character. However, during the process of encoding some characters there may be cases where characters with the same semantic meaning have different representation for contextual, historical, or stylistic reasons. In those cases, Unicode provides the variation selector method to represent these characters.
+Although the Unicode standard represents a large number of characters, the forms the glyphs take can vary from font to font and from culture to culture. A simple is example is the difference between the following two characters. <iframe src="letterA.html" height="40"></iframe> For these types of difference there is no need to encode a different code point. This difference is mainly stylistic and is easily recognizable as the same character. However, during the process of encoding some characters there may be cases where characters with the same semantic meaning have different representation for contextual, historical, or stylistic reasons. In those cases, Unicode provides the variation selector method to represent these characters.
 
 There are two sets of variants defined by Unicode:
 
