@@ -43,7 +43,7 @@ For example, the character U+845B (“edible bean; surname”) may have a variat
 - U+845B with U+E0100 (VS17): as used in the name of Katsuragi City in Nara prefecture: <span lang="ja">&#x897F;&#xe0100;&#xe57CE;&#xe5E02;</span>
   <iframe src="char845BVS17.html" height="60"></iframe>
 
-You will need a font that has defined this character for it to correctly display.
+You will need a font that has this character defined for it to display correctly.
 
 ## End-User Defined Characters
 
