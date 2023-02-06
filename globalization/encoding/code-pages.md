@@ -14,7 +14,7 @@ A code page is usually defined to support a specific language or groups of langu
 In most code pages, the first 127 code points represent the same characters as defined in the "ASCII" character set; this is to allow for continuity and legacy data.
 It is usually in the upper 128 code points (values 128–255) that code pages differ considerably.
 
-For example, [code page 1253](https://en.wikipedia.org/wiki/Windows-1253) provides characters that are required by the Greek writing system and [code page 1252](https://en.wikipedia.org/wiki/Windows-1252) provides the characters for Latin writing systems including English, German and French.
+For example, [code page 1253](https://en.wikipedia.org/wiki/Windows-1253) provides characters that are used in the Greek writing system and [code page 1252](https://en.wikipedia.org/wiki/Windows-1252) provides the characters for Latin writing systems including English, German and French.
 In both of these code pages, it is the upper 128 code points that contain either accented or Greek characters.
 Note that you cannot store Greek and German in the same code stream unless you include some type of identifier separate from the text to indicate which code page to use.
 
