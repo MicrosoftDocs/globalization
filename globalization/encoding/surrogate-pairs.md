@@ -27,7 +27,9 @@ The SMP, or Plane 1, contains several historic scripts and several sets of symbo
 
 ## Variation Selection
 
-Although the Unicode standard represents a large number of characters, the forms the glyphs take can vary from font to font and from culture to culture. A simple is example is the difference between "a" and "a". For these types of difference there is no need to encode a different code point. This difference is mainly stylistic and is easily recognizable as the same character. However, during the process of encoding some characters there may be cases where characters with the same semantic meaning have different representation for contextual, historical, or stylistic reasons. In those cases, Unicode provides the variation selector method to represent these characters.
+Although the Unicode standard represents a large number of characters, the forms the glyphs take can vary from font to font and from culture to culture. A simple example is the difference between the following two characters.
+<iframe src="char0067.html" height="60"></iframe>
+For these types of difference there is no need to encode a different code point. This difference is mainly stylistic and is easily recognizable as the same character. However, during the process of encoding some characters there may be cases where characters with the same semantic meaning have different representation for contextual, historical, or stylistic reasons. In those cases, Unicode provides the variation selector method to represent these characters.
 
 There are two sets of variants defined by Unicode:
 
@@ -37,8 +39,13 @@ There are two sets of variants defined by Unicode:
 
 Similar to surrogate pairs, the code point sequence is comprised of a base character followed by the variation selector (U+FE00-U+FE0F and U+E0100-U+E01EF, abbreviated VS1-VS16 and VS17-VS256).
 
-For example, <span lang="ja">葛</span> \(U+845B) may also be represented as 󠄀<span lang="ja">&#xe0100;</span> \(U+845B; VS17/U+E0100).
-You will need a font that has defined this character for it to correctly display.
+For example, the character U+845B (“edible bean; surname”) may have a variation selector applied:
+- U+845B: as used in the name of the Nishi-Kasai railway station: <span lang="ja">&#x897F;&#x845B;&#x897F;&#x99C5;</span>
+  <iframe src="char845B.html" height="60"></iframe>
+- U+845B with U+E0100 (VS17): as used in the name of Katsuragi City in Nara prefecture: <span lang="ja">&#x845B;&#xE0100;&#x57CE;&#x5E02;</span>
+  <iframe src="char845BVS17.html" height="60"></iframe>
+
+You will need a font that has this character defined for it to display correctly.
 
 ## End-User Defined Characters
 
