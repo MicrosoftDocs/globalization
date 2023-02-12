@@ -185,8 +185,7 @@ GetWindowRect(hDlg, &rcDialog);
 // Gets rect in screen coordinates
 GetWindowRect(hControl, &rcControl);
 // Takes x position in client coordinates
-MoveWindow(hControl, rcControl.left - rcDialog.left, _
- rcControl.top - rcDialog.top, nWidth, nHeight, FALSE);
+MoveWindow(hControl, rcControl.left - rcDialog.left, rcControl.top - rcDialog.top, nWidth, nHeight, FALSE);
 ```
 
 This works fine when the dialog window has an LTR layout, and when the mapping mode of the client is `MM_TEXT`.
@@ -338,8 +337,7 @@ HICON CreateMirroredIcon(HICON hiconOrg)
         {
             if (hiconOrg)
             {
-                if (GetIconInfo(hiconOrg, &ii) && GetObject(ii.hbmColor, _
-                    sizeof(BITMAP), &bm)
+                if (GetIconInfo(hiconOrg, &ii) && GetObject(ii.hbmColor, sizeof(BITMAP), &bm)
                 {
                     // Do the cleanup for the bitmaps.
                     DeleteObject( ii.hbmMask );
@@ -350,10 +348,8 @@ HICON CreateMirroredIcon(HICON hiconOrg)
                     hbmMask = CreateBitmap(bm.bmWidth, bm.bmHeight,1, 1, NULL);
                     hbmOld = (HBITMAP)SelectObject(hdcBitmap, hbm);
                     hbmOldMask = (HBITMAP)SelectObject(hdcMask,hbmMask);
-                    DrawIconEx(hdcBitmap, 0, 0, hiconOrg,bm.bmWidth, _
-                    bm.bmHeight, 0, NULL, DI_IMAGE);
-                    DrawIconEx(hdcMask, 0, 0, hiconOrg, _
-                    bm.bmWidth,bm.bmHeight, 0, NULL, DI_MASK);
+                    DrawIconEx(hdcBitmap, 0, 0, hiconOrg,bm.bmWidth, bm.bmHeight, 0, NULL, DI_IMAGE);
+                    DrawIconEx(hdcMask, 0, 0, hiconOrg, bm.bmWidth,bm.bmHeight, 0, NULL, DI_MASK);
                     SelectObject(hdcBitmap, hbmOld);
                     SelectObject(hdcMask, hbmOldMask);
 
@@ -400,7 +396,6 @@ you can have the following code, where `Width` is the width of each individual i
 int n = bm.bmWidth / Width, i;
 for(i =0; i< n; i++)
 {
-    BitBlt(hdcMem2, i * Width + 0, 0, Width, bm.bmHeight, hdcMem1,
-        (n - i - 1) * Width, 0, SRCCOPY);
+    BitBlt(hdcMem2, i * Width + 0, 0, Width, bm.bmHeight, hdcMem1, (n - i - 1) * Width, 0, SRCCOPY);
 } 
 ```
