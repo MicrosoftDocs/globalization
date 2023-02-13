@@ -347,7 +347,7 @@ HICON CreateMirroredIcon(HICON hiconOrg)
                     hbmMask = CreateBitmap(bm.bmWidth, bm.bmHeight, 1, 1, NULL);
                     hbmOld = (HBITMAP)SelectObject(hdcBitmap, hbm);
                     hbmOldMask = (HBITMAP)SelectObject(hdcMask, hbmMask);
-                    DrawIconEx(hdcBitmap, 0, 0, hiconOrg,bm.bmWidth, bm.bmHeight, 0, NULL, DI_IMAGE);
+                    DrawIconEx(hdcBitmap, 0, 0, hiconOrg, bm.bmWidth, bm.bmHeight, 0, NULL, DI_IMAGE);
                     DrawIconEx(hdcMask, 0, 0, hiconOrg, bm.bmWidth, bm.bmHeight, 0, NULL, DI_MASK);
                     SelectObject(hdcBitmap, hbmOld);
                     SelectObject(hdcMask, hbmOldMask);
