@@ -185,8 +185,7 @@ GetWindowRect(hDlg, &rcDialog);
 // Gets rect in screen coordinates
 GetWindowRect(hControl, &rcControl);
 // Takes x position in client coordinates
-MoveWindow(hControl, rcControl.left - rcDialog.left, _
- rcControl.top - rcDialog.top, nWidth, nHeight, FALSE);
+MoveWindow(hControl, rcControl.left - rcDialog.left, rcControl.top - rcDialog.top, nWidth, nHeight, FALSE);
 ```
 
 This works fine when the dialog window has an LTR layout, and when the mapping mode of the client is `MM_TEXT`.
@@ -260,7 +259,7 @@ Again, when the mirrored graphics are rendered on a mirrored device context, the
 The following sample code illustrates how to mirror both a bitmap and an icon when each's handle is passed:
 
 ```cpp
-HBITMAP CreateMirroredBitmap( HBITMAP hbmOrig)
+HBITMAP CreateMirroredBitmap(HBITMAP hbmOrig)
 {
     HDC hdc, hdcMem1, hdcMem2;
     HBITMAP hbm = NULL, hOld_bm1, hOld_bm2;
@@ -297,11 +296,11 @@ HBITMAP CreateMirroredBitmap( HBITMAP hbmOrig)
         }
         // Flip the bitmap.
         hOld_bm1 = (HBITMAP)SelectObject(hdcMem1, hbmOrig);
-        hOld_bm2 = (HBITMAP)SelectObject(hdcMem2 , hbm );
+        hOld_bm2 = (HBITMAP)SelectObject(hdcMem2, hbm);
         SetLayout(hdcMem2, LAYOUT_RTL);
         BitBlt(hdcMem2, 0, 0, bm.bmWidth, bm.bmHeight, hdcMem1, 0, 0, SRCCOPY);
-        SelectObject(hdcMem1, hOld_bm1 );
-        SelectObject(hdcMem1, hOld_bm2 );
+        SelectObject(hdcMem1, hOld_bm1);
+        SelectObject(hdcMem1, hOld_bm2);
         DeleteDC(hdcMem1);
         DeleteDC(hdcMem2);
         ReleaseDC(NULL, hdc);
@@ -312,7 +311,7 @@ HBITMAP CreateMirroredBitmap( HBITMAP hbmOrig)
 HICON CreateMirroredIcon(HICON hiconOrg)
 {
     HDC hdcScreen, hdcBitmap, hdcMask = NULL;
-    HBITMAP hbm, hbmMask, hbmOld,hbmOldMask;
+    HBITMAP hbm, hbmMask, hbmOld, hbmOldMask;
     BITMAP bm;
     ICONINFO ii;
     HICON hicon = NULL;
@@ -320,14 +319,14 @@ HICON CreateMirroredIcon(HICON hiconOrg)
     if (hdcBitmap)
     {
         hdcMask = CreateCompatibleDC(NULL);
-        if( hdcMask )
+        if(hdcMask)
         {
             SetLayout(hdcBitmap, LAYOUT_RTL);
             SetLayout(hdcMask, LAYOUT_RTL);
         }
         else
         {
-            DeleteDC( hdcBitmap );
+            DeleteDC(hdcBitmap);
             hdcBitmap = NULL;
         }
     }
@@ -338,22 +337,18 @@ HICON CreateMirroredIcon(HICON hiconOrg)
         {
             if (hiconOrg)
             {
-                if (GetIconInfo(hiconOrg, &ii) && GetObject(ii.hbmColor, _
-                    sizeof(BITMAP), &bm)
+                if (GetIconInfo(hiconOrg, &ii) && GetObject(ii.hbmColor, sizeof(BITMAP), &bm)
                 {
                     // Do the cleanup for the bitmaps.
-                    DeleteObject( ii.hbmMask );
-                    DeleteObject( ii.hbmColor );
+                    DeleteObject(ii.hbmMask);
+                    DeleteObject(ii.hbmColor);
                     ii.hbmMask = ii.hbmColor = NULL;
-                    hbm = CreateCompatibleBitmap(hdcScreen,
-                    bm.bmWidth, bm.bmHeight);
-                    hbmMask = CreateBitmap(bm.bmWidth, bm.bmHeight,1, 1, NULL);
+                    hbm = CreateCompatibleBitmap(hdcScreen, bm.bmWidth, bm.bmHeight);
+                    hbmMask = CreateBitmap(bm.bmWidth, bm.bmHeight, 1, 1, NULL);
                     hbmOld = (HBITMAP)SelectObject(hdcBitmap, hbm);
-                    hbmOldMask = (HBITMAP)SelectObject(hdcMask,hbmMask);
-                    DrawIconEx(hdcBitmap, 0, 0, hiconOrg,bm.bmWidth, _
-                    bm.bmHeight, 0, NULL, DI_IMAGE);
-                    DrawIconEx(hdcMask, 0, 0, hiconOrg, _
-                    bm.bmWidth,bm.bmHeight, 0, NULL, DI_MASK);
+                    hbmOldMask = (HBITMAP)SelectObject(hdcMask, hbmMask);
+                    DrawIconEx(hdcBitmap, 0, 0, hiconOrg, bm.bmWidth, bm.bmHeight, 0, NULL, DI_IMAGE);
+                    DrawIconEx(hdcMask, 0, 0, hiconOrg, bm.bmWidth, bm.bmHeight, 0, NULL, DI_MASK);
                     SelectObject(hdcBitmap, hbmOld);
                     SelectObject(hdcMask, hbmOldMask);
 
@@ -400,7 +395,6 @@ you can have the following code, where `Width` is the width of each individual i
 int n = bm.bmWidth / Width, i;
 for(i =0; i< n; i++)
 {
-    BitBlt(hdcMem2, i * Width + 0, 0, Width, bm.bmHeight, hdcMem1,
-        (n - i - 1) * Width, 0, SRCCOPY);
+    BitBlt(hdcMem2, i * Width + 0, 0, Width, bm.bmHeight, hdcMem1, (n - i - 1) * Width, 0, SRCCOPY);
 } 
 ```
