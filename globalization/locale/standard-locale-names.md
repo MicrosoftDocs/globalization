@@ -14,30 +14,16 @@ ms.date: 02/13/2023
 
 A locale using the BCP 47 format is defined by a primary language tag and optional subtags as follows:
 
-|Tag type  |Composition  |Notes  |Mandatory / Optional  |
+
+|Tag type |Composition |Notes |Mandatory / Optional |
 |---------|---------|---------|---------|
-|ISO 639 language tag    |2 letter code from ISO 639-1 (2002)
-OR
-3 letter code from ISO 639-2 (1998), ISO 639-3 (2007), or ISO 639-5 (2008)
-OR
-5-8 letters and registered through the BCP 47 process
-         |Recommended: lowercase.          |Mandatory         |
-|Extended language subtags (extlang)    |Up to 3 subtags, 3 letters each, separated by hyphens         |Recommended: lowercase.
-For all existing language + extlang combinations there is already an equivalent language tag (for example, zh-yue / yue).
-Only a few of these are defined.
-         |Optional         |
-|ISO 15924 script tag     |3 letters         |Recommended: Title Case.         |Optional         |
-|ISO 3166-1 alpha-2 region subtag
-OR
-UN M49 region subtag
-     |2 letters or 3 digits, respectively         |Recommended: UPPERCASE.         |Optional         |
-|Variant subtag     |5-8 letters, or 4 characters starting with a digit, separated by hyphens         |Recommended: lowercase.
-Variant subtags describe additional distinctions, such as dialects or spelling reforms. They are registered with IANA and not associated with any external standard.
-         |Optional         |
-|Extension subtags     |1 character (that cannot be the letter x) and a hyphen followed by 1 or more subtags of 2-8 characters each, separated by hyphens         |Recommended: lowercase.         |Optional         |
-|Private-use subtag     |The letter x and a hyphen, followed by subtags of 1-8 characters each, separated by hyphens         |Recommended: lowercase .
-Note that private-use subtag behavior is not defined other than as part of any agreement between parties using the private-use subtag.
-         |Optional         |
+|ISO 639 language tag |2 letter code from ISO 639-1 (2002) OR 3 letter code from ISO 639-2 (1998), ISO 639-3 (2007), or ISO 639-5 (2008) OR 5-8 letters and registered through the BCP 47 process |Recommended: lowercase. |Mandatory |
+|Extended language subtags (extlang) |Up to 3 subtags, 3 letters each, separated by hyphens |Recommended: lowercase. For all existing language + extlang combinations there is already an equivalent language tag (for example, zh-yue / yue). Only a few of these are defined. |Optional  |
+|ISO 15924 script tag |3 letters. |Recommended: Title Case. |Optional |
+|ISO 3166-1 alpha-2 region subtag OR UN M49 region subtag |2 letters or 3 digits, respectively |Recommended: UPPERCASE. |Optional |
+|Variant subtag |5-8 letters, or 4 characters starting with a digit, separated by hyphens |Recommended: lowercase. Variant subtags describe additional distinctions, such as dialects or spelling reforms. They are registered with IANA and not associated with any external standard. |Optional |
+|Extension subtags |1 character (that cannot be the letter x) and a hyphen followed by 1 or more subtags of 2-8 characters each, separated by hyphens |Recommended: lowercase. |Optional |
+|Private-use subtag |The letter x and a hyphen, followed by subtags of 1-8 characters each, separated by hyphens |Recommended: lowercase. Note that private-use subtag behavior is not defined other than as part of any agreement between parties using the private-use subtag. |Optional  |
 
 ## Tag examples
 
