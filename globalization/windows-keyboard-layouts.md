@@ -23,16 +23,16 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Armenian Western (Legacy)](keyboards/kbdarmw.md) | pre-XP |
 | &nbsp; | [Assamese - INSCRIPT](keyboards/kbdinasa.md) | Vista / Server 2008 |
 | &nbsp; | [Azerbaijani (Standard)](keyboards/kbdazst.md) | 8.1 |
-| &nbsp; | [Azeri Cyrillic](keyboards/kbdaze.md) | pre-XP |
-| &nbsp; | [Azeri Latin](keyboards/kbdazel.md) | pre-XP |
-| <a name="B"></a>B | [Bashkir](keyboards/kbdbash.md) | Vista / Server 2008 |
+| &nbsp; | [Azerbaijani Cyrillic](keyboards/kbdaze.md) | pre-XP |
+| &nbsp; | [Azerbaijani Latin](keyboards/kbdazel.md) | pre-XP |
+| <a name="B"></a>B | [Bangla](keyboards/kbdinben.md) | pre-XP |
+| &nbsp; | [Bangla - INSCRIPT](keyboards/kbdinbe2.md) | Vista / Server 2008 |
+| &nbsp; | [Bangla - INSCRIPT (Legacy)](keyboards/kbdinbe1.md) | XP SP2 |
+| &nbsp; | [Bashkir](keyboards/kbdbash.md) | Vista / Server 2008 |
 | &nbsp; | [Belarusian](keyboards/kbdblr.md) | pre-XP |
 | &nbsp; | [Belgian (Comma)](keyboards/kbdbene.md) | pre-XP |
 | &nbsp; | [Belgian (Period)](keyboards/kbdbe_1.md) | 8.1 |
 | &nbsp; | [Belgian French](keyboards/kbdbe_2.md) | pre-XP |
-| &nbsp; | [Bengali](keyboards/kbdinben.md) | pre-XP |
-| &nbsp; | [Bengali - INSCRIPT](keyboards/kbdinbe2.md) | Vista / Server 2008 |
-| &nbsp; | [Bengali - INSCRIPT (Legacy)](keyboards/kbdinbe1.md) | XP SP2 |
 | &nbsp; | [Bosnian (Cyrillic)](keyboards/kbdbhc.md) | 8 |
 | &nbsp; | [Buginese](keyboards/kbdbug.md) | 8.1 |
 | &nbsp; | [Bulgarian](keyboards/kbdbulg.md) | 8 |
@@ -119,8 +119,8 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Lithuanian IBM](keyboards/kbdlt.md) | pre-XP |
 | &nbsp; | [Lithuanian Standard](keyboards/kbdlt2.md) | Vista / Server 2008 |
 | &nbsp; | [Luxembourgish](keyboards/kbdsf_1.md) | Vista / Server 2008 |
-| <a name="M"></a>M | [Macedonian (FYROM)](keyboards/kbdmac.md) | pre-XP |
-| &nbsp; | [Macedonian (FYROM) - Standard](keyboards/kbdmacst.md) | Vista / Server 2008 |
+| <a name="M"></a>M | [Macedonian (North Macedonia)](keyboards/kbdmac.md) | pre-XP |
+| &nbsp; | [Macedonian (North Macedonia) - Standard](keyboards/kbdmacst.md) | Vista / Server 2008 |
 | &nbsp; | [Malayalam](keyboards/kbdinmal.md) | XP SP2 |
 | &nbsp; | [Maltese 47-Key](keyboards/kbdmlt47.md) | XP SP2 |
 | &nbsp; | [Maltese 48-Key](keyboards/kbdmlt48.md) | XP SP2 |
@@ -132,7 +132,7 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Myanmar (Visual order)](keyboards/kbdmyan_2.md) | 10 |
 | <a name="N"></a>N | [Nepali](keyboards/kbdnepr.md) | Vista / Server 2008 |
 | &nbsp; | [New Tai Lue](keyboards/kbdntl.md) | 8 |
-| &nbsp; | [N'Ko](keyboards/kbdnko.md) | 8 |
+| &nbsp; | [N&#x2019;Ko](keyboards/kbdnko.md) | 8 |
 | &nbsp; | [Norwegian](keyboards/kbdno.md) | pre-XP |
 | &nbsp; | [Norwegian with Sami](keyboards/kbdno1.md) | XP SP2 |
 | <a name="O"></a>O | [Odia](keyboards/kbdinori.md) | Vista / Server 2008 |
