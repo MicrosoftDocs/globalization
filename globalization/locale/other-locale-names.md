@@ -13,8 +13,6 @@ Windows APIs have used BCP 47 locale names since Windows Vista. There are other 
 
 Before Windows adopted IETF BCP 47 locale names, the [[MS-LCID]: Windows Language Code Identifier (LCID) Reference](https://learn.microsoft.com/openspecs/windows_protocols/ms-lcid/70feba9f-294e-491e-b6eb-56532684c37f) was used to specify locales for Windows. LCIDs are also known as culture identifiers in the Microsoft .NET Framework environment.
 
-The LCID structure is used to identify specific languages for the purpose of customizing software for different languages and cultures. For example, it can specify the way dates, times, and numbers are formatted as strings. It can also specify paper sizes and the preferred sort order based on language.
-
 Note that LCIDs are being deprecated, and implementers are strongly encouraged to use newer versions of APIs that support BCP 47 locale names instead. Each LCID can be represented by a BCP 47 locale name, but the reverse is not true. The LCID range is restricted and unable to uniquely identify all the possible combinations of language and region.
 
 ### LCID examples
