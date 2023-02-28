@@ -12,9 +12,11 @@ ms.date: 01/20/2023
 
 Operating systems and applications might not offer users full support for all combinations of language, country, region, or script. The user might find, for example, that their desired language is not available, their keyboard layout is not supported, or numbers are formatted differently from what the user would expect. When this happens, there is a mechanism in place for selecting what is presented instead of what the user would prefer. This mechanism for this replacement is implemented by the concept of a “fallback” locale. Instead of using the requested locale, the system or application will resolve the requested locale to a locale that is supported.
 
-Note that while it would be appropriate if the supported locale is a close match for the requested locale’s language, script, country, and region, such a locale might not be supported.
+It is important to note that no system for implementing fallback is perfect or infallible. If you speak Arabic but a given application is not available in Arabic, the system might offer you a commonly available language such as English or French instead. But you might not know either of those. An "appropriate" fallback locale might not exist for you, and the system doesn't necessarily have a way of knowing this based on the language, script, country, or region settings you have selected.
 
-There are many different options for implementing fallback, some of which are discussed below.
+In an ideal world the offered fallback locale is as "close" to your preferred one as possible. But "closeness" is relative. A French speaker in Canada might be happy to have their UI use the variant of French used in France - but France uses the AZERTY keyboard layout, while Canada uses QWERTY.
+
+A system implements fallback the best it can because it must offer some locale to the user. But even from these two examples we can see selecting the right fallback locale is not simple. The offered fallback locale should be the best fit for as many users as possible. But this doesn't mean it will be a "good" solution for some or all of them. There are many different options for implementing fallback, some of which are discussed below.
 
 ## Unicode fallback options
 
