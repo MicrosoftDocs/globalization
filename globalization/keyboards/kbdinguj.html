@@ -31,80 +31,112 @@
         function chooseState(x) {
             switch (State) {
                 case 0:
-                case 8:
-                    document.all.normalstate.style.display = 'none';
+                    document.all.normallower.style.display = 'none';
                     break;
                 case 1:
-                    document.all.shiftstate.style.display = 'none';
+                    document.all.normalcaps.style.display = 'none';
                     break;
                 case 2:
-                case 10:
-                    document.all.altgrstate.style.display = 'none';
+                    document.all.shiftlower.style.display = 'none';
                     break;
                 case 3:
-                case 11:
-                    document.all.shiftaltgrstate.style.display = 'none';
+                    document.all.shiftcaps.style.display = 'none';
                     break;
                 case 4:
-                case 12:
-                    document.all.normalstatecap.style.display = 'none';
+                    document.all.ctrllower.style.display = 'none';
                     break;
                 case 5:
-                    document.all.shiftstatecap.style.display = 'none';
+                    document.all.ctrlcaps.style.display = 'none';
                     break;
                 case 6:
-                case 14:
-                    document.all.altgrstatecap.style.display = 'none';
+                    document.all.shiftctrllower.style.display = 'none';
                     break;
                 case 7:
-                case 15:
-                    document.all.shiftaltgrstatecap.style.display = 'none';
+                    document.all.shiftctrlcaps.style.display = 'none';
+                    break;
+                case 8:
+                case 12:
+                    document.all.ctrlaltlower.style.display = 'none';
                     break;
                 case 9:
-                    document.all.shiftctrlstate.style.display = 'none';
-                    break;
                 case 13:
-                    document.all.shiftctrlstatecap.style.display = 'none';
+                    document.all.ctrlaltcaps.style.display = 'none';
+                    break;
+                case 10:
+                case 14:
+                    document.all.shiftctrlaltlower.style.display = 'none';
+                    break;
+                case 11:
+                case 15:
+                    document.all.shiftctrlaltcaps.style.display = 'none';
+                    break;
+                case 16:
+                    document.all.xxxxlower.style.display = 'none';
+                    break;
+                case 17:
+                    document.all.xxxxcaps.style.display = 'none';
+                    break;
+                case 18:
+                    document.all.shiftxxxxlower.style.display = 'none';
+                    break;
+                case 19:
+                    document.all.shiftxxxxcaps.style.display = 'none';
                     break;
                 default:
                     break;
             }
             switch (x) {
                 case 0:
-                case 8:
-                    document.all.normalstate.style.display = '';
+                    document.all.normallower.style.display = '';
                     break;
                 case 1:
-                    document.all.shiftstate.style.display = '';
+                    document.all.normalcaps.style.display = '';
                     break;
                 case 2:
-                case 10:
-                    document.all.altgrstate.style.display = '';
+                    document.all.shiftlower.style.display = '';
                     break;
                 case 3:
-                case 11:
-                    document.all.shiftaltgrstate.style.display = '';
+                    document.all.shiftcaps.style.display = '';
                     break;
                 case 4:
-                case 12:
-                    document.all.normalstatecap.style.display = '';
+                    document.all.ctrllower.style.display = '';
                     break;
                 case 5:
-                    document.all.shiftstatecap.style.display = '';
+                    document.all.ctrlcaps.style.display = '';
                     break;
                 case 6:
-                case 14:
-                    document.all.altgrstatecap.style.display = '';
+                    document.all.shiftctrllower.style.display = '';
                     break;
                 case 7:
-                case 15:
-                    document.all.shiftaltgrstatecap.style.display = '';
+                    document.all.shiftctrlcaps.style.display = '';
+                    break;
+                case 8:
+                case 12:
+                    document.all.ctrlaltlower.style.display = '';
                     break;
                 case 9:
-                    document.all.shiftctrlstate.style.display = '';
-                    break;
                 case 13:
-                    document.all.shiftctrlstatecap.style.display = '';
+                    document.all.ctrlaltcaps.style.display = '';
+                    break;
+                case 10:
+                case 14:
+                    document.all.shiftctrlaltlower.style.display = '';
+                    break;
+                case 11:
+                case 15:
+                    document.all.shiftctrlaltcaps.style.display = '';
+                    break;
+                case 16:
+                    document.all.xxxxlower.style.display = '';
+                    break;
+                case 17:
+                    document.all.xxxxcaps.style.display = '';
+                    break;
+                case 18:
+                    document.all.shiftxxxxlower.style.display = '';
+                    break;
+                case 19:
+                    document.all.shiftxxxxcaps.style.display = '';
                     break;
                 default:
                     break;
@@ -112,7 +144,7 @@
         }
         function keyOpen() {
             document.all.loading.style.display = 'none';
-            document.all.normalstate.style.display = '';
+            document.all.normallower.style.display = '';
         }
         function MouseOver(x) {
             if ((Clicked != 1) && ((State & x) == 0)) {
@@ -214,7 +246,7 @@
         <br><br><br>
         <h3 align=center>Loading the keyboard layout, please wait....<h3>
     </DIV>
-<DIV ID=normalstate CLASS=normalstate STYLE="display: none">
+<DIV ID=normallower CLASS=normallower STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0031.png" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -248,7 +280,7 @@
 <TD><IMG SRC="images/0ac9W.png" ALT="U+0AC9 Gujarati Vowel Sign Candra O"  onmouseover = "popup('U+0AC9 Gujarati Vowel Sign Candra O');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
 <TD><IMG SRC="images/0acb.png" ALT="U+0ACB Gujarati Vowel Sign O"  onmouseover = "popup('U+0ACB Gujarati Vowel Sign O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0ac7.png" ALT="U+0AC7 Gujarati Vowel Sign E"  onmouseover = "popup('U+0AC7 Gujarati Vowel Sign E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0acd.png" ALT="U+0ACD Gujarati Sign Virama"  onmouseover = "popup('U+0ACD Gujarati Sign Virama');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -263,7 +295,7 @@
 <TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a82.png" ALT="U+0A82 Gujarati Sign Anusvara"  onmouseover = "popup('U+0A82 Gujarati Sign Anusvara');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -275,226 +307,16 @@
 <TD><IMG SRC="images/002c.png" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/002e.png" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0aaf.png" ALT="U+0AAF Gujarati Letter Ya"  onmouseover = "popup('U+0AAF Gujarati Letter Ya');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
-<DIV ID=shiftstate CLASS=shiftstate STYLE="display: none">
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a8d.png" ALT="U+0A8D Gujarati Vowel Candra E"  onmouseover = "popup('U+0A8D Gujarati Vowel Candra E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ac5.png" ALT="U+0AC5 Gujarati Vowel Sign Candra E"  onmouseover = "popup('U+0AC5 Gujarati Vowel Sign Candra E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/447-3-1.png" ALT="'U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-4-1.png" ALT="'U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama'"  onmouseover = "popup('U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-5-1.png" ALT="'U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya'"  onmouseover = "popup('U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-6-1.png" ALT="'U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-7-1.png" ALT="'U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa'"  onmouseover = "popup('U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-8-1.png" ALT="'U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/0028.png" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0029.png" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a83.png" ALT="U+0A83 Gujarati Sign Visarga"  onmouseover = "popup('U+0A83 Gujarati Sign Visarga');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a8b.png" ALT="U+0A8B Gujarati Letter Vocalic R"  onmouseover = "popup('U+0A8B Gujarati Letter Vocalic R');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0a94.png" ALT="U+0A94 Gujarati Letter Au"  onmouseover = "popup('U+0A94 Gujarati Letter Au');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a90.png" ALT="U+0A90 Gujarati Letter Ai"  onmouseover = "popup('U+0A90 Gujarati Letter Ai');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a86.png" ALT="U+0A86 Gujarati Letter Aa"  onmouseover = "popup('U+0A86 Gujarati Letter Aa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a88.png" ALT="U+0A88 Gujarati Letter Ii"  onmouseover = "popup('U+0A88 Gujarati Letter Ii');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a8a.png" ALT="U+0A8A Gujarati Letter Uu"  onmouseover = "popup('U+0A8A Gujarati Letter Uu');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aad.png" ALT="U+0AAD Gujarati Letter Bha"  onmouseover = "popup('U+0AAD Gujarati Letter Bha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a99.png" ALT="U+0A99 Gujarati Letter Nga"  onmouseover = "popup('U+0A99 Gujarati Letter Nga');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a98.png" ALT="U+0A98 Gujarati Letter Gha"  onmouseover = "popup('U+0A98 Gujarati Letter Gha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aa7.png" ALT="U+0AA7 Gujarati Letter Dha"  onmouseover = "popup('U+0AA7 Gujarati Letter Dha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a9d.png" ALT="U+0A9D Gujarati Letter Jha"  onmouseover = "popup('U+0A9D Gujarati Letter Jha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aa2.png" ALT="U+0AA2 Gujarati Letter Ddha"  onmouseover = "popup('U+0AA2 Gujarati Letter Ddha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a9e.png" ALT="U+0A9E Gujarati Letter Nya"  onmouseover = "popup('U+0A9E Gujarati Letter Nya');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a91W.png" ALT="U+0A91 Gujarati Vowel Candra O"  onmouseover = "popup('U+0A91 Gujarati Vowel Candra O');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
-<TD><IMG SRC="images/0a93.png" ALT="U+0A93 Gujarati Letter O"  onmouseover = "popup('U+0A93 Gujarati Letter O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a8f.png" ALT="U+0A8F Gujarati Letter E"  onmouseover = "popup('U+0A8F Gujarati Letter E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a85.png" ALT="U+0A85 Gujarati Letter A"  onmouseover = "popup('U+0A85 Gujarati Letter A');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a87.png" ALT="U+0A87 Gujarati Letter I"  onmouseover = "popup('U+0A87 Gujarati Letter I');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a89.png" ALT="U+0A89 Gujarati Letter U"  onmouseover = "popup('U+0A89 Gujarati Letter U');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aab.png" ALT="U+0AAB Gujarati Letter Pha"  onmouseover = "popup('U+0AAB Gujarati Letter Pha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a96.png" ALT="U+0A96 Gujarati Letter Kha"  onmouseover = "popup('U+0A96 Gujarati Letter Kha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aa5.png" ALT="U+0AA5 Gujarati Letter Tha"  onmouseover = "popup('U+0AA5 Gujarati Letter Tha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a9b.png" ALT="U+0A9B Gujarati Letter Cha"  onmouseover = "popup('U+0A9B Gujarati Letter Cha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aa0.png" ALT="U+0AA0 Gujarati Letter Ttha"  onmouseover = "popup('U+0AA0 Gujarati Letter Ttha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0a81.png" ALT="U+0A81 Gujarati Sign Candrabindu"  onmouseover = "popup('U+0A81 Gujarati Sign Candrabindu');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aa3.png" ALT="U+0AA3 Gujarati Letter Nna"  onmouseover = "popup('U+0AA3 Gujarati Letter Nna');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ab3.png" ALT="U+0AB3 Gujarati Letter Lla"  onmouseover = "popup('U+0AB3 Gujarati Letter Lla');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ab6.png" ALT="U+0AB6 Gujarati Letter Sha"  onmouseover = "popup('U+0AB6 Gujarati Letter Sha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ab7.png" ALT="U+0AB7 Gujarati Letter Ssa"  onmouseover = "popup('U+0AB7 Gujarati Letter Ssa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0964.png" ALT="U+0964 Devanagari Danda"  onmouseover = "popup('U+0964 Devanagari Danda');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
-</DIV>
-<DIV ID=altgrstate CLASS=altgrstate STYLE="display: none">
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ae7.png" ALT="U+0AE7 Gujarati Digit One"  onmouseover = "popup('U+0AE7 Gujarati Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ae8.png" ALT="U+0AE8 Gujarati Digit Two"  onmouseover = "popup('U+0AE8 Gujarati Digit Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ae9.png" ALT="U+0AE9 Gujarati Digit Three"  onmouseover = "popup('U+0AE9 Gujarati Digit Three');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aea.png" ALT="U+0AEA Gujarati Digit Four"  onmouseover = "popup('U+0AEA Gujarati Digit Four');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aeb.png" ALT="U+0AEB Gujarati Digit Five"  onmouseover = "popup('U+0AEB Gujarati Digit Five');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aec.png" ALT="U+0AEC Gujarati Digit Six"  onmouseover = "popup('U+0AEC Gujarati Digit Six');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aed.png" ALT="U+0AED Gujarati Digit Seven"  onmouseover = "popup('U+0AED Gujarati Digit Seven');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aee.png" ALT="U+0AEE Gujarati Digit Eight"  onmouseover = "popup('U+0AEE Gujarati Digit Eight');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0aef.png" ALT="U+0AEF Gujarati Digit Nine"  onmouseover = "popup('U+0AEF Gujarati Digit Nine');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ae6.png" ALT="U+0AE6 Gujarati Digit Zero"  onmouseover = "popup('U+0AE6 Gujarati Digit Zero');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ac4.png" ALT="U+0AC4 Gujarati Vowel Sign Vocalic Rr"  onmouseover = "popup('U+0AC4 Gujarati Vowel Sign Vocalic Rr');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0965.png" ALT="U+0965 Devanagari Double Danda"  onmouseover = "popup('U+0965 Devanagari Double Danda');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
-</DIV>
-<DIV ID=shiftaltgrstate CLASS=shiftaltgrstate STYLE="display: none">
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ae0.png" ALT="U+0AE0 Gujarati Letter Vocalic Rr"  onmouseover = "popup('U+0AE0 Gujarati Letter Vocalic Rr');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0ad0.png" ALT="U+0AD0 Gujarati Om"  onmouseover = "popup('U+0AD0 Gujarati Om');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0abd.png" ALT="U+0ABD Gujarati Sign Avagraha"  onmouseover = "popup('U+0ABD Gujarati Sign Avagraha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
-</DIV>
-<DIV ID=normalstatecap CLASS=normalstatecap STYLE="display: none">
+<DIV ID=normalcaps CLASS=normalcaps STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0031.png" ALT="U+0031 Digit One"  onmouseover = "popup('U+0031 Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -525,10 +347,10 @@
 <TD><IMG SRC="images/0a9c.png" ALT="U+0A9C Gujarati Letter Ja"  onmouseover = "popup('U+0A9C Gujarati Letter Ja');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0aa1.png" ALT="U+0AA1 Gujarati Letter Dda"  onmouseover = "popup('U+0AA1 Gujarati Letter Dda');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0abc.png" ALT="U+0ABC Gujarati Sign Nukta"  onmouseover = "popup('U+0ABC Gujarati Sign Nukta');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0AC9W.png" ALT="U+0AC9 Gujarati Vowel Sign Candra O"  onmouseover = "popup('U+0AC9 Gujarati Vowel Sign Candra O');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ac9W.png" ALT="U+0AC9 Gujarati Vowel Sign Candra O"  onmouseover = "popup('U+0AC9 Gujarati Vowel Sign Candra O');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
 <TD><IMG SRC="images/0acb.png" ALT="U+0ACB Gujarati Vowel Sign O"  onmouseover = "popup('U+0ACB Gujarati Vowel Sign O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0ac7.png" ALT="U+0AC7 Gujarati Vowel Sign E"  onmouseover = "popup('U+0AC7 Gujarati Vowel Sign E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0acd.png" ALT="U+0ACD Gujarati Sign Virama"  onmouseover = "popup('U+0ACD Gujarati Sign Virama');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -543,7 +365,7 @@
 <TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a82.png" ALT="U+0A82 Gujarati Sign Anusvara"  onmouseover = "popup('U+0A82 Gujarati Sign Anusvara');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -555,26 +377,26 @@
 <TD><IMG SRC="images/002c.png" ALT="U+002C Comma"  onmouseover = "popup('U+002C Comma');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/002e.png" ALT="U+002E Full Stop"  onmouseover = "popup('U+002E Full Stop');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0aaf.png" ALT="U+0AAF Gujarati Letter Ya"  onmouseover = "popup('U+0AAF Gujarati Letter Ya');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
-<DIV ID=shiftstatecap CLASS=shiftstatecap STYLE="display: none">
+<DIV ID=shiftlower CLASS=shiftlower STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a8d.png" ALT="U+0A8D Gujarati Vowel Candra E"  onmouseover = "popup('U+0A8D Gujarati Vowel Candra E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0ac5.png" ALT="U+0AC5 Gujarati Vowel Sign Candra E"  onmouseover = "popup('U+0AC5 Gujarati Vowel Sign Candra E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/447-3-1.png" ALT="'U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-4-1.png" ALT="'U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama'"  onmouseover = "popup('U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-5-1.png" ALT="'U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya'"  onmouseover = "popup('U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-6-1.png" ALT="'U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-7-1.png" ALT="'U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa'"  onmouseover = "popup('U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG SRC="images/447-8-1.png" ALT="'U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_3-1-0.png" ALT="'U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_4-1-0.png" ALT="'U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama'"  onmouseover = "popup('U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_5-1-0.png" ALT="'U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya'"  onmouseover = "popup('U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_6-1-0.png" ALT="'U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_7-1-0.png" ALT="'U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa'"  onmouseover = "popup('U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_8-1-0.png" ALT="'U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG SRC="images/0028.png" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0029.png" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a83.png" ALT="U+0A83 Gujarati Sign Visarga"  onmouseover = "popup('U+0A83 Gujarati Sign Visarga');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -595,10 +417,10 @@
 <TD><IMG SRC="images/0a9d.png" ALT="U+0A9D Gujarati Letter Jha"  onmouseover = "popup('U+0A9D Gujarati Letter Jha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0aa2.png" ALT="U+0AA2 Gujarati Letter Ddha"  onmouseover = "popup('U+0AA2 Gujarati Letter Ddha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a9e.png" ALT="U+0A9E Gujarati Letter Nya"  onmouseover = "popup('U+0A9E Gujarati Letter Nya');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0A91W.png" ALT="U+0A91 Gujarati Vowel Candra O"  onmouseover = "popup('U+0A91 Gujarati Vowel Candra O');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a91W.png" ALT="U+0A91 Gujarati Vowel Candra O"  onmouseover = "popup('U+0A91 Gujarati Vowel Candra O');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
 <TD><IMG SRC="images/0a93.png" ALT="U+0A93 Gujarati Letter O"  onmouseover = "popup('U+0A93 Gujarati Letter O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a8f.png" ALT="U+0A8F Gujarati Letter E"  onmouseover = "popup('U+0A8F Gujarati Letter E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a85.png" ALT="U+0A85 Gujarati Letter A"  onmouseover = "popup('U+0A85 Gujarati Letter A');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -613,7 +435,7 @@
 <TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0a81.png" ALT="U+0A81 Gujarati Sign Candrabindu"  onmouseover = "popup('U+0A81 Gujarati Sign Candrabindu');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -625,16 +447,366 @@
 <TD><IMG SRC="images/0ab7.png" ALT="U+0AB7 Gujarati Letter Ssa"  onmouseover = "popup('U+0AB7 Gujarati Letter Ssa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0964.png" ALT="U+0964 Devanagari Danda"  onmouseover = "popup('U+0964 Devanagari Danda');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
-<DIV ID=altgrstatecap CLASS=altgrstatecap STYLE="display: none">
+<DIV ID=shiftcaps CLASS=shiftcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a8d.png" ALT="U+0A8D Gujarati Vowel Candra E"  onmouseover = "popup('U+0A8D Gujarati Vowel Candra E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ac5.png" ALT="U+0AC5 Gujarati Vowel Sign Candra E"  onmouseover = "popup('U+0AC5 Gujarati Vowel Sign Candra E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/447-VK_3-1-1.png" ALT="'U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0ACD + U+0AB0 Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_4-1-1.png" ALT="'U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama'"  onmouseover = "popup('U+0AB0 + U+0ACD Gujarati Letter Ra + Gujarati Sign Virama');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_5-1-1.png" ALT="'U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya'"  onmouseover = "popup('U+0A9C + U+0ACD + U+0A9E Gujarati Letter Ja + Gujarati Sign Virama + Gujarati Letter Nya');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_6-1-1.png" ALT="'U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AA4 + U+0ACD + U+0AB0 Gujarati Letter Ta + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_7-1-1.png" ALT="'U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa'"  onmouseover = "popup('U+0A95 + U+0ACD + U+0AB7 Gujarati Letter Ka + Gujarati Sign Virama + Gujarati Letter Ssa');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/447-VK_8-1-1.png" ALT="'U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra'"  onmouseover = "popup('U+0AB6 + U+0ACD + U+0AB0 Gujarati Letter Sha + Gujarati Sign Virama + Gujarati Letter Ra');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/0028.png" ALT="U+0028 Left Parenthesis"  onmouseover = "popup('U+0028 Left Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0029.png" ALT="U+0029 Right Parenthesis"  onmouseover = "popup('U+0029 Right Parenthesis');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a83.png" ALT="U+0A83 Gujarati Sign Visarga"  onmouseover = "popup('U+0A83 Gujarati Sign Visarga');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a8b.png" ALT="U+0A8B Gujarati Letter Vocalic R"  onmouseover = "popup('U+0A8B Gujarati Letter Vocalic R');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0a94.png" ALT="U+0A94 Gujarati Letter Au"  onmouseover = "popup('U+0A94 Gujarati Letter Au');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a90.png" ALT="U+0A90 Gujarati Letter Ai"  onmouseover = "popup('U+0A90 Gujarati Letter Ai');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a86.png" ALT="U+0A86 Gujarati Letter Aa"  onmouseover = "popup('U+0A86 Gujarati Letter Aa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a88.png" ALT="U+0A88 Gujarati Letter Ii"  onmouseover = "popup('U+0A88 Gujarati Letter Ii');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a8a.png" ALT="U+0A8A Gujarati Letter Uu"  onmouseover = "popup('U+0A8A Gujarati Letter Uu');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aad.png" ALT="U+0AAD Gujarati Letter Bha"  onmouseover = "popup('U+0AAD Gujarati Letter Bha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a99.png" ALT="U+0A99 Gujarati Letter Nga"  onmouseover = "popup('U+0A99 Gujarati Letter Nga');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a98.png" ALT="U+0A98 Gujarati Letter Gha"  onmouseover = "popup('U+0A98 Gujarati Letter Gha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aa7.png" ALT="U+0AA7 Gujarati Letter Dha"  onmouseover = "popup('U+0AA7 Gujarati Letter Dha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a9d.png" ALT="U+0A9D Gujarati Letter Jha"  onmouseover = "popup('U+0A9D Gujarati Letter Jha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aa2.png" ALT="U+0AA2 Gujarati Letter Ddha"  onmouseover = "popup('U+0AA2 Gujarati Letter Ddha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a9e.png" ALT="U+0A9E Gujarati Letter Nya"  onmouseover = "popup('U+0A9E Gujarati Letter Nya');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a91W.png" ALT="U+0A91 Gujarati Vowel Candra O"  onmouseover = "popup('U+0A91 Gujarati Vowel Candra O');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/0a93.png" ALT="U+0A93 Gujarati Letter O"  onmouseover = "popup('U+0A93 Gujarati Letter O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a8f.png" ALT="U+0A8F Gujarati Letter E"  onmouseover = "popup('U+0A8F Gujarati Letter E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a85.png" ALT="U+0A85 Gujarati Letter A"  onmouseover = "popup('U+0A85 Gujarati Letter A');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a87.png" ALT="U+0A87 Gujarati Letter I"  onmouseover = "popup('U+0A87 Gujarati Letter I');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a89.png" ALT="U+0A89 Gujarati Letter U"  onmouseover = "popup('U+0A89 Gujarati Letter U');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aab.png" ALT="U+0AAB Gujarati Letter Pha"  onmouseover = "popup('U+0AAB Gujarati Letter Pha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a96.png" ALT="U+0A96 Gujarati Letter Kha"  onmouseover = "popup('U+0A96 Gujarati Letter Kha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aa5.png" ALT="U+0AA5 Gujarati Letter Tha"  onmouseover = "popup('U+0AA5 Gujarati Letter Tha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a9b.png" ALT="U+0A9B Gujarati Letter Cha"  onmouseover = "popup('U+0A9B Gujarati Letter Cha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aa0.png" ALT="U+0AA0 Gujarati Letter Ttha"  onmouseover = "popup('U+0AA0 Gujarati Letter Ttha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0a81.png" ALT="U+0A81 Gujarati Sign Candrabindu"  onmouseover = "popup('U+0A81 Gujarati Sign Candrabindu');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aa3.png" ALT="U+0AA3 Gujarati Letter Nna"  onmouseover = "popup('U+0AA3 Gujarati Letter Nna');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ab3.png" ALT="U+0AB3 Gujarati Letter Lla"  onmouseover = "popup('U+0AB3 Gujarati Letter Lla');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ab6.png" ALT="U+0AB6 Gujarati Letter Sha"  onmouseover = "popup('U+0AB6 Gujarati Letter Sha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ab7.png" ALT="U+0AB7 Gujarati Letter Ssa"  onmouseover = "popup('U+0AB7 Gujarati Letter Ssa');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0964.png" ALT="U+0964 Devanagari Danda"  onmouseover = "popup('U+0964 Devanagari Danda');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=ctrllower CLASS=ctrllower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=ctrlcaps CLASS=ctrlcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrllower CLASS=shiftctrllower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/200d.png" ALT="U+200D Zero Width Joiner"  onmouseover = "popup('U+200D Zero Width Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/200c.png" ALT="U+200C Zero Width Non-Joiner"  onmouseover = "popup('U+200C Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/20b9.png" ALT="U+20B9 Indian Rupee Sign"  onmouseover = "popup('U+20B9 Indian Rupee Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlcaps CLASS=shiftctrlcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/200d.png" ALT="U+200D Zero Width Joiner"  onmouseover = "popup('U+200D Zero Width Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/200c.png" ALT="U+200C Zero Width Non-Joiner"  onmouseover = "popup('U+200C Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/20b9.png" ALT="U+20B9 Indian Rupee Sign"  onmouseover = "popup('U+20B9 Indian Rupee Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=ctrlaltlower CLASS=ctrlaltlower STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0ae7.png" ALT="U+0AE7 Gujarati Digit One"  onmouseover = "popup('U+0AE7 Gujarati Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -668,7 +840,7 @@
 <TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
@@ -683,7 +855,7 @@
 <TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
@@ -695,16 +867,86 @@
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0965.png" ALT="U+0965 Devanagari Double Danda"  onmouseover = "popup('U+0965 Devanagari Double Danda');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
-<DIV ID=shiftaltgrstatecap CLASS=shiftaltgrstatecap STYLE="display: none">
+<DIV ID=ctrlaltcaps CLASS=ctrlaltcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ae7.png" ALT="U+0AE7 Gujarati Digit One"  onmouseover = "popup('U+0AE7 Gujarati Digit One');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ae8.png" ALT="U+0AE8 Gujarati Digit Two"  onmouseover = "popup('U+0AE8 Gujarati Digit Two');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ae9.png" ALT="U+0AE9 Gujarati Digit Three"  onmouseover = "popup('U+0AE9 Gujarati Digit Three');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aea.png" ALT="U+0AEA Gujarati Digit Four"  onmouseover = "popup('U+0AEA Gujarati Digit Four');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aeb.png" ALT="U+0AEB Gujarati Digit Five"  onmouseover = "popup('U+0AEB Gujarati Digit Five');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aec.png" ALT="U+0AEC Gujarati Digit Six"  onmouseover = "popup('U+0AEC Gujarati Digit Six');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aed.png" ALT="U+0AED Gujarati Digit Seven"  onmouseover = "popup('U+0AED Gujarati Digit Seven');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aee.png" ALT="U+0AEE Gujarati Digit Eight"  onmouseover = "popup('U+0AEE Gujarati Digit Eight');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0aef.png" ALT="U+0AEF Gujarati Digit Nine"  onmouseover = "popup('U+0AEF Gujarati Digit Nine');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ae6.png" ALT="U+0AE6 Gujarati Digit Zero"  onmouseover = "popup('U+0AE6 Gujarati Digit Zero');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ac4.png" ALT="U+0AC4 Gujarati Vowel Sign Vocalic Rr"  onmouseover = "popup('U+0AC4 Gujarati Vowel Sign Vocalic Rr');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0965.png" ALT="U+0965 Devanagari Double Danda"  onmouseover = "popup('U+0965 Devanagari Double Danda');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlaltlower CLASS=shiftctrlaltlower STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
@@ -738,7 +980,7 @@
 <TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
@@ -753,7 +995,7 @@
 <TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0ad0.png" ALT="U+0AD0 Gujarati Om"  onmouseover = "popup('U+0AD0 Gujarati Om');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -765,22 +1007,18 @@
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0abd.png" ALT="U+0ABD Gujarati Sign Avagraha"  onmouseover = "popup('U+0ABD Gujarati Sign Avagraha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
-<DIV ID=shiftctrlstate CLASS=shiftctrlstate STYLE="display: none">
+<DIV ID=shiftctrlaltcaps CLASS=shiftctrlaltcaps STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/200d.png" ALT="U+200D Zero Width Joiner"  onmouseover = "popup('U+200D Zero Width Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/200c.png" ALT="U+200C Zero Width Non-Joiner"  onmouseover = "popup('U+200C Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/20b9.png" ALT="U+20B9 Indian Rupee Sign"  onmouseover = "popup('U+20B9 Indian Rupee Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
@@ -789,6 +1027,10 @@
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ae0.png" ALT="U+0AE0 Gujarati Letter Vocalic Rr"  onmouseover = "popup('U+0AE0 Gujarati Letter Vocalic Rr');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
@@ -808,7 +1050,7 @@
 <TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" Width=80 Height=40 /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
@@ -823,96 +1065,26 @@
 <TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=60 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0ad0.png" ALT="U+0AD0 Gujarati Om"  onmouseover = "popup('U+0AD0 Gujarati Om');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0abd.png" ALT="U+0ABD Gujarati Sign Avagraha"  onmouseover = "popup('U+0ABD Gujarati Sign Avagraha');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=104 HEIGHT=40 /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
 <TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
-</DIV>
-<DIV ID=shiftctrlstatecap CLASS=shiftctrlstatecap STYLE="display: none">
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/200d.png" ALT="U+200D Zero Width Joiner"  onmouseover = "popup('U+200D Zero Width Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/200c.png" ALT="U+200C Zero Width Non-Joiner"  onmouseover = "popup('U+200C Zero Width Non-Joiner');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/20b9.png" ALT="U+20B9 Indian Rupee Sign"  onmouseover = "popup('U+20B9 Indian Rupee Sign');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG src="images/BackSp.png" ALT="Backspace key." width=80 height=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/Tab.png" ALT="Tab key." WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(4) onmouseover = "popup('Click to change keyboard state');MouseOver(4);" onmouseout="kill();MouseOut(4);" Width=80 Height=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC='images/Enter.png' ALT="Enter key." width='82' height='40'/></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=60 HEIGHT=40 /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('Click to change keyboard state');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH=104 HEIGHT=40 /></TD>
-</TR></TABLE>
-<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
-<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Alt.png" ALT="Alt key." WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." WIDTH=308 HEIGHT=40></TD>
-<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(2) onmouseover = "popup('Click to change keyboard state');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH=80 HEIGHT=40></TD>
-<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "MouseOver(8);" onmouseout="MouseOut(8);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('Click to change keyboard state');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "MouseOver(4);" onmouseout="MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
 </DIV>
 
 </BODY>
