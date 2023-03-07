@@ -10,7 +10,7 @@ ms.date: 02/13/2023
 
 # Standard locale names
 
-[IETF BCP 47](https://www.iso.org/iso-639-language-codes.html) is the standard that defines the most-commonly used format for specifying a locale. This format is used by Windows and many other environments, including C#, Java, Javascript, ICU, HTML &lt;lang&gt;, etc.
+[IETF BCP 47](https://www.ietf.org/rfc/bcp/bcp47.txt) is the standard that defines the most-commonly used format for specifying a locale. This format is used by Windows and many other environments, including C#, Java, Javascript, ICU, HTML &lt;lang&gt;, etc.
 
 A locale using the BCP 47 format is defined by a primary language tag and optional subtags as follows:
 
