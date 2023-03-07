@@ -38,15 +38,9 @@ The component parts are as follows:
 
 The language code is the only mandatory part of a POSIX locale. Including a territory code is very common, as many languages are used in different countries with regional variations.
 
-The modifier part is not specified in any unified way. Possibly the most common example is **@euro**. It was added to certain locales in the early 2000s when some countries in the European Union changed from their national currencies to the Euro.
+The modifier part is not specified in any unified way. One common example is **@euro**. It was added to certain locales in the early 2000s when some countries in the European Union changed from their national currencies to the Euro.
 
-### POSIX examples
-
-The POSIX locale **cs_CZ.UTF-8** consists of the following parts:
-
-- **cs** for the Czech language
-- **_CZ** for the Czech Republic
-- **.UTF-8** for the character encoding
+### POSIX example
 
 The POSIX locale de_DE.UTF-8@euro consists of the following parts:
 
@@ -54,3 +48,13 @@ The POSIX locale de_DE.UTF-8@euro consists of the following parts:
 - **_DE** for Germany
 - **.UTF-8** for the character encoding
 - **@euro** to indicate that the locale is now using the Euro currency
+
+## Comparative locale IDs
+
+Here are some sample locales using the representations discussed above. Note that BCP 47 locales use a hyphen (-) to separate the language and territory codes, while POSIX compliant locales use an underscore (_).
+
+|BCP 47 |LCID |POSIX compliant |Description |
+|---------|---------|---------|---------|
+|de-DE |1031 |de_DE |German for Germany |
+|es-ES-u-co-trad |1034 |es_ES@traditional |Spanish for Spain, specifying the traditional sort order |
+|sr-Latn-CS |2074 |sr_RS.UTF-8@latin |Serbian for Serbia, using the Latin script and the UTF-8 encoding |

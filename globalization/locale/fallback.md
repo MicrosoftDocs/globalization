@@ -38,7 +38,7 @@ CLDR has proposed using “[language distance data](https://cldr.unicode.org/dev
 
 ## C# and culture fallback
 
-C# uses the CultureInfo class to manage locale-specific functionality and it can be initialized using a BCP-47 language tag (RFC 4646 and LCID are also supported). A culture that is associated with a language and a country/region is called a “specific” culture. A culture that is associated with only a language is called a “neutral culture”. The invariant culture is culture-insensitive and can be initialized using an empty string.
+C# uses the CultureInfo class to manage locale-specific functionality and it can be initialized using a BCP-47 language tag ([RFC 4646](https://www.rfc-editor.org/rfc/rfc4646) and LCID are also supported). A culture that is associated with a language and a country/region is called a “specific” culture. A culture that is associated with only a language is called a “neutral culture”. The invariant culture is culture-insensitive and can be initialized using an empty string.
 
 The cultures have a hierarchy in which the parent of a specific culture is a neutral culture, the parent of a neutral culture is the InvariantCulture, and the parent of the InvariantCulture is the invariant culture itself. The parent culture encompasses the set of information that is common among its children.
 
