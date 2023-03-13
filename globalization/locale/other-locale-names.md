@@ -31,7 +31,7 @@ LCIDs can identify neutral locales (a language without any region-specific infor
 
 ## POSIX
 
-The POSIX locale format, used on Unix, Linux, and other systems, is defined by [ISO/IEC 15897:2011](https://www.iso.org/standard/50707.html) and uses this format: **[language[_territory][.codeset][@modifier]]**
+The [POSIX](../reference/glossary.md#posix) locale format, used on Unix, Linux, and other systems, is defined by [ISO/IEC 15897:2011](https://www.iso.org/standard/50707.html) and uses this format: **\[language[_territory][.codeset][@modifier]]**
 
 The component parts are as follows:
 
