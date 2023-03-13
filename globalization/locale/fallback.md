@@ -1,5 +1,5 @@
 ---
-title: Fallback behaviors
+title: Locale fallback
 description: When a global application does not have full support of a given locale, it can fall back to an appropriate supported locale.
 author: m-kauppinen
 ms.author: v-mikau
@@ -17,6 +17,10 @@ It is important to note that no system for implementing fallback is perfect or i
 In an ideal world the offered fallback locale is as "close" to your preferred one as possible. But "closeness" is relative. A French speaker in Canada might be happy to have their UI use the variant of French used in France - but France uses the AZERTY keyboard layout, while Canada uses QWERTY.
 
 A system implements fallback the best it can because it must offer some locale to the user. But even from these two examples we can see selecting the right fallback locale is not simple. The offered fallback locale should be the best fit for as many users as possible. But this doesn't mean it will be a "good" solution for some or all of them. There are many different options for implementing fallback, some of which are discussed below.
+
+## Modifying the default fallback
+
+The default fallback locales provided by APIs might not be sufficient for your organizational needs. In this case you might want to override or extend the default fallback behavior described in the following sections.
 
 ## Unicode fallback options
 
@@ -44,7 +48,7 @@ The cultures have a hierarchy in which the parent of a specific culture is a neu
 
 ### Resource fallback in the .NET Framework
 
-If the resources for the specific culture are not available in the system, the resources for the neutral culture are used. If the resources for the neutral culture are not available, the resources embedded in the main assembly are used.
+If the resources for the specific culture are not available in the system, the resources for the neutral culture are used. If the resources for the neutral culture are not available, the resources embedded in the main assembly are used. For more information, refer to [Culture fallback scenarios](/dotnet/core/extensions/localization) and [Resources in .NET apps](/dotnet/core/extensions/resources).
 
 ## Java and locale matching
 

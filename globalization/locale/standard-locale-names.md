@@ -1,5 +1,5 @@
 ---
-title: Standard locale naming
+title: Standard locale codes
 description: This article describes the standard structure of locale names.
 author: m-kauppinen
 ms.author: v-mikau
@@ -8,7 +8,7 @@ ms.date: 02/13/2023
 
 ---
 
-# Standard locale names
+# Standard locale codes
 
 [IETF BCP 47](https://www.ietf.org/rfc/bcp/bcp47.txt) is the standard that defines the most-commonly used format for specifying a locale. This format is used by Windows and many other environments, including C#, Java, Javascript, ICU, HTML &lt;lang&gt;, etc.
 
@@ -16,13 +16,13 @@ A locale using the BCP 47 format is defined by a primary language tag and option
 
 |Tag type |Composition |Notes |Mandatory / Optional |
 |---------|---------|---------|---------|
-|[ISO 639](https://www.iso.org/iso-639-language-codes.html) language tag |2 letter code from ISO 639-1 (2002) **OR** 3 letter code from ISO 639-2 (1998), ISO 639-3 (2007), or ISO 639-5 (2008) **OR** 5-8 letters and registered through the BCP 47 process |Recommended: lowercase. |Mandatory |
-|Extended language subtags (extlang) |Up to 3 subtags, 3 letters each, separated by hyphens |Recommended: lowercase. Note that for all existing language + extlang combinations there is already an equivalent language tag (for example, zh-yue / yue). Only a few of these are defined. |Optional |
+|[ISO 639](https://www.iso.org/iso-639-language-codes.html) language tag |2 letter code from ISO 639-1 (2002) **OR** 3 letter code from ISO 639-2 (1998), ISO 639-3 (2007), or ISO 639-5 (2008) **OR** 5-8 letters and registered through the BCP 47 process. |Recommended: lowercase. |Mandatory |
+|Extended language subtags (extlang) |Up to 3 subtags, 3 letters each, separated by hyphens. |Recommended: lowercase. Note that for all existing language + extlang combinations there is already an equivalent language tag (for example, zh-yue / yue). Only a few of these are defined. |Optional |
 |[ISO 15924](https://unicode.org/iso15924/iso15924-codes.html) script tag |3 letters. |Recommended: Title Case. |Optional |
-|[ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html) alpha-2 region subtag **OR** [UN M49](https://unstats.un.org/unsd/methodology/m49/) region subtag |2 letters or 3 digits, respectively |Recommended: UPPERCASE. |Optional |
-|Variant subtag |5-8 letters or 4 characters starting with a digit, separated by hyphens |Recommended: lowercase. Variant subtags describe additional distinctions, such as dialects or spelling reforms. They are registered with IANA and not associated with any external standard. |Optional |
-|Extension subtags |1 character (that cannot be the letter x) and a hyphen, followed by 1 or more subtags of 2-8 characters each, separated by hyphens |Recommended: lowercase. |Optional |
-|Private-use subtag |The letter x and a hyphen, followed by subtags of 1-8 characters each, separated by hyphens |Recommended: lowercase. Note that private-use subtag behavior is not defined other than as part of any agreement between parties using the private-use subtag. |Optional |
+|[ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html) alpha-2 region subtag **OR** [UN M49](https://unstats.un.org/unsd/methodology/m49/) region subtag |2 letters or 3 digits, respectively. |Recommended: UPPERCASE. |Optional |
+|Variant subtag |5-8 letters or 4 characters starting with a digit, separated by hyphens. |Recommended: lowercase. Variant subtags describe additional distinctions, such as dialects or spelling reforms. They are registered with IANA and not associated with any external standard. |Optional |
+|Extension subtags |1 character (that cannot be the letter x) and a hyphen, followed by 1 or more subtags of 2-8 characters each, separated by hyphens. |Recommended: lowercase. |Optional |
+|Private-use subtag |The letter x and a hyphen, followed by subtags of 1-8 characters each, separated by hyphens. |Recommended: lowercase. Note that private-use subtag behavior is not defined other than as part of any agreement between parties using the private-use subtag. |Optional |
 
 ## Tag examples
 
@@ -43,6 +43,6 @@ Developers should keep in mind that ISO 639 language tags  can change over time.
 - The Yiddish “ji” changed to “yi” in 1989.
 - The Indonesian “in” changed to “id” in 1989.
 - The Hebrew “iw” became “he” in 1989.
-- The Serbo-Croatian “sh” was replaced by Serbian “sr” and Croatian “hr” in 2008.
+- The Serbo-Croatian “sh” was replaced by Serbian “sr” and Croatian “hr” in 2000.
 
-Region subtags have changed as well. For example, Serbia and Montenegro had the ISO 3166-1 alpha-2 subtag “CS” before it was dissolved in 2006. “CS” was deleted from ISO 3166-2, and the new countries were given the subtags “ME” (Montenegro) and “RS” (Serbia).
+Region subtags have changed as well. For example, the country of Serbia and Montenegro was assigned the ISO 3166-1 alpha-2 subtag "CS". In 2006, "CS" was deleted from ISO 3166-1 and ISO 3166-2, and the new countries were assigned the subtags “ME” (Montenegro) and “RS” (Serbia).

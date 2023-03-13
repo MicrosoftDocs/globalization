@@ -142,6 +142,10 @@ More frequently, MT is used to assist human translators by providing suggested t
 A set of characters encoded using a sequence of one or more bytes per character.
 See [codepage](#codepage), [DBCS](#dbcs), [SBCS](#sbcs).
 
+## <a name="posix"></a>Portable Operating System Interface (POSIX)
+
+An IEEE 1003.1 standard to ensure compatibility when programs are moved from one Unix-like platform to another. It is intended for both application and system developers. The most recent specification is [IEEE Std 1003.1-2017](https://standards.ieee.org/ieee/1003.1/7101/).
+
 ## pseudolocalization
 
 Localizing a product using artificial locales and automated mechanical transformation of source text.
