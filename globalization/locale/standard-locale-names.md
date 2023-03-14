@@ -1,6 +1,6 @@
 ---
 title: Standard locale codes
-description: This article describes the standard structure of locale names.
+description: This article describes the standard structure of locale codes.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.

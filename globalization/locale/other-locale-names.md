@@ -9,15 +9,15 @@ ms.date: 03/13/2023
 ---
 # Other locale representations
 
-Many environments, such as C++, Java, .NET Framework, Python, XML, and other Unicode-based environments use a common format for specifying a locale. This format is specified in the [IETF BCP 47](https://www.ietf.org/rfc/bcp/bcp47.txt) standard. For more information about the BCP 47 format, refer to [Standard locale naming](standard-locale-names.md).
+Many environments, such as C++, Java, .NET Framework, Python, XML, and other Unicode-based environments use a common format for specifying a locale. This format is specified in the [IETF BCP 47](https://www.ietf.org/rfc/bcp/bcp47.txt) standard. For more information about the BCP 47 format, refer to [Standard locale codes](standard-locale-names.md).
 
-Windows APIs have used BCP 47 locale names since Windows Vista. There are other locale representations, however; some of which are discussed below.
+Windows APIs have used BCP 47 locale codes since Windows Vista. There are other locale representations, however; some of which are discussed below.
 
 ## LCID
 
-Before Windows adopted IETF BCP 47 locale names, the [[MS-LCID]: Windows Language Code Identifier (LCID) Reference](/openspecs/windows_protocols/ms-lcid/70feba9f-294e-491e-b6eb-56532684c37f) was used to specify locales for Windows. LCIDs are also known as culture identifiers in the Microsoft .NET Framework environment.
+Before Windows adopted IETF BCP 47 locale codes, the [[MS-LCID]: Windows Language Code Identifier (LCID) Reference](/openspecs/windows_protocols/ms-lcid/70feba9f-294e-491e-b6eb-56532684c37f) was used to specify locales for Windows. LCIDs are also known as culture identifiers in the Microsoft .NET Framework environment.
 
-Note that LCIDs are being deprecated, and implementers are strongly encouraged to use newer versions of APIs that support BCP 47 locale names instead. Each LCID can be represented by a BCP 47 locale name, but the reverse is not true. The LCID range is restricted and unable to uniquely identify all the possible combinations of language and region.
+Note that LCIDs are being deprecated, and implementers are strongly encouraged to use newer versions of APIs that support BCP 47 locale codes instead. Each LCID can be represented by a BCP 47 locale code, but the reverse is not true. The LCID range is restricted and unable to uniquely identify all the possible combinations of language and region.
 
 ### LCID examples
 
