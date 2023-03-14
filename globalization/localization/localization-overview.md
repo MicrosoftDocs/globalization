@@ -1,7 +1,11 @@
 ---
-title: Localization Overview - How localization works
+title: Localization Overview
 description: This article helps you understand the process of localization and strategies for localizing different types of content.
-ms.date: 01/01/2022
+author: m-kauppinen
+ms.author: v-mikau
+ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.date: 03/14/2023
+
 ---
 
 # Localization overview
