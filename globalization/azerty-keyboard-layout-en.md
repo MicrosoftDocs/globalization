@@ -10,7 +10,7 @@ author: danjac
 
 ## The new “French (Standard, AZERTY)” layout 
 
-<iframe src="kbdfr.html" height="300"></iframe>
+<iframe src="keyboards\kbdfr.html" height="300"></iframe>
 
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
@@ -137,7 +137,7 @@ Follow that with one of the following characters to type its corresponding monet
 | t | ₸ |
 | w | ₩ |
 | y | ¥ |
-| | | ₾ |
+| \| | ₾ |
 | % | ₰ |
 | ® | ₨ |
 | Ç | ₡ |
