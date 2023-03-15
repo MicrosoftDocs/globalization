@@ -1,6 +1,6 @@
 ---
-title: Standard locale codes
-description: This article describes the standard structure of locale codes.
+title: Standard locale names
+description: This article describes the standard structure of locale names.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
@@ -8,7 +8,7 @@ ms.date: 02/13/2023
 
 ---
 
-# Standard locale codes
+# Standard locale names
 
 [IETF BCP 47](https://www.ietf.org/rfc/bcp/bcp47.txt) is the standard that defines the most-commonly used format for specifying a locale. This format is used by Windows and many other environments, including C#, Java, Javascript, ICU, HTML &lt;lang&gt;, etc.
 

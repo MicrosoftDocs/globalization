@@ -16,6 +16,6 @@ Windows, and the APIs for creating applications, formerly used Language Code Ide
 
 Locale-related articles include the following:
 
-- [Standard locale codes](standard-locale-names.md)
+- [Standard locale names](standard-locale-names.md)
 - [Other locale representations](other-locale-names.md)
 - [Locale fallback](fallback.md)
