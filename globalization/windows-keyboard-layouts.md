@@ -67,8 +67,8 @@ Choose a keyboard below to view its layout.
 | <a name="F"></a>F | [Finnish](keyboards/kbdfi.md) | pre-XP |
 | &nbsp; | [Finnish with Sami](keyboards/kbdfi1_1.md) | XP SP2 |
 | &nbsp; | [French (Legacy, AZERTY)](keyboards/kbdfr.md) | pre-XP |
-| &nbsp; | [French (Standard, AZERTY)](keyboards/kbdfrna.md) | 11 |
-| &nbsp; | [French (Standard, BÉPO)](keyboards/kbdfrnb.md) | 11 |
+| &nbsp; | [French (Standard, AZERTY)](keyboards/kbdfrna.md) | 11 ([Insider](https://insider.windows.com/)) |
+| &nbsp; | [French (Standard, BÉPO)](keyboards/kbdfrnb.md) | 11 ([Insider](https://insider.windows.com/)) |
 | &nbsp; | [Futhark](keyboards/kbdfthrk.md) | 8.1 |
 | <a name="G"></a>G | [Georgian (Ergonomic)](keyboards/kbdgeoer.md) | Vista / Server 2008 |
 | &nbsp; | [Georgian (Legacy)](keyboards/kbdgeo.md) | pre-XP |
