@@ -12,7 +12,7 @@ ms.date: 03/16/2016
 > Microsoft has been migrating toward the use of locale names instead of locale identifiers since Windows Vista.
 > Any application that runs only on Windows Vista and later should use the ...Ex versions of most NLS APIs,
 > which use a locale name to identify a locale instead of an LCID.
-> See [Locale names and LCID deprecation](locale-names.md) for more information.
+> See [Other locale representations](other-locale-names.md) for more information.
 
 To format time in the default settings of a given locale or as specified by the user in the **Regional and Language Options** Control Panel, you can use GetTimeFormat.
 This function formats time—either a specified time or the local system time—as a time string for a specified locale.

@@ -12,7 +12,7 @@ ms.date: 03/16/2016
 > Microsoft has been migrating toward the use of locale names instead of locale identifiers since Windows Vista.
 > Any application that runs only on Windows Vista and later should use the ...Ex versions of most NLS APIs,
 > which use a locale name to identify a locale instead of an LCID.
-> See [Locale names and LCID deprecation](locale-names.md) for more information.
+> See [Other locale representations](other-locale-names.md) for more information.
 
 In the [.NET code sample](handling-calendars-in-dotnet-framework.md), one of the arguments of the enumeration callback function for date formats is the calendar type (CALID).
 As mentioned earlier, for some locales more than one calendar type is available.

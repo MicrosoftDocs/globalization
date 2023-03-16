@@ -8,8 +8,8 @@ ms.date: 03/16/2016
 
 # Locale and Culture Awareness
 
-[Using Locale Model](/globalization/locale/locale-model)  
-To represent the data (number, currency, etc.) correctly, the software needs to be aware of the user's locale. To create software that is locale and culture aware, you'll need to understand what the term "locale" means, as well as the role locale variables play in the development process.
+[Locale](/globalization/locale/locale)  
+A locale is a collection of settings for the user's environment, such as language, country/region, and script. The user's locale allows the operating system or applications to use the appropriate conventions such as sort order; keyboard layout; and date, time, number, and currency formats.
 
 [Sorting and String Comparison](/globalization/locale/sorting-and-string-comparison)  
 String sorting and comparison are language-specific. Even within languages based on the Latin script, there are different composition and sorting rules. Thus do not rely on code points to do proper sorting and string comparison.

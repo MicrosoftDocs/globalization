@@ -88,7 +88,7 @@ Since money is a valued commodity, it is essential that such things as the corre
 
 ## Time formatting in web pages
 
-In **"Retrieving the browser language setting"** in the [Locale Model](locale-model.md) article, you saw how to retrieve the current browser locale on the client side and how to set the global locale of your context or session to this value.
+Retrieve the current browser locale on the client side and set the global locale of your context or session to this value.
 After the appropriate locale has been set, you can easily format the time using FormatDateTime, a locale-aware function.
 Suppose you have retrieved the Chinese (Taiwan) locale as the primary browser locale ("zh-TW" is the default value for this locale).
 The following code saves the current context locale (matching the server's user locale), sets the locale to Chinese (Taiwan), formats the date in Chinese (Taiwan) format, and restores the original locale.

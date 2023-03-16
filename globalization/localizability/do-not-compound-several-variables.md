@@ -35,5 +35,5 @@ To avoid confusion, the programmer could have used unique named placeholders:
 ```
 
 Even better, the programmer should have stored the data in language-neutral data variables-such as a time structure and then used one of the Windows globalization services such as National Language Support (NLS) or .NET.
-(For more information on these globalization services, see [Locale Model](../locale/locale-model.md).)
+(For more information on these globalization services, see [Locale and Culture Awareness](../locale/locale-and-culture.md).)
 Even if you use unique variable names, you still need to leave enough information so the translators know what you are trying to say.

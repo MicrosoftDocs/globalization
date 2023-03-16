@@ -29,7 +29,7 @@ The following sections provide some generic information about the concepts of gl
 
 ## Locale and Culture Awareness
 
-* [Using the locale model](/globalization/locale/locale-model)
+* [Locale](/globalization/locale/locale)
 
 * [Sorting and string comparison](/globalization/locale/sorting-and-string-comparison)
 
