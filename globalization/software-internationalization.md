@@ -17,96 +17,96 @@ The following sections provide some generic information about the concepts of gl
 
 ## Data encoding
 
-* [Encoding overview](/globalization/encoding/encoding-overview)
+* [Encoding overview](encoding/encoding-overview.md)
 
-* [Transformation of Unicode code points](/globalization/encoding/transformations-of-unicode-code-points)
+* [Transformation of Unicode code points](encoding/transformations-of-unicode-code-points.md)
 
-* [Byte order mark (file signature)](/globalization/encoding/byte-order-mark)
+* [Byte order mark (file signature)](encoding/byte-order-mark.md)
 
-* [Surrogate pairs](/globalization/encoding/surrogate-pairs)
+* [Surrogate pairs](encoding/surrogate-pairs.md)
 
-* [Code pages](/globalization/encoding/code-pages)
+* [Code pages](encoding/code-pages.md)
 
 ## Locale and Culture Awareness
 
-* [Using the locale model](/globalization/locale/locale-model)
+* [Locale](locale/locale.md)
 
-* [Sorting and string comparison](/globalization/locale/sorting-and-string-comparison)
+* [Sorting and string comparison](locale/sorting-and-string-comparison.md)
 
-* [Calendars](/globalization/locale/calendar-differences)
+* [Calendars](locale/calendar-differences.md)
 
-* [Date formatting](/globalization/locale/date-formatting)
+* [Date formatting](locale/date-formatting.md)
 
-* [Time formatting](/globalization/locale/time-formatting)
+* [Time formatting](locale/time-formatting.md)
 
-* [Currency Formatting](/globalization/locale/currency-formatting)
+* [Currency Formatting](locale/currency-formatting.md)
 
-* [Number formatting](/globalization/locale/number-formatting)
+* [Number formatting](locale/number-formatting.md)
 
-* [Addresses](/globalization/locale/addresses)
+* [Addresses](locale/addresses.md)
 
-* [Telephone numbers](/globalization/locale/telephone-number)
+* [Telephone numbers](locale/telephone-number.md)
 
-* [Paper size](/globalization/locale/paper-size)
+* [Paper size](locale/paper-size.md)
 
-* [Units of measurement](/globalization/locale/units-of-measurement)
+* [Units of measurement](locale/units-of-measurement.md)
 
 ## Input, output, and display
 
-* [Text input, output, and display](/globalization/input/text-input)
+* [Text input, output, and display](input/text-input.md)
 
-* [Text rendering](/globalization/input/text-rendering)
+* [Text rendering](input/text-rendering.md)
 
-* [Page or text alignment](/globalization/input/page-or-text-alignment)
+* [Page or text alignment](input/page-or-text-alignment.md)
 
-* [Text justification](/globalization/input/text-justification)
+* [Text justification](input/text-justification.md)
 
-* [Font tchnology](/globalization/input/font-technology)
+* [Font tchnology](input/font-technology.md)
 
-* [Line and word breaking](/globalization/input/line-and-word-breaking)
+* [Line and word breaking](input/line-and-word-breaking.md)
 
-* [Mirroring](/globalization/input/mirroring)
+* [Mirroring](input/mirroring.md)
 
-* [Overlay text properties](/globalization/input/overlay)
+* [Overlay text properties](input/overlay.md)
 
 ## Localizability
 
-* [Localizability overview](/globalization/localizability/overview)
+* [Localizability overview](localizability/overview.md)
 
-* [Isolate localizable resources](/globalization/localizability/isolate-localizable-resources)
+* [Isolate localizable resources](localizability/isolate-localizable-resources.md)
 
-* [String handling](/globalization/localizability/string-handling)
+* [String handling](localizability/string-handling.md)
 
-* [Mirroring awareness](/globalization/localizability/mirroring-awareness)
+* [Mirroring awareness](localizability/mirroring-awareness.md)
 
-* [UI considerations](/globalization/localizability/ui-considerations)
+* [UI considerations](localizability/ui-considerations.md)
 
 ## Localization
 
-* [Localization overview](/globalization/localization/overview)
+* [Localization overview](localization/overview.md)
 
-* [Localization elements](/globalization/localization/localization-elements)
+* [Localization elements](localization/localization-elements.md)
 
-* [Localization tools](/globalization/localization/localization-tools)
+* [Localization tools](localization/localization-tools.md)
 
-* [Localization team](/globalization/localization/localization-team)
+* [Localization team](localization/localization-team.md)
 
-* [Establishing localization guidelines](/globalization/localization/establishing-localization-guidelines)
+* [Establishing localization guidelines](localization/establishing-localization-guidelines.md)
 
-* [Content localization](/globalization/localization/content-localization)
+* [Content localization](localization/content-localization.md)
 
 ## Testing for world readiness
 
-* [Quality assurance for world-readiness](/globalization/testing/quality-assurance-for-world-readiness)
+* [Quality assurance for world-readiness](testing/quality-assurance-for-world-readiness.md)
 
-* [The world-ready approach to testing](/globalization/testing/the-world-ready-approach-to-testing)
+* [The world-ready approach to testing](testing/the-world-ready-approach-to-testing.md)
 
-* [Testing globalization](/globalization/testing/globalization-of-the-test)
+* [Testing globalization](testing/globalization-of-the-test.md)
 
-* [Testing localizability](/globalization/testing/localizability-testing)
+* [Testing localizability](testing/localizability-testing.md)
 
-* [Testing localization](/globalization/testing/localization-testing)
+* [Testing localization](testing/localization-testing.md)
 
-* [The role of test tools](/globalization/testing/the-role-of-test-tools)
+* [The role of test tools](testing/the-role-of-test-tools.md)
 
-* [Sample world-ready test cases](/globalization/testing/sample-international-test-cases)
+* [Sample world-ready test cases](testing/sample-international-test-cases.md)

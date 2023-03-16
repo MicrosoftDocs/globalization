@@ -14,7 +14,7 @@ author: pallep
 > Microsoft has been migrating toward the use of locale names instead of locale identifiers since Windows Vista.
 > Any application that runs only on Windows Vista and later should use the ...Ex versions of most NLS APIs,
 > which use a locale name to identify a locale instead of an LCID.
-> See [Locale names and LCID deprecation](locale-names.md) for more information.
+> See [Other locale representations](other-locale-names.md) for more information.
 
 The easiest way to format numbers in a way that's locale-aware is to use the GetNumberFormat API.
 This API customizes the format of a number string for a specified locale.
