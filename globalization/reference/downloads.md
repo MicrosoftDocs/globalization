@@ -11,6 +11,5 @@ On this page, you'll find tools and resources from Microsoft that you can downlo
 * [Multilingual App Toolkit – Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308)
 * [Microsoft Translator](https://www.bing.com/translator/)
 * [Microsoft Custom Translator](https://hub.microsofttranslator.com/)
-* [Bing Translator Widget](https://www.bing.com/webmaster/tools/translator/)
 * [Microsoft Keyboard layout creator](https://www.microsoft.com/download/details.aspx?id=102134)
 * [Windows Locale Builder Tool](https://www.microsoft.com/download/details.aspx?id=41158)
