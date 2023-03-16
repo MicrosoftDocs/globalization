@@ -8,7 +8,7 @@ ms.date: 03/16/2016
 
 A large localization project requires a team that consists of a program manager, one or more localization engineers, and many localizers.
 The program manager should coordinate between the development team and the localization team, making sure that developers use code practices that are conducive to localization.
-(For more information on these practices, see [Locale Model](../locale/locale-model.md).)
+(For more information on these practices, see [Localization introduction](overview.md).)
 The program manager should also deal with the external teams that do localization and, of course, manage the internal localization process.
 
 Localization engineers are responsible for handling the localization database and maintaining the proper localization instructions in the commenting model, if this model exists.
