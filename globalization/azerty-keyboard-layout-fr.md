@@ -1,111 +1,111 @@
 ﻿---
-title: France’s new AZERTY keyboard layout
-description: France’s new AZERTY keyboard layout provides improved access to all the characters for the French language.
+title: La nouvelle disposition du clavier AZERTY française
+description: La nouvelle disposition du clavier AZERTY française donne accès à tous les caractères de la langue française.
 ms.date: 03/14/2023
 ms.topic: concept
 author: danjac
 ---
 
-# France’s new AZERTY keyboard layout
+# La nouvelle disposition du clavier AZERTY française
 
-<iframe src="keyboards\kbdfrna.html" height="300"></iframe>
+<iframe src="keyboards\kbdfrna.html" height="275"></iframe>
 
-To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
+Pour voir les différents états du clavier, déplacez le curseur sur les touches **Shift (Maj)**, **Caps (Verr Maj)** ou **AltGr**. Vous pouvez également verrouiller ou déverrouiller ces touches en cliquant dessus.
 
-## The new “French (Standard, AZERTY)” layout 
+## La nouvelle disposition du clavier « Français (Standard, AZERTY) »
 
-This keyboard has been designed to enable you to enter all of the characters for the French language. It includes characters that were missing from the legacy AZERTY layout which are integral to the French language, such as: 
-> É Ç æ Æ œ Œ — « » ‹ › 
+Cette disposition du clavier a été conçue pour vous permettre de saisir tous les caractères de la langue française. Elle comprend des caractères manquants dans l'ancienne disposition AZERTY qui font partie intégrante de la langue française, tels que :
+> É Ç æ Æ œ Œ — « » ‹ ›
 
-It can be used to type the characters for all of France’s regional languages, for all Latin-based languages of the European Union, and for Greek. A variety of scientific, financial, and mathematical symbols are also available.
+La disposition permet de saisir les caractères de toutes les langues régionales de France, de toutes les langues latines de l'Union européenne et du grec. Une variété de symboles scientifiques, financiers et mathématiques sont également disponibles.
 
-In addition, symbols are logically grouped: all types of brackets have opening and closing forms on adjacent keys; mathematical symbols are grouped to the right of the keyboard, next to the enter key; common punctuation is on the bottom row, to the right of the letter N.
+De plus, les symboles sont regroupés logiquement : tous les types de parenthèses ont leurs formes d'ouverture et de fermeture sur des touches adjacentes ; les symboles mathématiques sont regroupés à droite du clavier, à côté de la touche entrée ; la ponctuation fréquente se trouve sur la ligne du bas, à droite de la lettre N.
 
-### Typing accented characters and ligatures commonly used in French 
+### Saisir les caractères accentués et les ligatures fréquemment utilisés en français
 
-The keyboard layout makes it easy to type accented characters and ligatures commonly used in the French language, including in their capital forms. 
+La disposition du clavier facilite la saisie des caractères accentués et des ligatures fréquemment utilisés dans la langue française, y compris dans leurs formes majuscules.
 
-| Character | Key presses |
+| Caractère | Touches à appuyer |
 |-------|-------|
 | à | à |
-| À | AltGr + Shift + à |
+| À | AltGr + Maj + à |
 | é | é |
-| É | AltGr + Shift + é |
+| É | AltGr + Maj + é |
 | è | è |
-| È | AltGr + Shift + è |
+| È | AltGr + Maj + è |
 | ê | ê |
-| Ê | AltGr + Shift + ê |
+| Ê | AltGr + Maj + ê |
 | æ | AltGr + A |
-| Æ | AltGr + Shift + A |
+| Æ | AltGr + Maj + A |
 | œ | AltGr + O |
-| Œ | AltGr + Shift + O |
+| Œ | AltGr + Maj + O |
 | ç | AltGr + C |
-| Ç | AltGr + Shift + C |
- 
-### Other characters not printed on the keys
+| Ç | AltGr + Maj + C |
 
-To keep the physical keyboard looking clean, it doesn’t feature *all* the available characters printed on it. The following additional symbols which aren’t printed on the keyboard can be typed: 
+### Autres caractères non imprimés sur les touches
 
-| Character | Key presses |
+Pour éviter que le clavier physique ne paraisse trop encombré, il ne comporte pas *tous* les caractères disponibles imprimés dessus. Les symboles suivants qui ne sont pas imprimés sur le clavier peuvent être saisis :
+
+| Caractère | Touches à appuyer |
 |-------|-------|
-| Non-breaking space | AltGr + Space |
-| Narrow non-breaking space | AltGr + Shift + Space |
-| — | AltGr + Shift + ’ |
-| ‹ | AltGr + Shift + « |
-| › | AltGr + Shift + » |
-| ‰ | AltGr + Shift + P |
+| Espace insécable | AltGr + Espace |
+| Espace insécable fine | AltGr + Maj + Espace |
+| — | AltGr + Maj + ’ |
+| ‹ | AltGr + Maj + « |
+| › | AltGr + Maj + » |
+| ‰ | AltGr + Maj + P |
 | − | AltGr + - |
-| - | AltGr + Shift + - |
+| - | AltGr + Maj + - |
 | † | AltGr + + |
-| ‡ | AltGr + Shift + + |
+| ‡ | AltGr + Maj + + |
 | θ | AltGr + Q |
 | ∞ | AltGr + M |
-| √ | AltGr + Shift + / |
-| ¼ | AltGr + Shift + * |
+| √ | AltGr + Maj + / |
+| ¼ | AltGr + Maj + * |
 | ⩽ | AltGr + < |
-| ⩾ | AltGr + Shift + < |
+| ⩾ | AltGr + Maj + < |
 | ʒ | AltGr + W |
-| ¿ | AltGr + Shift + . |
-| ¡ | AltGr + Shift + , |
+| ¿ | AltGr + Maj + . |
+| ¡ | AltGr + Maj + , |
 | ≃ | AltGr + ; |
-| ≠ | AltGr + Shift + ; |
+| ≠ | AltGr + Maj + ; |
 
-### Dead keys for additional accented characters 
+### Touches mortes pour des caractères accentués additionnels
 
-Many “dead keys” are provided for typing even more accented characters.
+De nombreuses « touches mortes » sont incluses pour saisir des caractères accentués additionnels.
 
-To enter these accented characters, first press the dead key, then follow it with the letter you’d like to add an accent to. If you’d like to type the accent on its own, follow it with a space. 
+Pour saisir ces caractères accentués, appuyez d'abord sur la touche morte, puis faites-la suivre de la lettre à laquelle vous souhaitez ajouter un accent. Si vous souhaitez taper l'accent seul, faites-le suivre d'un espace.
 
-For example, to type a ‘y’ with a diaresis (ÿ), you would press **Shift + ^** followed by **y**. 
+Par exemple, pour saisir un « y » avec un tréma ( « ÿ » ), il faut appuyer sur **Maj + ^** suivi de **y**.
 
-| Accent | Dead key | Follow with a letter to type: | Follow with a space to type: |
+| Accent | Touche morte | Faire suivre d'une lettre pour saisir : | Faire suivre d'un espace pour saisir : |
 |-------|-------|-------|-------|
-| Breve | AltGr + @ | ĂĔĞĬŎŬăĕğĭŏŭ | ˘ |
-| Inverted breve | AltGr + Shift + @ | ȂȆȊȎȒȖȃȇȋȏȓȗ | ° |
-| Acute accent | AltGr + é | ÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǼáćéǵíḱĺḿńóṕŕśúẃýźǽ | ´ |
-| Grave accent | AltGr + è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
-| Double acute accent | AltGr + Shift + ( | ŐŰőű | ˝ |
-| Double grave accent | AltGr + Shift + ) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
-| Macron | AltGr + Shift +  | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
-| Ring above | AltGr + Shift + ° | ÅŮåůẘẙ | ˚ |
-| Circumflex accent | ^ | ÂĈÊĜĤÎĴÔŜÛŴŶẐâĉêĝĥîĵôŝûŵŷẑ | ^ |
-| Diaresis | Shift + ^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
-| Caron | AltGr + Shift + ˇ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
-| Dot above | AltGr + I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
-| Dot below | AltGr + Shift + I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
-| Macron below | AltGr + Shift + H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |
-| Solidus | AltGr + K | ȺȻɆŁØȾȼɇłøẜ | / |
-| Cedilla | AltGr + V | ÇḐȨĢḨĶĻŅŖŞŢçḑȩģḩķļņŗşţ | ¸ |
-| Ogonek | AltGr + Shift + V | ĄĘĮǪŲąęįǫų | ˛ |
-| Stroke | AltGr + B | ɃĐǤĦƗɈȽɌŦɄɎƵƀđǥħɉƚɍŧɏƶ | - |
+| Brève | AltGr + @ | ĂĔĞĬŎŬăĕğĭŏŭ | ˘ |
+| Brève renversée | AltGr + Maj + @ | ȂȆȊȎȒȖȃȇȋȏȓȗ | ° |
+| Accent aigu | AltGr + é | ÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǼáćéǵíḱĺḿńóṕŕśúẃýźǽ | ´ |
+| Accent grave | AltGr + è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
+| Accent double aigu | AltGr + Maj + ( | ŐŰőű | ˝ |
+| Accent double grave | AltGr + Maj + ) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
+| Macron | AltGr + Maj + | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
+| Rond en chef | AltGr + Maj + ° | ÅŮåůẘẙ | ˚ |
+| Accent circonflexe | ^ | ÂĈÊĜĤÎĴÔŜÛŴŶẐâĉêĝĥîĵôŝûŵŷẑ | ^ |
+| Tréma | Maj + ^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
+| Caron | AltGr + Maj + ˇ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
+| Point en chef | AltGr + I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
+| Point souscrit | AltGr + Maj + I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
+| Macron souscrit | AltGr + Maj + H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |
+| Barre oblique couvrante | AltGr + K | ȺȻɆŁØȾȼɇłøẜ | / |
+| Cédille | AltGr + V | ÇḐȨĢḨĶĻŅŖŞŢçḑȩģḩķļņŗşţ | ¸ |
+| Ogonek | AltGr + Maj + V | ĄĘĮǪŲąęįǫų | ˛ |
+| Barre couvrante | AltGr + B | ɃĐǤĦƗɈȽɌŦɄɎƵƀđǥħɉƚɍŧɏƶ | - |
 | Tilde | AltGr + N | ÃẼĨÑÕŨṼỸãẽĩñõũṽỹ | ~ |
-| Comma below | AltGr + Shift + , | ȘȚșț | , |
+| Virgule souscrite | AltGr + Maj + , | ȘȚșț | , |
 
-### Monetary symbols layer 
+### Touche morte symboles monétaires
 
-A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr + F** then one of the following characters to type its corresponding monetary symbol: 
+Un ensemble de symboles monétaires internationaux est disponible en appuyant sur la touche morte **AltGr + F** puis sur l'un des caractères suivants pour saisir son symbole monétaire correspondant :
 
-| Character to type | Resulting monetary symbol |
+| Caractère à saisir | Symbole monétaire résultant |
 |-------|-------|
 | A | ₳ |
 | B | ฿ |
@@ -141,13 +141,13 @@ A layer featuring monetary symbols from around the world is available by pressin
 | Ç | ₡ |
 | ç | ₢ |
 | ∞ | ₼ |
-| Space | ¤ |
+| Espace | ¤ |
 
-### Greek letters layer 
+### Touche morte lettres grecques
 
-A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr + G** then one of the following characters to type its corresponding Greek character: 
+Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte **AltGr + G** puis sur l'un des caractères suivants pour saisir son caractère grec correspondant :
 
-| Character to type | Resulting Greek character |
+| Caractère à saisir | Lettre grecque résultant |
 |-------|-------|
 | A | Α |
 | B | Β |
@@ -198,13 +198,13 @@ A layer featuring all the letters of the Greek alphabet is available by pressing
 | x | χ |
 | y | υ |
 | z | ζ |
-| Space | µ |
+| Espace | µ |
 
-### Additional European characters layer 
+### Touche morte caractères européens additionnels
 
-A layer featuring an assortment of additional European characters is available by pressing the dead key **AltGr + H** then one of the following characters to type its corresponding character: 
+Un assortiment de caractères européens est disponible en appuyant sur la touche morte **AltGr + H** puis sur l'un des caractères suivants pour saisir son caractère correspondant :
 
-| Character to type | Resulting additional European character |
+| Caractère à saisir | Caractère résultant |
 |-------|-------|
 | ' | ʼ |
 | 0 | « |
@@ -228,21 +228,21 @@ A layer featuring an assortment of additional European characters is available b
 | t | þ |
 | « | „ |
 | » | ‟ |
-| Space | ſ |
+| Espace | ſ |
 
-### Superscript numerals layer 
+### Chiffres en exposant
 
-The circumflex dead key (**^**) provides access to a layer of superscript numerals. Press the dead key **^** followed by a number to type a superscript version of it: ⁰¹²³⁴⁵⁶⁷⁸⁹ 
+La touche morte circonflexe (**^**) donne accès aux chiffres en exposant. Appuyez sur la touche morte **^** suivie d'un chiffre pour en saisir une version en exposant : ⁰¹²³⁴⁵⁶⁷⁸⁹
 
-### Subscript numerals layer 
+### Chiffres en indice
 
-The caron dead key (**AltGr + ^**) provides access to a layer of subscript numerals. Press the dead key **AltGr + ^** followed by a number to type a subscript version of it: ₀₁₂₃₄₅₆₇₈₉ 
+La touche morte caron (**AltGr + ^**) donne accès aux chiffres en indice. Appuyez sur la touche morte **AltGr + ^** suivie d'un chiffre pour en saisir une version en indice : ₀₁₂₃₄₅₆₇₈₉
 
-### Additional mathematical symbols with solidus 
+### Symboles mathématiques avec barre oblique couvrante
 
-The solidus dead key (**AltGr + K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key **AltGr + K** followed by one of the following characters to type its corresponding character: 
+La touche morte barre oblique couvrante (**AltGr + K**) permet d'accéder à des symboles mathématiques traversés par une barre oblique. Appuyez sur la touche morte **AltGr + K** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
 
-| Character to type | Resulting character |
+| Caractère à saisir | Caractère résultant |
 |-------|-------|
 | = | ≠ |
 | ≃ | ≄ |
@@ -251,17 +251,17 @@ The solidus dead key (**AltGr + K**) provides access to a set of additional math
 | ⩽ | ≰ |
 | ⩾ | ≱ |
 
-### Additional mathematical symbols with tilde 
+### Symboles mathématiques avec tilde
 
-The tilde dead key (**AltGr + N**) provides access to a set of additional mathematical symbols featuring wavy lines. Press the dead key **AltGr + N** followed by one of the following characters to type its corresponding character: 
+La touche morte tilde (**AltGr + N**) donne accès à des symboles mathématiques comportant des lignes ondulées. Appuyez sur la touche morte **AltGr + N** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
 
-| Character to type | Resulting character |
+| Caractère à saisir | Caractère résultant |
 |-------|-------|
 | - | ≃ |
 | = | ≈ |
 | < | ≲ |
 | > | ≳ |
 
-### Decimal separator 
+### Séparateur décimal
 
-In French, the comma is used as a decimal separator. The decimal separator key, found at the bottom of the numeric keypad, produces a comma when pressed. On the legacy AZERTY keyboard, this key produces a period. 
+En français, la virgule est utilisée comme séparateur décimal. La touche de séparateur décimal, située au bas du pavé numérique, produit une virgule lorsqu'elle est enfoncée. Sur l'ancien clavier AZERTY, cette touche produit un point.

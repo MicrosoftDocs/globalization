@@ -8,22 +8,22 @@ author: danjac
 
 # France’s new AZERTY keyboard layout
 
-<iframe src="keyboards\kbdfrna.html" height="300"></iframe>
+<iframe src="keyboards\kbdfrna.html" height="275"></iframe>
 
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
-## The new “French (Standard, AZERTY)” layout 
+## The new “French (Standard, AZERTY)” layout
 
-This keyboard has been designed to enable you to enter all of the characters for the French language. It includes characters that were missing from the legacy AZERTY layout which are integral to the French language, such as: 
-> É Ç æ Æ œ Œ — « » ‹ › 
+This keyboard has been designed to enable you to enter all of the characters for the French language. It includes characters that were missing from the legacy AZERTY layout, which are integral to the French language, such as:
+> É Ç æ Æ œ Œ — « » ‹ ›
 
-It can be used to type the characters for all of France’s regional languages, for all Latin-based languages of the European Union, and for Greek. A variety of scientific, financial, and mathematical symbols are also available.
+It can be used to type the characters for all of France’s regional languages, for all Latin-based languages of the European Union, and for Greek. Various scientific, financial, and mathematical symbols are also available.
 
 In addition, symbols are logically grouped: all types of brackets have opening and closing forms on adjacent keys; mathematical symbols are grouped to the right of the keyboard, next to the enter key; common punctuation is on the bottom row, to the right of the letter N.
 
-### Typing accented characters and ligatures commonly used in French 
+### Typing accented characters and ligatures commonly used in French
 
-The keyboard layout makes it easy to type accented characters and ligatures commonly used in the French language, including in their capital forms. 
+The keyboard layout makes it easy to type accented characters and ligatures commonly used in the French language, including in their capital forms.
 
 | Character | Key presses |
 |-------|-------|
@@ -41,10 +41,10 @@ The keyboard layout makes it easy to type accented characters and ligatures comm
 | Œ | AltGr + Shift + O |
 | ç | AltGr + C |
 | Ç | AltGr + Shift + C |
- 
+
 ### Other characters not printed on the keys
 
-To keep the physical keyboard looking clean, it doesn’t feature *all* the available characters printed on it. The following additional symbols which aren’t printed on the keyboard can be typed: 
+To keep the physical keyboard looking clean, it doesn’t feature *all* the available characters printed on it. The following symbols, which aren’t printed on the keyboard, can be typed:
 
 | Character | Key presses |
 |-------|-------|
@@ -70,13 +70,13 @@ To keep the physical keyboard looking clean, it doesn’t feature *all* the avai
 | ≃ | AltGr + ; |
 | ≠ | AltGr + Shift + ; |
 
-### Dead keys for additional accented characters 
+### Dead keys for additional accented characters
 
 Many “dead keys” are provided for typing even more accented characters.
 
-To enter these accented characters, first press the dead key, then follow it with the letter you’d like to add an accent to. If you’d like to type the accent on its own, follow it with a space. 
+To enter these accented characters, first press the dead key, then follow it with the letter you’d like to add an accent to. If you’d like to type the accent on its own, follow it with a space.
 
-For example, to type a ‘y’ with a diaresis (ÿ), you would press **Shift + ^** followed by **y**. 
+For example, to type a ‘y’ with a diaresis (ÿ), you would press **Shift + ^** followed by **y**.
 
 | Accent | Dead key | Follow with a letter to type: | Follow with a space to type: |
 |-------|-------|-------|-------|
@@ -86,7 +86,7 @@ For example, to type a ‘y’ with a diaresis (ÿ), you would press **Shift + ^
 | Grave accent | AltGr + è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
 | Double acute accent | AltGr + Shift + ( | ŐŰőű | ˝ |
 | Double grave accent | AltGr + Shift + ) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
-| Macron | AltGr + Shift +  | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
+| Macron | AltGr + Shift + | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
 | Ring above | AltGr + Shift + ° | ÅŮåůẘẙ | ˚ |
 | Circumflex accent | ^ | ÂĈÊĜĤÎĴÔŜÛŴŶẐâĉêĝĥîĵôŝûŵŷẑ | ^ |
 | Diaresis | Shift + ^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
@@ -101,9 +101,9 @@ For example, to type a ‘y’ with a diaresis (ÿ), you would press **Shift + ^
 | Tilde | AltGr + N | ÃẼĨÑÕŨṼỸãẽĩñõũṽỹ | ~ |
 | Comma below | AltGr + Shift + , | ȘȚșț | , |
 
-### Monetary symbols layer 
+### Monetary symbols layer
 
-A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr + F** then one of the following characters to type its corresponding monetary symbol: 
+A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr + F** then one of the following characters to type its corresponding monetary symbol:
 
 | Character to type | Resulting monetary symbol |
 |-------|-------|
@@ -143,9 +143,9 @@ A layer featuring monetary symbols from around the world is available by pressin
 | ∞ | ₼ |
 | Space | ¤ |
 
-### Greek letters layer 
+### Greek letters layer
 
-A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr + G** then one of the following characters to type its corresponding Greek character: 
+A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr + G** then one of the following characters to type its corresponding Greek character:
 
 | Character to type | Resulting Greek character |
 |-------|-------|
@@ -200,11 +200,11 @@ A layer featuring all the letters of the Greek alphabet is available by pressing
 | z | ζ |
 | Space | µ |
 
-### Additional European characters layer 
+### Additional European characters layer
 
-A layer featuring an assortment of additional European characters is available by pressing the dead key **AltGr + H** then one of the following characters to type its corresponding character: 
+A layer featuring an assortment of European characters is available by pressing the dead key **AltGr + H** then one of the following characters to type its corresponding character:
 
-| Character to type | Resulting additional European character |
+| Character to type | Resulting European character |
 |-------|-------|
 | ' | ʼ |
 | 0 | « |
@@ -230,17 +230,17 @@ A layer featuring an assortment of additional European characters is available b
 | » | ‟ |
 | Space | ſ |
 
-### Superscript numerals layer 
+### Superscript numerals layer
 
-The circumflex dead key (**^**) provides access to a layer of superscript numerals. Press the dead key **^** followed by a number to type a superscript version of it: ⁰¹²³⁴⁵⁶⁷⁸⁹ 
+The circumflex dead key (**^**) provides access to a layer of superscript numerals. Press the dead key **^** followed by a number to type a superscript version of it: ⁰¹²³⁴⁵⁶⁷⁸⁹
 
-### Subscript numerals layer 
+### Subscript numerals layer
 
-The caron dead key (**AltGr + ^**) provides access to a layer of subscript numerals. Press the dead key **AltGr + ^** followed by a number to type a subscript version of it: ₀₁₂₃₄₅₆₇₈₉ 
+The caron dead key (**AltGr + ^**) provides access to a layer of subscript numerals. Press the dead key **AltGr + ^** followed by a number to type a subscript version of it: ₀₁₂₃₄₅₆₇₈₉
 
-### Additional mathematical symbols with solidus 
+### Mathematical symbols with solidus
 
-The solidus dead key (**AltGr + K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key **AltGr + K** followed by one of the following characters to type its corresponding character: 
+The solidus dead key (**AltGr + K**) provides access to a set of mathematical symbols with a solidus through them. Press the dead key **AltGr + K** followed by one of the following characters to type its corresponding character:
 
 | Character to type | Resulting character |
 |-------|-------|
@@ -251,9 +251,9 @@ The solidus dead key (**AltGr + K**) provides access to a set of additional math
 | ⩽ | ≰ |
 | ⩾ | ≱ |
 
-### Additional mathematical symbols with tilde 
+### Mathematical symbols with tilde
 
-The tilde dead key (**AltGr + N**) provides access to a set of additional mathematical symbols featuring wavy lines. Press the dead key **AltGr + N** followed by one of the following characters to type its corresponding character: 
+The tilde dead key (**AltGr + N**) provides access to a set of mathematical symbols featuring wavy lines. Press the dead key **AltGr + N** followed by one of the following characters to type its corresponding character:
 
 | Character to type | Resulting character |
 |-------|-------|
@@ -262,6 +262,6 @@ The tilde dead key (**AltGr + N**) provides access to a set of additional mathem
 | < | ≲ |
 | > | ≳ |
 
-### Decimal separator 
+### Decimal separator
 
-In French, the comma is used as a decimal separator. The decimal separator key, found at the bottom of the numeric keypad, produces a comma when pressed. On the legacy AZERTY keyboard, this key produces a period. 
+In French, the comma is used as a decimal separator. The decimal separator key, found at the bottom of the numeric keypad, produces a comma when pressed. On the legacy AZERTY keyboard, this key produces a period.
