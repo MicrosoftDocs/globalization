@@ -1,12 +1,14 @@
 ﻿---
 title: Windows keyboard layouts
 description: Choose a keyboard below to view its layouts.
-ms.date: 01/05/2017
+ms.date: 03/21/2023
 ms.topic: navigation
 author: jowilco
 ---
 
 # Windows keyboard layouts
+
+Layouts generated using: Microsoft Windows 11 Enterprise 22H2 (22621.1413)
 
 Choose a keyboard below to view its layout.
 
