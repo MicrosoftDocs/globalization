@@ -137,6 +137,7 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [N&#x2019;Ko](keyboards/kbdnko.md) | 8 |
 | &nbsp; | [Norwegian](keyboards/kbdno.md) | pre-XP |
 | &nbsp; | [Norwegian with Sami](keyboards/kbdno1.md) | XP SP2 |
+| &nbsp; | [NZ Aotearoa](keyboards/kbdmaori_NZAotearoa.md) | 11 |
 | <a name="O"></a>O | [Odia](keyboards/kbdinori.md) | Vista / Server 2008 |
 | &nbsp; | [Ogham](keyboards/kbdogham.md) | 8 |
 | &nbsp; | [Ol Chiki](keyboards/kbdolch.md) | 8.1 |
@@ -188,6 +189,8 @@ Choose a keyboard below to view its layout.
 | <a name="T"></a>T | [Tai Le](keyboards/kbdtaile.md) | 8 |
 | &nbsp; | [Tajik](keyboards/kbdtajik.md) | Vista / Server 2008 |
 | &nbsp; | [Tamil](keyboards/kbdintam.md) | pre-XP |
+| &nbsp; | [Tamil 99](keyboards/kbdtam99.md) | 10 |
+| &nbsp; | [Tamil Anjal](keyboards/kbdinen_TamilAnjal.md) | 11 |
 | &nbsp; | [Tatar](keyboards/kbdtt102.md) | 8.1 |
 | &nbsp; | [Tatar (Legacy)](keyboards/kbdtat.md) | 8 |
 | &nbsp; | [Telugu](keyboards/kbdintel.md) | XP / Server 2003 |
