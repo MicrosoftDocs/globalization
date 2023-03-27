@@ -11,7 +11,7 @@ ms.date: 03/27/2023
 
 The Microsoft Writing Style Guide provides essential guidance for developers and content creators who design English-language apps, documentation, marketing, and reference material for and about Microsoft products.
 
-You'll find the Microsoft Writing Style Guide on [Microsoft Learn](https://learn.microsoft.com/style-guide/welcome/), the home for Microsoft technical documentation.
+You'll find the Microsoft Writing Style Guide on [Microsoft Learn](/style-guide/welcome/), the home for Microsoft technical documentation.
 
 ## Localization Style Guides
 
@@ -68,7 +68,7 @@ Microsoft Style Guides are collections of rules that define language and style c
 * [Kazakh](https://download.microsoft.com/download/1/3/e/13eccdab-f27e-44dd-95fa-660a3b9c3c10/kaz-kaz-StyleGuide.pdf)
 * [Khmer](https://download.microsoft.com/download/9/9/9/999ABAA3-9887-4D15-A0BA-762967FDC6C9/khm-khm-StyleGuide.pdf)
 * [K&#39;iche&#39;](https://download.microsoft.com/download/A/0/3/A03BB7F5-8743-480A-9EFD-CF01AC7C8D7B/quc-gtm-StyleGuide.pdf)
-* [Kinyarwanda](https://download.microsoft.com/download/0/8/8/088A190F-55A3-47F3-AC30-F89EBF7FB08A/kin-rwa-StyleGuide.doc)
+* [Kinyarwanda](https://download.microsoft.com/download/0/8/8/088A190F-55A3-47F3-AC30-F89EBF7FB08A/kin-rwa-StyleGuide.pdf)
 * [Kiswahili](https://download.microsoft.com/download/6/A/8/6A83412C-9E2F-49A1-9CD6-9DD18566355D/swa-tza-StyleGuide.pdf)
 * [Konkani](https://download.microsoft.com/download/9/b/9/9b96b721-20e4-4b5b-9943-1a655b3078c4/kok-ind-StyleGuide.pdf)
 * [Korean](https://download.microsoft.com/download/5/b/6/5b62389f-4e3b-4c77-bc18-94efba2fa7bb/kor-kor-Style%20Guide.pdf)
