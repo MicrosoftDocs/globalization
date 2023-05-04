@@ -1,21 +1,13 @@
 ﻿---
-title: Microsoft International Style Guides
+title: Microsoft Localization Style Guides
 description: Download Microsoft Style Guides for guidance on Microsoft's language and style conventions
 ms.topic: article
-ms.date: 03/27/2023
+ms.date: 05/04/2023
 ---
 
-# International Style Guides
+# Localization Style Guides
 
-## Microsoft Writing Style Guide
-
-The Microsoft Writing Style Guide provides essential guidance for developers and content creators who design English-language apps, documentation, marketing, and reference material for and about Microsoft products.
-
-You'll find the Microsoft Writing Style Guide on [Microsoft Learn](/style-guide/welcome/), the home for Microsoft technical documentation.
-
-## Localization Style Guides
-
-Microsoft Style Guides are collections of rules that define language and style conventions for specific languages. These rules usually include general localization guidelines, information on language style and usage in technical publications, and information on market - specific data formats.
+Localization Style Guides are collections of rules that define language and style conventions for specific languages. These rules usually include general localization guidelines, information on language style and usage in technical publications, and information on market - specific data formats.
 
 * [Afrikaans](https://download.microsoft.com/download/3/f/8/3f80d527-e113-43d2-92c7-39fd7192487e/afr-zaf-StyleGuide.pdf)
 * [Albanian](https://download.microsoft.com/download/1/9/a/19a99de8-826c-4776-bf91-2f039b828883/sqi-alb-StyleGuide.pdf)
@@ -24,21 +16,17 @@ Microsoft Style Guides are collections of rules that define language and style c
 * [Armenian](https://download.microsoft.com/download/7/4/4/744DE533-D810-4A8F-9B98-F20F4A7802DE/arm-arm-StyleGuide.pdf)
 * [Assamese](https://download.microsoft.com/download/E/3/6/E36C1EC5-826C-4205-ABFD-D1BE76BADF50/asm-ind-StyleGuide.pdf)
 * [Azerbaijani](https://download.microsoft.com/download/3/5/9/3598d64a-9d78-49cf-9cfc-70068bbc3afd/aze-aze-StyleGuide.pdf)
-* [Basque](https://download.microsoft.com/download/c/6/0/c608b32d-8d04-44a8-a42a-4b0401bc3115/eus-esp-StyleGuide.pdf)
-* [Bangla (Bangladesh)](https://download.microsoft.com/download/4/5/b/45b699fe-91a3-4405-ab3e-fdae2d196b32/ben-bgd-StyleGuide.pdf)
 * [Bangla (India)](https://download.microsoft.com/download/3/a/c/3ac7e8b5-a15c-498e-a73e-c824a82b6347/ben-ind-StyleGuide.pdf)
+* [Basque](https://download.microsoft.com/download/c/6/0/c608b32d-8d04-44a8-a42a-4b0401bc3115/eus-esp-StyleGuide.pdf)
 * [Belarusian](https://download.microsoft.com/download/0/0/8/00808A5E-924C-435F-97BA-BF3F285F21B3/bel-blr-StyleGuide.pdf)
 * [Bosnian (Latin)](https://download.microsoft.com/download/4/4/c/44cd9e84-9003-4200-ab89-c31b038e9795/bos-bih-StyleGuide.pdf)
-* [Bosnian (Cyrillic)](https://download.microsoft.com/download/5/8/1/581125BE-8BC0-4AF1-AC46-107082B92B04/bos-cyr-StyleGuide.doc)
 * [Bulgarian](https://download.microsoft.com/download/6/6/8/66825d50-e7e0-404e-981e-ca9b6da7db19/bul-bgr-StyleGuide.pdf)
 * [Catalan](https://download.microsoft.com/download/e/a/0/ea0ce060-963f-46bd-a0c2-eb47e7bad701/cat-esp-StyleGuide.pdf)
-* [Central Kurdish](https://download.microsoft.com/download/9/3/E/93E78571-06F6-4F83-A4FC-BEBA2E941E28/ckb-irq-StyleGuide.pdf)
 * [Chinese (Simplified)](https://download.microsoft.com/download/1/5/9/159cb91c-b61b-4385-97ca-80ccc7ff1fa0/zho-chn-Style%20Guide.pdf)
 * [Chinese (Traditional)](https://download.microsoft.com/download/2/9/3/293e6d41-ba40-451b-a41e-94bdb6242ae3/zho-twn-Style%20Guide.pdf)
 * [Croatian](https://download.microsoft.com/download/0/6/2/0626b4d3-ed24-4c11-8676-ec5aa03576c7/hrv-hrv-StyleGuide.pdf)
 * [Czech](https://download.microsoft.com/download/7/b/5/7b57e4a1-d299-4238-9997-f3ac51d6f763/ces-cze-Style%20Guide.pdf)
 * [Danish](https://download.microsoft.com/download/8/f/9/8f99052e-43df-49ac-a877-b8364e2331d7/dan-dnk-Style%20Guide.pdf)
-* [Dari](https://download.microsoft.com/download/b/0/2/b022fcf2-5c95-4500-aa15-c4290859b304/prs-afg-styleguidel.pdf)
 * [Dutch](https://download.microsoft.com/download/e/8/f/e8f04dd4-591e-46e9-a076-e49a8c8c75e4/nld-nld-Style%20Guide.pdf)
 * [English (United Kingdom)](https://download.microsoft.com/download/9/8/8/98834e3c-f0be-40c9-af56-35a0cc1ab65f/eng-gbr-Style%20Guide.pdf)
 * [Estonian](https://download.microsoft.com/download/7/7/3/7734c896-d576-44f6-bf00-66350cb24be9/est-est-Style%20Guide.pdf)
@@ -51,29 +39,19 @@ Microsoft Style Guides are collections of rules that define language and style c
 * [German](https://download.microsoft.com/download/e/f/9/ef9f6d8e-cd8b-420c-8696-afd98b4a367d/deu-deu-Style%20Guide.pdf)
 * [Greek](https://download.microsoft.com/download/3/9/6/3963b5d8-7e0d-49c7-868e-ad4b03a7eee5/ell-grc-StyleGuide.pdf)
 * [Gujarati](https://download.microsoft.com/download/7/2/0/720B015E-94F9-4B6E-911F-539F38C60774/guj-ind-StyleGuide.pdf)
-* [Hausa](https://download.microsoft.com/download/C/9/3/C9368990-FE8C-4CA0-BAB8-069FC1CA464D/hau-nga-StyleGuide.pdf)
 * [Hebrew](https://download.microsoft.com/download/a/2/f/a2ff07cc-afca-4db8-9ed7-fd1b706abf1c/heb-isr-StyleGuide.pdf)
 * [Hindi](https://download.microsoft.com/download/2/b/5/2b543b85-0ed4-49a7-8b3a-98ffa7addcfb/hin-ind-StyleGuide.pdf)
 * [Hungarian](https://download.microsoft.com/download/d/3/b/d3b023b0-ddf3-4692-b19f-72aff669e8a0/hun-hun-StyleGuide.pdf)
 * [Icelandic](https://download.microsoft.com/download/9/8/9/989110dd-0539-4220-9170-a97856832560/isl-isl-StyleGuide.pdf)
-* [Igbo](https://download.microsoft.com/download/3/B/8/3B8E0CE8-4645-44A9-A8EE-A5A9E6725EB5/ibo-nga-StyleGuide.pdf)
 * [Indonesian](https://download.microsoft.com/download/c/2/8/c2804555-f6ed-4db9-9e3b-ddf754159bd3/ind-idn-StyleGuide.pdf)
-* [Inuktitut](https://download.microsoft.com/download/0/B/6/0B65BCFE-5FAC-4B20-86FE-F613200667C1/iku-can-StyleGuide.pdf)
 * [Irish](https://download.microsoft.com/download/4/B/6/4B6C95FE-DA3F-47F6-AC90-AB8EA4B1C8C1/gle-irl-StyleGuide.pdf)
-* [isiXhosa](https://download.microsoft.com/download/1/9/b/19b9af1c-a680-48c9-9076-720ad2838502/xho-zaf-StyleGuide.pdf)
-* [isiZulu](https://download.microsoft.com/download/c/2/1/c21fbff2-cfdc-47c8-b308-97b5b7d18477/zul-zaf-StyleGuide.pdf)
 * [Italian](https://download.microsoft.com/download/f/f/7/ff70427c-1f7e-429f-96be-724d2e49cd47/ita-ita-Style%20Guide.pdf)
 * [Japanese](https://download.microsoft.com/download/a/8/2/a822a118-18d4-4429-b857-1b65ab388315/jpn-jpn-Style%20Guide.pdf)
 * [Kannada](https://download.microsoft.com/download/9/6/7/9673794D-A6F0-46F9-B8E0-BFEB6F8B410E/kan-ind-StyleGuide.pdf)
 * [Kazakh](https://download.microsoft.com/download/1/3/e/13eccdab-f27e-44dd-95fa-660a3b9c3c10/kaz-kaz-StyleGuide.pdf)
 * [Khmer](https://download.microsoft.com/download/9/9/9/999ABAA3-9887-4D15-A0BA-762967FDC6C9/khm-khm-StyleGuide.pdf)
-* [K&#39;iche&#39;](https://download.microsoft.com/download/A/0/3/A03BB7F5-8743-480A-9EFD-CF01AC7C8D7B/quc-gtm-StyleGuide.pdf)
-* [Kinyarwanda](https://download.microsoft.com/download/0/8/8/088A190F-55A3-47F3-AC30-F89EBF7FB08A/kin-rwa-StyleGuide.pdf)
-* [Kiswahili](https://download.microsoft.com/download/6/A/8/6A83412C-9E2F-49A1-9CD6-9DD18566355D/swa-tza-StyleGuide.pdf)
 * [Konkani](https://download.microsoft.com/download/9/b/9/9b96b721-20e4-4b5b-9943-1a655b3078c4/kok-ind-StyleGuide.pdf)
 * [Korean](https://download.microsoft.com/download/5/b/6/5b62389f-4e3b-4c77-bc18-94efba2fa7bb/kor-kor-Style%20Guide.pdf)
-* [Kyrgyz](https://download.microsoft.com/download/D/E/B/DEBDD137-EB06-405D-A2FA-BE88043A39A5/kyr-kgz-StyleGuide.pdf)
-* [Lao](https://download.microsoft.com/download/9/C/E/9CEFE06A-5548-4E79-AAD4-C26693189DD2/lao-lao-StyleGuide.pdf)
 * [Latvian](https://download.microsoft.com/download/c/9/c/c9c901d9-8d73-4a07-bda2-e9177cc0e965/lav-lva-StyleGuide.pdf)
 * [Lithuanian](https://download.microsoft.com/download/7/4/6/74633d8a-e88f-4ad1-954b-b9cce823fd3b/lit-ltu-StyleGuide.pdf)
 * [Luxembourgish](https://download.microsoft.com/download/0/3/0/0300258e-06f3-46d9-80e1-5b7b77e514cf/ltz-lux-StyleGuide.pdf)
@@ -82,14 +60,11 @@ Microsoft Style Guides are collections of rules that define language and style c
 * [Malay (Malaysia)](https://download.microsoft.com/download/e/7/5/e75bbabf-ac3b-4112-bc2f-28f825a91d90/may-mys-StyleGuide.pdf)
 * [Malayalam](https://download.microsoft.com/download/E/6/F/E6F96E6F-0052-4FCC-AAA5-45A5ABEFA640/mal-ind-StyleGuide.pdf)
 * [Maltese](https://download.microsoft.com/download/1/0/2/102653A7-0A99-4F2A-96BB-50BF455E62B2/mlt-mlt-StyleGuide.pdf)
-* [M?ori](https://download.microsoft.com/download/4/e/d/4ed993e5-5c80-41f9-9d05-cac0c5a10dbd/mao-nzl-StyleGuide.pdf)
 * [Marathi](https://download.microsoft.com/download/4/8/8/4889f570-623c-4c8b-a42f-51d64e4474aa/mar-ind-StyleGuide.pdf)
-* [Mongolian (Cyrillic)](https://download.microsoft.com/download/2/4/1/241a666d-e4b4-4752-86e9-0bed28283e55/mon-mng-styleguide.pdf)
 * [Nepali](https://download.microsoft.com/download/A/F/2/AF2A5739-C56B-44AE-8D21-1EE5F26E8A6C/nep-npl-StyleGuide.pdf)
 * [Norwegian Bokm&#229;l](https://download.microsoft.com/download/2/2/3/22303bf7-ffda-4066-81e7-1401d7ab9105/nob-nor-StyleGuide.pdf)
 * [Norwegian Nynorsk](https://download.microsoft.com/download/8/4/c/84c89484-c08b-4205-a124-3155099d5f91/non-nor-StyleGuide.pdf)
 * [Odia](https://download.microsoft.com/download/A/E/F/AEF09212-6102-484C-8F7D-39FFFCAACC97/ori-ind-StyleGuide.pdf)
-* [Pashto](https://download.microsoft.com/download/B/0/2/B022FCF2-5C95-4500-AA15-C4290859B304/pus-afg-StyleGuide.doc)
 * [Persian](https://download.microsoft.com/download/3/e/c/3ec58a9a-70ff-4a31-8cfd-d185983111be/fas-irn-StyleGuide.pdf)
 * [Polish](https://download.microsoft.com/download/b/d/c/bdc253ac-dbf3-4261-86a2-ffedfa718425/pol-pol-StyleGuide.pdf)
 * [Portuguese (Brazil)](https://download.microsoft.com/download/8/e/3/8e349e32-9eb9-4b63-9909-7586b94a24dd/por-bra-Style%20Guide.pdf)
@@ -101,10 +76,6 @@ Microsoft Style Guides are collections of rules that define language and style c
 * [Scottish Gaelic](https://download.microsoft.com/download/0/6/A/06A8E943-9546-4230-AD42-D1F592B9276E/gla-gbr-StyleGuide.pdf)
 * [Serbian (Cyrillic)](https://download.microsoft.com/download/9/1/9/9197747b-6d76-4039-9963-82958eb4d6a3/scc-scg-Style%20Guide.pdf)
 * [Serbian (Latin)](https://download.microsoft.com/download/7/3/1/7312fa5f-ac47-438b-906b-3f141421aa59/srp-scg-StyleGuide.pdf)
-* [Sesotho sa Leboa](https://download.microsoft.com/download/7/3/0/7302adbd-30a7-425d-b626-d73474ebee13/nso-zaf-StyleGuide.pdf)
-* [Setswana](https://download.microsoft.com/download/f/2/4/f24aebc7-53d0-4f46-8525-939fd0473b94/tsn-zaf-StyleGuide.pdf)
-* [Sindhi](https://download.microsoft.com/download/B/1/6/B16204E6-2095-44A6-A32E-2AA781D5831A/snd-pak-StyleGuide.pdf)
-* [Sinhala](https://download.microsoft.com/download/B/B/E/BBEDEC11-40F4-4AC4-B4A0-7BFF1B51CDC1/sin-lka-StyleGuide.pdf)
 * [Slovak](https://download.microsoft.com/download/2/9/8/298bd25a-ac5b-4700-ab57-a86e0c268a78/slk-svk-StyleGuide.pdf)
 * [Slovenian](https://download.microsoft.com/download/0/d/7/0d705b3b-662f-4d88-b35e-3b166941c6ce/slv-svn-StyleGuide.pdf)
 * [Spanish (Neutral)](https://download.microsoft.com/download/4/3/1/431d9836-40dc-4f2b-aafc-def5c7b5d0f3/spa-neu-StyleGuide.pdf)
@@ -112,21 +83,18 @@ Microsoft Style Guides are collections of rules that define language and style c
 * [Spanish (Spain)](https://download.microsoft.com/download/9/a/1/9a19beca-597c-417b-a2c2-0f1ea5a1e6c3/spa-esp-Style%20Guide.pdf)
 * [Spanish (US)](https://download.microsoft.com/download/8/9/a/89ae1f7a-6c96-4f75-b51c-5590735ee810/spa-usa-StyleGuide.pdf)
 * [Swedish](https://download.microsoft.com/download/5/0/9/5095f52b-dd67-4951-9afa-c15bb1696a4a/swe-swe-StyleGuide.pdf)
-* [Tajik](https://download.microsoft.com/download/1/4/C/14C1D8A7-54AA-4631-BAD6-56450EB35F27/taj-taj-StyleGuide.pdf)
 * [Tamil](https://download.microsoft.com/download/5/0/7/5076DAEA-8D54-4294-A1DE-B274230CEEC1/tam-tam-StyleGuide.pdf)
 * [Tatar](https://download.microsoft.com/download/4/8/2/4825B7B4-FDA5-4F66-B475-0CC6A6B4E13F/tat-rus-StyleGuide.pdf)
 * [Telugu](https://download.microsoft.com/download/3/9/2/39283c08-4592-4de9-b0fa-bccce6535cef/tel-ind-StyleGuide.pdf)
-* [Tigrinya](https://download.microsoft.com/download/1/6/1/16111696-2AE4-40DC-A5B5-B441E246C767/tir-eth-StyleGuide.pdf)
 * [Thai](https://download.microsoft.com/download/3/f/2/3f236167-639e-46f2-8201-554c36bcbf31/tha-tha-StyleGuide.pdf)
 * [Turkish](https://download.microsoft.com/download/c/7/e/c7e1f405-1a5a-418d-a56d-3a8c183cabd9/tur-tur-StyleGuide.pdf)
-* [Turkmen](https://download.microsoft.com/download/C/D/6/CD6A8CDD-961F-42AD-AAE2-23748239B012/tuk-tkm-StyleGuide.pdf)
 * [Ukrainian](https://download.microsoft.com/download/6/4/a/64a8b98e-e69f-47c9-96dd-f8bc55c176c6/ukr-ukr-StyleGuide.pdf)
-* [Uyghur](https://download.microsoft.com/download/C/E/6/CE629987-6AEA-4147-950D-F47CB80AF25A/uig-chn-StyleGuide.pdf)
 * [Urdu](https://download.microsoft.com/download/d/a/0/da076f1d-0fc1-4336-9b9b-97159456bae9/urd-pak-StyleGuide.pdf)
 * [Uzbek](https://download.microsoft.com/download/6/4/7/64738708-0923-4A8F-92D0-DB806A252666/uzb-uzb-StyleGuide.pdf)
 * [Valencian](https://download.microsoft.com/download/2/a/8/2a8582a1-54c7-48dc-9b6d-1dba0aa41982/val-esp-StyleGuide.pdf)
 * [Vietnamese](https://download.microsoft.com/download/b/f/e/bfecb1b4-21ab-48fd-a48c-c2471b026f8f/vie-vnm-StyleGuide.pdf)
 * [Welsh](https://download.microsoft.com/download/4/6/9/4699a67d-796a-400f-961e-579b3ece84bb/wel-gbr-StyleGuide.pdf)
-* [Wolof](https://download.microsoft.com/download/8/4/8/84809F30-9ADB-414A-AEE9-35A71BAA10D6/wol-sen-StyleGuide.pdf)
-* [Yoruba](https://download.microsoft.com/download/F/4/C/F4CC19BB-7FA4-4B09-9450-E1CBC785745C/yor-nga-styleguide.pdf)
 
+## Developing English-language apps: Microsoft Writing Style Guide
+
+The [Microsoft Writing Style Guide](/style-guide/welcome/) provides essential guidance for developers and content creators who design English-language apps, documentation, marketing, and reference material for and about Microsoft products.
