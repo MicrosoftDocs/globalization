@@ -11,10 +11,8 @@ Microsoft Terminology can be used to develop localized versions of applications 
 
 ## Microsoft Terminology Search
 
-You can query Microsoft Terminology via the <a href="https://msit.powerbi.com/view?r=eyJrIjoiYjM4MzYyNGQtNjU1MS00ZWE2LTlkY2YtNzllYWVmMWRkMDc4IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" target="_blank">Microsoft Terminology Search</a> page. [Microsoft terminology](./microsoft-terminology.md) is also provided in .tbx format, an industry standard for terminology exchange.
+You can query Microsoft Terminology via the <a href="https://msit.powerbi.com/view?r=eyJrIjoiYjM4MzYyNGQtNjU1MS00ZWE2LTlkY2YtNzllYWVmMWRkMDc4IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" target="_blank">Microsoft Terminology Search</a> page.
 
 ## Microsoft Terminology
 
-Using the following links, you can download Microsoft terminology in .tbx format, an industry standard for terminology exchange.
-
-* Afrikaans
+You can download Microsoft terminology in .tbx format, an industry standard for terminology exchange, from the [Microsoft Download Center](https://download.microsoft.com/download/b/2/d/b2db7a7c-8d33-47f3-b2c1-ee5e6445cf45/MicrosoftTermCollection.zip).
