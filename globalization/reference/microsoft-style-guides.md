@@ -22,7 +22,7 @@ Localization Style Guides are collections of rules that define language and styl
 * [Bosnian (Latin)](https://download.microsoft.com/download/4/4/c/44cd9e84-9003-4200-ab89-c31b038e9795/bos-bih-StyleGuide.pdf)
 * [Bulgarian](https://download.microsoft.com/download/6/6/8/66825d50-e7e0-404e-981e-ca9b6da7db19/bul-bgr-StyleGuide.pdf)
 * [Catalan](https://download.microsoft.com/download/e/a/0/ea0ce060-963f-46bd-a0c2-eb47e7bad701/cat-esp-StyleGuide.pdf)
-* [Cherokee](https://download.microsoft.com/download/1/5/d/15d3ddc6-7403-4366-be99-af5247adef1c/chr-chr-styleguide.pdf)
+* [Cherokee](https://download.microsoft.com/download/4/a/3/4a372197-0042-4cb0-a13b-7decf7132c26/chr-chr-styleguide.pdf)
 * [Chinese (Simplified)](https://download.microsoft.com/download/1/5/9/159cb91c-b61b-4385-97ca-80ccc7ff1fa0/zho-chn-StyleGuide.pdf)
 * [Chinese (Traditional)](https://download.microsoft.com/download/2/9/3/293e6d41-ba40-451b-a41e-94bdb6242ae3/zho-twn-StyleGuide.pdf)
 * [Croatian](https://download.microsoft.com/download/0/6/2/0626b4d3-ed24-4c11-8676-ec5aa03576c7/hrv-hrv-StyleGuide.pdf)
