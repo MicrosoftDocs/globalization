@@ -43,9 +43,10 @@ Here is a summary of areas that should be validated to ensure localizability.
 The conventions and formats of various kinds of data vary by locale.
 A global application must be able to handle user's data by the conventions and standards of the user's locale.
 
-* [Calendars, date, and time](../locale/calendar-date-time.md)
+* [Calendars](../locale/calendars.md)
 * [Case mapping](../text/case-mapping.md)]
 * [Currency formatting](../locale/currency-formats.md)
+* [Date and time formatting](../locale/date-time-formats.md)
 * [Measurement units](../locale/measurement-units.md)
 * [Number formatting](../locale/number-formatting.md)
 * [Paper and envelope size](../locale/paper-size.md)

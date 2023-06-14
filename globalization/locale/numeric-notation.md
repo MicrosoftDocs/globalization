@@ -44,4 +44,4 @@ The Hindu-Arabic numeral system (also called Indo-Arabic numeral system or Arabi
 
 The numeral system and the digits used can depend on the context. For example, in Korea, Arabic numerals are commonly used; however, hanja-eo (Sino-Korean) numerals can be used when discussing time and goyu-eo (native Korean) numerals can be used when counting objects.
 
-An algorithmic system is Roman numerals, where I, V, X, L, C, D, and M, represent 1, 5, 10, 50, 100, 500, and 1,000 respectively.
+An example of an algorithmic system is Roman numerals, where I, V, X, L, C, D, and M, represent 1, 5, 10, 50, 100, 500, and 1,000 respectively.
