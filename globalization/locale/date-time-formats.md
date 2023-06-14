@@ -6,7 +6,7 @@ ms.date: 06/13/2023
 
 # Formatting dates and times
 
-To identify a unique point in time, you need to know the time, the date, and the time zone. This information can then be displayed to the user in a variety of formats. Each country and/or region has standards or conventions for displaying dates and times.
+To identify a unique point in time, you need to know the time, the date, and the time zone. This information can then be displayed to the user in various formats. Each country and/or region has standards or conventions for displaying dates and times.
 
 ## Date formats
 
@@ -38,15 +38,16 @@ Times can also be displayed in long and short formats. Differences in format can
 
 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) is a standard that defines a representation of dates, times, and UTC offset that can be used to specify a unique point in time. For example, 12:34 PM on January 2nd, 2002 in New York, USA, can be represented as 20020102T123400-0500. ISO 8601 also specifies formats for durations and time intervals.
 
-## Additional date/time considerations
+## Other date/time considerations
 
-ISO 8601 specifies that Monday is the first day of the week. However, Sunday and Saturday are also used as the first day of the week, depending on the country. Similarly, conventions for the weekdays/workweek and the weekend vary by country and can comprise one or two days, with Friday/Saturday or Saturday/Sunday being common combinations of weekend days.
+ISO 8601 specifies that Monday is the first day of the week. However, Sunday and Saturday are also used as the first day of the week, depending on the country/region. Similarly, conventions for the weekdays/workweek and the weekend vary by country/region and can comprise one or two days, with Friday/Saturday or Saturday/Sunday being common combinations of weekend days.
 
-When using 12-hour time conventions, there is no standard for representing midnight and noon. Noon can be displayed as 12:00 a.m., 00:00 p.m., or 12:00 p.m. To avoid ambiguity, consider using text to represent midnight and noon, or consider using a nearby time (11:59 p.m. or 12:01 a.m.) to indicate the start, middle, or end of a day.
+When using 12-hour time conventions, there's no standard for representing midnight and noon. Noon can be displayed as 12:00 a.m., 00:00 p.m., or 12:00 p.m. To avoid ambiguity, consider using text to represent midnight and noon, or consider using a nearby time (11:59 p.m. or 12:01 a.m.) to indicate the start, middle, or end of a day.
 
-The use of daylight-saving time creates two kinds of anomalous times: invalid times and ambiguous times. See [Time zones](time-zones.md) for more information about daylight-saving time and converting date/time between different time zones.
+The use of daylight-saving time creates two kinds of anomalous times: invalid times and ambiguous times. For more information about daylight-saving time and converting date/time between different time zones, see [Time zones](time-zones.md).
+
 International Atomic Time (TAI) is measured using atomic clocks and is the basis for UTC (Coordinated Universal Time). Universal time (UT1) is calculated based on Earth’s rotation around the sun. The UTC standard allows for leap seconds to be added to compensate for the difference between TAI and UT1 due to irregularities and slowdown in the Earth’s rotation, such that the difference between UTC and UT1 is within 0.9 seconds. A leap second is reflected as a time of 23:59:60, prior to starting a new day.
 
 ## Using locale-aware methods for date/time formatting
 
-Both .NET and Java permit storing date/time data as UTC which allows for exchange of date/time information between systems. However, displaying date and time information depends on locale and context. Fortunately, libraries like ICU, frameworks like .NET, and programming languages like Java help you format dates and times.
+Both .NET and Java permit storing date/time data as UTC, which allows for exchange of date/time information between systems. However, displaying date and time information depends on locale and context. Fortunately, libraries like ICU, frameworks like .NET, and programming languages like Java help you format dates and times.

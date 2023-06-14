@@ -8,7 +8,7 @@ ms.date: 06/13/2023
 
 Every country/region has its own standards and conventions for representing numbers. Differences include the character used for the decimal separator, how negative numbers are represented, and how currencies are displayed. Fortunately, libraries like ICU, frameworks like .NET, and programming languages like Java help you display and parse numbers in the correct format for users’ locales.
 
-This topic will discuss some of the differences in number formats by country/region.
+This article discusses some of the differences in number formats by country/region.
 
 ## Decimal separation
 
@@ -18,11 +18,11 @@ The decimal separator can depend on context. For example, in Switzerland, the co
 
 ## Number grouping and separation
 
-To make it easier to read large numbers, grouping can be used for both the integer and fractional part of the number. European languages often use groups of 3 digits based on the 10^3 names of higher power numbers, whereas China, Japan, and Korea commonly use groups of 4 digits based on the 10^4 names of higher power numbers.
+To make it easier to read large numbers, grouping can be used for both the integer and fractional part of the number. European languages often use groups of three digits based on the 10^3 names of higher power numbers, whereas China, Japan, and Korea commonly use groups of four digits based on the 10^4 names of higher power numbers.
 
-The South Asian grouping system used in countries like India starts grouping at 4 digits, then then every second power of 10. For example, 10^7 is represented as 1,00,000.
+The South Asian grouping system used in countries/regions like India starts grouping at four digits, then every second power of 10. For example, 10^7 is represented as 1,00,000.
 
-Digit grouping rules can specify when grouping should occur. In Germany, the DIN 1333 standard specifies that a space should be used as a separator starting at 5 digits, so 1234 but 12&nbsp;345. Note that the standard might differ from normal use, which for Germany is using the comma as the grouping separator (12,345).
+Digit grouping rules can specify when grouping should occur. In Germany, the DIN 1333 standard specifies that a space should be used as a separator starting at five digits, so 1234 but 12&nbsp;345. The standard might differ from normal use, which for Germany is using the comma as the grouping separator (12,345).
 
 Like decimal separation, various characters can be used as the grouping separator, including space (U+0020), comma (,&nbsp;U+002C), and dot (.&nbsp;U+002E). The separator used can also depend on context. For example, in the United States, the comma is typically used for the grouping separator; however, several publication standards follow international standards in using either a space or a thin space character.
 

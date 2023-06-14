@@ -6,11 +6,11 @@ ms.date: 06/13/2023
 
 # Currency formats
 
-Like number formats, each country has its own standards and conventions for representing currency values. Libraries like ICU, frameworks like .NET, and programming languages like Java give you a lot of control for displaying currency values. These frameworks allow you to display currency values using the user’s locale, the locale of the currency, or any other locale.
+Like number formats, each country/region has its own standards and conventions for representing currency values. Libraries like ICU, frameworks like .NET, and programming languages like Java give you control over displaying currency values. These frameworks allow you to display currency values using the user’s locale, the locale of the currency, or any other locale.
 
 ## Currency codes and symbols
 
-When displaying a currency, you can typically control whether to display an [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) currency code or a currency symbol. The ISO 4217 currency code is typically the ISO 3166 country code followed by a letter corresponding to the currency name. Many countries use the same currency symbol and currency name, so when the symbol might be ambiguous, a combination of country code and symbol can be used. For example,
+When displaying a currency, you can typically control whether to display an [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) currency code or a currency symbol. The ISO 4217 currency code is typically the ISO 3166 country code followed by a letter corresponding to the currency name. Many countries/regions use the same currency symbol and currency name, so when the symbol might be ambiguous, a combination of country code and symbol can be used. For example,
 
 - ISO 4217 currency code: USD
 - Currency symbol: $
@@ -32,6 +32,6 @@ You might need to format currency values for a different currency than the curre
 
 - The currency symbol or code is unambiguous; for example, you can differentiate between the Canadian Dollar and the Australian Dollar.
 - The value uses the appropriate decimal separation, grouping size, and grouping symbol. It might be appropriate to use the user’s locale settings or the currency’s locale settings.
-- The value uses the appropriate fractional amounts; for example, the smallest Japanese denomination is 1 yen, so fractional amounts are typically not shown when showing prices.
+- The value uses the appropriate fractional amounts; for example, the smallest Japanese denomination is one yen, so fractional amounts are typically not shown when showing prices.
 
 Displaying numeric values using the correct format for the currency is a separate issue from ensuring that the amount is appropriate or equivalent. You might need to apply an exchange rate before formatting a value for the currency.

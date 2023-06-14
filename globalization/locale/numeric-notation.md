@@ -8,8 +8,8 @@ ms.date: 06/13/2023
 
 Numeric notation is a way of expressing numerical values using a numbering system. Numbering systems can be classified into two types:
 
-- Numeral systems, where a set of digits is used to represent numbers using place value notation (e.g., Hindu-Arabic numeral system)
-- Algorithmic system, where a set of rules is used to define how numbers are represented (e.g., Roman numeral system)
+- Numeral systems, where a set of digits is used to represent numbers using place value notation (for example, the Hindu-Arabic numeral system)
+- Algorithmic system, where a set of rules is used to define how numbers are represented (for example, the Roman numeral system)
 
 The Hindu-Arabic numeral system (also called Indo-Arabic numeral system or Arabic numeral system) uses combinations of 10 digits to represent any numerical value. The Hindu-Arabic numeral system is most represented using Arabic numerals (also called Western Arabic numerals or Latin numerals): 0123456789. Several other sets of digits are used:
 
@@ -28,7 +28,7 @@ The Hindu-Arabic numeral system (also called Indo-Arabic numeral system or Arabi
 | Kannada | ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯ |
 | Khmer | ០ ១ ២ ៣ ៤ ៥ ៦ ៧ ៨ ៩ |
 | Korean (한자어 숫자/Sino-Korean numbers) | 일 이 삼 사 오 육 칠 팔 구… |
-| Korean (고유어 숫자/native Korean numbers) | 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉…. |
+| Korean (고유어 숫자/native Korean numbers) | 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉… |
 | Lao | ໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘ ໙ |
 | Malayalam | ൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯ |
 | Mon–Burmese | ၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉ |
