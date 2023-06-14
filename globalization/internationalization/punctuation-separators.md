@@ -16,7 +16,7 @@ Lists, especially when generated from data structures like arrays, lists, and se
 
 - Various style guides, both in American and British English, recommend or oppose the use of the serial (Oxford) comma for comma-separated lists.
 - While comma-separated lists are common in English, semicolons can also be used as a list separator when the list items contain commas.
-- Different list separators are used in other languages. Semicolons are often used when the decimal separator is a comma. Chinese and Japanese use the ideographic comma (、U+3001) to separate list items.
+- Different list separators are used in other languages. Semicolons are often used when the decimal separator is a comma. Chinese and Japanese use the ideographic comma (、&nbsp;U+3001) to separate list items.
 - Japanese uses different coordinating conjunctions depending on whether the list is finite (all items are specified) or contains other items that are not specified.
 
 Guidelines for localization involving punctuation and separators:
