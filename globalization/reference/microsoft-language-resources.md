@@ -19,4 +19,4 @@ Microsoft Terminology can be used to ensure that terminology in your localized v
 
 ## Regional Formats
 
-You can browse regional formats for the locales used in various versions of Windows via the <a href="https://www.microsoft.com">Regional Formats TODO: temporary link</a> page.
+You can browse regional formats for the locales used in various versions of Windows via the <a href="https://msit.powerbi.com/view?r=eyJrIjoiNWQyNGMxZjktNzhhMS00NjVhLWEwNTYtMDc5NDI3NjY3ZDhiIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9">Regional Formats</a> page.
