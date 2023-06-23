@@ -8,6 +8,8 @@ author: jowilco
 
 # Latin American Keyboard
 
+KLID: 0000080A
+
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
 <iframe src="kbdla.html" height="300"></iframe>

@@ -65,8 +65,8 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Dzongkha](keyboards/kbddzo.md) | 00000C51 | 10 |
 | <a name="E"></a>E | [English (India)](keyboards/kbdinen.md) | 00004009 | 8 |
 | &nbsp; | [Estonian](keyboards/kbdest.md) | 00000425 | pre-XP |
-| &nbsp; | [Faeroese](keyboards/kbdfo.md) | 00000438 | pre-XP |
-| <a name="F"></a>F | [Finnish](keyboards/kbdfi.md) | 0000040B | pre-XP |
+| <a name="F"></a>F | [Faeroese](keyboards/kbdfo.md) | 00000438 | pre-XP |
+| &nbsp; | [Finnish](keyboards/kbdfi.md) | 0000040B | pre-XP |
 | &nbsp; | [Finnish with Sami](keyboards/kbdfi1_1.md) | 0001083B | XP SP2 |
 | &nbsp; | [French](keyboards/kbdfr.md) | 0000040C | pre-XP |
 | &nbsp; | [Futhark](keyboards/kbdfthrk.md) | 00120C00 | 8.1 |
