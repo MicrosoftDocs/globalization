@@ -11,12 +11,6 @@ Microsoft provides you with access to a variety of resources on Microsoft Learn'
 
 **BY USING THE GLOBALIZATION MATERIALS, YOU ACCEPT AND COMPLY WITH THESE TERMS. IF YOU DO NOT ACCEPT THEM, DO NOT USE THE GLOBALIZATION MATERIALS.**
 
-1. This is
-1. a parent numbered list
-   1. and this is
-   1. a nested numbered list
-1. (fin)
-
 1. LICENSE.
    1. Use Rights. Microsoft grants you a non-exclusive, nontransferable, royalty-free, license to use, copy, and distribute the Globalization Materials. For any Globalization Materials you distribute, you must:
       1. require distributors and external end users to agree to terms that protect it at least as much as this agreement
@@ -39,4 +33,4 @@ Microsoft provides you with access to a variety of resources on Microsoft Learn'
    1. anything related to the services and content (including code) on third party Internet sites, or third party programs or documents; and
    1. claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
 
-It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
+   It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
