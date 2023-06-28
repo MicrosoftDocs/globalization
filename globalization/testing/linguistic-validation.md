@@ -14,7 +14,7 @@ Later on, review can be conducted in the context of the running application ([In
 Ideally, you complete both early linguistic validation and in-context reviews before release.
 
 Linguistic reviews should be performed by native speakers of the language.
-Using in-country reviewers is highly recommended to ensure that the localized content is aligned with target market expectations.
+Using in-country/region reviewers is highly recommended to ensure that the localized content is aligned with target market expectations.
 
 A linguistic reviewer looks at the following aspects:
 
@@ -43,10 +43,10 @@ Samples may be chosen randomly or focus on known or probable problem areas.
 
 * Consider whether to use the same translation supplier or engage a third-party reviewer to ensure an objective validation.
 
-* Many languages are spoken in multiple countries/regions and cultures, so expectations for in-country reviews need to be clearly set.
+* Many languages are spoken in multiple countries/regions and cultures, so expectations for in-country/region reviews need to be clearly set.
   For example, Spanish, French, and Arabic are spoken in multiple countries and regions, with significant vocabulary and terminology differences.
   The most common strategy for such languages is to release a single "neutral" version of the language that can be made acceptable among target markets.
   For some languages like Portuguese, the differences between regions are so significant that the "neutral" language may not be appropriate.
 
-* In-country reviews also help validate the need for adding extra language variants to cater for significant linguistic differences among markets.
+* In-country/region reviews also help validate the need for adding extra language variants to cater for significant linguistic differences among markets.
   Market size and terminology differences could be factors in choosing to add a specific variant of a language, such as for French for Canada, and Spanish for Mexico.
