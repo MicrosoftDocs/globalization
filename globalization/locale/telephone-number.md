@@ -10,7 +10,7 @@ Like addresses, the format for telephone numbers around the world varies signifi
 Unlike addresses, there is a central body that codifies most of the telephone number formats used across the world.
 Once again, input fields and the routines that process information dealing with telephone numbers should be able to handle the variety of formats.
 
-Examples of telephone numbers for selected countries:
+Examples of telephone numbers for selected countries/regions:
 
 | Country/Region | Format |
 | -- | -- |
