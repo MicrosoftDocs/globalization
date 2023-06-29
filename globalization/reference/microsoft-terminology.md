@@ -11,7 +11,7 @@ Microsoft Terminology can be used to develop localized versions of applications 
 
 ## Microsoft Terminology Search
 
-You can query Microsoft Terminology via the <a href="https://msit.powerbi.com/view?r=eyJrIjoiYjM4MzYyNGQtNjU1MS00ZWE2LTlkY2YtNzllYWVmMWRkMDc4IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" target="_blank">Microsoft Terminology Search</a> page.
+You can query Microsoft Terminology via the <a href="https://msit.powerbi.com/view?r=eyJrIjoiODJmYjU4Y2YtM2M0ZC00YzYxLWE1YTktNzFjYmYxNTAxNjQ0IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" target="_blank">Microsoft Terminology Search</a> page.
 
 ## Microsoft Terminology
 
