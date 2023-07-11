@@ -2,7 +2,7 @@
 title: Address format
 description: One of the most nonstandard formatted items you'll need to deal with in globalization is address formats.
 ms.assetid: d02aec53-1433-4a43-8e20-73d9886c7a5c
-ms.date: 01/24/2017
+ms.date: 07/10/2023
 ---
 # Address format
 
@@ -20,7 +20,7 @@ The current implementation of WIndows NLS APIs and the .NET Framework do not pro
 The best approach is to:
 
 - Divide the address into multiple fields for street number, building number, city, country/region, and postal code.
-  Note that terminology can be sensitive: some places such as Taiwan are considered "regions" by some nations and "countries" by others.
+  Note that terminology can be sensitive: some places are considered "regions" by some nations and "countries" by others.
 
 - Don't expect that all predefined fields should contain a value (such as the previous example of postal codes).
 
