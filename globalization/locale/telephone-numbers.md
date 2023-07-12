@@ -10,11 +10,11 @@ Telephone numbers are typically assigned to consumers of landline, mobile, and s
 
 The [E.164 standard](https://www.itu.int/rec/T-REC-E.164), published by the International Telecommunication Union as “The international public telecommunication numbering plan” is an open numbering plan that defines the format for international telephone numbers. The standard requires that a telephone number has a maximum of 15 digits, separated as the first one to three digits as a country code and the remaining digits corresponding to the subscriber’s telephone number.
 
-The [North American Numbering Plan](https://nationalnanpa.com/) (NANP), used for telephone numbers in countries such as USA, Canada, and Jamaica, is a closed numbering plan. All countries in the NANP have a country code of 1. The subscriber number is 10 digits, with the first three digits being an area code that corresponds to a country or a regional service area. When calling a number within the area code, it might be possible to omit the area code. Being able to omit the area code is becoming less common, especially in the USA.
+The [North American Numbering Plan](https://nationalnanpa.com/) (NANP), used for telephone numbers in countries such as United States, Canada, and Jamaica, is a closed numbering plan. All countries in the NANP have a country code of 1. The subscriber number is 10 digits, with the first three digits being an area code that corresponds to a country or a regional service area. When calling a number within the area code, it might be possible to omit the area code. Being able to omit the area code is becoming less common, especially in the United States.
 
 A trunk prefix is one or more digits that must be entered prior to entering a subscriber’s telephone number. An international call prefix is an example of a trunk prefix that allows you to enter a country code when calling a subscriber in another country/region. Common international call prefixes are 011 (used within the NANP) or 00 (recommended by the International Telecommunication Union). As the international call prefix varies by country/region, the plus (+) sign is used to represent the international call prefix. Many mobile phones allow the plus (+) sign to be used instead of entering the appropriate international call prefix. Calling a domestic number might also require a trunk prefix, typically 0. The domestic trunk prefix is often omitted when a call originates from a different country/region.
 
-When displaying a subscriber’s telephone number in the USA, several formats are common:
+When displaying a subscriber’s telephone number in the United States, several formats are common:
 
 - (XXX) XXX-XXXX
 - XXX-XXX-XXXX

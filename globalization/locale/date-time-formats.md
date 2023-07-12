@@ -16,7 +16,7 @@ Dates can be displayed in long and short formats. Differences in format can incl
 - An indicator for whether the year is earlier or later than the epoch for the calendar, such as BCE (before Common Era) when using the Gregorian calendar.
 - The order of the year, month, and day information, for example:
   - South Korea – year-month-day
-  - USA – month-day-year
+  - United States – month-day-year
   - Germany – day-month-year
 - Four- and two-digit years. Note that two-digit years can lead to ambiguous dates.
 - Month number or name. The month number can include or omit a leading zero. The month name can be an abbreviation or the full name.
@@ -36,7 +36,7 @@ Times can also be displayed in long and short formats. Differences in format can
 - Separators, commonly colons or periods, but can be characters indicating hour, minute, or second.
 - The use of a time zone designator, typically the offset in hours and minutes from UTC (Coordinated Universal Time), or Z to indicate UTC.
 
-[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) is a standard that defines a representation of dates, times, and UTC offset that can be used to specify a unique point in time. For example, 12:34 PM on January 2nd, 2002 in New York, USA, can be represented as 20020102T123400-0500. ISO 8601 also specifies formats for durations and time intervals.
+[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) is a standard that defines a representation of dates, times, and UTC offset that can be used to specify a unique point in time. For example, 12:34 PM on January 2nd, 2002 in New York, United States, can be represented as 20020102T123400-0500. ISO 8601 also specifies formats for durations and time intervals.
 
 ## Other date/time considerations
 

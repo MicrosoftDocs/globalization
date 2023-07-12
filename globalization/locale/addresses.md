@@ -6,13 +6,13 @@ ms.date: 06/13/2023
 
 # Personal names and postal address formats
 
-A common issue for internationalizing products that were initially created for a US market is collecting and displaying users’ names and postal addresses. Name order in the US is typically given name (first name), middle name, then family name (last name, surname). US postal addresses generally follow a format of:
+A common issue for internationalizing products that were initially created for a United States market is collecting and displaying users’ names and postal addresses. Name order in the United States is typically given name (first name), middle name, then family name (last name, surname). United States postal addresses generally follow a format of:
 
 {Recipient name}<br/>
 {Street address, number followed by street name}<br/>
 {City}, {State} {ZIP+4 code}
 
-For customers in markets other than the USA, you shouldn't assume that name order or address format follows the US conventions.
+For customers in markets other than the United States, you shouldn't assume that name order or address format follows the United States conventions.
 
 ## Personal names and name order
 
@@ -29,7 +29,7 @@ Name order can also vary by culture. While given name - family name is common in
 
 When designing an interface to collect personal names and the data storage for the information, you should consider whether to have separate fields for family and given names, or one field for the entire name. A single name field allows the user to specify how they would like their name to appear; however, using separate name fields allows the developer to use different levels of formality (for example, using only the user’s first name or referring to the user as Mr. Smith) when communicating with the user. If you choose to use multiple fields, you should ensure that the name order is correct for the target market, both when collecting the data and when addressing the user.
 
-When referring to the user, the level of formality should reflect the expectations of the target market. While it might be appropriate to use a given name for customers in the USA, using only a person’s given name might be considered rude in other markets.
+When referring to the user, the level of formality should reflect the expectations of the target market. While it might be appropriate to use a given name for customers in the United States, using only a person’s given name might be considered rude in other markets.
 
 For some languages, you might want to consider enabling the user to supply the pronunciation of their name. For example, Japanese names written in Kanji can have several pronunciations.
 

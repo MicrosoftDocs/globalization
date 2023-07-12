@@ -22,7 +22,7 @@ To make it easier to read large numbers, grouping can be used for both the integ
 
 The South Asian grouping system used in countries/regions like India starts grouping at four digits, then every second power of 10. For example, 10^7 is represented as 1,00,000.
 
-Digit grouping rules can specify when grouping should occur. In Germany, the DIN 1333 standard specifies that a space should be used as a separator starting at five digits, so 1234 but 12&nbsp;345. The standard might differ from normal use, which for Germany is using the comma as the grouping separator (12,345).
+Digit grouping rules can specify when grouping should occur. In Germany, the DIN 1333 standard specifies that a space should be used as a separator starting at five digits, so a four-digit number could be shown as 1234 but a five-digit number should be shown as 12&nbsp;345. The standard might differ from normal use, which for Germany is using the comma as the grouping separator (12,345).
 
 Like decimal separation, various characters can be used as the grouping separator, including space (U+0020), comma (,&nbsp;U+002C), and dot (.&nbsp;U+002E). The separator used can also depend on context. For example, in the United States, the comma is typically used for the grouping separator; however, several publication standards follow international standards in using either a space or a thin space character.
 

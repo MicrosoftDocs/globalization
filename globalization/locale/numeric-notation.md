@@ -8,10 +8,12 @@ ms.date: 06/13/2023
 
 Numeric notation is a way of expressing numerical values using a numbering system. Numbering systems can be classified into two types:
 
-- Numeral systems, where a set of digits is used to represent numbers using place value notation (for example, the Hindu-Arabic numeral system)
+- Numeral system, where a set of digits is used to represent numbers using place value notation (for example, the Hindu-Arabic numeral system)
 - Algorithmic system, where a set of rules is used to define how numbers are represented (for example, the Roman numeral system)
 
-The Hindu-Arabic numeral system (also called Indo-Arabic numeral system or Arabic numeral system) uses combinations of 10 digits to represent any numerical value. The Hindu-Arabic numeral system is most represented using Arabic numerals (also called Western Arabic numerals or Latin numerals): 0123456789. Several other sets of digits are used:
+The Hindu-Arabic numeral system (also called Indo-Arabic numeral system or Arabic numeral system) uses combinations of 10 digits to represent any numerical value. The Hindu-Arabic numeral system is most represented using Arabic numerals (also called Western Arabic numerals or Latin numerals): 0123456789.
+
+Several other sets of digits are used:
 
 | Script   | Digits used |
 |----------|-------------|

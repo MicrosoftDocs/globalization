@@ -6,7 +6,7 @@ ms.date: 06/13/2023
 
 # Regional settings and formats
 
-Regional settings influence how items like your [date/time](date-time-formats.md), [numeric](number-formatting.md), and [currency](currency-formats.md) data types appear when you apply formatting options. For example, a user in the USA might use forward slashes as a separator and the format month-day-year to enter a date value for a date/time field (for example, 8/29/2019); however, a user in Korea might see the same date using hyphens as a separator and using the format year-month-day (for example, 2019-08-29).
+Regional settings influence how items like your [date/time](date-time-formats.md), [numeric](number-formatting.md), and [currency](currency-formats.md) data types appear when you apply formatting options. For example, a user in the United States might use forward slashes as a separator and the format month-day-year to enter a date value for a date/time field (for example, 8/29/2019); however, a user in Korea might see the same date using hyphens as a separator and using the format year-month-day (for example, 2019-08-29).
 
 This principle also applies to numerical and financial data. Users in the United Kingdom use the English pound symbol (£) to represent local currency in financial data, while users in Germany use the Euro symbol (€).
 
