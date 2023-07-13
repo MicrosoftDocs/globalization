@@ -1,10 +1,10 @@
 ---
-title: Number formats
-description: Discover differences in number formats by country/region, including decimal separators, grouping, and symbols.
+title: Format numbers
+description: Format numeric values based on region standards using locale-aware methods, including decimal separators, grouping, and symbols.
 ms.date: 06/13/2023
 ---
 
-# Number formats
+# Format numbers
 
 Every country/region has its own standards and conventions for representing numbers. Differences include the character used for the decimal separator, how negative numbers are represented, and how currencies are displayed. Fortunately, libraries like ICU, frameworks like .NET, and programming languages like Java help you display and parse numbers in the correct format for users’ locales.
 
@@ -18,7 +18,7 @@ The decimal separator can depend on context. For example, in Switzerland, the co
 
 ## Number grouping and separation
 
-To make it easier to read large numbers, grouping can be used for both the integer and fractional part of the number. European languages often use groups of three digits based on the 10^3 names of higher power numbers, whereas China, Japan, and Korea commonly use groups of four digits based on the 10^4 names of higher power numbers.
+To make it easier to read large numbers, grouping can be used for both the integer and fractional part of the number. European languages often use groups of three digits based on the 10^3 names of higher power numbers, whereas China, Japan, and Korea can use groups of four digits based on the 10^4 names of higher power numbers.
 
 The South Asian grouping system used in countries/regions like India starts grouping at four digits, then every second power of 10. For example, 10^7 is represented as 1,00,000.
 

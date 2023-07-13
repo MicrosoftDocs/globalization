@@ -1,10 +1,10 @@
 ---
-title: Formatting dates and times
-description: Format date/time info to display to users based on region standards using locale-aware methods.
+title: Format dates and times
+description: Format date/time info based on region standards using locale-aware methods.
 ms.date: 06/13/2023
 ---
 
-# Formatting dates and times
+# Format dates and times
 
 To identify a unique point in time, you need to know the time, the date, and the time zone. This information can then be displayed to the user in various formats. Each country and/or region has standards or conventions for displaying dates and times.
 

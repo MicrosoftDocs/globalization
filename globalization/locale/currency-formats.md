@@ -1,10 +1,10 @@
 ---
-title: Currency formats
-description: Display currency values using applicable conventions for the locale.
+title: Format currency values
+description: Format currency values based on region standards using locale-aware methods.
 ms.date: 06/13/2023
 ---
 
-# Currency formats
+# Format currency values
 
 Like number formats, each country/region has its own standards and conventions for representing currency values. Libraries like ICU, frameworks like .NET, and programming languages like Java give you control over displaying currency values. These frameworks allow you to display currency values using the user’s locale, the locale of the currency, or any other locale.
 
