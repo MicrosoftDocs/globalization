@@ -30,4 +30,4 @@ Language settings are closely related to regional settings. Regional settings in
 - [Postal address formats](addresses.md)
 - [Telephone number formats](telephone-numbers.md)
 - [Units of measurement](measurement-units.md)
-- [Punctuation conventions](punctuation-separators.md)
+- [Punctuation conventions](../internationalization/punctuation-separators.md)
