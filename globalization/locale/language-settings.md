@@ -26,8 +26,8 @@ The different variables of a language that your users should be able to set incl
 Language settings are closely related to regional settings. Regional settings include:
 
 - [Numbers](number-formatting.md): For example, how are numbers, including currencies, formatted.
-- [Calendars, date, and time](date-formatting.md): For example, how dates are formatted, what kind of time zones are used, and which day starts a new week.
+- [Calendars, date, and time](date-time-formats.md): For example, how dates are formatted, what kind of time zones are used, and which day starts a new week.
 - [Postal address formats](addresses.md)
-- [Telephone number formats](telephone-number.md)
-- [Units of measurement](units-of-measurement.md)
-- Punctuation conventions
+- [Telephone number formats](telephone-numbers.md)
+- [Units of measurement](measurement-units.md)
+- [Punctuation conventions](punctuation-separators.md)
