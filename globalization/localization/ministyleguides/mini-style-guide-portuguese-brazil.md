@@ -60,7 +60,7 @@ _Our style_: :::no-loc text="Convide seus amigos para jogar online.":::
 
 Trademarked names and the name _Microsoft Corporation_ shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. A list of [Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference.
 
-Application and product names that are not descriptive names are often trademarked or can potentially be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names that aren't descriptive are trademarked, too (for example, IntelliSense). Before translating application, product, or feature names, check the [Microsoft Language Portal](../../reference/microsoft-style-guides.md) or contact the Microsoft team.
+Application and product names that are not descriptive names are often trademarked or can potentially be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names that aren't descriptive are trademarked, too (for example, IntelliSense). Before translating application, product, or feature names, check the [full style guide](../../reference/microsoft-style-guides.md) or contact the Microsoft team.
 
 When an application or product name contains a preposition, it's recommended that you translate the preposition, unless there are specific trademark or copyright instructions preventing the translation
 

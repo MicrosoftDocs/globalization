@@ -6,7 +6,7 @@ ms.date: 05/28/2019
 
 # Top 10 Tips for Microsoft Translation into Spanish (Spain)
 
-Are you helping with translation into Spanish (Spain), but don't have time to study all aspects of the Spanish (Spain) Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Spanish (Spain), but don't have time to study all aspects of the [Spanish (Spain) Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Translate meaning not words
 

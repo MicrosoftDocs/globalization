@@ -6,7 +6,7 @@ ms.date: 03/19/2019
 
 # Top 10 Tips for Microsoft Translation into Turkish
 
-You are helping with translation into Turkish, but don't have time to study all aspects of the Turkish Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
+You are helping with translation into Turkish, but don't have time to study all aspects of the [Turkish Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Meaning and intent of the original
 

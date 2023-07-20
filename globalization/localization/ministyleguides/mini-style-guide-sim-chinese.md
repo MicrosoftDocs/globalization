@@ -6,7 +6,7 @@ ms.date: 06/24/2019
 
 # Top 10 Tips for Microsoft Translation into Simplfied Chinese
 
-Are you helping with translation into Simplfied Chinese, but don't have time to study all aspects of the Simplfied Chinese Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Simplfied Chinese, but don't have time to study all aspects of the [Simplfied Chinese Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.    Check the provided reference materials
 

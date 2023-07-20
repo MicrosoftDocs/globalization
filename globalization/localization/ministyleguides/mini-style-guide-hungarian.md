@@ -1,12 +1,12 @@
 ---
 title: Hungarian Localization Style Guide
-description: Are you helping with translation into Hungarian, but don't have time to study all of the Hungarian Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Hungarian, but don't have time to study all of the Hungarian Style Guide? Here are ten of the most important aspects to keep in mind.
 ms.date: 07/16/2019
 ---
 
 # Top 10 Tips for Microsoft Translation into Hungarian
 
-Are you helping with translation into Hungarian, but don't have time to study all aspects of the Hungarian Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Hungarian, but don't have time to study all aspects of the [Hungarian Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Translate sense, not words
 

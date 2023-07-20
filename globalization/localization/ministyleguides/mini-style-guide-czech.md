@@ -6,7 +6,7 @@ ms.date: 03/04/2019
 
 # Top 10 Tips for Microsoft Translation into Czech
 
-Are you helping with translation into Czech, but don't have time to study all aspects of the Czech Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Czech, but don't have time to study all aspects of the [Czech Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Microsoft voice
 

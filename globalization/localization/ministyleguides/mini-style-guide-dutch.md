@@ -6,7 +6,7 @@ ms.date: 5/16/2022
 
 # Top 10 Tips for Microsoft Translation into Dutch
 
-Are you helping with translation into Dutch, but don't have time to study all aspects of the Dutch Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Dutch, but don't have time to study all aspects of the [Dutch Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Clear and natural-sounding
 
