@@ -9,7 +9,7 @@ A localization style guide describes how things should read when translating fro
 Style guides are a great tool for understanding the specific tone and level of formality you should aim for when addressing the user.
 They also provide tips on how to write clearly and how to deal with practical things like capitalization and acronyms.
 
-Our full localization style guides are available for download on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides), but for short translation tasks, you sometimes just need to know the basics.
+Our [full localization style guides](../reference/microsoft-style-guides.md) are available for download, but for short translation tasks, you sometimes just need to know the basics.
 
 That's what these condensed Quick Start versions on this page are meant for.
 They contain the top 10 most important rules from the full style guides.
@@ -35,4 +35,4 @@ Use them as a quick reference for short projects where you just need to know the
 * [Turkish](/globalization/localization/ministyleguides/mini-style-guide-turkish)
 
 Is your language not in this list or do you want more information?
-Check out the [full versions](https://www.microsoft.com/Language/StyleGuides).
+Check out the [full versions](../reference/microsoft-style-guides.md).

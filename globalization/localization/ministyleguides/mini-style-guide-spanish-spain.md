@@ -6,7 +6,7 @@ ms.date: 05/28/2019
 
 # Top 10 Tips for Microsoft Translation into Spanish (Spain)
 
-Are you helping with translation into Spanish (Spain), but don't have time to study all aspects of the Spanish (Spain) Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Spanish (Spain), but don't have time to study all aspects of the [Spanish (Spain) Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Translate meaning not words
 
@@ -127,7 +127,7 @@ In running text, avoid abbreviations. If you absolutely need to use an abbreviat
 
 - To avoid confusing the reader, do not abbreviate a word in such a way that the abbreviation could be confused with another word.
 - Include a period at the end of an abbreviation.
-- Use abbreviations for days and months if necessary. Follow the guidelines in the [main Style Guide](https://www.microsoft.com/Language/StyleGuides?rtc=1) or Regional Standards.
+- Use abbreviations for days and months if necessary. Follow the guidelines in the [main Style Guide](../../reference/microsoft-style-guides.md) or Regional Standards.
 - Don't treat words such as ":::no-loc text="metro":::" or ":::no-loc text="litro":::" as abbreviations. They are considered units of measure and should not end in a period.
 - Use a nonbreaking space between the numeral and the symbol, as per SI standards. For example: 30&nbsp;cm, 1&nbsp;h, 75&nbsp;%, 20&nbsp;°C.
 
@@ -378,7 +378,7 @@ Consider the meaning of the placeholder when translating strings, and move the p
 
 Use the spelling and grammar recommended in the following publications.
 
-These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Spain) Style Guide](https://www.microsoft.com/Language/StyleGuides) for guidance.
+These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Spain) Style Guide](../../reference/microsoft-style-guides.md) for guidance.
 
 1. :::no-loc text=" _Diccionario de la lengua española_, (Vigésima tercera edición), Real Academia Española, Madrid, Ed. Espasa-Calpe, 2014":::, or [online](http://www.rae.es/).
 2. :::no-loc text="_Diccionario panhispánico de dudas_, Real Academia Española & Asociación de Academias de la Lengua Española, Madrid, Ed. Santillana, 2005"::: or [online](http://www.rae.es/recursos/diccionarios/dpd).

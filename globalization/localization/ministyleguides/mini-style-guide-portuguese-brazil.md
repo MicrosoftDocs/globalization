@@ -6,7 +6,7 @@ ms.date: 03/19/2019
 
 # Top 10 Tips for Microsoft Translation into Portuguese (Brazil)
 
-Are you helping with translation into Portuguese (Brazil) but don't have time to study all aspects of the [Microsoft Portuguese (Brazil) Style Guide](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Portuguese (Brazil) but don't have time to study all aspects of the [Microsoft Portuguese (Brazil) Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Readability and fluency
 
@@ -60,7 +60,7 @@ _Our style_: :::no-loc text="Convide seus amigos para jogar online.":::
 
 Trademarked names and the name _Microsoft Corporation_ shouldn't be localized unless local laws require translation and an approved translated form of the trademark is available. A list of [Microsoft trademarks](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/default.aspx) is available for your reference.
 
-Application and product names that are not descriptive names are often trademarked or can potentially be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names that aren't descriptive are trademarked, too (for example, IntelliSense). Before translating application, product, or feature names, check the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides) or contact the Microsoft team.
+Application and product names that are not descriptive names are often trademarked or can potentially be trademarked in the future. These names, therefore, are rarely translated. Occasionally, feature names that aren't descriptive are trademarked, too (for example, IntelliSense). Before translating application, product, or feature names, check the [full style guide](../../reference/microsoft-style-guides.md) or contact the Microsoft team.
 
 When an application or product name contains a preposition, it's recommended that you translate the preposition, unless there are specific trademark or copyright instructions preventing the translation
 
@@ -206,7 +206,7 @@ _Our style_: :::no-loc text="Sincronizar seus emails, contatos, calendários e t
 
 ## 10. Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Portuguese (Brazil) Style Guide](https://www.microsoft.com/Language/StyleGuides), the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides), and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [Microsoft Portuguese (Brazil) Style Guide](../../reference/microsoft-style-guides.md), and the following references:
 
 1. Academia Brasileira de Letras. Vocabulário Ortográfico da Língua Portuguesa, 5ª edição, 2009
 2. Cunha, Celso e Cintra, Lindley. Nova Gramática do Português Contemporâneo. Rio de Janeiro: Editora L&PM, 2ª edição, 2009

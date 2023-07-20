@@ -1,12 +1,12 @@
 ---
 title: Hungarian Localization Style Guide
-description: Are you helping with translation into Hungarian, but don't have time to study all of the Hungarian Style Guide on the Microsoft Language Portal? Here are ten of the most important aspects to keep in mind.
+description: Are you helping with translation into Hungarian, but don't have time to study all of the Hungarian Style Guide? Here are ten of the most important aspects to keep in mind.
 ms.date: 07/16/2019
 ---
 
 # Top 10 Tips for Microsoft Translation into Hungarian
 
-Are you helping with translation into Hungarian, but don't have time to study all aspects of the Hungarian Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Hungarian, but don't have time to study all aspects of the [Hungarian Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Translate sense, not words
 
@@ -83,7 +83,7 @@ This is the general rule: trademarked names and the name Microsoft Corporation s
 
 Decline product names—except for those that are marked with a trademark (&trade;) symbol or registered trademark (&reg;) symbol—wherever you can and it's appropriate (_Skype-ban_, _Lynckel_, _Office-t_). You can also decline the names of websites and web pages (for example, _office.com-ról_, _microsoft.com-ot_).
 
-The names of applications, products, and sometimes even features may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](https://www.microsoft.com/language), or contact the project manager if you have questions about whether a name is trademarked. For the correct translation of product and service names (if they are translatable), refer to Trademarks section.
+The names of applications, products, and sometimes even features may be trademarked and therefore often remain in English. For the correct translation of product and service names (if they are translatable), refer to Trademarks section.
 
 Example:
 
@@ -120,8 +120,6 @@ Acronyms are words made up of the initial letters of major parts of a compound t
 ## 8. Use accurate terminology
 
 There is no need to leave a term in English if a good Hungarian term is available. To be clear, a good number of Hungarian IT terms are borrowed from English (for example, _fájl_, _szoftver_). But when available, give preference to Hungarian native terms—for example, _kiszolgáló_ (server), _ügyfél_ (client). That gives a text a friendlier tone and makes it more accessible to users who are not familiar with loanwords.
-
-Use terminology from the [Microsoft Language Portal](https://www.microsoft.com/Language/) where applicable, for example for key terms, technical terms, and product names. When referring to UI text, check for the approved translation in the Microsoft UI glossaries.
 
 ## 9. Assure consistency
 

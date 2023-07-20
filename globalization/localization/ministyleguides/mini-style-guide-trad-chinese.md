@@ -6,7 +6,7 @@ ms.date: 03/04/2019
 
 # Top 10 Tips for Microsoft Translation into Traditional Chinese
 
-Are you helping with translation into Traditional Chinese, but don't have time to study all aspects of the Traditional Chinese Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)?
+Are you helping with translation into Traditional Chinese, but don't have time to study all aspects of the [Traditional Chinese Style Guide](../../reference/microsoft-style-guides.md)?
 Here are ten of the most important aspects to keep in mind.
 
 ## 1. Sort order

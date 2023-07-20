@@ -6,7 +6,7 @@ ms.date: 05/29/2019
 
 # Top 10 Tips for Microsoft Translation into Russian
 
-Are you helping with translation into Russian, but don't have time to study all aspects of the Russian Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Russian, but don't have time to study all aspects of the [Russian Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Translate meaning not words
 
@@ -240,7 +240,7 @@ _Not our style_: :::no-loc text="Нажимайте кнопку %1 секунд
 
 ## 10+. Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and [full Russian Style Guide](https://www.microsoft.com/Language/StyleGuides) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and [full Russian Style Guide](../../reference/microsoft-style-guides.md) and the following references:
 
 1. <span lang="ru">Правила русской орфографии и пунктуации. Полный академический справочник. — М.: Эксмо, 2009.
 2. Толковый словарь русского языка. Например, Ожегов С. И., Шведова Н. Ю. Толковый словарь русского языка / Российская академия наук. Институт русского языка им. В. В. Виноградова. — М.: ООО «ИТИ ТЕХНОЛОГИИ», 2003.
