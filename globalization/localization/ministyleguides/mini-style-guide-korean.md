@@ -6,7 +6,7 @@ ms.date: 05/13/2019
 
 # Top 10 Tips for Microsoft Translation into Korean
 
-This is a mini style guide for the translation of Microsoft content into Korean. This contains a brief overview of the style, so check the [full style guide](https://www.microsoft.com/ko-kr/language/StyleGuides) for more details.
+This is a mini style guide for the translation of Microsoft content into Korean. This contains a brief overview of the style, so check the [full style guide](../../reference/microsoft-style-guides.md) for more details.
 
 Feel free to choose your own words to convey the intention of the original text. Do not restrict yourself to the "rigid" writing style that is traditionally used in the computer industry. The translation should sound natural and be easy to understand, as if one Korean person is speaking to another.
 

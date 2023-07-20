@@ -6,7 +6,7 @@ ms.date: 03/04/2019
 
 # Top 10 Tips for Microsoft Translation into German
 
-Are you helping with translation into German, but don't have time to study all aspects of the German Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into German, but don't have time to study all aspects of the German Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Translate sense not words
 
@@ -38,7 +38,7 @@ _Our style_: :::no-loc text="Mitarbeiter in Service und Produktion":::
 
 _Not our style_: :::no-loc text="Firstline Worker":::
 
-This is a rough rule: [Trademarked names](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx) and the name "Microsoft Corporation" often remain in English, unless an approved German name for the trademark is available. Application, product, and sometimes even feature names may be trademarked and therefore often remain in English. Check the [Microsoft Language Portal](https://www.microsoft.com/language) or contact the moderator if there is any doubt.
+This is a rough rule: [Trademarked names](https://www.microsoft.com/legal/intellectualproperty/trademarks/en-us.aspx) and the name "Microsoft Corporation" often remain in English, unless an approved German name for the trademark is available. Application, product, and sometimes even feature names may be trademarked and therefore often remain in English.
 
 Example:
 
@@ -210,7 +210,7 @@ _Not our style_: :::no-loc text="STRASSE":::
 
 ## 10. Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, and full [German Style Guide](https://www.microsoft.com/Language/StyleGuides) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, and full [German Style Guide](../../reference/microsoft-style-guides.md) and the following references:
 
 1. Duden - Die deutsche Rechtschreibung, 27. Auflage, 2017
 2. WAHRIG Wörterbuch der deutschen Sprache, von Renate Wahrig-Burfeind, Deutscher Taschenbuch Verlag, München 2012

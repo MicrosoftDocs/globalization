@@ -6,7 +6,7 @@ ms.date: 05/13/2019
 
 # Top 10 Tips for Microsoft Translation into Italian
 
-Are you helping with translation into Italian, but don't have time to study all aspects of the Italian Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Italian, but don't have time to study all aspects of the Italian Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Microsoft voice
 
@@ -79,8 +79,6 @@ The language in Microsoft products should "feel" as if it was originally written
 
 Use approved terminology where applicable, for example for key terms, technical terms, and product names. If you feel that an approved term doesn't fit with the Microsoft voice, send your concerns to your project manager.
 
-Microsoft Language Portal: <https://www.microsoft.com/language/search>
-
 ## 7. Country/region and language-specific standards
 
 Italian-specific standards should be used at all times, such as for phone number formats, date formats, currency formats, and measurement units.
@@ -144,7 +142,4 @@ _Not our style_: :::no-loc text="Sarei contento se vieni alla mia festa":::
 
 ## 10+ Use the right reference material
 
-These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is possible, consult the other topics in the [style guide](https://www.microsoft.com/Language/StyleGuides) for guidance.
-
-- [Microsoft Language Portal](https://www.microsoft.com/language/default.aspx)
-- [Microsoft Glossaries](https://www.microsoft.com/Language/Search.aspx)
+These sources must be adhered to. Any deviation from them automatically fails a string in most cases. When more than one solution is possible, consult the other topics in the [style guide](../../reference/microsoft-style-guides.md) for guidance.

@@ -6,7 +6,7 @@ ms.date: 04/12/2019
 
 # Top 10 Tips for Microsoft Translation into French
 
-Are you helping with translation into French, but don't have time to study all aspects of the French Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into French, but don't have time to study all aspects of the French Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Microsoft voice
 
@@ -146,7 +146,7 @@ _Our style_: :::no-loc text="Version 11.1":::
 
 ## 10. Reference material
 
-There is more, of course. If you have questions, consult the terminology, translation, and [full French Style Guide](https://www.microsoft.com/Language/StyleGuides). You can use these dictionaries when in doubt:
+There is more, of course. If you have questions, consult the terminology, translation, and [full French Style Guide](../../reference/microsoft-style-guides.md). You can use these dictionaries when in doubt:
 
 - :::no-loc text="Le Trésor de la Langue Française Informatisé"::: (<http://atilf.atilf.fr>)
 - :::no-loc text="Le Petit Robert, ROBERT, Paul, Paris : Dictionnaire Le Robert":::

@@ -6,7 +6,7 @@ ms.date: 5/16/2022
 
 # Top 10 Tips for Microsoft Translation into Dutch
 
-Are you helping with translation into Dutch, but don't have time to study all aspects of the Dutch Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Dutch, but don't have time to study all aspects of the Dutch Style Guide on the [Microsoft Language Portal](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Clear and natural-sounding
 
@@ -249,7 +249,7 @@ _Our style_: :::no-loc text="De bewerking is voltooid.":::
 
 - The consistent use of Microsoft-approved terminology in all localized products is one of the most reliable ways to achieve the required quality of the localized product.
 - A helpful reference is the [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/windows/desktop/aa511258.aspx).
-- For more information about the points in this document, refer to the [full Dutch Style Guide](https://www.microsoft.com/language/StyleGuides?rtc=1).
+- For more information about the points in this document, refer to the [full Dutch Style Guide](../../reference/microsoft-style-guides.md).
 - For linguistic-specific matters, refer to:
   - Woordenlijst Nederlandse taal ('Groene boekje') (2005). Den Haag: SDU Uitgevers.
   - Van Dale Groot woordenboek van de Nederlandse taal (2005). Veertiende druk. Utrecht – Antwerpen: Van Dale Lexicografie.
