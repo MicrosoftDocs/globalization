@@ -7,7 +7,7 @@ ms.date: 07/16/2019
 
 # Top 10 Tips for Microsoft Translation into Spanish (Neutral)
 
-Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the full [Spanish (Neutral) Style Guide](https://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Spanish (Neutral), but don't have time to study all aspects of the full [Spanish (Neutral) Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1. Translate meaning not words
 
@@ -50,7 +50,7 @@ Shorter is always better. Long strings of text can cause issues for localization
 
 ### ":::no-loc text="Tú":::" and ":::no-loc text="usted":::" (informal _vs._ formal)
 
-The way of addressing the user is not uniform across Microsoft products for Spanish. Because different products have different uses and audiences, some have chosen to address the user with the familiar ":::no-loc text="tú":::" and others with the formal (Office, for example). The topic "Tú/usted usage for different Microsoft products" in the [Spanish (Neutral) Style Guide](https://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) provides information about the treatment used for different products.
+The way of addressing the user is not uniform across Microsoft products for Spanish. Because different products have different uses and audiences, some have chosen to address the user with the familiar ":::no-loc text="tú":::" and others with the formal (Office, for example). The topic "Tú/usted usage for different Microsoft products" in the [Spanish (Neutral) Style Guide](../../reference/microsoft-style-guides.md) provides information about the treatment used for different products.
 
 ## 3. Pay attention to application, product, and feature names
 
@@ -124,7 +124,7 @@ In running text, avoid abbreviations. If you absolutely need to use an abbreviat
 
 - To avoid confusing the reader, do not abbreviate a word in such a way that the abbreviation could be confused with another word.
 - Include a period at the end of an abbreviation.
-- Use abbreviations for days and months if necessary. Follow the guidelines in the [main Style Guide](https://download.microsoft.com/download/c/8/0/c80371fa-bc89-46a7-883d-071d59f0c24c/spa-neu-StyleGuide.pdf) or Regional Standards.
+- Use abbreviations for days and months if necessary. Follow the guidelines in the [Spanish (Neutral) Style Guide](../../reference/microsoft-style-guides.md) or Regional Standards.
 - Don't treat words such as ":::no-loc text="metro":::" or ":::no-loc text="litro":::" as abbreviations. They are considered units of measure and should not end in a period.
 - Use a nonbreaking space between the numeral and the symbol, as per SI standards. For example: 30&nbsp;cm, 1&nbsp;h, 75&nbsp;%, 20&nbsp;°C.
 
@@ -375,7 +375,7 @@ Consider the meaning of the placeholder when translating strings, and move the p
 
 Use the spelling and grammar recommended in the following publications.
 
-These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Neutral) Style Guide](https://www.microsoft.com/Language/StyleGuides) for guidance.
+These normative sources must be adhered to. When more than one solution is possible, consult the topics in the [Spanish (Neutral) Style Guide](../../reference/microsoft-style-guides.md) for guidance.
 
 1. _1. Diccionario panhispánico de dudas_, Real Academia Española & Asociación de Academias de la Lengua Española, Madrid, Ed. Santillana, 2005, or [online here](http://www.rae.es/recursos/diccionarios/dpd).
 2. _Diccionario de la lengua española_, (Vigésima tercera edición), Real Academia Española, Madrid, Ed. Espasa-Calpe, 2014, or [online](http://www.rae.es/).

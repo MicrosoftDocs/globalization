@@ -6,7 +6,7 @@ ms.date: 06/24/2019
 
 # Top 10 Tips for Microsoft Translation into Simplfied Chinese
 
-Are you helping with translation into Simplfied Chinese, but don't have time to study all aspects of the Simplfied Chinese Style Guide on the [Microsoft Language Portal](https://www.microsoft.com/Language/StyleGuides)? Here are ten of the most important aspects to keep in mind.
+Are you helping with translation into Simplfied Chinese, but don't have time to study all aspects of the [Simplfied Chinese Style Guide](../../reference/microsoft-style-guides.md)? Here are ten of the most important aspects to keep in mind.
 
 ## 1.    Check the provided reference materials
 
@@ -176,4 +176,4 @@ _English_: Fascinating places, winsome animals, intriguing art—find a theme th
 
 _Our style_: :::no-loc text="找到一款主题，激发你的兴趣，让它带你领略奇异的风景胜地、活泼可爱的动物和迷人的艺术杰作。":::
 
-Hopefully, these top 10 rules are helpful. If you have time, it is highly recommended that you read the full [Simplified Chinese Style Guide](https://www.microsoft.com/Language/StyleGuides) for more detailed information.
+Hopefully, these top 10 rules are helpful. If you have time, it is highly recommended that you read the full [Simplified Chinese Style Guide](../../reference/microsoft-style-guides.md) for more detailed information.

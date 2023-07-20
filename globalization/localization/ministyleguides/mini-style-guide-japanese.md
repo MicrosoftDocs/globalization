@@ -6,7 +6,7 @@ ms.date: 04/24/2019
 
 # Top 10 Tips for Microsoft Translation into Japanese
 
-Are you helping with translation into Japanese, but don't have time to study all aspects of the [full Japanese Style Guide](https://www.microsoft.com/ja-jp/language/StyleGuides)? Here are 10 of the most important aspects to keep in mind.
+Are you helping with translation into Japanese, but don't have time to study all aspects of the [full Japanese Style Guide](../../reference/microsoft-style-guides.md)? Here are 10 of the most important aspects to keep in mind.
 
 ## 1. Keep the audience in mind
 
@@ -24,7 +24,6 @@ Flexibility and creativity may be required in some cases. Ensure that the transl
 
 The translation of key terminology can vary, depending on areas, contexts, and even which Microsoft product is being localized. Consult the appropriate glossaries and websites, such as:
 
-- [Microsoft Language Portal](https://www.microsoft.com/ja-jp/language/) (terminology search)
 - [Microsoft products](https://www.microsoft.com/ja-jp/) websites
 - Third-party websites
 
@@ -43,7 +42,7 @@ Check that the translations are:
 
 ## 6. Understand basic writing styles
 
-Use polite (:::no-loc text="です・ます":::) style for descriptive sentences in general. Plain style (:::no-loc text="だ・である":::) and noun phrases are appropriate when short and simple texts are preferred. To learn more, see the "Style and tone consideration" section in the [Japanese Style Guide](https://www.microsoft.com/ja-jp/language/StyleGuides).
+Use polite (:::no-loc text="です・ます":::) style for descriptive sentences in general. Plain style (:::no-loc text="だ・である":::) and noun phrases are appropriate when short and simple texts are preferred. To learn more, see the "Style and tone consideration" section in the [Japanese Style Guide](../../reference/microsoft-style-guides.md).
 
 Example:
 
@@ -52,7 +51,7 @@ Example:
 
 ## 7. Enclose UI labels
 
-Add brackets ([ ]) to refer to a UI item with a label. To learn more, see the "User interface" section in the [Japanese Style Guide](https://www.microsoft.com/ja-jp/language/StyleGuides).
+Add brackets ([ ]) to refer to a UI item with a label. To learn more, see the "User interface" section in the [Japanese Style Guide](../../reference/microsoft-style-guides.md).
 
 Example:
 
@@ -64,7 +63,7 @@ _Not our style_: :::no-loc text="キャンセルを選びます。":::
 
 ## 8. Pay attention to katakana compound words and prolonged sound mark
 
-Insert spaces to katakana compounds where they appear in the English words. To learn more, see the "Compounds" section in the [Japanese Style Guide](https://www.microsoft.com/ja-jp/language/StyleGuides). For general spacing rules, see the "Symbols & spaces" section in the guide.
+Insert spaces to katakana compounds where they appear in the English words. To learn more, see the "Compounds" section in the [Japanese Style Guide](../../reference/microsoft-style-guides.md). For general spacing rules, see the "Symbols & spaces" section in the guide.
 
 Example:
 
@@ -95,7 +94,7 @@ _Our style_: :::no-loc text="プロシージャ":::
 
 _Not our style_: :::no-loc text="プロシージャ―":::
 
-To learn more about the rules and exceptions, see the "Katakana prolonged sound mark" section in the [Japanese Style Guide](https://www.microsoft.com/ja-jp/language/StyleGuides).
+To learn more about the rules and exceptions, see the "Katakana prolonged sound mark" section in the [Japanese Style Guide](../../reference/microsoft-style-guides.md).
 
 ## 9. Know what to leave in English
 
@@ -119,7 +118,7 @@ _Our style_: [Add/Delete] :::no-loc text="(追加/削除) ダイアログ ボッ
 
 ## 10. Use the right reference material
 
-There is more, of course. If you are in doubt, consult the terminology, translation, [full Japanese Style Guide](https://www.microsoft.com/ja-jp/language/StyleGuides) and the following references:
+There is more, of course. If you are in doubt, consult the terminology, translation, [full Japanese Style Guide](../../reference/microsoft-style-guides.md) and the following references:
 
 - :::no-loc text="平成 3 年 6 月 28 日 内閣告示第 2 号「外来語の表記」":::
 - :::no-loc text="昭和 61 年 7 月 1 日 内閣告示第 1 号「現代仮名遣い」":::

@@ -1,29 +1,56 @@
 ---
-title: Address format
-description: One of the most nonstandard formatted items you'll need to deal with in globalization is address formats.
-ms.assetid: d02aec53-1433-4a43-8e20-73d9886c7a5c
-ms.date: 07/10/2023
+title: Personal names and postal address formats
+description: Understand the conventions for personal names and postal addresses for international markets.
+ms.date: 06/13/2023
 ---
-# Address format
 
-One of the most non-standardized formatted items you'll need to deal with in globalization is address formats.
-Thus input fields and the routines that process address information should be able to handle a wide variety of formats.
-For instance, a very common mistake (such as in Web forms) is to insist that the user enter something in a field labeled State (or Province for Canadians).
-While this makes sense to people located in the United States and Canada, it confuses those from other parts of the world where most don't have a “State” in their addresses.
+# Personal names and postal address formats
 
-You must also be flexible when performing validity checks of the data entered by the user.
-For example, don't assume that the ZIP code (or postal code, as it is referred to in many countries and regions outside the United States) has any particular format or length, or that it comprises only digits.
-For instance, Canadian postal codes consist of two groups of three characters, such as “M5R 3H5”; a French postal code is a five-digit number, as in 92300.
-In some places, people might add a country or region code in front of the postal code (for example, F-92300).
+A common issue for internationalizing products that were initially created for a United States market is collecting and displaying users’ names and postal addresses. Name order in the United States is typically given name (first name), middle name, then family name (last name, surname). United States postal addresses generally follow a format of:
 
-The current implementation of WIndows NLS APIs and the .NET Framework do not provide any address formatting information.
-The best approach is to:
+{Recipient name}<br/>
+{Street address, number followed by street name}<br/>
+{City}, {State} {ZIP+4 code}
 
-- Divide the address into multiple fields for street number, building number, city, country/region, and postal code.
-  Note that terminology can be sensitive: some places are considered "regions" by some nations and "countries" by others.
+For customers in markets other than the United States, you shouldn't assume that name order or address format follows the United States conventions.
 
-- Don't expect that all predefined fields should contain a value (such as the previous example of postal codes).
+## Personal names and name order
 
-- Don't assume that a postal address always corresponds to a physical address.
+Components of personal names can include:
 
-- Be flexible for additional data that you might not usually expect in an address, such as a description of how to get there.
+- One or more given names.
+- One or more family names.
+  - In some countries/regions, a person’s full name includes both the mother’s and father’s family names. Typically, the last family name is used for a shortened version of a personal name.
+  - Names for some Eastern European languages should be declined, so a male might have the family name Ivanov (Иванов), while a female might have the equivalent name Ivanova (Иванова).
+- A patronymic name.
+- A matronymic name.
+
+Name order can also vary by culture. While given name - family name is common in Western cultures, family name – given name is common in Eastern cultures. Name order might vary depending on the script used to write the name.
+
+When designing an interface to collect personal names and the data storage for the information, you should consider whether to have separate fields for family and given names, or one field for the entire name. A single name field allows the user to specify how they would like their name to appear; however, using separate name fields allows the developer to use different levels of formality (for example, using only the user’s first name or referring to the user as Mr. Smith) when communicating with the user. If you choose to use multiple fields, you should ensure that the name order is correct for the target market, both when collecting the data and when addressing the user.
+
+When referring to the user, the level of formality should reflect the expectations of the target market. While it might be appropriate to use a given name for customers in the United States, using only a person’s given name might be considered rude in other markets.
+
+For some languages, you might want to consider enabling the user to supply the pronunciation of their name. For example, Japanese names written in Kanji can have several pronunciations.
+
+## Postal address
+
+Like name order, the number of components of an address and the conventional display order vary by country or region. In general, postal addresses start with the recipient’s name and end with the largest geographical unit, or vice versa. Geographical units can include:
+
+- A country name.
+- A major administrative division, such as a state, province, or oblast.
+- A locality, such as a city, town, or village.
+- A minor administrative division, such as a city area or district.
+- A street name.
+- A street number or house name.
+- A postal code (ZIP code).
+
+Every country/region has required or recommended standards for postal addresses. These standards include the order of the information, the separators used between each geographical unit, and which information can be combined on each line of the address.
+
+For each target market:
+
+- When designing an interface, consider which fields are needed to accurately capture the user’s address. Ensure that the order in which the fields are displayed is appropriate for the market. Ensure that the geographical units are named correctly.
+- If you're validating the address that a user has entered, ensure that it's valid for the recipient’s location.
+- When printing the address for use with the postal service, ensure that the address format meets the requirements of the market. The correct address format might also depend on the script used to display the address. For example, if a Japanese address is written in Kanji, the correct order is postal code, address (from larger to smaller unit), recipient. However, if the Japanese address is written in Romaji, the correct order is recipient, address (from smaller to larger unit), postal code.
+
+As there's no international standard for address formats, determining the appropriate postal address format can be challenging. Libraries like ICU, frameworks like .NET, and programming languages like Java don't provide features to facilitate address storage or formatting. The best reference sites are the sites for the postal service in each country/region; however, the Universal Postal Union has published the [POST*CODE® DataBase](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions), which can be used to validate addresses worldwide.

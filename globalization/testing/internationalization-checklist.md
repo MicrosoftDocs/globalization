@@ -41,13 +41,15 @@ Here is a summary of areas that should be validated to ensure localizability.
 The conventions and formats of various kinds of data vary by locale.
 A global application must be able to handle user's data by the conventions and standards of the user's locale.
 
-* [Calendars, date, and time](../locale/calendar-differences.md)
+* [Calendars](../locale/calendars.md)
 
 <!--NYI * [Case mapping](../text/case-mapping.md)] -->
 
-* [Currency formatting](../locale/currency-formatting.md)
+* [Currency formatting](../locale/currency-formats.md)
 
-* [Measurement units](../locale/units-of-measurement.md)
+* [Date and time formatting](../locale/date-time-formats.md)
+
+* [Measurement units](../locale/measurement-units.md)
 
 * [Number formatting](../locale/number-formatting.md)
 
@@ -57,13 +59,13 @@ A global application must be able to handle user's data by the conventions and s
 
 * [Postal address formats](../locale/addresses.md)
 
-<!-- NYI * [Punctuation, separators](../internationalization/punctuation-separators.md) -->
+* [Punctuation, separators](../internationalization/punctuation-separators.md)
 
 * [Sorting, comparison, and search](../locale/sorting-and-string-comparison.md)
 
 <!-- NYI * [Spell-checker or thesaurus/dictionary support](../locale/dictionaries-spelling.md) -->
 
-* [Telephone number formatting](../locale/telephone-number.md)
+* [Telephone number formatting](../locale/telephone-numbers.md)
 
 <!-- NYI * [Text parsing and validation](../text/parsing-input.md) -->
 
