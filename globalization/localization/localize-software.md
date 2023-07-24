@@ -29,7 +29,7 @@ You can separate strings that should be translated by putting them in resource f
 
 Part of what you do send to the translator might be marked as "Do not translate" in the translation memories or terminology lists.  This might include product or brand names or API names. This can be handled automatically in many CAT tools if all non-translatable strings are marked as such in the source language resource files. You should decide on an approach for marking these strings. Depending on the resource file format, it might be a keyword that is inserted in the comment field or metadata that can indicate translate=no.    Then your translation vendor can set up a rule in their CAT tool that parses all strings in your delivery, looking for the non-translatable indicator, and locks the strings that have it.
 
-For more information, refer to Externalize localizable resources.
+For more information, refer to [Externalize localizable resources](/globalization/localizability/externalize-resources).
 
 ## Regional considerations
 
@@ -37,15 +37,15 @@ This section introduces some localization-related issues that are discussed in m
 
 ### Date and time
 
-Date and time formats vary by locale. For example, USA uses the month-day-year order for dates, while Germany uses day-month-year and Japan uses year-month-day. For more information, refer to Calendars, date, and time.
+Date and time formats vary by locale. For example, USA uses the month-day-year order for dates, while Germany uses day-month-year and Japan uses year-month-day. For more information, refer to [Calendars, date, and time](../locale/calendars.md).
 
 ### Numbers and currencies
 
-Numbers can be treated differently in different locales. For example, the United States uses a period as a decimal separator, whereas France uses a comma. In the Netherlands, the currency symbol comes before the digits, while in Germany it appears after. For more information, refer to Numbers and Currency formats.
+Numbers can be treated differently in different locales. For example, the United States uses a period as a decimal separator, whereas France uses a comma. In the Netherlands, the currency symbol comes before the digits, while in Germany it appears after. For more information, refer to [Number formats](../locale/number-formatting.md) and [Currency formats](../locale/currency-formats.md).
 
 ### Address formats
 
-In the US, postal addresses have a standard format that includes the state abbreviation. In Japan, the postal code appears first, with the recipient’s name appearing last. For more information, refer to Postal address formats.
+In the US, postal addresses have a standard format that includes the state abbreviation. In Japan, the postal code appears first, with the recipient’s name appearing last. For more information, refer to [Postal address formats](../locale/addresses.md).
 
 ## Cultural considerations
 
@@ -68,7 +68,7 @@ You  should consider whether any of your UI text strings, icons, interactive ele
 - Humor, slang, and idioms can be touchy even within your own culture, let alone when localizing your software. Even though they can all be effective tools when they land right, it might be best to avoid them entirely, or at least consider their use carefully.
 - If jokes and slang are difficult to localize properly, religion and politics are perhaps even more so. Anything related to them merits very careful consideration.
 
-For more information, refer to Localize video and multimedia.
+For more information, refer to [Localize video and multimedia](../media/video-multimedia.md).
 
 ### Local holidays
 
@@ -84,7 +84,7 @@ In a printed manual or webpage text it is straightforward to instruct the transl
 
 Some payment methods might be much less common in the target culture than in your own. They might even be entirely unavailable.  The target culture can use a payment method that is not used in your culture. Research this area if your software can be used to make payments or discusses the subject otherwise.
 
-For more information, refer to Payment methods.
+For more information, refer to [Payment methods](../internationalization/payment-methods.md).
 
 ### Third party data sources
 

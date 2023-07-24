@@ -10,7 +10,7 @@ ms.date: 07/12/2023
 
 # Re-creation and dubbing
 
-When you want to offer a more immersive localized multimedia experience than can be achieved with captioning and subtitling, you need to choose between dubbing and full re-creation.
+When you want to offer a more immersive localized multimedia experience than can be achieved with [captioning and subtitling](captioning.md), you need to choose between dubbing and full re-creation.
 
 ## Dubbing
 

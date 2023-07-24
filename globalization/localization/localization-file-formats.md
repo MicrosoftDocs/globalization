@@ -14,11 +14,11 @@ Computer-aided translation (CAT) tools use a variety of file formats both standa
 
 ## XLIFF
 
-XLIFF is commonly used to exchange data between different CAT tools. It is an XML-based format that pairs the source and target language strings of each segment for content that is being translated. The latest version, XLIFF 2.0, is defined by ISO 21720:2017.
+XLIFF is commonly used to exchange data between different CAT tools. It is an XML-based format that pairs the source and target language strings of each segment for content that is being translated. The latest version, XLIFF 2.0, is defined by [ISO 21720:2017](https://www.iso.org/obp/ui/#iso:std:iso:21720:ed-1:v1:en).
 
 XLIFF  gives you a single file format that can be used when translating source files. When translatable text content is extracted from the source files and stored in the XLIFF format, translators can use whichever tools they like to work with the text without worrying about the source’s format or layout. After the translation is ready, the XLIFF files are used to “reassemble” the source files with the new language.
 
-For more information, refer to Exchanging localizable resources.
+For more information, refer to [Exchanging localizable resources](exchanging-localizable-resources.md).
 
 ### Description of the XLIFF format
 
@@ -54,7 +54,7 @@ While parsing your content, you might want to pick up more than just the source 
 
 CAT tools often have proprietary formats for storing terminology. If you want to use a terminology list from one CAT tool with another CAT tool, the TermBase eXchange (TBX) format can be used as an interchange format. Like XLIFF, it is an XML-based format that pairs the source and target language strings of a term and includes a definition for the term. The latest version, TBX 3.0, is defined by ISO 30042:2019.
 
-For more information, refer to Managing terminology .
+For more information, refer to [Managing terminology](managing-terminology.md).
 
 ### Description of the TBX format
 

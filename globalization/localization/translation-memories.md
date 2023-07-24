@@ -14,7 +14,7 @@ Computer-aided translation (CAT) is a process where translators are assisted by 
 
 If you are a translator who works using a TM, you can benefit from your previous work or work that other translators have done    in the past. Every time you start a new project for a customer you have previously worked with, the corresponding TM might contain translations that can be reused in the new project. Every project translators work on with the TM adds to the information stored, making it more comprehensive and more likely to find matches.
 
-During the translation process, these tools can automatically segment the source text according to a set of rules which can be defined for each project.  Segmentation happens after translatable strings are extracted from the source files, separating them from the code or other non-translatable content. Extraction and segmentation are usually done by an engineer when the source files arrive from the client. For more information about the phases of the localization process, refer to Localizing your product.
+During the translation process, these tools can automatically segment the source text according to a set of rules which can be defined for each project.  Segmentation happens after translatable strings are extracted from the source files, separating them from the code or other non-translatable content. Extraction and segmentation are usually done by an engineer when the source files arrive from the client. For more information about the phases of the localization process, refer to [Localizing your product](localization-overview.md).
 
 ## Key formats and standards
 
@@ -27,7 +27,7 @@ XML Localization  Interchange File Format (XLIFF) is an XML-based format for sta
 
 ## Importing data to a TM
 
-A translator doesn’t necessarily need to rely only on their own past work to develop their TM. They might have access to one or more TMs from previous translation work done for the client. TMs can be merged by using the TMX data format even if their native formats are different. Merging TMs should be done carefully, however, or translators might run into issues described in Maintaining translation memories.
+A translator doesn’t necessarily need to rely only on their own past work to develop their TM. They might have access to one or more TMs from previous translation work done for the client. TMs can be merged by using the TMX data format even if their native formats are different. Merging TMs should be done carefully, however, or translators might run into issues described in [Maintaining translation memories](#maintaining-translation-memories).
 
 ## Translating with a TM
 

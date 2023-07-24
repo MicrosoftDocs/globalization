@@ -12,7 +12,7 @@ ms.date: 07/12/2023
 
 The word transcreation was formed by combining translation with creation. It represents a form of translation that makes more extensive changes than “normal” translation to keep the original content’s intent while making the content culturally appropriate and resonant for the target market.  Transcreation can also be seen as a form of localization since both are about adapting translated content for another culture.
 
-Transcreations can be very different from the original content. It often replaces everything in the original and ends up with completely new content that nevertheless achieves the same purpose. It adapts not just text, but also video, audio, and images. One example of transcreation is the re-creation  of video and multimedia content.
+Transcreations can be very different from the original content. It often replaces everything in the original and ends up with completely new content that nevertheless achieves the same purpose. It adapts not just text, but also video, audio, and images. One example of transcreation is the [re-creation](../media/re-creation.md) of video and multimedia content.
 
 Because transcreation takes more time and is more costly than other forms of localization, it is mostly used for strategically critical content such as slogans, headlines, marketing, campaigns, brochures, commercials, and certain parts of games. It could also be applicable for any content that is exceptionally artistic or emotional. Transcreation can increase sales, usability, and brand awareness. The complexity of the process means that the source content should be finalized before transcreation begins.
 
@@ -28,6 +28,12 @@ In addition to being skilled translators between the source and target language,
 
 These varied requirements mean that transcreation is often a team effort.
 
-## Examples of transcreation
+## Example of transcreation
 
-TBD
+A transcreated video advertising a new car might continue to use footage of the car from the source video. However, in addition to changing the translated dialog and displayed text, changes for the transcreated video could include:
+
+- People shown driving the car or walking on the streets might be recast to be more representative of the target market.
+- The video might show landmarks or scenery more representative of the target market, including smaller details, for example, street and road signs that are used there.
+- The video might emphasize the luxuriousness of the car rather than the performance if this is an emphasis for sales in the target market.
+- The video might target a younger or older demographic, depending on the likely age of the target purchaser.
+- If music is used in the video, it might be changed to something that better fits the expectations of the target market.
