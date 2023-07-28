@@ -27,7 +27,7 @@ You should separate the translatable material from the rest of the code and send
 
 You can separate strings that should be translated by putting them in resource files. It is best practice for developers to store translatable strings in resource files that are separate from strings that shouldn't be translated, such as functional resources (registry keys, function calls, and strings communicated between components) or debug resources.
 
-Part of what you do send to the translator might be marked as "Do not translate" in the translation memories or terminology lists.  This might include product or brand names or API names. This can be handled automatically in many CAT tools if all non-translatable strings are marked as such in the source language resource files. You should decide on an approach for marking these strings. Depending on the resource file format, it might be a keyword that is inserted in the comment field or metadata that can indicate translate=no.    Then your translation vendor can set up a rule in their CAT tool that parses all strings in your delivery, looking for the non-translatable indicator, and locks the strings that have it.
+Part of what you do send to the translator might be marked as "Do not translate" in the translation memories or terminology lists.This might include product or brand names or API names. This can be handled automatically in many CAT tools if all non-translatable strings are marked as such in the source language resource files. You should decide on an approach for marking these strings. Depending on the resource file format, it might be a keyword that is inserted in the comment field or metadata that can indicate translate=no. Then your translation vendor can set up a rule in their CAT tool that parses all strings in your delivery, looking for the non-translatable indicator, and locks the strings that have it.
 
 For more information, refer to [Externalize localizable resources](/globalization/localizability/externalize-resources).
 
@@ -59,7 +59,7 @@ Some common issues are discussed below.
 
 ### Avoiding cultural confusion or impropriety
 
-You  should consider whether any of your UI text strings, icons, interactive elements, or images might be confusing or even offensive to any of your target locales. This also goes for any examples and similar information shown to the user. Examples of potentially sensitive issues include:
+You should consider whether any of your UI text strings, icons, interactive elements, or images might be confusing or even offensive to any of your target locales. This also goes for any examples and similar information shown to the user. Examples of potentially sensitive issues include:
 
 - Emojis have different connotations for people of different cultures and even people of different ages within your own culture.
 - Using the $ sign as a synonym for money or currency might be taken poorly in some countries.
@@ -78,11 +78,11 @@ National, religious, secular, and other holidays vary a great deal from one coun
 
 In most Western countries, a person’s given name or names appears before their family name when the full name is written out. However, in alphabetical lists the order is often reversed, with the family name coming first and being separated from the given name by a comma. In some Asian countries, for example, Japan, China, Korea, and Vietnam, the family name appears before the given name.
 
-In a printed manual or webpage text it is straightforward to instruct the translators to adapt people’s names for the target culture, which includes using the correct order of names. With software it isn’t so simple. The UI of your product needs to be modified to adapt to different  name formats depending on the culture.
+In a printed manual or webpage text it is straightforward to instruct the translators to adapt people’s names for the target culture, which includes using the correct order of names. With software it isn’t so simple. The UI of your product needs to be modified to adapt to different name formats depending on the culture.
 
 ### Payment methods
 
-Some payment methods might be much less common in the target culture than in your own. They might even be entirely unavailable.  The target culture can use a payment method that is not used in your culture. Research this area if your software can be used to make payments or discusses the subject otherwise.
+Some payment methods might be much less common in the target culture than in your own. They might even be entirely unavailable. The target culture can use a payment method that is not used in your culture. Research this area if your software can be used to make payments or handles the subject of payments in another way.
 
 For more information, refer to [Payment methods](../internationalization/payment-methods.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Manageterminology
+title: Manage terminology
 description: Careful up-front planning around the terminology used in your product can help ensure high quality localization and translation.
 author: m-kauppinen
 ms.author: v-mikau
@@ -48,6 +48,6 @@ You should consider the following when localizing terms:
 
 - Product names and key features: should each of them be translated, transliterated, or left as the source term? If your term is trademarked, will you need to trademark a translated equivalent?
 - Fictitious names and/or names for examples: consider using names that are relevant for the target audience in any examples you have, instead of keeping English names, for example. The names should also be as inclusive as possible.
-- Sometimes a given term might have to   be marked as Do Not Translate (DNT). The most common reasons are branding or industry-specific terminology. For example, the name of the product or its key feature might remain in English. Sometimes the industry might prefer the “English” term even if an equivalent term exists in the target language.
+- Sometimes a given term might have to be marked as Do Not Translate (DNT). The most common reasons are branding or industry-specific terminology. For example, the name of the product or its key feature might remain in English. Sometimes the industry might prefer the “English” term even if an equivalent term exists in the target language.
 - Abbreviations: how to handle these? Try to settle on a consistent approach to be used in all cases.
 - Phrases or tag lines: if a tag line is an important part of your branding or marketing, its localization merits extra care.
