@@ -28,7 +28,7 @@ An XLIFF file starts with one or more \<file> elements. The \<file> element can 
 
 Here's a simple example of an XLIFF 2.0 file containing two translation units:
 
-```text
+```xml
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="fr-FR">
     <file id="f1" original="Simple_Example.html">
           <skeleton href="Simple_Example.html.skl"/>
@@ -52,7 +52,7 @@ While parsing your content, you might want to pick up more than just the source 
 
 ## TBX
 
-CAT tools often have proprietary formats for storing terminology. If you want to use a terminology list from one CAT tool with another CAT tool, the TermBase eXchange (TBX) format can be used as an interchange format. Like XLIFF, it is an XML-based format that pairs the source and target language strings of a term and includes a definition for the term. The latest version, TBX 3.0, is defined by ISO 30042:2019.
+CAT tools often have proprietary formats for storing terminology. If you want to use a terminology list from one CAT tool with another CAT tool, the TermBase eXchange (TBX) format can be used as an interchange format. Like XLIFF, it is an XML-based format that pairs the source and target language strings of a term and includes a definition for the term. The latest version, TBX 3.0, is defined by [ISO 30042:2019](https://www.iso.org/standard/62510.html/).
 
 For more information, refer to [Managing terminology](managing-terminology.md).
 
@@ -62,7 +62,7 @@ Each terminological concept is wrapped inside a \<termEntry> element. It can con
 
 Here's an example of a simple TBX 2.0 file with only one term entry:
 
-```text
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <martif  type="TBX" xml:lang="en-US"><martifHeader><fileDesc><titleStmt><title>Microsoft Terminology Collection Export</title></titleStmt>
 <sourceDesc><p>Microsoft Terminology Collection</p></sourceDesc></fileDesc></martifHeader>
@@ -93,9 +93,9 @@ Here's an example of a simple TBX 2.0 file with only one term entry:
 
 ## TMX
 
-Translation Memory (TM) stores translation and linguistic data in a structured format. Translation Memory eXchange (TMX) is the primary format for exchanging TM data between CAT tools. Like the other interchange formats, it is XML-based. The latest version, TMX 1.4b, is defined in TMX 1.4b (gala-global.org). TMX 1.4b dates back to 2005.
+Translation Memory (TM) stores translation and linguistic data in a structured format. Translation Memory eXchange (TMX) is the primary format for exchanging TM data between CAT tools. Like the other interchange formats, it is XML-based. The latest version, TMX 1.4b, is defined in [TMX 1.4b (gala-global.org)](https://www.gala-global.org/tmx-14b). TMX 1.4b dates back to 2005.
 
-TMX is a widely used format. For example, the European Union has released some public TMs that cover more than 20 languages in the TMX format. For more information, refer to the EU Science Hub Language Technology Resources page.  
+TMX is a widely used format. For example, the European Union has released some public TMs that cover more than 20 languages in the TMX format. For more information, refer to the [EU Science Hub Language Technology Resources page](https://joint-research-centre.ec.europa.eu/language-technology-resources_en).
 
 ### Description of the TMX format
 
@@ -103,7 +103,7 @@ A TMX file consists of a header and a body. The header section contains basic in
 
 Here's a simple example of a TMX file that has only one translation unit:
 
-```text
+```xml
 <tmx version="1.4">
   <header
     creationtool="XYZTool" creationtoolversion="1.01-023"

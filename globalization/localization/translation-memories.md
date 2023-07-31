@@ -18,13 +18,13 @@ During the translation process, these tools can automatically segment the source
 
 ## Key formats and standards
 
-As mentioned above, there are different kinds of CAT tools. Since these tools are made by various companies and some of them use proprietary file formats, there is a clear need for standardized formats to make data exchange between tools possible. The three most common formats are described below.
+As mentioned above, there are different kinds of CAT tools. Since these tools are made by various companies and some of them use proprietary file formats, there is a clear need for standardized formats to make data exchange between tools possible. The three most common formats are described below. They are discussed in more detail in [Localization file formats](localization-file-formats.md).
 
 Translation Memory eXchange (TMX) is an XML specification for exchanging translation memory (TM) data. TMX used to be owned by Localization Industry Standards Association (LISA), but since 2011, the standards have been posted under a Creative Commons Attribution 3.0 License. The current version of TMX is the [TMX 1.4b Specification](https://www.gala-global.org/tmx-14b) from 2005.
 
 TermBase eXchange (TBX) is a standard ([ISO 30042:2019](https://www.iso.org/standard/62510.html) and the functionally identical [LISA TBX document](https://www.gala-global.org/sites/default/files/migrated-pages/docs/tbx_oscar_0.pdf)) that defines an XML format for exchanging terminology data. It was also originally released by LISA. Today it is available as an open standard and as an ISO standard.
 
-XML Localization Interchange File Format (XLIFF) is an XML-based format for standardizing how localizable data is passed between tools during localization. It is a common format for CAT tool exchange. XLIFF is an Organization for the Advancement of Structured Information Standards (OASIS) standard. [XLIFF Version 2.1](http://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html) is the current version.
+XML Localization Interchange File Format (XLIFF) is an XML-based format for standardizing how localizable data is passed between tools during localization. It is a common format for CAT tool exchange. XLIFF is an Organization for the Advancement of Structured Information Standards (OASIS) standard. [XLIFF Version 2.1](http://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html) is the current version. For more information about XLIFF parsing and metadata, refer to [Exchanging localizable resources](exchanging-localizable-resources.md).
 
 ## Importing data to a TM
 
