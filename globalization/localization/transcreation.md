@@ -30,10 +30,9 @@ These varied requirements mean that transcreation is often a team effort.
 
 ## Example of transcreation
 
-A transcreated video advertising a new car might continue to use footage of the car from the source video. However, in addition to changing the translated dialog and displayed text, changes for the transcreated video could include:
+A transcreated marketing brochure advertising a new car might continue to use photos of the car from the source brochure. However, in addition to changing the translated text, changes for the transcreated brochure could include:
 
 - People shown driving the car or walking on the streets might be recast to be more representative of the target market.
-- The video might show landmarks or scenery more representative of the target market, including smaller details, for example, street and road signs that are used there.
-- The video might emphasize the luxuriousness of the car rather than the performance if this is an emphasis for sales in the target market.
-- The video might target a younger or older demographic, depending on the likely age of the target purchaser.
-- If music is used in the video, it might be changed to something that better fits the expectations of the target market.
+- The photos might show landmarks or scenery more representative of the target market, including smaller details, for example, street and road signs that are used there.
+- The brochure might emphasize the luxuriousness of the car rather than the performance if this is an emphasis for sales in the target market.
+- The brochure might target a younger or older demographic, depending on the likely age of the target purchaser.
