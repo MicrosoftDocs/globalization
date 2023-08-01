@@ -10,7 +10,7 @@ ms.date: 07/12/2023
 
 # Transcreation
 
-The word transcreation was formed by combining translation with creation. It represents a form of translation that makes more extensive changes than “normal” translation to keep the original content’s intent while making the content culturally appropriate and resonant for the target market.  Transcreation can also be seen as a form of localization since both are about adapting translated content for another culture.
+The word transcreation was formed by combining translation with creation. It represents a form of translation that makes more extensive changes than “normal” translation to keep the original content’s intent while making the content culturally appropriate and resonant for the target market. Transcreation can also be seen as a form of localization since both are about adapting translated content for another culture.
 
 Transcreations can be very different from the original content. It often replaces everything in the original and ends up with completely new content that nevertheless achieves the same purpose. It adapts not just text, but also video, audio, and images. One example of transcreation is the [re-creation](../media/re-creation.md) of video and multimedia content.
 

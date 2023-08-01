@@ -16,7 +16,7 @@ Computer-aided translation (CAT) tools use a variety of file formats both standa
 
 XLIFF is commonly used to exchange data between different CAT tools. It is an XML-based format that pairs the source and target language strings of each segment for content that is being translated. The latest version, XLIFF 2.0, is defined by [ISO 21720:2017](https://www.iso.org/obp/ui/#iso:std:iso:21720:ed-1:v1:en).
 
-XLIFF  gives you a single file format that can be used when translating source files. When translatable text content is extracted from the source files and stored in the XLIFF format, translators can use whichever tools they like to work with the text without worrying about the source’s format or layout. After the translation is ready, the XLIFF files are used to “reassemble” the source files with the new language.
+XLIFF gives you a single file format that can be used when translating source files. When translatable text content is extracted from the source files and stored in the XLIFF format, translators can use whichever tools they like to work with the text without worrying about the source’s format or layout. After the translation is ready, the XLIFF files are used to “reassemble” the source files with the new language.
 
 For more information, refer to [Exchanging localizable resources](exchanging-localizable-resources.md).
 

@@ -14,11 +14,11 @@ When you want to offer a more immersive localized multimedia experience than can
 
 ## Dubbing
 
-Dubbing can be thought of as partial re-creation. It replaces the source language dialog track with newly recorded dialog in the target language. Dubbing starts with translating the script, paying attention to the cultural differences that should always be considered when localizing (references, idioms, symbolic meanings, taboos, and so on). The translation also needs to sound like natural dialog in the target language. This might require a dialog specialist  to work alongside the translator or to edit the translated script. They can, for example, check that mouth movements are as close to the original actor  as possible when the translated lines are spoken and the speaker is visible.
+Dubbing can be thought of as partial re-creation. It replaces the source language dialog track with newly recorded dialog in the target language. Dubbing starts with translating the script, paying attention to the cultural differences that should always be considered when localizing (references, idioms, symbolic meanings, taboos, and so on). The translation also needs to sound like natural dialog in the target language. This might require a dialog specialist to work alongside the translator or to edit the translated script. They can, for example, check that mouth movements are as close to the original actor as possible when the translated lines are spoken and the speaker is visible.
 
 After you have a script, you need to cast voice actors. In addition to their acting skills they need to have good timing to match the rhythm of the original dialog. They also need to have a voice that fits the original actor and the character. The viewers need to believe that what they hear could come from the person they see on the screen.
 
-Finally, there is the process of recording the translated dialog with each voice actor. The dialog specialist might be on hand   at this stage too. They can check that the dialog is acted out the way it was intended to, and help the actors with their questions about tone, emphasis, and so on.
+Finally, there is the process of recording the translated dialog with each voice actor. The dialog specialist might be on hand at this stage too. They can check that the dialog is acted out the way it was intended to, and help the actors with their questions about tone, emphasis, and so on.
 
 You might also consider using computer-generated voices instead of or alongside voice actors. Text-to-speech (TTS) solutions are improving constantly but might not match the naturalness of human voices.
 
