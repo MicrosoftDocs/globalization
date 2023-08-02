@@ -1,8 +1,12 @@
 ---
 title: How to release products internationally
-description: TBD
+description: Introduction to strategy decisions and other important concerns for international products. 
 ms.topic: how-to
-ms.date: 01/01/2022
+author: m-kauppinen
+ms.author: v-mikau
+ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.date: 08/02/2023
+
 ---
 
 # How to release products internationally
