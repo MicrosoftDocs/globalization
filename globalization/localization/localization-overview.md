@@ -4,7 +4,7 @@ description: This article helps you understand the process of localization and s
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
-ms.date: 03/14/2023
+ms.date: 07/14/2023
 
 ---
 
@@ -68,7 +68,7 @@ The materials you need to send to the vendor are discussed in more detail below.
 
 ### Source material in an interchangeable format
 
-The material you need translated is often in various formats. Your software strings might be isolated in any number of file formats including .resx or Java .properties files. Your documentation and marketing material might be created using Office, InDesign, FrameMaker, or HTML, to name a few. To accommodate this variety of formats, translations can use an interchangeable data format into which all kinds of source formats can be parsed. XML Localization Interchange File Format (XLIFF) is one such format that is commonly used. For more information, refer to Localization file formats.
+The material you need translated is often in various formats. Your software strings might be isolated in any number of file formats including .resx or Java .properties files. Your documentation and marketing material might be created using Office, InDesign, FrameMaker, or HTML, to name a few. To accommodate this variety of formats, translations can use an interchangeable data format into which all kinds of source formats can be parsed. XML Localization Interchange File Format (XLIFF) is one such format that is commonly used. For more information, refer to [Localization file formats](localization-file-formats.md).
 
 You should agree with your translation vendor who will handle the extraction of translatable content from the various source files. If you send the source files to the vendor as is, it is simpler for you, but likely more costly since they will in most cases need to perform the extraction before sending out the translatable text to the translators. The other option is to perform the extraction of the translatable content yourself and send it to the vendor in an interchange format.
 
@@ -76,23 +76,21 @@ You should agree with your translation vendor who will handle the extraction of 
 
 Style guides convey, for example, the tone you should use when addressing the users, typographic conventions for things like headings, tables, and code snippets, grammar and punctuation rules, and more. You should establish a style guide early in your product design cycle and thereafter follow it to ensure that the source material is consistent before any translation project starts. Different markets have different style considerations, so you should also have style guides for each target language. This lets you maintain a unified “company feel” while addressing users in different cultures in the way they are accustomed to.
 
-Microsoft offers downloadable language-specific style guides for more than 100 languages on the Microsoft Language Portal. These style guides contain sections on localization, inclusiveness, and general style issues. You can also find the Microsoft Writing Style Guide there, which is a comprehensive guide for writing in English.
+### Existing translation memories
 
-### Existing translation memories (TMs)
+A [translation memory](translation-memories.md) (TM) is a database used and updated by translators as well as localization resources in your organization. It consists of previously translated source and target language pairs called translation units. TMs are essential for maintaining your product across product updates and target languages. Reusing existing translations increases consistency and will also save costs. A large company will likely have a library of TMs for different purposes.
 
-A TM is a database used and updated by translators as well as localization resources in your organization. It consists of previously translated source and target language pairs called translation units. TMs are essential for maintaining your product across product updates and target languages. Reusing existing translations increases consistency and will also save costs. A large company will likely have a library of TMs for different purposes.
-
-TMs have a standard XML interchange format, called [Translation Memory eXchange (TMX)](localization-file-formats.md). This standard format makes it easier to import, export, and maintain consistency across TMs.
+TMs have a standard XML interchange format, called Translation Memory eXchange (TMX). This standard format makes it easier to import, export, and maintain consistency across TMs.  For more information, refer to [Localization file formats](localization-file-formats.md).
 
 ### Existing terminology
 
 When you use terms that have specific meanings within your products, you should also manage the translation of these terms carefully. You use terminology lists (also called term bases or glossaries) to manage these terms. Some of them you might want translated in a specific way, while some you don't want translated at all. For example, product names are often not translated, while names of features might be translated.
 
-Your terminology lists should be developed by both internal teams such as marketing, software, documentation, and linguists, as well as external (LSP) teams. Like TMs, they need to be curated. Terminology lists can be linked to TMs, giving all translators access to the same resources and reference material. Like TMs, terminology lists have a standard XML interchange format, called TermBase eXchange (TBX). For more information, see Manage terminology.
+Your terminology lists should be developed by both internal teams such as marketing, software, documentation, and linguists, as well as external (LSP) teams. Like TMs, they need to be kept up to date when terms evolve or become obsolete. Terminology lists can be linked to TMs, giving all translators access to the same resources and reference material. Like TMs, terminology lists have a standard XML interchange format, called TermBase eXchange (TBX). For more information, see [Manage terminology](managing-terminology.md).
 
 ## Linguistic validation
 
-Part of the maintenance of your linguistic assets is to ensure that each translation is linguistically accurate, culturally appropriate, and validated by an expert. Such linguistic validation is important in all fields, but it is crucial for things like the translation of clinical trials, scientific instructions, and legal documents. In these areas, there are regulatory processes for ensuring linguistic accuracy. Examples include ISO 13485:2016 that covers medical devices and ISO/IEC 17025:2017 that covers requirements for testing and calibration laboratories.
+Part of the maintenance of your linguistic assets is to ensure that each translation is linguistically accurate, culturally appropriate, and validated by an expert. Such linguistic validation is important in all fields, but it is crucial for things like the translation of clinical trials, scientific instructions, and legal documents. In these areas, there are regulatory processes for ensuring linguistic accuracy. Examples include [ISO 13485:2016](https://www.iso.org/standard/59752.html) that covers medical devices and [ISO/IEC 17025:2017](https://www.iso.org/standard/66912.html) that covers requirements for testing and calibration laboratories.
 
 To ensure your TMs and terminology lists are correct, they should be reviewed by linguists, in-country marketing personnel, and subject matter experts. For specialized fields like life sciences and legal services, linguistic validation can be a rigorous process. The validation could require reconciliation of back translation with the original translation, accompanied by a professional review.
 
@@ -105,8 +103,27 @@ When you have received translated materials from your vendor, you need to incorp
 - For help systems, is your product able to link to the content in the appropriate language?
 - If the files are to be stored in a content management system (CMS), does it support the locales that you need?
 
-Another major consideration is maintenance of the TMs and terminology lists that the vendor returns to you, as discussed in [Translation memories](translation-memories.md). These linguistic assets will help to save costs and ensure quality in future projects. You should have an established process for curating them and storing them in a logical way, so they can be easily reused for future projects.
+Another major consideration is maintenance of the TMs and terminology lists that the vendor returns to you, as discussed in [Maintain translation memories](translation-memories.md). These linguistic assets will help to save costs and ensure quality in future projects. You should have an established process for curating them and storing them in a logical way, so they can be easily reused for future projects.
 
 ## Review and validation
 
 Before translated content is prepared for publishing in your product and delivered to the customer, it must be reviewed and validated. For software translation, you need the translations inserted into your product so that the running application can be reviewed. For content translation, the reviewer uses the same presentation format that the users will see. This process isn't the same as the linguistic validation performed during linguistic asset maintenance. “Linguistic correctness” (grammar, spelling, following the style guide, and so on) is what linguistic validation aims for, but unless the reviewer can see the content in the actual user context, it might be difficult to confirm the appropriateness of the translation. The team responsible for the linguistic asset curating should collaborate with the team performing an in-context review.
+
+## Further reading
+
+We have articles about specific types of localization:
+
+- [Localize software](localize-software.md)
+- [Localize documentation](localize-content.md)
+- [Localize games](localize-games.md)
+- [Localize video and multimedia](../media/video-multimedia.md)
+  - [Captioning and subtitling](../media/captioning.md)
+  - [Re-creation and dubbing](../media/re-creation.md)
+
+We also have articles about general aspects of localization that apply to all kinds of projects:
+
+- [Manage terminology](managing-terminology.md)
+- [Maintain translation memories](translation-memories.md)
+- [Localization file formats](localization-file-formats.md)
+- [Exchanging localizable resources](exchanging-localizable-resources.md)
+- [Transcreation](transcreation.md)
