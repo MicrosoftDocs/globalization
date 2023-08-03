@@ -34,11 +34,11 @@ A major early step in the localization process is to identify what needs to be t
 
 You need to isolate the materials you've identified as needing to be translated. All your deliverables—software, documentation, marketing materials, videos (dubbing, subtitling, even recreation), websites, and sample data—have components that are translatable. This translatable content usually needs to be extracted from the source files so that translators can focus solely on the textual content. Any non-translatable content should be the responsibility of [engineers and desktop publishers](#identifying-translation-resources). After translation the textual content is then reinserted into the source files. In some cases your translation vendor can perform the extraction for you.
 
-This approach also lets you use the same source materials to support multiple languages. The source might need some modification to make this possible, but this is still much better than having separate software binaries for each language, or creating a new layout from scratch for every localized version of your documentation or marketing materials.
+This approach also lets you use the same source materials to support multiple languages. The source might need some modification to make this possible, but this is still much better than having separate software binaries for each language, or creating a new layout from scratch for every localized version of your documentation or marketing materials. The separation of translatable content from code is discussed under "Separating your code from your translatable strings" in [Localize software](localize-software.md).
 
 ## Sequencing of materials to be translated
 
-You should consider the order in which you want the materials to be translated. For example, it might be preferable to not translate the user documentation before the UI strings for the features have been translated. Translating the software first allows you to build and approve translation memories and terminology lists, which are then used when translating the documentation. If your deliverables include a glossary or a similar document, that should also be prioritized for the same reason.
+You should consider the order in which you want the materials to be translated. For example, it might be preferable to not translate the user documentation before the UI strings for the features have been translated. Translating the software first allows you to build and approve translation memories and terminology lists, which are then used when translating the documentation. If your deliverables include a glossary or a similar document, that should also be prioritized for the same reason. For more information, refer to [Manage terminology](managing-terminology.md).
 
 This approach is not the only possible one, however. Sometimes translators find that reading and translating the documentation leads them to rethink some UI terminology translations from a more informed viewpoint. Thus you should consider the sequencing separately for each new project.
 
@@ -59,9 +59,10 @@ Your organization might have some of these resources available internally. When 
 
 ## Preparing and delivering materials to translation resources
 
-You should provide the localization vendor more than just the strings, multimedia files, and any other materials that need to be translated and localized. Sharing any reference material you have helps to ensure the quality of the localized product. This includes style guides, translation memories (TMs), and terminology lists. If the vendor is responsible for recreating screenshots in the languages of the translated deliverables, you should provide steps for recreating the screenshot, so that matching screenshots can be taken when the translated UI is available.
+You should provide the localization vendor more than just the strings, multimedia files, and any other materials that need to be translated and localized. Sharing any reference material you have helps to ensure the quality of the localized product. This includes style guides, [translation memories](translation-memories.md) (TMs), and [terminology lists](managing-terminology.md). If the vendor is responsible for recreating screenshots in the languages of the translated deliverables, you should provide steps for recreating the screenshot, so that matching screenshots can be taken when the translated UI is available.
 
 You should also establish the expected format for interchanging the data (such as the widely used [XLIFF format](localization-file-formats.md)). The vendor should have access to the English (or other source language) software and product documentation for reference. They should know the purpose, context, and scope of the project, along with the expected translation quality criteria.
+
 Finally, LSPs need a schedule on which to base their own schedule and test plans for validating success. If you are using different vendors for translation and QA, only the vendor responsible for the QA needs the test plans.
 
 The materials you need to send to the vendor are discussed in more detail below.
@@ -86,7 +87,7 @@ TMs have a standard XML interchange format, called Translation Memory eXchange (
 
 When you use terms that have specific meanings within your products, you should also manage the translation of these terms carefully. You use terminology lists (also called term bases or glossaries) to manage these terms. Some of them you might want translated in a specific way, while some you don't want translated at all. For example, product names are often not translated, while names of features might be translated.
 
-Your terminology lists should be developed by both internal teams such as marketing, software, documentation, and linguists, as well as external (LSP) teams. Like TMs, they need to be kept up to date when terms evolve or become obsolete. Terminology lists can be linked to TMs, giving all translators access to the same resources and reference material. Like TMs, terminology lists have a standard XML interchange format, called TermBase eXchange (TBX). For more information, see [Manage terminology](managing-terminology.md).
+Your terminology lists should be developed by both internal teams such as marketing, software, documentation, and linguists, as well as external (LSP) teams. Like TMs, they need to be kept up to date when terms evolve or become obsolete. Terminology lists can be linked to TMs, giving all translators access to the same resources and reference material. Like TMs, terminology lists have a standard XML interchange format, called TermBase eXchange (TBX). For more information, refer to [Manage terminology](managing-terminology.md).
 
 ## Linguistic validation
 
@@ -103,7 +104,7 @@ When you have received translated materials from your vendor, you need to incorp
 - For help systems, is your product able to link to the content in the appropriate language?
 - If the files are to be stored in a content management system (CMS), does it support the locales that you need?
 
-Another major consideration is maintenance of the TMs and terminology lists that the vendor returns to you, as discussed in [Maintain translation memories](translation-memories.md). These linguistic assets will help to save costs and ensure quality in future projects. You should have an established process for curating them and storing them in a logical way, so they can be easily reused for future projects.
+Another major consideration is maintenance of the TMs and terminology lists that the vendor returns to you, as discussed in [Maintain translation memories](translation-memories.md) and [Manage terminology](managing-terminology.md). These linguistic assets will help to save costs and ensure quality in future projects. You should have an established process for curating them and storing them in a logical way, so they can be easily reused for future projects.
 
 ## Review and validation
 
