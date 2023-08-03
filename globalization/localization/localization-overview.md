@@ -10,7 +10,7 @@ ms.date: 07/14/2023
 
 # Localizing your product
 
-Whether your deliverables include software[Localize software](localize-software.md), [multimedia](../media/video-multimedia.md), [PDF documents](localize-content.md), or websites, they need to be localized for the target audience. Localization increases customer satisfaction and gives your product access to new markets, meaning new sources of revenue.
+Whether your deliverables include [software](localize-software.md), [multimedia](../media/video-multimedia.md), [PDF documents](localize-content.md), or websites, they need to be localized for the target audience. Localization increases customer satisfaction and gives your product access to new markets, meaning new sources of revenue.
 
 Localization is not the same thing as translation, even though people often use the words interchangeably. Translation is an important part of localization, but not the only one. Translation changes the text of your deliverable into another language. In some cases, that might be enough, but usually you need to adapt more than just the textual content for your target audience. For example, even a simple sentence in US English that mentions the cost of a train ticket on a given date needs to be adapted when localizing it for, say, German or Egyptian audiences. The cost should use the local currency (unless there is a reason to keep it in US dollars) and the date format needs to be changed from month-day-year to the local format, such as day-month-year. Sometimes localization doesn’t even involve translation into another language, for example, when localizing a product from US English to UK English.
 
