@@ -1,6 +1,6 @@
 ---
 title: Localization file formats
-description: This article describes XML Localization Interchange File Format (XLIFF) in more detail.
+description: This article describes three standardized interchange formats used in localization.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
