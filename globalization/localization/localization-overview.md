@@ -10,7 +10,7 @@ ms.date: 07/14/2023
 
 # Localizing your product
 
-Whether your deliverables include [software](localize-software.md), [multimedia](../media/video-multimedia.md), [PDF documents](localize-content.md), or websites, they need to be localized for the target audience. Localization increases customer satisfaction and gives your product access to new markets, meaning new sources of revenue.
+Whether your deliverables include [software](localize-software.md), [games](localize-games.md), [multimedia](../media/video-multimedia.md), [documentation](localize-content.md), or websites, they need to be localized for the target audience. Localization increases customer satisfaction and gives your product access to new markets, meaning new sources of revenue.
 
 Localization is not the same thing as translation, even though people often use the words interchangeably. Translation is an important part of localization, but not the only one. Translation changes the text of your deliverable into another language. In some cases, that might be enough, but usually you need to adapt more than just the textual content for your target audience. For example, even a simple sentence in US English that mentions the cost of a train ticket on a given date needs to be adapted when localizing it for, say, German or Egyptian audiences. The cost should use the local currency (unless there is a reason to keep it in US dollars) and the date format needs to be changed from month-day-year to the local format, such as day-month-year. Sometimes localization doesn’t even involve translation into another language, for example, when localizing a product from US English to UK English.
 
@@ -28,7 +28,7 @@ The above example is greatly simplified. Localization affects your entire delive
 
 ## Identifying the materials to be translated
 
-A major early step in the localization process is to identify what needs to be translated in your project. This starts with all text visible to users in your deliverables and its accompanying documentation. But you need to consider more than that. Images, videos, marketing material, websites, customer support content such as FAQs, sample data, even chatbots. These other deliverables are all part of the customer's engagement with the product.
+A major early step in the localization process is to identify what needs to be translated in your project. This starts with all text visible to users in your deliverables and its accompanying documentation. But you need to consider more than that. Images, videos, marketing material, websites, customer support content such as FAQs, sample data, even chatbots. These other deliverables are all part of the customer's engagement with the product. With multimedia, you need to weigh the costs and benefits of [re-creation and dubbing](../media/re-creation.md) against [captioning and subtitling](../media/captioning.md). With critical content like marketing material, you might want to do a full [transcreation](transcreation.md).
 
 ## Isolating the materials to be translated
 
@@ -69,7 +69,7 @@ The materials you need to send to the vendor are discussed in more detail below.
 
 ### Source material in an interchangeable format
 
-The material you need translated is often in various formats. Your software strings might be isolated in any number of file formats including .resx or Java .properties files. Your documentation and marketing material might be created using Office, InDesign, FrameMaker, or HTML, to name a few. To accommodate this variety of formats, translations can use an interchangeable data format into which all kinds of source formats can be parsed. XML Localization Interchange File Format (XLIFF) is one such format that is commonly used. For more information, refer to [Localization file formats](localization-file-formats.md).
+The material you need translated is often in various formats. Your software strings might be isolated in any number of file formats including .resx or Java .properties files. Your documentation and marketing material might be created using Office, InDesign, FrameMaker, or HTML, to name a few. To accommodate this variety of formats, translations can use an interchangeable data format into which all kinds of source formats can be parsed. XML Localization Interchange File Format (XLIFF) is one such format that is commonly used. For more information, refer to [Localization file formats](localization-file-formats.md) and [Exchanging localizable resources](exchanging-localizable-resources.md).
 
 You should agree with your translation vendor who will handle the extraction of translatable content from the various source files. If you send the source files to the vendor as is, it is simpler for you, but likely more costly since they will in most cases need to perform the extraction before sending out the translatable text to the translators. The other option is to perform the extraction of the translatable content yourself and send it to the vendor in an interchange format.
 
@@ -109,22 +109,3 @@ Another major consideration is maintenance of the TMs and terminology lists that
 ## Review and validation
 
 Before translated content is prepared for publishing in your product and delivered to the customer, it must be reviewed and validated. For software translation, you need the translations inserted into your product so that the running application can be reviewed. For content translation, the reviewer uses the same presentation format that the users will see. This process isn't the same as the linguistic validation performed during linguistic asset maintenance. “Linguistic correctness” (grammar, spelling, following the style guide, and so on) is what linguistic validation aims for, but unless the reviewer can see the content in the actual user context, it might be difficult to confirm the appropriateness of the translation. The team responsible for the linguistic asset curating should collaborate with the team performing an in-context review.
-
-## Further reading
-
-We have articles about specific types of localization:
-
-- [Localize software](localize-software.md)
-- [Localize documentation](localize-content.md)
-- [Localize games](localize-games.md)
-- [Localize video and multimedia](../media/video-multimedia.md)
-  - [Captioning and subtitling](../media/captioning.md)
-  - [Re-creation and dubbing](../media/re-creation.md)
-
-We also have articles about general aspects of localization that apply to all kinds of projects:
-
-- [Manage terminology](managing-terminology.md)
-- [Maintain translation memories](translation-memories.md)
-- [Localization file formats](localization-file-formats.md)
-- [Exchanging localizable resources](exchanging-localizable-resources.md)
-- [Transcreation](transcreation.md)

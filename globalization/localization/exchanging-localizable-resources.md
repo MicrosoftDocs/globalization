@@ -18,7 +18,7 @@ When translating, it is preferable to separate translatable text from non-transl
 
 XLIFF is a file format that can be used when translating source files regardless of what proprietary format they might use. XLIFF stores the source text and the corresponding translation in an XML format that facilitates transferring the translatable content through the various stages of the translation workflow.
 
-Computer-aided translation (CAT) tools have parsers for isolating translatable text from document layout and storing the text in the XLIFF format. These parsers support common source file formats such as HTML and other markup languages, RTF, Microsoft Office products, Adobe InDesign, Adobe FrameMaker, and plain text. The non-translatable material is stored in separate files called skeletons. For more information, refer to [Parsing source files to XLIFF](#parsing-source-files-to-xliff).
+Computer-aided translation (CAT) tools have parsers for isolating translatable text from document layout and storing the text in the XLIFF format. These parsers support common source file formats such as HTML and other markup languages, RTF, Microsoft Office products, Adobe InDesign, Adobe FrameMaker, and plain text. The non-translatable material is stored in separate files called skeletons. For more information, refer to [Parsing source files to XLIFF](#parsing-source-files-to-xliff), below.
 
 After the translation is complete and the translated target language strings have been added to the XLIFF files, the skeleton files are used for reassembling the source file format with the translated content. Then the files are ready for:
 

@@ -25,6 +25,7 @@ You might also consider using computer-generated voices instead of or alongside 
 ## Re-creation
 
 The scope of re-creation can vary depending on your content and needs. It can start with using your existing assets and footage for editing a new version, which would then be dubbed as described above. But re-creation can also go much further, all the way to essentially creating completely new content to achieve the goal of your original version in a new culture.
+
 Here are some things to consider:
 
 - Voice/dialog: These considerations are very similar to dubbing, discussed above.

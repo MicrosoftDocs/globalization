@@ -12,11 +12,13 @@ ms.date: 07/12/2023
 
 Video game localization requires an understanding of the game development process, storytelling techniques, and interactive elements, as the focus is on entertainment, engagement, narrative, and character development. This makes game localization stand apart from other types of [software localization](localize-software.md), which primarily focuses on functionality and utility, and uses textual elements that are concise and neutral in tone.
 
+Games often have extensive narrative elements, including dialog, prose, and storylines. Localizing these elements needs to capture the essence of the source content, including its humor, cultural references, and other elements that help to keep players enthralled by the game world. For example, if a game maintains a tone of family-friendly, dry humor throughout, this should also be true of the localized version. Humor is difficult in general: sometimes a joke just won’t work in the target language, and it needs to be replaced by another joke that might even be moved to a different point in the dialog.
+
 Localized text, audio, and multimedia in games must sound natural and genre-appropriate to maintain audience immersion. This extends to the marketing material, the game’s webpage, and other supporting material: they should use the same style and register as the game itself to avoid breaking players’ immersion.
 
-Games often have extensive narrative elements, including dialog, prose, and storylines. Localizing these elements needs to capture the essence of the source content, including its humor, cultural references, and other elements that help to keep players enthralled by the game world. For example, if a game maintains a tone of family-friendly, dry humor throughout, this should also be true of the localized version.
+Audio and video localization for games is a crucial part, much more so that with software. It usually means [re-creation](../media/re-creation.md) of the source material: translation adaptation, casting, directing, and lip-syncing to match facial animations might all be needed. This adds complexity and cost. It also means that localization needs to start early enough in the development process, or it will not have enough time for any rework cause by script changes or other reasons.
 
-Audio and video localization for games is a crucial part, much more so that with software. It usually means [re-creation](../media/re-creation.md) of the source material: translation adaptation, casting, directing, and lip-syncing to match facial animations might all be needed. This adds complexity and cost.
+The localization team is usually detached from the development team, so they might only have the original dialog audio files and a script to go on, while the original voice actors might have worked closely with the development team, getting helpful feedback on how their lines should be delivered.
 
 ## Special concerns
 
