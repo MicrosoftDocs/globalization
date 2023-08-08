@@ -1,7 +1,6 @@
 ---
 title: How to release products internationally
-description: Introduction to strategy decisions and other important concerns for international products. 
-ms.topic: how-to
+description: Introduction to strategy decisions and other important concerns for international products.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
