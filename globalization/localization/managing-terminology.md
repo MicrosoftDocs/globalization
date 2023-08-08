@@ -10,9 +10,9 @@ ms.date: 07/27/2023
 
 # Manage terminology
 
-All organizations use some kind of terms, whether general, industry-specific terms or ones specific to your company or product. You should plan for terminology management from the beginning of your project, even if you don’t know if the product will be localized. Well-defined terms improve the consistency of your product as well as its documentation and marketing materials. Terms also help to establish your brand voice. And when the time for localization comes, a properly managed terminology database (termbase) will be crucial. The sooner you have a terminology management process in place, including the localization of terms, the more it will help the development of the original product as well as save time and money with any localized versions. Early translation of terminology also improves the overall quality of the localized product. If all your important terms have correct translations "locked in" before the localization of the whole product starts, each translator working on the project is not going to come up with their own translations which would inevitably vary.
+All organizations use some kind of terms, whether general, industry-specific terms or ones specific to your company or product. You should plan for terminology management from the beginning of your project, even if you don’t know if the product gets localized. Well-defined terms improve the consistency of your product as well as its documentation and marketing materials. Terms also help to establish your brand voice. And when the time for localization comes, a properly managed terminology database (termbase) becomes crucial. The sooner you have a terminology management process in place, including the localization of terms, the more it will help the development of the original product and save time and money with any localized versions. Early translation of terminology also improves the overall quality of the localized product. If all your important terms have correct translations "locked in" before the localization of the whole product starts, each translator working on the project isn't going to come up with their own translations, which would inevitably vary.
 
-It is possible to have a bare bones termbase in something like a Microsoft Excel sheet that lists terms and their equivalents in other languages. But you will get much better results using a dedicated terminology management solution that is integrated with computer-aided translation (CAT) tools and supports the standardized [TermBase eXchange (TBX) format](localization-file-formats.md). Such a solution lets you easily store all kinds of [contextual information and metadata](#what-to-include-in-your-termbase) for each term and share the termbase with other stakeholders.
+It's possible to have a bare bones termbase in something like a Microsoft Excel sheet that lists terms and their equivalents in other languages. But you get much better results using a dedicated terminology management solution that is integrated with computer-aided translation (CAT) tools and supports the standardized [TermBase eXchange (TBX) format](localization-file-formats.md). Such a solution lets you easily store all kinds of [contextual information and metadata](#what-to-include-in-your-termbase) for each term and share the termbase with other stakeholders.
 
 ## What to include in your termbase
 
@@ -25,7 +25,7 @@ You should consider including the following information per language or locale f
 - Date: when the term was created or modified.
 - Author
 - Examples of use: these are very helpful for translators.
-- Exclusions: when the term should not be used, as well as alternative spellings/terms that should not be used.
+- Exclusions: when the term shouldn't be used, and alternative spellings/terms that should not be used.
 - Related terms
 - Product applicability: especially when different product lines use different translations for the same English term.
 
@@ -37,10 +37,10 @@ When you first build your termbase, using automated term extraction or term mini
 
 Here are some good practices for terminology management:
 
-- Stabilize source terms as early as possible. Translate those terms as the first thing in the localization process. If your product includes some new terms that don’t have translated versions in your target languages, coining those terms early will also help translators to get familiar with the new technology or feature in question.
-- A source term, as spelled, can refer to more than one concept. You should have separate entries in the terminology management system for these.
+- Stabilize source terms as early as possible. Translate those terms as the first thing in the localization process. If your product includes some new terms that don’t have translated versions in your target languages, coining those terms early also helps translators to get familiar with the new technology or feature in question.
+- A source term, as spelled, can refer to more than one concept. You should have separate entries in the terminology management system for these cases.
 - Different source terms can sometimes be translated into a given language using the same localized term. Where possible and relevant, you should avoid this.
-- Notify all stakeholders of terminology changes. When term changes do occur, remember to reserve some time for the localization of new and changed terms, as well as the updating of all materials that use the older terms – including their translated versions. A termbase tool enables all stakeholders to access the updated terms as soon as they are available.
+- Notify all stakeholders of terminology changes. When term changes do occur, remember to reserve some time for the localization of new and changed terms and the updating of all materials that use the older terms – including their translated versions. A termbase tool enables all stakeholders to access the updated terms as soon as they're available.
 
 ## Term localization
 
