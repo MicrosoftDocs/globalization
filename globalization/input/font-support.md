@@ -6,29 +6,133 @@ author: pallep
 
 # Script and font support in Windows
 
-Since before Windows 2000, text-display support for new scripts has been added in each major release of Windows.
-This article describes changes made in each major release.
+Since before Windows 2000, text-display support for new scripts has been added in each major release of Windows. This article describes changes made in each major release.
 
-Note that support for a script may require certain changes to text stack components as well as changes to fonts.
-The Windows operating system has many text stack components: DirectWrite, GDI, Uniscribe, GDI+, WPF, RichEdit, ComCtl32, and others.
-The information provided here pertains primarily to GDI and DirectWrite.
-It is also generally applicable to user interface frameworks such as RichEdit or the MSHTML rendering agent used for Windows apps and for rendering Web content, though those components may exhibit certain differences.
+Note that support for a script may require certain changes to text stack components as well as changes to fonts. The Windows operating system has many text stack components: DirectWrite, GDI, Uniscribe, GDI+, WPF, RichEdit, ComCtl32, and others. The information provided here pertains primarily to GDI and DirectWrite. It is also generally applicable to user interface frameworks such as RichEdit or the MSHTML rendering agent used for Windows apps and for rendering Web content, though those components may exhibit certain differences.
 
-Comments on language usage are included in cases in which associations between scripts and languages may not be well known.
-The list of languages for any given script is not necessarily exhaustive.
+A detailed library of Microsoft fonts is available as part of the [Microsoft Typography](/typography/font-list/) documentation.
+
+Comments on language usage are included in cases in which associations between scripts and languages may not be well known. The list of languages for any given script is not necessarily exhaustive.
+
+## Windows 11
+
+The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/font-list/windows-11-font-list).
+
+[Segoe UI Variable](/windows/apps/design/style/segoe-fluent-icons-font) is the new system font for Windows. It is a refreshed take on the classic Segoe and uses variable font technology to dynamically provide great legibility at very small sizes, and improved outlines at display sizes. Windows 11 also introduces a new system icon font, [Segoe Fluent Icons](/windows/apps/design/style/segoe-fluent-icons-font). This icon font aligns to the Fluent Design system. See [Typography in Windows 11](/windows/apps/design/signature-experiences/typography) and [Iconography in Windows 11](/windows/apps/design/signature-experiences/iconography) for more information about Windows 11 design principles.
+
+The following table lists scripts newly supported in Windows 10, and associated fonts:
+
+| New scripts | Region where script is from | Fonts | Comments on language usage |
+| ----------- | --------------------------- | ----- | -------------------------- |
+| Aegean Numbers                 | Europe                | Sans Serif Collection | Aegean numerals and punctuation |
+| Ahom                           | Indian subcontinent   | Sans Serif Collection | Ahom |
+| Anatolian Hieroglyphs          | Middle East           | Sans Serif Collection | Luwian |
+| Ancient Greek Musical Notation | Europe                | Sans Serif Collection | Musical notation used in ancient Greece |
+| Avestan                        | Middle East           | Sans Serif Collection | Avestan, Middle Persian |
+| Balinese                       | Southeast Asia        | Sans Serif Collection | Balinese, Sasak |
+| Bamum                          | Africa                | Ebrima                | Bamum |
+| Bamum Supplement               | Africa                | Segoe UI Historic     | Bamum - Historic stage A-F of the Bamum script |
+| Bassa Vah                      | Africa                | Sans Serif Collection | Bassa |
+| Batak                          | Southeast Asia        | Sans Serif Collection | Alas-Kluet, Angkola, Karo, Mandailing, Pakpak, Simalungun, Toba |
+| Bhaiksuki                      | Indian subcontinent   | Sans Serif Collection | Sanskrit |
+| Buhid                          | Southeast Asia        | Sans Serif Collection | Buhid, Tagalog |
+| Byzantine Musical Symbols      | Europe                | Sans Serif Collection | Musical notation for Byzantine music |
+| Caucasian Albanian             | Europe                | Sans Serif Collection | Caucasian Albanian |
+| Chakma                         | Indian subcontinent   | Nirmala UI            | Chakma   |
+| Cham                           | Southeast Asia        | Sans Serif Collection | Cham, Sanskrit |
+| Chorasmian                     | Middle East           | Sans Serif Collection | Khwarazmian |
+| Combining Half Marks           |                       | Sans Serif Collection | Diacritical marks spanning two or more characters |
+| Common Indic Number Forms      | Indian subcontinent   | Sans Serif Collection | Representing fractions |
+| Cypro-Minoan                   | Europe                | Sans Serif Collection | Unknown |
+| Dives Akuru                    | South Asia            | Sans Serif Collection | Maldivian |
+| Dogra                          | Indian subcontinent   | Sans Serif Collection | Dogri |
+| Duployan                       | Europe                | Sans Serif Collection | Duployan shorthand |
+| Elbasan                        | Europe                | Sans Serif Collection | Albanian |
+| Elymaic                        | Middle East           | Sans Serif Collection | Aramaic |
+| Glagolitic Supplement          | Europe                | Sans Serif Collection | Supplemental characters used in the Glagolitic script |
+| Grantha                        | Indian subcontinent   | Sans Serif Collection | Sanskrit, Tamil |
+| Gunjala Gondi                  | Indian subcontinent   | Sans Serif Collection | Gondi |
+| Hanifi Rohingya                | Southeast Asia        | Sans Serif Collection | Rohingya |
+| Hanunoo                        | Southeast Asia        | Sans Serif Collection | Hanunó'o, Tagalog |
+| Hatran                         | Middle East           | Sans Serif Collection | Hatran Aramaic |
+| Indic Siyaq Numbers            | Indian subcontinent   | Sans Serif Collection | Numbers used for accounting in India |
+| Kaithi                         | Indian subcontinent   | Sans Serif Collection | Awadhi, Bhojpuri, Hindustani, Magahi, Maithili, Nagpuri |
+| Kayah Li                       | Southeast Asia        | Sans Serif Collection | Karenni |
+| Khojki                         | Indian subcontinent   | Sans Serif Collection | Kutchi, Sindhi |
+| Khudawadi                      | Indian subcontinent   | Sans Serif Collection | Sindhi |
+| Lepcha                         | Indian subcontinent   | Sans Serif Collection | Lepcha |
+| Limbu                          | Indian subcontinent   | Sans Serif Collection | Limbu |
+| Linear A                       | Europe                | Sans Serif Collection | Unknown |
+| Linear B Ideograms             | Europe                | Sans Serif Collection | Unknown |
+| Linear B Syllabary             | Europe                | Sans Serif Collection | Mycenaean Greek |
+| Mahajani                       | Indian subcontinent   | Sans Serif Collection | Hindi, Marwari, Punjabi |
+| Makasar                        | Southeast Asia        | Sans Serif Collection | Makassarese |
+| Mandaic                        | Middle East           | Sans Serif Collection | Mandaic |
+| Manichaean                     | Central Asia          | Sans Serif Collection | Multiple Middle Iranian and Tocharian languages |
+| Marchen                        | Central Asia          | Sans Serif Collection | Zhang-Zhung |
+| Masaram Gondi                  | Indian subcontinent   | Sans Serif Collection | Gondi |
+| Mayan Numerals                 | Mesoamerica           | Sans Serif Collection | Historical Mayan numeral system |
+| Medefaidrin                    | Africa                | Sans Serif Collection | Medefaidrin |
+| Meetei Mayek Extensions        | Indian subcontinent   | Sans Serif Collection | Meitei |
+| Mende Kikakui                  | Africa                | Sans Serif Collection | Mende |
+| Meroitic Cursive               | Africa                | Sans Serif Collection | Meroitic |
+| Meroitic Hieroglyphs           | Africa                | Sans Serif Collection | Meroitic |
+| Miao                           | China, Southeast Asia | Sans Serif Collection | A-Hmao, Lipo, Nasu, Sichuan Miao |
+| Modi                           | Indian subcontinent   | Sans Serif Collection | Marathi |
+| Mro                            | Indian subcontinent   | Sans Serif Collection | Mru |
+| Multani                        | Indian subcontinent   | Sans Serif Collection | Saraiki |
+| Musical Symbols                |                       | Sans Serif Collection | Modern musical notation |
+| Nabataean                      | Middle East           | Sans Serif Collection | Nabataean |
+| Nandinagari                    | Indian subcontinent   | Sans Serif Collection | Kannada, Sanskrit |
+| Newa                           | Indian subcontinent   | Sans Serif Collection | Newar |
+| Nushu                          | China                 | Sans Serif Collection | Tuhua |
+| Nyiakeng Puachue Hmong         | Southeast Asia        | Sans Serif Collection | White Hmong, Green Hmong |
+| Old Hungarian                  | Europe                | Sans Serif Collection | Hungarian |
+| Old North Arabian              | Middle East           | Sans Serif Collection | Ancient North Arabian |
+| Old Sogdian                    | Central Asia          | Sans Serif Collection | Sogdian |
+| Pahawh Hmong                   | Southeast Asia        | Sans Serif Collection | Hmong Daw, Hmong Njua |
+| Palmyrene                      | Middle East           | Sans Serif Collection | Palmyrene Aramaic |
+| Pau Cin Hau                    | Southeast Asia        | Sans Serif Collection | Tedim |
+| Psalter Pahlavi                | Middle East           | Sans Serif Collection | Middle Persian |
+| Rejang                         | Southeast Asia        | Sans Serif Collection | Bengkulu, Malay, Rejang |
+| Samaritan                      | Middle East           | Sans Serif Collection | Samaritan Aramaic, Samaritan Hebrew |
+| Saurashtra                     | Indian subcontinent   | Sans Serif Collection | Saurashtra |
+| Sharada                        | Indian subcontinent   | Sans Serif Collection | Kashmiri, Sanskrit |
+| Shorthand Format Controls      | Europe                | Sans Serif Collection | Formatting characters used when rendering Duployan shorthand |
+| Siddham                        | Indian subcontinent   | Sans Serif Collection | Sanskrit |
+| Sogdian                        | Central Asia          | Sans Serif Collection | Sogdian |
+| Soyombo                        | Central Asia          | Sans Serif Collection | Mongolian, Sanskrit, Tibetan |
+| Sundanese                      | Southeast Asia        | Sans Serif Collection | Sundanese |
+| Sundanese Supplement           | Southeast Asia        | Sans Serif Collection | Sundanese |
+| Syloti Nagri                   | Indian subcontinent   | Sans Serif Collection | Middle Bengali, Sylheti |
+| Tagalog                        | Southeast Asia        | Sans Serif Collection | Tagalog |
+| Tagbanwa                       | Southeast Asia        | Sans Serif Collection | Palawanic languages |
+| Tai Viet                       | Southeast Asia        | Sans Serif Collection | Tai Dam, Tai Daeng, Tai Dón, Thai Song, Tày Tac |
+| Takri                          | Indian subcontinent   | Sans Serif Collection | Western and Central Pahari languages |
+| Tangsa                         | Southeast Asia        | Sans Serif Collection | Tangsa |
+| Tirhuta                        | Indian subcontinent   | Sans Serif Collection | Maithili, Sanskrit |
+| Toto                           | Indian subcontinent   | Sans Serif Collection | Toto |
+| Vithkuqi                       | Europe                | Sans Serif Collection | Albanian |
+| Wancho                         | Indian subcontinent   | Sans Serif Collection | Wancho |
+| Warang Citi                    | Indian subcontinent   | Sans Serif Collection | Ho |
+| Yezidi                         | Middle East           | Sans Serif Collection | Northern Kurdish |
+| Zanabazar Square               | Central Asia          | Sans Serif Collection | Mongolian, Sanskrit, Tibetan |
 
 ## Windows 10
+
+The list of fonts included with Windows 10 is available in the [Windows 10 font list](/typography/font-list/windows-10-font-list).
 
 Windows 10 converges the Windows platform for use across multiple device categories.
 The description above of previous releases applies to Windows Client (desktop) and Server editions.
 This section on Windows 10 covers all Windows 10 editions, including Desktop, Server and Mobile.
 
-All Windows 10 editions support the same set of scripts.
-In addition to the scripts supported in earlier Windows releases, Windows 10 adds support for several additional, historic scripts.
-These are supported using the new Segoe UI Historic font:
+All Windows 10 editions support the same set of scripts. In addition to the scripts supported in earlier Windows releases, Windows 10 adds support for several additional, historic scripts. These are supported using the new Segoe UI Historic font.
+
+The following table lists scripts newly supported in Windows 10, and associated fonts:
 
 | New scripts | Region where script is from | Fonts | Comments on language usage |
 | ----------- | --------------------------- | ----- | -------------------------- |
+| ADLaM                     | Africa              | Ebrima            | Fulani   |
 | Brahmi                    | Indian subcontinent | Segoe UI Historic | Historic |
 | Carian                    | Europe              | Segoe UI Historic | Historic |
 | Cypriot                   | Europe              | Segoe UI Historic | Historic |
@@ -39,6 +143,7 @@ These are supported using the new Segoe UI Historic font:
 | Kharoshthi                | Indian subcontinent | Segoe UI Historic | Historic |
 | Lycian                    | Europe              | Segoe UI Historic | Historic |
 | Lydian                    | Europe              | Segoe UI Historic | Historic |
+| Meetei Mayek              | Indian subcontinent | Nirmala UI        | Meitei   |
 | Phoenician                | Middle East         | Segoe UI Historic | Historic |
 | Old Persian Cuneiform     | Middle East         | Segoe UI Historic | Historic |
 | Old South Arabian         | Middle East         | Segoe UI Historic | Historic |
@@ -137,6 +242,8 @@ For more background on the Universal Shaping Engine, see [Creating and supportin
 
 ## Windows 8.1
 
+The list of fonts included with Windows 8.1 is available in the [Windows 8.1 font list](/typography/font-list/windows-81-font-list).
+
 The following table lists scripts newly supported in Windows 8.1, and associated fonts:
 
 | New scripts | Region where script is from | Fonts | Comments on language usage |
@@ -179,6 +286,8 @@ They are intended for use for print or on-screen content, but not for user inter
 
 ## Windows 8
 
+The list of fonts included with Windows 8 is available in the [Windows 8 font list](/typography/font-list/windows-8-font-list).
+
 The following table lists scripts newly supported in Windows 8, and associated fonts:
 
 | New scripts | Region where script is from | Fonts | Comments on language usage |
@@ -209,7 +318,7 @@ The user interface font changes are as follows:
 - Gadugi font: new font for Canadian Aboriginal Syllabics and Cherokee scripts
 - Microsoft JhengHei UI: new font for Traditional Chinese script
 - Microsoft YaHei UI: new font for Simplified Chinese script
-- Nirmala UI: new font for South Asian scripts (Bangla, Devanagari, Gujarati, Malayalam, Odia, Telugu)
+- Nirmala UI: new font for South Asian scripts (Bangla, Devanagari, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Sinhala, Tamil, Telugu)
 - Segoe UI (certain weights): updated to add support for Arabic, Armenian, Georgian (Mkhedruli), Georgian Khutsuri, Hebrew scripts
 
 Among additional fonts added for previously-supported scripts is the Urdu Typesetting font, which supports Arabic script in Nastaliq style (sometimes referred to as   *Perso-Arabic script* ).
@@ -227,6 +336,8 @@ The CSS3 -ms-font-feature-settings property exposes OpenType capabilities and is
 For XAML, advanced OpenType capabilities that were supported in WPF and Silverlight are also supported in the Windows Runtime XAML framework.
 
 ## Windows 7
+
+The list of fonts included with Windows 7 is available in the [Windows 7 font list](/typography/font-list/windows-7-font-list).
 
 The following table lists scripts newly supported in Windows 7, and associated fonts:
 
@@ -305,7 +416,7 @@ Special software support is also required to render math formulas, however.
 This is provided in Microsoft Office 2007, but not in Windows Vista text-stack components.
 
 Prior to Windows Vista, Uniscribe had Arabic, Hebrew and Thai shaping engines that worked with legacy, pre-OpenType fonts, but not for fonts that support those scripts using OpenType glyph substitution and positioning mechanisms.
-The versions of fonts for Arabic, Hebrew and Thai that shipped in Windows Vista were changed to use OpenType.
+The versions of fonts for Arabic, Hebrew and Thai included in Windows Vista were changed to use OpenType.
 This means that those fonts will not work with earlier versions of Uniscribe.
 
 ## Windows XP SP2
