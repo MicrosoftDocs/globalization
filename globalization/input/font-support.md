@@ -16,7 +16,7 @@ Comments on language usage are included in cases in which associations between s
 
 ## Windows 11
 
-The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/fonts/windows-11-font-list).
+The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/fonts/windows_11_font_list).
 
 [Segoe UI Variable](/windows/apps/design/style/segoe-fluent-icons-font) is the new system font for Windows. It's a refreshed take on the classic Segoe and uses variable font technology to dynamically provide great legibility at very small sizes, and improved outlines at display sizes. Windows 11 also introduces a new system icon font, [Segoe Fluent Icons](/windows/apps/design/style/segoe-fluent-icons-font). This icon font aligns to the Fluent Design system. For more information about Windows 11 design principles, see [Typography in Windows 11](/windows/apps/design/signature-experiences/typography) and [Iconography in Windows 11](/windows/apps/design/signature-experiences/iconography).
 
@@ -120,7 +120,7 @@ The following table lists scripts newly supported in Windows 10, and associated
 
 ## Windows 10
 
-The list of fonts included with Windows 10 is available in the [Windows 10 font list](/typography/fonts/windows-10-font-list).
+The list of fonts included with Windows 10 is available in the [Windows 10 font list](/typography/fonts/windows_10_font_list).
 
 Windows 10 converges the Windows platform for use across multiple device categories. This section on Windows 10 covers all Windows 10 editions, including Desktop, Server and Mobile.
 
@@ -240,7 +240,7 @@ For more background on the Universal Shaping Engine, see [Creating and supportin
 
 ## Windows 8.1
 
-The list of fonts included with Windows 8.1 is available in the [Windows 8.1 font list](/typography/fonts/windows-81-font-list).
+The list of fonts included with Windows 8.1 is available in the [Windows 8.1 font list](/typography/fonts/windows_81_font_list).
 
 The following table lists scripts newly supported in Windows 8.1, and associated fonts:
 
@@ -284,7 +284,7 @@ They are intended for use for print or on-screen content, but not for user inter
 
 ## Windows 8
 
-The list of fonts included with Windows 8 is available in the [Windows 8 font list](/typography/fonts/windows-8-font-list).
+The list of fonts included with Windows 8 is available in the [Windows 8 font list](/typography/fonts/windows_8_font_list).
 
 The following table lists scripts newly supported in Windows 8, and associated fonts:
 
@@ -335,7 +335,7 @@ For XAML, advanced OpenType capabilities that were supported in WPF and Silverli
 
 ## Windows 7
 
-The list of fonts included with Windows 7 is available in the [Windows 7 font list](/typography/fonts/windows-7-font-list).
+The list of fonts included with Windows 7 is available in the [Windows 7 font list](/typography/fonts/windows_7_font_list).
 
 The following table lists scripts newly supported in Windows 7, and associated fonts:
 
