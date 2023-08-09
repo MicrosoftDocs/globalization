@@ -8,17 +8,17 @@ author: pallep
 
 Since before Windows 2000, text-display support for new scripts has been added in each major release of Windows. This article describes changes made in each major release.
 
-Note that support for a script may require certain changes to text stack components as well as changes to fonts. The Windows operating system has many text stack components: DirectWrite, GDI, Uniscribe, GDI+, WPF, RichEdit, ComCtl32, and others. The information provided here pertains primarily to GDI and DirectWrite. It is also generally applicable to user interface frameworks such as RichEdit or the MSHTML rendering agent used for Windows apps and for rendering Web content, though those components may exhibit certain differences.
+Support for a script may require certain changes to text stack components and changes to fonts. The Windows operating system has many text stack components: DirectWrite, GDI, Uniscribe, GDI+, WPF, RichEdit, ComCtl32, and others. The information provided here pertains primarily to GDI and DirectWrite. It's also applicable to user interface frameworks such as RichEdit or the MSHTML rendering agent used for Windows apps and for rendering Web content, though those components may exhibit certain differences.
 
 A detailed library of Microsoft fonts is available as part of the [Microsoft Typography](/typography/font-list/) documentation.
 
-Comments on language usage are included in cases in which associations between scripts and languages may not be well known. The list of languages for any given script is not necessarily exhaustive.
+Comments on language usage are included in cases in which associations between scripts and languages may not be well known. The list of languages for any given script isn't necessarily exhaustive.
 
 ## Windows 11
 
-The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/font-list/windows-11-font-list).
+The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/fonts/windows-11-font-list).
 
-[Segoe UI Variable](/windows/apps/design/style/segoe-fluent-icons-font) is the new system font for Windows. It is a refreshed take on the classic Segoe and uses variable font technology to dynamically provide great legibility at very small sizes, and improved outlines at display sizes. Windows 11 also introduces a new system icon font, [Segoe Fluent Icons](/windows/apps/design/style/segoe-fluent-icons-font). This icon font aligns to the Fluent Design system. See [Typography in Windows 11](/windows/apps/design/signature-experiences/typography) and [Iconography in Windows 11](/windows/apps/design/signature-experiences/iconography) for more information about Windows 11 design principles.
+[Segoe UI Variable](/windows/apps/design/style/segoe-fluent-icons-font) is the new system font for Windows. It's a refreshed take on the classic Segoe and uses variable font technology to dynamically provide great legibility at very small sizes, and improved outlines at display sizes. Windows 11 also introduces a new system icon font, [Segoe Fluent Icons](/windows/apps/design/style/segoe-fluent-icons-font). This icon font aligns to the Fluent Design system. For more information about Windows 11 design principles, see [Typography in Windows 11](/windows/apps/design/signature-experiences/typography) and [Iconography in Windows 11](/windows/apps/design/signature-experiences/iconography).
 
 The following table lists scripts newly supported in Windows 10, and associated fonts:
 
@@ -120,13 +120,11 @@ The following table lists scripts newly supported in Windows 10, and associated
 
 ## Windows 10
 
-The list of fonts included with Windows 10 is available in the [Windows 10 font list](/typography/font-list/windows-10-font-list).
+The list of fonts included with Windows 10 is available in the [Windows 10 font list](/typography/fonts/windows-10-font-list).
 
-Windows 10 converges the Windows platform for use across multiple device categories.
-The description above of previous releases applies to Windows Client (desktop) and Server editions.
-This section on Windows 10 covers all Windows 10 editions, including Desktop, Server and Mobile.
+Windows 10 converges the Windows platform for use across multiple device categories. This section on Windows 10 covers all Windows 10 editions, including Desktop, Server and Mobile.
 
-All Windows 10 editions support the same set of scripts. In addition to the scripts supported in earlier Windows releases, Windows 10 adds support for several additional, historic scripts. These are supported using the new Segoe UI Historic font.
+All Windows 10 editions support the same set of scripts. In addition to the scripts supported in earlier Windows releases, Windows 10 adds support for several additional, historic scripts. These scripts are supported using the new Segoe UI Historic font.
 
 The following table lists scripts newly supported in Windows 10, and associated fonts:
 
@@ -242,7 +240,7 @@ For more background on the Universal Shaping Engine, see [Creating and supportin
 
 ## Windows 8.1
 
-The list of fonts included with Windows 8.1 is available in the [Windows 8.1 font list](/typography/font-list/windows-81-font-list).
+The list of fonts included with Windows 8.1 is available in the [Windows 8.1 font list](/typography/fonts/windows-81-font-list).
 
 The following table lists scripts newly supported in Windows 8.1, and associated fonts:
 
@@ -286,7 +284,7 @@ They are intended for use for print or on-screen content, but not for user inter
 
 ## Windows 8
 
-The list of fonts included with Windows 8 is available in the [Windows 8 font list](/typography/font-list/windows-8-font-list).
+The list of fonts included with Windows 8 is available in the [Windows 8 font list](/typography/fonts/windows-8-font-list).
 
 The following table lists scripts newly supported in Windows 8, and associated fonts:
 
@@ -337,7 +335,7 @@ For XAML, advanced OpenType capabilities that were supported in WPF and Silverli
 
 ## Windows 7
 
-The list of fonts included with Windows 7 is available in the [Windows 7 font list](/typography/font-list/windows-7-font-list).
+The list of fonts included with Windows 7 is available in the [Windows 7 font list](/typography/fonts/windows-7-font-list).
 
 The following table lists scripts newly supported in Windows 7, and associated fonts:
 
