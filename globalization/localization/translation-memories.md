@@ -14,7 +14,7 @@ Computer-aided translation (CAT) is a process where translators are assisted by 
 
 If you're a translator who works using a TM, you can benefit from your previous work or work that other translators have done in the past. Every time you start a new project for a customer you have previously worked with, the corresponding TM might contain translations that can be reused in the new project. Every project translators work on with the TM adds to the information stored, making it more comprehensive and more likely to find matches.
 
-During the translation process, these tools can automatically segment the source text according to a set of rules which can be defined for each project. Segmentation happens after translatable strings are extracted from the source files, separating them from the code or other non-translatable content. Extraction and segmentation are usually done by an engineer when the source files arrive from the client. For more information about the phases of the localization process, refer to [Localizing your product](localization-overview.md).
+During the translation process, CAT tools can automatically segment the source text according to a set of rules which can be defined for each project. Segmentation happens after translatable strings are extracted from the source files, separating them from the code or other non-translatable content. Extraction and segmentation are usually done by an engineer when the source files arrive from the client. For more information about the phases of the localization process, refer to [Localizing your product](localization-overview.md).
 
 ## Key formats and standards
 
@@ -32,7 +32,7 @@ A translator doesn’t necessarily need to rely only on their own past work to d
 
 ## Translating with a TM
 
-Translators usually start a new assignment after an engineer has processed the source files as described in the introduction. The translators might be using a web-based CAT tool where the translatable strings have been uploaded for them. If they use a loal tool, the strings are delivered to them as one or more files. These files are either in the tool’s proprietary format or a standardized one, such as XLIFF. The translators also need access to a TM and terminology. Both of these resources can also be available via the web-based CAT tool, or delivered as files in the TMX and TBX formats, respectively.
+Translators usually start a new assignment after an engineer has processed the source files as described in the introduction. The translators might be using a web-based CAT tool where the translatable strings have been uploaded for them. If they use a local tool, the strings are delivered to them as one or more files. These files are either in the tool’s proprietary format or a standardized one, such as XLIFF. The translators also need access to a TM and terminology. Both of these resources can also be available via the web-based CAT tool, or delivered as files in the TMX and TBX formats, respectively.
 
 During the engineering phase, the translatable text has been divided into segments, which are compared to the data stored in the TM so that any matching segments can be retrieved. The matching segments can be perfect matches, where the source text is a 100% match to a previously stored segment. However, there are two kinds of 100% matches:
 
@@ -47,7 +47,7 @@ Clients pay the most for segments that are entirely new translations and less fo
 
 ## Maintaining translation memories
 
-Translation memories tend to contain translations that are no longer useful over time. The two most common reasons are probably:
+Translation memories tend to contain translations that are no longer useful over time. Two common reasons are:
 
 - Inconsistent or duplicate translations for the same source language string
 - Terminology changes on the customer’s end

@@ -14,8 +14,8 @@ When you design a software product, you need to consider the issues involved in 
 
 Some of these issues are more “technical” in nature and are common to all software localization projects. They include:
 
-- Separating translatable material from the rest of the code
-- Regional considerations such as date and time formats, number formats, and address formats
+- [Separating translatable material](#separating-your-code-from-your-translatable-strings) from the rest of the code
+- [Regional considerations](#regional-considerations) such as date and time formats, number formats, and address formats
 
 Each software project also has some distinctive cultural aspects in addition to the common technical issues: how your software works for and supports users in different cultures, and which parts of it might need adaptation. These considerations include things like local holidays, name formats, and, most importantly, anything that might be confusing or inappropriate in some cultures.
 
@@ -27,7 +27,7 @@ You should separate the translatable material from the rest of the code and send
 
 You can separate strings that should be translated by putting them in resource files. It's best practice for developers to store translatable strings in resource files that are separate from strings that shouldn't be translated, such as functional resources or debug resources. Functional resources include, for example, registry keys, function calls, and strings communicated between components.
 
-Part of what you do send to the translator might be marked as "Do not translate" in the translation memories or terminology lists. These entries might include product or brand names or API names. This can be handled automatically in many CAT tools if all non-translatable strings are marked as such in the source language resource files. You should decide on an approach for marking these strings. Depending on the resource file format, it might be a keyword that is inserted in the comment field or metadata that can indicate translate=no. Then your translation vendor can set up a rule in their CAT tool that parses all strings in your delivery, looking for the non-translatable indicator, and locks the strings that have it.
+Part of what you do send to the translator might be marked as "Do not translate" in the translation memories or terminology lists. These entries might include product names, brand names, or API names. This can be handled automatically in many CAT tools if all non-translatable strings are marked as such in the source language resource files. You should decide on an approach for marking these strings. Depending on the resource file format, it might be a keyword that is inserted in the comment field or metadata that can indicate translate=no. Then your translation vendor can set up a rule in their CAT tool that parses all strings in your delivery, looking for the non-translatable indicator, and locks the strings that have it.
 
 For more information, refer to [Externalize localizable resources](/globalization/localizability/externalize-resources).
 

@@ -28,7 +28,7 @@ Some systems and services include automatic multimedia captions created by speec
 
 Captioning and subtitling share certain limitations inherent in displaying text on screen and making it readable.
 
-- Viewers have limited time for reading each caption. There are no hard and fast guidelines, but around 5 seconds seems common.
+- Viewers have limited time for reading each caption. There are no standards for the amount of time a caption should remain on screen; however, around 5 seconds, depending on the length of the caption, is a good starting point.
 - Screen space is limited. To avoid covering up too much of the multimedia content, typically no more than two lines of text are displayed. The maximum number of characters per line depends on the exact technology that is used, but around 40 is a common limit. This is also tied to the timing limitation: viewers can only read so many lines in a few seconds.
 
 As a result of these limitations, captions and subtitles should have their own style guides. Using different (shorter) terms, using abbreviations, and removing some punctuation can save some characters.

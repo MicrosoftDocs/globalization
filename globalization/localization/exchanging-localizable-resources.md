@@ -23,7 +23,7 @@ Computer-aided translation (CAT) tools have parsers for isolating translatable t
 After the translation is complete and the translated target language strings have been added to the XLIFF files, the skeleton files are used for reassembling the source file format with the translated content. Then the files are ready for:
 
 - Previewing the translations with the actual layout.
-- Testing that your layout still works with the translated text, which is likely of different length and might also use different fonts, be written in the opposite direction, have different pagination, or different word or page wrapping.
+- Testing that your layout still works with the translated text, which is likely of different length and might also use different fonts, be written using a different directionality, have different pagination, or different word or page wrapping.
 - Making the final delivery when the above steps have been completed.
 
 ## Parsing source files to XLIFF
