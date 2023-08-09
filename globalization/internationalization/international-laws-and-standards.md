@@ -44,7 +44,7 @@ Some markets have local regulatory boards that specify official spelling, gramma
 
 ## Entry to market
 
-Some markets may require you to register your software before it can be distributed or sold in that market. The perquisites and processes vary by market. For example, China requires that software and services support the national standard: [GB18030 code page](https://icu-project.org/docs/papers/gb18030.html).
+Some markets may require you to register your software before it can be distributed or sold in that market. The perquisites and processes vary by market. For example, China requires that software and services support the national/regional standard: [GB18030 code page](https://icu-project.org/docs/papers/gb18030.html).
 
 ## License terms
 

@@ -42,7 +42,7 @@ The component parts are as follows:
 
 The language code is the only mandatory part of a POSIX locale. Including a territory code is very common, as many languages are used in different countries/regions with regional variations.
 
-The modifier part is not specified in any unified way. One common example is **@euro**. It was added to certain locales in the early 2000s when some countries/regions in the European Union changed from their national currencies to the Euro.
+The modifier part is not specified in any unified way. One common example is **@euro**. It was added to certain locales in the early 2000s when some countries/regions in the European Union changed from their national/regional currencies to the Euro.
 
 ### POSIX example
 
