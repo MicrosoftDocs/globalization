@@ -12,7 +12,7 @@ ms.date: 07/27/2023
 
 All organizations use some kind of terms, whether general, industry-specific terms or ones specific to your company or product. You should plan for terminology management from the beginning of your project, even if you don’t know whether the product will be localized. Well-defined terms improve the consistency of your product as well as its documentation and marketing materials. Terms also help to establish your brand voice. And when the time for localization comes, a properly managed terminology database (termbase) becomes crucial. The sooner you have a terminology management process in place, including the localization of terms, the more it will help the development of the original product and save time and money with any localized versions. Early translation of terminology also improves the overall quality of the localized product. If all your important terms have correct translations "locked in" before the localization of the whole product starts, each translator working on the project won't need to create their own translations for terms, which would inevitably vary.
 
-It's possible to have a bare bones termbase in something like a Microsoft Excel sheet that lists terms and their equivalents in other languages. But you get much better results using a dedicated terminology management solution that is integrated with computer-aided translation (CAT) tools and supports the standardized [TermBase eXchange (TBX) format](localization-file-formats.md). Such a solution lets you easily store all kinds of [contextual information and metadata](#what-to-include-in-your-termbase) for each term and share the termbase with other stakeholders.
+It's possible to have a bare-bones termbase in a spreadsheet like a Microsoft Excel sheet that lists terms and their equivalents in other languages. But you get much better results using a dedicated terminology management solution that is integrated with computer-aided translation (CAT) tools and supports the standardized [TermBase eXchange (TBX) format](localization-file-formats.md). Such a solution lets you easily store all kinds of [contextual information and metadata](#what-to-include-in-your-termbase) for each term and share the termbase with other stakeholders.
 
 ## What to include in your termbase
 
@@ -24,6 +24,7 @@ You should consider including the following information per language or locale f
 - Grammatical usage: for example, information about gender or part of speech.
 - Date: when the term was created or modified.
 - Author
+- Term status: for example, approved or failed.
 - Examples of use: these are very helpful for translators.
 - Exclusions: when the term shouldn't be used, and alternative spellings/terms that should not be used.
 - Related terms

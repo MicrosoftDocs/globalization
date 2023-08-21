@@ -27,7 +27,7 @@ You should separate the translatable material from the rest of the code and send
 
 You can separate strings that should be translated by putting them in resource files. It's best practice for developers to store translatable strings in resource files that are separate from strings that shouldn't be translated, such as functional resources or debug resources. Functional resources include, for example, registry keys, function calls, and strings communicated between components.
 
-Part of what you do send to the translator might be marked as "Do not translate" in the translation memories or terminology lists. These entries might include product names, brand names, or API names. This can be handled automatically in many CAT tools if all non-translatable strings are marked as such in the source language resource files. You should decide on an approach for marking these strings. Depending on the resource file format, it might be a keyword that is inserted in the comment field or metadata that can indicate translate=no. Then your translation vendor can set up a rule in their CAT tool that parses all strings in your delivery, looking for the non-translatable indicator, and locks the strings that have it.
+Part of what you send to the translator might be marked as "Do not translate" in the translation memories or terminology lists. These entries might include product names, brand names, or API names. This can be handled automatically in many CAT tools if all non-translatable strings are marked as such in the source language resource files. You should decide on an approach for marking these strings. Depending on the resource file format, it might be a keyword that is inserted in the comment field or metadata that can indicate translate=no. Then your translation vendor can set up a rule in their CAT tool that parses all strings in your delivery, looking for the non-translatable indicator, and locks the strings that have it.
 
 For more information, refer to [Externalize localizable resources](/globalization/localizability/externalize-resources).
 
@@ -55,7 +55,7 @@ As mentioned in the introduction, in addition to the more technical aspects of i
 - What is taught at each grade level might vary, or the same subject might be taught differently.
 - The list of mandatory and optional subjects can vary by country or region.
 
-Some common issues are discussed in th following sections.
+Some common issues are discussed in the following sections.
 
 ### Avoiding cultural confusion or impropriety
 

@@ -16,9 +16,9 @@ Captioning is primarily made for viewers who are deaf or hard of hearing. In add
 
 In the US, closed captions are mandatory for all public multimedia such as news or commercials. The Federal Communications Commission requires video programming providers, such as TV networks, offer closed captions for all new programs that have audio in English or Spanish, with certain exemptions. For the complete details, refer to [Title 47 CFT 79.1 Closed captioning of televised video programming](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-C/part-79/subpart-A/section-79.1). Additionally, the Americans with Disabilities Act (ADA) requires that businesses that are open to public such as hospitals, hotels, and shopping centers provide access to verbal information on televisions, films or slide shows. Captioning is one way of fulfilling this requirement. For the complete details, refer to [Americans with Disabilities Act Title III Regulations](https://www.ada.gov/law-and-regs/title-iii-regulations/).
 
-Subtitling displays a translation of the dialogue so that people who have limited or no knowledge of the original spoken language can follow the content. It doesn't describe any other audible content the way captioning does. Subtitled content, such as a TV show from a streaming service or a film on DVD, is often available in multiple languages from which the viewer can choose.
+Subtitling displays a translation of the dialog so that people who have limited or no knowledge of the original spoken language can follow the content. It doesn't describe any other audible content the way captioning does. Subtitled content, such as a TV show from a streaming service or a film on DVD, is often available in multiple languages from which the viewer can choose.
 
-Captioning and subtitling also make it possible to understand the content by reading if the viewer needs to turn down the volume for some reason, or if spoken dialogue is hard to hear because of background noise.
+Captioning and subtitling also make it possible to understand the content by reading if the viewer needs to turn down the volume for some reason, or if spoken dialog is hard to hear because of background noise.
 
 Both captioning and subtitling are less expensive to implement than voice-over, dubbing or a full re-creation of the content. For more information on re-creation and dubbing, refer to [Re-creation](re-creation.md).
 
@@ -37,7 +37,7 @@ As a result of these limitations, captions and subtitles should have their own s
 
 Here's an overview of how the process of creating subtitles for an existing video could go:
 
-1. Create a source language script. There are tools that can do this automatically, such as Azure Media Services. Alternatively, you might have access to the original script.
+1. Create a source language script. There are tools that can do this automatically, such as [Azure AI Video Indexer](/azure/azure-video-indexer/video-indexer-overview). Alternatively, you might have access to the original script.
 1. Review the script against the source video and correct it as necessary. You should always check automatically generated scripts, and even original scripts might have changed during the production of the video. Check for things like technical correctness, grammar, terminology, and spelling. This way the subtitles can correct for errors that might have crept into the source video.
 1. Translate the script. If you have a style guide for subtitling, the translation can already benefit from it at this stage.
 1. Review the translation for correctness against the video and correct it as necessary.

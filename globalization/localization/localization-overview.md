@@ -10,7 +10,7 @@ ms.date: 07/14/2023
 
 # Localizing your product
 
-Whether your deliverables include [software](localize-software.md), [games](localize-games.md), [multimedia](../media/video-multimedia.md), [documentation](localize-content.md), or websites, they need to be localized for the target audience. Localization increases customer satisfaction and gives your product access to new markets, meaning new sources of revenue.
+Whether your deliverables include [software](localize-software.md), [games](localize-games.md), [multimedia](../media/video-multimedia.md), [documentation](localize-content.md), or websites, they need to be localized for the target audience if you want to increase customer satisfaction and give your product access to new markets, meaning new sources of revenue.
 
 Localization is not the same thing as translation, even though people often use the words interchangeably. Translation is an important part of localization, but not the only one. Translation changes the text of your deliverable into another language. In some cases, that might be enough, but usually you need to adapt more than just the textual content for your target audience. For example, a sentence in US English that mentions the cost of a train ticket on a given date needs to be adapted when localizing it for, say, German or Egyptian audiences. The cost should use the local currency (unless there is a reason to keep it in US dollars) and the date format needs to be changed from month-day-year to the local format, such as day-month-year. Sometimes localization doesn’t even involve translation into another language, for example, when localizing a product from US English to UK English.
 
@@ -19,7 +19,7 @@ The above example is greatly simplified. Localization affects your entire delive
 When localization and internationalization are done correctly, the following things and more are considered:
 
 - Cultural differences such as cultural references, idioms, symbolic meanings, taboos; for example, ground floor vs. first floor, or football vs. soccer
-- Date, time, and currency formats
+- Date, time, and currency formats; different calendars
 - Metric vs. imperial measurements
 - Text length: text translated from English into many other languages can be considerably longer, which might create layout issues
 - Orthography, including punctuation and capitalization
@@ -34,7 +34,7 @@ A major early step in the localization process is to identify what needs to be t
 
 ## Isolating the materials to be translated
 
-You need to isolate the materials you've identified as needing to be translated. All your deliverables—[software](localize-software.md), [documentation](localize-content.md), [marketing materials](transcreation.md), videos (dubbing, [subtitling](../media/captioning.md), even [recreation](../media/re-creation.md)), websites, and sample data—have components that are translatable. This translatable content usually needs to be extracted from the source files so that translators can focus solely on the textual content. Any non-translatable content should be the responsibility of [engineers and desktop publishers](#identifying-translation-resources). After translation the textual content is then reinserted into the source files. In some cases your translation vendor can perform the extraction for you.
+You need to isolate the materials you've identified as needing to be translated. All your deliverables—[software](localize-software.md), [documentation](localize-content.md), [marketing materials](transcreation.md), videos (dubbing, [subtitling](../media/captioning.md), even [re-creation](../media/re-creation.md)), websites, and sample data—have components that are translatable. This translatable content usually needs to be extracted from the source files so that translators can focus solely on the textual content. Any non-translatable content should be the responsibility of [engineers and desktop publishers](#identifying-translation-vendors). After translation the textual content is then reinserted into the source files. In some cases your translation vendor can perform the extraction for you.
 
 This approach also lets you use the same source materials to support multiple languages. The source might need some modification to make this possible, but this is still much better than having separate software binaries for each language, or creating a new layout from scratch for every localized version of your documentation or marketing materials. The separation of translatable content from code is discussed under "Separating your code from your translatable strings" in [Localize software](localize-software.md).
 
@@ -44,7 +44,7 @@ You should consider the order in which you want the materials to be translated. 
 
 This approach is not the only possible one, however. Sometimes translators find that reading and translating the documentation leads them to rethink some UI terminology translations from a more informed viewpoint. Thus you should consider the sequencing separately for each new project.
 
-## Identifying translation resources
+## Identifying translation vendors
 
 There are various ways to handle a translation project. Will you contact a Language Service Provider (LSP), single-language vendor (SLV), a multi-language vendor (MLV), or a freelancer? With freelancers, there's less overhead but the management burden falls upon you. MLVs might have more fixed costs than SLVs, but a single point of contact has advantages if your project requires multiple target languages. You should investigate the advantages and disadvantages of each of these alternatives for the scope and type of your project. You should also validate that they have the skills and domain knowledge for your project.
 
@@ -57,9 +57,9 @@ A translation project could involve the following roles:
 - Testing/quality assurance resources who verify the quality of the localized deliverables
 - Translators
 
-Your organization might have some of these resources available internally. When planning your localization project, you should ensure that all these tasks are handled either in-house or by the agency or freelancers you select.
+Your organization might have some of these capabilities available internally. When planning your localization project, you should ensure that all these tasks are handled either in-house or by the agency or freelancers you select.
 
-## Preparing and delivering materials to translation resources
+## Preparing and delivering materials to translation vemdors
 
 You should provide the localization vendor more than just the strings, multimedia files, and any other materials that need to be translated and localized. Sharing any reference material you have helps to ensure the quality of the localized product. This includes style guides, [translation memories](translation-memories.md) (TMs), and [terminology lists](managing-terminology.md). If the vendor is responsible for recreating screenshots in the languages of the translated deliverables, you should provide steps for recreating the screenshot, so that matching screenshots can be taken when the translated UI is available.
 
@@ -81,7 +81,7 @@ Style guides convey, for example, the tone you should use when addressing the us
 
 ### Existing translation memories
 
-A [translation memory](translation-memories.md) (TM) is a database used and updated by translators as well as localization resources in your organization. It consists of previously translated source and target language pairs called translation units. TMs are essential for maintaining your product across product updates and target languages. Reusing existing translations increases consistency and will also save costs. A large company will likely have a library of TMs for different purposes.
+A [translation memory](translation-memories.md) (TM) is a database used and updated by translators as well as localization teams in your organization. It consists of previously translated source and target language pairs called translation units. TMs are essential for maintaining your product across product updates and target languages. Reusing existing translations increases consistency and will also save costs. A large company will likely have a library of TMs for different purposes.
 
 TMs have a standard XML interchange format, called Translation Memory eXchange (TMX). This standard format makes it easier to import, export, and maintain consistency across TMs.  For more information, refer to [Localization file formats](localization-file-formats.md).
 
@@ -106,7 +106,7 @@ When you have received translated materials from your vendor, you need to incorp
 - For help systems, is your product able to link to the content in the appropriate language?
 - If the files are to be stored in a content management system (CMS), does it support the locales that you need?
 
-Another major consideration is maintenance of the TMs and terminology lists that the vendor returns to you, as discussed in [Maintain translation memories](translation-memories.md) and [Manage terminology](managing-terminology.md). These linguistic assets will help to save costs and ensure quality in future projects. You should have an established process for curating them and storing them in a logical way, so they can be easily reused for future projects.
+Another major consideration is maintenance of the TMs and terminology lists that the vendor returns to you, as discussed in [Translation memories](translation-memories.md) and [Manage terminology](managing-terminology.md). These linguistic assets will help to save costs and ensure quality in future projects. You should have an established process for curating them and storing them in a logical way, so they can be easily reused for future projects.
 
 ## Review and validation
 

@@ -14,7 +14,7 @@ XML Localization Interchange File Format (XLIFF) and other standardized intercha
 
 ## Parsing and reassembling source files
 
-When translating, it is preferable to separate translatable text from non-translatable elements like document layout and markup. This process of isolating translatable text content from the source files is known as extraction. Extracting the translatable content from the source files lets the translators work with only the text without worrying about the source file format or the layout within each source file.
+When translating, it is essential to separate translatable text from non-translatable elements like document layout and markup. This process of isolating translatable text content from the source files is known as extraction. Extracting the translatable content from the source files lets the translators work with only the text without worrying about the source file format or the layout within each source file.
 
 XLIFF is a file format that can be used when translating source files regardless of what proprietary format they might use. XLIFF stores the source text and the corresponding translation in an XML format that facilitates transferring the translatable content through the various stages of the translation workflow.
 

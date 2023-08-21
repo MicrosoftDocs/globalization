@@ -8,7 +8,7 @@ ms.date: 07/12/2023
 
 --- 
 
-# Maintain translation memories
+# Translation memories
 
 Computer-aided translation (CAT) is a process where translators are assisted by various software tools when translating text from one language into another. CAT tools can include Translation Memory (TM) tools, terminology tools, spelling and grammar checkers, and machine translation tools. Translation memories are databases that contain text segments in a source language that are paired with translated segments in one or more target languages. Each segment could be a word, a sentence, or an entire paragraph.
 
