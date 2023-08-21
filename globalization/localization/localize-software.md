@@ -68,8 +68,6 @@ You should consider whether any of your UI text strings, icons, interactive elem
 - Humor, slang, and idioms can be touchy even within your own culture, let alone when localizing your software. Even though they can all be effective tools when they land right, it might be best to avoid them entirely, or at least consider their use carefully.
 - If jokes and slang are difficult to localize properly, religion and politics can be even more so. Anything related to them merits careful consideration.
 
-For more information, refer to [Localize video and multimedia](../media/video-multimedia.md).
-
 ### Local holidays
 
 National, religious, secular, and other holidays vary a great deal from one country to another. You should be careful if you're referring to them in your product in any way. This ties in with avoiding confusing or offending your target audience.
