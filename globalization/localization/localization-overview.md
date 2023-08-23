@@ -19,7 +19,7 @@ The above example is greatly simplified. Localization affects your entire delive
 When localization and internationalization are done correctly, the following things and more are considered:
 
 - Cultural differences such as cultural references, idioms, symbolic meanings, taboos; for example, ground floor vs. first floor, or football vs. soccer
-- Date, time, and currency formats; different calendars
+- Date, time, and currency formats, different calendars
 - Metric vs. imperial measurements
 - Text length: text translated from English into many other languages can be considerably longer, which might create layout issues
 - Orthography, including punctuation and capitalization

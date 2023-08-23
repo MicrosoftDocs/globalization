@@ -18,13 +18,13 @@ When translating, it is essential to separate translatable text from non-transla
 
 XLIFF is a file format that can be used when translating source files regardless of what proprietary format they might use. XLIFF stores the source text and the corresponding translation in an XML format that facilitates transferring the translatable content through the various stages of the translation workflow.
 
-Computer-aided translation (CAT) tools have parsers for isolating translatable text from document layout and storing the text in the XLIFF format. These parsers support common source file formats such as HTML and other markup languages, resources files formats like RESX, RTF, Microsoft Office products, Adobe InDesign, Adobe FrameMaker, and plain text. The non-translatable material is stored in separate files called skeletons. For more information, refer to [Parsing source files to XLIFF](#parsing-source-files-to-xliff), below.
+Computer-aided translation (CAT) tools have parsers for isolating translatable text from document layout and storing the text in the XLIFF format. These parsers support common source file formats such as HTML and other markup languages, resource file formats like RESX, RTF, Microsoft Office products, Adobe InDesign, Adobe FrameMaker, and plain text. The non-translatable material is stored in separate files called skeletons. For more information, refer to [Parsing source files to XLIFF](#parsing-source-files-to-xliff), below.
 
 After the translation is complete and the translated target language strings have been added to the XLIFF files, the skeleton files are used for reassembling the source file format with the translated content. Then the files are ready for:
 
-- Previewing the translations with the actual layout, whether you do this in the UI, on the website, or in the documentation.
+- Previewing the translations with the actual layout, whether you do this in the UI, on the website, or in the documentation. Previewing the translations might involve building the application using the translated strings, or incorporating the translated content in your website or documentation.
 - Testing that your layout still works with the translated text, which is likely of different length and might also use different fonts, be written using a different directionality, have different pagination, or different word or page wrapping.
-- Making the final delivery when the above steps have been completed.
+- Fixing any issues found in the previous step. Fixes might involve changes to the translated strings or changes to how text is rendered in the UI.
 
 ## Parsing source files to XLIFF
 
