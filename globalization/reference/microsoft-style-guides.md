@@ -61,6 +61,7 @@ Localization Style Guides are collections of rules that define language and styl
 * [Malay (Malaysia)](https://download.microsoft.com/download/e/7/5/e75bbabf-ac3b-4112-bc2f-28f825a91d90/may-mys-StyleGuide.pdf)
 * [Malayalam](https://download.microsoft.com/download/E/6/F/E6F96E6F-0052-4FCC-AAA5-45A5ABEFA640/mal-ind-StyleGuide.pdf)
 * [Maltese](https://download.microsoft.com/download/1/0/2/102653A7-0A99-4F2A-96BB-50BF455E62B2/mlt-mlt-StyleGuide.pdf)
+* [Māori](https://download.microsoft.com/download/4/e/d/4ed993e5-5c80-41f9-9d05-cac0c5a10dbd/mao-nzl-StyleGuide.pdf)
 * [Marathi](https://download.microsoft.com/download/4/8/8/4889f570-623c-4c8b-a42f-51d64e4474aa/mar-ind-StyleGuide.pdf)
 * [Nepali](https://download.microsoft.com/download/A/F/2/AF2A5739-C56B-44AE-8D21-1EE5F26E8A6C/nep-npl-StyleGuide.pdf)
 * [Norwegian Bokm&#229;l](https://download.microsoft.com/download/2/2/3/22303bf7-ffda-4066-81e7-1401d7ab9105/nob-nor-StyleGuide.pdf)
