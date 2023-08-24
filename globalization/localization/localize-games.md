@@ -16,7 +16,7 @@ Games often have extensive narrative elements, including dialog, prose, and stor
 
 Localized text, audio, and multimedia in games must sound natural and genre-appropriate to maintain audience immersion. The game's marketing material, webpage, and other supporting material should also use the same style and register as the game itself to avoid breaking players’ immersion.
 
-Audio and video localization for games is a crucial part, much more so that with software. It usually means [re-creation](../media/re-creation.md) of the source material: translation adaptation, casting, directing, and lip-syncing to match facial animations might all be needed. This adds complexity and cost. It also means that localization needs to start early enough in the development process, or it will not have enough time for any rework cause by script changes or other reasons.
+Audio and video localization for games is a crucial part, much more so that with software. It usually means [re-creation](../media/re-creation.md) of the source material: translation adaptation, casting, directing, and lip-syncing to match facial animations might all be needed. This adds complexity and cost. It also means that localization needs to start early enough in the development process, or it will not have enough time for any rework caused by script changes or other reasons.
 
 The localization team is usually detached from the development team, so they might only have the original dialog audio files and a script to go on. The original voice actors might have worked closely with the development team, getting helpful feedback on how their lines should be delivered. Ideally, the localization team would receive a briefing of the content to be produced along with the script and audio files. Reviewing or testing each localized language version separately could be considered as well.
 
@@ -24,7 +24,7 @@ The localization team is usually detached from the development team, so they mig
 
 Video games have some unique concerns that don’t usually apply to software, starting with age ratings. As part of localization planning, you should consider the game's rating in the source market, the preferred rating in the target markets, and what adjustments might be needed to meet those ratings. As mentioned, localization needs to start early enough, so that rating guidelines for translators and voice actors can be established as soon as possible. There are two widely adopted age rating systems: [ESRB](https://www.esrb.org/ratings/) in North America and [PEGI](https://pegi.info/page/pegi-age-ratings) in Europe. Some countries use their own ratings system instead, such as Germany’s USK. Ratings in different systems are broadly similar but not identical, so localization choices (mainly language-related) might be guided by the need to hit the right rating in the target market. Localized versions attempt to stay within the same age rating, although there are cases where a game receives a different age rating in different markets.
 
-Here is a list of concerns that affects a game’s age rating. The more frequent, explicit, extreme, or gross each category gets, the higher the rating will be.
+Here is a list of concerns that affect a game’s age rating. The more frequent, explicit, extreme, or gross each category gets, the higher the rating will be.
 
 - Frightening sounds or images (for very young children)
 - Violence

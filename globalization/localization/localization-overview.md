@@ -19,7 +19,7 @@ The above example is greatly simplified. Localization affects your entire delive
 When localization and internationalization are done correctly, the following things and more are considered:
 
 - Cultural differences such as cultural references, idioms, symbolic meanings, taboos; for example, ground floor vs. first floor, or football vs. soccer
-- Date, time, and currency formats, different calendars
+- Different calendars and date, time, and currency formats
 - Metric vs. imperial measurements
 - Text length: text translated from English into many other languages can be considerably longer, which might create layout issues
 - Orthography, including punctuation and capitalization
@@ -34,7 +34,7 @@ A major early step in the localization process is to identify what needs to be t
 
 ## Ensuring that materials to be translated are correct
 
-It is important to verify that the source materials are ready for translation. This could include validating that all terminology is being used correctly and consistently, and that grammatical and orthographical errors have been fixed. These types of errors can significantly slow down the translation process, and they typically introduce additional localization cost as retranslation is required after source text changes. You should aim to have all your terminology approved and frozen before going into tramslation.
+It is important to verify that the source materials are ready for translation. This could include validating that all terminology is being used correctly and consistently, and that grammatical and orthographical errors have been fixed. These types of errors can significantly slow down the translation process, and they typically introduce additional localization cost as retranslation is required after source text changes. You should aim to have all your terminology approved and frozen before going into translation.
 
 ## Isolating the materials to be translated
 
@@ -63,7 +63,7 @@ A translation project could involve the following roles:
 
 Your organization might have some of these capabilities available internally. When planning your localization project, you should ensure that all these tasks are handled either in-house or by the agency or freelancers you select.
 
-## Preparing and delivering materials to translation vemdors
+## Preparing and delivering materials to translation vendors
 
 You should provide the localization vendor more than just the strings, multimedia files, and any other materials that need to be translated and localized. Sharing any reference material you have helps to ensure the quality of the localized product. This includes style guides, [translation memories](translation-memories.md) (TMs), and [terminology lists](managing-terminology.md). If the vendor is responsible for recreating screenshots in the languages of the translated deliverables, you should provide steps for recreating the screenshot, so that matching screenshots can be taken when the translated UI is available.
 
@@ -91,7 +91,7 @@ TMs have a standard XML interchange format, called Translation Memory eXchange (
 
 ### Existing terminology
 
-When you use terms that have specific meanings within your products, you should also manage the translation of these terms carefully. You use terminology lists (also called term bases or glossaries) to manage these terms. Some of them you might want translated in a specific way, while some you don't want translated at all. For example, product names are often not translated, while names of features might be translated.
+When you use terms that have specific meanings within your products, you should also manage the translation of these terms carefully. You use terminology lists (also called termbases or glossaries) to manage these terms. Some of them you might want translated in a specific way, while some you don't want translated at all. For example, product names are often not translated, while names of features might be translated.
 
 Your terminology lists should be developed by both internal teams such as marketing, software, documentation, and linguists, as well as external (LSP) teams. Like TMs, they need to be kept up to date when terms evolve or become obsolete. Terminology lists can be linked to TMs, giving all translators access to the same resources and reference material. Like TMs, terminology lists have a standard XML interchange format, called TermBase eXchange (TBX). For more information, refer to [Manage terminology](managing-terminology.md).
 
