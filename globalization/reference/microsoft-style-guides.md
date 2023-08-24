@@ -77,6 +77,7 @@ Localization Style Guides are collections of rules that define language and styl
 * [Scottish Gaelic](https://download.microsoft.com/download/0/6/A/06A8E943-9546-4230-AD42-D1F592B9276E/gla-gbr-StyleGuide.pdf)
 * [Serbian (Cyrillic)](https://download.microsoft.com/download/9/1/9/9197747b-6d76-4039-9963-82958eb4d6a3/scc-scg-StyleGuide.pdf)
 * [Serbian (Latin)](https://download.microsoft.com/download/7/3/1/7312fa5f-ac47-438b-906b-3f141421aa59/srp-scg-StyleGuide.pdf)
+* [Serbian (Cyrillic, Bosnia and Herzegovina)](https://download.microsoft.com/download/8/9/3/893da14f-f1a8-46c5-abb1-171f7daabb1c/scc-bih-StyleGuide.pdf)
 * [Slovak](https://download.microsoft.com/download/2/9/8/298bd25a-ac5b-4700-ab57-a86e0c268a78/slk-svk-StyleGuide.pdf)
 * [Slovenian](https://download.microsoft.com/download/0/d/7/0d705b3b-662f-4d88-b35e-3b166941c6ce/slv-svn-StyleGuide.pdf)
 * [Spanish (Neutral)](https://download.microsoft.com/download/4/3/1/431d9836-40dc-4f2b-aafc-def5c7b5d0f3/spa-neu-StyleGuide.pdf)
