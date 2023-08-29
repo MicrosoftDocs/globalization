@@ -7,7 +7,7 @@ ms.date: 03/16/2016
 ---
 # Software Localization
 
-[Localization Overview](overview.md)  
+[Localization Overview](localization-overview.md)  
 Localization of a product requires that the product be adapted to both the language and the culture of a particular market.
 
 [Localization Elements](localization-elements.md)  
