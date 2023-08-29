@@ -83,7 +83,7 @@ The following sections provide some generic information about the concepts of gl
 
 ## Localization
 
-* [Localization overview](localization/overview.md)
+* [Localization overview](localization/localization-overview.md)
 
 * [Localization elements](localization/localization-elements.md)
 
