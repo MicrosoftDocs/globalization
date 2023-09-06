@@ -106,7 +106,7 @@ As much as possible, it's important to avoid including content that could offend
 Software has been banned in some countries and regions simply because a map showed that a disputed piece of land belonged to another country/region.
 Maps are very graphic and obvious statements about a government's sovereignty, so a user associated with the disputed piece of land would know very quickly if the maps are accurate or not.
 In addition to maps, flags can be a very sensitive piece of content.
-For example, a flag in a user interface that represented an unrecognized country was very upsetting to a nearby government, causing that government to ban a product on the basis of the unrecognized flag.
+For example, a flag in a user interface that represented an unrecognized country/region was very upsetting to a nearby government, causing that government to ban a product on the basis of the unrecognized flag.
 Both of the incidents just mentioned emphasize one of the most misused group of graphics: political symbols, maps, and flags.
 Most unknowing developers use flags as a graphical way to display a particular language, country, or region, but that is not what a flag represents.
 Flags are nationalistic; they represent ideals, boundaries, and political beliefs, but they do not represent a language.
