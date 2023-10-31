@@ -1,5 +1,5 @@
 ---
-title: Text boundaries
+title: Writing systems, scripts, and languages
 description: A writing system uses a defined set of symbols or characters, and a set of rules (orthography) to represent a language.
 ms.date: 10/31/2023
 author: jowilco

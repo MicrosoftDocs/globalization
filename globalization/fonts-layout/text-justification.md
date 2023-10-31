@@ -18,7 +18,7 @@ For example, in a paragraph that is left-aligned, the left edge of the paragraph
 
 In a paragraph that is centered, both the left and right edges of each line of text will be ragged.
 
-In a paragraph that is justified, the left-most character is aligned with the left margin and the right-most character is aligned with the right margin. This process involves adjusting the letter spacing and word spacing to optimize the number of characters that fit on the line, while meeting the left and right margin constraints. The last line of a justified block of text might use left or right alignment rather than using significant amounts of whitespace to justify the line. [Hyphenation](line-and-word-breaking.md#Hyphenation) can help reduce the amount of whitespace added between letters and words when justifying text.
+In a paragraph that is justified, the left-most character is aligned with the left margin and the right-most character is aligned with the right margin. This process involves adjusting the letter spacing and word spacing to optimize the number of characters that fit on the line, while meeting the left and right margin constraints. The last line of a justified block of text might use left or right alignment rather than using significant amounts of whitespace to justify the line. [Hyphenation](line-and-word-breaking.md#hyphenation) can help reduce the amount of whitespace added between letters and words when justifying text.
 
 Writing systems have rules for how text is justified. Rendering engines and fonts have various strategies for how justification rules are implemented. These strategies include:
 

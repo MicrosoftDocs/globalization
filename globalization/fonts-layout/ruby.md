@@ -11,7 +11,11 @@ A ruby character, named after an original name of type with a height of 5.5. poi
 
 The orientation of the ruby character will match the base characters. For horizontal writing, the ruby characters will appear above the base characters. For vertical writing, the ruby characters will typically appear to the right of the base characters.
 
-<ruby>東京<rt>とうきょう</rt></ruby>
+Horizontal:
+<iframe src="ruby_horizontal.html" width="100%" height="270px"></iframe>
+
+Vertical:
+<iframe src="ruby_vertical.html" width="100%" height="320px"></iframe>
 
 Ruby characters are typically half the size of the corresponding base characters, but if the base characters are using a very small font size, it is better to use other annotation methods, such as including the reading in parentheses after the base characters.
 
