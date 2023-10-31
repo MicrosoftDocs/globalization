@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script language="JavaScript">
+  document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+  parent.window.addEventListener('theme-changed', SetBackgroundColor);
+  function SetBackgroundColor() {
+    var theme = localStorage.getItem('theme');
+    if (theme == 'dark') {
+      document.body.style.backgroundColor = '#171717';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'high-contrast') {
+      document.body.style.backgroundColor = '#000000';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'light') {
+      document.body.style.backgroundColor = '#FFFFFF';
+      document.body.style.color = '#000000';
+    }
+    else {
+      //docs.microsoft.com theme has not been set yet. Default to browser theme.
+    }
+  }
+</script>
+<style> 
+.writing{
+ writing-mode: vertical-rl;
+}
+</style>
+</head>
+<body style="width: 100%; max-width: 300px; margin: 0px">
+<p class="writing">人人生而自由，在尊嚴和權利上一律平等。他們賦有理性和良心，並應以兄弟關係的精神相對待。</p>
+</body>
+</html>
