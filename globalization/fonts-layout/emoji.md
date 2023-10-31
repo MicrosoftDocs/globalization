@@ -22,6 +22,6 @@ Emoji can be convenient when conveying gestures, facial expressions, and other n
 
 ## Inserting emojis using Windows
 
-1. Type Windows logo key :::image type="icon" source="images/windows-logo-key.png" border="false" height="15" width="15":::  + . (period). The emoji keyboard will appear.
+1. Type Windows logo key :::image type="icon" source="images/windows-logo-key.png" border="false":::  + . (period). The emoji keyboard will appear.
 1. Select an emoji with the mouse or keep typing to search through the available emojis for one you like.
 1. If you're using Windows 11, you'll be able to express yourself with GIFs or Kaomoji (emoticons), or you can insert symbols from the same emoji panel.
