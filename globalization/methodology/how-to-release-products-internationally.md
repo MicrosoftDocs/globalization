@@ -84,7 +84,7 @@ The pricing of your product might also need adjustment for the target market. Yo
 
 ### Localization
 
-Your product should be designed according to the principles of internationalization, making it as easy to localize as possible. Thus it should have support for [locales](../locale/locale.md) and [language settings](../locale/language-settings.md), and its localizable resources should be [externalized](../localization/localize-software.md). Besides the product itself, you should have selected a localization partner and agreed on a process with them. For more information about the whole localization process, refer to [Localizing your product](../localization/localization-overview.md).
+Your product should be designed according to the principles of internationalization, making it as easy to localize as possible. Thus it should have support for [locales](../locale/locale.md) and [language settings](../locale/language-settings.md), and its localizable resources should be [externalized](../localization/localize-software.md). Besides the product itself, you should have selected a localization partner and agreed on a process with them. For more information about the whole localization process, refer to [Localizing your product](../localization/localization-overview.md). For more information about globalization, refer to [System.Globalization Namespace](/dotnet/api/system.globalization?view=net-7.0).
 
 ### Product delivery
 
@@ -92,7 +92,7 @@ Physical products need shipping to local warehouses and distribution deals to st
 
 If your product is something that could be manufactured in-country, that is worth considering as it could let you avoid many import-related issues. These include customs duties and tariffs, taxes, import licensing, and shipping, for example.
 
-### Support
+### Local support and infrastructure
 
 You need to build up regional support for your products when you expand into new markets. A software product might need servers or datacenters in the area to avoid latency. For example, many online games have servers around the world to offer a level playing field.
 

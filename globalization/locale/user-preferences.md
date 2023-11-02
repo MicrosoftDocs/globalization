@@ -1,6 +1,6 @@
 ---
 title: Identifying user preferences
-description: International users are mobile and might use more than one language, so it's important to identify the user's preferences for user interface, input, and content.
+description: How to identify preferences of international users for user interface, input, and content, including language and regional formats.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
@@ -14,7 +14,7 @@ Products intended for international markets need to be able to identify and foll
 - **Windows display language**: used for the Windows UI and for features such as File Explorer
 - **Preferred languages**: a Microsoft Store application uses the first language in this list that is supported by the app
 - **Country or region**: Windows and applications can use this setting to customize the content that is presented to the user
-- **Regional format**: Windows and apps use this setting to format dates and times according to the conventions of the selected locale
+- **Regional format**: Windows and apps use this setting to format dates and times according to the conventions of the [selected locale](/dotnet/api/system.globalization.cultureinfo?view=net-7.0)
 
 All Windows language settings are available via an API.
 
