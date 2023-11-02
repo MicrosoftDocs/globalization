@@ -1,11 +1,10 @@
 ---
 title: How to release products internationally
-description: An overview of matters related to planning and implementing international product releases.
+description: Introduction to strategy decisions and other important concerns for international products.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
 ms.date: 10/25/2023
-
 ---
 
 # How to release products internationally

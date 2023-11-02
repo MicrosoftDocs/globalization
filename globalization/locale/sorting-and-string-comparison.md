@@ -26,7 +26,7 @@ Most users choose their sort order indirectly by setting their language in the o
 
 There are several situations where you would want your sort order not to vary from culture to culture (for example, for maintaining ordered lists that require fast searching). This is known as culture-insensitive sorting.
 
-Because each language sorts uniquely and sorting rules tend to be complex, implementing sorting correctly is difficult. Fortunately, platforms provide sorting functionality that applications can depend on.  
+Because each language sorts uniquely and sorting rules tend to be complex, implementing sorting correctly is difficult. Fortunately, platforms provide sorting functionality that applications can depend on.
 
 ## Notes on ordering
 
@@ -34,23 +34,19 @@ This section gives examples of language-specific conventions that affect sorting
 
 ### Special letters, characters, and symbols
 
-#### Combinations of letters
-
-Until 1994, CH and LL were treated as single letters in Spanish. But after the Spanish Academy changed their ruling, CH is collated between CG and CI, and LL between LK and LM.
-
 #### Characters with diacritics
 
 A diacritic is a glyph (a typographical mark) added to a letter or to a basic glyph. Some diacritics are called accents. Characters with diacritics can be treated as distinct letters or equivalent to the unaccented letter.
 
 For example, letters with umlaut are treated as the corresponding non-umlauted letters in German. However, in a German phonebook, umlauts are sorted as combinations of letters, because some German surnames appear in both forms, for example Müller and Mueller. In Arabic, Hamza, which is created diacritically, can be considered the 29th letter even though there are only 28 “full” letters. Some French dictionary ordering traditions use backward secondary sorting for accented letters, meaning they are sorted by the last accented letter in a word.
 
+#### Combinations of letters
+
+Until 1994, CH and LL were treated as single letters in Spanish. But after the Spanish Academy changed their ruling, CH is collated between CG and CI, and LL between LK and LM.
+
 #### Equivalent letters
 
 V and W are now treated as separate letters in Swedish, but before 2006 W was treated as a version of V. In German, ß is sorted as SS.
-
-#### Accented letters
-
-See [Characters with diacritics](#characters-with-diacritics).
 
 #### Lowercase vs uppercase
 
