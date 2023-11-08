@@ -14,9 +14,9 @@ Products intended for international markets need to be able to identify and foll
 - **Windows display language**: used for the Windows UI and for features such as File Explorer
 - **Preferred languages**: a Microsoft Store application uses the first language in this list that is supported by the app
 - **Country or region**: Windows and applications can use this setting to customize the content that is presented to the user
-- **Regional format**: Windows and apps use this setting to format dates and times according to the conventions of the [selected locale](/dotnet/api/system.globalization.cultureinfo?view=net-7.0)
+- **Regional format**: Windows and apps use this setting to format dates and times according to the conventions of the selected locale
 
-All Windows language settings are available via an API.
+All Windows language settings are available via [.NET API's CultureInfo Class](/dotnet/api/system.globalization.cultureinfo).
 
 In addition to the operating system settings, browsers have their own language settings. In Microsoft Edge, they're found under **Settings** > **Languages**. Microsoft Edge has its own preferred languages list for displaying websites, when using browser-based applications, and using writing assistance tools. You can also display Microsoft Edge in any of the languages on this list.
 

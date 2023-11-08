@@ -83,7 +83,7 @@ The pricing of your product might also need adjustment for the target market. Yo
 
 ### Localization
 
-Your product should be designed according to the principles of internationalization, making it as easy to localize as possible. Thus it should have support for [locales](../locale/locale.md) and [language settings](../locale/language-settings.md), and its localizable resources should be [externalized](../localization/localize-software.md). Besides the product itself, you should have selected a localization partner and agreed on a process with them. For more information about the whole localization process, refer to [Localizing your product](../localization/localization-overview.md). For more information about globalization, refer to [System.Globalization Namespace](/dotnet/api/system.globalization?view=net-7.0).
+Your product should be designed according to the principles of [internationalization](software-internationalization.md), making it as easy to localize as possible. Thus it should have support for [locales](../locale/locale.md) and [language settings](../locale/language-settings.md), and its localizable resources should be [externalized](../localization/localize-software.md). Besides the product itself, you should have selected a localization partner and agreed on a process with them. For more information about the whole localization process, refer to [Localizing your product](../localization/localization-overview.md).
 
 ### Product delivery
 
