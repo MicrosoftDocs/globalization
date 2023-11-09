@@ -58,7 +58,6 @@ When you get to specifics in your application, keep in mind significant locale d
 
 To delve into the details of these considerations (and much more), see [International design](international-design.md).
 
-<!--NYI
 ## Localization strategy for different types of content
 
 There isn't a universal way to do localization.
@@ -68,7 +67,6 @@ See:
 * [Localize software](../localization/localize-software.md)
 * [Localize content](../localization/localize-content.md)
 * [Localize games](../localization/localize-games.md)
---->
 
 ## Regulations
 
