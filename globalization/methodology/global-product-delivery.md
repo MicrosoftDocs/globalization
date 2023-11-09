@@ -65,7 +65,7 @@ The type of content or software you're creating will drive varying strategies.
 See:
 
 * [Localize software](../localization/localize-software.md)
-* [Localize content](../localization/localize-content.md)
+* [Localize documentation](../localization/localize-content.md)
 * [Localize games](../localization/localize-games.md)
 
 ## Regulations
