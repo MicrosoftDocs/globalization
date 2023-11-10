@@ -69,5 +69,5 @@ If no matching resource bundle is located, the same steps are used for the curre
 
 Note that there are special cases for Chinese and Norwegian.
 
-- For Chinese, if an empty script value is supplied, “Hans” is assumed for China (“CN”) and Singapore (“SG”), while “Hant” is assumed for Hong Kong SAR China (“HK”), Macau SAR China (“MO”) or Taiwan (“TW”).
+- For Chinese, if an empty script value is supplied, “Hans” is assumed for China (“CN”) and Singapore (“SG”), while “Hant” is assumed for Hong Kong SAR (“HK”), Macao SAR (“MO”) or Taiwan (“TW”).
 - Java treats “no” as a synonym for Norwegian Bokmål (“nb”); however no-NO-NY will be resolved to nn-NO (Norwegian Nynorsk).

@@ -1,12 +1,14 @@
 ---
-title: Bengali - INSCRIPT (Legacy) Keyboard
-description: An interactive representation of the Windows Bengali - INSCRIPT (Legacy) keyboard. To see different keyboard states, click or move the mouse over the state keys.
+title: Bangla - INSCRIPT (Legacy) Keyboard
+description: An interactive representation of the Windows Bangla - INSCRIPT (Legacy) keyboard. To see different keyboard states, click or move the mouse over the state keys.
 ms.date: 04/26/2021
 ms.topic: ui-reference
 author: jowilco
 ---
 
-# Bengali - INSCRIPT (Legacy) Keyboard
+# Bangla - INSCRIPT (Legacy) Keyboard
+
+KLID: 00010445
 
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 

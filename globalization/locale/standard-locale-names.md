@@ -45,4 +45,4 @@ Developers should keep in mind that ISO 639 language tags  can change over time.
 - The Hebrew “iw” became “he” in 1989.
 - The Serbo-Croatian “sh” was replaced by Serbian “sr” and Croatian “hr” in 2000.
 
-Region subtags have changed as well. For example, the country of Serbia and Montenegro was assigned the ISO 3166-1 alpha-2 subtag "CS". In 2006, "CS" was deleted from ISO 3166-1 and ISO 3166-2, and the new countries were assigned the subtags “ME” (Montenegro) and “RS” (Serbia).
+Region subtags have changed as well. For example, the country of Serbia and Montenegro was assigned the ISO 3166-1 alpha-2 subtag "CS". In 2006, "CS" was deleted from ISO 3166-1 and ISO 3166-2, and the subtags “ME” (Montenegro) and “RS” (Serbia) were added.

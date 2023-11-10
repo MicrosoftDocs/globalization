@@ -40,9 +40,9 @@ The component parts are as follows:
 - **.codeset** is any pre-defined name for a character set or encoding identifier (for example, iso885915 or UTF-8)
 - **@modifier** specifies an adjustment to the default locale behavior such as date/time/currency formatting or sorting method
 
-The language code is the only mandatory part of a POSIX locale. Including a territory code is very common, as many languages are used in different countries with regional variations.
+The language code is the only mandatory part of a POSIX locale. Including a territory code is very common, as many languages are used in different countries/regions with regional variations.
 
-The modifier part is not specified in any unified way. One common example is **@euro**. It was added to certain locales in the early 2000s when some countries in the European Union changed from their national currencies to the Euro.
+The modifier part is not specified in any unified way. One common example is **@euro**. It was added to certain locales in the early 2000s when some countries/regions in the European Union changed their currencies to the Euro.
 
 ### POSIX example
 

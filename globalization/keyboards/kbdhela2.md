@@ -8,6 +8,8 @@ author: jowilco
 
 # Greek (220) Latin Keyboard
 
+KLID: 00030408
+
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
 <iframe src="kbdhela2.html" height="300"></iframe>
