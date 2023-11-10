@@ -16,10 +16,10 @@ A ruby character is an annotative gloss placed above or to the right of characte
 The orientation of the ruby character matches the base characters. For horizontal writing, the ruby characters appear above the base characters. For vertical writing, the ruby characters typically appear to the right of the base characters.
 
 Horizontal:
-<iframe src="ruby_horizontal.html" width="100%" height="60px"></iframe>
+<iframe src="ruby_horizontal.html" width="100%" height="80px"></iframe>
 
 Vertical:
-<iframe src="ruby_vertical.html" width="100%" height="80px"></iframe>
+<iframe src="ruby_vertical.html" width="100%" height="100px"></iframe>
 
 Ruby characters are typically half the size of the corresponding base characters. If the base characters are using a very small font size, it's better to use other annotation methods, such as including the reading in parentheses after the base characters.
 
