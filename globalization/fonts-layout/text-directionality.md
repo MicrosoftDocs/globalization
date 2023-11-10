@@ -24,9 +24,9 @@ For bidi text, the order in which the user enters the text (the logical order) a
 - Visual order: Hello سلام
   :::image type="content" source="images/visual_order.png" alt-text="An image displaying Hello in English and Arabic, with arrows showing that English should be read from left to right, while Arabic should be read from right to left.":::
 - Logical order:  Helloس ل ا م
-  :::image type="content" source="images/logical_order.png" alt-text="An image displaying the characters for Hello in English and Arabic, with an arrow indicating that the characters can be though of as being entered in a single direction.":::
+  :::image type="content" source="images/logical_order.png" alt-text="An image displaying the characters for Hello in English and Arabic, with an arrow indicating that the characters can be thought of as being entered in a single direction.":::
 
-Unicode has published [an algorithm](https://www.unicode.org/reports/tr9/) describing how characters used in bidi text should be positioned. Each group of characters is rendered as a separate directional run in the correct direction, according to the algorithm.
+Unicode publishes [an algorithm](https://www.unicode.org/reports/tr9/) describing how characters used in bidi text should be positioned. Each group of characters is rendered as a separate directional run in the correct direction, according to the algorithm.
 
 Text directionality is supported in Unicode via the [directional property](https://www.unicode.org/reports/tr9/#Bidirectional_Character_Types) on each character. Characters are categorized as strong, weak, neutral, or explicit formatting.
 
@@ -36,15 +36,15 @@ Text directionality is supported in Unicode via the [directional property](https
 
 Strong characters have a consistent direction. They can be one of three types:
 
-- Left-to-Right: e.g., Latin alphabet, Han ideographs
-- Right-to-Left: e.g., Hebrew alphabet
-- Right-to-Left Arabic: e.g., Arabic alphabet and related punctuation
+- Left-to-Right: for example, Latin alphabet, Han ideographs
+- Right-to-Left: for example, Hebrew alphabet
+- Right-to-Left Arabic: for example, Arabic alphabet and related punctuation
 
-Sequences of one type of these characters will cause the renderer to display the characters in a single group using the correct directionality.
+Sequences of one type of these characters causes the renderer to display the characters in a single group using the correct directionality.
 
 ### Weak characters
 
-In RTL languages, numbers are displayed from left to right. They are categorized as having weak directionality and the algorithm treats them differently from characters and punctuation. Numerals will simply assume the directionality of the preceding character. Here is an example showing mixed English and Arabic text in a single LTR text block.
+In RTL languages, numbers are displayed from left to right. They're categorized as having weak directionality and the algorithm treats them differently from characters and punctuation. Numerals will assume the directionality of the preceding character. Here's an example showing mixed English and Arabic text in a single LTR text block.
 
 :::image type="content" source="images/weak_character_directionality.png" alt-text="An image showing how the directionality of text changes in Arabic when a number is used instead of text in Latin script.":::
 
@@ -55,13 +55,13 @@ In the first example, [ثلاثة], [four], and [ خمسة] are seen as separate
 
 ### Neutral characters
 
-Unlike strongly typed characters, spaces and punctuation characters can be used in either LTR or RTL languages and do not have LTR and RTL forms in Unicode. Hence, they are classified as Neutral.
+Unlike strongly typed characters, spaces and punctuation characters can be used in either LTR or RTL languages and don't have LTR and RTL forms in Unicode. Hence, they're classified as Neutral.
 
-The bidi algorithm renders neutral characters by looking at the characters surrounding them. A neutral character may fall between two characters of the same directionality (LTR or RTL) or between a strongly typed LTR character and a strongly typed RTL character.
+The bidi algorithm renders neutral characters by looking at the characters surrounding them. A neutral character might fall between two characters of the same directionality (LTR or RTL) or between a strongly typed LTR character and a strongly typed RTL character.
 
 #### Neutral between characters of the same directionality
 
-When a neutral character falls between two characters of the same directionality, it will assume the same directionality as the surrounding characters. The algorithm will render it as one run with the same directionality.
+When a neutral character falls between two characters of the same directionality, it assumes the same directionality as the surrounding characters. The algorithm renders it as one run with the same directionality.
 
 - LTR block
   - one, two
@@ -72,7 +72,7 @@ When a neutral character falls between two characters of the same directionality
 
 #### Neutral between characters of the opposite directionality
 
-When a neutral character falls between two characters of the opposite directionality, it will assume the overall directionality of the whole paragraph or context. The following example shows the different scenarios of how the bidi algorithm renders text with neutral characters between characters of different directionalities: same directionality as the surrounding characters. Hence the bidi algorithm will render it as one run with the same directionality.
+When a neutral character falls between two characters of the opposite directionality, it assumes the overall directionality of the whole paragraph or context. The following example shows the different scenarios of how the bidi algorithm renders text with neutral characters between characters of different directionalities: same directionality as the surrounding characters. Hence the bidi algorithm renders it as one run with the same directionality.
 
 - LTR block
   - one, أثنان
@@ -85,11 +85,12 @@ When a neutral character falls between two characters of the opposite directiona
 
 The following are general context rules for the reading order and alignment of text:
 
-- If the first strong character is left to right, reading order will be left to right and text will be left aligned.
-- If the first strong character is right to left, reading order will be right to left and text will be right aligned.
-- If only neutral characters are typed, the reading order and the alignment will follow the paragraph direction (can be left to right, or right to left) until the first strong character is typed.
+- If the first strong character is left to right, reading order is left to right and text is left aligned.
+- If the first strong character is right to left, reading order is right to left and text is right aligned.
+- If only neutral characters are used, the reading order and the alignment follows the paragraph direction (can be left to right, or right to left) until the first strong character is reached.
 
 ### Explicit formatting characters
+
 You can use pairs of the following characters to specify the directionality of text within a longer text fragment.
 
 - U+202A: LEFT-TO-RIGHT EMBEDDING (LRE)
@@ -114,22 +115,22 @@ Let’s consider the previous example of:
 
 one two ثلاثة 4 خمسة
 
-If we insert a LRM before the number “4” and a RLM after the number “4”, we get the following:
+If we insert a LRM before the number “4” and a RLM after the number “4”, we get:
 
 one two ثلاثة  ‎4  ‏خمسة
 
-We have indicated that “4” should be treated as a LTR run with a RTL either side of it. 
+We have indicated that “4” should be treated as a LTR run with a RTL either side of it.
 
 ## Vertical text layout
 
-In addition to the directional property for characters, Unicode also [specifies a vertical orientation property](https://www.unicode.org/reports/tr50/). This property allows renderers to orient characters correctly when displayed in blocks of vertical lines. For example, Han ideographs, kana, and acronyms using Latin characters are displayed upright in vertical Japanese text. However, Latin characters that make up words and sentences can be rotated 90 degrees. In CSS this can be achieved by using the text-orientation property in conjunction with the writing-mode property.
+In addition to the directional property for characters, Unicode also [specifies a vertical orientation property](https://www.unicode.org/reports/tr50/). The vertical orientation property allows renderers to orient characters correctly when displayed in blocks of vertical lines. For example, Han ideographs, kana, and acronyms using Latin characters are displayed upright in vertical Japanese text. However, Latin characters that make up words and sentences can be rotated 90 degrees. In CSS, the effect can be achieved by using the text-orientation property in conjunction with the writing-mode property.
 
 ### Implications for caret movement
 
 Text rendering and text directionality have implications for caret movement. Latin script only requires forward and backward movement of the caret. However, vertical text layout requires the caret to rotate by 90 degrees then an upwards and downwards movement of the caret. Some scripts require the caret to move over groups of characters. For example, in Thai if the caret is positioned after a base consonant, vowel, and tone mark, the cursor should skip back over the combined glyph when the user types the left arrow.
 
-:::image type="content" source="images/Cursor_Pos.png" alt-text="An image showing how the cursor will move when using the left arrow key to move over a glyph using combining characters in Thai.":::
+:::image type="content" source="images/Cursor_Pos.png" alt-text="An image showing how the cursor moves when using the left arrow key to move over a glyph using combining characters in Thai.":::
 
-For bidirectional scripts, the direction of the caret movement may change depending on the direction of the text involved. For example, when using the arrow keys to move from right to left through Latin and then Hebrew text in the same sentence, the insertion point moves in a left-to-right manner through the Latin text and then continues at the rightmost character in the Hebrew text and progresses in a right-to-left manner.
+For bidirectional scripts, the direction of the caret movement might change depending on the direction of the text involved. For example, when using the arrow keys to move from right to left through Latin and then Hebrew text in the same sentence, the insertion point moves in a left-to-right manner through the Latin text and then continues at the rightmost character in the Hebrew text and progresses in a right-to-left manner.
 
-:::image type="content" source="images/Right-Arrow.png" alt-text="An image showing how the a cursor will move through Latin and Hebrew characters when using the right arrow key.":::
+:::image type="content" source="images/Right-Arrow.png" alt-text="An image showing how the cursor moves through Latin and Hebrew characters when using the right arrow key.":::

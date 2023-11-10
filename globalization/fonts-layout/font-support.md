@@ -1,6 +1,6 @@
 ---
 title: Script and font support in Windows
-description: Since before Windows 2000, text-display support for new scripts has been added in each major release of Windows. This article describes changes made in each major release.
+description: Discover the changes made to script and font support for major releases of Windows.
 author: pallep
 ms.date: 8/10/2023
 ---
@@ -152,10 +152,8 @@ In particular, due to the large size of East Asian fonts, only the regular weigh
 Many additional fonts are available for Desktop and Server, including all other fonts from previous releases.
 However, not all of these fonts are preinstalled by default in all images.
 In order to make disk usage and font choices more relevant to users according to the languages that they use, many fonts were moved into optional, on-demand packages.
-These packages are designed around the different scripts that fonts are primarily intended to support, and most are installed automatically by Windows Update when the associated languages are enabled in language settings (for example, by enabling a keyboard).
+These packages are designed around the different scripts that fonts are primarily intended to support. Windows Update installs most of these packages automatically when the associated languages are enabled in language settings (for example, by enabling a keyboard). However, you can install any of the optional font packages manually in Settings. The Pan-European Supplemental Fonts package isn't triggered automatically but can be added by enabling it in Settings.
 
-Any of these optional font packages can also be installed manually by any user in Settings.
-One package isn't triggered automatically but can be added by enabling it in Settings.
 To add font packages manually, go to Settings &gt; System &gt; Installed apps &gt; Manage optional features.
 
 The following are the optional font packages that are automatically installed based on changes to language settings:
@@ -192,10 +190,10 @@ Note: These optional packages are for Desktop and Server editions only.
 
 Moving these fonts into optional packages provides over 220 MB of disk savings for users who don’t require these fonts.
 
-Another significant international development in Windows 10 is the introduction of a new complex-script shaping engine, the Universal Shaping Engine, that allows any complex script in Unicode 7.0 to be shaped correctly even if the script isn't yet supported by a system-provided font.
+Another significant international development in Windows 10 is the introduction of a new complex-script shaping engine, the Universal Shaping Engine. The Universal Shaping Engine allows any complex script in Unicode 7.0 to be shaped correctly even if the script isn't yet supported by a system-provided font.
 Users can install a suitable OpenType font for correct shaping behavior for any script in Unicode 7.0.
 
-Note: While the Windows platform is able to support display of additional Unicode 7.0 scripts using nonsystem fonts, it doesn’t  guarantee that using nonsystem fonts will work in all apps.
+Note: While the Windows platform is able to support display of additional Unicode 7.0 scripts using nonsystem fonts, it doesn’t guarantee that using nonsystem fonts will work in all apps.
 In particular, apps that do their own low-level text-display processing might not display a script correctly unless they were explicitly designed to support that script, even if they call platform APIs that use the universal shaping engine.
 Also note that platform frameworks don't provide font fallback behavior using nonsystem fonts.
 
@@ -363,24 +361,24 @@ In particular, support for Latin, Greek, Cyrillic, Hebrew and Arabic was extende
 - Times New Roman
 
 The new Aero-theme user interface font, Segoe UI, also provides Unicode 5.0 support for Latin, Greek, Cyrillic and Arabic.
-Unicode 5.0 additions were also made to other Arabic fonts as well as several of the Indic-script fonts.
+Unicode 5.0 additions were also made to other Arabic fonts and several of the Indic-script fonts.
 
 Extension B fonts for the SimSun and MingLiU families were added, as well as a variation of MingLiU with HKSCS support.
 
 The Uighur language uses Arabic script, which was already supported.
 However, a different font is required for Uighur typography.
-The Microsoft Uighur font was added to support this.
+The Microsoft Uighur font was added to support Uighur typography.
 
 Uniscribe’s font fallback mechanism for Unicode supplementary planes was enhanced to support different fallback fonts depending on the starting font.
 In this way, fallback for CJK Extension B characters uses appropriate fonts for the given language.
 For example, for user interface displayed using the SimSun font (Simplified Chinese), the fallback font for Extension B is SimSun-ExtB.
 
 New APIs were added to Uniscribe to support OpenType advanced typographic functionality in non-complex scripts.
-This provides a way for clients to expose advanced font capabilities such as language-specific glyphs; discretionary ligatures; true typographic small caps, superscripts and subscripts; old-style as well as tabular digits.
+This provides a way for clients to expose advanced font capabilities such as language-specific glyphs; discretionary ligatures; true typographic small caps, superscripts and subscripts; old-style and tabular digits.
 
 Windows Vista includes the Cambria Math font, which has additional tables used to support layout of mathematical formulas.
-Special software support is also required to render math formulas, however.
-This is provided in Microsoft Office 2007, but not in Windows Vista text-stack components.
+Note that special software support is also required to render math formulas.
+Mathematical formula support is provided in Microsoft Office 2007, but not in Windows Vista text-stack components.
 
 Prior to Windows Vista, Uniscribe had Arabic, Hebrew and Thai shaping engines that worked with legacy, pre-OpenType fonts, but not for fonts that support those scripts using OpenType glyph substitution and positioning mechanisms.
 The versions of fonts for Arabic, Hebrew and Thai included in Windows Vista were changed to use OpenType.
@@ -451,7 +449,7 @@ The following table lists scripts newly supported in Windows 2000, and associate
 In a default setup, not all scripts are necessarily enabled.
 In the **Regional Options** control panel (intl.cpl), the **General** tab includes a list of 16 language/script categories (“language groups”) that can be individually enabled or disabled.
 The language group for the UI language can't be disabled, however.
-When a language group is enabled, various support files are copied from the CD, including fonts; in the case of “complex-script” language groups (Arabic, Hebrew, Indic, Thai, and Vietnamese), registry entries to activate Uniscribe are also added.
+When a language group is enabled, various support files are copied from the CD, including fonts. In the case of “complex-script” language groups (Arabic, Hebrew, Indic, Thai, and Vietnamese), registry entries to activate Uniscribe are also added.
 
 The 16 language groups available on Windows 2000 are: Arabic, Armenian, Baltic, Central European, Cyrillic, Georgian, Greek, Hebrew, Indic, Japanese, Korean, Simplified Chinese, Thai, Traditional Chinese, Turkic, Vietnamese, Western Europe and United States.
 
