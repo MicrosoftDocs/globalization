@@ -66,13 +66,13 @@ The bidi algorithm renders neutral characters by looking at the characters surro
 
 When a neutral character falls between two characters of the same directionality, it assumes the same directionality as the surrounding characters. The algorithm renders it as one run with the same directionality.
 
-<iframe src="directionality_same.html" width="100%" height="100%"></iframe>
+<iframe src="directionality_same.html" width="100%" height="200px"></iframe>
 
 #### Neutral between characters of the opposite directionality
 
 When a neutral character falls between two characters of the opposite directionality, it assumes the overall directionality of the whole paragraph or context. The following example shows the different scenarios of how the bidi algorithm renders text with neutral characters between characters of different directionalities: same directionality as the surrounding characters. Hence the bidi algorithm renders it as one run with the same directionality.
 
-<iframe src="directionality_opposite.html" width="100%" height="100%"></iframe>
+<iframe src="directionality_opposite.html" width="100%" height="200px"></iframe>
 
 ### General context rules for the read order of text
 
@@ -106,11 +106,11 @@ In addition, the following characters are categorized as strong in that they act
 
 Let’s consider the previous example of:
 
-  one two ثلاثة 4 خمسة
+> one two ثلاثة 4 خمسة
 
 If we insert a LRM before the number “4” and a RLM after the number “4”, we get:
 
-  one two ثلاثة  ‎4  ‏خمسة
+> one two ثلاثة  ‎4  ‏خمسة
 
 We have indicated that “4” should be treated as a LTR run with a RTL either side of it.
 
