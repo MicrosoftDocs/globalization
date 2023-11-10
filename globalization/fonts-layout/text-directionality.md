@@ -21,9 +21,12 @@ Writing systems like Arabic and Hebrew use both LTR and RTL directionality depen
 
 For bidi text, the order in which the user enters the text (the logical order) and the visual order (the order in which characters are presented to the user) are different in most cases:
 
-- Visual order: Hello سلام
+- Visual order:
+
   :::image type="content" source="images/visual_order.png" alt-text="An image displaying Hello in English and Arabic, with arrows showing that English should be read from left to right, while Arabic should be read from right to left.":::
-- Logical order:  Helloس ل ا م
+
+- Logical order:
+
   :::image type="content" source="images/logical_order.png" alt-text="An image displaying the characters for Hello in English and Arabic, with an arrow indicating that the characters can be thought of as being entered in a single direction.":::
 
 Unicode publishes [an algorithm](https://www.unicode.org/reports/tr9/) describing how characters used in bidi text should be positioned. Each group of characters is rendered as a separate directional run in the correct direction, according to the algorithm.
@@ -46,12 +49,12 @@ Sequences of one type of these characters causes the renderer to display the cha
 
 In RTL languages, numbers are displayed from left to right. They're categorized as having weak directionality and the algorithm treats them differently from characters and punctuation. Numerals will assume the directionality of the preceding character. Here's an example showing mixed English and Arabic text in a single LTR text block.
 
-:::image type="content" source="images/weak_character_directionality.png" alt-text="An image showing how the directionality of text changes in Arabic when a number is used instead of text in Latin script.":::
-
 - one two ثلاثة four خمسة
 - one two ثلاثة 4 خمسة
 
 In the first example, [ثلاثة], [four], and [ خمسة] are seen as separate runs, first RTL, then LTR, finally RTL. In the second, numeral 4 is seen as part of a single RTL run: [ثلاثة 4 خمسة] and appears after the Arabic word ثلاثة (three) reading from right to left.
+
+:::image type="content" source="images/weak_character_directionality.png" alt-text="An image showing how the directionality of text changes in Arabic when a number is used instead of text in Latin script.":::
 
 ### Neutral characters
 
@@ -63,23 +66,13 @@ The bidi algorithm renders neutral characters by looking at the characters surro
 
 When a neutral character falls between two characters of the same directionality, it assumes the same directionality as the surrounding characters. The algorithm renders it as one run with the same directionality.
 
-- LTR block
-  - one, two
-  - واحد,  أثنان
-- RTL block
-  - one, two
-  - واحد, أثنان
+<iframe src="directionality_same.html" width="100%" height="100%"></iframe>
 
 #### Neutral between characters of the opposite directionality
 
 When a neutral character falls between two characters of the opposite directionality, it assumes the overall directionality of the whole paragraph or context. The following example shows the different scenarios of how the bidi algorithm renders text with neutral characters between characters of different directionalities: same directionality as the surrounding characters. Hence the bidi algorithm renders it as one run with the same directionality.
 
-- LTR block
-  - one, أثنان
-  - واحد, two
-- RTL block
-  - one, أثنان
-  - واحد, two
+<iframe src="directionality_opposite.html" width="100%" height="100%"></iframe>
 
 ### General context rules for the read order of text
 
@@ -113,11 +106,11 @@ In addition, the following characters are categorized as strong in that they act
 
 Let’s consider the previous example of:
 
-one two ثلاثة 4 خمسة
+  one two ثلاثة 4 خمسة
 
 If we insert a LRM before the number “4” and a RLM after the number “4”, we get:
 
-one two ثلاثة  ‎4  ‏خمسة
+  one two ثلاثة  ‎4  ‏خمسة
 
 We have indicated that “4” should be treated as a LTR run with a RTL either side of it.
 
