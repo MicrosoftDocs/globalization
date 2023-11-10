@@ -42,7 +42,7 @@ These are the roles involved in the actual localization process:
 
 The timing for engaging in the activities for each role is critical.
 If world-readiness isn't considered at each step, the ability to create localized versions is at risk and fixing it is expensive.
-The risk is highest when the [fundamental baseline](index.md#baseline) is missing.
+The risk is highest when the [fundamental baseline](global-product-delivery.md#baseline) is missing.
 
 ## Responsibilities
 

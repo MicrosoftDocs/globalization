@@ -20,14 +20,14 @@ The different variables of a language that your users should be able to set incl
 - [Typing settings](typing-settings.md), which includes support for different keyboard layouts, text prediction, and additional settings, such as composing ideograms using dedicated input devices
 - [Handwriting settings](handwriting-settings.md), which includes support for handwriting on a touchscreen device
 - [Speech settings](speech-settings.md), which includes support for voice recognition and text-to-speech (TTS)
-- [Dictionaries and spelling](dictionaries-spelling.md)
+- [Proofing tools](dictionaries-spelling.md)
 - [Collation, sorting, and string comparison](sorting-and-string-comparison.md)
 
 Language settings are closely related to regional settings. Regional settings include:
 
-- Numbers: For example, how are numbers, including currencies, formatted.
-- Calendars, date, and time: For example, how dates are formatted, what kind of time zones are used, and which day starts a new week.
-- Postal address formats
-- Telephone number formats
-- Units of measurement
-- Punctuation conventions
+- [Numbers](number-formatting.md): For example, how are numbers, including currencies, formatted.
+- [Calendars, date, and time](date-time-formats.md): For example, how dates are formatted, what kind of time zones are used, and which day starts a new week.
+- [Postal address formats](addresses.md)
+- [Telephone number formats](telephone-numbers.md)
+- [Units of measurement](measurement-units.md)
+- [Punctuation conventions](../internationalization/punctuation-separators.md)

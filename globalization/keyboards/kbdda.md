@@ -8,6 +8,8 @@ author: jowilco
 
 # Danish Keyboard
 
+KLID: 00000406
+
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
 <iframe src="kbdda.html" height="300"></iframe>

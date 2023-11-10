@@ -60,7 +60,7 @@ Punctuation, including spaces, and symbols such as the kashida in Arabic might a
 
 #### Sorting standards
 
-There are standards, national or otherwise, that define collation for a given language. For example, the Japanese Industrial Standards (JIS) include JIS X 4061:1996 which defines collation of Japanese character strings. Unicode is another standard, used with most writing systems in the world. It aims to define a code point for each written character, as well as some symbols, emojis, and control and formatting codes. A code point is a number instead of a visual glyph, making collation possible for computers. This way a given character is defined abstractly, leaving its visual representation to individual systems and applications. For various historical reasons, some basically identical characters do have multiple code points, however.
+There are standards, national/regional or otherwise, that define collation for a given language. For example, the Japanese Industrial Standards (JIS) include JIS X 4061:1996 which defines collation of Japanese character strings. Unicode is another standard, used with most writing systems in the world. It aims to define a code point for each written character, as well as some symbols, emojis, and control and formatting codes. A code point is a number instead of a visual glyph, making collation possible for computers. This way a given character is defined abstractly, leaving its visual representation to individual systems and applications. For various historical reasons, some basically identical characters do have multiple code points, however.
 
 #### Normalization
 

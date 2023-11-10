@@ -34,7 +34,7 @@ Negative numbers are typically represented with a prefix of a hyphen-minus chara
 
 In addition to the decimal separator, the grouping separator, and the minus sign, other symbols are frequently used when formatting numbers. These include symbols to represent a percentage, a per mille (parts per thousand) amount, a currency, an approximate value, an exponent, or an approximate value.
 
-Convention or standards might specify the order of the numeric value and the symbols and spaces between symbols and numeric values. For example, a price might be represented as €&nbsp;-1.234,56 in the Netherlands and as -1&nbsp;234,56&nbsp;€ in France. For more information about currency formatting, see [Currency formats](currency-formats.md).
+Convention or standards might specify the order of the numeric value and the symbols and spaces between symbols and numeric values. For example, a price might be represented as €&nbsp;-1.234,56 in the Netherlands and as -1&nbsp;234,56&nbsp;€ in France. For more information about currency formatting, see [Format currency values](currency-formats.md).
 
 ## Using locales and libraries, frameworks, and programming languages to format numbers
 

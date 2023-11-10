@@ -8,6 +8,8 @@ author: jowilco
 
 # Tifinagh (Basic) Keyboard
 
+KLID: 0000105F
+
 To see different keyboard states, move the mouse over state keys such as **Shift**, **Caps** or **AltGr**. You can also lock or unlock those keys by clicking them.
 
 <iframe src="kbdtifi.html" height="300"></iframe>
