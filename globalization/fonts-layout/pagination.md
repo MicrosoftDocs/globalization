@@ -12,7 +12,7 @@ ms.custom:
 
 In typesetting and page layout, alignment is the setting of text flow or image placement relative to a page, column (measure), table cell or tab. Alignment is dependent on the typeface, the font size, the length of the text area, the line-spacing (also called leading), the letter spacing (spacing between all letters), and kerning (spacing between specific pairs of letters).
 
-Type alignment sometimes referred to as “text alignment”, “text justification”, “type justification”, or “document direction.” Additionally, these terms might be referred to as "reading order". Reading order describes the order in which a block of text is displayed, sometimes in contrast with how the text is entered or stored, which is normally in logical order.
+Type alignment is sometimes referred to as “text alignment”, “text justification”, “type justification”, or “document direction.” Additionally, these terms might be referred to as "reading order". Reading order describes the order in which a block of text is displayed, sometimes in contrast with how the text is entered or stored, which is normally in logical order.
 
 To describe how a text flows into lines, one needs to answer three questions:
 

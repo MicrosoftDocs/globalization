@@ -24,7 +24,7 @@ Although users often have broad scope to change font, font size, and font style 
 - Simple applications such as Notepad only allow one font for the whole document.
 - This level of font selection imposes productivity overhead.
 
-Applications should endeavor to display glyphs correctly, irrespective of the script used. Displaying the correct glyph involves techniques like font fallback. For Windows, several text layout and glyph rendering systems, including [GDI](/windows/win32/gdi), [GDI+](/windows/win32/gdiplus), [Uniscribe](/windows/win32/intl/uniscribe), and [DirectWrite](/windows/win32/directwrite) are supported. In most cases, developers won't need to use these technologies directly as modern frameworks like .NET are designed to support multi-language and multi-script applications. However, knowledge of these glyph rendering systems and how font fallback and font linking can be used to customize font selection can be helpful in customizing font behavior.
+Applications should endeavor to display glyphs correctly, irrespective of the script used. Displaying the correct glyph involves techniques like font fallback. For Windows, several text layout and glyph rendering systems, including [GDI](/windows/win32/gdi), [GDI+](/windows/win32/gdiplus), [Uniscribe](/windows/win32/intl/uniscribe), and [DirectWrite](/windows/win32/directwrite) are supported. In most cases, developers won't need to use these technologies directly as modern frameworks like .NET are designed to support multi-language and multi-script applications. However, knowledge of these glyph rendering systems and how font fallback and font linking can be used to customize font selection can be helpful in customizing font behavior. Developers should also follow the [font guidelines](#font-guidelines) below.
 
 ## Font fallback
 
@@ -58,6 +58,14 @@ Note that GDI+ isn't able to parse the scaling factors. Therefore, for the prede
 ## Font substitution
 
 The Windows operating system allows for font substitution, but font substitution should be considered a last resort approach. Windows font substitution is set with the registry entries under the key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes`. The registry entry of “Helvetica” with the value of “Arial,” for instance, indicates to substitute Helvetica font with Arial font; and the registry entry of “Arial,0” with the value of “Arial,161” will substitute Arial with ANSI_CHARSET to Arial with GREEK_CHARSET.
+
+## Font embedding
+
+Font embedding is a mechanism that allows fonts used in a document to be stored within the document itself. This mechanism is useful when the document is to be shared with others who might not have the font installed on their computer. Font embedding is supported by the OpenType and TrueType font formats, but it might not be supported with other font formats.
+
+In addition to embedding fonts in a document, it's also possible to embed fonts in a web page or package fonts with an application.
+
+Some TrueType and OpenType fonts are licensed to allow embedding, while others aren't. If a font is licensed to allow embedding, the font vendor can specify when and how the font can be used. For example, the vendor can specify whether the font can be embedded in a document for viewing only or for editing and viewing purposes.
 
 ## Font guidelines
 

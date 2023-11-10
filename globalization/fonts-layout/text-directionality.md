@@ -7,7 +7,7 @@ author: jowilco
 
 # Text directionality
 
-Writing systems differ in the scripts used, but also in their conventions for text directionality. Text directionality conventions can be combinations of left-to-right/right-to-left and top-to-bottom/bottom-to-top. For example:
+Writing systems differ in the scripts used, but also in their conventions for text directionality. Text directionality conventions can be combinations of left-to-right (LTR)/right-to-left (RTL) and top-to-bottom/bottom-to-top. For example:
 
 - European languages using Latin script are typically written left-to-right, with lines from top-to-bottom.
 - Chinese characters were historically written vertically, top-to-bottom starting on the right side; however, left-to-right, top-to-bottom is now also common.
@@ -15,7 +15,7 @@ Writing systems differ in the scripts used, but also in their conventions for te
 
 ## Bidirectional text
 
-Writing systems like Arabic and Hebrew use both LTR and RTL directionality depending on the characters. Basic letters flow from right-to-left, but digits especially when written using [Latin numbers](../locale/numeric-notation.md) can be written left-to-right. Text that uses both directionalities is termed bidirectional (or bidi) text. While text might be displayed vertically, left-to-right (LTR) and right-to-left (RTL), the [Unicode standard specifies](https://www.unicode.org/versions/Unicode15.0.0/ch02.pdf):
+Writing systems like Arabic and Hebrew use both LTR and RTL directionality depending on the characters. Basic letters flow from right-to-left, but digits especially when written using [Latin numbers](../locale/numeric-notation.md) can be written left-to-right. Text that uses both directionalities is termed bidirectional (or bidi) text. While text might be displayed vertically, left-to-right and right-to-left, the [Unicode standard specifies](https://www.unicode.org/versions/Unicode15.0.0/ch02.pdf):
 
 > The order in which Unicode text is stored in the memory representation is called logical order. This order roughly corresponds to the order in which text is typed in via the keyboard; it also roughly corresponds to phonetic order.
 
@@ -36,9 +36,9 @@ Text directionality is supported in Unicode via the [directional property](https
 
 Strong characters have a consistent direction. They can be one of three types:
 
-- Left-to-Right: for example, Latin alphabet, Han ideographs
-- Right-to-Left: for example, Hebrew alphabet
-- Right-to-Left Arabic: for example, Arabic alphabet and related punctuation
+- left-to-right: for example, Latin alphabet, Han ideographs
+- right-to-left: for example, Hebrew alphabet
+- right-to-left Arabic: for example, Arabic alphabet and related punctuation
 
 Sequences of one type of these characters causes the renderer to display the characters in a single group using the correct directionality.
 
@@ -85,8 +85,8 @@ When a neutral character falls between two characters of the opposite directiona
 
 The following are general context rules for the reading order and alignment of text:
 
-- If the first strong character is left to right, reading order is left to right and text is left aligned.
-- If the first strong character is right to left, reading order is right to left and text is right aligned.
+- If the first strong character is LTR, reading order is left to right and text is left aligned.
+- If the first strong character is RTL, reading order is right to left and text is right aligned.
 - If only neutral characters are used, the reading order and the alignment follows the paragraph direction (can be left to right, or right to left) until the first strong character is reached.
 
 ### Explicit formatting characters
@@ -107,7 +107,7 @@ See Unicode’s description of how to use these [directional formatting characte
 
 In addition, the following characters are categorized as strong in that they act as the respective right-to-left or left-to-right characters. They can be used to specify how the algorithm should treat the subsequent weak or neutral characters:
 
-- U+061C: ARABIC LETTER MARK (ALM) 
+- U+061C: ARABIC LETTER MARK (ALM)
 - U+200E: LEFT-TO-RIGHT MARK (LRM)
 - U+200F: RIGHT-TO-LEFT MARK (RLM)
 

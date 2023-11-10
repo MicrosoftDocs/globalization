@@ -10,10 +10,11 @@ ms.custom:
 ---
 # Displaying text within a user interface
 
-User interface text is text that appears on UI surfaces. This text includes control labels and static text:
+User interface text is text that appears on UI surfaces. This text includes control labels, static text, and user input:
 
 - Control labels identify controls and are placed directly on or next to the controls.
 - Static text isn't part of an interactive control and provides users with detailed instructions or explanations so they can make informed decisions.
+- User input is text that users enter into controls like text boxes.
 
 When providing a localized application for your users, translating the user interface text is a key part of the process. However, when dealing with text in various languages, translating the strings is just one factor to consider. Other factors include:
 
