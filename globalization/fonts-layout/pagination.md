@@ -53,7 +53,7 @@ The following table shows examples of different orientations and directionality 
 | \[default\] | Text flows horizontally from left to right, from top to bottom. | English | All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood. |
 | `direction: rtl;` | Text flows horizontally from right to left, from top to bottom. | Hebrew | <iframe src="UDHR_he.html" width="100%" height="100%"></iframe> |
 | `writing-mode: vertical-rl;` | Text flows vertically from top to bottom, from right to left. | Traditional Chinese | <iframe src="UDHR_zh-Hant.html" width="100%" height="100%"></iframe> |
-| `writing-mode: vertical-rl;` | Text flows vertically from top to bottom, from left to right. The characters in the Mongolian script are rotated 90°.  | Mongolian | <iframe src="UDHR_mn-Mong.html" width="100%" height="100%"></iframe> |
+| `writing-mode: vertical-lr;` | Text flows vertically from top to bottom, from left to right. The characters in the Mongolian script are rotated 90°.  | Mongolian | <iframe src="UDHR_mn-Mong.html" width="100%" height="100%"></iframe> |
 
 ## Bi-orientational scripts, punctuation, and text formatting
 
