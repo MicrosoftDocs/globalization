@@ -2,10 +2,10 @@
 title: Fonts
 description: Localized products might have different UI fonts than the original-language products.
 ms.assetid: 9f4199db-a2d5-46bb-84aa-bb630f5fbd01
-ms.date: 03/16/2016
+ms.date: 11/20/2023
 ---
 
-# Fonts
+# Font choice in localized user interfaces
 
 Localized products might have different user interface fonts than the original-language products.
 The font name, size, and style in dialog boxes and documents can be changed to customize the final UI based on user preference.

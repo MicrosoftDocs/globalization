@@ -26,5 +26,5 @@ When providing a localized application for your users, translating the user inte
 - Text support
   - [Code pages](../encoding/encoding-overview.md), including Unicode
 - Resource authoring
-  - [Externalization](../internationalization/externalize-resources.md)
-  - [Message formatting](../internationalization/message-formatting.md)
+  - [Externalization](../localizability/isolate-localizable-resources.md)
+  - [Message formatting](../localizability/string-handling.md)
