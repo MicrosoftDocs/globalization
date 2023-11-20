@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script language="JavaScript">
+  document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+  parent.window.addEventListener('theme-changed', SetBackgroundColor);
+  function SetBackgroundColor() {
+    var theme = localStorage.getItem('theme');
+    if (theme == 'dark') {
+      document.body.style.backgroundColor = '#171717';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'high-contrast') {
+      document.body.style.backgroundColor = '#000000';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'light') {
+      document.body.style.backgroundColor = '#FFFFFF';
+      document.body.style.color = '#000000';
+    }
+    else {
+      //docs.microsoft.com theme has not been set yet. Default to browser theme.
+    }
+  }
+</script>
+<style> 
+.writing{
+ writing-mode: vertical-rl;
+}
+.break{
+ writing-mode: horizontal-tb;
+}
+</style>
+</head>
+<body style="width: 100%; margin: 0px">
+<p vertical-align="top" style="font-family: sans-serif; height: 280px">
+<span class="writing">Chinese (Traditional) <u lang="zh-Hant">鑑於對人類家庭所有成員的固有尊嚴及其平等的和不移的權利的承認，乃是世界自由、正義與和平的基礎</u></span>
+<span>&nbsp;</span>
+<span class="writing">Chinese (Simplified) <u lang="zh-Hans">鉴于对人类家庭所有成员的固有尊严及其平等的和不移的权利的承认,乃是世界自由、正义与和平的基础</u></span>
+<span>&nbsp;</span>
+<span class="writing">Korean <u lang="ko">모든 인류 구성원의 천부의 존엄성과 동등하고 양도할 수 없는 권리를 인정하는 것이 세계의 자유, 정의 및 평화의 기초이며</u></span>
+<span>&nbsp;</span>
+<span class="writing">Japanese <u lang="ja">人類社会のすべての構成員の固有の尊厳と平等で譲ることのできない権利とを承認することは、世界における自由、正義及び平和の基礎であるので</u></span>
+</p>
+</body>
+</html>
