@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script language="JavaScript">
+  document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+  parent.window.addEventListener('theme-changed', SetBackgroundColor);
+  function SetBackgroundColor() {
+    var theme = localStorage.getItem('theme');
+    if (theme == 'dark') {
+      document.body.style.backgroundColor = '#171717';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'high-contrast') {
+      document.body.style.backgroundColor = '#000000';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'light') {
+      document.body.style.backgroundColor = '#FFFFFF';
+      document.body.style.color = '#000000';
+    }
+    else {
+      //docs.microsoft.com theme has not been set yet. Default to browser theme.
+    }
+  }
+</script>
+<style> 
+.writing{
+ writing-mode: vertical-lr;
+ font-size: 150%;
+}
+</style>
+</head>
+<body style="width: 100%; max-width: 300px; margin: 0px">
+<p class="writing">ᠬᠦᠮᠦᠨ ᠪᠦᠷ ᠲᠥᠷᠥᠵᠦ ᠮᠡᠨᠳᠡᠯᠡᠬᠦ ᠡᠷᠬᠡ ᠴᠢᠯᠥᠭᠡ ᠲᠡᠢ᠂ ᠠᠳᠠᠯᠢᠬᠠᠨ ᠨᠡᠷ᠎ᠡ ᠲᠥᠷᠥ ᠲᠡᠢ᠂ ᠢᠵᠢᠯ ᠡᠷᠬᠡ ᠲᠡᠢ ᠪᠠᠢᠠᠭ᠃ ᠣᠶᠤᠨ ᠤᠬᠠᠭᠠᠨ᠂ ᠨᠠᠨᠳᠢᠨ ᠴᠢᠨᠠᠷ ᠵᠠᠶᠠᠭᠠᠰᠠᠨ ᠬᠦᠮᠦᠨ ᠬᠡᠭᠴᠢ ᠥᠭᠡᠷ᠎ᠡ ᠬᠣᠭᠣᠷᠣᠨᠳᠣ᠎ᠨ ᠠᠬᠠᠨ ᠳᠡᠭᠦᠦ ᠢᠨ ᠦᠵᠢᠯ ᠰᠠᠨᠠᠭᠠ ᠥᠠᠷ ᠬᠠᠷᠢᠴᠠᠬᠥ ᠤᠴᠢᠷ ᠲᠠᠢ᠃</p>
+</body>
+</html>
