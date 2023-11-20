@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script language="JavaScript">
+  document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+  parent.window.addEventListener('theme-changed', SetBackgroundColor);
+  function SetBackgroundColor() {
+    var theme = localStorage.getItem('theme');
+    if (theme == 'dark') {
+      document.body.style.backgroundColor = '#171717';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'high-contrast') {
+      document.body.style.backgroundColor = '#000000';
+      document.body.style.color = '#FFFFFF';
+    }
+    if (theme == 'light') {
+      document.body.style.backgroundColor = '#FFFFFF';
+      document.body.style.color = '#000000';
+    }
+    else {
+      //docs.microsoft.com theme has not been set yet. Default to browser theme.
+    }
+  }
+</script>
+</head>
+<body style="width: 100%; margin: 0px">
+<ul style="font-family: sans-serif; font-size: larger">
+<li>LTR block
+<ul><li>one, two</li>
+<li>واحد,  أثنان</li></ul>
+</li>
+</ul>
+<ul dir="rtl" style="font-family: sans-serif; font-size: larger">
+<li>RTL block
+<ul><li>one, two</li>
+<li>واحد,  أثنان</li></ul>
+</li>
+</body>
+</html>
