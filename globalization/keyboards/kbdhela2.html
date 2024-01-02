@@ -8,11 +8,81 @@
     <META name="color-scheme" content="dark light">
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
     <META name="robots" content="noindex">
-    <SCRIPT LANGUAGE="JavaScript">
+</HEAD>
+<BODY onLoad="keyOpen()">
+    <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt
+        solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
+    <script type="text/javascript" language="javascript">
         var State = 0;
         var Clicked = 0;
         document.addEventListener('DOMContentLoaded', SetBackgroundColor);
         parent.window.addEventListener('theme-changed', SetBackgroundColor);
+        Xoffset = 10;    // modify these values to ...
+        Yoffset = 10;    // change the popup position.
+
+        var old, skn, iex = (document.all), yyy = -1000;
+
+        var ns4 = document.layers
+        var ns6 = document.getElementById && !document.all
+        var ie4 = document.all
+
+        if (window.opera) ns6 = true;
+
+        if (ns4)
+            skn = document.glosso
+        else if (ns6)
+            skn = document.getElementById("glosso").style
+        else if (ie4)
+            skn = document.all.glosso.style
+        if (ns4) document.captureEvents(Event.MOUSEMOVE);
+        else {
+            skn.visibility = "visible"
+            skn.display = "none"
+        }
+        document.onmousemove = get_mouse;
+        function popup(msg) {
+            var content = msg;
+            yyy = Yoffset;
+            if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible" }
+            if (ns6) { document.getElementById("glosso").innerHTML = content; skn.display = '' }
+            //if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
+        }
+        function get_mouse(e) {
+            var blont = document.getElementById("glosso").innerHTML;
+            var x = (ns4 || ns6) ? e.pageX : event.x + document.body.scrollLeft;
+            if ((x > 110) && (x < 220)) {
+                if (blont.length > 25) x -= 40;
+
+                x = x - 65;
+            }
+            if (x > 220) {
+                if (blont.length > 25) {
+                    x = x - 40;
+                }
+                if (blont.length > 45) {
+                    x = x - 40;
+                }
+                if (blont.length > 65) {
+                    x = x - 30;
+                }
+                x = x - 110;
+            }
+            skn.left = x + Xoffset;
+            var y = (ns4 || ns6) ? e.pageY : event.y + document.documentElement.scrollTop;
+            if (y > 65) {
+                y = y - 40;
+            } else {
+                y = y + 18;
+            }
+            skn.top = y;
+            //alert(content);
+        }
+        function kill() {
+            yyy = -1000;
+            if (ns4) { skn.visibility = "hidden"; }
+            else if (ns6 || ie4)
+                skn.display = "none"
+        }
         function SetBackgroundColor() {
             var theme = localStorage.getItem('theme');
             if (theme == 'dark') {
@@ -170,78 +240,6 @@
                 Clicked = 0;
             }
         }
-    </SCRIPT>
-</HEAD>
-<BODY onLoad="keyOpen()">
-    <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt
-        solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
-    <script type="text/javascript" language="javascript">
-        Xoffset = 10;    // modify these values to ...
-        Yoffset = 10;    // change the popup position.
-
-        var old, skn, iex = (document.all), yyy = -1000;
-
-        var ns4 = document.layers
-        var ns6 = document.getElementById && !document.all
-        var ie4 = document.all
-
-        if (window.opera) ns6 = true;
-
-        if (ns4)
-            skn = document.glosso
-        else if (ns6)
-            skn = document.getElementById("glosso").style
-        else if (ie4)
-            skn = document.all.glosso.style
-        if (ns4) document.captureEvents(Event.MOUSEMOVE);
-        else {
-            skn.visibility = "visible"
-            skn.display = "none"
-        }
-        document.onmousemove = get_mouse;
-        function popup(msg) {
-            var content = msg;
-            yyy = Yoffset;
-            if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible" }
-            if (ns6) { document.getElementById("glosso").innerHTML = content; skn.display = '' }
-            //if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
-        }
-        function get_mouse(e) {
-            var blont = document.getElementById("glosso").innerHTML;
-            var x = (ns4 || ns6) ? e.pageX : event.x + document.body.scrollLeft;
-            if ((x > 110) && (x < 220)) {
-                if (blont.length > 25) x -= 40;
-
-                x = x - 65;
-            }
-            if (x > 220) {
-                if (blont.length > 25) {
-                    x = x - 40;
-                }
-                if (blont.length > 45) {
-                    x = x - 40;
-                }
-                if (blont.length > 65) {
-                    x = x - 30;
-                }
-                x = x - 110;
-            }
-            skn.left = x + Xoffset;
-            var y = (ns4 || ns6) ? e.pageY : event.y + document.documentElement.scrollTop;
-            if (y > 65) {
-                y = y - 40;
-            } else {
-                y = y + 18;
-            }
-            skn.top = y;
-            //alert(content);
-        }
-        function kill() {
-            yyy = -1000;
-            if (ns4) { skn.visibility = "hidden"; }
-            else if (ns6 || ie4)
-                skn.display = "none"
-        }
     </script>
     <DIV ID=loading CLASS=loading>
         <br><br><br>
@@ -291,8 +289,8 @@
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/006a.png" ALT="U+006A LATIN SMALL LETTER J"  onmouseover = "popup('VK_J<br/>U+006A LATIN SMALL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/006b.png" ALT="U+006B LATIN SMALL LETTER K"  onmouseover = "popup('VK_K<br/>U+006B LATIN SMALL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/006c.png" ALT="U+006C LATIN SMALL LETTER L"  onmouseover = "popup('VK_L<br/>U+006C LATIN SMALL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0384K.png" ALT="U+0384 GREEK TONOS&#10;DeadKey: &#x0384;"  onmouseover = "popup('VK_OEM_1<br/>U+0384 GREEK TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0384; U+0384 GREEK TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_7<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0384K.png" ALT="U+0384 GREEK TONOS&#10;DeadKey: &#x0384;"  onmouseover = "popup('VK_OEM_1<br/>U+0384 GREEK TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0384; U+0384 GREEK TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_7<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0023.png" ALT="U+0023 NUMBER SIGN"  onmouseover = "popup('VK_OEM_5<br/>U+0023 NUMBER SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH="40" HEIGHT="0" /></TD>
 </TR></TABLE>
@@ -362,8 +360,8 @@
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/004a.png" ALT="U+004A LATIN CAPITAL LETTER J"  onmouseover = "popup('VK_J<br/>U+004A LATIN CAPITAL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/004b.png" ALT="U+004B LATIN CAPITAL LETTER K"  onmouseover = "popup('VK_K<br/>U+004B LATIN CAPITAL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/004c.png" ALT="U+004C LATIN CAPITAL LETTER L"  onmouseover = "popup('VK_L<br/>U+004C LATIN CAPITAL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0384K.png" ALT="U+0384 GREEK TONOS&#10;DeadKey: &#x0384;"  onmouseover = "popup('VK_OEM_1<br/>U+0384 GREEK TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0384; U+0384 GREEK TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_7<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0384K.png" ALT="U+0384 GREEK TONOS&#10;DeadKey: &#x0384;"  onmouseover = "popup('VK_OEM_1<br/>U+0384 GREEK TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0384; U+0384 GREEK TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_7<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0023.png" ALT="U+0023 NUMBER SIGN"  onmouseover = "popup('VK_OEM_5<br/>U+0023 NUMBER SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH="40" HEIGHT="0" /></TD>
 </TR></TABLE>
@@ -433,8 +431,8 @@
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/004a.png" ALT="U+004A LATIN CAPITAL LETTER J"  onmouseover = "popup('VK_J<br/>U+004A LATIN CAPITAL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/004b.png" ALT="U+004B LATIN CAPITAL LETTER K"  onmouseover = "popup('VK_K<br/>U+004B LATIN CAPITAL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/004c.png" ALT="U+004C LATIN CAPITAL LETTER L"  onmouseover = "popup('VK_L<br/>U+004C LATIN CAPITAL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_1<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_1<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0040.png" ALT="U+0040 COMMERCIAL AT"  onmouseover = "popup('VK_OEM_5<br/>U+0040 COMMERCIAL AT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH="40" HEIGHT="0" /></TD>
 </TR></TABLE>
@@ -504,8 +502,8 @@
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/006a.png" ALT="U+006A LATIN SMALL LETTER J"  onmouseover = "popup('VK_J<br/>U+006A LATIN SMALL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/006b.png" ALT="U+006B LATIN SMALL LETTER K"  onmouseover = "popup('VK_K<br/>U+006B LATIN SMALL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/006c.png" ALT="U+006C LATIN SMALL LETTER L"  onmouseover = "popup('VK_L<br/>U+006C LATIN SMALL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_1<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8;"  onmouseover = "popup('VK_OEM_1<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x00a8; U+00A8 DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0040.png" ALT="U+0040 COMMERCIAL AT"  onmouseover = "popup('VK_OEM_5<br/>U+0040 COMMERCIAL AT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH="40" HEIGHT="0" /></TD>
 </TR></TABLE>
@@ -859,8 +857,8 @@
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_1<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_1<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00ac.png" ALT="U+00AC NOT SIGN"  onmouseover = "popup('VK_OEM_5<br/>U+00AC NOT SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH="40" HEIGHT="0" /></TD>
 </TR></TABLE>
@@ -930,8 +928,8 @@
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_1<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
-<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_1<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/0385K.png" ALT="U+0385 GREEK DIALYTIKA TONOS&#10;DeadKey: &#x0385;"  onmouseover = "popup('VK_OEM_7<br/>U+0385 GREEK DIALYTIKA TONOS<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0385; U+0385 GREEK DIALYTIKA TONOS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG STYLE="position:relative; left:0; top:-44" SRC="images/00ac.png" ALT="U+00AC NOT SIGN"  onmouseover = "popup('VK_OEM_5<br/>U+00AC NOT SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/None.png" ALT="Blank key." WIDTH="40" HEIGHT="0" /></TD>
 </TR></TABLE>
