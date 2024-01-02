@@ -9,13 +9,14 @@
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
     <META name="robots" content="noindex">
 </HEAD>
-<BODY onLoad="keyOpen()">
+<BODY>
     <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt
         solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
     <script type="text/javascript" language="javascript">
         var State = 0;
         var Clicked = 0;
         document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+        document.addEventListener('DOMContentLoaded', keyOpen);
         parent.window.addEventListener('theme-changed', SetBackgroundColor);
         Xoffset = 10;    // modify these values to ...
         Yoffset = 10;    // change the popup position.
