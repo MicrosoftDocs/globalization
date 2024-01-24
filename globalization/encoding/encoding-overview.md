@@ -1,8 +1,12 @@
 ---
 title: Character and data encoding
-description: TODO
-ms.date: 1/23/2024
+description: Discover how character sets and code pages enable computers to represent and store characters used in writing systems.
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # Character and data encoding

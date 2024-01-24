@@ -1,8 +1,12 @@
 ---
 title: Internationalized Domain Names (IDN)
-description: TODO
-ms.date: 1/23/2024
+description: Understand the basics of Internationalized Domain Names (IDN) and how they are managed within the Domain Name System (DNS).
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # Internationalized Domain Names (IDN)

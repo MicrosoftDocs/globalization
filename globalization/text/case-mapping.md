@@ -1,8 +1,12 @@
 ---
 title: Case mapping
-description: TODO
-ms.date: 1/23/2024
+description: Understand the importance of case mapping in applications and the challenges it presents in different languages and locales.
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # Case mapping

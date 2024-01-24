@@ -1,8 +1,12 @@
 ---
 title: String normalization
-description: TODO
-ms.date: 1/23/2024
+description: Normalize your text data to compare for equivalence, regardless of the choice of composed or decomposed forms of characters used.
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # String normalization

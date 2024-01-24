@@ -1,8 +1,12 @@
 ---
 title: Parsing input
-description: TODO
-ms.date: 1/23/2024
+description: Learn how the context and the locale is crucial when parsing user input
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # Parsing input

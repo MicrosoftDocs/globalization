@@ -1,8 +1,12 @@
 ---
 title: Email Address Internationalization (EAI)
-description: TODO
-ms.date: 1/23/2024
+description: Email Address Internationalization (EAI) resolves the lack of support for non-Latin scripts in email addresses.
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # Email Address Internationalization (EAI)

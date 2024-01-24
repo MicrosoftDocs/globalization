@@ -1,8 +1,12 @@
 ---
 title: Private use area (PUA) characters and End-user-defined characters (EUDCs)
-description: TODO
-ms.date: 1/23/2024
+description: Learn about Private Use Area (PUA) characters and how they can be defined and used by individuals and organizations to create custom characters.
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # Private use area (PUA) characters and End-user-defined characters (EUDCs)

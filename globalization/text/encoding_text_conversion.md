@@ -1,8 +1,12 @@
 ---
 title: Encoding and text conversion
-description: TODO
-ms.date: 1/23/2024
+description: Use Unicode for storing and manipulating text to support a broad range of writing systems and avoid issues with code pages.
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 # Encoding and text conversion
 

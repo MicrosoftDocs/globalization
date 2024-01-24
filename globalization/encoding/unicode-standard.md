@@ -1,13 +1,17 @@
 ---
 title: The Unicode standard
-description: TODO
-ms.date: 1/23/2024
+description: Learn about the Unicode Standard that supports all historical and modern writing systems with a single character encoding
+ms.date: 1/24/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # The Unicode standard
 
-The [Unicode Standard](https://www.unicode.org/standard/standard.html) is a character encoding that endeavors to support all historical and writing system using a single character encoding. Unicode is the de facto character encoding standard accepted by all major computer companies. Many products and standards now require or allow use of Unicode, for example, XML, HTML, Microsoft JScript, Java, Perl, Rust, and C#. While ISO 10646 is the corresponding worldwide de jure standard approved by all ISO members, the two standards include identical character repertoires and binary representations.
+The [Unicode Standard](https://www.unicode.org/standard/standard.html) is a character encoding that endeavors to support all historical and modern writing system using a single character encoding. Unicode is the de facto character encoding standard accepted by all major computer companies. Many products and standards now require or allow use of Unicode, for example, XML, HTML, Microsoft JScript, Java, Perl, Rust, and C#. While ISO 10646 is the corresponding worldwide de jure standard approved by all ISO members, the two standards include identical character repertoires and binary representations.
 
 Compared to older mechanisms for handling character and string data, Unicode simplifies software localization and improves multilingual text processing. By using Unicode to represent character and string data in your applications, you can enable universal data exchange capabilities as well as supporting multiple languages in a single application. The Unicode Standard and associated specifications provides the following:
 
