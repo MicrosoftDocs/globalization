@@ -455,5 +455,5 @@ The 16 language groups available on Windows 2000 are: Arabic, Armenian, Baltic, 
 
 A *surrogates* shaping engine was also added to Uniscribe to allow display of Unicode supplementary-plane characters in the GDI text stack.
 GDI supports wide characters but doesn't understand UTF-16 surrogate pairs.
-See [Surrogate Pairs and Variation Selectors](../encoding/surrogate-pairs.md) for details on the extent of support for supplementary-plan characters.
+See [Surrogate Pairs](../encoding/unicode-standard.md#surrogate-pairs) and [Variation Selection](../encoding/unicode-standard.md#variation-selection) for details on the extent of support for supplementary-plan characters.
 Windows 2000 didn't include fonts for any supplementary-plane characters.
