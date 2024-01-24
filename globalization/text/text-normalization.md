@@ -7,7 +7,7 @@ author: jowilco
 
 # String normalization
 
-TODO!!!
+<!--- TODO!!!
 Links in the following topic need to point to this topic:
 https://learn.microsoft.com/en-us/globalization/fonts-layout/text-layout
 
@@ -17,7 +17,7 @@ https://learn.microsoft.com/en-us/globalization/locale/sorting-and-string-compar
 
 Note this is a live-site issue, not an issue in the startup-staging branch.
 
-TODO!!
+TODO!!--->
 
 Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. For example, the Latin small letter a with dieresis (umlaut) might be represented by either the character ä (U+00E4 LATIN SMALL LETTER A WITH DIAERESIS) or a (U+0061 LATIN SMALL LETTER A) with the combining dieresis character ¨ (U+0308 COMBINING DIAERESIS).
 

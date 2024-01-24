@@ -32,13 +32,13 @@ The Unicode Standard defines emoji variation sequences  that can be used. In the
 
 You can choose to display emoji with a text presentation (similar in appearance to a dingbat font) or with an emoji presentation by using VS15 (U+FE0E) or VS 16 (U+FE0F) respectively.
 
-<iframe src="text_emoji_presentation.html" height="60"></iframe>
+<iframe src="text_emoji_presentation.html" height="80"></iframe>
 
 ### Emoji modifiers
 
 You can change the appearance of emoji by using emoji modifiers. Here is an example showing the default BABY (U+1F476) emoji and the same emoji followed by an EMOJI MODIFIER FITZPATRICK (U+1F3FB..U+1F3FF) modifier.
 
-<iframe src="char1F476_variation.html" height="60"></iframe>
+<iframe src="char1F476_variation.html" height="100"></iframe>
 
 ### Emoji flag sequences
 
@@ -47,7 +47,7 @@ You can use sequences of Regional Indicator characters (U+1F1E6.. U+1F1FF) to di
 - REGIONAL INDICATOR SYMBOL LETTER U (U+1F1FA) followed by REGIONAL INDICATOR SYMBOL LETTER S (U+ 1F1F8) can be combined to display the US flag.
 - REGIONAL INDICATOR SYMBOL LETTER C (U+ 1F1E8) followed by REGIONAL INDICATOR SYMBOL LETTER A (U+ 1F1E6) can be combined to display the US flag.
 
-<iframe src="flag_emoji.html" height="60"></iframe>
+<iframe src="flag_emoji.html" height="120"></iframe>
 
 > [!TIP]
 > Whether the flags are displayed is dependent on the browser, operating system, and font.
@@ -59,7 +59,7 @@ You can use sequences of Regional Indicator characters (U+1F1E6.. U+1F1FF) to di
 
 You can use ZERO WIDTH JOINER (ZWJ) (U+200D) to create sequences of emoji  that render as a single emoji. This example shows two pairs of ADULT (U+1F9D1) and CHILD (U+1F9D2), with the second pair separated with ZERO WIDTH JOINER (U+200D).
 
-<iframe src="zwj_sequence.html" height="60"></iframe>
+<iframe src="zwj_sequence.html" height="80"></iframe>
 
 ## Inserting emojis using Windows
 

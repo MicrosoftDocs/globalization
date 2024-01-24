@@ -123,7 +123,7 @@ A variation sequence is defined as a base character followed by a variation sele
 
 The example below shows GREATER-THAN BUT NOT EQUAL TO (U+2269) with and without VS1 (U+FE00). Depending on the fonts available in your browser, the first character should display with a slanted line indicating “not equals” while the second character should display with a vertical line.
 
-<iframe src="char2269_variation.html" height="60"></iframe>
+<iframe src="char2269_variation.html" height="80"></iframe>
 
 For example, the character U+845B (“edible bean; surname”) can be used with a variation selector as defined in the in the Ideographic Variation Database (IVD):
 
