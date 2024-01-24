@@ -12,13 +12,13 @@ ms.custom:
 
 # Emoji
 
-Emoji are pictorial symbols (pictographs) that represent objects such as faces, places, weather, and animals. They are typically used in conjunction with or as a replacement for text to add context via emotions.
+Emoji are pictorial symbols (pictographs) that represent objects such as faces, places, weather, and animals. They're typically used with or as a replacement for text to add context via emotions.
 
 While earlier versions of the Unicode standard included pictographic symbols, [Unicode 6.0](https://www.unicode.org/versions/Unicode6.0.0/), released in October 2010 specified a set of 722 emoji. Subsequent Unicode versions continue to expand the number of emoji defined by the standard.
 
-To display glyphs in defined in the Unicode standard in your UI, the font that you use needs to support the glyphs that you are using. Similarly, to display emoji, the device, browser, or font used must be able to represent the emoji.
+To display glyphs defined in the Unicode standard in your UI, the font that you use needs to support the glyphs that you're using. Similarly, to display emoji, the device, browser, or font used must be able to represent the emoji.
 
-Emoji can be very convenient when conveying gestures, facial expressions, and other non-verbal elements of communication in text-based messages. However, like non-verbal communication, these cues and meanings vary by context. Context could include the sender’s and the recipient’s language, culture, and social group. In other words, when localizing emoji, you need to be especially careful that the intended meaning is conveyed correctly and appropriately for the target audience.
+Emoji can be convenient when conveying gestures, facial expressions, and other nonverbal elements of communication in text-based messages. However, like nonverbal communication, these cues and meanings vary by context. Context could include the sender’s and the recipient’s language, culture, and social group. In other words, when localizing emoji, you need to be especially careful that the intended meaning is conveyed correctly and appropriately for the target audience.
 
 [Unicode 8.0](https://www.unicode.org/versions/Unicode8.0.0/), released in June 2015 added skin tone modifier characters to the emoji standard. These characters allow users to specify the skin tone of the emoji character that immediately precedes them.
 
@@ -36,7 +36,7 @@ You can choose to display emoji with a text presentation (similar in appearance 
 
 ### Emoji modifiers
 
-You can change the appearance of emoji by using emoji modifiers. Here is an example showing the default BABY (U+1F476) emoji and the same emoji followed by an EMOJI MODIFIER FITZPATRICK (U+1F3FB..U+1F3FF) modifier.
+You can change the appearance of emoji by using emoji modifiers. Here's an example showing the default BABY (U+1F476) emoji and the same emoji followed by an EMOJI MODIFIER FITZPATRICK (U+1F3FB..U+1F3FF) modifier.
 
 <iframe src="char1F476_variation.html" height="100"></iframe>
 
@@ -63,6 +63,6 @@ You can use ZERO WIDTH JOINER (ZWJ) (U+200D) to create sequences of emoji  that 
 
 ## Inserting emojis using Windows
 
-1. Type Windows logo key :::image type="icon" source="images/windows-logo-key.png" border="false":::  + . (period). The emoji keyboard will appear.
+1. Type Windows logo key :::image type="icon" source="images/windows-logo-key.png" border="false":::  + . (period). The emoji keyboard appears.
 1. Select an emoji with the mouse or keep typing to search through the available emojis for one you like.
-1. If you're using Windows 11, you'll be able to express yourself with GIFs or Kaomoji (emoticons), or you can insert symbols from the same emoji panel.
+1. If you're using Windows 11, you can express yourself with GIFs or Kaomoji (emoticons), or you can insert symbols from the same emoji panel.

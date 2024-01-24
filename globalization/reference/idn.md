@@ -1,6 +1,6 @@
 ---
 title: Internationalized Domain Names (IDN)
-description: Understand the basics of Internationalized Domain Names (IDN) and how they are managed within the Domain Name System (DNS).
+description: Understand the basics of Internationalized Domain Names (IDN) and how they're managed within the Domain Name System (DNS).
 ms.date: 1/24/2024
 author: jowilco
 ms.custom:
@@ -11,16 +11,16 @@ ms.custom:
 
 # Internationalized Domain Names (IDN)
 
-Domain Name System (DNS) is an industry-standard suite of protocols that comprise TCP/IP, and enables computer name-to-IP address mapping name resolution. When a user enters a DNS name in an application such as a web browser, DNS services can resolve the name to other information that is associated with the name, such as an IP address. For example, a URL like `https://learn.microsoft.com` is mapped to a specific IP address, base. The URL is much easier for users to remember than the corresponding IP address. The foundation of the URL is the Top-Level Domain (TLD) (`.com`) and the domain name (`microsoft`). The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) is the organization that coordinates how domain names and IP addresses are managed.
+Domain Name System (DNS) is an industry-standard suite of protocols that comprise TCP/IP, and enables computer name-to-IP address mapping name resolution. When a user enters a DNS name in an application such as a web browser, DNS services can resolve the name to other information that is associated with the name, such as an IP address. For example, a URL like `https://learn.microsoft.com` is mapped to a specific IP address, base. The URL is easier for users to remember than the corresponding IP address. The foundation of the URL is the Top-Level Domain (TLD) (`.com`) and the domain name (`microsoft`). The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) is the organization that coordinates how domain names and IP addresses are managed.
 
-There are various types of TLD’s, including:
+There are various types of TLDs, including:
 
 - Generic top-level domain (gTLD), such as `.com`, maintained by IANA.
-- Sponsored top-level domains (sTLD), such as `.edu` which is sponsored by US institutions of higher education
+- Sponsored top-level domains (sTLD), such as `.edu` that is sponsored by US institutions of higher education
 - Country code top-level domain (ccTLD), such as `.cn` for the People’s Republic of China
 - Internationalized country code top-level domain (IDN ccTLDs), such as `.中国` also for the People’s Republic of China.
 
-A second-level domain (SLD or 2LD) is a domain directly below a TLD. Domain registration is typically handled by country or regional domain name registrars. Domain name registrars can be governmental, non-profit, or commercial organizations licensed by a gTLD or ccTLD registry and who are responsible for registering domain names within the scope of the TLD. While IANA manages coordination of how domain names are managed, the TLD registrars have a lot of control over the rules and requirements for registering SLDs. For example, registries can restrict the second level under the TLD to a set of pre-determined SLDs. In the United Kingdom, `.co.uk`  is used for commercial organizations, while `.ac.uk`  is used for academic institutions.
+A second-level domain (SLD or 2LD) is a domain directly below a TLD. Country or regional domain name registrars typically handle domain registration. Domain name registrars can be governmental, non-profit, or commercial organizations licensed by a gTLD or ccTLD registry and who are responsible for registering domain names within the scope of the TLD. While IANA manages coordination of how domain names are managed, the TLD registrars have control over the rules and requirements for registering SLDs. For example, registries can restrict the second level under the TLD to a set of predetermined SLDs. In the United Kingdom, `.co.uk`  is used for commercial organizations, while `.ac.uk`  is used for academic institutions.
 
 Domain names were originally restricted to ASCII characters; however, internationalized domain names (IDNs) were created to enable support for a broad range of scripts. Users worldwide can now use meaningful domain names without having to transcribe the names using Latin characters.
 
@@ -28,10 +28,10 @@ Like requirements for SLDs, TLD registrars can also place limits on naming conve
 
 - Restrictions on the characters that can be used
 - Whether characters from more than one script can be used in a label
-- Which characters can appear adjacent to each other
+- Which characters can appear next to each other
 - The length of each label
 
-While IDN enables the support of domain names using scripts other than Latin, these domain names are stored in DNS as ASCII strings using [Punycode](https://www.rfc-editor.org/rfc/rfc3492.txt) transcription. Web browsers can convert between the visual representation of the domain using Unicode characters and the Punycode equivalent used by DNS. Note that [DNS requires](https://www.rfc-editor.org/rfc/rfc2181) that any label is limited to 63 octets (63 bytes on an 8-bit system) and the domain name is limited to 255 octets. These limits are imposed on the Punycode transcription of the labels, not the original Unicode characters.
+While IDN enables the support of domain names using scripts other than Latin, these domain names are stored in DNS as ASCII strings using [Punycode](https://www.rfc-editor.org/rfc/rfc3492.txt) transcription. Web browsers can convert between the visual representation of the domain using Unicode characters and the Punycode equivalent used by DNS. [DNS requires](https://www.rfc-editor.org/rfc/rfc2181) that any label is limited to 63 octets (63 bytes on an 8-bit system) and the domain name is limited to 255 octets. These limits are imposed on the Punycode transcription of the labels, not the original Unicode characters.
 
 ## IDN and Security
 

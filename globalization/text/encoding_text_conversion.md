@@ -16,10 +16,10 @@ Best practice is to use Unicode when storing or manipulating text. However, you 
 
 - Convert incoming data sources to Unicode as early as possible.
 - Convert Unicode text to the target encoding as late as possible.
-- When converting to Unicode or converting to the required encoding, validate that all characters are supported in the target encoding (lossless conversion). You will also need to determine the appropriate fallback behavior when characters cannot be converted from one encoding to another.
+- When converting to Unicode or converting to the required encoding, validate that all characters are supported in the target encoding (lossless conversion). You'll also need to determine the appropriate fallback behavior when characters can't be converted from one encoding to another.
 
 ## Encoding detection
 
 An additional challenge when working with multiple encodings or code pages is handling incoming data encoded with an unknown encoding. There are heuristic methods of guessing the encoding; however, these methods can be unreliable, especially for small amounts of data.
 
-Unicode, and Unicode’s character encoding schemes, can facilitate encoding detection. UTF-8 defines valid and invalid byte sequences, so detecting an invalid byte sequence would mean that the encoding is not UTF-8. For UTF-16, if you expect that most or all of the characters in a stream are Latin characters, you would expect a large number of even or odd null bytes, depending on whether big-endian or little endian encoding is used. 
+Unicode, and Unicode’s character encoding schemes, can facilitate encoding detection. UTF-8 defines valid and invalid byte sequences, so detecting an invalid byte sequence would mean that the encoding isn't UTF-8. For UTF-16, if you expect most or all of the characters in a stream are Latin characters, you would expect a large number of even or odd null bytes, depending on whether big-endian or little endian encoding is used.
