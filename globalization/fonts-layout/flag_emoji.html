@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta name="color-scheme" content="dark light">
+    <script language="JavaScript">
+      document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+      parent.window.addEventListener('theme-changed', SetBackgroundColor);
+      function SetBackgroundColor() {
+        var theme = localStorage.getItem('theme');
+        if (theme == 'dark') {
+          document.body.style.backgroundColor = '#171717';
+          document.body.style.color = '#E6E6E6';
+        }
+        if (theme == 'high-contrast') {
+          document.body.style.backgroundColor = '#000000';
+          document.body.style.color = '#FFFFFF';
+        }
+        if (theme == 'light') {
+          document.body.style.backgroundColor = '#FFFFFF';
+          document.body.style.color = '#161616';
+        }
+        else {
+          //docs.microsoft.com theme has not been set yet. Default to browser theme.
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: NotoColorEmojiLimited;
+        unicode-range: U+1F1E6-1F1FF;
+        src: url(NotoColorEmoji.ttf);
+      }
+    </style>
+    <table>
+      <tr>
+        <td style="font-size: x-large">&#x1F1FA;&#x1F1F8;</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td style="font-size: x-large">&#x1F1E8;&#x1F1E6;</td>
+      </tr>
+      <tr>
+        <td style="font-size: x-large; font-family: NotoColorEmojiLimited">&#x1F1FA;&#x1F1F8;</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td style="font-size: x-large; font-family: NotoColorEmojiLimited">&#x1F1E8;&#x1F1E6;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Segoe UI, sans-serif">U+1F1FA U+1F1F8</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td style="font-family:Segoe UI, sans-serif">U+1F1E8 U+1F1E6</td>
+      </tr>
+    </table>
+  </body>
+</html>
