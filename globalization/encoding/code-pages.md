@@ -17,10 +17,11 @@ For example, code page 1253 provides character codes required in the Greek writi
 
 To support writing systems for languages such as Chinese, Japanese, and Korean that use more than 256 characters, a different scheme needed to be developed to overcome the 256-character limit of SBCS. Double Byte Character Sets (DBCS) and, more generally, Multi-Byte Character Sets (MBCS) were developed to extend the SBCS design. Code page 932 is a variant of the Shift JIS Japanese character encoding. Code page 936 originally covered the GB 2312 character set for Simplified Chinese but was expanded to cover the GBX extension. In both character sets, the first 127 code points are reserved for ASCII characters, while the following 128 code points could also be characters or the lead byte of a multi-byte character. The character sets aren't interchangeable even if they contain many of the same characters. For example, the character 字 (U+5B57) is mapped to `0x8E 0x9A` in code page 932, but mapped to `0xD7 0xD6` in code page 936.
 
-Most applications written today handle character data primarily as [Unicode](unicode-standard.md), using one of several encodings such as UTF-8 or UTF-16LE. Windows supports several of these encodings with code pages, for example, code page 65001 supports the UTF-8 encoding of Unicode.
+Most applications written today handle character data primarily as [Unicode](unicode-standard.md). Unicode is a character encoding that endeavors to support all historical and modern writing system using a single character encoding.
 
 While the current versions of Windows use Unicode internally, Windows still supports [many code pages](/windows/win32/intl/code-page-identifiers) for:
 
-- communicating with legacy applications.
-- communicating with older mail and news servers, which might not support Unicode.
-- using command-line applications that don’t support Unicode.
+- communicating with legacy applications
+- communicating with older mail and news servers, which might not support Unicode
+- using command-line applications that don’t support Unicode
+- reading and writing documents in legacy formats

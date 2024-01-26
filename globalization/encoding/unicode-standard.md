@@ -70,9 +70,9 @@ UTF-8 is interpreted as a sequence of bytes:
 - The range U+0800..U+FFFF (the remainder of the BMP) requires three bytes
 - Code points in planes 1-16 require four bytes
 
-The UTF-16 encoding form encodes code points in one or two 16-bit code units. The UTF-32 encoding form encodes code points in a single 32-bit code unit.
+UTF-16 encoding forms encode code points in one or two 16-bit code units. UTF-32 encoding forms encodes code points in a single 32-bit code unit.
 
-Both UTF-16 and UTF-32 can use little-endian (least-significant byte at the smallest memory address) or big-endian (most-significant byte at the smallest memory address) byte orders. The byte orders for UTF-16LE, UTF-16BE, UTF-32LE, and UTF-32BE are unambiguous. UTF-16 and UTF-32 require a byte order mark (BOM, U+FEFF) at the beginning of the stream or file to indicate the byte order.
+**UTF-16** and **UTF-32** can use little-endian (least-significant byte at the smallest memory address) or big-endian (most-significant byte at the smallest memory address) byte orders. **UTF-16** and **UTF-32** require a byte order mark (BOM, U+FEFF) at the beginning of the stream or file to indicate the byte order. The byte orders for **UTF-16LE**, **UTF-16BE**, **UTF-32LE**, and **UTF-32BE** are unambiguous.
 
 When the BOM is encountered at the beginning of the stream or file, the order of the bytes of the BOM indicate the order of the remainder of the stream or file.
 
@@ -93,6 +93,8 @@ As UTF-32 requires four bytes for every Unicode code point, it would seem that U
 
 UTF-16 uses either one or two 16-bit code units (2 bytes or 4 bytes) to represent the Unicode code points. A single code unit can represent code points in the range U+0000..U+FFFF. For code points in the supplementary planes (range U+10000...U+10FFFF) a pair of code units, called a *surrogate pair*, are required. The first (high) surrogate is a 16-bit code value in the range U+D800 to U+DBFF. The second (low) surrogate is a 16-bit code value in the range U+DC00 to U+DFFF.
 
+For example 𓅡 (U+13161 EGYPTIAN HIEROGLYPH G029) is a character in the Supplementary Multilingual Plane. The UTF-32 value is 0x00013161. In UTF-16, a surrogate pair is required. The high surrogate is U+D80C while the low surrogate is U+DC61.
+
 Unicode code points in the range U+D800..U+DFFF are reserved for use by UTF-16. When reading a UTF-16 stream, it's unambiguous whether a byte is a lead byte (high surrogate) or a trail byte (low surrogate) of a multi-byte (surrogate pair) character, which is a common challenge with MBCS text.
 
 ## The Unicode Character Database and character properties
@@ -107,7 +109,7 @@ Not all Unicode-based text processing is a matter of simple character-by-charact
 
 In contrast, there are unusual characters that have specific semantic rules attached to them; these characters are detailed in The Unicode Standard. Some characters always allow a line break (for example, most spaces), whereas others never do (for instance, nonspacing or nonbreaking characters). Many characters used in Arabic and Hebrew are defined as having a strong or weak [directionality](../fonts-layout/text-directionality.md). The Unicode Standard defines an algorithm for determining the display order of bidirectional text. It also defines several *directional formatting codes* as overrides for cases not handled by the implicit bidirectional ordering rules to help create comprehensible bidirectional text.
 
-The code-point positions of Unicode elements don't imply a [sort order](../locale/sorting-and-string-comparison.md) and the organization is often unrelated to language usage. To implement sorting, the application or the platform must handle the mapping of Unicode points to the rules that determine the sort order. The [Common Locale Data Repository](../reference/cldr.md) (CLDR) provides the regional format and sorting information that can be used to implement sorting and collation.
+The code-point positions of Unicode elements don't imply a [sort order](../locale/sorting-and-string-comparison.md) and the organization of characters within the Unicode code-point positions is often unrelated to language usage. To implement sorting, the application or the platform must handle the mapping of Unicode points to the rules that determine the sort order. The [Common Locale Data Repository](../reference/cldr.md) (CLDR) provides the regional format and sorting information that can be used to implement sorting and collation.
 
 ### Variation Selection
 
