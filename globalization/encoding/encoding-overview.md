@@ -15,9 +15,7 @@ Computers have no intrinsic knowledge of characters used in [writing systems](..
 
 While there are many character encoding standards, one of the first in common use was ASCII (American Standard Code for Information Interchange). The original ASCII standard used a 7-bit character encoding system, representing 128 unique characters. Most modern computers work with and store binary numbers in groups of 8 bits. Early Windows versions used an 8-bit character encoding system and these versions of Windows support multiple 8-bit [code pages](code-pages.md), enabling Windows releases in several languages.
 
-To maintain compatibility with ASCII and to support a limited compatibility between 8-bit character sets, the first 127 characters of many code pages represent the ASCII characters. It's usually the upper 128 code points (values 128-255) where 8-bit code pages differ considerably. 8-bit character sets are commonly termed single-byte character sets (SBCS). SBCS and their corresponding code pages allowed support for a broad range of scripts and languages, including Cyrillic, Greek, Arabic, and Vietnamese.
-
-For example, here are the characters corresponding to E0-EF (224-239) for several code pages:
+To maintain compatibility with ASCII and to support a limited compatibility between 8-bit character sets, the first 127 characters of many code pages represent the ASCII characters. It's usually the upper 128 code points (values 128-255) where 8-bit code pages differ considerably. 8-bit character sets are commonly termed single-byte character sets (SBCS). SBCS and their corresponding code pages allowed support for a broad range of scripts and languages, including Cyrillic, Greek, Arabic, and Vietnamese. Here are the characters corresponding to E0-EF (224-239) for several code pages:
 
 | Code page | Script/Language/Region | E0 | E1 | E2 | E3 | E4 | E5 | E6 | E7 | E8 | E9 | EA | EB | EC | ED | EE | EF |
 |-----------|--------|------------------|
