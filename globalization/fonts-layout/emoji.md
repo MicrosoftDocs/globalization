@@ -22,6 +22,8 @@ Emoji can be convenient when conveying gestures, facial expressions, and other n
 
 [Unicode 8.0](https://www.unicode.org/versions/Unicode8.0.0/), released in June 2015 added skin tone modifier characters to the emoji standard. These characters allow users to specify the skin tone of the emoji character that immediately precedes them.
 
+Unicode currently supports over 3600 emojis, and by using variation sequences and zero width joiner sequences, provides extensive support for nonverbal communication.
+
 ## Emoji and variation selection
 
 Like applying variation sequences to characters  to change the appearance when rendered, you can use variation sequences to change the appearance of emoji.

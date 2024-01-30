@@ -10,7 +10,7 @@ ms.custom:
 ---
 # Encoding and text conversion
 
-Strings in libraries like ICU, frameworks like .NET, and programming languages like Java represent text as a series of Unicode characters. As Unicode supports a broad range of writing systems, it avoids one of the issues when working with code pages designed for a smaller set of languages. For example, code pages like Windows-1252 are designed for use with languages that use the Latin script. Japanese characters, such as Kanji or Hiragana aren’t supported in Windows-1252, so you wouldn’t be able to use Japanese text in a text file encoded as or a database column with a collation of Windows-1252.
+Strings in libraries like ICU, frameworks like .NET, and programming languages like Java represent text as a series of [Unicode](../encoding/unicode-standard.md) characters. As Unicode supports a broad range of writing systems, it avoids one of the issues when working with [code pages](../encoding/code-pages.md) designed for a smaller set of languages. For example, code pages like Windows-1252 are designed for use with languages that use the Latin script. Japanese characters, such as Kanji or Hiragana aren’t supported in Windows-1252, so you wouldn’t be able to use Japanese text in a text file [encoded](../encoding/encoding-overview.md) as or a database column with a collation of Windows-1252.
 
 Best practice is to use Unicode when storing or manipulating text. However, you might also need to support legacy systems that use different encodings or code pages. In this case, to minimize issues:
 
