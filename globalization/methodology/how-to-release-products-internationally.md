@@ -43,7 +43,7 @@ Marketing is such a critical area that it can benefit from [transcreation](../lo
 
 When you have selected the target markets, you need to lock down which languages are going to be supported. Are you going to try to support all languages in all your target markets, or prioritize some languages or markets, perhaps adding more after launch? For example, in Japan Japanese is the dominant language and you should focus your support on Japanese. But many countries have more than one official language, and some unofficial languages might also be worth supporting. Supporting common languages such as Spanish have the advantage of covering many markets at once, although you still need to account for regional variations and conventions.
 
-Language support can incur considerable costs, especially if your original product development didn’t plan for [internationalization](../software-internationalization.md). Even if internationalization was accounted for, each new language version still comes with an incremental cost.
+Language support can incur considerable costs, especially if your original product development didn’t plan for [internationalization](software-internationalization.md). Even if internationalization was accounted for, each new language version still comes with an incremental cost.
 
 ### Payment methods
 
@@ -83,7 +83,7 @@ The pricing of your product might also need adjustment for the target market. Yo
 
 ### Localization
 
-Your product should be designed according to the principles of [internationalization](../software-internationalization.md), making it as easy to localize as possible. Thus it should have support for [locales](../locale/locale.md) and [language settings](../locale/language-settings.md), and its localizable resources should be [externalized](../localization/localize-software.md). Besides the product itself, you should have selected a localization partner and agreed on a process with them. For more information about the whole localization process, refer to [Localizing your product](../localization/localization-overview.md).
+Your product should be designed according to the principles of [internationalization](software-internationalization.md), making it as easy to localize as possible. Thus it should have support for [locales](../locale/locale.md) and [language settings](../locale/language-settings.md), and its localizable resources should be [externalized](../localization/localize-software.md). Besides the product itself, you should have selected a localization partner and agreed on a process with them. For more information about the whole localization process, refer to [Localizing your product](../localization/localization-overview.md).
 
 ### Product delivery
 

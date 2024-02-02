@@ -50,7 +50,7 @@ V and W are now treated as separate letters in Swedish, but before 2006 W was tr
 
 #### Lowercase vs uppercase
 
-In some cases, the sorting order might be affected by lowercase or uppercase letters. Many modern scripts, such as Latin, Greek, Cyrillic, and Armenian have case, but not all do. For a detailed explanation, refer to [Case mapping](../input/text-rendering.md#capitalization-upper-casing-and-lower-casing).
+In some cases, the sorting order might be affected by lowercase or uppercase letters. Many modern scripts, such as Latin, Greek, Cyrillic, and Armenian have case, but not all do. For a detailed explanation, refer to [Case mapping](../text/case-mapping.md).
 
 #### Punctuation, symbols and spaces
 
@@ -65,7 +65,8 @@ There are standards, national/regional or otherwise, that define collation for a
 #### Normalization
 
 Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. For example, the latin small letter a with diaeresis (umlaut) might be represented by either the character ä (U+00E4) or a (U+0041) with the combining diaeresis character ¨ (U+0308).
-<!-- For a detailed explanation, refer to [String normalization](../text/text-normalization.md). -->
+
+For a detailed explanation, refer to [String normalization](../text/text-normalization.md).
 
 ## Market-specific sorting examples
 

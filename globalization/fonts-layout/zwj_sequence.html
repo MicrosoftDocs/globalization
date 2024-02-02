@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta name="color-scheme" content="dark light">
+    <script language="JavaScript">
+      document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+      parent.window.addEventListener('theme-changed', SetBackgroundColor);
+      function SetBackgroundColor() {
+        var theme = localStorage.getItem('theme');
+        if (theme == 'dark') {
+          document.body.style.backgroundColor = '#171717';
+          document.body.style.color = '#E6E6E6';
+        }
+        if (theme == 'high-contrast') {
+          document.body.style.backgroundColor = '#000000';
+          document.body.style.color = '#FFFFFF';
+        }
+        if (theme == 'light') {
+          document.body.style.backgroundColor = '#FFFFFF';
+          document.body.style.color = '#161616';
+        }
+        else {
+          //docs.microsoft.com theme has not been set yet. Default to browser theme.
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td style="font-size: x-large">&#x1F9D1;&#x1F9D2;</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td style="font-size: x-large">&#x1F9D1;&#x200D;&#x1F9D2;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Segoe UI, sans-serif">U+1F9D1 U+1F9D2</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td style="font-family:Segoe UI, sans-serif">U+1F9D1 U+200D U+1F9D2</td>
+      </tr>
+    </table>
+  </body>
+</html>
