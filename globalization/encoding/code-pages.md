@@ -1,33 +1,27 @@
 ---
 title: Code pages
-description: A codepage is a list of selected character codes characters represented as code points in a certain order.
-ms.assetid: ecf7501a-f06a-423f-b263-2d472f3ed2a7
-ms.date: 06/27/2016
+description: Understand the concept of code pages and how they support different languages and writing systems.
+ms.date: 1/24/2024
+author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:01/24/2024
 ---
 
 # Code pages
 
-It is recommended to use one of the Unicode encodings, but if you are working with legacy software you may need to continue to support code pages.
+A code page is a list of selected character codes (characters represented as code points). Code pages were originally defined to support a specific language or groups of languages that share a common writing system. The original Windows code pages supported 8-bit Single Byte Character Sets (SBCS), composed of 256 characters. The first 127 code points of each code page typically represented the same "ASCII" characters. The upper 128 code points (values 128-255) of each code page differed considerably.
 
-A code page is a list of selected character codes (characters represented as code points) in a certain order.
-A code page is usually defined to support a specific language or groups of languages that share a common writing system.
-Usually most of the first 127 code points represent the same "ASCII" characters across many code pages.
-This is to allow for continuity and legacy data.
-It is usually the upper 128 code points (values 128-255) where code pages differ considerably.
+For example, code page 1253 provides character codes required in the Greek writing system and code page 1252 provides the characters to support languages such as English, German, and French that use the Latin writing system. It's the upper 128 code points that contain either the Greek characters or characters with diacritical marks. Using these 8-bit code pages, you can't store Greek and German in the same code stream unless you can also identify when text transitions from one encoding to the other.
 
-For example, code page 1253 provides character codes required in the Greek writing system and code page 1252 provides the characters for Latin writing systems including English, German and French.
-It is the upper 128 code points that contain either the accent characters or the Greek characters.
-Thus you cannot store Greek and German in the same code stream unless you include some type of identifier separate from the text to indicate which code page top use.
+To support writing systems for languages such as Chinese, Japanese, and Korean that use more than 256 characters, a different scheme needed to be developed to overcome the 256-character limit of SBCS. Double Byte Character Sets (DBCS) and, more generally, Multi-Byte Character Sets (MBCS) were developed to extend the SBCS design. Code page 932 is a variant of the Shift JIS Japanese character encoding. Code page 936 originally covered the GB 2312 character set for Simplified Chinese but was expanded to cover the GBX extension. In both character sets, the first 127 code points are reserved for ASCII characters, while the following 128 code points could also be characters or the lead byte of a multi-byte character. The character sets aren't interchangeable even if they contain many of the same characters. For example, the character 字 (U+5B57) is mapped to `0x8E 0x9A` in code page 932, but mapped to `0xD7 0xD6` in code page 936.
 
-This becomes even more complex when dealing with Asian character sets. 
-Chinese, Japanese and Korean contain more than 256 characters, so a different scheme needed to be developed but it had to be based on the concept of byte-based code pages.
-Thus Double Byte Character Sets (DBCS) and, more generally, Multi-Byte Character Sets (MBCS) were born.
+Most applications written today handle character data primarily as [Unicode](unicode-standard.md). Unicode is a character encoding that endeavors to support all historical and modern writing system using a single character encoding.
 
-In a DBCS or MBCS, many characters are represented by a pair of bytes (thus double-byte) or a sequence of 3 or more bytes).
-For programming awareness, a set of points are set aside to represent the first byte of the set and are not valued unless they are immediately followed by a defined second (or third) byte in a specific range.
-This meant that you had to write code that would treat these varying-length sequences of bytes as one character.
-This scheme still doesn't allow for the combining of Japanese and Chinese in the same data stream, because depending on the code page, the same code points represent different characters for the different languages.
+While the current versions of Windows use Unicode internally, Windows still supports [many code pages](/windows/win32/intl/code-page-identifiers) for:
 
-In order to allow for the storage of different languages in the same data stream, [Unicode](encoding-overview.md) was created.
-This single encoding can represent over 64,000 characters, and with surrogates it can represent over a million characters.
-The use of Unicode allows for easier creation of world-ready code, because you no longer have to worry about which code page you are addressing, nor whether you had to group character points to represent one character.
+- communicating with legacy applications
+- communicating with older mail and news servers, which might not support Unicode
+- using command-line applications that don’t support Unicode
+- reading and writing documents in legacy formats
