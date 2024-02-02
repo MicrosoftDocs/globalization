@@ -17,96 +17,96 @@ The following sections provide some generic information about the concepts of gl
 
 ## Data encoding
 
-* [Encoding overview](encoding/encoding-overview.md)
+* [Encoding overview](../encoding/encoding-overview.md)
 
-* [Transformation of Unicode code points](encoding/transformations-of-unicode-code-points.md)
+* [Transformation of Unicode code points](../encoding/transformations-of-unicode-code-points.md)
 
-* [Byte order mark (file signature)](encoding/byte-order-mark.md)
+* [Byte order mark (file signature)](../encoding/byte-order-mark.md)
 
-* [Surrogate pairs](encoding/surrogate-pairs.md)
+* [Surrogate pairs](../encoding/surrogate-pairs.md)
 
-* [Code pages](encoding/code-pages.md)
+* [Code pages](../encoding/code-pages.md)
 
 ## Locale and Culture Awareness
 
 * [Locale](locale/locale.md)
 
-* [Sorting and string comparison](locale/sorting-and-string-comparison.md)
+* [Sorting and string comparison](../locale/sorting-and-string-comparison.md)
 
-* [Calendars](locale/calendar-differences.md)
+* [Calendars](../locale/calendar-differences.md)
 
-* [Date formatting](locale/date-formatting.md)
+* [Date formatting](../locale/date-formatting.md)
 
-* [Time formatting](locale/time-formatting.md)
+* [Time formatting](../locale/time-formatting.md)
 
-* [Currency Formatting](locale/currency-formatting.md)
+* [Currency Formatting](../locale/currency-formatting.md)
 
-* [Number formatting](locale/number-formatting.md)
+* [Number formatting](../locale/number-formatting.md)
 
-* [Addresses](locale/addresses.md)
+* [Addresses](../locale/addresses.md)
 
-* [Telephone numbers](locale/telephone-number.md)
+* [Telephone numbers](../locale/telephone-number.md)
 
-* [Paper size](locale/paper-size.md)
+* [Paper size](../locale/paper-size.md)
 
-* [Units of measurement](locale/units-of-measurement.md)
+* [Units of measurement](../locale/units-of-measurement.md)
 
 ## Input, output, and display
 
-* [Text input, output, and display](input/text-input.md)
+* [Text input, output, and display](../input/text-input.md)
 
-* [Text rendering](input/text-rendering.md)
+* [Text rendering](../input/text-rendering.md)
 
-* [Page or text alignment](input/page-or-text-alignment.md)
+* [Page or text alignment](../input/page-or-text-alignment.md)
 
-* [Text justification](input/text-justification.md)
+* [Text justification](../input/text-justification.md)
 
-* [Font tchnology](input/font-technology.md)
+* [Font tchnology](../input/font-technology.md)
 
-* [Line and word breaking](input/line-and-word-breaking.md)
+* [Line and word breaking](../input/line-and-word-breaking.md)
 
-* [Mirroring](input/mirroring.md)
+* [Mirroring](../input/mirroring.md)
 
-* [Overlay text properties](input/overlay.md)
+* [Overlay text properties](../input/overlay.md)
 
 ## Localizability
 
-* [Localizability overview](localizability/overview.md)
+* [Localizability overview](../localizability/overview.md)
 
-* [Isolate localizable resources](localizability/isolate-localizable-resources.md)
+* [Isolate localizable resources](../localizability/isolate-localizable-resources.md)
 
-* [String handling](localizability/string-handling.md)
+* [String handling](../localizability/string-handling.md)
 
-* [Mirroring awareness](localizability/mirroring-awareness.md)
+* [Mirroring awareness](../localizability/mirroring-awareness.md)
 
-* [UI considerations](localizability/ui-considerations.md)
+* [UI considerations](../localizability/ui-considerations.md)
 
 ## Localization
 
-* [Localization overview](localization/localization-overview.md)
+* [Localization overview](../localization/localization-overview.md)
 
-* [Localization elements](localization/localization-elements.md)
+* [Localization elements](../localization/localization-elements.md)
 
-* [Localization tools](localization/localization-tools.md)
+* [Localization tools](../localization/localization-tools.md)
 
-* [Localization team](localization/localization-team.md)
+* [Localization team](../localization/localization-team.md)
 
-* [Establishing localization guidelines](localization/establishing-localization-guidelines.md)
+* [Establishing localization guidelines](../localization/establishing-localization-guidelines.md)
 
-* [Content localization](localization/content-localization.md)
+* [Content localization](../localization/content-localization.md)
 
 ## Testing for world readiness
 
-* [Quality assurance for world-readiness](testing/quality-assurance-for-world-readiness.md)
+* [Quality assurance for world-readiness](../testing/quality-assurance-for-world-readiness.md)
 
-* [The world-ready approach to testing](testing/the-world-ready-approach-to-testing.md)
+* [The world-ready approach to testing](../testing/the-world-ready-approach-to-testing.md)
 
-* [Testing globalization](testing/globalization-of-the-test.md)
+* [Testing globalization](../testing/globalization-of-the-test.md)
 
-* [Testing localizability](testing/localizability-testing.md)
+* [Testing localizability](../testing/localizability-testing.md)
 
-* [Testing localization](testing/localization-testing.md)
+* [Testing localization](../testing/localization-testing.md)
 
-* [The role of test tools](testing/the-role-of-test-tools.md)
+* [The role of test tools](../testing/the-role-of-test-tools.md)
 
-* [Sample world-ready test cases](testing/sample-international-test-cases.md)
+* [Sample world-ready test cases](../testing/sample-international-test-cases.md)
