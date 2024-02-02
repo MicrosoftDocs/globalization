@@ -54,4 +54,4 @@ Combining characters are characters that modify and are displayed with other cha
   - LATIN SMALL LETTER E WITH DOT BELOW (U+1EB9) + COMBINING CIRCUMFLEX ACCENT (U+0302)
   - LATIN SMALL LETTER E (U+0065) + COMBINING CIRCUMFLEX ACCENT (U+0302) + COMBINING DOT BELOW (U+0323)
 
-For comparing and collating text that might be using combining characters or precomposed characters, see [String normalization](../locale/sorting-and-string-comparison.md#normalization).
+For comparing and collating text that might be using combining characters or precomposed characters, see [String normalization](../text/text-normalization.md).
