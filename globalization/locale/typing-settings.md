@@ -10,7 +10,7 @@ ms.date: 01/10/2023
 
 # Typing settings
 
-Typing settings control how users interact with their systems and applications using keyboards or similar devices. Most systems have multiple [keyboard layouts](../windows-keyboard-layouts.md) available to support language and typing conventions in various countries. Languages that users configure their systems to use come with a list of keyboard layouts available by default. Some languages also have additional typing settings besides the keyboard layout, like spelling, grammar, or typographic settings. Examples include the following:
+Typing settings control how users interact with their systems and applications using keyboards or similar devices. Most systems have multiple [keyboard layouts](../windows-keyboard-layouts.md) available to support language and typing conventions in various countries or regions. Languages that users configure their systems to use come with a list of keyboard layouts available by default. Some languages also have additional typing settings besides the keyboard layout, like spelling, grammar, or typographic settings. Examples include the following:
 
 - Arabic spell checking: Strict final yaa
 - French spell checking: Traditional and new spellings

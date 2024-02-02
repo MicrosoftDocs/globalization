@@ -8,11 +8,81 @@
     <META name="color-scheme" content="dark light">
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
     <META name="robots" content="noindex">
-    <SCRIPT LANGUAGE="JavaScript">
+</HEAD>
+<BODY onLoad="keyOpen()">
+    <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt
+        solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
+    <script type="text/javascript" language="javascript">
         var State = 0;
         var Clicked = 0;
         document.addEventListener('DOMContentLoaded', SetBackgroundColor);
         parent.window.addEventListener('theme-changed', SetBackgroundColor);
+        Xoffset = 10;    // modify these values to ...
+        Yoffset = 10;    // change the popup position.
+
+        var old, skn, iex = (document.all), yyy = -1000;
+
+        var ns4 = document.layers
+        var ns6 = document.getElementById && !document.all
+        var ie4 = document.all
+
+        if (window.opera) ns6 = true;
+
+        if (ns4)
+            skn = document.glosso
+        else if (ns6)
+            skn = document.getElementById("glosso").style
+        else if (ie4)
+            skn = document.all.glosso.style
+        if (ns4) document.captureEvents(Event.MOUSEMOVE);
+        else {
+            skn.visibility = "visible"
+            skn.display = "none"
+        }
+        document.onmousemove = get_mouse;
+        function popup(msg) {
+            var content = msg;
+            yyy = Yoffset;
+            if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible" }
+            if (ns6) { document.getElementById("glosso").innerHTML = content; skn.display = '' }
+            //if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
+        }
+        function get_mouse(e) {
+            var blont = document.getElementById("glosso").innerHTML;
+            var x = (ns4 || ns6) ? e.pageX : event.x + document.body.scrollLeft;
+            if ((x > 110) && (x < 220)) {
+                if (blont.length > 25) x -= 40;
+
+                x = x - 65;
+            }
+            if (x > 220) {
+                if (blont.length > 25) {
+                    x = x - 40;
+                }
+                if (blont.length > 45) {
+                    x = x - 40;
+                }
+                if (blont.length > 65) {
+                    x = x - 30;
+                }
+                x = x - 110;
+            }
+            skn.left = x + Xoffset;
+            var y = (ns4 || ns6) ? e.pageY : event.y + document.documentElement.scrollTop;
+            if (y > 65) {
+                y = y - 40;
+            } else {
+                y = y + 18;
+            }
+            skn.top = y;
+            //alert(content);
+        }
+        function kill() {
+            yyy = -1000;
+            if (ns4) { skn.visibility = "hidden"; }
+            else if (ns6 || ie4)
+                skn.display = "none"
+        }
         function SetBackgroundColor() {
             var theme = localStorage.getItem('theme');
             if (theme == 'dark') {
@@ -170,78 +240,6 @@
                 Clicked = 0;
             }
         }
-    </SCRIPT>
-</HEAD>
-<BODY onLoad="keyOpen()">
-    <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt
-        solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
-    <script type="text/javascript" language="javascript">
-        Xoffset = 10;    // modify these values to ...
-        Yoffset = 10;    // change the popup position.
-
-        var old, skn, iex = (document.all), yyy = -1000;
-
-        var ns4 = document.layers
-        var ns6 = document.getElementById && !document.all
-        var ie4 = document.all
-
-        if (window.opera) ns6 = true;
-
-        if (ns4)
-            skn = document.glosso
-        else if (ns6)
-            skn = document.getElementById("glosso").style
-        else if (ie4)
-            skn = document.all.glosso.style
-        if (ns4) document.captureEvents(Event.MOUSEMOVE);
-        else {
-            skn.visibility = "visible"
-            skn.display = "none"
-        }
-        document.onmousemove = get_mouse;
-        function popup(msg) {
-            var content = msg;
-            yyy = Yoffset;
-            if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible" }
-            if (ns6) { document.getElementById("glosso").innerHTML = content; skn.display = '' }
-            //if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
-        }
-        function get_mouse(e) {
-            var blont = document.getElementById("glosso").innerHTML;
-            var x = (ns4 || ns6) ? e.pageX : event.x + document.body.scrollLeft;
-            if ((x > 110) && (x < 220)) {
-                if (blont.length > 25) x -= 40;
-
-                x = x - 65;
-            }
-            if (x > 220) {
-                if (blont.length > 25) {
-                    x = x - 40;
-                }
-                if (blont.length > 45) {
-                    x = x - 40;
-                }
-                if (blont.length > 65) {
-                    x = x - 30;
-                }
-                x = x - 110;
-            }
-            skn.left = x + Xoffset;
-            var y = (ns4 || ns6) ? e.pageY : event.y + document.documentElement.scrollTop;
-            if (y > 65) {
-                y = y - 40;
-            } else {
-                y = y + 18;
-            }
-            skn.top = y;
-            //alert(content);
-        }
-        function kill() {
-            yyy = -1000;
-            if (ns4) { skn.visibility = "hidden"; }
-            else if (ns6 || ie4)
-                skn.display = "none"
-        }
     </script>
     <DIV ID=loading CLASS=loading>
         <br><br><br>
@@ -249,7 +247,7 @@
     </DIV>
 <DIV ID=normallower CLASS=normallower STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/005eK.png" ALT="U+005E CIRCUMFLEX ACCENT&#10;DeadKey: &#x005e; &#x010d; &#x010c; &#x011b; &#x011a; &#x0159; &#x0158; &#x0161; &#x0160; &#x017e; &#x017d;"  onmouseover = "popup('VK_OEM_5<br/>U+005E CIRCUMFLEX ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;&#x005e; U+005E CIRCUMFLEX ACCENT<br/>&nbsp;&nbsp;&#x010d; U+010D LATIN SMALL LETTER C WITH CARON<br/>&nbsp;&nbsp;&#x010c; U+010C LATIN CAPITAL LETTER C WITH CARON<br/>&nbsp;&nbsp;&#x011b; U+011B LATIN SMALL LETTER E WITH CARON<br/>&nbsp;&nbsp;&#x011a; U+011A LATIN CAPITAL LETTER E WITH CARON<br/>&nbsp;&nbsp;&#x0159; U+0159 LATIN SMALL LETTER R WITH CARON<br/>&nbsp;&nbsp;&#x0158; U+0158 LATIN CAPITAL LETTER R WITH CARON<br/>&nbsp;&nbsp;&#x0161; U+0161 LATIN SMALL LETTER S WITH CARON<br/>&nbsp;&nbsp;&#x0160; U+0160 LATIN CAPITAL LETTER S WITH CARON<br/>&nbsp;&nbsp;&#x017e; U+017E LATIN SMALL LETTER Z WITH CARON<br/>&nbsp;&nbsp;&#x017d; U+017D LATIN CAPITAL LETTER Z WITH CARON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/005eK.png" ALT="U+005E CIRCUMFLEX ACCENT&#10;DeadKey: &#x005e; &#x010d; &#x010c; &#x011b; &#x011a; &#x0159; &#x0158; &#x0161; &#x0160; &#x017e; &#x017d;"  onmouseover = "popup('VK_OEM_5<br/>U+005E CIRCUMFLEX ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x005e; U+005E CIRCUMFLEX ACCENT<br/>&nbsp;&nbsp;+&#x0063; = &#x010d; U+010D LATIN SMALL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0043; = &#x010c; U+010C LATIN CAPITAL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0065; = &#x011b; U+011B LATIN SMALL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0045; = &#x011a; U+011A LATIN CAPITAL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0072; = &#x0159; U+0159 LATIN SMALL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0052; = &#x0158; U+0158 LATIN CAPITAL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0073; = &#x0161; U+0161 LATIN SMALL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x0053; = &#x0160; U+0160 LATIN CAPITAL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x007a; = &#x017e; U+017E LATIN SMALL LETTER Z WITH CARON<br/>&nbsp;&nbsp;+&#x005a; = &#x017d; U+017D LATIN CAPITAL LETTER Z WITH CARON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG SRC="images/0031.png" ALT="U+0031 DIGIT ONE"  onmouseover = "popup('VK_1<br/>U+0031 DIGIT ONE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0032.png" ALT="U+0032 DIGIT TWO"  onmouseover = "popup('VK_2<br/>U+0032 DIGIT TWO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0033.png" ALT="U+0033 DIGIT THREE"  onmouseover = "popup('VK_3<br/>U+0033 DIGIT THREE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -261,7 +259,7 @@
 <TD><IMG SRC="images/0039.png" ALT="U+0039 DIGIT NINE"  onmouseover = "popup('VK_9<br/>U+0039 DIGIT NINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0030.png" ALT="U+0030 DIGIT ZERO"  onmouseover = "popup('VK_0<br/>U+0030 DIGIT ZERO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/00df.png" ALT="U+00DF LATIN SMALL LETTER SHARP S"  onmouseover = "popup('VK_OEM_4<br/>U+00DF LATIN SMALL LETTER SHARP S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/00b4K.png" ALT="U+00B4 ACUTE ACCENT&#10;DeadKey: &#x00b4; &#x0107; &#x0106; &#x0142; &#x0141; &#x0144; &#x0143; &#x00f3; &#x00d3; &#x0155; &#x0154; &#x015b; &#x015a; &#x017a; &#x0179;"  onmouseover = "popup('VK_OEM_6<br/>U+00B4 ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;&#x00b4; U+00B4 ACUTE ACCENT<br/>&nbsp;&nbsp;&#x0107; U+0107 LATIN SMALL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;&#x0106; U+0106 LATIN CAPITAL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;&#x0142; U+0142 LATIN SMALL LETTER L WITH STROKE<br/>&nbsp;&nbsp;&#x0141; U+0141 LATIN CAPITAL LETTER L WITH STROKE<br/>&nbsp;&nbsp;&#x0144; U+0144 LATIN SMALL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;&#x0143; U+0143 LATIN CAPITAL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;&#x00f3; U+00F3 LATIN SMALL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;&#x00d3; U+00D3 LATIN CAPITAL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;&#x0155; U+0155 LATIN SMALL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;&#x0154; U+0154 LATIN CAPITAL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;&#x015b; U+015B LATIN SMALL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;&#x015a; U+015A LATIN CAPITAL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;&#x017a; U+017A LATIN SMALL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;&#x0179; U+0179 LATIN CAPITAL LETTER Z WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00b4K.png" ALT="U+00B4 ACUTE ACCENT&#10;DeadKey: &#x00b4; &#x0107; &#x0106; &#x0142; &#x0141; &#x0144; &#x0143; &#x00f3; &#x00d3; &#x0155; &#x0154; &#x015b; &#x015a; &#x017a; &#x0179;"  onmouseover = "popup('VK_OEM_6<br/>U+00B4 ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00b4; U+00B4 ACUTE ACCENT<br/>&nbsp;&nbsp;+&#x0063; = &#x0107; U+0107 LATIN SMALL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x0043; = &#x0106; U+0106 LATIN CAPITAL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x006c; = &#x0142; U+0142 LATIN SMALL LETTER L WITH STROKE<br/>&nbsp;&nbsp;+&#x004c; = &#x0141; U+0141 LATIN CAPITAL LETTER L WITH STROKE<br/>&nbsp;&nbsp;+&#x006e; = &#x0144; U+0144 LATIN SMALL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x004e; = &#x0143; U+0143 LATIN CAPITAL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f3; U+00F3 LATIN SMALL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d3; U+00D3 LATIN CAPITAL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x0072; = &#x0155; U+0155 LATIN SMALL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0052; = &#x0154; U+0154 LATIN CAPITAL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0073; = &#x015b; U+015B LATIN SMALL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x0053; = &#x015a; U+015A LATIN CAPITAL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x007a; = &#x017a; U+017A LATIN SMALL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;+&#x005a; = &#x0179; U+0179 LATIN CAPITAL LETTER Z WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
@@ -319,7 +317,7 @@
 </DIV>
 <DIV ID=normalcaps CLASS=normalcaps STYLE="display: none">
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
-<TD><IMG SRC="images/005eK.png" ALT="U+005E CIRCUMFLEX ACCENT&#10;DeadKey: &#x005e; &#x010d; &#x010c; &#x011b; &#x011a; &#x0159; &#x0158; &#x0161; &#x0160; &#x017e; &#x017d;"  onmouseover = "popup('VK_OEM_5<br/>U+005E CIRCUMFLEX ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;&#x005e; U+005E CIRCUMFLEX ACCENT<br/>&nbsp;&nbsp;&#x010d; U+010D LATIN SMALL LETTER C WITH CARON<br/>&nbsp;&nbsp;&#x010c; U+010C LATIN CAPITAL LETTER C WITH CARON<br/>&nbsp;&nbsp;&#x011b; U+011B LATIN SMALL LETTER E WITH CARON<br/>&nbsp;&nbsp;&#x011a; U+011A LATIN CAPITAL LETTER E WITH CARON<br/>&nbsp;&nbsp;&#x0159; U+0159 LATIN SMALL LETTER R WITH CARON<br/>&nbsp;&nbsp;&#x0158; U+0158 LATIN CAPITAL LETTER R WITH CARON<br/>&nbsp;&nbsp;&#x0161; U+0161 LATIN SMALL LETTER S WITH CARON<br/>&nbsp;&nbsp;&#x0160; U+0160 LATIN CAPITAL LETTER S WITH CARON<br/>&nbsp;&nbsp;&#x017e; U+017E LATIN SMALL LETTER Z WITH CARON<br/>&nbsp;&nbsp;&#x017d; U+017D LATIN CAPITAL LETTER Z WITH CARON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/005eK.png" ALT="U+005E CIRCUMFLEX ACCENT&#10;DeadKey: &#x005e; &#x010d; &#x010c; &#x011b; &#x011a; &#x0159; &#x0158; &#x0161; &#x0160; &#x017e; &#x017d;"  onmouseover = "popup('VK_OEM_5<br/>U+005E CIRCUMFLEX ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x005e; U+005E CIRCUMFLEX ACCENT<br/>&nbsp;&nbsp;+&#x0063; = &#x010d; U+010D LATIN SMALL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0043; = &#x010c; U+010C LATIN CAPITAL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0065; = &#x011b; U+011B LATIN SMALL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0045; = &#x011a; U+011A LATIN CAPITAL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0072; = &#x0159; U+0159 LATIN SMALL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0052; = &#x0158; U+0158 LATIN CAPITAL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0073; = &#x0161; U+0161 LATIN SMALL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x0053; = &#x0160; U+0160 LATIN CAPITAL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x007a; = &#x017e; U+017E LATIN SMALL LETTER Z WITH CARON<br/>&nbsp;&nbsp;+&#x005a; = &#x017d; U+017D LATIN CAPITAL LETTER Z WITH CARON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG SRC="images/0021.png" ALT="U+0021 EXCLAMATION MARK"  onmouseover = "popup('VK_1<br/>U+0021 EXCLAMATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0022.png" ALT="U+0022 QUOTATION MARK"  onmouseover = "popup('VK_2<br/>U+0022 QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/00a7.png" ALT="U+00A7 SECTION SIGN"  onmouseover = "popup('VK_3<br/>U+00A7 SECTION SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
@@ -331,7 +329,7 @@
 <TD><IMG SRC="images/0029.png" ALT="U+0029 RIGHT PARENTHESIS"  onmouseover = "popup('VK_9<br/>U+0029 RIGHT PARENTHESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/003d.png" ALT="U+003D EQUALS SIGN"  onmouseover = "popup('VK_0<br/>U+003D EQUALS SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/003f.png" ALT="U+003F QUESTION MARK"  onmouseover = "popup('VK_OEM_4<br/>U+003F QUESTION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/00b4K.png" ALT="U+00B4 ACUTE ACCENT&#10;DeadKey: &#x00b4; &#x0107; &#x0106; &#x0142; &#x0141; &#x0144; &#x0143; &#x00f3; &#x00d3; &#x0155; &#x0154; &#x015b; &#x015a; &#x017a; &#x0179;"  onmouseover = "popup('VK_OEM_6<br/>U+00B4 ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;&#x00b4; U+00B4 ACUTE ACCENT<br/>&nbsp;&nbsp;&#x0107; U+0107 LATIN SMALL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;&#x0106; U+0106 LATIN CAPITAL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;&#x0142; U+0142 LATIN SMALL LETTER L WITH STROKE<br/>&nbsp;&nbsp;&#x0141; U+0141 LATIN CAPITAL LETTER L WITH STROKE<br/>&nbsp;&nbsp;&#x0144; U+0144 LATIN SMALL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;&#x0143; U+0143 LATIN CAPITAL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;&#x00f3; U+00F3 LATIN SMALL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;&#x00d3; U+00D3 LATIN CAPITAL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;&#x0155; U+0155 LATIN SMALL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;&#x0154; U+0154 LATIN CAPITAL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;&#x015b; U+015B LATIN SMALL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;&#x015a; U+015A LATIN CAPITAL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;&#x017a; U+017A LATIN SMALL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;&#x0179; U+0179 LATIN CAPITAL LETTER Z WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00b4K.png" ALT="U+00B4 ACUTE ACCENT&#10;DeadKey: &#x00b4; &#x0107; &#x0106; &#x0142; &#x0141; &#x0144; &#x0143; &#x00f3; &#x00d3; &#x0155; &#x0154; &#x015b; &#x015a; &#x017a; &#x0179;"  onmouseover = "popup('VK_OEM_6<br/>U+00B4 ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00b4; U+00B4 ACUTE ACCENT<br/>&nbsp;&nbsp;+&#x0063; = &#x0107; U+0107 LATIN SMALL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x0043; = &#x0106; U+0106 LATIN CAPITAL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x006c; = &#x0142; U+0142 LATIN SMALL LETTER L WITH STROKE<br/>&nbsp;&nbsp;+&#x004c; = &#x0141; U+0141 LATIN CAPITAL LETTER L WITH STROKE<br/>&nbsp;&nbsp;+&#x006e; = &#x0144; U+0144 LATIN SMALL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x004e; = &#x0143; U+0143 LATIN CAPITAL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f3; U+00F3 LATIN SMALL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d3; U+00D3 LATIN CAPITAL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x0072; = &#x0155; U+0155 LATIN SMALL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0052; = &#x0154; U+0154 LATIN CAPITAL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0073; = &#x015b; U+015B LATIN SMALL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x0053; = &#x015a; U+015A LATIN CAPITAL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x007a; = &#x017a; U+017A LATIN SMALL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;+&#x005a; = &#x0179; U+0179 LATIN CAPITAL LETTER Z WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
@@ -401,7 +399,7 @@
 <TD><IMG SRC="images/0029.png" ALT="U+0029 RIGHT PARENTHESIS"  onmouseover = "popup('VK_9<br/>U+0029 RIGHT PARENTHESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/003d.png" ALT="U+003D EQUALS SIGN"  onmouseover = "popup('VK_0<br/>U+003D EQUALS SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/003f.png" ALT="U+003F QUESTION MARK"  onmouseover = "popup('VK_OEM_4<br/>U+003F QUESTION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0060K.png" ALT="U+0060 GRAVE ACCENT&#10;DeadKey: &#x0060; &#x00e0; &#x00c0; &#x00e8; &#x00c8; &#x00ec; &#x00cc; &#x00f2; &#x00d2; &#x00f9; &#x00d9;"  onmouseover = "popup('VK_OEM_6<br/>U+0060 GRAVE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0060; U+0060 GRAVE ACCENT<br/>&nbsp;&nbsp;&#x00e0; U+00E0 LATIN SMALL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;&#x00c0; U+00C0 LATIN CAPITAL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;&#x00e8; U+00E8 LATIN SMALL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;&#x00c8; U+00C8 LATIN CAPITAL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;&#x00ec; U+00EC LATIN SMALL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;&#x00cc; U+00CC LATIN CAPITAL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;&#x00f2; U+00F2 LATIN SMALL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;&#x00d2; U+00D2 LATIN CAPITAL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;&#x00f9; U+00F9 LATIN SMALL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;&#x00d9; U+00D9 LATIN CAPITAL LETTER U WITH GRAVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/0060K.png" ALT="U+0060 GRAVE ACCENT&#10;DeadKey: &#x0060; &#x00e0; &#x00c0; &#x00e8; &#x00c8; &#x00ec; &#x00cc; &#x00f2; &#x00d2; &#x00f9; &#x00d9;"  onmouseover = "popup('VK_OEM_6<br/>U+0060 GRAVE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0060; U+0060 GRAVE ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e0; U+00E0 LATIN SMALL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c0; U+00C0 LATIN CAPITAL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0065; = &#x00e8; U+00E8 LATIN SMALL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0045; = &#x00c8; U+00C8 LATIN CAPITAL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0069; = &#x00ec; U+00EC LATIN SMALL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x0049; = &#x00cc; U+00CC LATIN CAPITAL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f2; U+00F2 LATIN SMALL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d2; U+00D2 LATIN CAPITAL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x0075; = &#x00f9; U+00F9 LATIN SMALL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;+&#x0055; = &#x00d9; U+00D9 LATIN CAPITAL LETTER U WITH GRAVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
@@ -471,7 +469,7 @@
 <TD><IMG SRC="images/0039.png" ALT="U+0039 DIGIT NINE"  onmouseover = "popup('VK_9<br/>U+0039 DIGIT NINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/0030.png" ALT="U+0030 DIGIT ZERO"  onmouseover = "popup('VK_0<br/>U+0030 DIGIT ZERO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
 <TD><IMG SRC="images/00df.png" ALT="U+00DF LATIN SMALL LETTER SHARP S"  onmouseover = "popup('VK_OEM_4<br/>U+00DF LATIN SMALL LETTER SHARP S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
-<TD><IMG SRC="images/0060K.png" ALT="U+0060 GRAVE ACCENT&#10;DeadKey: &#x0060; &#x00e0; &#x00c0; &#x00e8; &#x00c8; &#x00ec; &#x00cc; &#x00f2; &#x00d2; &#x00f9; &#x00d9;"  onmouseover = "popup('VK_OEM_6<br/>U+0060 GRAVE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;&#x0060; U+0060 GRAVE ACCENT<br/>&nbsp;&nbsp;&#x00e0; U+00E0 LATIN SMALL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;&#x00c0; U+00C0 LATIN CAPITAL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;&#x00e8; U+00E8 LATIN SMALL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;&#x00c8; U+00C8 LATIN CAPITAL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;&#x00ec; U+00EC LATIN SMALL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;&#x00cc; U+00CC LATIN CAPITAL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;&#x00f2; U+00F2 LATIN SMALL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;&#x00d2; U+00D2 LATIN CAPITAL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;&#x00f9; U+00F9 LATIN SMALL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;&#x00d9; U+00D9 LATIN CAPITAL LETTER U WITH GRAVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/0060K.png" ALT="U+0060 GRAVE ACCENT&#10;DeadKey: &#x0060; &#x00e0; &#x00c0; &#x00e8; &#x00c8; &#x00ec; &#x00cc; &#x00f2; &#x00d2; &#x00f9; &#x00d9;"  onmouseover = "popup('VK_OEM_6<br/>U+0060 GRAVE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0060; U+0060 GRAVE ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e0; U+00E0 LATIN SMALL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c0; U+00C0 LATIN CAPITAL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0065; = &#x00e8; U+00E8 LATIN SMALL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0045; = &#x00c8; U+00C8 LATIN CAPITAL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0069; = &#x00ec; U+00EC LATIN SMALL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x0049; = &#x00cc; U+00CC LATIN CAPITAL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f2; U+00F2 LATIN SMALL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d2; U+00D2 LATIN CAPITAL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x0075; = &#x00f9; U+00F9 LATIN SMALL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;+&#x0055; = &#x00d9; U+00D9 LATIN CAPITAL LETTER U WITH GRAVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
 <TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
 </TR></TABLE>
 <TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>

@@ -23,7 +23,7 @@ Intellectual property, copyright, and piracy laws vary widely by market. In many
 
 ## Encryption declaration
 
-Cryptography laws vary by country and region. Some countries and regions ban encryption in communication. Other countries and regions require a license to use encrypted software, or require that police have decryption keys in case they're needed in an investigation. For example, although encryption in France is perfectly legal, it's subject to strict government control regarding its distribution (supply), import/export, and usage. Your product may need to submit the necessary approvals to the French government prior to shipping to France. See [Encryption Control](https://www.ssi.gouv.fr/en/regulation/cryptology/).
+Cryptography laws vary by country and region. Some countries and regions ban encryption in communication. Other countries and regions require a license to use encrypted software, or require that police have decryption keys in case they're needed in an investigation. For example, although encryption in France is perfectly legal, it's subject to strict government control regarding its distribution (supply), import/export, and usage. Your product may need to submit the necessary approvals to the French government prior to shipping to France. See [Encryption Control](https://cyber.gouv.fr/en/regulation/cryptology/).
 
 ## Language laws
 
