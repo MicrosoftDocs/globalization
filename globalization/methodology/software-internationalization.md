@@ -29,7 +29,7 @@ The following sections provide some generic information about the concepts of gl
 
 ## Locale and Culture Awareness
 
-* [Locale](locale/locale.md)
+* [Locale](../locale/locale.md)
 
 * [Sorting and string comparison](../locale/sorting-and-string-comparison.md)
 
