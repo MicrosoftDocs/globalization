@@ -9,7 +9,7 @@ ms.date: 02/15/2024
 
 # Japanese IME
 
-If you need to enter some text in Japanese, the Japanese IME for Windows lets you enter text using hiragana or katakana characters while using a typical keyboard with 101-105 keys and keeping English as your Windows display language. The IME also converts your input into kanji characters.
+If you need to enter some text in Japanese, the Japanese Input Method Editor (IME) for Windows lets you enter text using hiragana or katakana characters while using a typical keyboard with 101-105 keys and keeping English as your Windows display language. The IME also converts your input into kanji characters.
 
 ## Add the Japanese keyboard layout
 

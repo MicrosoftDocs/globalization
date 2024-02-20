@@ -9,7 +9,7 @@ ms.date: 02/15/2024
 
 # Simplified Chinese IME
 
-If you need to enter some text in Simplified Chinese, the Microsoft Pinyin IME for Windows lets you enter text using Simplified Chinese characters while using a typical keyboard with 101-105 keys and keeping English as your Windows display language.
+If you need to enter some text in Simplified Chinese, the Microsoft Pinyin Input Method Editor (IME) for Windows lets you enter text using Simplified Chinese characters while using a typical keyboard with 101-105 keys and keeping English as your Windows display language.
 
 ## Add the Simplified Chinese keyboard layout
 
