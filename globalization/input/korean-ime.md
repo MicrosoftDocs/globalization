@@ -17,21 +17,21 @@ To add the Korean keyboard layout to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Korean** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. For entering Korean text while keeping English as your Windows display language, none of them are necessary. When you are happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. For entering Korean text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 ## Type Korean text
 
 The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (those in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
 
-If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This can be faster if you have more than two languages installed.
+If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
-IMAGE
+:::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
 To type text using Hangul, do the following:
 
 1. Select **Korean Microsoft IME**. The system tray now shows **한** instead of **ENG**, and a new icon showing **A** (indicating English input mode) appears next to it.
 1. Select the **A** icon. The input mode changes to **가** indicating that you can now type Hangul letters. You can also change between Korean and English input by pressing the right Alt key.
-1. Type Korean consonants with your left hand and vowels with your right hand. The vowel ㅠ is an exception: it is located on the B key of the English keyboard. Use the Shift key to type compound consonants (Shift + Q, W, E, R and T) and compound vowels (Shift + O and P).
+1. Type Korean consonants with your left hand and vowels with your right hand. The vowel ㅠ is an exception: it's located on the B key of the English keyboard. Use the Shift key to type compound consonants (Shift + Q, W, E, R, and T) and compound vowels (Shift + O and P).
 
 As you type, you notice that the Korean IME automatically arranges the Hangul letters into blocks representing syllables.
 
@@ -67,6 +67,6 @@ Finally, the IME Pad lets you use the Backspace, Delete, Enter, Esc, Spacebar, H
 
 ## Example
 
-The Korean word for summer is 여름. It consists of 5 letters: ㅇㅕㄹㅡㅁ
+The Korean word for summer is 여름. It consists of five letters: ㅇㅕㄹㅡㅁ
 
-To type the word, select the Korean keyboard layout from the system tray and change to Korean input mode, if necessary. Then switch on the Windows OSK so you can easily find the 5 letters on your keyboard (they are on the O, U, F, M, and A keys). As you type them, you can see how the IME turns them into 2 syllabic blocks, changing the blocks as you type.
+To type the word, select the Korean keyboard layout from the system tray and change to Korean input mode, if necessary. Then switch on the Windows OSK so you can easily find the five letters on your keyboard (they are on the O, U, F, M, and A keys). As you type them, you can see how the IME turns them into two syllabic blocks, changing the blocks as you type.

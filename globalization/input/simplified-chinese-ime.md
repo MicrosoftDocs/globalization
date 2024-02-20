@@ -17,22 +17,22 @@ To add the Simplified Chinese keyboard layout to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Chinese (Simplified, China)** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. For entering Simplified Chinese text while keeping English as your Windows display language, none of them are necessary. When you are happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. For entering Simplified Chinese text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
-By default, Simplified Chinese is installed with the Microsoft Pinyin IME, based on the phonetic pinyin method of romanization (converting text to the Latin script). A Microsoft Wubi IME is also available, but it’s not covered in this article.
+By default, Simplified Chinese is installed with the Microsoft Pinyin IME, based on the phonetic Pinyin method of romanization (converting text to the Latin script). A Microsoft Wubi IME is also available, but it’s not covered in this article.
 
 ## Type Simplified Chinese text
 
 The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (those in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
 
-If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This can be faster if you have more than two languages installed.
+If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
-IMAGE
+:::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
 To type text using Simplified Chinese, do the following:
 
 1. Select **Chinese (Simplified, China)**. The system tray now shows **拼** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英)**, press the Shift key or select the input mode icon.
-1. Start typing the Simplified Chinese character or word using its phonetic pinyin transcription. The conversion candidate window opens and shows matches for what you have typed. You can keep typing and the candidate window updates in real time. See the [example](#example) at the end of this article.
+1. Start typing the Simplified Chinese character or word using its phonetic Pinyin transcription. The conversion candidate window opens and shows matches for what you typed. You can keep typing and the candidate window updates in real time. See the [example](#example) at the end of this article.
 1. To navigate the window, use your mouse or the following keys:
     - Down and Up arrow keys to move to the next/previous candidate
     - Spacebar to select the currently focused candidate
@@ -45,7 +45,7 @@ To type text using Simplified Chinese, do the following:
 
 When the Simplified Chinese keyboard layout is active, you can right-click the input mode icon (**中** or **英**) to access various options. The right-click menu also has a shortcut to **Microsoft Pinyin** settings. You can change many settings related to using the IME:
 
-- Pinyin style, reading auto-correction, super abbreviated pinyin, IME default modes, and fuzzy pinyin rules
+- Pinyin style, reading autocorrection, super abbreviated Pinyin, IME default modes, and fuzzy Pinyin rules
 - [Keyboard shortcuts](#configure-keyboard-shortcuts)
 - Appearance of the candidate window
 - Lexicon and self-learning settings
@@ -90,8 +90,8 @@ To open the IME toolbar, open the right-click menu and select **IME toolbar**. I
 
 ## Example
 
-The Simplified Chinese word for summer is 夏天. It consists of two characters whose pinyin romanizations are “xia” and “tian”.
+The Simplified Chinese word for summer is 夏天. It consists of two characters whose Pinyin romanizations are “xia” and “tian.”
 
-To type the word, select the Simplified Chinese keyboard layout from the system tray and change to Chinese input mode, if necessary. Then start typing the pinyin word. The candidate window opens as you type. Do not press Spacebar after “xia”, as that would select the currently focused candidate, which might not be the right character.
+To type the word, select the Simplified Chinese keyboard layout from the system tray and change to Chinese input mode, if necessary. Then start typing the Pinyin word. The candidate window opens as you type. Don't press Spacebar after “xia”, as that would select the currently focused candidate, which might not be the right character.
 
-After you have typed “xiatian,” you can see how the IME has changed the spelling to “xia’tian” and the correct candidate is displayed as the first one. Press Spacebar to insert it into your text.
+After you type “xiatian,” you can see how the IME changes the spelling to “xia’tian” and the correct candidate is displayed as the first one. Press Spacebar to insert it into your text.

@@ -17,21 +17,21 @@ To add the Japanese keyboard layout to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Japanese** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. For entering Japanese text while keeping English as your Windows display language, none of them are necessary. When you are happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. For entering Japanese text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 ## Type Japanese text
 
 The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (those in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
 
-If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This can be faster if you have more than two languages installed.
+If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
-IMAGE
+:::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
 To type text using Japanese characters, do the following:
 
 1. Select **Japanese Microsoft IME**. The system tray now shows a **Ⓙ** icon instead of **ENG**, and a new icon showing **A** (indicating English input mode, also known as half-width alphanumeric) appears next to it.
-1. Select the **A** icon. The input mode changes to **あ** indicating that you can now type Japanese hiragana characters. You can also change between Japanese and English input by pressing the Alt key + Backquote (`).
-1. Start typing the Japanese character or word using its phonetic transcription. The conversion candidate window opens and shows matches for what you have typed. You can keep typing and the candidate window updates in real time. Press the Spacebar to convert what you have currently typed into kanji. See the [example](#example) at the end of this article.
+1. Select the **A** icon. The input mode changes to **あ** indicating that you can now type Japanese hiragana characters. You can also change between Japanese and English input by pressing the Alt key + Back quote (`).
+1. Start typing the Japanese character or word using its phonetic transcription. The conversion candidate window opens and shows matches for what you typed. You can keep typing and the candidate window updates in real time. Press the Spacebar to convert your current input into kanji. See the [example](#example) at the end of this article.
 1. To move the focus to the candidate window, press the Tab key. To navigate the window, use your mouse or the following keys:
     - Down and Up arrow keys to move to the next/previous candidate
     - Tab key to expand the list to a table that you can navigate with the arrow
@@ -39,13 +39,13 @@ To type text using Japanese characters, do the following:
     - Enter to select the currently focused candidate
     - Esc to close the window without making a selection
 
-## Keyboard shotcuts
+## Keyboard shortcuts
 
 The following table lists some useful English keyboard shortcuts for the Japanese IME.
 
 |To do this |Press this |
 |-----------|-----------|
-|Turn Japanese input on/off. |Alt + Backquote (`) |
+|Turn Japanese input on/off. |Alt + Back quote (`) |
 |Use the hiragana key of a Japanese keyboard (106/109 key). |Ctrl + Caps lock |
 |Use the Shift + hiragana key of a Japanese keyboard (106/109 key). |Alt + Caps lock |
 |Use the Eisu (英数 - alphanumeric) key of a Japanese keyboard (106/109 key). |Shift + Caps lock |
@@ -108,8 +108,8 @@ To open the IME toolbar, open the right-click menu and select **IME toolbar**. I
 
 ## Example
 
-The Japanese word for summer is 夏 which is a single kanji character. Its phonetic romanization is “natsu.”
+The Japanese word for summer is 夏 which is a single kanji character. Its phonetic romanization is "natsu."
 
-To type the word, select the Japanese keyboard layout from the system tray and change to Japanese hiragana input mode, if necessary. Then type “natsu” without any spaces. You see that the Japanese IME turns your input into hiragana syllables: なつ
+To type the word, select the Japanese keyboard layout from the system tray and change to Japanese hiragana input mode, if necessary. Then type "natsu" without any spaces. You see that the Japanese IME turns your input into hiragana syllables: なつ
 
 The candidate window also opens and shows a list of matches. But all you need to finish the character and convert it into kanji is to press the Spacebar once. If you press Enter, the Japanese IME keeps the word in hiragana.

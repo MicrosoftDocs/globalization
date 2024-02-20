@@ -9,7 +9,7 @@ ms.date: 02/15/2024
 
 # Traditional Chinese IME
 
-If you need to enter some text in Traditional Chinese, Windows includes several IMEs to let you enter text using Traditional Chinese characters while using a typical keyboard with 101-105 keys and keeping English as your Windows display language.
+If you need to enter some text in Traditional Chinese, Windows includes several Input Method Editors (IMEs) to let you enter text using Traditional Chinese characters while using a typical keyboard with 101-105 keys and keeping English as your Windows display language.
 
 This article discusses the Microsoft Quick and Bopomofo IMEs. Quick is also known as Simplified CangJie. It lets users enter a character’s first and the last stroke used in the full CangJie system and then pick a character from the conversion candidate window. Bopomofo (also known as Zhuyin) is a phonetic system. Users type the phonemes of the Chinese character.
 
@@ -19,7 +19,7 @@ To add the Traditional Chinese keyboard layout to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Chinese (Traditional, Hong Kong SAR)** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. For entering Traditional Chinese text while keeping English as your Windows display language, none of them are necessary. When you are happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. For entering Traditional Chinese text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 By default, Traditional Chinese is installed with the Microsoft Quick IME. To install the Microsoft Bopomofo IME:
 
@@ -30,16 +30,16 @@ By default, Traditional Chinese is installed with the Microsoft Quick IME. To in
 
 The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (those in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
 
-If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This can be faster if you have more than two languages installed.
+If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
-IMAGE
+:::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
 ### Use the Quick IME
 
 To type text using Traditional Chinese with the Quick IME:
 
 1. Select **Chinese (Traditional, Hong Kong SAR)** with the **Microsoft Quick** IME. The system tray now shows **速** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英**), press the Shift key or select the input mode icon.
-1. Press the two keys that correspond to the first and the last CangJie stroke of the Traditional Chinese character. The conversion candidate window opens and shows matches for what you have typed. See the [example](#type-with-the-quick-ime) at the end of this article.
+1. Press the two keys that correspond to the first and the last CangJie stroke of the Traditional Chinese character. The conversion candidate window opens and shows matches for what you typed. See the [example](#type-with-the-quick-ime) at the end of this article.
 1. To navigate the window, use your mouse or the following keys:
     - Down and Up arrow keys to move to the next/previous candidate
     - Enter to select the currently focused candidate
@@ -47,7 +47,7 @@ To type text using Traditional Chinese with the Quick IME:
     - Spacebar to move to the next page
     - Tab key to expand the list to a table that you can navigate with the arrow keys
     - Esc to close the window without making a selection and deleting the character you entered
-1. After you select a character, the associate phrase window might offer text candidates related to what you typed. To select one of these, press the Shift key + the corresponding number. If there is more than one page of suggestions, press the Spacebar to move to the next page.
+1. After you select a character, the associate phrase window might offer text candidates related to what you typed. To select one of the candidates, press the Shift key + the corresponding number. If there's more than one page of suggestions, press the Spacebar to move to the next page.
 
 Note that you need to switch on the **Prompt associated phrases of the input characters** setting to be able to use the associate phrase window. For instructions, see [Use the Quick IME right-click menu for additional options](#use-the-quick-ime-right-click-menu-for-additional-options).
 
@@ -56,7 +56,7 @@ Note that you need to switch on the **Prompt associated phrases of the input cha
 To type text using Traditional Chinese with the Bopomofo IME:
 
 1. Select **Chinese (Traditional, Hong Kong SAR)** with the **Microsoft Bopomofo** IME. The system tray now shows **ㄅ** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英**), press the Shift key or select the input mode icon.
-1. Type the Traditional Chinese character or word using the phonetic Bopomofo symbols. After you have typed the symbols for the word, press the Down arrow key to open the conversion candidate window. It shows matches for what you have typed.
+1. Type the Traditional Chinese character or word using the phonetic Bopomofo symbols. After you have typed the symbols for the word, press the Down arrow key to open the conversion candidate window. It shows matches for what you typed.
 1. To navigate the window, use your mouse or the following keys:
     - Down and Up arrow keys to move to the next/previous candidate
     - Enter to select the currently focused candidate
@@ -64,7 +64,7 @@ To type text using Traditional Chinese with the Bopomofo IME:
     - Spacebar to move to the next page
     - Tab key to expand the list to a table that you can navigate with the arrow keys
     - Esc to close the window without making a selection and deleting the character you entered
-1. After you select a character, the associate phrase window might offer text candidates related to what you typed. To select one of these, press the Shift key + the corresponding number. If there are more than one page of suggestions, press the Spacebar to move to the next page.
+1. After you select a character, the associate phrase window might offer text candidates related to what you typed. To select one of these candidates, press the Shift key + the corresponding number. If there is more than one page of suggestions, press the Spacebar to move to the next page.
 
 Note that you need to switch on the **Prompt associated phrases of the input characters** setting to be able to use the associate phrase window. For instructions, see [Use the Bopomofo IME right-click menu for additional options](#use-the-bopomofo-ime-right-click-menu-for-additional-options).
 
@@ -102,7 +102,7 @@ To open the IME Pad, open the right/click menu and select **IME Pad**. It has th
 
 - **Hand Writing (CH)**: You can draw a Traditional Chinese character in the left box and then select one of the recognized characters from the right box to insert it into your text.
 - **Strokes (CH)**: You can select any available character to insert it into your text. You can sort the character list by the number of strokes used to write it.
-- **Radical (CH)**: Works like the Strokes mode, but you first choose the radical (a part of the final character) based on the number of strokes used to write it, then select how many strokes remain, and finally choose a character from the available options.
+- **Radical (CH)**: Works like the Strokes mode, but you first choose the radical (a part of the final character) based on the number of strokes used to write it. Then select how many strokes remain, and finally choose a character from the available options.
 - **Symbols (CH)**: You can quickly enter symbols from various subsets such as punctuation or mathematical.
 
 Finally, the IME Pad lets you use the Backspace, Delete, Enter, Esc, Spacebar, and arrow keys with your mouse or touchpad.
@@ -133,6 +133,6 @@ On an English keyboard, the radical 一 is entered using the m key, the radical 
 
 To type the word, select the **Chinese (Traditional, Hong Kong SAR)** keyboard layout with the **Microsoft Bopomofo** IME from the system tray and change to Chinese input mode, if necessary.
 
-Using Bopomofo, the word for summer is entered with the following 7 symbols: ㄒㄧㄚˋ ㄊㄧㄢ
+Using Bopomofo, the word for summer is entered with the following seven symbols: ㄒㄧㄚˋ ㄊㄧㄢ
 
-On an English keyboard, the symbols are on the V, U, 8, 4, W, U, and 0 keys. After you have typed the first 4 symbols, you see they change to form a character, but it’s not the right character. Type the last 3 symbols and press the Spacebar. The second character is formed, and you see the first character changes to form the completed word.
+On an English keyboard, the symbols are on the V, U, 8, 4, W, U, and 0 keys. After you type the first four symbols, you see they change to form a character, but it’s not the right character. Type the last three symbols and press the Spacebar. The second character is formed, and you see the first character changes to form the completed word.
