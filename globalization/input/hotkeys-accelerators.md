@@ -21,4 +21,4 @@ Shortcut keys include *[keyboard accelerators](/windows/apps/design/input/keyboa
 
 There's one exception to these localization recommendations. If the localization target language uses a non-Latin writing system that requires an [input method editor (IME)](input-method-editors.md), such as Japanese, it's best to use the original keyboard shortcuts.
 
-For a general audience, you should use the term *keyboard shortcuts* in your app and its documentation and any other support material. If you have some content that is aimed at developers or discusses customizing your app’s UI, you can use the terms *access keys* and *shortcut keys* to distinguish between the two.
+For a general audience, you should use the term *keyboard shortcuts* in your app and its documentation and any other support material. If you have content that is aimed at developers or discusses customizing your app’s UI, you can use the terms *access keys* and *shortcut keys* to distinguish between the two.

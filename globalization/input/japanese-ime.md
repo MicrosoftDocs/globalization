@@ -41,7 +41,7 @@ To type text using Japanese characters, do the following:
 
 ## Keyboard shortcuts
 
-The following table lists some useful English keyboard shortcuts for the Japanese IME.
+The following table lists some useful keyboard shortcuts for the Japanese IME.
 
 |To do this |Press this |
 |-----------|-----------|

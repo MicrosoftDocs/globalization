@@ -9,9 +9,9 @@ ms.date: 02/15/2024
 
 # Input Method Editors (IME)
 
-Some languages, such as Japanese, Korean, and Chinese, use written characters that can't be easily typed with a standard QWERTY keyboard, which has a separate key for each letter. Input Method Editors (IME) let users enter such characters by typing a combination of keystrokes or making a sequence of mouse operations. An IME can support both [hardware and software keyboards](keyboards.md).
+Some languages, such as Japanese, Korean, and Chinese, use thousands of characters that can't be easily typed with a typical keyboard with 101-105 keys, which has a separate key for each letter. Input Method Editors (IME) let users enter such characters by typing a combination of keystrokes or making a sequence of mouse operations. An IME can support both [hardware and software keyboards](keyboards.md).
 
-An IME can be part of the operating system or a separate app. Windows comes with more than 20 IMEs. For the complete list, see [Keyboard identifiers and input method editors for Windows](/windows-hardware/manufacture/desktop/windows-language-pack-default-values?view=windows-11).
+An IME can be part of the operating system or a separate app. Windows comes with more than 20 IMEs. For the complete list, see [Keyboard identifiers and input method editors for Windows](/windows-hardware/manufacture/desktop/windows-language-pack-default-values).
 
 Your app doesn’t need to interact directly with an IME. It works as part of the system regardless, like a software keyboard. You should test the text entry user experience of your app with the IME, so you can fix any UI issues, such as the IME UI obscuring a part of your app or vice versa.
 

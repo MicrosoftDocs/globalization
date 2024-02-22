@@ -1,6 +1,6 @@
 ---
 title: Hardware and software keyboards
-Description: Windows supports both hardware and software keyboards, including Emoji keyboards.
+description: Windows supports both hardware and software keyboards, including Emoji keyboards.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
