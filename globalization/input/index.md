@@ -9,7 +9,7 @@ ms.date: 02/15/2024
 
 # User input
 
-Several areas related to user input need to be considered when you plan the localization of your app.
+Several areas related to user input need to be considered when interacting with localized applications.
 
 Hardware keyboards can switch between multiple keyboard layouts. Software or on-screen keyboards usually have a similar layout to the currently selected hardware keyboard layout. For more information, see [Hardware and software keyboards](keyboards.md).
 

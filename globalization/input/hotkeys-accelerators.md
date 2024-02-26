@@ -19,6 +19,14 @@ Keyboard shortcuts are keystrokes, *key sequences*, or *key combinations* that p
 
 Shortcut keys include *[keyboard accelerators](/windows/apps/design/input/keyboard-accelerators)* (or accelerator keys). Accelerators are key combinations that consist of two kinds of keys: modifiers and nonmodifiers. Modifier keys include, for example, Shift and Ctrl. Nonmodifier keys include, for example, all alphanumeric keys, Delete, and Spacebar. A common example of an accelerator is Ctrl+A, which typically selects all items or all text. We recommend localizing all your app accelerators too. For more information, see [Localize the accelerators](/windows/apps/design/input/keyboard-accelerators).
 
-There's one exception to these localization recommendations. If the localization target language uses a non-Latin writing system that requires an [input method editor (IME)](input-method-editors.md), such as Japanese, it's best to use the original keyboard shortcuts.
-
 For a general audience, you should use the term *keyboard shortcuts* in your app and its documentation and any other support material. If you have content that is aimed at developers or discusses customizing your app’s UI, you can use the terms *access keys* and *shortcut keys* to distinguish between the two.
+
+## Exceptions and risks
+
+There are a couple of exceptions to these localization recommendations. If the localization target language uses a non-Latin writing system that requires an [input method editor (IME)](input-method-editors.md), such as Japanese, it's best to use the original keyboard shortcuts. This is also the case when the shortcut is common and has stayed the same for a long time. For example, the shortcut for **bold text** is Ctrl + B in English and Ctrl + G in French.
+
+Localizing keyboard shortcuts also involves extra effort and potential risk:
+
+- You need to expose your app's shortcuts to localization.
+- You need to provide sufficient guidance to localization.
+- You need to ensure that the shortcuts are functional, match the localized UI, and aren't duplicated in a given part of the UI.

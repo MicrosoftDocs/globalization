@@ -13,7 +13,7 @@ Some languages, such as Japanese, Korean, and Chinese, use thousands of characte
 
 An IME can be part of the operating system or a separate app. Windows comes with more than 20 IMEs. For the complete list, see [Keyboard identifiers and input method editors for Windows](/windows-hardware/manufacture/desktop/windows-language-pack-default-values).
 
-Your app doesn’t need to interact directly with an IME. It works as part of the system regardless, like a software keyboard. You should test the text entry user experience of your app with the IME, so you can fix any UI issues, such as the IME UI obscuring a part of your app or vice versa.
+Your app doesn’t need to interact directly with an IME. It works as part of the system regardless, like a software keyboard. You should test the text entry user experience of your app with the IME, so you can fix any UI issues, such as the IME UI obscuring a part of your app or vice versa. Another thing to be wary of is keystroke detection. Since keystrokes don't correspond directly to characters when an IME is used, feature such as autocomplete need to be tested carefully.
 
 ## Requirements for third party IMEs
 
