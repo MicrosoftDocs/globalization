@@ -21,12 +21,17 @@ Shortcut keys include *[keyboard accelerators](/windows/apps/design/input/keyboa
 
 For a general audience, you should use the term *keyboard shortcuts* in your app and its documentation and any other support material. If you have content that is aimed at developers or discusses customizing your app’s UI, you can use the terms *access keys* and *shortcut keys* to distinguish between the two.
 
-## Exceptions and risks
+## Additional considerations
 
-There are a couple of exceptions to these localization recommendations. If the localization target language uses a non-Latin writing system that requires an [input method editor (IME)](input-method-editors.md), such as Japanese, it's best to use the original keyboard shortcuts. This is also the case when the shortcut is common and has stayed the same for a long time. For example, the shortcut for **bold text** is Ctrl + B in English and Ctrl + G in French.
+If the localization target language uses a non-Latin writing system that requires an [input method editor (IME)](input-method-editors.md), such as Japanese, it's best to use the original keyboard shortcuts.
 
-Localizing keyboard shortcuts also involves extra effort and potential risk:
+Actions, such as saving a file, copying text or applying bold formatting, are common across many applications. By convention, applications in a single language use the same shortcut for the same action. Applications in a language other than English might use a different shortcut than the English shortcut but will be consistent in the use of that shortcut. For example, the shortcut for applying bold formatting is **Ctrl + B** in English and **Ctrl + G** in French.
+
+Localizing keyboard shortcuts involves extra effort:
 
 - You need to expose your app's shortcuts to localization.
-- You need to provide sufficient guidance to localization.
-- You need to ensure that the shortcuts are functional, match the localized UI, and aren't duplicated in a given part of the UI.
+- You need to provide sufficient guidance to localization. This includes:
+  - Coordinating between development and localization to ensure that the end-to-end localization process can support the adaptation of keyboard shortcuts.
+  - Ensuring that the localization team has enough context to determine what is the appropriate shortcut for a given translated string and how to set it.
+  - Establishing a process with clear ownership to ensure correct and functional shortcuts at runtime. An experienced localization team or supplier can typically help a development team navigate these challenges, if they are engaged early.
+- You need to verify that the shortcuts are functional, match the localized UI, and aren't duplicated in a given part of the UI.

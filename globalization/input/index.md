@@ -11,6 +11,8 @@ ms.date: 02/15/2024
 
 Several areas related to user input need to be considered when interacting with localized applications.
 
+## International users and keyboard layouts
+
 Hardware keyboards can switch between multiple keyboard layouts. Software or on-screen keyboards usually have a similar layout to the currently selected hardware keyboard layout. For more information, see [Hardware and software keyboards](keyboards.md).
 
 All keyboard layouts available in Windows are listed in [Windows keyboard layouts](../windows-keyboard-layouts.md).
@@ -23,5 +25,7 @@ IMEs for the following languages are covered in more detail:
 - [Korean IME](korean-ime.md)
 - [Simplified Chinese IME](simplified-chinese-ime.md)
 - [Traditional Chinese IME](traditional-chinese-ime.md)
+
+## Localized input mechanisms
 
 Keyboard shortcuts might need to be modified for localized applications. Terminology related to keyboard shortcuts is discussed in [Keyboard shortcuts and localization](hotkeys-accelerators.md).
