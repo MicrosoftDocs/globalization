@@ -152,11 +152,11 @@ In particular, due to the large size of East Asian fonts, only the regular weigh
 Many additional fonts are available for Desktop and Server, including all other fonts from previous releases.
 However, not all of these fonts are preinstalled by default in all images.
 In order to make disk usage and font choices more relevant to users according to the languages that they use, many fonts were moved into optional, on-demand packages.
-These packages are designed around the different scripts that fonts are primarily intended to support. Windows Update installs most of these packages automatically when the associated languages are enabled in language settings (for example, by enabling a keyboard). However, you can install any of the optional font packages manually in Settings. The Pan-European Supplemental Fonts package isn't triggered automatically but can be added by enabling it in Settings.
+These packages are designed around the different scripts that fonts are primarily intended to support. Windows Update adds most of these packages automatically when the associated languages are enabled in language settings (for example, by enabling a keyboard). However, you can add any of the optional font packages manually in Settings. The Pan-European Supplemental Fonts package isn't triggered automatically but can be added by enabling it in Settings.
 
-To add font packages manually, go to Settings &gt; System &gt; Installed apps &gt; Manage optional features.
+To add font packages manually, go to Settings > System > Optional features (if on a version older than Windows 10 22H2, navigate to Settings > Apps > Apps & features > Optional features instead).
 
-The following are the optional font packages that are automatically installed based on changes to language settings:
+The following are the optional font packages that are automatically added based on changes to language settings:
 
 - Arabic Script Supplemental Fonts
 - Bangla Script Supplemental Fonts
@@ -182,7 +182,7 @@ The following are the optional font packages that are automatically installed ba
 - Telugu Supplemental Fonts
 - Thai Supplemental Fonts
 
-The following optional font package must be installed manually:
+The following optional font package must be added manually:
 
 - Pan-European Supplemental Fonts
 
