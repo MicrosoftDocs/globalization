@@ -25,7 +25,7 @@ For a general audience, you should use the term *keyboard shortcuts* in your app
 
 ## Localizing keyboard shortcuts
 
-Shortcut keys typically use either the first character of the action name or another relevant character that helps with recall. When the names of actions are localized, you should also update the shortcut keys to maintain the ease of use. For more information, see [Localize access keys](https://github.com/windows/apps/design/input/access-keys#localize-access-keys) and [Localize the accelerators](https://github.com/windows/apps/design/input/keyboard-accelerators#localize-the-accelerators).
+Shortcut keys typically use either the first character of the action name or another relevant character that helps with recall. When the names of actions are localized, you should also update the shortcut keys to maintain the ease of use. For more information, see [Localize access keys](/windows/apps/design/input/access-keys#localize-access-keys) and [Localize the accelerators](/windows/apps/design/input/keyboard-accelerators#localize-the-accelerators).
 
 For a target language that uses a non-Latin writing system that requires an [input method editor (IME)](input-method-editors.md), such as Japanese, it's best to use the original keyboard shortcuts.
 
