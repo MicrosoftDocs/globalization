@@ -26,6 +26,6 @@ IMEs for the following languages are covered in more detail:
 - [Simplified Chinese IME](simplified-chinese-ime.md)
 - [Traditional Chinese IME](traditional-chinese-ime.md)
 
-## Localized input mechanisms
+## Keyboard shortcuts in localized applications
 
-Keyboard shortcuts might need to be modified for localized applications. Terminology related to keyboard shortcuts is discussed in [Keyboard shortcuts and localization](hotkeys-accelerators.md).
+Keyboard shortcuts might need to be modified for localized applications. For more information, see [Keyboard shortcuts and localization](hotkeys-accelerators.md).
