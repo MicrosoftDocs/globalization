@@ -1,8 +1,12 @@
 ---
 title: Images, icons, and colors
-description: Images, icons, and color can be culturally sensitive. This article covers globalization of images, icons, and colors.
+description: Choose culturally appropriate images and icons to avoid potential offense and exclusion in different target markets.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # Images, icons, and colors

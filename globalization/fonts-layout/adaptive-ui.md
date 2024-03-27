@@ -1,8 +1,12 @@
 ---
 title: Responsive user interface
-description: An adaptive user interface is one in which the UI elements can be resized and repositioned dynamically and automatically based on factors including screen orientation and screen size.
+description: Implement responsive design techniques to support localization for text in UI controls.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # Responsive user interface

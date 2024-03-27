@@ -1,8 +1,12 @@
 ---
 title: User Interface Layout
-description: The user's preference for language and locale affects the layout of a user interface.
+description: Consider cultural factors when designing user interfaces for global audiences.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # User interface layout

@@ -1,8 +1,12 @@
 ---
 title: Pluralization
-description: Forming plurals varies widely in different world languages, and software must take the local language into account when combining text and numbers.
+description: Discover how to use plural rules to display natural sounding text in multiple languages.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # Pluralization

@@ -1,8 +1,12 @@
 ---
 title: Message formatting
-description: Formatting messages requires careful consideration of a target language that may have different word order, gender, number (plurals), and other characteristics.
+description: Understand the best practices for message formatting in localization.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # Message formatting

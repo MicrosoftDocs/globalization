@@ -1,8 +1,12 @@
 ---
 title: Mirroring
-description: Complex scripts refer to the languages, where the characters aren't laid out in a simple left-to-right progression.
+description: Mirroring is important for right-to-left languages like Arabic and Hebrew, ensuring correct alignment and reading order.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 # Mirroring
 

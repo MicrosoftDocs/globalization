@@ -1,7 +1,12 @@
 ---
 title: Externalize localizable resources
-description: Localization requires strings and other localizable resources to be separated from code and nonlocalizable resources (externalized).
+description: Externalize localizable resources to separate them from code and allow for independent processing.
 ms.date: 03/26/2024
+author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # Externalize localizable resources

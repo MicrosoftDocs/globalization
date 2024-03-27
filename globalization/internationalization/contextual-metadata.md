@@ -1,8 +1,12 @@
 ---
 title: Contextual metadata
-description: Developers should add metadata to resource files to provide context to translators.
+description: Improve translation accuracy by providing guidance to translators using contextual metadata for string resources.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # Contextual Metadata

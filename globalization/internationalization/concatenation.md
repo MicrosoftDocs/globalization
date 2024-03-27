@@ -1,8 +1,12 @@
 ---
 title: String concatenation
-description: Developers of an international application should avoid forming strings by concatenation.
+description: Discover alternatives to string concatenation that give translators more control over words, order, punctuation, and spacing.
 ms.date: 3/26/2024
 author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # String concatenation
