@@ -16,16 +16,16 @@ You have {count} apple(s).
 Apples in your shopping cart: {count}
 ```
 
-Both examples avoid using separate strings for different values of {count}. However, it results in constructions that do not sound natural. To implement the first example to sound more natural in English, you might need two separate strings to handle the singular and plural forms:
+Both examples avoid using separate strings for different values of {count}. However, it results in constructions that don't sound natural. To implement the first example to sound more natural in English, you might need two separate strings to handle the singular and plural forms:
 
 ```text
 mystring_singular = You have 1 apple.
 mystring_plural = You have {count} apples.
 ```
 
-However, just having a string when {count} is 1 and a string for when {count} is any other value is not sufficient to support other languages. For example, in French, both 0 and 1 are considered singular. Russian uses different forms depending on whether you have one (1 яблоко), a few (2 яблока), or many (5 яблок) objects.
+However, just having a string when {count} is 1 and a string for when {count} is any other value isn't sufficient to support other languages. For example, in French, both 0 and 1 are considered singular. Russian uses different forms depending on whether you have one (1 яблоко), a few (2 яблока), or many (5 яблок) objects.
 
-[International Components for Unicode](..\reference\icu.md) (ICU) enables support for [plural rules](https://cldr.unicode.org/index/cldr-spec/plural-rules) to handle the various forms of plural categories. The plural rules cannot cover all the nuances of representing numbers in languages; however, ICU supports the following plural categories (forms) to handle many cases:
+[International Components for Unicode](..\reference\icu.md) (ICU) enables support for [plural rules](https://cldr.unicode.org/index/cldr-spec/plural-rules) to handle the various forms of plural categories. The plural rules can't cover all the nuances of representing numbers in languages; however, ICU supports the following plural categories (forms) to handle many cases:
 
 - zero
 - one (*singular*)
@@ -122,7 +122,7 @@ Przeczytałeś 2 artykuły.
 Przeczytałeś 5 artykułów.
 ```
 
-In English, sentences for all 6 forms have been included. This is best practice, even if other languages don’t use all the forms.
+In English, sentences for all 6 forms are included. Including all 6 forms in the source language is best practice, even if the target languages don’t use all the forms.
 
 ## Ordinal pluralization
 

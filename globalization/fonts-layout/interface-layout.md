@@ -11,4 +11,4 @@ The user interface (UI) layout defines how various controls, such as labels, che
 
 For languages such as Arabic and Hebrew that use right-to-left scripts, UI layouts implemented for these languages must also support the natural [right-to left directionality](text-directionality.md).
 
-UI design involves using [icons, images, and colors](images-icons-colors.md)  to convey the brand experience and to guide the user through your application. When creating icons and images, there are standard design language considerations such as meaning, sizing, alignment, and consistency. In addition, you must be aware of potential cultural issues when designing graphics for audiences in target markets worldwide.
+UI design involves using [icons, images, and colors](images-icons-colors.md)  to convey the brand experience and to guide the user through your application. When you're creating icons and images, there are standard design language considerations such as meaning, sizing, alignment, and consistency. In addition, you must be aware of potential cultural issues when designing graphics for audiences in target markets worldwide.
