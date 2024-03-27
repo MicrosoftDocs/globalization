@@ -25,23 +25,23 @@ Contextual metadata shouldn't be a substitute for incorrect or misleading source
 
 It's best practice to add comments while the strings are being authored. For example, in the noun string case, you might not remember why the words "Node Color Field" was chosen when the string was created, and you might need to review the code to understand where the string is used before being able to answer questions from translators.
 
-Contextual metadata for strings can be organized into four groups:
-
-- Context for the text of the string
-- Context for placeholders and variables within the string
-- Metadata defining requirements
-- Metadata for use with translation management tools
-
-Here's an example from a .resx file showing contextual metadata in a <comment> element.
+Here's an example from a .resx file showing contextual metadata in a `<comment>` element.
 
 ```resx
 …
 <data name="WorkOrderRequired">
   <value>{0} is required.</value>
-  <comment>{Placeholder='{0}'} Placeholder '0' is an entity display name for the work order</comment>
+  <comment>Placeholder '0' is an entity display name for the work order</comment>
 </data>
 …
 ```
+
+Contextual metadata for strings can be organized into four groups:
+
+- Metadata that provides context for the text of the string
+- Metadata that provides context for placeholders and variables within the string
+- Metadata defining requirements
+- Metadata for use with translation management tools
 
 ## Metadata that provides context for the text of the string
 

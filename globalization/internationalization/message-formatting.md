@@ -62,7 +62,7 @@ See [Concatenation](concatenation.md) for more examples of patterns of localizat
 
 Another way of reducing the number of strings in an application is to use the same string in different contexts, such as for a menu item, a button, and as part of an error message. Even when the string is identical in different contexts in English that might not be the case in other languages.
 
-For example, ```Bookmark`` in English could be a noun or a verb, so could potentially be used in different contexts. However, the translations for the verb and the noun might differ, so a single string wouldn't be sufficient.
+For example, "Bookmark" in English could be a noun or a verb, so could potentially be used in different contexts. However, the translations for the verb and the noun might differ, so a single string wouldn't be sufficient.
 Instead, you should use a separate string for every instance.
 
 ### Strings and variables
@@ -80,8 +80,8 @@ Combinations of these placeholder types might also be available, depending on th
 For localization, it's helpful that translators have as much control over the location of placeholders as possible. Named placeholders make it much easier for translators to understand how the placeholder will be used. For example, you might need a string like `Available Monday to Friday, from 8 AM to 5 PM Central Time.`. This string could be generated using:
 
 ```text
-Available {firstWeekDay} to {lastWeekDay}, from {startTime} to {endTime} {timeZone}
-Available %s to %s, from %s to %s %s
+Available {firstWeekDay} to {lastWeekDay}, from {startTime} to {endTime} {timeZone}.
+Available %s to %s, from %s to %s %s.
 ```
 
 It would be quite challenging for translators to understand how to translate the second version.

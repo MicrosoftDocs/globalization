@@ -68,7 +68,7 @@ Languages using the same script might use different punctuation marks. For examp
 
 Even when different languages use the same punctuation marks, the rules around usage might be different. French uses spaces to separate many punctuation marks from text. For example, French adds a space before and after the quoted text and the guillemets, as well as spaces before question marks.
 
-By including all punctuation marks in translatable content, translators have full control of the characters used for punctuation and of ensuring compliance with punctuation usage rules.
+By including all punctuation marks in translatable content, translators have full control of the characters used for punctuation and they can ensure compliance with punctuation usage rules.
 
 ## Word separation
 
