@@ -2,7 +2,8 @@
 title: Message formatting
 description: Understand the best practices for message formatting in localization.
 ms.date: 3/26/2024
-author: jowilco, brunolewin-msft
+author: jowilco
+ms.reviewer: brunolewin-msft
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc

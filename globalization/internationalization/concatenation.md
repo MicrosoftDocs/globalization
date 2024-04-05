@@ -2,7 +2,8 @@
 title: String concatenation
 description: Discover alternatives to string concatenation that give translators more control over words, order, punctuation, and spacing.
 ms.date: 3/26/2024
-author: jowilco, brunolewin-msft
+author: jowilco
+ms.reviewer: brunolewin-msft
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
