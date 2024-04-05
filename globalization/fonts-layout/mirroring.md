@@ -18,13 +18,15 @@ For RTL languages, user interface elements should also follow the natural direct
 
 :::image type="content" source="images/RTL.png" alt-text="An image showing Microsoft Outlook in Arabic, demonstrating a right-to-left layout":::
 
+Note that not all images and icons should be mirrored. For example, common icons such as the fast-forward and rewind icons in media players, use the same orientation in both LTR and RTL layouts.
+
 ## Mirroring and UI design
 
-When ensuring support for bidirectional text in applications, you should validate:
+To support user interfaces in bidirectional languages, you should validate:
 
 - User interface (UI) mirroring. UI flow allows right-to-left content to be presented in its native layout. UI design feels local to BiDi markets.
 - Consistency in user experience. The design feels natural in right-to-left orientation. UI elements share a consistent layout direction and appear as the user expects them.
-- Touch optimization. Like touch UI in nonmirrored UI, elements are easy to reach, and they natural to touch interaction.
+- Touch optimization. Like touch UI in nonmirrored UI, elements like on-screen keyboards are easy to reach, and they natural to touch interaction.
 - Mixed text support. Text directionality support enables great mixed text presentation (English text on BiDi builds, and vice versa).
 
 For more information about designing applications to support bidirectional text and mirroring, see [Design your app for bidirectional text](/windows/apps/design/globalizing/design-for-bidi-text) and [Adjust layout and fonts, and support RTL](/windows/apps/design/globalizing/adjust-layout-and-fonts--and-support-rtl).

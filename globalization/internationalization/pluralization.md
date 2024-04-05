@@ -2,7 +2,7 @@
 title: Pluralization
 description: Discover how to use plural rules to display natural sounding text in multiple languages.
 ms.date: 3/26/2024
-author: jowilco
+author: jowilco, brunolewin-msft
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
@@ -39,6 +39,9 @@ However, just having a string when {count} is 1 and a string for when {count} is
 - other
 
 The **other** form is always required, and so is used for languages that only have a single form. Note that other categorizations exist, such as *trial* (three), and *quadral* (four), and *superplural* (larger than plural). ICU also specifies how each language uses these forms ([Language Plural Rules](https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html)).
+
+> [!IMPORTANT]
+> As a consequence of optimizing the translation process, some localization tools and localization workflows will introduce challenges when working with plural forms. Using the example below, some localization tools might attempt to lock or auto-translate successive repetitions of the source string `You have read {formattedCount} articles.` into the target language. This can result in the target language string being incorrect, as the target language might require different forms of the word "article" depending on the value of `formattedCount`. Make sure to coordinate with your localization team when planning your implementation.
 
 ## Cardinal Pluralization
 

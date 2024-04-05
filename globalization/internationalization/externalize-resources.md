@@ -45,4 +45,4 @@ Items used within an application to drive functionality shouldn't be exposed to 
 
 ### Extensible applications
 
-Nonlocalizable text is common in extensible applications. Identifiers such as class names, keywords, functions, and database table names fall into this category. If such a string is localized, then scripts and extensions become incompatible between locales.
+Nonlocalizable text is common in extensible applications. Identifiers such as class names, keywords, functions, and database table names fall into this category. If such a string is localized, then scripts and extensions become incompatible between different language versions of the application.

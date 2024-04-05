@@ -29,9 +29,9 @@ Here's an example from a .resx file showing contextual metadata in a `<comment>`
 
 ```resx
 …
-<data name="WorkOrderRequired">
-  <value>{0} is required.</value>
-  <comment>Placeholder '0' is an entity display name for the work order</comment>
+<data name="Bookmark">
+  <value>Bookmark</value>
+  <comment>Noun: a specific location in the active document.</comment>
 </data>
 …
 ```
@@ -73,7 +73,7 @@ For the type-specifier style of placeholders, if multiple placeholders are used,
 
 For the position-specifier style of placeholders, the translators can change the order of the placeholders within the string. However, without context, it can be difficult to determine how each placeholder is used.
 
-You should add comments even when the named style of placeholders is supported. While the variable name might be meaningful for the engineer who is familiar with how the code uses the string, it might not be meaningful for the translator. Adding a description and an example of each variable helps ensure that the translator can create the correct translation.
+You should add comments even when the named style of placeholders is supported. While the variable name might be meaningful for the engineer who is familiar with how the code uses the string, it might not be meaningful for the translator. Adding a description and an example of each variable helps ensure that the translator can create the correct translation. Similarly, ensure that any strings that will be used in the placeholders also have a comment that indicates where and how they will be used.
 
 For more information about using strings with variables, see [Strings and variables](message-formatting.md#strings-and-variables).
 
@@ -86,7 +86,7 @@ If you have requirements for how a string should be translated, you can use comm
 
 ## Metadata for use with translation management tools
 
-In partnership with your localization vendor and the computer-aided translation or translation management system, you might be able to use contextual metadata to specify behavior for how strings are managed. One typical example is being able to *lock* strings so that translators aren't able to translate them; in other words, the source string is used as the target string.
+In partnership with your localization vendor and the computer-aided translation or translation management system, you might be able to use contextual metadata to specify behavior for how strings are managed. One typical example is being able to *lock* strings (or sections of a string) so that translators aren't able to translate them; in other words, the source string is used as the target string.
 
 ## Choosing when to add context
 

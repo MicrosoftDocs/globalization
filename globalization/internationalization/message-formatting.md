@@ -2,7 +2,7 @@
 title: Message formatting
 description: Understand the best practices for message formatting in localization.
 ms.date: 3/26/2024
-author: jowilco
+author: jowilco, brunolewin-msft
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
@@ -48,7 +48,7 @@ strcat(message_prompt, "?");
 
 This practice is called *concatenation* and works well to reduce the number of characters needed to display the messages. However, when the translator needs to translate `delete_prompt` they might only see the text `"Are you sure you want to delete the "` without having any idea what is being deleted.
 
-With a few exceptions, memory isn't the primary consideration when authoring resources. Best practice is to **never** concatenating strings. Even when there are many cases, write out each sentence completely.
+With a few exceptions, memory isn't the primary consideration when authoring resources. Best practice is to **never** concatenate strings. Even when there are many cases, write out each sentence completely.
 
 ```cpp
 deleteFile = "Are you sure you want to delete the file?";
@@ -62,8 +62,9 @@ See [Concatenation](concatenation.md) for more examples of patterns of localizat
 
 Another way of reducing the number of strings in an application is to use the same string in different contexts, such as for a menu item, a button, and as part of an error message. Even when the string is identical in different contexts in English that might not be the case in other languages.
 
-For example, "Bookmark" in English could be a noun or a verb, so could potentially be used in different contexts. However, the translations for the verb and the noun might differ, so a single string wouldn't be sufficient.
-Instead, you should use a separate string for every instance.
+For example, "Bookmark" in English could be a noun or a verb, so could potentially be used in different contexts. However, the translations for the verb and the noun might differ, so a single string wouldn't be sufficient. Instead, you should use a separate string for every instance.
+
+Ensure you have a mechanism in place to provide translators with context so they can translate each instance correctly. See [Contextual metadata](contextual-metadata.md).
 
 ### Strings and variables
 

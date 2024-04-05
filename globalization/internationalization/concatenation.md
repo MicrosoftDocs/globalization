@@ -2,7 +2,7 @@
 title: String concatenation
 description: Discover alternatives to string concatenation that give translators more control over words, order, punctuation, and spacing.
 ms.date: 3/26/2024
-author: jowilco
+author: jowilco, brunolewin-msft
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
@@ -116,6 +116,12 @@ A simple example to illustrate this issue is names. In English, the given name (
 In English, adjectives generally don’t change as the noun changes. For example, "**blue** bicycle", "**blue** car". In French, the adjective appears after the noun and changes depending on the gender of the noun. For example, "vélo **bleu**", "voiture **bleue**".
 
 While it might be tempting to concatenate adjectives and nouns, or even use variables to generate strings that combine adjectives and nouns, gender agreement can make this very challenging to implement correctly in other languages.
+
+### Declensions
+
+In English, nouns generally don’t change as context changes. For example, "I see a **car**", "I use a **car**". In Polish, the noun may change depending on other elements of the sentence. For example, "Widzę **samochód**", "Używam **samochodu**".
+
+While it might be tempting to use variables to generate strings, declensions are another aspect that can make this very challenging to implement correctly in other languages.
 
 ## Testing for concatenation
 
