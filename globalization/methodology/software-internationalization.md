@@ -29,7 +29,7 @@ You should ensure that your application can display user data and UI text in dif
 
 ## Locale awareness
 
-You should ensure that your application respects conventions and settings from the operating system, especially [locale](../locale/locale.md)-related [settings](../locale/system-user-settings.md). These locale-related settings include [numeric](../locale/number-formatting.md), [currency](../locale/currency-formats.md), [time, and date](../locale/date-time-formats.md) formats. The choice of locale also affects language related features such as [sort order](../locale/sorting-and-string-comparison.md) and [capitalization](../text/case-mapping.md).
+You should ensure that your application respects conventions and settings from the operating system, especially [locale](../locale/locale.md)-related [settings](../locale/user-preferences.md). These locale-related settings include [numeric](../locale/number-formatting.md), [currency](../locale/currency-formats.md), [time, and date](../locale/date-time-formats.md) formats. The choice of locale also affects language related features such as [sort order](../locale/sorting-and-string-comparison.md) and [capitalization](../text/case-mapping.md).
 
 You should also ensure that your application responds correctly to changes to features related to the language of the operating system, such as default folder names and registry keys.
 
