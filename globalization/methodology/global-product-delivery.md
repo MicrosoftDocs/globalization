@@ -106,7 +106,7 @@ When you're ready to localize into to more languages and markets, the cost is lo
 
 When starting a project, it's vital to get these fundamentals in place as early as possible:
 
-1. [Externalize resources](../localizability/isolate-localizable-resources.md), separating localizable from non-localizable resources.
+1. [Externalize resources](../internationalization/externalize-resources.md), separating localizable from non-localizable resources.
 
 2. Produce and test localized builds.
 

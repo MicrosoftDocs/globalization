@@ -1,112 +1,66 @@
 ---
 title: Software Internationalization
-description: Fundamentals about software internationalization, which includes globalization, localizability, localization, and testing world readiness.
-ms.assetid: 9c23e01d-81c8-4e00-8b1f-068bb63713c4
-ms.topic: navigation
-ms.date: 07/14/2017
+description: Design and develop your application for international markets from the beginning to ensure global support.
+ms.date: 3/26/2024
+author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 
 # Software Internationalization
 
-## Introduction
+Internationalization (abbreviated as i18n – 18 letters between "I" and "n") is the process of designing and developing your application such that it can support users in different global markets. When working on any software application, it's important to think about internationalization from the very beginning of its design. Your first iteration or release might not be translated into another language; however, it's likely your application will be used by customers all over the world.
 
-With the growing software market far beyond the English-speaking world, it's important for the software to be world-ready for all potential customers.
-To make that happen, the most important step is to design the software with globalization in mind.
+Coding for world-readiness affects implementation across the entire product. The decisions that you make early in the project can determine your ability to deliver to other markets later. The user interface design is the most affected, but world-readiness must be considered in many other areas.
 
-The following sections provide some generic information about the concepts of globalization, localizability, and localization.
+The following sections discuss key themes for world-readiness. All sections are applicable even for a single-language user interface (UI) or application; however, the final three sections cover ensuring that your application is ready for [localization](../localization/localize-software.md) (abbreviated as l10n – 10 letters between "l" and "n"). Localization is the process of adapting or translating your app's localizable resources to meet the language, cultural, and political requirements of the local markets that the app is intended to support. One component of localization is translating UI text. Even if you aren't planning to create localized versions of your product, it's time-consuming and expensive to update your code to support multiple languages if your plans change in the future. It's therefore best practice to follow the principles in these three sections even for a single-language product.
 
 ## Data encoding
 
-* [Encoding overview](../encoding/encoding-overview.md)
+You should ensure that any user data isn't limited to a particular [script](../fonts-layout/writing-systems.md). If your application can use [Unicode](../encoding/unicode-standard.md), it can be helpful in ensuring that users are able to use a large variety of scripts and writing systems. If your application is limited to a fixed set of [code pages](../encoding/code-pages.md), you might need to ensure that data can be [converted](../text/encoding_text_conversion.md) between the various encodings. If your application sends or receives information from other applications or components, you should also ensure that differences in encodings can be handled, or at a minimum fail gracefully.
 
-* [Transformation of Unicode code points](../encoding/transformations-of-unicode-code-points.md)
+Any data that is stored shouldn't be limited to a specific country/region, time zone, or unit of measurement. For example, while users might want to enter data using the local time, it might be preferable to store the data as Coordinated Universal Time (UTC).
 
-* [Byte order mark (file signature)](../encoding/byte-order-mark.md)
+## Text display
 
-* [Surrogate pairs](../encoding/surrogate-pairs.md)
+You should ensure that your application can display user data and UI text in different [scripts](../fonts-layout/writing-systems.md). You might not have plans to translate your application into East Asian languages like Chinese, or languages that use [bi-directional](../fonts-layout/text-directionality.md) writing systems like Arabic. However, you might have users of these languages, so user data and user input shouldn't be limited by script or [font](../fonts-layout/fonts.md).
 
-* [Code pages](../encoding/code-pages.md)
+## Locale awareness
 
-## Locale and Culture Awareness
+You should ensure that your application respects conventions and settings from the operating system, especially [locale](../locale/locale.md)-related [settings](../locale/user-preferences.md). These locale-related settings include [numeric](../locale/number-formatting.md), [currency](../locale/currency-formats.md), [time, and date](../locale/date-time-formats.md) formats. The choice of locale also affects language related features such as [sort order](../locale/sorting-and-string-comparison.md) and [capitalization](../text/case-mapping.md).
 
-* [Locale](../locale/locale.md)
+You should also ensure that your application responds correctly to changes to features related to the language of the operating system, such as default folder names and registry keys.
 
-* [Sorting and string comparison](../locale/sorting-and-string-comparison.md)
+## Market conventions
 
-* [Calendars](../locale/calendar-differences.md)
+You should ensure that your application respects the conventions of each target market. These conventions might be broad, but could include [name format](../locale/addresses.md#personal-names-and-name-order), [postal address format](../locale/addresses.md#postal-address), [telephone number format](../locale/telephone-numbers.md), [paper sizes](../locale/paper-size.md), and [units of measurement](../locale/measurement-units.md). The use of bold and italic text might vary by script and market.
 
-* [Date formatting](../locale/date-formatting.md)
+## Translatability
 
-* [Time formatting](../locale/time-formatting.md)
+You should ensure that the UI can be translated correctly. Translations tend to be more accurate when the source material is well-written. Consistent use of terminology and clear source text can help users of a single-language product, especially when those users might not be native speakers of that language.
 
-* [Currency Formatting](../locale/currency-formatting.md)
+Strings should be [externalized](../internationalization/externalize-resources.md) and you should avoid [concatenation](../internationalization/concatenation.md). Where supported by the resource file format, consider adding contextual metadata  to each string especially when [placeholders/variables](../internationalization/message-formatting.md) are used. You should avoid using text in images as images tend to be expensive to recreate during the translation process.
 
-* [Number formatting](../locale/number-formatting.md)
+It's best practice to externalize all strings; however, for strings that aren't intended for end users such as debugging or logging messages, consider using separate resource files. You can then choose whether to translate resource files that only contain debugging or logging messages.
 
-* [Addresses](../locale/addresses.md)
+## UI and translations
 
-* [Telephone numbers](../locale/telephone-number.md)
+Where possible, [responsive designs](../fonts-layout/adaptive-ui.md) support releasing localized versions of products faster, as you don't need to spend time resizing the UI due to string-length expansion or contraction. You can plan for future localization into various languages using [pseudolocalization](../methodology/pseudolocalization.md). Pseudolocalization allows you to validate how well your application responds to changes in string length and characters from different scripts or writing systems. Pseudolocalization also allows you to validate whether your application can support [mirroring](../fonts-layout/mirroring.md) for languages that use bidirectional writing systems.
 
-* [Paper size](../locale/paper-size.md)
+[Icons, images, and colors](../fonts-layout/images-icons-colors.md) might need to be adapted for target markets. You should ensure that icons, images, and colors can easily be customized.
 
-* [Units of measurement](../locale/units-of-measurement.md)
+Users should be able to interact with the product using appropriate [keyboards](../input/keyboards.md) or [input method editors](../input/input-method-editors.md) (IME). You shouldn't assume that specific key combinations are available to users in other languages.
 
-## Input, output, and display
+## Target market support
 
-* [Text input, output, and display](../input/text-input.md)
+You should ensure that your application is appropriate for users in your target markets. The scope of this work can be broad, and can include:
 
-* [Text rendering](../input/text-rendering.md)
-
-* [Page or text alignment](../input/page-or-text-alignment.md)
-
-* [Text justification](../input/text-justification.md)
-
-* [Font tchnology](../input/font-technology.md)
-
-* [Line and word breaking](../input/line-and-word-breaking.md)
-
-* [Mirroring](../input/mirroring.md)
-
-* [Overlay text properties](../input/overlay.md)
-
-## Localizability
-
-* [Localizability overview](../localizability/overview.md)
-
-* [Isolate localizable resources](../localizability/isolate-localizable-resources.md)
-
-* [String handling](../localizability/string-handling.md)
-
-* [Mirroring awareness](../localizability/mirroring-awareness.md)
-
-* [UI considerations](../localizability/ui-considerations.md)
-
-## Localization
-
-* [Localization overview](../localization/localization-overview.md)
-
-* [Localization elements](../localization/localization-elements.md)
-
-* [Localization tools](../localization/localization-tools.md)
-
-* [Localization team](../localization/localization-team.md)
-
-* [Establishing localization guidelines](../localization/establishing-localization-guidelines.md)
-
-* [Content localization](../localization/content-localization.md)
-
-## Testing for world readiness
-
-* [Quality assurance for world-readiness](../testing/quality-assurance-for-world-readiness.md)
-
-* [The world-ready approach to testing](../testing/the-world-ready-approach-to-testing.md)
-
-* [Testing globalization](../testing/globalization-of-the-test.md)
-
-* [Testing localizability](../testing/localizability-testing.md)
-
-* [Testing localization](../testing/localization-testing.md)
-
-* [The role of test tools](../testing/the-role-of-test-tools.md)
-
-* [Sample world-ready test cases](../testing/sample-international-test-cases.md)
+- specific features to support the market
+- country/regional standards and legal requirements
+- preferred or alternative platforms
+- external data sources
+- payment methods
+- compatibility with other products
+- hosting environments in target markets to avoid latency issues
