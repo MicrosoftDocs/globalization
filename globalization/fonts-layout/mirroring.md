@@ -1,34 +1,37 @@
 ---
 title: Mirroring
-description: Complex scripts refer to the languages, where the characters are not laid out in a simple left-to-right progression.
-ms.date: 04/26/2017
+description: Mirroring is important for right-to-left languages like Arabic and Hebrew, ensuring correct alignment and reading order.
+ms.date: 3/26/2024
+author: jowilco
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:03/26/2024
 ---
 # Mirroring
 
-For right-to-left (RTL) languages such as Arabic and Hebrew, not only does the text alignment and text reading order go from right to left:
-user interface elements should also follow the natural direction of right to left.
-By default, edit controls in a right-to-left document should inherit right-to-left behavior.
-Control handles and pull-down buttons should be mirrored on right-to-left documents.
+For right-to-left (RTL) languages such as Arabic and Hebrew, the text is right-aligned and has a right to left reading order. However, text in a non-RTL language or script can be mixed with RTL text; therefore, the term *bidirectional* (or *BiDi*) text is commonly used. For more information about bidirectional text, see [Text directionality](text-directionality.md).
 
-In localized applications for right-to-left languages (more properly termed bi-directional languages or BiDi), menus and submenus are mirrored and appear on the right side of the application.
-Figure 1 below shows the Outlook UI for Arabic, which is mostly a mirror of the left-to-right user interface.
-For example, the menu starts from the right side of the screen instead of from the left.
+For RTL languages, user interface elements should also follow the natural direction of right to left. By default, edit controls in a right-to-left document should inherit right-to-left behavior. For example, control handles and pull-down buttons should be *mirrored* on right-to-left documents. If a scroll bar is required, it appears on the left side of the control. These images compare the RTL behavior of Arabic and the LTR behavior of English using Outlook.
 
-![How the User Interface for Arabic compares to English language](./images/Mirroring.jpg "How the User Interface for Arabic compares to English language")
+:::image type="content" source="images/LTR.png" alt-text="An image showing Microsoft Outlook in English, demonstrating a left-to-right layout.":::
 
-**Figure 1:** How the user interface for Arabic compares to English language
+:::image type="content" source="images/RTL.png" alt-text="An image showing Microsoft Outlook in Arabic, demonstrating a right-to-left layout":::
 
-## Exceptions to right-to-left reading order and alignment
+Note that not all images and icons should be mirrored. For example, common icons such as the fast-forward and rewind icons in media players, use the same orientation in both LTR and RTL layouts.
 
-In general, all controls for right-to-left (RTL) languages are right-aligned and have a right-to-left reading order.
-If a scroll bar is required, it appears on the left side of the control.
-However, some edit controls are left aligned and have a left-to-right (LTR) reading order since their content is in a non-RTL language or causes other issues when mirrored.
-For these controls, the scroll bar appears on the right-hand side.
+## Mirroring and UI design
 
-These exceptions are:
+To support user interfaces in bidirectional languages, you should validate:
 
-- File names and paths
-- Printer names and paths
-- IRI, URI, URL, and UNC names
-- Server and domain names
-- Media controls
+- User interface (UI) mirroring. UI flow allows right-to-left content to be presented in its native layout. UI design feels local to BiDi markets.
+- Consistency in user experience. The design feels natural in right-to-left orientation. UI elements share a consistent layout direction and appear as the user expects them.
+- Touch optimization. Like touch UI in nonmirrored UI, elements like on-screen keyboards are easy to reach, and they natural to touch interaction.
+- Mixed text support. Text directionality support enables great mixed text presentation (English text on BiDi builds, and vice versa).
+
+For more information about designing applications to support bidirectional text and mirroring, see [Design your app for bidirectional text](/windows/apps/design/globalizing/design-for-bidi-text) and [Adjust layout and fonts, and support RTL](/windows/apps/design/globalizing/adjust-layout-and-fonts--and-support-rtl).
+
+Implementing BiDi and mirroring support in your user interface will largely depend on the technology selected for your UI layer. For examples, see:
+
+- [FlowDirection Enum](/dotnet/api/microsoft.maui.flowdirection) (.NET MAUI)
+- [Form.RightToLeftLayout Property](/dotnet/api/system.windows.forms.form.righttoleftlayout) (System.Windows.Forms)
