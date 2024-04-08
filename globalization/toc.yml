@@ -22,10 +22,25 @@ items:
       href: methodology/exit-criteria.md
   - name: Internationalization
     items:
-    - name: Overview
-      href: software-internationalization.md
     - name: International Design
-      href: design/internationalization.md
+      href: methodology/international-design.md
+    - name: Software internationalization
+      href: methodology/software-internationalization.md
+    - name: Pseudolocalization
+      href: methodology/pseudolocalization.md
+    - name: Resource authoring for global reach
+      items:
+      - name: Externalize localizable resources
+        href: internationalization/externalize-resources.md
+      - name: Message formatting
+        href: internationalization/message-formatting.md
+        items:
+        - name: Pluralization
+          href: internationalization/pluralization.md
+        - name: Concatenation
+          href: internationalization/concatenation.md
+      - name: Contextual metadata
+        href: internationalization/contextual-metadata.md
     - name: Text support
       items:
       - name: Character and data encoding
@@ -51,146 +66,10 @@ items:
           href: reference/idn.md
         - name: Email address internationalization (EAI)
           href: reference/eai.md
-  - name: Localizability
-    items:
-    - name: Overview
-      href: localizability/localizability.md
-    - name: Localizability Introduction
-      href: localizability/overview.md
-    - name: Isolate Localizable Resources
-      href: localizability/isolate-localizable-resources.md
-    - name: String Handling
-      items:
-      - name: Overview
-        href: localizability/string-handling.md
-      - name: Avoid Run-Time Composite Strings
-        href: localizability/avoid-run-time-composite-strings.md
-      - name: When Variables Are Necessary, Use Unique Names
-        href: localizability/when-variables-are-necessary.md
-      - name: Win32—FormatMessage
-        href: localizability/win32-formatmessage.md
-      - name: .NET Framework—String.Format
-        href: localizability/dotnet-framework-string-format.md
-      - name: Do Not Compound Several Variables
-        href: localizability/do-not-compound-several-variables.md
-      - name: Keep Sentences in a Single String
-        href: localizability/keep-sentences-in-a-single-string.md
-      - name: Watch Your String Buffer Sizes
-        href: localizability/watch-your-string-buffer-sizes.md
-    - name: Mirroring Awareness
-      href: localizability/mirroring-awareness.md
-    - name: UI Considerations
-      items:
-      - name: Overview
-        href: localizability/ui-considerations.md
-      - name: Element Resizing
-        href: localizability/element-resizing.md
-      - name: Web Resizing Issues
-        href: localizability/web-resizing-issues.md
-      - name: Localizability of UI Controls
-        href: localizability/localizability-of-ui-controls.md
-      - name: Using Images and Icons
-        href: localizability/images-and-icons.md
-  - name: Localization
-    items:
-    - name: Overview
-      href: localization/localization.md
-    - name: Create translated deliverables
-      items:
-      - name: Localizing your product
-        href: localization/localization-overview.md
-      - name: Manage terminology
-        href: localization/managing-terminology.md
-      - name: Translation memories
-        href: localization/translation-memories.md
-      - name: Localization file formats
-        href: localization/localization-file-formats.md
-      - name: Exchanging localizable resources
-        href: localization/exchanging-localizable-resources.md
-      - name: Localize software
-        href: localization/localize-software.md
-      - name: Localize documentation
-        href: localization/localize-content.md
-      - name: Localize games
-        href: localization/localize-games.md
-      - name: Transcreation
-        href: localization/transcreation.md
-      - name: Localize video and multimedia
-        href: media/video-multimedia.md
-        items:
-        - name: Captioning and subtitling
-          href: media/captioning.md
-        - name: Re-creation and dubbing
-          href: media/re-creation.md
-    - name: Localization Elements
-      items:
-      - name: Overview
-        href: localization/localization-elements.md
-      - name: Text
-        href: localization/text.md
-      - name: Layout
-        href: localization/layout.md
-      - name: Graphics and Multimedia
-        href: localization/graphics-and-multimedia.md
-      - name: Fonts
-        href: localization/fonts.md
-      - name: Locale Data and Character Sets
-        href: localization/locale-data-and-character-sets.md
-      - name: Build Process and Packaging
-        href: localization/build-process-and-packaging.md
-    - name: Localization Tools
-      href: localization/localization-tools.md
-    - name: Localization Team
-      href: localization/localization-team.md
-    - name: Establishing Localization Guidelines
-      href: localization/establishing-localization-guidelines.md
-    - name: Content Localization
-      href: localization/content-localization.md
-    - name: Localization Style Guides
-      items:
-      - name: Quick Start Localization Style Guides
-        href: localization/styleguides.md
-      - name: Czech
-        href: localization/ministyleguides/mini-style-guide-czech.md
-      - name: Chinese, Simplified
-        href: localization/ministyleguides/mini-style-guide-sim-chinese.md
-      - name: Chinese, Traditional
-        href: localization/ministyleguides/mini-style-guide-trad-chinese.md
-      - name: Dutch
-        href: localization/ministyleguides/mini-style-guide-dutch.md
-      - name: French
-        href: localization/ministyleguides/mini-style-guide-french.md
-      - name: German
-        href: localization/ministyleguides/mini-style-guide-german.md
-      - name: Hungarian
-        href: localization/ministyleguides/mini-style-guide-hungarian.md
-      - name: Italian
-        href: localization/ministyleguides/mini-style-guide-italian.md
-      - name: Japanese
-        href: localization/ministyleguides/mini-style-guide-japanese.md
-      - name: Korean
-        href: localization/ministyleguides/mini-style-guide-korean.md
-      - name: Polish
-        href: localization/ministyleguides/mini-style-guide-polish.md
-      - name: Portuguese (Brazil)
-        href: localization/ministyleguides/mini-style-guide-portuguese-brazil.md
-      - name: Portuguese (Portugal)
-        href: localization/ministyleguides/mini-style-guide-portuguese-portugal.md
-      - name: Russian
-        href: localization/ministyleguides/mini-style-guide-russian.md
-      - name: Spanish (Spain)
-        href: localization/ministyleguides/mini-style-guide-spanish-spain.md
-      - name: Spanish (Neutral)
-        href: localization/ministyleguides/mini-style-guide-spanish-neutral.md
-      - name: Swedish
-        href: localization/ministyleguides/mini-style-guide-swedish.md
-      - name: Turkish
-        href: localization/ministyleguides/mini-style-guide-turkish.md
-  - name: Locale and culture awareness
+  - name: Language and location
     items:
     - name: Locale
       href: locale/locale.md
-    - name: Additional information about locales
       items:
       - name: Standard locale names
         href: locale/standard-locale-names.md
@@ -288,9 +167,14 @@ items:
       - name: Ruby characters
         href: fonts-layout/ruby.md
     - name: User interface Layout
+      href: fonts-layout/interface-layout.md
       items:
+      - name: Adaptive UI
+        href: fonts-layout/adaptive-ui.md
       - name: Mirroring
-        href: input/mirroring.md
+        href: fonts-layout/mirroring.md
+    - name: Images, icons, and colors
+      href: fonts-layout/images-icons-colors.md
     - name: User input
       href: input/index.md
       items:
@@ -332,16 +216,35 @@ items:
       href: testing/identify-globalization-problem.md
     - name: Classify localization issues
       href: testing/issue-taxonomy.md
-  - name: Internationalization for Windows applications
+  - name: Create translated deliverables
     items:
-    - name: Internationalization for Windows applications
-      href: /windows/desktop/Intl/international-support
-    - name: .NET globalization
-      href: /dotnet/api/system.globalization
-    - name: Globalization and localization
-      href: /windows/uwp/design/globalizing/globalizing-portal
-    - name: National Language Support (NLS) reference
-      href: /windows/desktop/Intl/national-language-support-reference
+    - name: Localizing your product
+      href: localization/localization-overview.md
+    - name: Manage terminology
+      href: localization/managing-terminology.md
+    - name: Translation memories
+      href: localization/translation-memories.md
+    - name: Localization file formats
+      href: localization/localization-file-formats.md
+    - name: Exchanging localizable resources
+      href: localization/exchanging-localizable-resources.md
+    - name: Localize software
+      href: localization/localize-software.md
+    - name: Localize documentation
+      href: localization/localize-content.md
+    - name: Localize games
+      href: localization/localize-games.md
+    - name: Transcreation
+      href: localization/transcreation.md
+    - name: Localize video and multimedia
+      href: media/video-multimedia.md
+      items:
+      - name: Captioning and subtitling
+        href: media/captioning.md
+      - name: Re-creation and dubbing
+        href: media/re-creation.md
+  - name: Tools
+    href: tools/index.yml
   - name: Reference
     items:
     - name: Tools and information on the web
