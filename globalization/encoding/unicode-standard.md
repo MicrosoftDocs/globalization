@@ -93,7 +93,7 @@ As UTF-32 requires four bytes for every Unicode code point, it would seem that U
 
 UTF-16 uses either one or two 16-bit code units (2 bytes or 4 bytes) to represent the Unicode code points. A single code unit can represent code points in the range U+0000..U+FFFF. For code points in the supplementary planes (range U+10000...U+10FFFF) a pair of code units, called a *surrogate pair*, are required. The first (high) surrogate is a 16-bit code value in the range U+D800 to U+DBFF. The second (low) surrogate is a 16-bit code value in the range U+DC00 to U+DFFF.
 
-For example 𓅡 (U+13161 EGYPTIAN HIEROGLYPH G029) is a character in the Supplementary Multilingual Plane. The UTF-32 value is 0x00013161. In UTF-16, a surrogate pair is required. The high surrogate is U+D80C while the low surrogate is U+DC61.
+For example 𓅡 (U+13161 EGYPTIAN HIEROGLYPH G029) is a character in the Supplementary Multilingual Plane. The UTF-32 value is 0x00013161. In UTF-16, a surrogate pair is required. The high surrogate is U+D80C while the low surrogate is U+DD61.
 
 Unicode code points in the range U+D800..U+DFFF are reserved for use by UTF-16. When reading a UTF-16 stream, it's unambiguous whether a byte is a lead byte (high surrogate) or a trail byte (low surrogate) of a multi-byte (surrogate pair) character, which is a common challenge with MBCS text.
 
