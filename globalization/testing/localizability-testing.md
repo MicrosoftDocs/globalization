@@ -62,7 +62,7 @@ Besides detecting localizability bugs, pseudolocalization often reveals globaliz
 As a result, testing a pseudolocalized application can potentially be central to verifying that an application is world-ready.
 
 An area often forgotten in localizability testing is the pseudo-mirroring test, which can be implemented as part of pseudo-localization.
-If you want to distribute your software to markets where the text and user interface of the programs display from right to left, you should follow the development and design rules outlined in [User interface layout](../localization/layout.md) to allow mirroring of the UI.
+If you want to distribute your software to markets where the text and user interface of the programs display from right to left, you should follow the development and design rules outlined in [User interface layout](../fonts-layout/interface-layout.md) to allow mirroring of the UI.
 Pseudo-mirroring then verifies that these rules were applied.
 Testers do not need to wait for the localizers to mirror the UI of the application: pseudo-mirroring can be applied to the code.
 When conducting the pseudo-mirroring test, you can allow the UI text to remain unchanged and to be displayed as usual; only the windows and text alignment will be mirrored.
