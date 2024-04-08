@@ -19,6 +19,6 @@ Typing settings control how users interact with their systems and applications u
 
 For more information about these additional settings, refer to [Dictionaries and spelling](dictionaries-spelling.md).
 
-Some languages whose spelling is based on ideograms, like Chinese (Simplified), Japanese, or Korean, require the use of [Input Method Editors (IME)](../input/text-input.md#enable-input-method-editors-imes-and-text-prediction) for typing. IMEs allow users to compose ideograms using input devices that do not support the native ideograms of that language.
+Some languages whose spelling is based on ideograms, like Chinese (Simplified), Japanese, or Korean, require the use of [Input Method Editors (IME)](../input/input-method-editors.md) for typing. IMEs allow users to compose ideograms using input devices that do not support the native ideograms of that language.
 
 Finally, systems, particularly those on smartphones, can include settings related to text prediction models as part of their typing settings. Some of these models are language-specific, and others operate regardless of the selected language. Text prediction models are constantly learning as users type on their devices.
