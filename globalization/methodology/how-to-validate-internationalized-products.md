@@ -1,5 +1,5 @@
 ---
-title: How to validate internationalized products
+title: How to validate international products
 description: An overview of issues related to localizability and localization testing.
 author: m-kauppinen
 ms.author: v-mikau
@@ -8,7 +8,7 @@ ms.date: 05/04/2024
 
 ---
 
-# How to validate internationalized products
+# How to validate international products
 
 Planning an international product release is an involved process. You need to consider legal requirements, banking and payments, product delivery, regional support, and the localization process. All of which you can only do after deciding on your overall international strategy. These concerns are discussed in [How to release products internationally](how-to-release-products-internationally.md).
 
