@@ -1,6 +1,6 @@
 ﻿---
 title: What to look for when testing internationalized products
-description: This topic highlights common issues with internationalization and localization that can be identified during testing.
+description: This article is a checklist of common issues with internationalization and localization that can be identified during testing.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
@@ -14,7 +14,7 @@ This article offers a checklist of issues important to your localizability testi
 
 ## Internationalization checklist
 
-Here is a summary of areas that should be validated to ensure localizability.
+Here's a summary of areas that should be validated to ensure localizability.
 
 ### Operating system (OS) support
 
@@ -25,28 +25,28 @@ Here is a summary of areas that should be validated to ensure localizability.
 
 - Data written using one app language should be able to be read in all other app languages and with all supported OS languages.
 - Validate that the full range of characters can be read, written, and displayed. Unicode is usually the best option for text data.
-- If the written file is intended for use with a 3rd party app, validate its compatibility. Any 3rd party app restrictions should be handled gracefully. Data written for or read by the 3rd party app should be preserved. This might require limiting the data that can be written. Also, ensure that the 3rd party app can read the file correctly once data in different languages and scripts is included.
+- If the written file is intended for use with a third party app, validate its compatibility. Any third party app restrictions should be handled gracefully. Data written for or read by the third party app should be preserved. This might require limiting the data that can be written. Also, ensure that the third party app can read the file correctly once data in different languages and scripts is included.
 
 ### Displaying user data
 
-- Validate that user data can be entered and displayed using a variety of languages and scripts.
-- Font selection and font fallback should be used to avoid tofu (the small box, e.g.,  􏿾 character that appears when a glyph is not available in the current font).
+- Validate that user data can be entered and displayed using various languages and scripts.
+- Font selection and font fallback should be used to avoid tofu (the small box, for example,  􏿾 character that appears when a glyph isn't available in the current font).
 - Text from writing systems that use different orientation or directionality than the application’s language should be handled gracefully.
 
 ### Locale and cultural awareness
 
 #### Data formatting
 
-- Number formatting  / [Number formatting](../locale/number-formatting.md)
-- Currency formatting / [Currency formatting](../locale/currency-formats.md)
-- Date and time formatting  / [Date and time formatting](../locale/date-time-formats.md)
-- Calendar  formatting / [Calendars](../locale/calendars.md)
+- [Number formatting](../locale/number-formatting.md)
+- [Currency formatting](../locale/currency-formats.md)
+- [Date and time formatting](../locale/date-time-formats.md)
+- [Calendars](../locale/calendars.md)
 
 #### Technical implementation
 
-- Collation, sorting, comparison, and search: appropriate results are returned / [Sorting, comparison, and search](../locale/sorting-and-string-comparison.md)
-- Text conversions (e.g. [upper/lower case](#letter-case), text-to-speech, digits to words) are handled appropriately / [Case mapping](../text/case-mapping.md)]
-- Parsing, validation (e.g. full-width vs. half-width digits) / [Text parsing and validation](../text/parsing-input.md)
+- [Collation, sorting, comparison, and search](../locale/sorting-and-string-comparison.md) returns appropriate results: see the [Sort order](#sort-order) test data
+- Text conversions such as [case mapping](../text/case-mapping.md), text-to-speech, and digits to words are handled appropriately: see the [Letter case](#letter-case) test data
+- [Text parsing and validation](../text/parsing-input.md) (for example, full-width vs. half-width digits)
 
 #### Local conventions and standards
 
@@ -59,34 +59,34 @@ Here is a summary of areas that should be validated to ensure localizability.
 - Consistent and correct terminology is used in strings.
 - All strings are externalized to translatable resource files.
 - Context is provided to translators through developer comments in resource files (if supported by the resource file format).
-- Individual strings are not reused in different contexts.
-- Locked or non-localizable strings are clearly identified or separated from localizable resources.
+- Individual strings aren't reused in different contexts.
+- Locked or nonlocalizable strings are clearly identified or separated from localizable resources.
 - Concatenation is never used to assemble messages or user interface labels.
 - Images avoid using embedded text.
 
 ### Cultural awareness and market conventions
 
-- Postal address formatting  / [Postal address formats](../locale/addresses.md)
-- Telephone numbers/Telephone number formats / [Telephone number formatting](../locale/telephone-numbers.md)
-- Paper and envelope sizes / [Paper and envelope size](../locale/paper-size.md)
-- Units of measurement / [Measurement units](../locale/measurement-units.md)
-- Punctuation, separators / [Punctuation, separators](../internationalization/punctuation-separators.md)
+- [Postal address formatting](../locale/addresses.md)
+- [Telephone number formatting](../locale/telephone-numbers.md)
+- [Paper and envelope sizes](../locale/paper-size.md)
+- [Units of measurement](../locale/measurement-units.md)
+- [Punctuation and separators](../internationalization/punctuation-separators.md)
 
 ### Display
 
 - Follow responsive design principles: use adaptive layout, have graceful truncation and wrapping.
 - Ensure the app honors system defaults and settings.
 - Ensure that the appropriate fonts are used for the language of the UI and user's data.
-- Your app should support any keyboard and Input Method editor (IME) for entering text.
+- Ensure the app supports any keyboard and [Input Method editor (IME)](../input/input-method-editors.md) for entering text.
 
 ### Target market support
 
-- Payment methods (support, availability) / [Payment methods](../internationalization/payment-methods.md)
-- Any internal spell-checker, thesaurus, text-predic tion, etc. supports the language / [Spell-checker or thesaurus/dictionary support](../locale/dictionaries-spelling.md)
+- [Payment methods](../internationalization/payment-methods.md) (support, availability)
+- [Internal spell-checker, text prediction, or thesaurus/dictionary support](../locale/dictionaries-spelling.md) for the language
 
 ### Localization
 
-- Translations are correct (terminology, style meaning accurately conveyed) 
+- Translations are correct: terminology, style, and meaning are accurately conveyed 
 
 ## Test data for localizability testing
 
@@ -94,13 +94,13 @@ You should set up a set of test data to facilitate testing. The type of data dep
 
 ### Letter case
 
-If the application converts the case of text, you can verify the functionality with scripts that do not have uppercase and lowercase symbols, such as Cyrillic, East Asian scripts, and Hebrew.
+If the application converts the case of text, you can verify the functionality with scripts that don't have uppercase and lowercase symbols, such as Cyrillic, East Asian scripts, and Hebrew.
 
 You can also use text where there are locale-specific rules for case conversion, such as Turkish.
 
 Turkish uses upper and lower case, dotted and dotless letter "I".
 
-Unlike other languages written in the Latin script, Turkish "I"s do not gain or lose their dots when changing case.
+Unlike other languages written in the Latin script, Turkish "I"s don't gain or lose their dots when changing case.
 
 | Code point | Unicode Character Name                | Letter                    | Opposite case (Turkish) |
 |------------|---------------------------------------|---------------------------|-------------------------|
@@ -115,7 +115,7 @@ If the application displays text in a sorted order, you should verify that the s
 
 #### Chinese
 
-China has two different sort orders, one by pronunciation and one by stroke order. The results will vary based on the sort order the user chooses.
+China has two different sort orders, one by pronunciation and one by stroke order. The results vary based on the sort order the user chooses.
 
 | Pronunciation Order | Unicode Value | PinYin | Stroke Order | Unicode Value | PinYin |
 |--- | --- | --- | --- | --- | --- |
@@ -133,7 +133,7 @@ China has two different sort orders, one by pronunciation and one by stroke orde
 
 #### Turkish
 
-Under Turkish conventions, dotless "I" (the uppercase "I" (U+0049) or the lowercase "ı" (U+0131)) precedes dotted "I" (the uppercase "İ" (U+0130) or lowercase "i" (U+0069)). Note that this order is not the same as the order of the values of the letter's Unicode code points.
+Under Turkish conventions, dotless "I" (the uppercase "I" (U+0049) or the lowercase "ı" (U+0131)) precedes dotted "I" (the uppercase "İ" (U+0130) or lowercase "i" (U+0069)). This order isn't the same as the order of the values of the letter's Unicode code points.
 
 #### Other examples from European languages
 
