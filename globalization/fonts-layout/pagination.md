@@ -42,11 +42,11 @@ In addition to these three properties, you can use the `unicode-bidi` property t
 
 You can obtain similar effects with the `rotate` and `transform` properties that you can obtain with `writing-mode`.
 
-For more information about CSS Writing Modes Level 3, see https://www.w3.org/TR/css-writing-modes-3/ 
+For more information about CSS Writing Modes Level 3, see [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
 
 ## Comparison of different orientations
 
-The following table shows examples of different orientations and directionality using translations of Article 1 of the Universal Declaration of Human Rights, published by The Office of the High Commissioner for Human Rights (https://www.ohchr.org/).
+The following table shows examples of different orientations and directionality using translations of Article 1 of the Universal Declaration of Human Rights, published by The Office of the High Commissioner for Human Rights ([https://www.ohchr.org/](https://www.ohchr.org/)).
 
 | CSS | Text direction and progression | Language | Example |
 | --- | --- | --- | --- | --- |

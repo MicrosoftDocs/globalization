@@ -76,7 +76,7 @@ When the Traditional Chinese keyboard layout is active, you can right-click the 
 - Input assistance options, such as the use of the associate phrase window
 - Character set options
 
-### Change character width
+### Change character width with the Quick IME
 
 The Quick IME allows typing with both half-width and full-width characters. To change the width, open the right-click menu and select **Character width** > **Half-width** or **Full-width**.
 
@@ -92,7 +92,7 @@ When the Traditional Chinese keyboard layout is active, you can right-click the 
 
 For more information about these settings, see [Microsoft Traditional Chinese IME](https://support.microsoft.com/en-us/windows/microsoft-traditional-chinese-ime-ef596ca5-aff7-4272-b34b-0ac7c2631a38#ID0EBBD=Microsoft_Bopomofo).
 
-### Change character width
+### Change character width with the Bopomofo IME
 
 The Bopomofo IME allows typing with both half-width and full-width characters. To change the width, open the right-click menu and select **Character width** > **Half-width** or **Full-width**.
 
