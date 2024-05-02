@@ -23,7 +23,7 @@ Vertical:
 
 Ruby characters are typically half the size of the corresponding base characters. If the base characters are using a very small font size, it's better to use other annotation methods, such as including the reading in parentheses after the base characters.
 
-More information about ruby characters, and about Japanese text layout in general, can be found at https://www.w3.org/TR/jlreq.
+More information about ruby characters, and about Japanese text layout in general, can be found at [https://www.w3.org/TR/jlreq](https://www.w3.org/TR/jlreq).
 
 ## Rendering ruby characters
 
