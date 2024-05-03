@@ -71,6 +71,7 @@ Here's a summary of areas that should be validated to ensure localizability.
 - [Paper and envelope sizes](../locale/paper-size.md)
 - [Units of measurement](../locale/measurement-units.md)
 - [Punctuation and separators](../internationalization/punctuation-separators.md)
+- [Personal names and name order](../locale/addresses.md#personal-names-and-name-order)
 
 ### Display
 
@@ -86,9 +87,14 @@ Here's a summary of areas that should be validated to ensure localizability.
 
 ### Localization
 
-- Translations are correct: terminology, style, and meaning are accurately conveyed 
+- Translations are correct: terminology, style, and meaning are accurately conveyed
+- All functionality works in the localized versions
+- All strings display in the correct language
+- UI layout is correct
+- Language-specific functional customization (if any)
+- Compliance with local requirements, including appropriately translated documentation and license agreement
 
-## Test data for localizability testing
+## Test data for internationalization testing
 
 You should set up a set of test data to facilitate testing. The type of data depends on the use case: a database, saving files, given and family names, for example. Include a broad range of characters, and use characters with specific goals (Unicode, sort, casing, and so on).
 
