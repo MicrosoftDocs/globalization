@@ -10,28 +10,26 @@ ms.date: 05/04/2024
 
 # What to look for when testing internationalized products
 
-This article offers a checklist of issues important to your localizability testing and some specific test cases you can use.
+This article offers a checklist of issues important to your internationalization testing and some specific test cases you can use.
 
 ## Internationalization checklist
 
-Here's a summary of areas that should be validated to ensure localizability.
+Here's a summary of areas that should be validated to ensure internationalization is done properly.
 
 ### Operating system (OS) support
 
-- Verify that all app languages work with all supported OS languages using data in any language. The user's data might not be in the same language or script as the application’s UI. The data could also be multilingual.
+- Verify that all app languages work with all supported OS languages using data in any language. This can be done in two phases:
+  - Before localization, test the app on different language versions of the OS. This can uncover many issues early.
+  - After localization, test that the translated app versions work and look correctly on different language versions of the OS.
 - Verify the application’s ability to work with localized OS objects such as special folders, account names, and registry entries.
 
 ### Reading and saving data to files
 
 - Data written using one app language should be able to be read in all other app languages and with all supported OS languages.
-- Validate that the full range of characters can be read, written, and displayed. Unicode is usually the best option for text data.
+- Validate that the full range of characters can be read, written, and displayed. Confirm that the desired text encoding is used in files. Unicode is usually the best option for text data. Other types of encoding may be used, typically for legacy support, but require additional care.
+- Files that contain field delimiters, such as CSV files, require additional care, as delimiters can vary regionally. Verify interoperability with systems using different regional settings.
+- Files that contain regionally formatted data, such as dates, times, and numbers, also require additional care. Using a "neutral" format for these might be preferable. But if that isn't an option, verify interoperability with systems using different regional settings.
 - If the written file is intended for use with a third party app, validate its compatibility. Any third party app restrictions should be handled gracefully. Data written for or read by the third party app should be preserved. This might require limiting the data that can be written. Also, ensure that the third party app can read the file correctly once data in different languages and scripts is included.
-
-### Displaying user data
-
-- Validate that user data can be entered and displayed using various languages and scripts.
-- Font selection and font fallback should be used to avoid tofu (the small box, for example,  􏿾 character that appears when a glyph isn't available in the current font).
-- Text from writing systems that use different orientation or directionality than the application’s language should be handled gracefully.
 
 ### Locale and cultural awareness
 
@@ -42,11 +40,14 @@ Here's a summary of areas that should be validated to ensure localizability.
 - [Date and time formatting](../locale/date-time-formats.md)
 - [Calendars](../locale/calendars.md)
 
-#### Technical implementation
+#### Text support
 
 - [Collation, sorting, comparison, and search](../locale/sorting-and-string-comparison.md) returns appropriate results: see the [Sort order](#sort-order) test data
 - Text conversions such as [case mapping](../text/case-mapping.md), text-to-speech, and digits to words are handled appropriately: see the [Letter case](#letter-case) test data
 - [Text parsing and validation](../text/parsing-input.md) (for example, full-width vs. half-width digits)
+- Validate that user data can be entered and displayed using various languages and scripts.
+- Verify that font selection and font fallback are used correctly to avoid *tofu* (for example, the small box (􏿾) character that appears when a glyph isn't available in the current font).
+- Text from writing systems that use different orientation or directionality than the application’s language should be handled gracefully.
 
 #### Local conventions and standards
 
@@ -60,7 +61,7 @@ Here's a summary of areas that should be validated to ensure localizability.
 - All strings are externalized to translatable resource files.
 - Context is provided to translators through developer comments in resource files (if supported by the resource file format).
 - Individual strings aren't reused in different contexts.
-- Locked or nonlocalizable strings are clearly identified or separated from localizable resources.
+- Nonlocalizable strings are clearly identified or separated from localizable resources.
 - Concatenation is never used to assemble messages or user interface labels.
 - Images avoid using embedded text.
 
@@ -78,6 +79,9 @@ Here's a summary of areas that should be validated to ensure localizability.
 - Follow responsive design principles: use adaptive layout, have graceful truncation and wrapping.
 - Ensure the app honors system defaults and settings.
 - Ensure that the appropriate fonts are used for the language of the UI and user's data.
+
+### Input
+
 - Ensure the app supports any keyboard and [Input Method editor (IME)](../input/input-method-editors.md) for entering text.
 
 ### Target market support
