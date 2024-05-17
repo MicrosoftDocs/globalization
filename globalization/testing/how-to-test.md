@@ -20,14 +20,19 @@ Some automated test frameworks are able to detect and report visual issues such 
 
 Localization testing checks how well your product is translated into a particular target language and confirms that there are no visual or functional issues. Ideally, [localizability testing](when-to-test.md) has already uncovered most visual and functional issues that could impact localized versions, and these have been addressed before localization testing.
 
-Localization testing should focus on the following general areas.
+Localization testing is often broken down into several sub-areas, based on the tools and skills required to perform the validation:
+
+- Functional validation (verify functional parity across language versions)
+- [Visual validation](#visual-validation) (verify that all parts are fully localized, there are no cosmetic defects, and visuals are culturally appropriate and not political sensitive)
+- [Linguistic validation](#linguistic-validation) (verify linguistic accuracy, as well as cultural appropriateness and political sensitivity of the text)
+- [Other risk areas](#other-risk-areas) (market specific features, audiovisual content, speech input/output, legal compliance, ability to reach local contacts for sales or support, and so on)
 
 ### Visual validation
 
 Localization testing for your product’s UI and language-related items should:
 
 - Validate all application resources, including strings and translated images.
-- Check that printed documentation, online help, messages, interface resources, and keyboard shortcuts   are consistent with each other. If you have shipped localized versions of your product before, make sure that the translation is consistent with the earlier released versions.
+- Check that printed documentation, online help, messages, interface resources, and keyboard shortcuts are consistent with each other. If you have shipped localized versions of your product before, make sure that the translation is consistent with the earlier released versions.
 - Confirm adherence to system, input, and display environment standards.
 - Check the usability of the UI.
 - Assess cultural appropriateness.

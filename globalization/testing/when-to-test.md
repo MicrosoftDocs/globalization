@@ -40,7 +40,7 @@ These can be done at the same time as reviewing your code for general internatio
 
 ## Review the source language UI and documentation
 
-You should ensure the terminology used in your app’s user interface and support documentation is clear, consistent, and unambiguous. Translators find it harder to do a good job if the UI and the documentation refer to the same thing with several different words, or if technical slang is used. The source text should also avoid nontechnical slang and culture-specific references.
+You should ensure the terminology used in your app’s user interface and support documentation is clear, consistent, and unambiguous. Translators find it harder to do a good job if the UI and the documentation refer to the same thing with several different words, or if technical slang is used. The source text should also avoid nontechnical slang and culture-specific references. These checks improve localizability, which leads to better translations with less expense, and also helps to give your international users the same level of user experience everywhere.
 
 ## Test with a pseudolocalized version of your app
 
