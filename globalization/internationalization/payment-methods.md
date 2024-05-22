@@ -10,9 +10,13 @@ ms.date: 05/16/2024
 
 # Payment methods
 
-In many Western countries, credit cards are commonly used to pay for software purchases. As discussed in [How to release products internationally](../methodology/how-to-release-products-internationally.md#payment-methods), not all target markets use the same payment methods. Choosing which payment methods customers can use to buy your product in each market needs to be part of your strategy. You should select methods that are popular in the target market and suitable for buying software online. This means, for example, that a method where buyers pay with cash isn't a good fit.
+In many Western countries, credit cards are commonly used to pay for software purchases. As discussed in [How to release products internationally](../methodology/how-to-release-products-internationally.md#payment-methods), not all target markets use the same payment methods. Choosing which payment methods customers can use to buy your product in each market needs to be part of your strategy. You should select methods that are popular in the target market and suitable for buying software online.
 
 This article gives an overview of some other methods used around the world.
+
+## Local retailers/marketplaces
+
+You can make licenses or activation keys to your software available via local retailers and marketplaces. This allows customers to purchase your software using cash or any other locally appropriate method. These retailers and marketplaces can also allow adding money as account balance or credit, which customers can use to buy your software and make future purchases as well. This might be convenient when paying with cash.
 
 ## Payment platforms/services  
 
