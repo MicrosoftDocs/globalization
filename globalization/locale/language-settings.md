@@ -1,6 +1,6 @@
 ---
 title: Language settings
-description: Applications should follow the user's language setting in the operating system as a default, not the system language.
+description: You should enable users worldwide to interact with your application by supporting various settings related to languages and input.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.

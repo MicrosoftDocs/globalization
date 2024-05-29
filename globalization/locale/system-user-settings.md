@@ -1,6 +1,6 @@
 ---
-title: System and user settings
-description: System and user settings for language and locale are separate, but related.
+title: Operating system and application settings
+description: Language and locale settings are applicable to both your application and the operating system it runs on..
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
@@ -8,7 +8,7 @@ ms.date: 05/16/2024
 
 ---
 
-# System and user settings
+# Operating system and application settings
 
 Although operating systems (OS) offer an out-of-the-box default configuration, users should be able to install other languages and define different aspects of language support.
 
