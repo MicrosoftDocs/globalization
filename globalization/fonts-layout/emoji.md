@@ -47,7 +47,7 @@ You can change the appearance of emoji by using emoji modifiers. Here's an examp
 You can use sequences of Regional Indicator characters (U+1F1E6.. U+1F1FF) to display emoji country/region flags. In the following example:
 
 - REGIONAL INDICATOR SYMBOL LETTER U (U+1F1FA) followed by REGIONAL INDICATOR SYMBOL LETTER S (U+ 1F1F8) can be combined to display the US flag.
-- REGIONAL INDICATOR SYMBOL LETTER C (U+ 1F1E8) followed by REGIONAL INDICATOR SYMBOL LETTER A (U+ 1F1E6) can be combined to display the US flag.
+- REGIONAL INDICATOR SYMBOL LETTER C (U+ 1F1E8) followed by REGIONAL INDICATOR SYMBOL LETTER A (U+ 1F1E6) can be combined to display the Canada flag.
 
 <iframe src="flag_emoji.html" height="120"></iframe>
 
