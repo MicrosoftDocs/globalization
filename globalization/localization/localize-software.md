@@ -81,8 +81,8 @@ In a printed manual or webpage text, it's straightforward to instruct the transl
 ### Payment methods
 
 Some payment methods might be much less common in the target culture than in your own. They might even be entirely unavailable. Conversely, the target market might have a payment method that's not used in your region. Research this area if your software can be used to make payments or handles the subject of payments in another way.
-<!--
-For more information, refer to [Payment methods](../internationalization/payment-methods.md).-->
+
+For more information, refer to [Payment methods](../internationalization/payment-methods.md).
 
 ### Third party data sources
 
