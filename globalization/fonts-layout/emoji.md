@@ -53,7 +53,7 @@ You can use sequences of Regional Indicator characters (U+1F1E6.. U+1F1FF) to di
 
 > [!TIP]
 > Whether the flags are displayed is dependent on the browser, operating system, and font.
-> 
+>
 > - The first line in the example shows the default browser/operating system/font behavior. This line might be rendered as letters (for example, Windows with Chromium browsers such as Edge or Chrome), or it might be rendered as flags.
 > - The second line is using the Noto Color Emoji  font, which should be rendered as flags on Windows with Chromium browsers).
 

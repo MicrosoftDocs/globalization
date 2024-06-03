@@ -37,7 +37,7 @@ In English, hyphens can be used to join words, for example, in compound modifier
 
 Several Microsoft products, including Microsoft Word, support automatic hyphenation. This feature allows the product to insert hyphens and line breaking to improve the appearance of your document.
 
-Like the behavior of nonbreaking spaces, the nonbreaking hyphen (U+2011) can be used where you want a hyphenated word not to break across lines at the hyphen. 
+Like the behavior of nonbreaking spaces, the nonbreaking hyphen (U+2011) can be used where you want a hyphenated word not to break across lines at the hyphen.
 
 For more information about hyphenations, see [Proofing tools](../locale/dictionaries-spelling.md).
 

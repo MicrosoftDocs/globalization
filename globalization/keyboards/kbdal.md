@@ -1,7 +1,7 @@
 ---
 title: Albanian Keyboard
-description: An interactive representation of the Windows Albanian Keyboard. To see different keyboard states, click or move the mouse over the state keys.
-ms.date: 04/26/2021
+description: An interactive representation of the Windows Albanian keyboard. To see different keyboard states, click or move the mouse over the state keys.
+ms.date: 04/24/2024
 ms.topic: ui-reference
 author: jowilco
 ---

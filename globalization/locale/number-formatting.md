@@ -20,7 +20,7 @@ The decimal separator can depend on context. For example, in Switzerland, the co
 
 To make it easier to read large numbers, grouping can be used for both the integer and fractional part of the number. European languages often use groups of three digits based on the 10^3 names of higher power numbers, whereas China, Japan, and Korea can use groups of four digits based on the 10^4 names of higher power numbers.
 
-The South Asian grouping system used in countries/regions like India starts grouping at four digits, then every second power of 10. For example, 10^7 is represented as 1,00,000.
+The South Asian grouping system used in countries/regions like India starts grouping at four digits, then every second power of 10. For example, 10^7 is represented as 1,00,00,000.
 
 Digit grouping rules can specify when grouping should occur. In Germany, the DIN 1333 standard specifies that a space should be used as a separator starting at five digits, so a four-digit number could be shown as 1234 but a five-digit number should be shown as 12&nbsp;345. The standard might differ from normal use, which for Germany is using the dot as the grouping separator (12.345).
 
@@ -35,6 +35,14 @@ Negative numbers are typically represented with a prefix of a hyphen-minus chara
 In addition to the decimal separator, the grouping separator, and the minus sign, other symbols are frequently used when formatting numbers. These include symbols to represent a percentage, a per mille (parts per thousand) amount, a currency, an approximate value, an exponent, or an approximate value.
 
 Convention or standards might specify the order of the numeric value and the symbols and spaces between symbols and numeric values. For example, a price might be represented as €&nbsp;-1.234,56 in the Netherlands and as -1&nbsp;234,56&nbsp;€ in France. For more information about currency formatting, see [Format currency values](currency-formats.md).
+
+## Choice of digits
+
+As discussed in [Numeric notation](numeric-notation.md), there are many different sets of digits used to represent numbers. The choice of digits can depend on the context. Using Microsoft Windows, you can choose when native digits are used. The choices are:
+
+- Context: the digits used depend on the context. For example, if the digits appear in English text, Latin digits are used; if the digits appear in Arabic text, Arabic digits are used.
+- Never: Latin digits are always used.
+- National: the digits will match the script specified by the locale.
 
 ## Using locales and libraries, frameworks, and programming languages to format numbers
 
