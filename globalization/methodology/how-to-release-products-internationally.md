@@ -47,7 +47,7 @@ Language support can incur considerable costs, especially if your original produ
 
 ### Payment methods
 
-Every market doesn’t have the same payment methods available. And even if a given method is available, it might be little used. Research which options are commonly used in the markets you're targeting. You should offer several ways to pay for your product. Credit cards, online payment methods such as Stripe, Paypal, or Google Pay, multi-currency accounts, and transfer via a third party such as Western Union are some possibilities worth investigating.
+Every market doesn’t have the same [payment methods](../internationalization/payment-methods.md) available. And even if a given method is available, it might be little used. Research which options are commonly used in the markets you're targeting. You should offer several ways to pay for your product. Credit cards, online payment methods such as Stripe, Paypal, or Google Pay, multi-currency accounts, and transfer via a third party such as Western Union are some possibilities worth investigating.
 
 Selling your product in a new country often means that you get payments in a new currency. It's worth considering whether you should use a bank that is local for the target market for this business. At some point you want to repatriate those profits, so plan for that eventuality when you think about your banking solution.
 
