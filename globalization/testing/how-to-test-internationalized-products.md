@@ -1,6 +1,6 @@
 ---
-title: Validating products for international release
-description: An overview of issues related to globalization testing.
+title: Why international validation is important
+description: An overview of issues related to international validation.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
@@ -8,13 +8,23 @@ ms.date: 05/04/2024
 
 ---
 
-# Validating products for international release
+# Why international validation is important
 
 Ensuring world-readiness has a wider scope and requires more planning than just testing your app after the UI strings have been translated.
 
-When they start out, many software companies are focused on producing a single-language product. The people involved in the initial release aren’t focused on producing a multi-language app. The processes and timeline used to produce the single-language app might not be sufficient for delivering products in more than one language. The team responsible for testing and Quality Assurance (QA) are critical to ensuring that the functionality and appearance of the translated product is appropriate for the new target markets.
+Historically, some product teams have initially focused on producing a single-language product for a single market, and not on meeting the needs of multiple international markets. When working with an existing codebase, a solid international Quality Assurance (QA) process is critical to ensuring that the functionality and appearance of the product is appropriate for the new target markets. This QA process should cover all aspects of internationalization.
 
-The Quality Assurance (QA) process is ideally a partnership between the development team, project managers, and other functions. The goal is to establish clear criteria for international release and verify that these are met throughout the product lifecycle, including design, development, distribution, and support.
+The Quality Assurance (QA) process is ideally a partnership between the development team, project managers, and other functions. The goal is to establish clear criteria for international release and verify that these are met throughout the product lifecycle, including design, development, distribution, and support. Your whole QA process should be globalized for the best result, with all the international requirements baked in before any testing is done. This article describes what that entails.
+
+## Timeline of the international validation process
+
+International validation usually proceeds like this:
+
+1. Define your target markets and languages.
+1. Define what requirements need to be met to reach those markets in the chosen languages.
+1. Validate that your product meets general internationalization requirements.
+1. Validate your product's localization readiness.
+1. Validate the localized product.
 
 ## Common globalization issues
 
@@ -36,7 +46,7 @@ It might be hard to find certain problems in display or print results without ha
 
 ## Locale-related issues
 
-Another area of potential problems is code failing to follow [locale](../locale/locale.md) conventions as defined by the language settings. Make sure that locale-sensitive data in your app ([numbers](../locale/number-formatting.md), [dates, time](../locale/date-time-formats.md), [currency](../locale/currency-formats.md), and [calendars](../locale/calendars.md)) respects the user’s **Region** settings.
+Another area of potential problems is code failing to follow [locale](../locale/locale.md) conventions as defined by the regional format settings. Make sure that locale-sensitive data in your app ([numbers](../locale/number-formatting.md), [dates, time](../locale/date-time-formats.md), [currency](../locale/currency-formats.md), and [calendars](../locale/calendars.md)) respects the user’s **Region** settings.
 
 However, **Language** and **Region** settings don’t cover all locale-specific functionality. You can’t see the current sort order there, for example. Thus, it's important to have a test plan covering all aspects of functionality related to locale before you start your test. You can use the [.NET Framework documentation](/dotnet/api/system.globalization.cultureinfo) as a starting point for this plan. Use the documentation to find exactly what locale information you need to retrieve dynamically, and then apply those requirements to your project.
 
@@ -60,6 +70,6 @@ Experience shows that some tools are easy to globalize, while others aren't. Mor
 
 ## What comes next
 
-Once you verify that a product's functionality has been globalized by globalizing the existing testing, you need to determine whether the application is going to be localized. If so, the next step is **localizability testing**, discussed in [When to test internationalized products](when-to-test.md).  
+Once you verify that a product's functionality has been globalized by globalizing the existing testing, you need to determine whether the application is going to be localized. If so, the next step is **internationalization testing**, discussed in [When to perform internationalization testing](when-to-test.md) and [How to perform internationalization testing](what-to-look-for-when-testing.md).
 
-After localizability testing is done, its findings implemented, and at least one or two languages have been localized, it’s time to carry out **localization testing**. For more information, see [How to test localized products](how-to-test.md).
+After internationalization testing is done, its findings implemented, and at least one or two languages have been localized, it’s time to carry out **localization testing**. For more information, see [How to perform localization testing](how-to-test.md).

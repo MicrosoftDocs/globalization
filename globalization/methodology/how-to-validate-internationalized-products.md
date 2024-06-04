@@ -12,9 +12,9 @@ ms.date: 05/04/2024
 
 Once you have established your overall international strategy, put in place a plan that takes into account legal requirements, banking and payments, product delivery, regional support, and the localization process as outlined in [How to release products internationally](how-to-release-products-internationally.md), ensure that you have the right level of validation at each step.
 
-As you develop your application, you'll need to ensure that your application functions correctly for users in all target markets for all languages supported by your product. This article gives a quick overview of the kind of issues that need to be considered. For a more detailed technical overview, see [Validating products for international release](../testing/how-to-test-internationalized-products.md).
+As you develop your application, you'll need to ensure that your application functions correctly for users in all target markets for all languages supported by your product. This article gives a quick overview of the kind of issues that need to be considered. For a more detailed description, see [Why international validation is important](../testing/how-to-test-internationalized-products.md).
 
-As you [internationalize](software-internationalization.md) your product, ensure that each area is validated. Typically, that work can be broken down into tasks that can be performed before the product is translated, followed by translation, and finally, validation of each target language. This approach can reduce the risk of significant changes having to be made after translation has started. This includes:
+As you [internationalize](software-internationalization.md) your product, ensure that [each area is validated](../testing/when-to-test.md). Typically, that work can be broken down into tasks that can be performed before the product is translated, followed by translation, and finally, validation of each target language. This approach can reduce the risk of significant changes having to be made after translation has started. This includes:
 
 - Data, especially text data, isn't limited to any [script or writing system](../fonts-layout/writing-systems.md), and that data can be exchanged between different systems.
 - Your application can display user data and UI text in the scripts used in the target markets
