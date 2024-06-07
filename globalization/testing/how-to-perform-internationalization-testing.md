@@ -10,13 +10,13 @@ ms.date: 05/04/2024
 
 # How to perform internationalization testing
 
-This article describes the four stages of internationalization testing mentioned in [When to perform internationalization testing](when-to-test.md) and offers a detailed [checklist](#internationalization-checklist) of important issues as well as some specific test cases you can use.
+This article describes the four stages of internationalization testing mentioned in [When to perform internationalization testing](when-to-perform-internationalization-testing.md) and offers a detailed [checklist](#internationalization-checklist) of important issues as well as some specific test cases you can use.
 
 ## Review your code
 
 Code reviews for internationalization can take place long before translation work. When reviewing your code, be sure it meets the following requirements:
 
-1. Ensure that your UI can be translated efficiently and correctly. For a list of things to check, see [Internationalization in What to look for when testing internationalized products](what-to-look-for-when-testing.md#internationalization).
+1. Ensure that your UI can be translated efficiently and correctly. For a list of things to check, see [Internationalization in What to look for when testing internationalized products](how-to-perform-internationalization-testing.md#internationalization).
 1. Ensure that your UI displays appropriately on screens with different resolutions and aspect ratios and that users can interact with the UI, for example, to input text with an [IME](../input/input-method-editors.md).
 
 These can be done at the same time as reviewing your code for general internationalization, including:
@@ -37,7 +37,7 @@ Pseudolocalization (informally, "pseudo") can be the most effective way of findi
 
 Some internationalization issues such as truncations, concatenation or strings that are not exposed to localization are easier to spot on a pseudolocalized version than on a real language. And unlike a real translated version, a pseudolocalized version is easy to use even if you don't understand other real languages.
 
-Once you have pseudolocalized your product, [test it as you would a real language](how-to-test.md), covering both functional and visual aspects, paying special attention to [internationalization issues](what-to-look-for-when-testing.md).
+Once you have pseudolocalized your product, [test it as you would a real language](how-to-perform-localization-testing.md), covering both functional and visual aspects, paying special attention to [internationalization issues](how-to-perform-internationalization-testing.md).
 
 ### Pseudomirroring
 
@@ -51,7 +51,7 @@ Let’s assume that the product you want to release internationally is going to 
 
 As discussed previously, [pseudolocalization](#test-with-a-pseudolocalized-version-of-your-app) can be extremely helpful, but it can never catch all issues. If you complete a validation through pseudolocalization (and address issues that have been found), then start the actual localization and localization testing with a small subset of pilot languages, you may identify additional issues before they impact your broader localization efforts. These typically include issues that specifically impact the translation process, ranging from tooling to challenges with the source text.
 
-If you decide to start small, choose one or two languages for which you can easily organize localization and [localization testing](how-to-test.md). For instance, you might have experience with the language from previous projects, or your organization employs people who speak the language.
+If you decide to start small, choose one or two languages for which you can easily organize localization and [localization testing](how-to-perform-localization-testing.md). For instance, you might have experience with the language from previous projects, or your organization employs people who speak the language.
 
 It's helpful to choose languages for which the localization is especially likely to expose localization problems. For example, with German, the translated text is likely to be longer and uses a different sentence structure. Arabic and Hebrew text is written from right-to-left and the UI for these languages should similarly be mirrored. Languages like Chinese and Japanese use a very large range of characters.
 

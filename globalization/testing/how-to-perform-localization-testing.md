@@ -10,15 +10,15 @@ ms.date: 05/04/2024
 
 # How to perform localization testing
 
-This article discusses the methods for testing your localized products. It assumes that you have already planned for [when](when-to-test.md) and [how](what-to-look-for-when-testing.md) the validation of other aspects of internationalization is done. Internationalization testing is typically a prerequisite to effective localization testing.
+This article discusses the methods for testing your localized products. It assumes that you have already planned for [when](when-to-perform-internationalization-testing.md) and [how](how-to-perform-internationalization-testing.md) the validation of other aspects of internationalization is done. Internationalization testing is typically a prerequisite to effective localization testing.
 
-Test tools are discussed in [Why international validation is important](how-to-test-internationalized-products.md#test-tools). If your automated test has been well globalized, running automated test cases on all localized versions is an efficient way to test functional parity across languages. If you do not have full automated test coverage, plan for manual validation.
+Test tools are discussed in [Why international validation is important](why-international-validation-is-important.md#test-tools). If your automated test has been well globalized, running automated test cases on all localized versions is an efficient way to test functional parity across languages. If you do not have full automated test coverage, plan for manual validation.
 
 Some automated test frameworks are able to detect and report visual issues such as bad layout, but having someone conduct a visual sanity check is a good alternative.
 
 ## Localization testing
 
-Localization testing checks how well your product is translated into a particular target language and confirms that there are no visual or functional issues. Ideally, [internationalization testing](when-to-test.md) has already uncovered most visual and functional issues that could impact localized versions, and these have been addressed before localization testing.
+Localization testing checks how well your product is translated into a particular target language and confirms that there are no visual or functional issues. Ideally, [internationalization testing](when-to-perform-internationalization-testing.md) has already uncovered most visual and functional issues that could impact localized versions, and these have been addressed before localization testing.
 
 Localization testing is often broken down into several sub-areas, based on the tools and skills required to perform the validation:
 
@@ -37,7 +37,7 @@ Localization testing for your product’s UI and language-related items should:
 - Check the usability of the UI.
 - Assess cultural appropriateness.
 - Check for politically sensitive content.
-- Ensure the market-specific information about your company, such as contact information or local product-support phone numbers, is correct.  
+- Ensure the market-specific information about your company, such as contact information or local product-support phone numbers, is correct.
 
 ### Other risk areas
 

@@ -44,18 +44,31 @@ The conventions and formats of various kinds of data vary by locale.
 A global application must be able to handle user's data by the conventions and standards of the user's locale.
 
 * [Calendars](../locale/calendars.md)
+
 * [Case mapping](../text/case-mapping.md)]
+
 * [Currency formatting](../locale/currency-formats.md)
+
 * [Date and time formatting](../locale/date-time-formats.md)
+
 * [Measurement units](../locale/measurement-units.md)
+
 * [Number formatting](../locale/number-formatting.md)
+
 * [Paper and envelope size](../locale/paper-size.md)
+
 * [Payment methods](../internationalization/payment-methods.md)
+
 * [Postal address formats](../locale/addresses.md)
+
 * [Punctuation, separators](../internationalization/punctuation-separators.md)
+
 * [Sorting, comparison, and search](../locale/sorting-and-string-comparison.md)
+
 * [Spell-checker or thesaurus/dictionary support](../locale/dictionaries-spelling.md)
+
 * [Telephone number formatting](../locale/telephone-numbers.md)
+
 * [Text parsing and validation](../text/parsing-input.md)
 
 ## Display
