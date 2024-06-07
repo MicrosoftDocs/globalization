@@ -1,6 +1,8 @@
 ---
 title: Internationalization Checklist
 description: A summary of areas that should be validated to ensure localizability.
+ms.date: 01/01/2022
+ms.topic: checklist
 ---
 
 # Internationalization checklist
@@ -43,7 +45,7 @@ A global application must be able to handle user's data by the conventions and s
 
 * [Calendars](../locale/calendars.md)
 
-<!--NYI * [Case mapping](../text/case-mapping.md)] -->
+* [Case mapping](../text/case-mapping.md)]
 
 * [Currency formatting](../locale/currency-formats.md)
 
@@ -55,7 +57,7 @@ A global application must be able to handle user's data by the conventions and s
 
 * [Paper and envelope size](../locale/paper-size.md)
 
-<!--NYI * [Payment methods](../internationalization/payment-methods.md) -->
+* [Payment methods](../internationalization/payment-methods.md)
 
 * [Postal address formats](../locale/addresses.md)
 
@@ -63,11 +65,11 @@ A global application must be able to handle user's data by the conventions and s
 
 * [Sorting, comparison, and search](../locale/sorting-and-string-comparison.md)
 
-<!-- NYI * [Spell-checker or thesaurus/dictionary support](../locale/dictionaries-spelling.md) -->
+* [Spell-checker or thesaurus/dictionary support](../locale/dictionaries-spelling.md)
 
 * [Telephone number formatting](../locale/telephone-numbers.md)
 
-<!-- NYI * [Text parsing and validation](../text/parsing-input.md) -->
+* [Text parsing and validation](../text/parsing-input.md)
 
 ## Display
 
