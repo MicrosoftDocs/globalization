@@ -70,6 +70,6 @@ Experience shows that some tools are easy to globalize, while others aren't. Mor
 
 ## What comes next
 
-Once you verify that a product's functionality has been globalized by globalizing the existing testing, you need to determine whether the application is going to be localized. If so, the next step is **internationalization testing**, discussed in [When to perform internationalization testing](when-to-test.md) and [How to perform internationalization testing](what-to-look-for-when-testing.md).
+Once you verify that a product's functionality has been globalized by globalizing the existing testing, you need to determine whether the application is going to be localized. If so, the next step is **internationalization testing**, discussed in [When to perform internationalization testing](when-to-perform-internationalization-testing.md) and [How to perform internationalization testing](how-to-perform-internationalization-testing.md).
 
-After internationalization testing is done, its findings implemented, and at least one or two languages have been localized, it’s time to carry out **localization testing**. For more information, see [How to perform localization testing](how-to-test.md).
+After internationalization testing is done, its findings implemented, and at least one or two languages have been localized, it’s time to carry out **localization testing**. For more information, see [How to perform localization testing](how-to-perform-localization-testing.md).

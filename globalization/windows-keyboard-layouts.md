@@ -2,7 +2,7 @@
 title: Windows keyboard layouts
 description: Choose a keyboard below to view its layouts.
 ms.date: 06/22/2023
-ms.topic: navigation
+ms.topic: reference
 author: jowilco
 ---
 
