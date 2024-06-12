@@ -21,10 +21,13 @@ Input Method Editors (IME) let users enter characters in languages such as Japan
 
 IMEs for the following languages are covered in more detail:
 
+- [Bengali IME](bengali-ime.md)
+- [Hindi IME](hindi-ime.md)
 - [Japanese IME](japanese-ime.md)
 - [Korean IME](korean-ime.md)
 - [Simplified Chinese IME](simplified-chinese-ime.md)
 - [Traditional Chinese IME](traditional-chinese-ime.md)
+- [Vietnamese IME](vietnamese-ime.md)
 
 ## Keyboard shortcuts in localized applications
 
