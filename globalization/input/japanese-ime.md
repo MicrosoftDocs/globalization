@@ -11,9 +11,9 @@ ms.date: 02/15/2024
 
 If you need to enter some text in Japanese, the Japanese Input Method Editor (IME) for Windows lets you enter text using hiragana or katakana characters while using a typical keyboard with 101-105 keys. The IME also converts your input into kanji characters. Using the IME doesn't require changing your current Windows display language.
 
-## Add support for Simplified Chinese input
+## Add support for Japanese input
 
-To add support for Simplified Chinese input to Windows:
+To add support for Japanese input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Japanese** from the list and select **Next**.

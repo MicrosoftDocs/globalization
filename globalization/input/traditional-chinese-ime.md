@@ -19,9 +19,9 @@ This article discusses the following IMEs:
 - Microsoft ChangJie: ChangJie (or Cangjie) or  is a shape-based input method that enables users to use the shape of characters to input text. Each Traditional Chinese character can be decomposed to one or more elements or radicals. The ChangJie IME allows users to use keystrokes that correspond to the decomposed elements to build up a final character. ChangJie uses geometric shape to organize the decomposed characters, rather than stroke order that is used in DaYi.
 - Microsoft Quick: Quick is also known as Simplified ChangJie. It lets users enter a character’s first and the last stroke used in the full ChangJie system and then pick a character from the conversion candidate window.
 
-## Add support for Simplified Chinese input
+## Add support for Traditional Chinese input
 
-To add support for Simplified Chinese input to Windows:
+To add support for Traditional Chinese input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Chinese (Traditional, Hong Kong SAR)** from the list and select **Next**.

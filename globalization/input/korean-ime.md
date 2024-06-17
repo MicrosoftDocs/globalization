@@ -78,7 +78,7 @@ To type the word, select the Korean keyboard layout from the system tray and cha
 
 ## Using the Microsoft Old Hangul IME for historical jamo
 
-The Hunminjeongeum included 28 letters, but 4 of these letters (ㆆ, ㆁ, ㅿ, ·) are no longer in common use in modern Hangul. Similarly, digraphs like ㅸ and ㅼ are no longer used. For example, 꿈 (kkum - "dream") was previously written as ᄭᅮᆷ. The Microsoft Old Hangul IME enables you to enter these jamo.
+The Hunminjeongeum included 28 letters, but 4 of these letters (ㆆ, ㆁ, ㅿ, and ·) are no longer in common use in modern Hangul. Similarly, digraphs like ㅸ and ㅼ are no longer used. For example, 꿈 (kkum - "dream") was previously written as ᄭᅮᆷ. The Microsoft Old Hangul IME enables you to enter these jamo.
 
 To type text using the Microsoft Old Hangul IME:
 

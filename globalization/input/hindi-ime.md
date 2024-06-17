@@ -11,9 +11,9 @@ ms.date: 06/12/2024
 
 If you need to enter some text in Hindi, Windows includes an Input Method Editor and keyboard layouts that let you enter text using the Devanagari script while using a typical keyboard with 101-105 keys. Using the IME doesn't require changing your current Windows display language.
 
-## Add support for Simplified Chinese input
+## Add support for Hindi input
 
-To add support for Simplified Chinese input to Windows:
+To add support for Hindi input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Hindi** from the list and select **Next**.

@@ -11,9 +11,9 @@ ms.date: 06/13/2024
 
 If you need to enter some text in Amharic, Windows includes an Input Method Editor that lets you enter text using the Amharic script while using a typical keyboard with 101-105 keys. Using the IME doesn't require changing your current Windows display language.
 
-## Add support for Simplified Chinese input
+## Add support for Amharic input
 
-To add support for Simplified Chinese input to Windows:
+To add support for Amharic input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Amharic** from the list and select **Next**.
@@ -38,7 +38,7 @@ Amharic is an [abugida](../fonts-layout/writing-systems.md#abugida-syllabic-alph
 
 The Amharic word for winter is ክረምት, which can be transliterated as kremt or kiremiti.
 
-To type the word, select the Amharic Input Method from the system tray. Then type  with the English keys:
+To type the word, select the Amharic Input Method from the system tray. Then type using the corresponding English keys:
 
 - k - ክ
 - re – ረ

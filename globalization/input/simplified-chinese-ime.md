@@ -58,7 +58,7 @@ When either Simplified Chinese IME is active, you can right-click the input mode
 For Microsoft Pinyin, these settings include:
 
 - Pinyin style, reading autocorrection, super abbreviated Pinyin, IME default modes, and fuzzy Pinyin rules
-- [Keyboard shortcuts](#configure-keyboard-shortcuts)
+- [Keyboard shortcuts](#configure-keyboard-shortcuts-pinyin-ime-only)
 - Appearance of the candidate window
 - Lexicon and self-learning settings
 - Various advanced settings
@@ -112,7 +112,7 @@ To open the IME toolbar, open the right-click menu and select **IME toolbar**. I
 - You can change between half-width and full-width characters.
 - You can change between Chinese and English punctuation.
 - You can change between Simplified and Traditional Chinese characters. (Pinyin IME only)
-- You can open the [Emoji & symbol](#enter-emoji-and-symbols) dialog.
+- You can open the [Emoji & symbol](#enter-emoji-and-symbols-pinyin-and-wubi-imes) dialog.
 - You can open the **IME Settings** page or customize the toolbar itself.
 
 ## Example
