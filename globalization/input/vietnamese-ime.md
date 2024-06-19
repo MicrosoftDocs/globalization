@@ -67,18 +67,18 @@ The Vietnamese word for garden is vườn.
 1. Select **Vietnamese Telex**. The system tray now shows **VIE** instead of **ENG** indicating that you can now type in Vietnamese.
 1. Type vuwofwn with the English keys:
 
-- v
-- uw – ư
-- ofw – ờ
-- n
+    - v
+    - uw – ư
+    - ofw – ờ
+    - n
 
 ### Type using the Vietnamese Number Key-based IME
 
 1. Select **Vietnamese Number Key-based**. The system tray now shows **VIE** instead of **ENG** indicating that you can now type in Vietnamese.
 1. When using the Vietnamese Number Key-based IME, you can use the number keys at any time while typing the word. The IME will add the diacritical marks at the appropriate location. The typical order of entry is the base letters of the word followed by the number keys for the diacritics. For example, to type vườn, type vuon72. Other options for typing vườn are:
 
-- vu7o27n
-- vu7o72n
-- vuo72n
+    - vu7o27n
+    - vu7o72n
+    - vuo72n
 
 1. When you're finished typing, press Enter to select the Vietnamese word.
