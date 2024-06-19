@@ -19,7 +19,7 @@ To add support for Hindi input to Windows:
 1. Select **Add a language**. Select **Hindi** from the list and select **Next**.
 1. Consider if you need any of the **Optional language features**. If you want to enter Hindi text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
-By default, Hindi is installed with the Hindi Traditional keyboard. To install the Microsoft Hindi Phonetic IME:
+By default, Hindi is installed with the [Hindi Traditional](../keyboards/kbdinhin.md) keyboard. To install the Microsoft Hindi Phonetic IME:
 
 1. On the **Language & region** page, select the Options (**…**) icon next to **Hindi** and select **Language options**.
 1. Select **Add a keyboard** and select **Hindi Phonetic**.
@@ -59,7 +59,7 @@ To type बगीचा, select the Hindi Phonetic IME from the system tray. The
 To type बगीचा, select the Hindi Traditional keyboard layout from the system tray. Use the following keystrokes to type the Hindi word for garden:
 
 | Devanagari letter | Keystroke on the English US keyboard | Phonetic equivalent |
-|----------------|--------------------------------------|---------------------|
+|-------------------|--------------------------------------|---------------------|
 | ब | y | ba |
 | ग | i | ga |
 | ◌ी | r | {vowel sign ii} |

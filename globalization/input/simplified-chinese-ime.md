@@ -46,7 +46,7 @@ If you prefer, you can also change the layout by selecting the system tray icon 
 
 ### To type text in Simplified Chinese using the Microsoft Wubi IME
 
-1. Select **Chinese (Simplified, China) | Microsoft Wubi**. The system tray now shows **五** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英)**, press the Shift key or select the input mode icon.
+1. Select **Chinese (Simplified, China) | Microsoft Wubi**. The system tray now shows **五** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英**), press the Shift key or select the input mode icon.
 1. The Wubi IME groups keys into regions based on the first stroke of the root characters. To enter a character, start by pressing the keys that correspond to the root character, followed by the keys that correspond to the remaining strokes. The candidate window opens and shows matches for what you typed.
 1. Different characters can be composed of the same root characters. Wubi addresses this by using isolation keys to specify the configuration of the character. Enter the isolation key after the root characters to select the correct character as necessary.
 1. The conversion candidate window allows you to choose the correct character.

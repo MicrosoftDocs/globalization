@@ -19,7 +19,7 @@ To add support for Bengali input to Windows:
 1. Select **Add a language**. Select **Bengali (India)** from the list and select **Next**.
 1. Consider if you need any of the **Optional language features**. If you want to enter Bengali text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
-By default, Bengali support is installed with the Bangla INSCRIPT keyboard. To install the Microsoft Bangla Phonetic IME:
+By default, Bengali support is installed with the [Bangla INSCRIPT](../keyboards/kbdinbe2.md) keyboard. To install the Microsoft Bangla Phonetic IME:
 
 1. On the **Language & region** page, select the Options (**…**) icon next to **Bengali (India)** and select **Language options**.
 1. Select **Add a keyboard** and select **Bangla Phonetic**.
