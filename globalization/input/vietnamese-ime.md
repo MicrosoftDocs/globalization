@@ -3,8 +3,8 @@ title: Vietnamese IME
 description: Installing and using Vietnamese Input Method Editors (IME)
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
-ms.date: 06/11/2024
+ms.topic: how-to
+ms.date: 06/19/2024
 ---
 
 # Vietnamese IME

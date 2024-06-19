@@ -3,8 +3,8 @@ title: Gujarati IME
 description: Installing and using the Gujarati Input Method Editor (IME)
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
-ms.date: 06/12/2024
+ms.topic: how-to
+ms.date: 06/19/2024
 ---
 
 # Gujarati IME
@@ -48,7 +48,7 @@ To type text using the Gujarati INSCRIPT keyboard:
 
 ## Example
 
-The Gujarati word for garden is બગીચો, which can be transliterated as bagicho. 
+The Gujarati word for garden is બગીચો, which can be transliterated as bagicho.
 
 ### Type with the Gujarati Phonetic IME
 

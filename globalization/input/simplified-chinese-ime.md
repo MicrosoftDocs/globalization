@@ -3,8 +3,8 @@ title: Simplified Chinese IME
 description: Installing and using Simplified Chinese Input Method Editors (IME)
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
-ms.date: 02/15/2024
+ms.topic: how-to
+ms.date: 06/19/2024
 ---
 
 # Simplified Chinese IMEs

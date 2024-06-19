@@ -3,8 +3,8 @@ title: Odia IME
 description: Installing and using the Odia Input Method Editor (IME)
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
-ms.date: 06/12/2024
+ms.topic: how-to
+ms.date: 06/19/2024
 ---
 
 # Odia IME

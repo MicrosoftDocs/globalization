@@ -3,8 +3,8 @@ title: Tamil IME
 description: Installing and using the Tamil Input Method Editor (IME)
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
-ms.date: 06/12/2024
+ms.topic: how-to
+ms.date: 06/19/2024
 ---
 
 # Tamil IME
@@ -68,4 +68,4 @@ To type தோட்டம், select the Tamil 99 keyboard layout from the syst
 | ம | k | ma |
 | ◌் | f | {virama - isolates the consonant from tta}  |
 
-When you're finished typing, select Spacebar or Enter, and the word தோட்டம் appears on the screen. Note that த and ◌ோ will resolve to தோ.
+When you're finished typing, select Spacebar or Enter. த and ோ will resolve to தோ and the word தோட்டம் appears on the screen.
