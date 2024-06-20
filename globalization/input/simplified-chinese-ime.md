@@ -17,7 +17,7 @@ To add support for Simplified Chinese input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Chinese (Simplified, China)** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Simplified Chinese text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Simplified Chinese text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 By default, Simplified Chinese support is installed with the Microsoft Pinyin IME, based on the phonetic Pinyin method of romanization (converting text to the Latin script). You can also use the Microsoft Wubi IME, which enables you to use the structure of characters to input text. Each Simplified Chinese character can be decomposed to one or more *root characters*, and the Wubi IME allows users to enter root characters to build up a final character. To install the Microsoft Wubi IME:
 
@@ -26,15 +26,17 @@ By default, Simplified Chinese support is installed with the Microsoft Pinyin IM
 
 ## Type Simplified Chinese text
 
-The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
+The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by selecting the Windows logo key + Spacebar.
 
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
+
 ### To type text in Simplified Chinese using the Microsoft Pinyin IME
 
-1. Select **Chinese (Simplified, China) | Microsoft Pinyin**. The system tray now shows **拼** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英)**, press the Shift key or select the input mode icon.
+1. Select **Chinese (Simplified, China) | Microsoft Pinyin**. The system tray now shows **拼** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英)**, select the Shift key or select the input mode icon.
 1. Start typing the Simplified Chinese character or word using its phonetic Pinyin transcription. The conversion candidate window opens and shows matches for what you typed. You can keep typing and the candidate window updates in real time.
 1. To navigate the window, use your mouse or the following keys:
     - Down and Up arrow keys to move to the next/previous candidate
@@ -46,8 +48,8 @@ If you prefer, you can also change the layout by selecting the system tray icon 
 
 ### To type text in Simplified Chinese using the Microsoft Wubi IME
 
-1. Select **Chinese (Simplified, China) | Microsoft Wubi**. The system tray now shows **五** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英**), press the Shift key or select the input mode icon.
-1. The Wubi IME groups keys into regions based on the first stroke of the root characters. To enter a character, start by pressing the keys that correspond to the root character, followed by the keys that correspond to the remaining strokes. The candidate window opens and shows matches for what you typed.
+1. Select **Chinese (Simplified, China) | Microsoft Wubi**. The system tray now shows **五** instead of **ENG**, and a new icon showing **中** (indicating Chinese input mode) appears next to it. To change between Chinese and English input (indicated by **英**), select the Shift key or select the input mode icon.
+1. The Wubi IME groups keys into regions based on the first stroke of the root characters. To enter a character, start by selecting the keys that correspond to the root character, followed by the keys that correspond to the remaining strokes. The candidate window opens and shows matches for what you typed.
 1. Different characters can be composed of the same root characters. Wubi addresses this by using isolation keys to specify the configuration of the character. Enter the isolation key after the root characters to select the correct character as necessary.
 1. The conversion candidate window allows you to choose the correct character.
 
@@ -76,7 +78,7 @@ For more information about these settings, see [Microsoft Simplified Chinese IME
 
 #### Change input mode (Pinyin and Wubi IMEs)
 
-You can switch between Chinese and English input modes by pressing the Shift key or selecting the input mode icon in the tray. The icon changes to **中** for Chinese input and **英** for English input.
+You can switch between Chinese and English input modes by selecting the Shift key or selecting the input mode icon in the tray. The icon changes to **中** for Chinese input and **英** for English input.
 
 The Wubi IME also has a menu item for **Input mode** that lets you switch between **Chinese** and **English** input.
 
@@ -121,9 +123,9 @@ To open the IME toolbar, open the right-click menu and select **IME toolbar**. I
 
 The Simplified Chinese word for summer is 夏天. It consists of two characters whose Pinyin romanizations are “xia” and “tian.”
 
-To type the 夏天 using Microsoft Pinyin, select **Microsoft Pinyin** from the system tray and change to Chinese input mode if necessary. Start typing the Pinyin word. The candidate window opens as you type. Don't press Spacebar after “xia”, as that would select the currently focused candidate, which might not be the right character.
+To type the 夏天 using Microsoft Pinyin, select **Microsoft Pinyin** from the system tray and change to Chinese input mode if necessary. Start typing the Pinyin word. The candidate window opens as you type. Don't select Spacebar after “xia”, as that would select the currently focused candidate, which might not be the right character.
 
-After you type “xiatian,” you can see how the IME changes the spelling to “xia’tian” and the correct candidate is displayed as the first one. Press Spacebar to insert it into your text.
+After you type “xiatian,” you can see how the IME changes the spelling to “xia’tian” and the correct candidate is displayed as the first one. Select Spacebar to insert it into your text.
 
 ### Type with the Microsoft Wubi IME
 

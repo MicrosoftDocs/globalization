@@ -17,15 +17,17 @@ To add support for Tigrinya input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Tigrinya (Ethiopia)** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Tigrinya text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Tigrinya text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 ## Type Tigrinya text
 
-The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
+The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by selecting the Windows logo key + Spacebar.
 
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
+
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
 
 Tigrinya is an [abugida](../fonts-layout/writing-systems.md#abugida-syllabic-alphabet), which means that each character represents a consonant with an inherent vowel sound. The Tigrinya IME converts phonemes that you enter to the Tigrinya characters.
 
@@ -45,4 +47,4 @@ To type the word, select the Tigrinya Input Method from the system tray. Then ty
 - m' – ም
 - ti - ቲ
 
-When you're finished typing, press Enter to select the Tigrinya word.
+When you're finished typing, select Enter to select the Tigrinya word.

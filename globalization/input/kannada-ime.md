@@ -17,7 +17,7 @@ To add support for Kannada input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Kannada** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Kannada text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Kannada text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 By default, Kannada is installed with the [Kannada INSCRIPT](../keyboards/kbdinkan.md) keyboard. To install the Kannada Phonetic IME:
 
@@ -26,18 +26,20 @@ By default, Kannada is installed with the [Kannada INSCRIPT](../keyboards/kbdink
 
 ## Type Kannada text
 
-The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
+The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by selecting the Windows logo key + Spacebar.
 
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
+
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
 
 ### Use the Kannada Phonetic IME
 
 To type text in the Kannada script using the Kannada Phonetic IME:
 
 1. Select **Kannada Phonetic**. The system tray now shows **ಕ** instead of **ENG** indicating that you can now type in Kannada.
-1. Type the transliteration of the word you want with the English keys. As you type, notice that the Kannada Phonetic IME automatically converts the English letters into Kannada script suggestions. When you're finished typing, press Enter to convert your text into the first suggested Kannada word. You can also use the cursor keys to select a different suggestion.
+1. Type the transliteration of the word you want with the English keys. As you type, notice that the Kannada Phonetic IME automatically converts the English letters into Kannada script suggestions. When you're finished typing, select Enter to convert your text into the first suggested Kannada word. You can also use the cursor keys to select a different suggestion.
 
 ### Use the Kannada INSCRIPT keyboard
 
@@ -52,7 +54,7 @@ The Kannada word for garden is ಉದ್ಯಾನ, which can be transliterated a
 
 ### Type with the Kannada Phonetic IME
 
-To type ಉದ್ಯಾನ, select the Kannada Phonetic IME from the system tray. Then type *udyaana* with the English keys. As you type, you can see how the IME turns the text into word suggestions. When you're finished typing, the top suggestion is the correct Kannada word. Press Enter to convert the English letters into Kannada script.
+To type ಉದ್ಯಾನ, select the Kannada Phonetic IME from the system tray. Then type *udyaana* with the English keys. As you type, you can see how the IME turns the text into word suggestions. When you're finished typing, the top suggestion is the correct Kannada word. Select Enter to convert the English letters into Kannada script.
 
 ### Type with the Kannada INSCRIPT keyboard
 

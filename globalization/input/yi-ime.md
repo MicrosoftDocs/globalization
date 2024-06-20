@@ -17,21 +17,23 @@ To add support for Yi input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Yi** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Yi text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Yi text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 ## Type Yi text
 
-The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
+The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by selecting the Windows logo key + Spacebar.
 
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
+
 Yi script is a [syllabic](../fonts-layout/writing-systems.md#syllabic) system, which means that each character represents a syllable. The Yi IME converts phonemes that you enter to the Yi characters.
 
 ### To write text in Yi
 
-1. Select **Yi Input Method**. The system tray now shows **彝** instead of **ENG**, and a new icon showing **ꆈ** (indicating Yi input mode) appears next to it. To change between Chinese and English input (indicated by **A**), press the Shift key or select the input mode icon.
+1. Select **Yi Input Method**. The system tray now shows **彝** instead of **ENG**, and a new icon showing **ꆈ** (indicating Yi input mode) appears next to it. To change between Chinese and English input (indicated by **A**), select the Shift key or select the input mode icon.
 1. Type the phonemes you want with the English keys.
 
 ## Example

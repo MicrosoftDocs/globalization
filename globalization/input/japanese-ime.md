@@ -17,22 +17,24 @@ To add support for Japanese input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Japanese** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Japanese text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Japanese text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 ## Type Japanese text
 
-The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
+The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by selecting the Windows logo key + Spacebar.
 
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
+
 To type text using Japanese characters:
 
 1. Select **Japanese Microsoft IME**. The system tray now shows a **Ⓙ** icon instead of **ENG**, and a new icon showing **A** (indicating English input mode, also known as half-width alphanumeric) appears next to it.
-1. Select the **A** icon. The input mode changes to **あ** indicating that you can now type Japanese hiragana characters. You can also change between Japanese and English input by pressing the Alt key + Back quote (`).
-1. Start typing the Japanese character or word using its phonetic transcription. The conversion candidate window opens and shows matches for what you typed. You can keep typing and the candidate window updates in real time. Press the Spacebar to convert your current input into kanji.
-1. To move the focus to the candidate window, press the Tab key. To navigate the window, use your mouse or the following keys:
+1. Select the **A** icon. The input mode changes to **あ** indicating that you can now type Japanese hiragana characters. You can also change between Japanese and English input by selecting the Alt key + Back quote (`).
+1. Start typing the Japanese character or word using its phonetic transcription. The conversion candidate window opens and shows matches for what you typed. You can keep typing and the candidate window updates in real time. Select the Spacebar to convert your current input into kanji.
+1. To move the focus to the candidate window, select the Tab key. To navigate the window, use your mouse or the following keys:
     - Down and Up arrow keys to move to the next/previous candidate
     - Tab key to expand the list to a table that you can navigate with the arrow
     - Number keys to quickly select the corresponding candidate
@@ -112,4 +114,4 @@ The Japanese word for summer is 夏, which is a single kanji character. Its phon
 
 To type the word, select the Japanese keyboard layout from the system tray and change to Japanese hiragana input mode, if necessary. Then type "natsu" without any spaces. You see that the Japanese IME turns your input into hiragana syllables: なつ
 
-The candidate window also opens and shows a list of matches. But all you need to finish the character and convert it into kanji is to press the Spacebar once. If you press Enter, the Japanese IME keeps the word in hiragana.
+The candidate window also opens and shows a list of matches. But all you need to finish the character and convert it into kanji is to select the Spacebar once. If you select Enter, the Japanese IME keeps the word in hiragana.

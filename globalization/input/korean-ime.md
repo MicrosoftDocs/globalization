@@ -17,7 +17,7 @@ To add support for Korean input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Korean** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Korean text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Korean text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 By default, Korean support is installed with the Microsoft IME which enables you to type Hangul and Hanja. You can also use the Microsoft Old Hangul IME which enables you to use jamo that are no longer in common use in modern Hangul. To install the Microsoft Old Hangul IME:
 
@@ -26,23 +26,25 @@ By default, Korean support is installed with the Microsoft IME which enables you
 
 ## Type Korean text
 
-The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
+The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by selecting the Windows logo key + Spacebar.
 
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
 
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
+
 To type text using Hangul:
 
 1. Select **Korean Microsoft IME**. The system tray now shows **한** instead of **ENG**, and a new icon showing **A** (indicating English input mode) appears next to it.
-1. Select the **A** icon. The input mode changes to **가** indicating that you can now type Hangul letters. You can also change between Korean and English input by pressing the right Alt key.
+1. Select the **A** icon. The input mode changes to **가** indicating that you can now type Hangul letters. You can also change between Korean and English input by selecting the right Alt key.
 1. Type Korean consonants with your left hand and vowels with your right hand. The vowel ㅠ is an exception; ㅠ is located on the B key of the English keyboard. Use the Shift key to type compound consonants (Shift + Q, W, E, R, and T) and compound vowels (Shift + O and P).
 
 As you type, you notice that the Korean IME automatically arranges the Hangul letters into blocks representing syllables.
 
 ### Use the Windows On-Screen Keyboard (OSK) to learn
 
-The Windows OSK is a convenient way to learn which Hangul letter is assigned to which English key, and you can also use it to enter text. To switch the OSK on or off, press the Windows logo key + Ctrl + O. For more information, see [Use the On-Screen Keyboard (OSK) to type](https://support.microsoft.com/en-us/windows/use-the-on-screen-keyboard-osk-to-type-ecbb5e08-5b4e-d8c8-f794-81dbf896267a).
+The Windows OSK is a convenient way to learn which Hangul letter is assigned to which English key, and you can also use it to enter text. To switch the OSK on or off, select the Windows logo key + Ctrl + O. For more information, see [Use the On-Screen Keyboard (OSK) to type](https://support.microsoft.com/en-us/windows/use-the-on-screen-keyboard-osk-to-type-ecbb5e08-5b4e-d8c8-f794-81dbf896267a).
 
 ## Use the right-click menu for additional options
 
@@ -57,7 +59,7 @@ The Korean IME allows typing with both half-width and full-width characters. To 
 Hanja characters are Chinese characters used to write Korean. If you need to convert a Hangul word into Hanja:
 
 1. Type the word with Hangul letters.
-1. Press the right Ctrl key or open the right-click menu and select **Hanja Convert**.
+1. Open the right-click menu and select **Hanja Convert**. You can also select the right Ctrl key.
 1. If there are several matching words, the Korean IME opens a list from which you can select the one you want.
 
 ### Use the IME Pad for advanced writing options
@@ -83,7 +85,7 @@ The Hunminjeongeum included 28 letters, but 4 of these letters (ㆆ, ㆁ, ㅿ, a
 To type text using the Microsoft Old Hangul IME:
 
 1. Select **Korean Microsoft Old Hangul**. The system tray now shows **옛** instead of **ENG**, and a new icon showing **A** (indicating English input mode) appears next to it.
-1. Select the **A** icon. The input mode changes to **가** indicating that you can now type Hangul letters. You can also change between Korean and English input by pressing the right Alt key.
+1. Select the **A** icon. The input mode changes to **가** indicating that you can now type Hangul letters. You can also change between Korean and English input by selecting the right Alt key.
 1. Type the jamo you want to use. For example, to type ᄭᅮᆷ, select ㅅ, ㄱ, ㅜ, and ㅁ. On the US English keyboard, these jamo are on the T, R, N, and A keys. The Microsoft Old Hangul IME automatically arranges the jamo into a block representing the syllable. Note that if you selected the same jamo on the standard Korean IME, it would form ㅅ굼 as the digraph ㅼ isn't recognized as modern Hangul.
 
 When the Korean keyboard layout is active, you can right-click the input mode icon (**A** or **가**) to access additional options and tools. One of these tools is **Soft Keyboard** which shows the jamo on the screen and lets you select them with your mouse or touchpad.

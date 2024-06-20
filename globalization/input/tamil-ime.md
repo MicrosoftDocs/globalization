@@ -17,7 +17,7 @@ To add support for Tamil input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Tamil** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Tamil text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Tamil text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 By default, Tamil is installed with the [Tamil 99](../keyboards/kbdtam99.md) keyboard. To install the Tamil Phonetic IME:
 
@@ -26,18 +26,20 @@ By default, Tamil is installed with the [Tamil 99](../keyboards/kbdtam99.md) key
 
 ## Type Tamil text
 
-The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by pressing the Windows logo key + Spacebar.
+The Windows system tray shows which keyboard layout is currently active, for example, **ENG**. You can switch between installed layouts (layouts in the **Preferred languages** list in Settings) by selecting the Windows logo key + Spacebar.
 
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
+
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
 
 ### Use the Tamil Phonetic IME
 
 To type text in the Tamil script using the Tamil Phonetic IME:
 
 1. Select **Tamil Phonetic**. The system tray now shows **த** instead of **ENG** indicating that you can now type in Tamil.
-1. Type the transliteration of the word you want with the English keys. As you type, notice that the Tamil Phonetic IME automatically converts the English letters into Tamil script suggestions. When you're finished typing, press Enter to convert your text into the first suggested Tamil word. You can also use the cursor keys to select a different suggestion.
+1. Type the transliteration of the word you want with the English keys. As you type, notice that the Tamil Phonetic IME automatically converts the English letters into Tamil script suggestions. When you're finished typing, select Enter to convert your text into the first suggested Tamil word. You can also use the cursor keys to select a different suggestion.
 
 ### Use the Tamil 99 keyboard
 
@@ -52,7 +54,7 @@ The Tamil word for garden is தோட்டம், which can be transliterated 
 
 ### Type with the Tamil Phonetic IME
 
-To type தோட்டம், select the Tamil Phonetic IME from the system tray. Then type *thottam* with the English keys. As you type, you can see how the IME turns the text into word suggestions. When you're finished typing, the top suggestion is the correct Tamil word. Press Enter to convert the English letters into Tamil script.
+To type தோட்டம், select the Tamil Phonetic IME from the system tray. Then type *thottam* with the English keys. As you type, you can see how the IME turns the text into word suggestions. When you're finished typing, the top suggestion is the correct Tamil word. Select Enter to convert the English letters into Tamil script.
 
 ### Type with the Tamil 99 keyboard
 

@@ -25,7 +25,7 @@ To add support for Traditional Chinese input to Windows:
 
 1. Open Settings and select **Time & language** > **Language & region**.
 1. Select **Add a language**. Select **Chinese (Traditional, Hong Kong SAR)** from the list and select **Next**.
-1. Consider if you need any of the **Optional language features**. If you want to enter Traditional Chinese text while keeping English as your Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
+1. Consider if you need any of the **Optional language features**. If you want to enter Traditional Chinese text while keeping your current Windows display language, none of them are necessary. When you're happy with your choices, select **Install**.
 
 By default, Traditional Chinese support is installed with the Microsoft Quick IME. To any of the other IMEs:
 
@@ -39,6 +39,8 @@ The Windows system tray shows which keyboard layout is currently active, for exa
 If you prefer, you can also change the layout by selecting the system tray icon and selecting the layout from the list. This method can be faster if you have more than two languages installed.
 
 :::image type="content" source="images/keyboard-layouts.png" alt-text="Windows 11 with several keyboard layouts installed.":::
+
+If multiple IME/keyboards are installed for a given language, the list and the tray icon will show a combination of language and layout.
 
 ## Use the Chinese Traditional Array IME
 
