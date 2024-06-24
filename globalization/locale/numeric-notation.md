@@ -29,8 +29,6 @@ Several other sets of digits are used:
 | Javanese | ꧐ ꧑ ꧒ ꧓ ꧔ ꧕ ꧖ ꧗ ꧘ ꧙ |
 | Kannada | ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯ |
 | Khmer | ០ ១ ២ ៣ ៤ ៥ ៦ ៧ ៨ ៩ |
-| Korean (한자어 숫자/Sino-Korean numbers) | 일 이 삼 사 오 육 칠 팔 구… |
-| Korean (고유어 숫자/native Korean numbers) | 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉… |
 | Lao | ໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘ ໙ |
 | Malayalam | ൦ ൧ ൨ ൩ ൪ ൫ ൬ ൭ ൮ ൯ |
 | Mon–Burmese | ၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉ |
@@ -38,12 +36,11 @@ Several other sets of digits are used:
 | N’ko | &#x2067;߀ ߁ ߂ ߃ ߄ ߅ ߆ ߇ ߈ ߉ &#x2069;|
 | Odia | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯ |
 | Ol Chiki | ᱐ ᱑ ᱒ ᱓ ᱔ ᱕ ᱖ ᱗ ᱘ ᱙ |
-| Oriya | ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭ ୮ ୯ |
 | Tamil | ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯ |
 | Telugu | ౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯ |
 | Thai | ๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ |
 | Tibetan | ༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩ |
 
-The numeral system and the digits used can depend on the context. For example, in Korea, Arabic numerals are commonly used; however, hanja-eo (Sino-Korean) numerals can be used when discussing time and goyu-eo (native Korean) numerals can be used when counting objects.
+The numeral system and the digits used can depend on the context. For example, in Korea, Arabic numerals are commonly used; however, hanja-eo (Sino-Korean) numbers (일 이 삼 사 오 육 칠 팔 구…) can be used when discussing time and goyu-eo (native Korean) numbers (하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉…) can be used when counting objects.
 
 An example of an algorithmic system is Roman numerals, where I, V, X, L, C, D, and M, represent 1, 5, 10, 50, 100, 500, and 1,000 respectively.
