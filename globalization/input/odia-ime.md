@@ -9,7 +9,7 @@ ms.date: 06/19/2024
 
 # Odia IME
 
-If you need to enter some text in Odia, Windows includes an Input Method Editor and keyboard layouts that let you enter text using the Odia script while using a typical keyboard with 101-105 keys. Using the IME doesn't require changing your current Windows display language.
+If you need to enter some text in Odia (also known as Oriya), Windows includes an Input Method Editor and keyboard layouts that let you enter text using the Odia script while using a typical keyboard with 101-105 keys. Using the IME doesn't require changing your current Windows display language.
 
 ## Add support for Odia input
 
