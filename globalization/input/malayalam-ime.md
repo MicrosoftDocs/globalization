@@ -63,8 +63,7 @@ To type തോട്ടം, select the Malayalam INSCRIPT keyboard layout fro
 | Malayalam letter | Keystroke on the English US keyboard | Phonetic equivalent |
 |----------------|--------------------------------------|---------------------|
 | ത | l | ta |
-| ◌േ | s | {vowel sign ee} |
-| ◌ാ | e | {vowel sign aa} |
+| ◌ോ | a | {vowel sign oo} |
 | ട | ' | tta |
 | ◌് | d | {virama - isolates the consonant from tta}  |
 | ട | ' | tta |
