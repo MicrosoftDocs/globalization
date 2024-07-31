@@ -38,7 +38,7 @@ To type text using Hangul:
 
 1. Select **Korean Microsoft IME**. The system tray now shows **한** instead of **ENG**, and a new icon showing **A** (indicating English input mode) appears next to it.
 1. Select the **A** icon. The input mode changes to **가** indicating that you can now type Hangul letters. You can also change between Korean and English input by selecting the right Alt key.
-1. Type Korean consonants with your left hand and vowels with your right hand. The vowel ㅠ is an exception; ㅠ is located on the B key of the English keyboard. Use the Shift key to type compound consonants (Shift + Q, W, E, R, and T) and compound vowels (Shift + O and P).
+1. Type Korean consonants with your left hand and vowels with your right hand. The vowel ㅠ is located on the B key of the English keyboard and users who are familiar with the Korean keyboard typically type ㅠ with their right hand. Use the Shift key to type compound consonants (Shift + Q, W, E, R, and T) and compound vowels (Shift + O and P).
 
 As you type, you notice that the Korean IME automatically arranges the Hangul letters into blocks representing syllables.
 
