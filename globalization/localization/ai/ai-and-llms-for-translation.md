@@ -33,7 +33,7 @@ There has been an evolution in approaches to machine translation, including:
 - Statistical machine translation: machine translation based on statistical analysis of bilingual text corpora
 - Neural machine translation (NMT): NMT also uses statistical analysis to predict the likelihood of word sequences. It relies on neural networks to model entire sentences.
 
-Advances in large language models (LLMs) are enabling new paradigms for natural language processing tasks, which include translation. LLMs have the potential to outperform NMT, while enabling [natural language processing features](globalizing-ai-based-features.md) in multilingual applications.
+Advances in large language models (LLMs) are enabling new paradigms for natural language processing tasks, which include translation. LLMs have the potential to outperform NMT, while enabling [natural language processing features](localizing-ai-based-features.md) in multilingual applications.
 
 ### Large language models and globalization
 
