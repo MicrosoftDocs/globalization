@@ -1,11 +1,11 @@
 ---
-title: International design
-description: It's important to think about internationalization from the very beginning of a software project. This article provides an extensive checklist of internationalization requirements when developing software.
+title: Design software for international markets
+description: Understand how to design software for international markets. (internationalization/i18n/world readiness)
 author: PaulDempsey-ms
 ms.date: 6/7/2022
 ---
 
-# International design
+# Designing software for international markets
 
 When working on any software project, it's important to think about internationalization from the very beginning of its design.
 Your first iteration or release may not be translated into another language, but the decisions that you make early in the project can determine your ability to deliver to other markets later.
@@ -15,7 +15,7 @@ The user interface design is the most affected, but globalization must be consid
 A universal policy to consider globalization is all about saving time and money, and providing the experience customers expect.
 World-readiness should be examined for every component of an application.
 
-This article can be considered a check-list of points to cover when reviewing world-readiness.
+This article can be considered a checklist of points to cover when reviewing world-readiness.
 
 ## What makes a feature world ready?
 
