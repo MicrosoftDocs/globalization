@@ -110,8 +110,8 @@ To open the IME toolbar, open the right-click menu and select **IME toolbar**. I
 
 ## Example
 
-The Japanese word for summer is 夏, which is a single kanji character. Its phonetic romanization is "natsu" or "natu."
+The Japanese word for summer is 夏, which is a single kanji character. Its phonetic romanization is "natsu".
 
-To type the word, select the Japanese keyboard layout from the system tray and change to Japanese hiragana input mode, if necessary. Then type "natsu" or "natu" without any spaces. You see that the Japanese IME turns your input into hiragana syllables: なつ
+To type the word, select the Japanese keyboard layout from the system tray and change to Japanese hiragana input mode, if necessary. Then type "natsu" without any spaces. You see that the Japanese IME turns your input into hiragana syllables: なつ
 
 The candidate window also opens and shows a list of matches. But all you need to finish the character and convert it into kanji is to select the Spacebar once. If you select Enter, the Japanese IME keeps the word in hiragana.
