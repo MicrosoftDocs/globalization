@@ -1,6 +1,6 @@
 ---
 title: Localize your product
-description: Understand the process of localization and strategies for localizing different types of content. (localize/l10n)
+description: Understand the process of localization (l10n) and strategies for how to localize different types of content.
 author: m-kauppinen
 ms.author: v-mikau
 ms.topic: conceptual #Required; leave this attribute/value as-is.
