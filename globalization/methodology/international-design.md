@@ -1,11 +1,11 @@
 ---
 title: Design software for international markets
-description: Understand how to design software for international markets. (internationalization/i18n/world readiness)
+description: Understand how to design software for international markets by using internationalization (i18n) best practices.
 author: PaulDempsey-ms
 ms.date: 6/7/2022
 ---
 
-# Designing software for international markets
+# Design software for international markets
 
 When working on any software project, it's important to think about internationalization from the very beginning of its design.
 Your first iteration or release may not be translated into another language, but the decisions that you make early in the project can determine your ability to deliver to other markets later.
