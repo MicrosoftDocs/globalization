@@ -1,6 +1,6 @@
 ---
 title: Global product delivery
-description: Deliver a great product experience for all customers, no matter where they live or what language they speak. (global delivery)
+description: Deliver a great product experience for all customers, no matter where they live or what language they speak. 
 author: PaulDempsey-ms
 ms.date: 6/7/2022
 ---

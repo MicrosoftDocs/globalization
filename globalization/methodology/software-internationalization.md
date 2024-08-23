@@ -1,6 +1,6 @@
 ---
 title: Software Internationalization
-description: Design and develop your application for international markets from the beginning to ensure global support. (Internationalization/i18n)
+description: Design and develop your application using internationalization (i18n) best practices to ensure global support.
 ms.date: 3/26/2024
 author: jowilco
 ms.custom:
