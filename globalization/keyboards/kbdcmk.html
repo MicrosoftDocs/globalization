@@ -1,0 +1,1090 @@
+<HTML lang="en">
+<HEAD>
+    <TITLE>
+        Colemak Keyboard Layout
+    </TITLE>
+    <META name="description" content="Colemak Keyboard">
+    <META name="ms.locale" content="EN-US">
+    <META name="color-scheme" content="dark light">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <META name="robots" content="noindex">
+</HEAD>
+<BODY onLoad="keyOpen()">
+    <div id="glosso" style="left: 0px; top: 0px; z-index:30; position:absolute; background:#EEEE99;border: 1pt
+        solid #000;color:#000000;font-family:arial,helvetica,geneva;font-size:11px;padding:2px;"></div>
+    <script type="text/javascript" language="javascript">
+        var State = 0;
+        var Clicked = 0;
+        document.addEventListener('DOMContentLoaded', SetBackgroundColor);
+        parent.window.addEventListener('theme-changed', SetBackgroundColor);
+        Xoffset = 10;    // modify these values to ...
+        Yoffset = 10;    // change the popup position.
+
+        var old, skn, iex = (document.all), yyy = -1000;
+
+        var ns4 = document.layers
+        var ns6 = document.getElementById && !document.all
+        var ie4 = document.all
+
+        if (window.opera) ns6 = true;
+
+        if (ns4)
+            skn = document.glosso
+        else if (ns6)
+            skn = document.getElementById("glosso").style
+        else if (ie4)
+            skn = document.all.glosso.style
+        if (ns4) document.captureEvents(Event.MOUSEMOVE);
+        else {
+            skn.visibility = "visible"
+            skn.display = "none"
+        }
+        document.onmousemove = get_mouse;
+        function popup(msg) {
+            var content = msg;
+            yyy = Yoffset;
+            if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible" }
+            if (ns6) { document.getElementById("glosso").innerHTML = content; skn.display = '' }
+            //if(ie4){document.all("glosso").innerHTML=content;skn.display=''}
+        }
+        function get_mouse(e) {
+            var blont = document.getElementById("glosso").innerHTML;
+            var x = (ns4 || ns6) ? e.pageX : event.x + document.body.scrollLeft;
+            if ((x > 110) && (x < 220)) {
+                if (blont.length > 25) x -= 40;
+
+                x = x - 65;
+            }
+            if (x > 220) {
+                if (blont.length > 25) {
+                    x = x - 40;
+                }
+                if (blont.length > 45) {
+                    x = x - 40;
+                }
+                if (blont.length > 65) {
+                    x = x - 30;
+                }
+                x = x - 110;
+            }
+            skn.left = x + Xoffset;
+            var y = (ns4 || ns6) ? e.pageY : event.y + document.documentElement.scrollTop;
+            if (y > 65) {
+                y = y - 40;
+            } else {
+                y = y + 18;
+            }
+            skn.top = y;
+            //alert(content);
+        }
+        function kill() {
+            yyy = -1000;
+            if (ns4) { skn.visibility = "hidden"; }
+            else if (ns6 || ie4)
+                skn.display = "none"
+        }
+        function SetBackgroundColor() {
+            var theme = localStorage.getItem('theme');
+            if (theme == 'dark') {
+                document.body.style.backgroundColor = '#171717';
+            }
+            if (theme == 'high-contrast') {
+                document.body.style.backgroundColor = '#000000';
+            }
+            if (theme == 'light') {
+                document.body.style.backgroundColor = '#FFFFFF';
+            }
+            else {
+                //docs.microsoft.com theme has not been set yet. Default to browser theme.
+            }
+
+        }
+        function chooseState(x) {
+            switch (State) {
+                case 0:
+                    document.all.normallower.style.display = 'none';
+                    break;
+                case 1:
+                    document.all.normalcaps.style.display = 'none';
+                    break;
+                case 2:
+                    document.all.shiftlower.style.display = 'none';
+                    break;
+                case 3:
+                    document.all.shiftcaps.style.display = 'none';
+                    break;
+                case 4:
+                    document.all.ctrllower.style.display = 'none';
+                    break;
+                case 5:
+                    document.all.ctrlcaps.style.display = 'none';
+                    break;
+                case 6:
+                    document.all.shiftctrllower.style.display = 'none';
+                    break;
+                case 7:
+                    document.all.shiftctrlcaps.style.display = 'none';
+                    break;
+                case 8:
+                case 12:
+                    document.all.ctrlaltlower.style.display = 'none';
+                    break;
+                case 9:
+                case 13:
+                    document.all.ctrlaltcaps.style.display = 'none';
+                    break;
+                case 10:
+                case 14:
+                    document.all.shiftctrlaltlower.style.display = 'none';
+                    break;
+                case 11:
+                case 15:
+                    document.all.shiftctrlaltcaps.style.display = 'none';
+                    break;
+                case 16:
+                    document.all.xxxxlower.style.display = 'none';
+                    break;
+                case 17:
+                    document.all.xxxxcaps.style.display = 'none';
+                    break;
+                case 18:
+                    document.all.shiftxxxxlower.style.display = 'none';
+                    break;
+                case 19:
+                    document.all.shiftxxxxcaps.style.display = 'none';
+                    break;
+                default:
+                    break;
+            }
+            switch (x) {
+                case 0:
+                    document.all.normallower.style.display = '';
+                    break;
+                case 1:
+                    document.all.normalcaps.style.display = '';
+                    break;
+                case 2:
+                    document.all.shiftlower.style.display = '';
+                    break;
+                case 3:
+                    document.all.shiftcaps.style.display = '';
+                    break;
+                case 4:
+                    document.all.ctrllower.style.display = '';
+                    break;
+                case 5:
+                    document.all.ctrlcaps.style.display = '';
+                    break;
+                case 6:
+                    document.all.shiftctrllower.style.display = '';
+                    break;
+                case 7:
+                    document.all.shiftctrlcaps.style.display = '';
+                    break;
+                case 8:
+                case 12:
+                    document.all.ctrlaltlower.style.display = '';
+                    break;
+                case 9:
+                case 13:
+                    document.all.ctrlaltcaps.style.display = '';
+                    break;
+                case 10:
+                case 14:
+                    document.all.shiftctrlaltlower.style.display = '';
+                    break;
+                case 11:
+                case 15:
+                    document.all.shiftctrlaltcaps.style.display = '';
+                    break;
+                case 16:
+                    document.all.xxxxlower.style.display = '';
+                    break;
+                case 17:
+                    document.all.xxxxcaps.style.display = '';
+                    break;
+                case 18:
+                    document.all.shiftxxxxlower.style.display = '';
+                    break;
+                case 19:
+                    document.all.shiftxxxxcaps.style.display = '';
+                    break;
+                default:
+                    break;
+            }
+        }
+        function keyOpen() {
+            document.all.loading.style.display = 'none';
+            document.all.normallower.style.display = '';
+        }
+        function MouseOver(x) {
+            if ((Clicked != 1) && ((State & x) == 0)) {
+                chooseState(State | x);
+            }
+            Clicked = 0;
+        }
+        function MouseOut(x) {
+            if ((State & x) == 0) {
+                State |= x;
+                chooseState(State ^ x);
+                State ^= x;
+            }
+        }
+        function Click(x) {
+            chooseState(State ^ x);
+            State ^= x;
+            if ((State & x) == 0) {
+                Clicked = 1;
+            }
+            else {
+                Clicked = 0;
+            }
+        }
+    </script>
+    <DIV ID=loading CLASS=loading>
+        <br><br><br>
+        <h3 align=center>Loading the keyboard layout, please wait....<h3>
+    </DIV>
+<DIV ID=normallower CLASS=normallower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0060.png" ALT="U+0060 GRAVE ACCENT"  onmouseover = "popup('VK_OEM_3<br/>U+0060 GRAVE ACCENT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0031.png" ALT="U+0031 DIGIT ONE"  onmouseover = "popup('VK_1<br/>U+0031 DIGIT ONE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0032.png" ALT="U+0032 DIGIT TWO"  onmouseover = "popup('VK_2<br/>U+0032 DIGIT TWO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0033.png" ALT="U+0033 DIGIT THREE"  onmouseover = "popup('VK_3<br/>U+0033 DIGIT THREE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0034.png" ALT="U+0034 DIGIT FOUR"  onmouseover = "popup('VK_4<br/>U+0034 DIGIT FOUR');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0035.png" ALT="U+0035 DIGIT FIVE"  onmouseover = "popup('VK_5<br/>U+0035 DIGIT FIVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0036.png" ALT="U+0036 DIGIT SIX"  onmouseover = "popup('VK_6<br/>U+0036 DIGIT SIX');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0037.png" ALT="U+0037 DIGIT SEVEN"  onmouseover = "popup('VK_7<br/>U+0037 DIGIT SEVEN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0038.png" ALT="U+0038 DIGIT EIGHT"  onmouseover = "popup('VK_8<br/>U+0038 DIGIT EIGHT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0039.png" ALT="U+0039 DIGIT NINE"  onmouseover = "popup('VK_9<br/>U+0039 DIGIT NINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0030.png" ALT="U+0030 DIGIT ZERO"  onmouseover = "popup('VK_0<br/>U+0030 DIGIT ZERO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002d.png" ALT="U+002D HYPHEN-MINUS"  onmouseover = "popup('VK_OEM_MINUS<br/>U+002D HYPHEN-MINUS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003d.png" ALT="U+003D EQUALS SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+003D EQUALS SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key. U+0009 CHARACTER TABULATION" onmouseover = "popup('VK_TAB<br/>Tab key.<br/>U+0009 CHARACTER TABULATION');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0071.png" ALT="U+0071 LATIN SMALL LETTER Q"  onmouseover = "popup('VK_Q<br/>U+0071 LATIN SMALL LETTER Q');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0077.png" ALT="U+0077 LATIN SMALL LETTER W"  onmouseover = "popup('VK_W<br/>U+0077 LATIN SMALL LETTER W');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0066.png" ALT="U+0066 LATIN SMALL LETTER F"  onmouseover = "popup('VK_F<br/>U+0066 LATIN SMALL LETTER F');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0070.png" ALT="U+0070 LATIN SMALL LETTER P"  onmouseover = "popup('VK_P<br/>U+0070 LATIN SMALL LETTER P');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0067.png" ALT="U+0067 LATIN SMALL LETTER G"  onmouseover = "popup('VK_G<br/>U+0067 LATIN SMALL LETTER G');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006a.png" ALT="U+006A LATIN SMALL LETTER J"  onmouseover = "popup('VK_J<br/>U+006A LATIN SMALL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006c.png" ALT="U+006C LATIN SMALL LETTER L"  onmouseover = "popup('VK_L<br/>U+006C LATIN SMALL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0075.png" ALT="U+0075 LATIN SMALL LETTER U"  onmouseover = "popup('VK_U<br/>U+0075 LATIN SMALL LETTER U');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0079.png" ALT="U+0079 LATIN SMALL LETTER Y"  onmouseover = "popup('VK_Y<br/>U+0079 LATIN SMALL LETTER Y');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003b.png" ALT="U+003B SEMICOLON"  onmouseover = "popup('VK_OEM_1<br/>U+003B SEMICOLON');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005b.png" ALT="U+005B LEFT SQUARE BRACKET"  onmouseover = "popup('VK_OEM_4<br/>U+005B LEFT SQUARE BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005d.png" ALT="U+005D RIGHT SQUARE BRACKET"  onmouseover = "popup('VK_OEM_6<br/>U+005D RIGHT SQUARE BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005cW.png" ALT="U+005C REVERSE SOLIDUS"  onmouseover = "popup('VK_OEM_5<br/>U+005C REVERSE SOLIDUS');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0061.png" ALT="U+0061 LATIN SMALL LETTER A"  onmouseover = "popup('VK_A<br/>U+0061 LATIN SMALL LETTER A');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0072.png" ALT="U+0072 LATIN SMALL LETTER R"  onmouseover = "popup('VK_R<br/>U+0072 LATIN SMALL LETTER R');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0073.png" ALT="U+0073 LATIN SMALL LETTER S"  onmouseover = "popup('VK_S<br/>U+0073 LATIN SMALL LETTER S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0074.png" ALT="U+0074 LATIN SMALL LETTER T"  onmouseover = "popup('VK_T<br/>U+0074 LATIN SMALL LETTER T');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0064.png" ALT="U+0064 LATIN SMALL LETTER D"  onmouseover = "popup('VK_D<br/>U+0064 LATIN SMALL LETTER D');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0068.png" ALT="U+0068 LATIN SMALL LETTER H"  onmouseover = "popup('VK_H<br/>U+0068 LATIN SMALL LETTER H');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006e.png" ALT="U+006E LATIN SMALL LETTER N"  onmouseover = "popup('VK_N<br/>U+006E LATIN SMALL LETTER N');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0065.png" ALT="U+0065 LATIN SMALL LETTER E"  onmouseover = "popup('VK_E<br/>U+0065 LATIN SMALL LETTER E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0069.png" ALT="U+0069 LATIN SMALL LETTER I"  onmouseover = "popup('VK_I<br/>U+0069 LATIN SMALL LETTER I');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006f.png" ALT="U+006F LATIN SMALL LETTER O"  onmouseover = "popup('VK_O<br/>U+006F LATIN SMALL LETTER O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0027.png" ALT="U+0027 APOSTROPHE"  onmouseover = "popup('VK_OEM_7<br/>U+0027 APOSTROPHE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key. U+000D CARRIAGE RETURN (CR)" onmouseover = "popup('VK_RETURN<br/>Enter key.<br/>U+000D CARRIAGE RETURN (CR)');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002d.png" ALT="U+002D HYPHEN-MINUS"  onmouseover = "popup('VK_OEM_102<br/>U+002D HYPHEN-MINUS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007a.png" ALT="U+007A LATIN SMALL LETTER Z"  onmouseover = "popup('VK_Z<br/>U+007A LATIN SMALL LETTER Z');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0078.png" ALT="U+0078 LATIN SMALL LETTER X"  onmouseover = "popup('VK_X<br/>U+0078 LATIN SMALL LETTER X');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0063.png" ALT="U+0063 LATIN SMALL LETTER C"  onmouseover = "popup('VK_C<br/>U+0063 LATIN SMALL LETTER C');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0076.png" ALT="U+0076 LATIN SMALL LETTER V"  onmouseover = "popup('VK_V<br/>U+0076 LATIN SMALL LETTER V');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0062.png" ALT="U+0062 LATIN SMALL LETTER B"  onmouseover = "popup('VK_B<br/>U+0062 LATIN SMALL LETTER B');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006b.png" ALT="U+006B LATIN SMALL LETTER K"  onmouseover = "popup('VK_K<br/>U+006B LATIN SMALL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006d.png" ALT="U+006D LATIN SMALL LETTER M"  onmouseover = "popup('VK_M<br/>U+006D LATIN SMALL LETTER M');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002c.png" ALT="U+002C COMMA"  onmouseover = "popup('VK_OEM_COMMA<br/>U+002C COMMA');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002e.png" ALT="U+002E FULL STOP"  onmouseover = "popup('VK_OEM_PERIOD<br/>U+002E FULL STOP');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002f.png" ALT="U+002F SOLIDUS"  onmouseover = "popup('VK_OEM_2<br/>U+002F SOLIDUS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+0020 SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+0020 SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=normalcaps CLASS=normalcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0060.png" ALT="U+0060 GRAVE ACCENT"  onmouseover = "popup('VK_OEM_3<br/>U+0060 GRAVE ACCENT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0031.png" ALT="U+0031 DIGIT ONE"  onmouseover = "popup('VK_1<br/>U+0031 DIGIT ONE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0032.png" ALT="U+0032 DIGIT TWO"  onmouseover = "popup('VK_2<br/>U+0032 DIGIT TWO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0033.png" ALT="U+0033 DIGIT THREE"  onmouseover = "popup('VK_3<br/>U+0033 DIGIT THREE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0034.png" ALT="U+0034 DIGIT FOUR"  onmouseover = "popup('VK_4<br/>U+0034 DIGIT FOUR');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0035.png" ALT="U+0035 DIGIT FIVE"  onmouseover = "popup('VK_5<br/>U+0035 DIGIT FIVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0036.png" ALT="U+0036 DIGIT SIX"  onmouseover = "popup('VK_6<br/>U+0036 DIGIT SIX');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0037.png" ALT="U+0037 DIGIT SEVEN"  onmouseover = "popup('VK_7<br/>U+0037 DIGIT SEVEN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0038.png" ALT="U+0038 DIGIT EIGHT"  onmouseover = "popup('VK_8<br/>U+0038 DIGIT EIGHT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0039.png" ALT="U+0039 DIGIT NINE"  onmouseover = "popup('VK_9<br/>U+0039 DIGIT NINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0030.png" ALT="U+0030 DIGIT ZERO"  onmouseover = "popup('VK_0<br/>U+0030 DIGIT ZERO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002d.png" ALT="U+002D HYPHEN-MINUS"  onmouseover = "popup('VK_OEM_MINUS<br/>U+002D HYPHEN-MINUS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003d.png" ALT="U+003D EQUALS SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+003D EQUALS SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key. U+0009 CHARACTER TABULATION" onmouseover = "popup('VK_TAB<br/>Tab key.<br/>U+0009 CHARACTER TABULATION');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0051.png" ALT="U+0051 LATIN CAPITAL LETTER Q"  onmouseover = "popup('VK_Q<br/>U+0051 LATIN CAPITAL LETTER Q');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0057.png" ALT="U+0057 LATIN CAPITAL LETTER W"  onmouseover = "popup('VK_W<br/>U+0057 LATIN CAPITAL LETTER W');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0046.png" ALT="U+0046 LATIN CAPITAL LETTER F"  onmouseover = "popup('VK_F<br/>U+0046 LATIN CAPITAL LETTER F');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0050.png" ALT="U+0050 LATIN CAPITAL LETTER P"  onmouseover = "popup('VK_P<br/>U+0050 LATIN CAPITAL LETTER P');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0047.png" ALT="U+0047 LATIN CAPITAL LETTER G"  onmouseover = "popup('VK_G<br/>U+0047 LATIN CAPITAL LETTER G');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004a.png" ALT="U+004A LATIN CAPITAL LETTER J"  onmouseover = "popup('VK_J<br/>U+004A LATIN CAPITAL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004c.png" ALT="U+004C LATIN CAPITAL LETTER L"  onmouseover = "popup('VK_L<br/>U+004C LATIN CAPITAL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0055.png" ALT="U+0055 LATIN CAPITAL LETTER U"  onmouseover = "popup('VK_U<br/>U+0055 LATIN CAPITAL LETTER U');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0059.png" ALT="U+0059 LATIN CAPITAL LETTER Y"  onmouseover = "popup('VK_Y<br/>U+0059 LATIN CAPITAL LETTER Y');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003b.png" ALT="U+003B SEMICOLON"  onmouseover = "popup('VK_OEM_1<br/>U+003B SEMICOLON');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005b.png" ALT="U+005B LEFT SQUARE BRACKET"  onmouseover = "popup('VK_OEM_4<br/>U+005B LEFT SQUARE BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005d.png" ALT="U+005D RIGHT SQUARE BRACKET"  onmouseover = "popup('VK_OEM_6<br/>U+005D RIGHT SQUARE BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005cW.png" ALT="U+005C REVERSE SOLIDUS"  onmouseover = "popup('VK_OEM_5<br/>U+005C REVERSE SOLIDUS');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key with Caps Lock enabled.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0041.png" ALT="U+0041 LATIN CAPITAL LETTER A"  onmouseover = "popup('VK_A<br/>U+0041 LATIN CAPITAL LETTER A');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0052.png" ALT="U+0052 LATIN CAPITAL LETTER R"  onmouseover = "popup('VK_R<br/>U+0052 LATIN CAPITAL LETTER R');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0053.png" ALT="U+0053 LATIN CAPITAL LETTER S"  onmouseover = "popup('VK_S<br/>U+0053 LATIN CAPITAL LETTER S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0054.png" ALT="U+0054 LATIN CAPITAL LETTER T"  onmouseover = "popup('VK_T<br/>U+0054 LATIN CAPITAL LETTER T');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0044.png" ALT="U+0044 LATIN CAPITAL LETTER D"  onmouseover = "popup('VK_D<br/>U+0044 LATIN CAPITAL LETTER D');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0048.png" ALT="U+0048 LATIN CAPITAL LETTER H"  onmouseover = "popup('VK_H<br/>U+0048 LATIN CAPITAL LETTER H');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004e.png" ALT="U+004E LATIN CAPITAL LETTER N"  onmouseover = "popup('VK_N<br/>U+004E LATIN CAPITAL LETTER N');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0045.png" ALT="U+0045 LATIN CAPITAL LETTER E"  onmouseover = "popup('VK_E<br/>U+0045 LATIN CAPITAL LETTER E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0049.png" ALT="U+0049 LATIN CAPITAL LETTER I"  onmouseover = "popup('VK_I<br/>U+0049 LATIN CAPITAL LETTER I');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004f.png" ALT="U+004F LATIN CAPITAL LETTER O"  onmouseover = "popup('VK_O<br/>U+004F LATIN CAPITAL LETTER O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0027.png" ALT="U+0027 APOSTROPHE"  onmouseover = "popup('VK_OEM_7<br/>U+0027 APOSTROPHE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key. U+000D CARRIAGE RETURN (CR)" onmouseover = "popup('VK_RETURN<br/>Enter key.<br/>U+000D CARRIAGE RETURN (CR)');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002d.png" ALT="U+002D HYPHEN-MINUS"  onmouseover = "popup('VK_OEM_102<br/>U+002D HYPHEN-MINUS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005a.png" ALT="U+005A LATIN CAPITAL LETTER Z"  onmouseover = "popup('VK_Z<br/>U+005A LATIN CAPITAL LETTER Z');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0058.png" ALT="U+0058 LATIN CAPITAL LETTER X"  onmouseover = "popup('VK_X<br/>U+0058 LATIN CAPITAL LETTER X');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0043.png" ALT="U+0043 LATIN CAPITAL LETTER C"  onmouseover = "popup('VK_C<br/>U+0043 LATIN CAPITAL LETTER C');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0056.png" ALT="U+0056 LATIN CAPITAL LETTER V"  onmouseover = "popup('VK_V<br/>U+0056 LATIN CAPITAL LETTER V');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0042.png" ALT="U+0042 LATIN CAPITAL LETTER B"  onmouseover = "popup('VK_B<br/>U+0042 LATIN CAPITAL LETTER B');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004b.png" ALT="U+004B LATIN CAPITAL LETTER K"  onmouseover = "popup('VK_K<br/>U+004B LATIN CAPITAL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004d.png" ALT="U+004D LATIN CAPITAL LETTER M"  onmouseover = "popup('VK_M<br/>U+004D LATIN CAPITAL LETTER M');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002c.png" ALT="U+002C COMMA"  onmouseover = "popup('VK_OEM_COMMA<br/>U+002C COMMA');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002e.png" ALT="U+002E FULL STOP"  onmouseover = "popup('VK_OEM_PERIOD<br/>U+002E FULL STOP');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002f.png" ALT="U+002F SOLIDUS"  onmouseover = "popup('VK_OEM_2<br/>U+002F SOLIDUS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+0020 SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+0020 SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftlower CLASS=shiftlower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/007e.png" ALT="U+007E TILDE"  onmouseover = "popup('VK_OEM_3<br/>U+007E TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0021.png" ALT="U+0021 EXCLAMATION MARK"  onmouseover = "popup('VK_1<br/>U+0021 EXCLAMATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0040.png" ALT="U+0040 COMMERCIAL AT"  onmouseover = "popup('VK_2<br/>U+0040 COMMERCIAL AT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0023.png" ALT="U+0023 NUMBER SIGN"  onmouseover = "popup('VK_3<br/>U+0023 NUMBER SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0024.png" ALT="U+0024 DOLLAR SIGN"  onmouseover = "popup('VK_4<br/>U+0024 DOLLAR SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0025.png" ALT="U+0025 PERCENT SIGN"  onmouseover = "popup('VK_5<br/>U+0025 PERCENT SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005e.png" ALT="U+005E CIRCUMFLEX ACCENT"  onmouseover = "popup('VK_6<br/>U+005E CIRCUMFLEX ACCENT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0026.png" ALT="U+0026 AMPERSAND"  onmouseover = "popup('VK_7<br/>U+0026 AMPERSAND');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002a.png" ALT="U+002A ASTERISK"  onmouseover = "popup('VK_8<br/>U+002A ASTERISK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0028.png" ALT="U+0028 LEFT PARENTHESIS"  onmouseover = "popup('VK_9<br/>U+0028 LEFT PARENTHESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0029.png" ALT="U+0029 RIGHT PARENTHESIS"  onmouseover = "popup('VK_0<br/>U+0029 RIGHT PARENTHESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005f.png" ALT="U+005F LOW LINE"  onmouseover = "popup('VK_OEM_MINUS<br/>U+005F LOW LINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002b.png" ALT="U+002B PLUS SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+002B PLUS SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key. U+0009 CHARACTER TABULATION" onmouseover = "popup('VK_TAB<br/>Tab key.<br/>U+0009 CHARACTER TABULATION');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0051.png" ALT="U+0051 LATIN CAPITAL LETTER Q"  onmouseover = "popup('VK_Q<br/>U+0051 LATIN CAPITAL LETTER Q');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0057.png" ALT="U+0057 LATIN CAPITAL LETTER W"  onmouseover = "popup('VK_W<br/>U+0057 LATIN CAPITAL LETTER W');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0046.png" ALT="U+0046 LATIN CAPITAL LETTER F"  onmouseover = "popup('VK_F<br/>U+0046 LATIN CAPITAL LETTER F');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0050.png" ALT="U+0050 LATIN CAPITAL LETTER P"  onmouseover = "popup('VK_P<br/>U+0050 LATIN CAPITAL LETTER P');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0047.png" ALT="U+0047 LATIN CAPITAL LETTER G"  onmouseover = "popup('VK_G<br/>U+0047 LATIN CAPITAL LETTER G');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004a.png" ALT="U+004A LATIN CAPITAL LETTER J"  onmouseover = "popup('VK_J<br/>U+004A LATIN CAPITAL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004c.png" ALT="U+004C LATIN CAPITAL LETTER L"  onmouseover = "popup('VK_L<br/>U+004C LATIN CAPITAL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0055.png" ALT="U+0055 LATIN CAPITAL LETTER U"  onmouseover = "popup('VK_U<br/>U+0055 LATIN CAPITAL LETTER U');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0059.png" ALT="U+0059 LATIN CAPITAL LETTER Y"  onmouseover = "popup('VK_Y<br/>U+0059 LATIN CAPITAL LETTER Y');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003a.png" ALT="U+003A COLON"  onmouseover = "popup('VK_OEM_1<br/>U+003A COLON');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007b.png" ALT="U+007B LEFT CURLY BRACKET"  onmouseover = "popup('VK_OEM_4<br/>U+007B LEFT CURLY BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007d.png" ALT="U+007D RIGHT CURLY BRACKET"  onmouseover = "popup('VK_OEM_6<br/>U+007D RIGHT CURLY BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007cW.png" ALT="U+007C VERTICAL LINE"  onmouseover = "popup('VK_OEM_5<br/>U+007C VERTICAL LINE');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0041.png" ALT="U+0041 LATIN CAPITAL LETTER A"  onmouseover = "popup('VK_A<br/>U+0041 LATIN CAPITAL LETTER A');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0052.png" ALT="U+0052 LATIN CAPITAL LETTER R"  onmouseover = "popup('VK_R<br/>U+0052 LATIN CAPITAL LETTER R');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0053.png" ALT="U+0053 LATIN CAPITAL LETTER S"  onmouseover = "popup('VK_S<br/>U+0053 LATIN CAPITAL LETTER S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0054.png" ALT="U+0054 LATIN CAPITAL LETTER T"  onmouseover = "popup('VK_T<br/>U+0054 LATIN CAPITAL LETTER T');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0044.png" ALT="U+0044 LATIN CAPITAL LETTER D"  onmouseover = "popup('VK_D<br/>U+0044 LATIN CAPITAL LETTER D');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0048.png" ALT="U+0048 LATIN CAPITAL LETTER H"  onmouseover = "popup('VK_H<br/>U+0048 LATIN CAPITAL LETTER H');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004e.png" ALT="U+004E LATIN CAPITAL LETTER N"  onmouseover = "popup('VK_N<br/>U+004E LATIN CAPITAL LETTER N');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0045.png" ALT="U+0045 LATIN CAPITAL LETTER E"  onmouseover = "popup('VK_E<br/>U+0045 LATIN CAPITAL LETTER E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0049.png" ALT="U+0049 LATIN CAPITAL LETTER I"  onmouseover = "popup('VK_I<br/>U+0049 LATIN CAPITAL LETTER I');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004f.png" ALT="U+004F LATIN CAPITAL LETTER O"  onmouseover = "popup('VK_O<br/>U+004F LATIN CAPITAL LETTER O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0022.png" ALT="U+0022 QUOTATION MARK"  onmouseover = "popup('VK_OEM_7<br/>U+0022 QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key. U+000D CARRIAGE RETURN (CR)" onmouseover = "popup('VK_RETURN<br/>Enter key.<br/>U+000D CARRIAGE RETURN (CR)');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005f.png" ALT="U+005F LOW LINE"  onmouseover = "popup('VK_OEM_102<br/>U+005F LOW LINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005a.png" ALT="U+005A LATIN CAPITAL LETTER Z"  onmouseover = "popup('VK_Z<br/>U+005A LATIN CAPITAL LETTER Z');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0058.png" ALT="U+0058 LATIN CAPITAL LETTER X"  onmouseover = "popup('VK_X<br/>U+0058 LATIN CAPITAL LETTER X');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0043.png" ALT="U+0043 LATIN CAPITAL LETTER C"  onmouseover = "popup('VK_C<br/>U+0043 LATIN CAPITAL LETTER C');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0056.png" ALT="U+0056 LATIN CAPITAL LETTER V"  onmouseover = "popup('VK_V<br/>U+0056 LATIN CAPITAL LETTER V');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0042.png" ALT="U+0042 LATIN CAPITAL LETTER B"  onmouseover = "popup('VK_B<br/>U+0042 LATIN CAPITAL LETTER B');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004b.png" ALT="U+004B LATIN CAPITAL LETTER K"  onmouseover = "popup('VK_K<br/>U+004B LATIN CAPITAL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/004d.png" ALT="U+004D LATIN CAPITAL LETTER M"  onmouseover = "popup('VK_M<br/>U+004D LATIN CAPITAL LETTER M');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003c.png" ALT="U+003C LESS-THAN SIGN"  onmouseover = "popup('VK_OEM_COMMA<br/>U+003C LESS-THAN SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003e.png" ALT="U+003E GREATER-THAN SIGN"  onmouseover = "popup('VK_OEM_PERIOD<br/>U+003E GREATER-THAN SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003f.png" ALT="U+003F QUESTION MARK"  onmouseover = "popup('VK_OEM_2<br/>U+003F QUESTION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+0020 SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+0020 SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftcaps CLASS=shiftcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/007e.png" ALT="U+007E TILDE"  onmouseover = "popup('VK_OEM_3<br/>U+007E TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0021.png" ALT="U+0021 EXCLAMATION MARK"  onmouseover = "popup('VK_1<br/>U+0021 EXCLAMATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0040.png" ALT="U+0040 COMMERCIAL AT"  onmouseover = "popup('VK_2<br/>U+0040 COMMERCIAL AT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0023.png" ALT="U+0023 NUMBER SIGN"  onmouseover = "popup('VK_3<br/>U+0023 NUMBER SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0024.png" ALT="U+0024 DOLLAR SIGN"  onmouseover = "popup('VK_4<br/>U+0024 DOLLAR SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0025.png" ALT="U+0025 PERCENT SIGN"  onmouseover = "popup('VK_5<br/>U+0025 PERCENT SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005e.png" ALT="U+005E CIRCUMFLEX ACCENT"  onmouseover = "popup('VK_6<br/>U+005E CIRCUMFLEX ACCENT');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0026.png" ALT="U+0026 AMPERSAND"  onmouseover = "popup('VK_7<br/>U+0026 AMPERSAND');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002a.png" ALT="U+002A ASTERISK"  onmouseover = "popup('VK_8<br/>U+002A ASTERISK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0028.png" ALT="U+0028 LEFT PARENTHESIS"  onmouseover = "popup('VK_9<br/>U+0028 LEFT PARENTHESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0029.png" ALT="U+0029 RIGHT PARENTHESIS"  onmouseover = "popup('VK_0<br/>U+0029 RIGHT PARENTHESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005f.png" ALT="U+005F LOW LINE"  onmouseover = "popup('VK_OEM_MINUS<br/>U+005F LOW LINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002b.png" ALT="U+002B PLUS SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+002B PLUS SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key. U+0008 BACKSPACE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+0008 BACKSPACE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key. U+0009 CHARACTER TABULATION" onmouseover = "popup('VK_TAB<br/>Tab key.<br/>U+0009 CHARACTER TABULATION');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0071.png" ALT="U+0071 LATIN SMALL LETTER Q"  onmouseover = "popup('VK_Q<br/>U+0071 LATIN SMALL LETTER Q');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0077.png" ALT="U+0077 LATIN SMALL LETTER W"  onmouseover = "popup('VK_W<br/>U+0077 LATIN SMALL LETTER W');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0066.png" ALT="U+0066 LATIN SMALL LETTER F"  onmouseover = "popup('VK_F<br/>U+0066 LATIN SMALL LETTER F');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0070.png" ALT="U+0070 LATIN SMALL LETTER P"  onmouseover = "popup('VK_P<br/>U+0070 LATIN SMALL LETTER P');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0067.png" ALT="U+0067 LATIN SMALL LETTER G"  onmouseover = "popup('VK_G<br/>U+0067 LATIN SMALL LETTER G');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006a.png" ALT="U+006A LATIN SMALL LETTER J"  onmouseover = "popup('VK_J<br/>U+006A LATIN SMALL LETTER J');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006c.png" ALT="U+006C LATIN SMALL LETTER L"  onmouseover = "popup('VK_L<br/>U+006C LATIN SMALL LETTER L');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0075.png" ALT="U+0075 LATIN SMALL LETTER U"  onmouseover = "popup('VK_U<br/>U+0075 LATIN SMALL LETTER U');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0079.png" ALT="U+0079 LATIN SMALL LETTER Y"  onmouseover = "popup('VK_Y<br/>U+0079 LATIN SMALL LETTER Y');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003a.png" ALT="U+003A COLON"  onmouseover = "popup('VK_OEM_1<br/>U+003A COLON');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007b.png" ALT="U+007B LEFT CURLY BRACKET"  onmouseover = "popup('VK_OEM_4<br/>U+007B LEFT CURLY BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007d.png" ALT="U+007D RIGHT CURLY BRACKET"  onmouseover = "popup('VK_OEM_6<br/>U+007D RIGHT CURLY BRACKET');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007cW.png" ALT="U+007C VERTICAL LINE"  onmouseover = "popup('VK_OEM_5<br/>U+007C VERTICAL LINE');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key with Caps Lock enabled.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0061.png" ALT="U+0061 LATIN SMALL LETTER A"  onmouseover = "popup('VK_A<br/>U+0061 LATIN SMALL LETTER A');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0072.png" ALT="U+0072 LATIN SMALL LETTER R"  onmouseover = "popup('VK_R<br/>U+0072 LATIN SMALL LETTER R');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0073.png" ALT="U+0073 LATIN SMALL LETTER S"  onmouseover = "popup('VK_S<br/>U+0073 LATIN SMALL LETTER S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0074.png" ALT="U+0074 LATIN SMALL LETTER T"  onmouseover = "popup('VK_T<br/>U+0074 LATIN SMALL LETTER T');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0064.png" ALT="U+0064 LATIN SMALL LETTER D"  onmouseover = "popup('VK_D<br/>U+0064 LATIN SMALL LETTER D');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0068.png" ALT="U+0068 LATIN SMALL LETTER H"  onmouseover = "popup('VK_H<br/>U+0068 LATIN SMALL LETTER H');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006e.png" ALT="U+006E LATIN SMALL LETTER N"  onmouseover = "popup('VK_N<br/>U+006E LATIN SMALL LETTER N');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0065.png" ALT="U+0065 LATIN SMALL LETTER E"  onmouseover = "popup('VK_E<br/>U+0065 LATIN SMALL LETTER E');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0069.png" ALT="U+0069 LATIN SMALL LETTER I"  onmouseover = "popup('VK_I<br/>U+0069 LATIN SMALL LETTER I');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006f.png" ALT="U+006F LATIN SMALL LETTER O"  onmouseover = "popup('VK_O<br/>U+006F LATIN SMALL LETTER O');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0022.png" ALT="U+0022 QUOTATION MARK"  onmouseover = "popup('VK_OEM_7<br/>U+0022 QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key. U+000D CARRIAGE RETURN (CR)" onmouseover = "popup('VK_RETURN<br/>Enter key.<br/>U+000D CARRIAGE RETURN (CR)');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005f.png" ALT="U+005F LOW LINE"  onmouseover = "popup('VK_OEM_102<br/>U+005F LOW LINE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/007a.png" ALT="U+007A LATIN SMALL LETTER Z"  onmouseover = "popup('VK_Z<br/>U+007A LATIN SMALL LETTER Z');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0078.png" ALT="U+0078 LATIN SMALL LETTER X"  onmouseover = "popup('VK_X<br/>U+0078 LATIN SMALL LETTER X');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0063.png" ALT="U+0063 LATIN SMALL LETTER C"  onmouseover = "popup('VK_C<br/>U+0063 LATIN SMALL LETTER C');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0076.png" ALT="U+0076 LATIN SMALL LETTER V"  onmouseover = "popup('VK_V<br/>U+0076 LATIN SMALL LETTER V');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0062.png" ALT="U+0062 LATIN SMALL LETTER B"  onmouseover = "popup('VK_B<br/>U+0062 LATIN SMALL LETTER B');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006b.png" ALT="U+006B LATIN SMALL LETTER K"  onmouseover = "popup('VK_K<br/>U+006B LATIN SMALL LETTER K');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/006d.png" ALT="U+006D LATIN SMALL LETTER M"  onmouseover = "popup('VK_M<br/>U+006D LATIN SMALL LETTER M');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003c.png" ALT="U+003C LESS-THAN SIGN"  onmouseover = "popup('VK_OEM_COMMA<br/>U+003C LESS-THAN SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003e.png" ALT="U+003E GREATER-THAN SIGN"  onmouseover = "popup('VK_OEM_PERIOD<br/>U+003E GREATER-THAN SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/003f.png" ALT="U+003F QUESTION MARK"  onmouseover = "popup('VK_OEM_2<br/>U+003F QUESTION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+0020 SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+0020 SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=ctrllower CLASS=ctrllower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key. U+007F DELETE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+007F DELETE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'ESCAPE'" onmouseover = "popup('VK_OEM_4<br/>ESCAPE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'INFORMATION SEPARATOR THREE'" onmouseover = "popup('VK_OEM_6<br/>INFORMATION SEPARATOR THREE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="'INFORMATION SEPARATOR FOUR'" onmouseover = "popup('VK_OEM_5<br/>INFORMATION SEPARATOR FOUR');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key. U+000A LINE FEED (LF)" onmouseover = "popup('VK_RETURN<br/>Enter key.<br/>U+000A LINE FEED (LF)');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." onmouseover = "popup('VK_SPACE<br/>Spacebar key.');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=ctrlcaps CLASS=ctrlcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG src="images/BackSp.png" ALT="Backspace key. U+007F DELETE" onmouseover = "popup('VK_BACK<br/>Backspace key.<br/>U+007F DELETE');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'ESCAPE'" onmouseover = "popup('VK_OEM_4<br/>ESCAPE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'INFORMATION SEPARATOR THREE'" onmouseover = "popup('VK_OEM_6<br/>INFORMATION SEPARATOR THREE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="'INFORMATION SEPARATOR FOUR'" onmouseover = "popup('VK_OEM_5<br/>INFORMATION SEPARATOR FOUR');" onmouseout="kill();" WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key with Caps Lock enabled.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key. U+000A LINE FEED (LF)" onmouseover = "popup('VK_RETURN<br/>Enter key.<br/>U+000A LINE FEED (LF)');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." onmouseover = "popup('VK_SPACE<br/>Spacebar key.');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrllower CLASS=shiftctrllower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'NULL'" onmouseover = "popup('VK_2<br/>NULL');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'INFORMATION SEPARATOR TWO'" onmouseover = "popup('VK_6<br/>INFORMATION SEPARATOR TWO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'INFORMATION SEPARATOR ONE'" onmouseover = "popup('VK_OEM_MINUS<br/>INFORMATION SEPARATOR ONE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/BackSp.png" ALT="Backspace key." onmouseover = "popup('VK_BACK<br/>Backspace key');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key." onmouseover = "popup('VK_RETURN<br/>Enter key.');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." onmouseover = "popup('VK_SPACE<br/>Spacebar key.');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlcaps CLASS=shiftctrlcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'NULL'" onmouseover = "popup('VK_2<br/>NULL');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'INFORMATION SEPARATOR TWO'" onmouseover = "popup('VK_6<br/>INFORMATION SEPARATOR TWO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="'INFORMATION SEPARATOR ONE'" onmouseover = "popup('VK_OEM_MINUS<br/>INFORMATION SEPARATOR ONE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/BackSp.png" ALT="Backspace key." onmouseover = "popup('VK_BACK<br/>Backspace key');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key with Caps Lock enabled.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key." onmouseover = "popup('VK_RETURN<br/>Enter key.');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key." onmouseover = "popup('VK_SPACE<br/>Spacebar key.');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr.png" STYLE=cursor:hand ALT="AltGr key. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=ctrlaltlower CLASS=ctrlaltlower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/007eK.png" ALT="U+007E TILDE&#10;DeadKey: &#x007e; &#x00e3; &#x00c3; &#x1ebd; &#x1ebc; &#x0129; &#x0128; &#x00f1; &#x00d1; &#x00f5; &#x00d5; &#x1e4d; &#x1e4c; &#x0169; &#x0168; &#x1e79; &#x1e78; &#x1e7d; &#x1e7c; &#x1ef9; &#x1ef8; &#x1e4f; &#x1e4e;"  onmouseover = "popup('VK_OEM_3<br/>U+007E TILDE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x007e; U+007E TILDE<br/>&nbsp;&nbsp;+&#x0061; = &#x00e3; U+00E3 LATIN SMALL LETTER A WITH TILDE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c3; U+00C3 LATIN CAPITAL LETTER A WITH TILDE<br/>&nbsp;&nbsp;+&#x0065; = &#x1ebd; U+1EBD LATIN SMALL LETTER E WITH TILDE<br/>&nbsp;&nbsp;+&#x0045; = &#x1ebc; U+1EBC LATIN CAPITAL LETTER E WITH TILDE<br/>&nbsp;&nbsp;+&#x0069; = &#x0129; U+0129 LATIN SMALL LETTER I WITH TILDE<br/>&nbsp;&nbsp;+&#x0049; = &#x0128; U+0128 LATIN CAPITAL LETTER I WITH TILDE<br/>&nbsp;&nbsp;+&#x006e; = &#x00f1; U+00F1 LATIN SMALL LETTER N WITH TILDE<br/>&nbsp;&nbsp;+&#x004e; = &#x00d1; U+00D1 LATIN CAPITAL LETTER N WITH TILDE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f5; U+00F5 LATIN SMALL LETTER O WITH TILDE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d5; U+00D5 LATIN CAPITAL LETTER O WITH TILDE<br/>&nbsp;&nbsp;+&#x00f3; = &#x1e4d; U+1E4D LATIN SMALL LETTER O WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x00d3; = &#x1e4c; U+1E4C LATIN CAPITAL LETTER O WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x0169; U+0169 LATIN SMALL LETTER U WITH TILDE<br/>&nbsp;&nbsp;+&#x0055; = &#x0168; U+0168 LATIN CAPITAL LETTER U WITH TILDE<br/>&nbsp;&nbsp;+&#x00fa; = &#x1e79; U+1E79 LATIN SMALL LETTER U WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x00da; = &#x1e78; U+1E78 LATIN CAPITAL LETTER U WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x0076; = &#x1e7d; U+1E7D LATIN SMALL LETTER V WITH TILDE<br/>&nbsp;&nbsp;+&#x0056; = &#x1e7c; U+1E7C LATIN CAPITAL LETTER V WITH TILDE<br/>&nbsp;&nbsp;+&#x0079; = &#x1ef9; U+1EF9 LATIN SMALL LETTER Y WITH TILDE<br/>&nbsp;&nbsp;+&#x0059; = &#x1ef8; U+1EF8 LATIN CAPITAL LETTER Y WITH TILDE<br/>&nbsp;&nbsp;+&#x00f6; = &#x1e4f; U+1E4F LATIN SMALL LETTER O WITH TILDE AND DIAERESIS<br/>&nbsp;&nbsp;+&#x00d6; = &#x1e4e; U+1E4E LATIN CAPITAL LETTER O WITH TILDE AND DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00a1.png" ALT="U+00A1 INVERTED EXCLAMATION MARK"  onmouseover = "popup('VK_1<br/>U+00A1 INVERTED EXCLAMATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00ba.png" ALT="U+00BA MASCULINE ORDINAL INDICATOR"  onmouseover = "popup('VK_2<br/>U+00BA MASCULINE ORDINAL INDICATOR');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00aa.png" ALT="U+00AA FEMININE ORDINAL INDICATOR"  onmouseover = "popup('VK_3<br/>U+00AA FEMININE ORDINAL INDICATOR');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a2.png" ALT="U+00A2 CENT SIGN"  onmouseover = "popup('VK_4<br/>U+00A2 CENT SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/20ac.png" ALT="U+20AC EURO SIGN"  onmouseover = "popup('VK_5<br/>U+20AC EURO SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0127.png" ALT="U+0127 LATIN SMALL LETTER H WITH STROKE"  onmouseover = "popup('VK_6<br/>U+0127 LATIN SMALL LETTER H WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f0.png" ALT="U+00F0 LATIN SMALL LETTER ETH"  onmouseover = "popup('VK_7<br/>U+00F0 LATIN SMALL LETTER ETH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00fe.png" ALT="U+00FE LATIN SMALL LETTER THORN"  onmouseover = "popup('VK_8<br/>U+00FE LATIN SMALL LETTER THORN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2018.png" ALT="U+2018 LEFT SINGLE QUOTATION MARK"  onmouseover = "popup('VK_9<br/>U+2018 LEFT SINGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2019.png" ALT="U+2019 RIGHT SINGLE QUOTATION MARK"  onmouseover = "popup('VK_0<br/>U+2019 RIGHT SINGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2013.png" ALT="U+2013 EN DASH"  onmouseover = "popup('VK_OEM_MINUS<br/>U+2013 EN DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d7.png" ALT="U+00D7 MULTIPLICATION SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+00D7 MULTIPLICATION SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/BackSp.png" ALT="Backspace key." onmouseover = "popup('VK_BACK<br/>Backspace key');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e4.png" ALT="U+00E4 LATIN SMALL LETTER A WITH DIAERESIS"  onmouseover = "popup('VK_Q<br/>U+00E4 LATIN SMALL LETTER A WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e5.png" ALT="U+00E5 LATIN SMALL LETTER A WITH RING ABOVE"  onmouseover = "popup('VK_W<br/>U+00E5 LATIN SMALL LETTER A WITH RING ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e3.png" ALT="U+00E3 LATIN SMALL LETTER A WITH TILDE"  onmouseover = "popup('VK_F<br/>U+00E3 LATIN SMALL LETTER A WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f8.png" ALT="U+00F8 LATIN SMALL LETTER O WITH STROKE"  onmouseover = "popup('VK_P<br/>U+00F8 LATIN SMALL LETTER O WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/02dbK.png" ALT="U+02DB OGONEK&#10;DeadKey: &#x02db; &#x0105; &#x0104; &#x0119; &#x0118; &#x012f; &#x012e; &#x01eb; &#x01ea; &#x0173; &#x0172;"  onmouseover = "popup('VK_G<br/>U+02DB OGONEK<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02db; U+02DB OGONEK<br/>&nbsp;&nbsp;+&#x0061; = &#x0105; U+0105 LATIN SMALL LETTER A WITH OGONEK<br/>&nbsp;&nbsp;+&#x0041; = &#x0104; U+0104 LATIN CAPITAL LETTER A WITH OGONEK<br/>&nbsp;&nbsp;+&#x0065; = &#x0119; U+0119 LATIN SMALL LETTER E WITH OGONEK<br/>&nbsp;&nbsp;+&#x0045; = &#x0118; U+0118 LATIN CAPITAL LETTER E WITH OGONEK<br/>&nbsp;&nbsp;+&#x0069; = &#x012f; U+012F LATIN SMALL LETTER I WITH OGONEK<br/>&nbsp;&nbsp;+&#x0049; = &#x012e; U+012E LATIN CAPITAL LETTER I WITH OGONEK<br/>&nbsp;&nbsp;+&#x006f; = &#x01eb; U+01EB LATIN SMALL LETTER O WITH OGONEK<br/>&nbsp;&nbsp;+&#x004f; = &#x01ea; U+01EA LATIN CAPITAL LETTER O WITH OGONEK<br/>&nbsp;&nbsp;+&#x0075; = &#x0173; U+0173 LATIN SMALL LETTER U WITH OGONEK<br/>&nbsp;&nbsp;+&#x0055; = &#x0172; U+0172 LATIN CAPITAL LETTER U WITH OGONEK');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/0111.png" ALT="U+0111 LATIN SMALL LETTER D WITH STROKE"  onmouseover = "popup('VK_J<br/>U+0111 LATIN SMALL LETTER D WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0142.png" ALT="U+0142 LATIN SMALL LETTER L WITH STROKE"  onmouseover = "popup('VK_L<br/>U+0142 LATIN SMALL LETTER L WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00fa.png" ALT="U+00FA LATIN SMALL LETTER U WITH ACUTE"  onmouseover = "popup('VK_U<br/>U+00FA LATIN SMALL LETTER U WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00fc.png" ALT="U+00FC LATIN SMALL LETTER U WITH DIAERESIS"  onmouseover = "popup('VK_Y<br/>U+00FC LATIN SMALL LETTER U WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f6.png" ALT="U+00F6 LATIN SMALL LETTER O WITH DIAERESIS"  onmouseover = "popup('VK_OEM_1<br/>U+00F6 LATIN SMALL LETTER O WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00ab.png" ALT="U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_4<br/>U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00bb.png" ALT="U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_6<br/>U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002aKW.png" ALT="U+002A ASTERISK&#10;DeadKey: &#x002a; &#x2030; &#x00a9; &#x00b0; &#x00b5; &#x2116; &#x00b6; &#x00ae; &#x00a7; &#x2122; &#x00b1; &#x2260; &#x2264; &#x2026; &#x2265; &#x2248; &#x00a6;"  onmouseover = "popup('VK_OEM_5<br/>U+002A ASTERISK<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x002a; U+002A ASTERISK<br/>&nbsp;&nbsp;+&#x0025; = &#x2030; U+2030 PER MILLE SIGN<br/>&nbsp;&nbsp;+&#x0063; = &#x00a9; U+00A9 COPYRIGHT SIGN<br/>&nbsp;&nbsp;+&#x0064; = &#x00b0; U+00B0 DEGREE SIGN<br/>&nbsp;&nbsp;+&#x006d; = &#x00b5; U+00B5 MICRO SIGN<br/>&nbsp;&nbsp;+&#x006e; = &#x2116; U+2116 NUMERO SIGN<br/>&nbsp;&nbsp;+&#x0070; = &#x00b6; U+00B6 PILCROW SIGN<br/>&nbsp;&nbsp;+&#x0072; = &#x00ae; U+00AE REGISTERED SIGN<br/>&nbsp;&nbsp;+&#x0073; = &#x00a7; U+00A7 SECTION SIGN<br/>&nbsp;&nbsp;+&#x0074; = &#x2122; U+2122 TRADE MARK SIGN<br/>&nbsp;&nbsp;+&#x002b; = &#x00b1; U+00B1 PLUS-MINUS SIGN<br/>&nbsp;&nbsp;+&#x003d; = &#x2260; U+2260 NOT EQUAL TO<br/>&nbsp;&nbsp;+&#x003c; = &#x2264; U+2264 LESS-THAN OR EQUAL TO<br/>&nbsp;&nbsp;+&#x002e; = &#x2026; U+2026 HORIZONTAL ELLIPSIS<br/>&nbsp;&nbsp;+&#x003e; = &#x2265; U+2265 GREATER-THAN OR EQUAL TO<br/>&nbsp;&nbsp;+&#x007e; = &#x2248; U+2248 ALMOST EQUAL TO<br/>&nbsp;&nbsp;+&#x007c; = &#x00a6; U+00A6 BROKEN BAR');" onmouseout="kill();" WIDTH="60" HEIGHT="40"></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e1.png" ALT="U+00E1 LATIN SMALL LETTER A WITH ACUTE"  onmouseover = "popup('VK_A<br/>U+00E1 LATIN SMALL LETTER A WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0060K.png" ALT="U+0060 GRAVE ACCENT&#10;DeadKey: &#x0060; &#x00e0; &#x00c0; &#x00e8; &#x00c8; &#x00ec; &#x00cc; &#x01f9; &#x01f8; &#x00f2; &#x00d2; &#x00f9; &#x00d9; &#x1e81; &#x1e80; &#x1ef3; &#x1ef2; &#x01dc; &#x01db;"  onmouseover = "popup('VK_R<br/>U+0060 GRAVE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0060; U+0060 GRAVE ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e0; U+00E0 LATIN SMALL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c0; U+00C0 LATIN CAPITAL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0065; = &#x00e8; U+00E8 LATIN SMALL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0045; = &#x00c8; U+00C8 LATIN CAPITAL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0069; = &#x00ec; U+00EC LATIN SMALL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x0049; = &#x00cc; U+00CC LATIN CAPITAL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x006e; = &#x01f9; U+01F9 LATIN SMALL LETTER N WITH GRAVE<br/>&nbsp;&nbsp;+&#x004e; = &#x01f8; U+01F8 LATIN CAPITAL LETTER N WITH GRAVE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f2; U+00F2 LATIN SMALL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d2; U+00D2 LATIN CAPITAL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x0075; = &#x00f9; U+00F9 LATIN SMALL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;+&#x0055; = &#x00d9; U+00D9 LATIN CAPITAL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e81; U+1E81 LATIN SMALL LETTER W WITH GRAVE<br/>&nbsp;&nbsp;+&#x0057; = &#x1e80; U+1E80 LATIN CAPITAL LETTER W WITH GRAVE<br/>&nbsp;&nbsp;+&#x0079; = &#x1ef3; U+1EF3 LATIN SMALL LETTER Y WITH GRAVE<br/>&nbsp;&nbsp;+&#x0059; = &#x1ef2; U+1EF2 LATIN CAPITAL LETTER Y WITH GRAVE<br/>&nbsp;&nbsp;+&#x00fc; = &#x01dc; U+01DC LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE<br/>&nbsp;&nbsp;+&#x00dc; = &#x01db; U+01DB LATIN CAPITAL LETTER U WITH DIAERESIS AND GRAVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00df.png" ALT="U+00DF LATIN SMALL LETTER SHARP S"  onmouseover = "popup('VK_S<br/>U+00DF LATIN SMALL LETTER SHARP S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b4K.png" ALT="U+00B4 ACUTE ACCENT&#10;DeadKey: &#x00b4; &#x00e1; &#x00c1; &#x0107; &#x0106; &#x1e09; &#x1e08; &#x00e9; &#x00c9; &#x01f5; &#x01f4; &#x00ed; &#x00cd; &#x1e31; &#x1e30; &#x013a; &#x0139; &#x1e3f; &#x1e3e; &#x0144; &#x0143; &#x00f3; &#x00d3; &#x1e55; &#x1e54; &#x01ff; &#x01fe; &#x0155; &#x0154; &#x015b; &#x015a; &#x00fa; &#x00da; &#x1e83; &#x1e82; &#x01fb; &#x01fa; &#x00fd; &#x00dd; &#x01d8; &#x01d7; &#x017a; &#x0179; &#x01fd; &#x01fc; &#x1e4d;"  onmouseover = "popup('VK_T<br/>U+00B4 ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00b4; U+00B4 ACUTE ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e1; U+00E1 LATIN SMALL LETTER A WITH ACUTE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c1; U+00C1 LATIN CAPITAL LETTER A WITH ACUTE<br/>&nbsp;&nbsp;+&#x0063; = &#x0107; U+0107 LATIN SMALL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x0043; = &#x0106; U+0106 LATIN CAPITAL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x00e7; = &#x1e09; U+1E09 LATIN SMALL LETTER C WITH CEDILLA AND ACUTE<br/>&nbsp;&nbsp;+&#x00c7; = &#x1e08; U+1E08 LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE<br/>&nbsp;&nbsp;+&#x0065; = &#x00e9; U+00E9 LATIN SMALL LETTER E WITH ACUTE<br/>&nbsp;&nbsp;+&#x0045; = &#x00c9; U+00C9 LATIN CAPITAL LETTER E WITH ACUTE<br/>&nbsp;&nbsp;+&#x0067; = &#x01f5; U+01F5 LATIN SMALL LETTER G WITH ACUTE<br/>&nbsp;&nbsp;+&#x0047; = &#x01f4; U+01F4 LATIN CAPITAL LETTER G WITH ACUTE<br/>&nbsp;&nbsp;+&#x0069; = &#x00ed; U+00ED LATIN SMALL LETTER I WITH ACUTE<br/>&nbsp;&nbsp;+&#x0049; = &#x00cd; U+00CD LATIN CAPITAL LETTER I WITH ACUTE<br/>&nbsp;&nbsp;+&#x006b; = &#x1e31; U+1E31 LATIN SMALL LETTER K WITH ACUTE<br/>&nbsp;&nbsp;+&#x004b; = &#x1e30; U+1E30 LATIN CAPITAL LETTER K WITH ACUTE<br/>&nbsp;&nbsp;+&#x006c; = &#x013a; U+013A LATIN SMALL LETTER L WITH ACUTE<br/>&nbsp;&nbsp;+&#x004c; = &#x0139; U+0139 LATIN CAPITAL LETTER L WITH ACUTE<br/>&nbsp;&nbsp;+&#x006d; = &#x1e3f; U+1E3F LATIN SMALL LETTER M WITH ACUTE<br/>&nbsp;&nbsp;+&#x004d; = &#x1e3e; U+1E3E LATIN CAPITAL LETTER M WITH ACUTE<br/>&nbsp;&nbsp;+&#x006e; = &#x0144; U+0144 LATIN SMALL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x004e; = &#x0143; U+0143 LATIN CAPITAL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f3; U+00F3 LATIN SMALL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d3; U+00D3 LATIN CAPITAL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x0070; = &#x1e55; U+1E55 LATIN SMALL LETTER P WITH ACUTE<br/>&nbsp;&nbsp;+&#x0050; = &#x1e54; U+1E54 LATIN CAPITAL LETTER P WITH ACUTE<br/>&nbsp;&nbsp;+&#x00f8; = &#x01ff; U+01FF LATIN SMALL LETTER O WITH STROKE AND ACUTE<br/>&nbsp;&nbsp;+&#x00d8; = &#x01fe; U+01FE LATIN CAPITAL LETTER O WITH STROKE AND ACUTE<br/>&nbsp;&nbsp;+&#x0072; = &#x0155; U+0155 LATIN SMALL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0052; = &#x0154; U+0154 LATIN CAPITAL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0073; = &#x015b; U+015B LATIN SMALL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x0053; = &#x015a; U+015A LATIN CAPITAL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x00fa; U+00FA LATIN SMALL LETTER U WITH ACUTE<br/>&nbsp;&nbsp;+&#x0055; = &#x00da; U+00DA LATIN CAPITAL LETTER U WITH ACUTE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e83; U+1E83 LATIN SMALL LETTER W WITH ACUTE<br/>&nbsp;&nbsp;+&#x0057; = &#x1e82; U+1E82 LATIN CAPITAL LETTER W WITH ACUTE<br/>&nbsp;&nbsp;+&#x00e5; = &#x01fb; U+01FB LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x00c5; = &#x01fa; U+01FA LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x0079; = &#x00fd; U+00FD LATIN SMALL LETTER Y WITH ACUTE<br/>&nbsp;&nbsp;+&#x0059; = &#x00dd; U+00DD LATIN CAPITAL LETTER Y WITH ACUTE<br/>&nbsp;&nbsp;+&#x00fc; = &#x01d8; U+01D8 LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x00dc; = &#x01d7; U+01D7 LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x007a; = &#x017a; U+017A LATIN SMALL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;+&#x005a; = &#x0179; U+0179 LATIN CAPITAL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;+&#x00e6; = &#x01fd; U+01FD LATIN SMALL LETTER AE WITH ACUTE<br/>&nbsp;&nbsp;+&#x00c6; = &#x01fc; U+01FC LATIN CAPITAL LETTER AE WITH ACUTE<br/>&nbsp;&nbsp;+&#x00f5; = &#x1e4d; U+1E4D LATIN SMALL LETTER O WITH TILDE AND ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8; &#x00e4; &#x00c4; &#x00eb; &#x00cb; &#x1e27; &#x1e26; &#x00ef; &#x00cf; &#x1e2f; &#x1e2e; &#x00f6; &#x00d6; &#x1e97; &#x00fc; &#x00dc; &#x01d8; &#x01d7; &#x1e85; &#x1e84; &#x1e8d; &#x1e8c; &#x00ff; &#x0178;"  onmouseover = "popup('VK_D<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00a8; U+00A8 DIAERESIS<br/>&nbsp;&nbsp;+&#x0061; = &#x00e4; U+00E4 LATIN SMALL LETTER A WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0041; = &#x00c4; U+00C4 LATIN CAPITAL LETTER A WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0065; = &#x00eb; U+00EB LATIN SMALL LETTER E WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0045; = &#x00cb; U+00CB LATIN CAPITAL LETTER E WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0068; = &#x1e27; U+1E27 LATIN SMALL LETTER H WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0048; = &#x1e26; U+1E26 LATIN CAPITAL LETTER H WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0069; = &#x00ef; U+00EF LATIN SMALL LETTER I WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0049; = &#x00cf; U+00CF LATIN CAPITAL LETTER I WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x00ed; = &#x1e2f; U+1E2F LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x00cd; = &#x1e2e; U+1E2E LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f6; U+00F6 LATIN SMALL LETTER O WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x004f; = &#x00d6; U+00D6 LATIN CAPITAL LETTER O WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0074; = &#x1e97; U+1E97 LATIN SMALL LETTER T WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0075; = &#x00fc; U+00FC LATIN SMALL LETTER U WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0055; = &#x00dc; U+00DC LATIN CAPITAL LETTER U WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x00fa; = &#x01d8; U+01D8 LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x00da; = &#x01d7; U+01D7 LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e85; U+1E85 LATIN SMALL LETTER W WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0057; = &#x1e84; U+1E84 LATIN CAPITAL LETTER W WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0078; = &#x1e8d; U+1E8D LATIN SMALL LETTER X WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0058; = &#x1e8c; U+1E8C LATIN CAPITAL LETTER X WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0079; = &#x00ff; U+00FF LATIN SMALL LETTER Y WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0059; = &#x0178; U+0178 LATIN CAPITAL LETTER Y WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/02c7K.png" ALT="U+02C7 CARON&#10;DeadKey: &#x02c7; &#x01ce; &#x01cd; &#x010d; &#x010c; &#x010f; &#x010e; &#x011b; &#x011a; &#x01e7; &#x01e6; &#x021f; &#x021e; &#x01d0; &#x01cf; &#x01f0; &#x01e9; &#x01e8; &#x013e; &#x013d; &#x0148; &#x0147; &#x01d2; &#x01d1; &#x0159; &#x0158; &#x0161; &#x0160; &#x0165; &#x0164; &#x01d4; &#x01d3; &#x01da; &#x01d9; &#x017e; &#x017d;"  onmouseover = "popup('VK_H<br/>U+02C7 CARON<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02c7; U+02C7 CARON<br/>&nbsp;&nbsp;+&#x0061; = &#x01ce; U+01CE LATIN SMALL LETTER A WITH CARON<br/>&nbsp;&nbsp;+&#x0041; = &#x01cd; U+01CD LATIN CAPITAL LETTER A WITH CARON<br/>&nbsp;&nbsp;+&#x0063; = &#x010d; U+010D LATIN SMALL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0043; = &#x010c; U+010C LATIN CAPITAL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0064; = &#x010f; U+010F LATIN SMALL LETTER D WITH CARON<br/>&nbsp;&nbsp;+&#x0044; = &#x010e; U+010E LATIN CAPITAL LETTER D WITH CARON<br/>&nbsp;&nbsp;+&#x0065; = &#x011b; U+011B LATIN SMALL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0045; = &#x011a; U+011A LATIN CAPITAL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0067; = &#x01e7; U+01E7 LATIN SMALL LETTER G WITH CARON<br/>&nbsp;&nbsp;+&#x0047; = &#x01e6; U+01E6 LATIN CAPITAL LETTER G WITH CARON<br/>&nbsp;&nbsp;+&#x0068; = &#x021f; U+021F LATIN SMALL LETTER H WITH CARON<br/>&nbsp;&nbsp;+&#x0048; = &#x021e; U+021E LATIN CAPITAL LETTER H WITH CARON<br/>&nbsp;&nbsp;+&#x0069; = &#x01d0; U+01D0 LATIN SMALL LETTER I WITH CARON<br/>&nbsp;&nbsp;+&#x0049; = &#x01cf; U+01CF LATIN CAPITAL LETTER I WITH CARON<br/>&nbsp;&nbsp;+&#x006a; = &#x01f0; U+01F0 LATIN SMALL LETTER J WITH CARON<br/>&nbsp;&nbsp;+&#x006b; = &#x01e9; U+01E9 LATIN SMALL LETTER K WITH CARON<br/>&nbsp;&nbsp;+&#x004b; = &#x01e8; U+01E8 LATIN CAPITAL LETTER K WITH CARON<br/>&nbsp;&nbsp;+&#x006c; = &#x013e; U+013E LATIN SMALL LETTER L WITH CARON<br/>&nbsp;&nbsp;+&#x004c; = &#x013d; U+013D LATIN CAPITAL LETTER L WITH CARON<br/>&nbsp;&nbsp;+&#x006e; = &#x0148; U+0148 LATIN SMALL LETTER N WITH CARON<br/>&nbsp;&nbsp;+&#x004e; = &#x0147; U+0147 LATIN CAPITAL LETTER N WITH CARON<br/>&nbsp;&nbsp;+&#x006f; = &#x01d2; U+01D2 LATIN SMALL LETTER O WITH CARON<br/>&nbsp;&nbsp;+&#x004f; = &#x01d1; U+01D1 LATIN CAPITAL LETTER O WITH CARON<br/>&nbsp;&nbsp;+&#x0072; = &#x0159; U+0159 LATIN SMALL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0052; = &#x0158; U+0158 LATIN CAPITAL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0073; = &#x0161; U+0161 LATIN SMALL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x0053; = &#x0160; U+0160 LATIN CAPITAL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x0074; = &#x0165; U+0165 LATIN SMALL LETTER T WITH CARON<br/>&nbsp;&nbsp;+&#x0054; = &#x0164; U+0164 LATIN CAPITAL LETTER T WITH CARON<br/>&nbsp;&nbsp;+&#x0075; = &#x01d4; U+01D4 LATIN SMALL LETTER U WITH CARON<br/>&nbsp;&nbsp;+&#x0055; = &#x01d3; U+01D3 LATIN CAPITAL LETTER U WITH CARON<br/>&nbsp;&nbsp;+&#x00fc; = &#x01da; U+01DA LATIN SMALL LETTER U WITH DIAERESIS AND CARON<br/>&nbsp;&nbsp;+&#x00dc; = &#x01d9; U+01D9 LATIN CAPITAL LETTER U WITH DIAERESIS AND CARON<br/>&nbsp;&nbsp;+&#x007a; = &#x017e; U+017E LATIN SMALL LETTER Z WITH CARON<br/>&nbsp;&nbsp;+&#x005a; = &#x017d; U+017D LATIN CAPITAL LETTER Z WITH CARON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00f1.png" ALT="U+00F1 LATIN SMALL LETTER N WITH TILDE"  onmouseover = "popup('VK_N<br/>U+00F1 LATIN SMALL LETTER N WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e9.png" ALT="U+00E9 LATIN SMALL LETTER E WITH ACUTE"  onmouseover = "popup('VK_E<br/>U+00E9 LATIN SMALL LETTER E WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00ed.png" ALT="U+00ED LATIN SMALL LETTER I WITH ACUTE"  onmouseover = "popup('VK_I<br/>U+00ED LATIN SMALL LETTER I WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f3.png" ALT="U+00F3 LATIN SMALL LETTER O WITH ACUTE"  onmouseover = "popup('VK_O<br/>U+00F3 LATIN SMALL LETTER O WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f5.png" ALT="U+00F5 LATIN SMALL LETTER O WITH TILDE"  onmouseover = "popup('VK_OEM_7<br/>U+00F5 LATIN SMALL LETTER O WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key." onmouseover = "popup('VK_RETURN<br/>Enter key.');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2013.png" ALT="U+2013 EN DASH"  onmouseover = "popup('VK_OEM_102<br/>U+2013 EN DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e6.png" ALT="U+00E6 LATIN SMALL LETTER AE"  onmouseover = "popup('VK_Z<br/>U+00E6 LATIN SMALL LETTER AE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005eK.png" ALT="U+005E CIRCUMFLEX ACCENT&#10;DeadKey: &#x005e; &#x00e2; &#x00c2; &#x1ea5; &#x1ea4; &#x0109; &#x0108; &#x00ea; &#x00ca; &#x1ebf; &#x1ebe; &#x1eab; &#x1eaa; &#x011d; &#x011c; &#x0125; &#x0124; &#x00ee; &#x00ce; &#x0135; &#x0134; &#x00f4; &#x00d4; &#x1ed1; &#x1ed0; &#x015d; &#x015c; &#x00fb; &#x00db; &#x0175; &#x0174; &#x0177; &#x0176; &#x1e91; &#x1e90; &#x1ed7; &#x1ed6;"  onmouseover = "popup('VK_X<br/>U+005E CIRCUMFLEX ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x005e; U+005E CIRCUMFLEX ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e2; U+00E2 LATIN SMALL LETTER A WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0041; = &#x00c2; U+00C2 LATIN CAPITAL LETTER A WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00e1; = &#x1ea5; U+1EA5 LATIN SMALL LETTER A WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00c1; = &#x1ea4; U+1EA4 LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x0063; = &#x0109; U+0109 LATIN SMALL LETTER C WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0043; = &#x0108; U+0108 LATIN CAPITAL LETTER C WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0065; = &#x00ea; U+00EA LATIN SMALL LETTER E WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0045; = &#x00ca; U+00CA LATIN CAPITAL LETTER E WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00e9; = &#x1ebf; U+1EBF LATIN SMALL LETTER E WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00c9; = &#x1ebe; U+1EBE LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00e3; = &#x1eab; U+1EAB LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE<br/>&nbsp;&nbsp;+&#x00c3; = &#x1eaa; U+1EAA LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND TILDE<br/>&nbsp;&nbsp;+&#x0067; = &#x011d; U+011D LATIN SMALL LETTER G WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0047; = &#x011c; U+011C LATIN CAPITAL LETTER G WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0068; = &#x0125; U+0125 LATIN SMALL LETTER H WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0048; = &#x0124; U+0124 LATIN CAPITAL LETTER H WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0069; = &#x00ee; U+00EE LATIN SMALL LETTER I WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0049; = &#x00ce; U+00CE LATIN CAPITAL LETTER I WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x006a; = &#x0135; U+0135 LATIN SMALL LETTER J WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x004a; = &#x0134; U+0134 LATIN CAPITAL LETTER J WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x006f; = &#x00f4; U+00F4 LATIN SMALL LETTER O WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x004f; = &#x00d4; U+00D4 LATIN CAPITAL LETTER O WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00f3; = &#x1ed1; U+1ED1 LATIN SMALL LETTER O WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00d3; = &#x1ed0; U+1ED0 LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x0073; = &#x015d; U+015D LATIN SMALL LETTER S WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0053; = &#x015c; U+015C LATIN CAPITAL LETTER S WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0075; = &#x00fb; U+00FB LATIN SMALL LETTER U WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0055; = &#x00db; U+00DB LATIN CAPITAL LETTER U WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0077; = &#x0175; U+0175 LATIN SMALL LETTER W WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0057; = &#x0174; U+0174 LATIN CAPITAL LETTER W WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0079; = &#x0177; U+0177 LATIN SMALL LETTER Y WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0059; = &#x0176; U+0176 LATIN CAPITAL LETTER Y WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x007a; = &#x1e91; U+1E91 LATIN SMALL LETTER Z WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x005a; = &#x1e90; U+1E90 LATIN CAPITAL LETTER Z WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00f5; = &#x1ed7; U+1ED7 LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE<br/>&nbsp;&nbsp;+&#x00d5; = &#x1ed6; U+1ED6 LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00e7.png" ALT="U+00E7 LATIN SMALL LETTER C WITH CEDILLA"  onmouseover = "popup('VK_C<br/>U+00E7 LATIN SMALL LETTER C WITH CEDILLA');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0153.png" ALT="U+0153 LATIN SMALL LIGATURE OE"  onmouseover = "popup('VK_V<br/>U+0153 LATIN SMALL LIGATURE OE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/02d8K.png" ALT="U+02D8 BREVE&#10;DeadKey: &#x02d8; &#x0103; &#x0102; &#x1eaf; &#x1eae; &#x0115; &#x0114; &#x1eb5; &#x1eb4; &#x011f; &#x011e; &#x012d; &#x012c; &#x014f; &#x014e; &#x016d; &#x016c;"  onmouseover = "popup('VK_B<br/>U+02D8 BREVE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02d8; U+02D8 BREVE<br/>&nbsp;&nbsp;+&#x0061; = &#x0103; U+0103 LATIN SMALL LETTER A WITH BREVE<br/>&nbsp;&nbsp;+&#x0041; = &#x0102; U+0102 LATIN CAPITAL LETTER A WITH BREVE<br/>&nbsp;&nbsp;+&#x00e1; = &#x1eaf; U+1EAF LATIN SMALL LETTER A WITH BREVE AND ACUTE<br/>&nbsp;&nbsp;+&#x00c1; = &#x1eae; U+1EAE LATIN CAPITAL LETTER A WITH BREVE AND ACUTE<br/>&nbsp;&nbsp;+&#x0065; = &#x0115; U+0115 LATIN SMALL LETTER E WITH BREVE<br/>&nbsp;&nbsp;+&#x0045; = &#x0114; U+0114 LATIN CAPITAL LETTER E WITH BREVE<br/>&nbsp;&nbsp;+&#x00e3; = &#x1eb5; U+1EB5 LATIN SMALL LETTER A WITH BREVE AND TILDE<br/>&nbsp;&nbsp;+&#x00c3; = &#x1eb4; U+1EB4 LATIN CAPITAL LETTER A WITH BREVE AND TILDE<br/>&nbsp;&nbsp;+&#x0067; = &#x011f; U+011F LATIN SMALL LETTER G WITH BREVE<br/>&nbsp;&nbsp;+&#x0047; = &#x011e; U+011E LATIN CAPITAL LETTER G WITH BREVE<br/>&nbsp;&nbsp;+&#x0069; = &#x012d; U+012D LATIN SMALL LETTER I WITH BREVE<br/>&nbsp;&nbsp;+&#x0049; = &#x012c; U+012C LATIN CAPITAL LETTER I WITH BREVE<br/>&nbsp;&nbsp;+&#x006f; = &#x014f; U+014F LATIN SMALL LETTER O WITH BREVE<br/>&nbsp;&nbsp;+&#x004f; = &#x014e; U+014E LATIN CAPITAL LETTER O WITH BREVE<br/>&nbsp;&nbsp;+&#x0075; = &#x016d; U+016D LATIN SMALL LETTER U WITH BREVE<br/>&nbsp;&nbsp;+&#x0055; = &#x016c; U+016C LATIN CAPITAL LETTER U WITH BREVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/02daK.png" ALT="U+02DA RING ABOVE&#10;DeadKey: &#x02da; &#x00e5; &#x00c5; &#x01fb; &#x01fa; &#x016f; &#x016e; &#x1e98; &#x1e99;"  onmouseover = "popup('VK_K<br/>U+02DA RING ABOVE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02da; U+02DA RING ABOVE<br/>&nbsp;&nbsp;+&#x0061; = &#x00e5; U+00E5 LATIN SMALL LETTER A WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c5; U+00C5 LATIN CAPITAL LETTER A WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x00e1; = &#x01fb; U+01FB LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x00c1; = &#x01fa; U+01FA LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x016f; U+016F LATIN SMALL LETTER U WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0055; = &#x016e; U+016E LATIN CAPITAL LETTER U WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e98; U+1E98 LATIN SMALL LETTER W WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0079; = &#x1e99; U+1E99 LATIN SMALL LETTER Y WITH RING ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00afK.png" ALT="U+00AF MACRON&#10;DeadKey: &#x00af; &#x0101; &#x0100; &#x0113; &#x0112; &#x1e17; &#x1e16; &#x1e21; &#x1e20; &#x012b; &#x012a; &#x014d; &#x014c; &#x1e53; &#x1e52; &#x01df; &#x01de; &#x016b; &#x016a; &#x0233; &#x0232; &#x01d6; &#x01d5; &#x01e3; &#x01e2; &#x022b; &#x022a; &#x022d; &#x022c;"  onmouseover = "popup('VK_M<br/>U+00AF MACRON<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00af; U+00AF MACRON<br/>&nbsp;&nbsp;+&#x0061; = &#x0101; U+0101 LATIN SMALL LETTER A WITH MACRON<br/>&nbsp;&nbsp;+&#x0041; = &#x0100; U+0100 LATIN CAPITAL LETTER A WITH MACRON<br/>&nbsp;&nbsp;+&#x0065; = &#x0113; U+0113 LATIN SMALL LETTER E WITH MACRON<br/>&nbsp;&nbsp;+&#x0045; = &#x0112; U+0112 LATIN CAPITAL LETTER E WITH MACRON<br/>&nbsp;&nbsp;+&#x00e9; = &#x1e17; U+1E17 LATIN SMALL LETTER E WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x00c9; = &#x1e16; U+1E16 LATIN CAPITAL LETTER E WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x0067; = &#x1e21; U+1E21 LATIN SMALL LETTER G WITH MACRON<br/>&nbsp;&nbsp;+&#x0047; = &#x1e20; U+1E20 LATIN CAPITAL LETTER G WITH MACRON<br/>&nbsp;&nbsp;+&#x0069; = &#x012b; U+012B LATIN SMALL LETTER I WITH MACRON<br/>&nbsp;&nbsp;+&#x0049; = &#x012a; U+012A LATIN CAPITAL LETTER I WITH MACRON<br/>&nbsp;&nbsp;+&#x006f; = &#x014d; U+014D LATIN SMALL LETTER O WITH MACRON<br/>&nbsp;&nbsp;+&#x004f; = &#x014c; U+014C LATIN CAPITAL LETTER O WITH MACRON<br/>&nbsp;&nbsp;+&#x00f3; = &#x1e53; U+1E53 LATIN SMALL LETTER O WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x00d3; = &#x1e52; U+1E52 LATIN CAPITAL LETTER O WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x00e4; = &#x01df; U+01DF LATIN SMALL LETTER A WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00c4; = &#x01de; U+01DE LATIN CAPITAL LETTER A WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x0075; = &#x016b; U+016B LATIN SMALL LETTER U WITH MACRON<br/>&nbsp;&nbsp;+&#x0055; = &#x016a; U+016A LATIN CAPITAL LETTER U WITH MACRON<br/>&nbsp;&nbsp;+&#x0079; = &#x0233; U+0233 LATIN SMALL LETTER Y WITH MACRON<br/>&nbsp;&nbsp;+&#x0059; = &#x0232; U+0232 LATIN CAPITAL LETTER Y WITH MACRON<br/>&nbsp;&nbsp;+&#x00fc; = &#x01d6; U+01D6 LATIN SMALL LETTER U WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00dc; = &#x01d5; U+01D5 LATIN CAPITAL LETTER U WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00e6; = &#x01e3; U+01E3 LATIN SMALL LETTER AE WITH MACRON<br/>&nbsp;&nbsp;+&#x00c6; = &#x01e2; U+01E2 LATIN CAPITAL LETTER AE WITH MACRON<br/>&nbsp;&nbsp;+&#x00f6; = &#x022b; U+022B LATIN SMALL LETTER O WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00d6; = &#x022a; U+022A LATIN CAPITAL LETTER O WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00f5; = &#x022d; U+022D LATIN SMALL LETTER O WITH TILDE AND MACRON<br/>&nbsp;&nbsp;+&#x00d5; = &#x022c; U+022C LATIN CAPITAL LETTER O WITH TILDE AND MACRON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00b8K.png" ALT="U+00B8 CEDILLA&#10;DeadKey: &#x00b8; &#x00e7; &#x00c7; &#x1e11; &#x1e10; &#x0229; &#x0228; &#x0123; &#x0122; &#x1e29; &#x1e28; &#x0137; &#x0136; &#x013c; &#x013b; &#x0146; &#x0145; &#x0157; &#x0156; &#x015f; &#x015e; &#x0163; &#x0162;"  onmouseover = "popup('VK_OEM_COMMA<br/>U+00B8 CEDILLA<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00b8; U+00B8 CEDILLA<br/>&nbsp;&nbsp;+&#x0063; = &#x00e7; U+00E7 LATIN SMALL LETTER C WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0043; = &#x00c7; U+00C7 LATIN CAPITAL LETTER C WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0064; = &#x1e11; U+1E11 LATIN SMALL LETTER D WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0044; = &#x1e10; U+1E10 LATIN CAPITAL LETTER D WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0065; = &#x0229; U+0229 LATIN SMALL LETTER E WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0045; = &#x0228; U+0228 LATIN CAPITAL LETTER E WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0067; = &#x0123; U+0123 LATIN SMALL LETTER G WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0047; = &#x0122; U+0122 LATIN CAPITAL LETTER G WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0068; = &#x1e29; U+1E29 LATIN SMALL LETTER H WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0048; = &#x1e28; U+1E28 LATIN CAPITAL LETTER H WITH CEDILLA<br/>&nbsp;&nbsp;+&#x006b; = &#x0137; U+0137 LATIN SMALL LETTER K WITH CEDILLA<br/>&nbsp;&nbsp;+&#x004b; = &#x0136; U+0136 LATIN CAPITAL LETTER K WITH CEDILLA<br/>&nbsp;&nbsp;+&#x006c; = &#x013c; U+013C LATIN SMALL LETTER L WITH CEDILLA<br/>&nbsp;&nbsp;+&#x004c; = &#x013b; U+013B LATIN CAPITAL LETTER L WITH CEDILLA<br/>&nbsp;&nbsp;+&#x006e; = &#x0146; U+0146 LATIN SMALL LETTER N WITH CEDILLA<br/>&nbsp;&nbsp;+&#x004e; = &#x0145; U+0145 LATIN CAPITAL LETTER N WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0072; = &#x0157; U+0157 LATIN SMALL LETTER R WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0052; = &#x0156; U+0156 LATIN CAPITAL LETTER R WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0073; = &#x015f; U+015F LATIN SMALL LETTER S WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0053; = &#x015e; U+015E LATIN CAPITAL LETTER S WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0074; = &#x0163; U+0163 LATIN SMALL LETTER T WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0054; = &#x0162; U+0162 LATIN CAPITAL LETTER T WITH CEDILLA');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/02d9K.png" ALT="U+02D9 DOT ABOVE&#10;DeadKey: &#x02d9; &#x0227; &#x0226; &#x1e03; &#x1e02; &#x010b; &#x010a; &#x1e0b; &#x1e0a; &#x0117; &#x0116; &#x1e1f; &#x1e1e; &#x0121; &#x0120; &#x1e23; &#x1e22; &#x0131; &#x0130; &#x0140; &#x013f; &#x1e41; &#x1e40; &#x1e45; &#x1e44; &#x022f; &#x022e; &#x1e57; &#x1e56; &#x1e59; &#x1e58; &#x1e61; &#x1e60; &#x1e6b; &#x1e6a; &#x1e87; &#x1e86; &#x1e8b; &#x1e8a; &#x1e8f; &#x1e8e; &#x017c; &#x017b;"  onmouseover = "popup('VK_OEM_PERIOD<br/>U+02D9 DOT ABOVE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02d9; U+02D9 DOT ABOVE<br/>&nbsp;&nbsp;+&#x0061; = &#x0227; U+0227 LATIN SMALL LETTER A WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0041; = &#x0226; U+0226 LATIN CAPITAL LETTER A WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0062; = &#x1e03; U+1E03 LATIN SMALL LETTER B WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0042; = &#x1e02; U+1E02 LATIN CAPITAL LETTER B WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0063; = &#x010b; U+010B LATIN SMALL LETTER C WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0043; = &#x010a; U+010A LATIN CAPITAL LETTER C WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0064; = &#x1e0b; U+1E0B LATIN SMALL LETTER D WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0044; = &#x1e0a; U+1E0A LATIN CAPITAL LETTER D WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0065; = &#x0117; U+0117 LATIN SMALL LETTER E WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0045; = &#x0116; U+0116 LATIN CAPITAL LETTER E WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0066; = &#x1e1f; U+1E1F LATIN SMALL LETTER F WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0046; = &#x1e1e; U+1E1E LATIN CAPITAL LETTER F WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0067; = &#x0121; U+0121 LATIN SMALL LETTER G WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0047; = &#x0120; U+0120 LATIN CAPITAL LETTER G WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0068; = &#x1e23; U+1E23 LATIN SMALL LETTER H WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0048; = &#x1e22; U+1E22 LATIN CAPITAL LETTER H WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0069; = &#x0131; U+0131 LATIN SMALL LETTER DOTLESS I<br/>&nbsp;&nbsp;+&#x0049; = &#x0130; U+0130 LATIN CAPITAL LETTER I WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x006c; = &#x0140; U+0140 LATIN SMALL LETTER L WITH MIDDLE DOT<br/>&nbsp;&nbsp;+&#x004c; = &#x013f; U+013F LATIN CAPITAL LETTER L WITH MIDDLE DOT<br/>&nbsp;&nbsp;+&#x006d; = &#x1e41; U+1E41 LATIN SMALL LETTER M WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x004d; = &#x1e40; U+1E40 LATIN CAPITAL LETTER M WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x006e; = &#x1e45; U+1E45 LATIN SMALL LETTER N WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x004e; = &#x1e44; U+1E44 LATIN CAPITAL LETTER N WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x006f; = &#x022f; U+022F LATIN SMALL LETTER O WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x004f; = &#x022e; U+022E LATIN CAPITAL LETTER O WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0070; = &#x1e57; U+1E57 LATIN SMALL LETTER P WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0050; = &#x1e56; U+1E56 LATIN CAPITAL LETTER P WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0072; = &#x1e59; U+1E59 LATIN SMALL LETTER R WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0052; = &#x1e58; U+1E58 LATIN CAPITAL LETTER R WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0073; = &#x1e61; U+1E61 LATIN SMALL LETTER S WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0053; = &#x1e60; U+1E60 LATIN CAPITAL LETTER S WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0074; = &#x1e6b; U+1E6B LATIN SMALL LETTER T WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0054; = &#x1e6a; U+1E6A LATIN CAPITAL LETTER T WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e87; U+1E87 LATIN SMALL LETTER W WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0057; = &#x1e86; U+1E86 LATIN CAPITAL LETTER W WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0078; = &#x1e8b; U+1E8B LATIN SMALL LETTER X WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0058; = &#x1e8a; U+1E8A LATIN CAPITAL LETTER X WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0079; = &#x1e8f; U+1E8F LATIN SMALL LETTER Y WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0059; = &#x1e8e; U+1E8E LATIN CAPITAL LETTER Y WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x007a; = &#x017c; U+017C LATIN SMALL LETTER Z WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x005a; = &#x017b; U+017B LATIN CAPITAL LETTER Z WITH DOT ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00bf.png" ALT="U+00BF INVERTED QUESTION MARK"  onmouseover = "popup('VK_OEM_2<br/>U+00BF INVERTED QUESTION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+0020 SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+0020 SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key with AltGr enabled.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=ctrlaltcaps CLASS=ctrlaltcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/007eK.png" ALT="U+007E TILDE&#10;DeadKey: &#x007e; &#x00e3; &#x00c3; &#x1ebd; &#x1ebc; &#x0129; &#x0128; &#x00f1; &#x00d1; &#x00f5; &#x00d5; &#x1e4d; &#x1e4c; &#x0169; &#x0168; &#x1e79; &#x1e78; &#x1e7d; &#x1e7c; &#x1ef9; &#x1ef8; &#x1e4f; &#x1e4e;"  onmouseover = "popup('VK_OEM_3<br/>U+007E TILDE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x007e; U+007E TILDE<br/>&nbsp;&nbsp;+&#x0061; = &#x00e3; U+00E3 LATIN SMALL LETTER A WITH TILDE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c3; U+00C3 LATIN CAPITAL LETTER A WITH TILDE<br/>&nbsp;&nbsp;+&#x0065; = &#x1ebd; U+1EBD LATIN SMALL LETTER E WITH TILDE<br/>&nbsp;&nbsp;+&#x0045; = &#x1ebc; U+1EBC LATIN CAPITAL LETTER E WITH TILDE<br/>&nbsp;&nbsp;+&#x0069; = &#x0129; U+0129 LATIN SMALL LETTER I WITH TILDE<br/>&nbsp;&nbsp;+&#x0049; = &#x0128; U+0128 LATIN CAPITAL LETTER I WITH TILDE<br/>&nbsp;&nbsp;+&#x006e; = &#x00f1; U+00F1 LATIN SMALL LETTER N WITH TILDE<br/>&nbsp;&nbsp;+&#x004e; = &#x00d1; U+00D1 LATIN CAPITAL LETTER N WITH TILDE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f5; U+00F5 LATIN SMALL LETTER O WITH TILDE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d5; U+00D5 LATIN CAPITAL LETTER O WITH TILDE<br/>&nbsp;&nbsp;+&#x00f3; = &#x1e4d; U+1E4D LATIN SMALL LETTER O WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x00d3; = &#x1e4c; U+1E4C LATIN CAPITAL LETTER O WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x0169; U+0169 LATIN SMALL LETTER U WITH TILDE<br/>&nbsp;&nbsp;+&#x0055; = &#x0168; U+0168 LATIN CAPITAL LETTER U WITH TILDE<br/>&nbsp;&nbsp;+&#x00fa; = &#x1e79; U+1E79 LATIN SMALL LETTER U WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x00da; = &#x1e78; U+1E78 LATIN CAPITAL LETTER U WITH TILDE AND ACUTE<br/>&nbsp;&nbsp;+&#x0076; = &#x1e7d; U+1E7D LATIN SMALL LETTER V WITH TILDE<br/>&nbsp;&nbsp;+&#x0056; = &#x1e7c; U+1E7C LATIN CAPITAL LETTER V WITH TILDE<br/>&nbsp;&nbsp;+&#x0079; = &#x1ef9; U+1EF9 LATIN SMALL LETTER Y WITH TILDE<br/>&nbsp;&nbsp;+&#x0059; = &#x1ef8; U+1EF8 LATIN CAPITAL LETTER Y WITH TILDE<br/>&nbsp;&nbsp;+&#x00f6; = &#x1e4f; U+1E4F LATIN SMALL LETTER O WITH TILDE AND DIAERESIS<br/>&nbsp;&nbsp;+&#x00d6; = &#x1e4e; U+1E4E LATIN CAPITAL LETTER O WITH TILDE AND DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00a1.png" ALT="U+00A1 INVERTED EXCLAMATION MARK"  onmouseover = "popup('VK_1<br/>U+00A1 INVERTED EXCLAMATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00ba.png" ALT="U+00BA MASCULINE ORDINAL INDICATOR"  onmouseover = "popup('VK_2<br/>U+00BA MASCULINE ORDINAL INDICATOR');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00aa.png" ALT="U+00AA FEMININE ORDINAL INDICATOR"  onmouseover = "popup('VK_3<br/>U+00AA FEMININE ORDINAL INDICATOR');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a2.png" ALT="U+00A2 CENT SIGN"  onmouseover = "popup('VK_4<br/>U+00A2 CENT SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/20ac.png" ALT="U+20AC EURO SIGN"  onmouseover = "popup('VK_5<br/>U+20AC EURO SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0126.png" ALT="U+0126 LATIN CAPITAL LETTER H WITH STROKE"  onmouseover = "popup('VK_6<br/>U+0126 LATIN CAPITAL LETTER H WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d0.png" ALT="U+00D0 LATIN CAPITAL LETTER ETH"  onmouseover = "popup('VK_7<br/>U+00D0 LATIN CAPITAL LETTER ETH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00de.png" ALT="U+00DE LATIN CAPITAL LETTER THORN"  onmouseover = "popup('VK_8<br/>U+00DE LATIN CAPITAL LETTER THORN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2018.png" ALT="U+2018 LEFT SINGLE QUOTATION MARK"  onmouseover = "popup('VK_9<br/>U+2018 LEFT SINGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2019.png" ALT="U+2019 RIGHT SINGLE QUOTATION MARK"  onmouseover = "popup('VK_0<br/>U+2019 RIGHT SINGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2013.png" ALT="U+2013 EN DASH"  onmouseover = "popup('VK_OEM_MINUS<br/>U+2013 EN DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d7.png" ALT="U+00D7 MULTIPLICATION SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+00D7 MULTIPLICATION SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/BackSp.png" ALT="Backspace key." onmouseover = "popup('VK_BACK<br/>Backspace key');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c4.png" ALT="U+00C4 LATIN CAPITAL LETTER A WITH DIAERESIS"  onmouseover = "popup('VK_Q<br/>U+00C4 LATIN CAPITAL LETTER A WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c5.png" ALT="U+00C5 LATIN CAPITAL LETTER A WITH RING ABOVE"  onmouseover = "popup('VK_W<br/>U+00C5 LATIN CAPITAL LETTER A WITH RING ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c3.png" ALT="U+00C3 LATIN CAPITAL LETTER A WITH TILDE"  onmouseover = "popup('VK_F<br/>U+00C3 LATIN CAPITAL LETTER A WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d8.png" ALT="U+00D8 LATIN CAPITAL LETTER O WITH STROKE"  onmouseover = "popup('VK_P<br/>U+00D8 LATIN CAPITAL LETTER O WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/02dbK.png" ALT="U+02DB OGONEK&#10;DeadKey: &#x02db; &#x0105; &#x0104; &#x0119; &#x0118; &#x012f; &#x012e; &#x01eb; &#x01ea; &#x0173; &#x0172;"  onmouseover = "popup('VK_G<br/>U+02DB OGONEK<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02db; U+02DB OGONEK<br/>&nbsp;&nbsp;+&#x0061; = &#x0105; U+0105 LATIN SMALL LETTER A WITH OGONEK<br/>&nbsp;&nbsp;+&#x0041; = &#x0104; U+0104 LATIN CAPITAL LETTER A WITH OGONEK<br/>&nbsp;&nbsp;+&#x0065; = &#x0119; U+0119 LATIN SMALL LETTER E WITH OGONEK<br/>&nbsp;&nbsp;+&#x0045; = &#x0118; U+0118 LATIN CAPITAL LETTER E WITH OGONEK<br/>&nbsp;&nbsp;+&#x0069; = &#x012f; U+012F LATIN SMALL LETTER I WITH OGONEK<br/>&nbsp;&nbsp;+&#x0049; = &#x012e; U+012E LATIN CAPITAL LETTER I WITH OGONEK<br/>&nbsp;&nbsp;+&#x006f; = &#x01eb; U+01EB LATIN SMALL LETTER O WITH OGONEK<br/>&nbsp;&nbsp;+&#x004f; = &#x01ea; U+01EA LATIN CAPITAL LETTER O WITH OGONEK<br/>&nbsp;&nbsp;+&#x0075; = &#x0173; U+0173 LATIN SMALL LETTER U WITH OGONEK<br/>&nbsp;&nbsp;+&#x0055; = &#x0172; U+0172 LATIN CAPITAL LETTER U WITH OGONEK');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/0110.png" ALT="U+0110 LATIN CAPITAL LETTER D WITH STROKE"  onmouseover = "popup('VK_J<br/>U+0110 LATIN CAPITAL LETTER D WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0141.png" ALT="U+0141 LATIN CAPITAL LETTER L WITH STROKE"  onmouseover = "popup('VK_L<br/>U+0141 LATIN CAPITAL LETTER L WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00da.png" ALT="U+00DA LATIN CAPITAL LETTER U WITH ACUTE"  onmouseover = "popup('VK_U<br/>U+00DA LATIN CAPITAL LETTER U WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00dc.png" ALT="U+00DC LATIN CAPITAL LETTER U WITH DIAERESIS"  onmouseover = "popup('VK_Y<br/>U+00DC LATIN CAPITAL LETTER U WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d6.png" ALT="U+00D6 LATIN CAPITAL LETTER O WITH DIAERESIS"  onmouseover = "popup('VK_OEM_1<br/>U+00D6 LATIN CAPITAL LETTER O WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00ab.png" ALT="U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_4<br/>U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00bb.png" ALT="U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_6<br/>U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/002aKW.png" ALT="U+002A ASTERISK&#10;DeadKey: &#x002a; &#x2030; &#x00a9; &#x00b0; &#x00b5; &#x2116; &#x00b6; &#x00ae; &#x00a7; &#x2122; &#x00b1; &#x2260; &#x2264; &#x2026; &#x2265; &#x2248; &#x00a6;"  onmouseover = "popup('VK_OEM_5<br/>U+002A ASTERISK<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x002a; U+002A ASTERISK<br/>&nbsp;&nbsp;+&#x0025; = &#x2030; U+2030 PER MILLE SIGN<br/>&nbsp;&nbsp;+&#x0063; = &#x00a9; U+00A9 COPYRIGHT SIGN<br/>&nbsp;&nbsp;+&#x0064; = &#x00b0; U+00B0 DEGREE SIGN<br/>&nbsp;&nbsp;+&#x006d; = &#x00b5; U+00B5 MICRO SIGN<br/>&nbsp;&nbsp;+&#x006e; = &#x2116; U+2116 NUMERO SIGN<br/>&nbsp;&nbsp;+&#x0070; = &#x00b6; U+00B6 PILCROW SIGN<br/>&nbsp;&nbsp;+&#x0072; = &#x00ae; U+00AE REGISTERED SIGN<br/>&nbsp;&nbsp;+&#x0073; = &#x00a7; U+00A7 SECTION SIGN<br/>&nbsp;&nbsp;+&#x0074; = &#x2122; U+2122 TRADE MARK SIGN<br/>&nbsp;&nbsp;+&#x002b; = &#x00b1; U+00B1 PLUS-MINUS SIGN<br/>&nbsp;&nbsp;+&#x003d; = &#x2260; U+2260 NOT EQUAL TO<br/>&nbsp;&nbsp;+&#x003c; = &#x2264; U+2264 LESS-THAN OR EQUAL TO<br/>&nbsp;&nbsp;+&#x002e; = &#x2026; U+2026 HORIZONTAL ELLIPSIS<br/>&nbsp;&nbsp;+&#x003e; = &#x2265; U+2265 GREATER-THAN OR EQUAL TO<br/>&nbsp;&nbsp;+&#x007e; = &#x2248; U+2248 ALMOST EQUAL TO<br/>&nbsp;&nbsp;+&#x007c; = &#x00a6; U+00A6 BROKEN BAR');" onmouseout="kill();" WIDTH="60" HEIGHT="40"></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key with Caps Lock enabled.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c1.png" ALT="U+00C1 LATIN CAPITAL LETTER A WITH ACUTE"  onmouseover = "popup('VK_A<br/>U+00C1 LATIN CAPITAL LETTER A WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0060K.png" ALT="U+0060 GRAVE ACCENT&#10;DeadKey: &#x0060; &#x00e0; &#x00c0; &#x00e8; &#x00c8; &#x00ec; &#x00cc; &#x01f9; &#x01f8; &#x00f2; &#x00d2; &#x00f9; &#x00d9; &#x1e81; &#x1e80; &#x1ef3; &#x1ef2; &#x01dc; &#x01db;"  onmouseover = "popup('VK_R<br/>U+0060 GRAVE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x0060; U+0060 GRAVE ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e0; U+00E0 LATIN SMALL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c0; U+00C0 LATIN CAPITAL LETTER A WITH GRAVE<br/>&nbsp;&nbsp;+&#x0065; = &#x00e8; U+00E8 LATIN SMALL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0045; = &#x00c8; U+00C8 LATIN CAPITAL LETTER E WITH GRAVE<br/>&nbsp;&nbsp;+&#x0069; = &#x00ec; U+00EC LATIN SMALL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x0049; = &#x00cc; U+00CC LATIN CAPITAL LETTER I WITH GRAVE<br/>&nbsp;&nbsp;+&#x006e; = &#x01f9; U+01F9 LATIN SMALL LETTER N WITH GRAVE<br/>&nbsp;&nbsp;+&#x004e; = &#x01f8; U+01F8 LATIN CAPITAL LETTER N WITH GRAVE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f2; U+00F2 LATIN SMALL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d2; U+00D2 LATIN CAPITAL LETTER O WITH GRAVE<br/>&nbsp;&nbsp;+&#x0075; = &#x00f9; U+00F9 LATIN SMALL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;+&#x0055; = &#x00d9; U+00D9 LATIN CAPITAL LETTER U WITH GRAVE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e81; U+1E81 LATIN SMALL LETTER W WITH GRAVE<br/>&nbsp;&nbsp;+&#x0057; = &#x1e80; U+1E80 LATIN CAPITAL LETTER W WITH GRAVE<br/>&nbsp;&nbsp;+&#x0079; = &#x1ef3; U+1EF3 LATIN SMALL LETTER Y WITH GRAVE<br/>&nbsp;&nbsp;+&#x0059; = &#x1ef2; U+1EF2 LATIN CAPITAL LETTER Y WITH GRAVE<br/>&nbsp;&nbsp;+&#x00fc; = &#x01dc; U+01DC LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE<br/>&nbsp;&nbsp;+&#x00dc; = &#x01db; U+01DB LATIN CAPITAL LETTER U WITH DIAERESIS AND GRAVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/1e9e.png" ALT="U+1E9E LATIN CAPITAL LETTER SHARP S"  onmouseover = "popup('VK_S<br/>U+1E9E LATIN CAPITAL LETTER SHARP S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b4K.png" ALT="U+00B4 ACUTE ACCENT&#10;DeadKey: &#x00b4; &#x00e1; &#x00c1; &#x0107; &#x0106; &#x1e09; &#x1e08; &#x00e9; &#x00c9; &#x01f5; &#x01f4; &#x00ed; &#x00cd; &#x1e31; &#x1e30; &#x013a; &#x0139; &#x1e3f; &#x1e3e; &#x0144; &#x0143; &#x00f3; &#x00d3; &#x1e55; &#x1e54; &#x01ff; &#x01fe; &#x0155; &#x0154; &#x015b; &#x015a; &#x00fa; &#x00da; &#x1e83; &#x1e82; &#x01fb; &#x01fa; &#x00fd; &#x00dd; &#x01d8; &#x01d7; &#x017a; &#x0179; &#x01fd; &#x01fc; &#x1e4d;"  onmouseover = "popup('VK_T<br/>U+00B4 ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00b4; U+00B4 ACUTE ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e1; U+00E1 LATIN SMALL LETTER A WITH ACUTE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c1; U+00C1 LATIN CAPITAL LETTER A WITH ACUTE<br/>&nbsp;&nbsp;+&#x0063; = &#x0107; U+0107 LATIN SMALL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x0043; = &#x0106; U+0106 LATIN CAPITAL LETTER C WITH ACUTE<br/>&nbsp;&nbsp;+&#x00e7; = &#x1e09; U+1E09 LATIN SMALL LETTER C WITH CEDILLA AND ACUTE<br/>&nbsp;&nbsp;+&#x00c7; = &#x1e08; U+1E08 LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE<br/>&nbsp;&nbsp;+&#x0065; = &#x00e9; U+00E9 LATIN SMALL LETTER E WITH ACUTE<br/>&nbsp;&nbsp;+&#x0045; = &#x00c9; U+00C9 LATIN CAPITAL LETTER E WITH ACUTE<br/>&nbsp;&nbsp;+&#x0067; = &#x01f5; U+01F5 LATIN SMALL LETTER G WITH ACUTE<br/>&nbsp;&nbsp;+&#x0047; = &#x01f4; U+01F4 LATIN CAPITAL LETTER G WITH ACUTE<br/>&nbsp;&nbsp;+&#x0069; = &#x00ed; U+00ED LATIN SMALL LETTER I WITH ACUTE<br/>&nbsp;&nbsp;+&#x0049; = &#x00cd; U+00CD LATIN CAPITAL LETTER I WITH ACUTE<br/>&nbsp;&nbsp;+&#x006b; = &#x1e31; U+1E31 LATIN SMALL LETTER K WITH ACUTE<br/>&nbsp;&nbsp;+&#x004b; = &#x1e30; U+1E30 LATIN CAPITAL LETTER K WITH ACUTE<br/>&nbsp;&nbsp;+&#x006c; = &#x013a; U+013A LATIN SMALL LETTER L WITH ACUTE<br/>&nbsp;&nbsp;+&#x004c; = &#x0139; U+0139 LATIN CAPITAL LETTER L WITH ACUTE<br/>&nbsp;&nbsp;+&#x006d; = &#x1e3f; U+1E3F LATIN SMALL LETTER M WITH ACUTE<br/>&nbsp;&nbsp;+&#x004d; = &#x1e3e; U+1E3E LATIN CAPITAL LETTER M WITH ACUTE<br/>&nbsp;&nbsp;+&#x006e; = &#x0144; U+0144 LATIN SMALL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x004e; = &#x0143; U+0143 LATIN CAPITAL LETTER N WITH ACUTE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f3; U+00F3 LATIN SMALL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x004f; = &#x00d3; U+00D3 LATIN CAPITAL LETTER O WITH ACUTE<br/>&nbsp;&nbsp;+&#x0070; = &#x1e55; U+1E55 LATIN SMALL LETTER P WITH ACUTE<br/>&nbsp;&nbsp;+&#x0050; = &#x1e54; U+1E54 LATIN CAPITAL LETTER P WITH ACUTE<br/>&nbsp;&nbsp;+&#x00f8; = &#x01ff; U+01FF LATIN SMALL LETTER O WITH STROKE AND ACUTE<br/>&nbsp;&nbsp;+&#x00d8; = &#x01fe; U+01FE LATIN CAPITAL LETTER O WITH STROKE AND ACUTE<br/>&nbsp;&nbsp;+&#x0072; = &#x0155; U+0155 LATIN SMALL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0052; = &#x0154; U+0154 LATIN CAPITAL LETTER R WITH ACUTE<br/>&nbsp;&nbsp;+&#x0073; = &#x015b; U+015B LATIN SMALL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x0053; = &#x015a; U+015A LATIN CAPITAL LETTER S WITH ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x00fa; U+00FA LATIN SMALL LETTER U WITH ACUTE<br/>&nbsp;&nbsp;+&#x0055; = &#x00da; U+00DA LATIN CAPITAL LETTER U WITH ACUTE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e83; U+1E83 LATIN SMALL LETTER W WITH ACUTE<br/>&nbsp;&nbsp;+&#x0057; = &#x1e82; U+1E82 LATIN CAPITAL LETTER W WITH ACUTE<br/>&nbsp;&nbsp;+&#x00e5; = &#x01fb; U+01FB LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x00c5; = &#x01fa; U+01FA LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x0079; = &#x00fd; U+00FD LATIN SMALL LETTER Y WITH ACUTE<br/>&nbsp;&nbsp;+&#x0059; = &#x00dd; U+00DD LATIN CAPITAL LETTER Y WITH ACUTE<br/>&nbsp;&nbsp;+&#x00fc; = &#x01d8; U+01D8 LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x00dc; = &#x01d7; U+01D7 LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x007a; = &#x017a; U+017A LATIN SMALL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;+&#x005a; = &#x0179; U+0179 LATIN CAPITAL LETTER Z WITH ACUTE<br/>&nbsp;&nbsp;+&#x00e6; = &#x01fd; U+01FD LATIN SMALL LETTER AE WITH ACUTE<br/>&nbsp;&nbsp;+&#x00c6; = &#x01fc; U+01FC LATIN CAPITAL LETTER AE WITH ACUTE<br/>&nbsp;&nbsp;+&#x00f5; = &#x1e4d; U+1E4D LATIN SMALL LETTER O WITH TILDE AND ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00a8K.png" ALT="U+00A8 DIAERESIS&#10;DeadKey: &#x00a8; &#x00e4; &#x00c4; &#x00eb; &#x00cb; &#x1e27; &#x1e26; &#x00ef; &#x00cf; &#x1e2f; &#x1e2e; &#x00f6; &#x00d6; &#x1e97; &#x00fc; &#x00dc; &#x01d8; &#x01d7; &#x1e85; &#x1e84; &#x1e8d; &#x1e8c; &#x00ff; &#x0178;"  onmouseover = "popup('VK_D<br/>U+00A8 DIAERESIS<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00a8; U+00A8 DIAERESIS<br/>&nbsp;&nbsp;+&#x0061; = &#x00e4; U+00E4 LATIN SMALL LETTER A WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0041; = &#x00c4; U+00C4 LATIN CAPITAL LETTER A WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0065; = &#x00eb; U+00EB LATIN SMALL LETTER E WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0045; = &#x00cb; U+00CB LATIN CAPITAL LETTER E WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0068; = &#x1e27; U+1E27 LATIN SMALL LETTER H WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0048; = &#x1e26; U+1E26 LATIN CAPITAL LETTER H WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0069; = &#x00ef; U+00EF LATIN SMALL LETTER I WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0049; = &#x00cf; U+00CF LATIN CAPITAL LETTER I WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x00ed; = &#x1e2f; U+1E2F LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x00cd; = &#x1e2e; U+1E2E LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x006f; = &#x00f6; U+00F6 LATIN SMALL LETTER O WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x004f; = &#x00d6; U+00D6 LATIN CAPITAL LETTER O WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0074; = &#x1e97; U+1E97 LATIN SMALL LETTER T WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0075; = &#x00fc; U+00FC LATIN SMALL LETTER U WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0055; = &#x00dc; U+00DC LATIN CAPITAL LETTER U WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x00fa; = &#x01d8; U+01D8 LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x00da; = &#x01d7; U+01D7 LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e85; U+1E85 LATIN SMALL LETTER W WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0057; = &#x1e84; U+1E84 LATIN CAPITAL LETTER W WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0078; = &#x1e8d; U+1E8D LATIN SMALL LETTER X WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0058; = &#x1e8c; U+1E8C LATIN CAPITAL LETTER X WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0079; = &#x00ff; U+00FF LATIN SMALL LETTER Y WITH DIAERESIS<br/>&nbsp;&nbsp;+&#x0059; = &#x0178; U+0178 LATIN CAPITAL LETTER Y WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/02c7K.png" ALT="U+02C7 CARON&#10;DeadKey: &#x02c7; &#x01ce; &#x01cd; &#x010d; &#x010c; &#x010f; &#x010e; &#x011b; &#x011a; &#x01e7; &#x01e6; &#x021f; &#x021e; &#x01d0; &#x01cf; &#x01f0; &#x01e9; &#x01e8; &#x013e; &#x013d; &#x0148; &#x0147; &#x01d2; &#x01d1; &#x0159; &#x0158; &#x0161; &#x0160; &#x0165; &#x0164; &#x01d4; &#x01d3; &#x01da; &#x01d9; &#x017e; &#x017d;"  onmouseover = "popup('VK_H<br/>U+02C7 CARON<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02c7; U+02C7 CARON<br/>&nbsp;&nbsp;+&#x0061; = &#x01ce; U+01CE LATIN SMALL LETTER A WITH CARON<br/>&nbsp;&nbsp;+&#x0041; = &#x01cd; U+01CD LATIN CAPITAL LETTER A WITH CARON<br/>&nbsp;&nbsp;+&#x0063; = &#x010d; U+010D LATIN SMALL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0043; = &#x010c; U+010C LATIN CAPITAL LETTER C WITH CARON<br/>&nbsp;&nbsp;+&#x0064; = &#x010f; U+010F LATIN SMALL LETTER D WITH CARON<br/>&nbsp;&nbsp;+&#x0044; = &#x010e; U+010E LATIN CAPITAL LETTER D WITH CARON<br/>&nbsp;&nbsp;+&#x0065; = &#x011b; U+011B LATIN SMALL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0045; = &#x011a; U+011A LATIN CAPITAL LETTER E WITH CARON<br/>&nbsp;&nbsp;+&#x0067; = &#x01e7; U+01E7 LATIN SMALL LETTER G WITH CARON<br/>&nbsp;&nbsp;+&#x0047; = &#x01e6; U+01E6 LATIN CAPITAL LETTER G WITH CARON<br/>&nbsp;&nbsp;+&#x0068; = &#x021f; U+021F LATIN SMALL LETTER H WITH CARON<br/>&nbsp;&nbsp;+&#x0048; = &#x021e; U+021E LATIN CAPITAL LETTER H WITH CARON<br/>&nbsp;&nbsp;+&#x0069; = &#x01d0; U+01D0 LATIN SMALL LETTER I WITH CARON<br/>&nbsp;&nbsp;+&#x0049; = &#x01cf; U+01CF LATIN CAPITAL LETTER I WITH CARON<br/>&nbsp;&nbsp;+&#x006a; = &#x01f0; U+01F0 LATIN SMALL LETTER J WITH CARON<br/>&nbsp;&nbsp;+&#x006b; = &#x01e9; U+01E9 LATIN SMALL LETTER K WITH CARON<br/>&nbsp;&nbsp;+&#x004b; = &#x01e8; U+01E8 LATIN CAPITAL LETTER K WITH CARON<br/>&nbsp;&nbsp;+&#x006c; = &#x013e; U+013E LATIN SMALL LETTER L WITH CARON<br/>&nbsp;&nbsp;+&#x004c; = &#x013d; U+013D LATIN CAPITAL LETTER L WITH CARON<br/>&nbsp;&nbsp;+&#x006e; = &#x0148; U+0148 LATIN SMALL LETTER N WITH CARON<br/>&nbsp;&nbsp;+&#x004e; = &#x0147; U+0147 LATIN CAPITAL LETTER N WITH CARON<br/>&nbsp;&nbsp;+&#x006f; = &#x01d2; U+01D2 LATIN SMALL LETTER O WITH CARON<br/>&nbsp;&nbsp;+&#x004f; = &#x01d1; U+01D1 LATIN CAPITAL LETTER O WITH CARON<br/>&nbsp;&nbsp;+&#x0072; = &#x0159; U+0159 LATIN SMALL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0052; = &#x0158; U+0158 LATIN CAPITAL LETTER R WITH CARON<br/>&nbsp;&nbsp;+&#x0073; = &#x0161; U+0161 LATIN SMALL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x0053; = &#x0160; U+0160 LATIN CAPITAL LETTER S WITH CARON<br/>&nbsp;&nbsp;+&#x0074; = &#x0165; U+0165 LATIN SMALL LETTER T WITH CARON<br/>&nbsp;&nbsp;+&#x0054; = &#x0164; U+0164 LATIN CAPITAL LETTER T WITH CARON<br/>&nbsp;&nbsp;+&#x0075; = &#x01d4; U+01D4 LATIN SMALL LETTER U WITH CARON<br/>&nbsp;&nbsp;+&#x0055; = &#x01d3; U+01D3 LATIN CAPITAL LETTER U WITH CARON<br/>&nbsp;&nbsp;+&#x00fc; = &#x01da; U+01DA LATIN SMALL LETTER U WITH DIAERESIS AND CARON<br/>&nbsp;&nbsp;+&#x00dc; = &#x01d9; U+01D9 LATIN CAPITAL LETTER U WITH DIAERESIS AND CARON<br/>&nbsp;&nbsp;+&#x007a; = &#x017e; U+017E LATIN SMALL LETTER Z WITH CARON<br/>&nbsp;&nbsp;+&#x005a; = &#x017d; U+017D LATIN CAPITAL LETTER Z WITH CARON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00d1.png" ALT="U+00D1 LATIN CAPITAL LETTER N WITH TILDE"  onmouseover = "popup('VK_N<br/>U+00D1 LATIN CAPITAL LETTER N WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c9.png" ALT="U+00C9 LATIN CAPITAL LETTER E WITH ACUTE"  onmouseover = "popup('VK_E<br/>U+00C9 LATIN CAPITAL LETTER E WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00cd.png" ALT="U+00CD LATIN CAPITAL LETTER I WITH ACUTE"  onmouseover = "popup('VK_I<br/>U+00CD LATIN CAPITAL LETTER I WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d3.png" ALT="U+00D3 LATIN CAPITAL LETTER O WITH ACUTE"  onmouseover = "popup('VK_O<br/>U+00D3 LATIN CAPITAL LETTER O WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d5.png" ALT="U+00D5 LATIN CAPITAL LETTER O WITH TILDE"  onmouseover = "popup('VK_OEM_7<br/>U+00D5 LATIN CAPITAL LETTER O WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key." onmouseover = "popup('VK_RETURN<br/>Enter key.');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2013.png" ALT="U+2013 EN DASH"  onmouseover = "popup('VK_OEM_102<br/>U+2013 EN DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c6.png" ALT="U+00C6 LATIN CAPITAL LETTER AE"  onmouseover = "popup('VK_Z<br/>U+00C6 LATIN CAPITAL LETTER AE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/005eK.png" ALT="U+005E CIRCUMFLEX ACCENT&#10;DeadKey: &#x005e; &#x00e2; &#x00c2; &#x1ea5; &#x1ea4; &#x0109; &#x0108; &#x00ea; &#x00ca; &#x1ebf; &#x1ebe; &#x1eab; &#x1eaa; &#x011d; &#x011c; &#x0125; &#x0124; &#x00ee; &#x00ce; &#x0135; &#x0134; &#x00f4; &#x00d4; &#x1ed1; &#x1ed0; &#x015d; &#x015c; &#x00fb; &#x00db; &#x0175; &#x0174; &#x0177; &#x0176; &#x1e91; &#x1e90; &#x1ed7; &#x1ed6;"  onmouseover = "popup('VK_X<br/>U+005E CIRCUMFLEX ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x005e; U+005E CIRCUMFLEX ACCENT<br/>&nbsp;&nbsp;+&#x0061; = &#x00e2; U+00E2 LATIN SMALL LETTER A WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0041; = &#x00c2; U+00C2 LATIN CAPITAL LETTER A WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00e1; = &#x1ea5; U+1EA5 LATIN SMALL LETTER A WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00c1; = &#x1ea4; U+1EA4 LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x0063; = &#x0109; U+0109 LATIN SMALL LETTER C WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0043; = &#x0108; U+0108 LATIN CAPITAL LETTER C WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0065; = &#x00ea; U+00EA LATIN SMALL LETTER E WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0045; = &#x00ca; U+00CA LATIN CAPITAL LETTER E WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00e9; = &#x1ebf; U+1EBF LATIN SMALL LETTER E WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00c9; = &#x1ebe; U+1EBE LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00e3; = &#x1eab; U+1EAB LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE<br/>&nbsp;&nbsp;+&#x00c3; = &#x1eaa; U+1EAA LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND TILDE<br/>&nbsp;&nbsp;+&#x0067; = &#x011d; U+011D LATIN SMALL LETTER G WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0047; = &#x011c; U+011C LATIN CAPITAL LETTER G WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0068; = &#x0125; U+0125 LATIN SMALL LETTER H WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0048; = &#x0124; U+0124 LATIN CAPITAL LETTER H WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0069; = &#x00ee; U+00EE LATIN SMALL LETTER I WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0049; = &#x00ce; U+00CE LATIN CAPITAL LETTER I WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x006a; = &#x0135; U+0135 LATIN SMALL LETTER J WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x004a; = &#x0134; U+0134 LATIN CAPITAL LETTER J WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x006f; = &#x00f4; U+00F4 LATIN SMALL LETTER O WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x004f; = &#x00d4; U+00D4 LATIN CAPITAL LETTER O WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00f3; = &#x1ed1; U+1ED1 LATIN SMALL LETTER O WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x00d3; = &#x1ed0; U+1ED0 LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND ACUTE<br/>&nbsp;&nbsp;+&#x0073; = &#x015d; U+015D LATIN SMALL LETTER S WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0053; = &#x015c; U+015C LATIN CAPITAL LETTER S WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0075; = &#x00fb; U+00FB LATIN SMALL LETTER U WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0055; = &#x00db; U+00DB LATIN CAPITAL LETTER U WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0077; = &#x0175; U+0175 LATIN SMALL LETTER W WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0057; = &#x0174; U+0174 LATIN CAPITAL LETTER W WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0079; = &#x0177; U+0177 LATIN SMALL LETTER Y WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x0059; = &#x0176; U+0176 LATIN CAPITAL LETTER Y WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x007a; = &#x1e91; U+1E91 LATIN SMALL LETTER Z WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x005a; = &#x1e90; U+1E90 LATIN CAPITAL LETTER Z WITH CIRCUMFLEX<br/>&nbsp;&nbsp;+&#x00f5; = &#x1ed7; U+1ED7 LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE<br/>&nbsp;&nbsp;+&#x00d5; = &#x1ed6; U+1ED6 LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00c7.png" ALT="U+00C7 LATIN CAPITAL LETTER C WITH CEDILLA"  onmouseover = "popup('VK_C<br/>U+00C7 LATIN CAPITAL LETTER C WITH CEDILLA');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0152.png" ALT="U+0152 LATIN CAPITAL LIGATURE OE"  onmouseover = "popup('VK_V<br/>U+0152 LATIN CAPITAL LIGATURE OE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/02d8K.png" ALT="U+02D8 BREVE&#10;DeadKey: &#x02d8; &#x0103; &#x0102; &#x1eaf; &#x1eae; &#x0115; &#x0114; &#x1eb5; &#x1eb4; &#x011f; &#x011e; &#x012d; &#x012c; &#x014f; &#x014e; &#x016d; &#x016c;"  onmouseover = "popup('VK_B<br/>U+02D8 BREVE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02d8; U+02D8 BREVE<br/>&nbsp;&nbsp;+&#x0061; = &#x0103; U+0103 LATIN SMALL LETTER A WITH BREVE<br/>&nbsp;&nbsp;+&#x0041; = &#x0102; U+0102 LATIN CAPITAL LETTER A WITH BREVE<br/>&nbsp;&nbsp;+&#x00e1; = &#x1eaf; U+1EAF LATIN SMALL LETTER A WITH BREVE AND ACUTE<br/>&nbsp;&nbsp;+&#x00c1; = &#x1eae; U+1EAE LATIN CAPITAL LETTER A WITH BREVE AND ACUTE<br/>&nbsp;&nbsp;+&#x0065; = &#x0115; U+0115 LATIN SMALL LETTER E WITH BREVE<br/>&nbsp;&nbsp;+&#x0045; = &#x0114; U+0114 LATIN CAPITAL LETTER E WITH BREVE<br/>&nbsp;&nbsp;+&#x00e3; = &#x1eb5; U+1EB5 LATIN SMALL LETTER A WITH BREVE AND TILDE<br/>&nbsp;&nbsp;+&#x00c3; = &#x1eb4; U+1EB4 LATIN CAPITAL LETTER A WITH BREVE AND TILDE<br/>&nbsp;&nbsp;+&#x0067; = &#x011f; U+011F LATIN SMALL LETTER G WITH BREVE<br/>&nbsp;&nbsp;+&#x0047; = &#x011e; U+011E LATIN CAPITAL LETTER G WITH BREVE<br/>&nbsp;&nbsp;+&#x0069; = &#x012d; U+012D LATIN SMALL LETTER I WITH BREVE<br/>&nbsp;&nbsp;+&#x0049; = &#x012c; U+012C LATIN CAPITAL LETTER I WITH BREVE<br/>&nbsp;&nbsp;+&#x006f; = &#x014f; U+014F LATIN SMALL LETTER O WITH BREVE<br/>&nbsp;&nbsp;+&#x004f; = &#x014e; U+014E LATIN CAPITAL LETTER O WITH BREVE<br/>&nbsp;&nbsp;+&#x0075; = &#x016d; U+016D LATIN SMALL LETTER U WITH BREVE<br/>&nbsp;&nbsp;+&#x0055; = &#x016c; U+016C LATIN CAPITAL LETTER U WITH BREVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/02daK.png" ALT="U+02DA RING ABOVE&#10;DeadKey: &#x02da; &#x00e5; &#x00c5; &#x01fb; &#x01fa; &#x016f; &#x016e; &#x1e98; &#x1e99;"  onmouseover = "popup('VK_K<br/>U+02DA RING ABOVE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02da; U+02DA RING ABOVE<br/>&nbsp;&nbsp;+&#x0061; = &#x00e5; U+00E5 LATIN SMALL LETTER A WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0041; = &#x00c5; U+00C5 LATIN CAPITAL LETTER A WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x00e1; = &#x01fb; U+01FB LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x00c1; = &#x01fa; U+01FA LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x016f; U+016F LATIN SMALL LETTER U WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0055; = &#x016e; U+016E LATIN CAPITAL LETTER U WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e98; U+1E98 LATIN SMALL LETTER W WITH RING ABOVE<br/>&nbsp;&nbsp;+&#x0079; = &#x1e99; U+1E99 LATIN SMALL LETTER Y WITH RING ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00afK.png" ALT="U+00AF MACRON&#10;DeadKey: &#x00af; &#x0101; &#x0100; &#x0113; &#x0112; &#x1e17; &#x1e16; &#x1e21; &#x1e20; &#x012b; &#x012a; &#x014d; &#x014c; &#x1e53; &#x1e52; &#x01df; &#x01de; &#x016b; &#x016a; &#x0233; &#x0232; &#x01d6; &#x01d5; &#x01e3; &#x01e2; &#x022b; &#x022a; &#x022d; &#x022c;"  onmouseover = "popup('VK_M<br/>U+00AF MACRON<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00af; U+00AF MACRON<br/>&nbsp;&nbsp;+&#x0061; = &#x0101; U+0101 LATIN SMALL LETTER A WITH MACRON<br/>&nbsp;&nbsp;+&#x0041; = &#x0100; U+0100 LATIN CAPITAL LETTER A WITH MACRON<br/>&nbsp;&nbsp;+&#x0065; = &#x0113; U+0113 LATIN SMALL LETTER E WITH MACRON<br/>&nbsp;&nbsp;+&#x0045; = &#x0112; U+0112 LATIN CAPITAL LETTER E WITH MACRON<br/>&nbsp;&nbsp;+&#x00e9; = &#x1e17; U+1E17 LATIN SMALL LETTER E WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x00c9; = &#x1e16; U+1E16 LATIN CAPITAL LETTER E WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x0067; = &#x1e21; U+1E21 LATIN SMALL LETTER G WITH MACRON<br/>&nbsp;&nbsp;+&#x0047; = &#x1e20; U+1E20 LATIN CAPITAL LETTER G WITH MACRON<br/>&nbsp;&nbsp;+&#x0069; = &#x012b; U+012B LATIN SMALL LETTER I WITH MACRON<br/>&nbsp;&nbsp;+&#x0049; = &#x012a; U+012A LATIN CAPITAL LETTER I WITH MACRON<br/>&nbsp;&nbsp;+&#x006f; = &#x014d; U+014D LATIN SMALL LETTER O WITH MACRON<br/>&nbsp;&nbsp;+&#x004f; = &#x014c; U+014C LATIN CAPITAL LETTER O WITH MACRON<br/>&nbsp;&nbsp;+&#x00f3; = &#x1e53; U+1E53 LATIN SMALL LETTER O WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x00d3; = &#x1e52; U+1E52 LATIN CAPITAL LETTER O WITH MACRON AND ACUTE<br/>&nbsp;&nbsp;+&#x00e4; = &#x01df; U+01DF LATIN SMALL LETTER A WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00c4; = &#x01de; U+01DE LATIN CAPITAL LETTER A WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x0075; = &#x016b; U+016B LATIN SMALL LETTER U WITH MACRON<br/>&nbsp;&nbsp;+&#x0055; = &#x016a; U+016A LATIN CAPITAL LETTER U WITH MACRON<br/>&nbsp;&nbsp;+&#x0079; = &#x0233; U+0233 LATIN SMALL LETTER Y WITH MACRON<br/>&nbsp;&nbsp;+&#x0059; = &#x0232; U+0232 LATIN CAPITAL LETTER Y WITH MACRON<br/>&nbsp;&nbsp;+&#x00fc; = &#x01d6; U+01D6 LATIN SMALL LETTER U WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00dc; = &#x01d5; U+01D5 LATIN CAPITAL LETTER U WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00e6; = &#x01e3; U+01E3 LATIN SMALL LETTER AE WITH MACRON<br/>&nbsp;&nbsp;+&#x00c6; = &#x01e2; U+01E2 LATIN CAPITAL LETTER AE WITH MACRON<br/>&nbsp;&nbsp;+&#x00f6; = &#x022b; U+022B LATIN SMALL LETTER O WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00d6; = &#x022a; U+022A LATIN CAPITAL LETTER O WITH DIAERESIS AND MACRON<br/>&nbsp;&nbsp;+&#x00f5; = &#x022d; U+022D LATIN SMALL LETTER O WITH TILDE AND MACRON<br/>&nbsp;&nbsp;+&#x00d5; = &#x022c; U+022C LATIN CAPITAL LETTER O WITH TILDE AND MACRON');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00b8K.png" ALT="U+00B8 CEDILLA&#10;DeadKey: &#x00b8; &#x00e7; &#x00c7; &#x1e11; &#x1e10; &#x0229; &#x0228; &#x0123; &#x0122; &#x1e29; &#x1e28; &#x0137; &#x0136; &#x013c; &#x013b; &#x0146; &#x0145; &#x0157; &#x0156; &#x015f; &#x015e; &#x0163; &#x0162;"  onmouseover = "popup('VK_OEM_COMMA<br/>U+00B8 CEDILLA<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x00b8; U+00B8 CEDILLA<br/>&nbsp;&nbsp;+&#x0063; = &#x00e7; U+00E7 LATIN SMALL LETTER C WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0043; = &#x00c7; U+00C7 LATIN CAPITAL LETTER C WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0064; = &#x1e11; U+1E11 LATIN SMALL LETTER D WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0044; = &#x1e10; U+1E10 LATIN CAPITAL LETTER D WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0065; = &#x0229; U+0229 LATIN SMALL LETTER E WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0045; = &#x0228; U+0228 LATIN CAPITAL LETTER E WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0067; = &#x0123; U+0123 LATIN SMALL LETTER G WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0047; = &#x0122; U+0122 LATIN CAPITAL LETTER G WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0068; = &#x1e29; U+1E29 LATIN SMALL LETTER H WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0048; = &#x1e28; U+1E28 LATIN CAPITAL LETTER H WITH CEDILLA<br/>&nbsp;&nbsp;+&#x006b; = &#x0137; U+0137 LATIN SMALL LETTER K WITH CEDILLA<br/>&nbsp;&nbsp;+&#x004b; = &#x0136; U+0136 LATIN CAPITAL LETTER K WITH CEDILLA<br/>&nbsp;&nbsp;+&#x006c; = &#x013c; U+013C LATIN SMALL LETTER L WITH CEDILLA<br/>&nbsp;&nbsp;+&#x004c; = &#x013b; U+013B LATIN CAPITAL LETTER L WITH CEDILLA<br/>&nbsp;&nbsp;+&#x006e; = &#x0146; U+0146 LATIN SMALL LETTER N WITH CEDILLA<br/>&nbsp;&nbsp;+&#x004e; = &#x0145; U+0145 LATIN CAPITAL LETTER N WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0072; = &#x0157; U+0157 LATIN SMALL LETTER R WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0052; = &#x0156; U+0156 LATIN CAPITAL LETTER R WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0073; = &#x015f; U+015F LATIN SMALL LETTER S WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0053; = &#x015e; U+015E LATIN CAPITAL LETTER S WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0074; = &#x0163; U+0163 LATIN SMALL LETTER T WITH CEDILLA<br/>&nbsp;&nbsp;+&#x0054; = &#x0162; U+0162 LATIN CAPITAL LETTER T WITH CEDILLA');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/02d9K.png" ALT="U+02D9 DOT ABOVE&#10;DeadKey: &#x02d9; &#x0227; &#x0226; &#x1e03; &#x1e02; &#x010b; &#x010a; &#x1e0b; &#x1e0a; &#x0117; &#x0116; &#x1e1f; &#x1e1e; &#x0121; &#x0120; &#x1e23; &#x1e22; &#x0131; &#x0130; &#x0140; &#x013f; &#x1e41; &#x1e40; &#x1e45; &#x1e44; &#x022f; &#x022e; &#x1e57; &#x1e56; &#x1e59; &#x1e58; &#x1e61; &#x1e60; &#x1e6b; &#x1e6a; &#x1e87; &#x1e86; &#x1e8b; &#x1e8a; &#x1e8f; &#x1e8e; &#x017c; &#x017b;"  onmouseover = "popup('VK_OEM_PERIOD<br/>U+02D9 DOT ABOVE<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02d9; U+02D9 DOT ABOVE<br/>&nbsp;&nbsp;+&#x0061; = &#x0227; U+0227 LATIN SMALL LETTER A WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0041; = &#x0226; U+0226 LATIN CAPITAL LETTER A WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0062; = &#x1e03; U+1E03 LATIN SMALL LETTER B WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0042; = &#x1e02; U+1E02 LATIN CAPITAL LETTER B WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0063; = &#x010b; U+010B LATIN SMALL LETTER C WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0043; = &#x010a; U+010A LATIN CAPITAL LETTER C WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0064; = &#x1e0b; U+1E0B LATIN SMALL LETTER D WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0044; = &#x1e0a; U+1E0A LATIN CAPITAL LETTER D WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0065; = &#x0117; U+0117 LATIN SMALL LETTER E WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0045; = &#x0116; U+0116 LATIN CAPITAL LETTER E WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0066; = &#x1e1f; U+1E1F LATIN SMALL LETTER F WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0046; = &#x1e1e; U+1E1E LATIN CAPITAL LETTER F WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0067; = &#x0121; U+0121 LATIN SMALL LETTER G WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0047; = &#x0120; U+0120 LATIN CAPITAL LETTER G WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0068; = &#x1e23; U+1E23 LATIN SMALL LETTER H WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0048; = &#x1e22; U+1E22 LATIN CAPITAL LETTER H WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0069; = &#x0131; U+0131 LATIN SMALL LETTER DOTLESS I<br/>&nbsp;&nbsp;+&#x0049; = &#x0130; U+0130 LATIN CAPITAL LETTER I WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x006c; = &#x0140; U+0140 LATIN SMALL LETTER L WITH MIDDLE DOT<br/>&nbsp;&nbsp;+&#x004c; = &#x013f; U+013F LATIN CAPITAL LETTER L WITH MIDDLE DOT<br/>&nbsp;&nbsp;+&#x006d; = &#x1e41; U+1E41 LATIN SMALL LETTER M WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x004d; = &#x1e40; U+1E40 LATIN CAPITAL LETTER M WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x006e; = &#x1e45; U+1E45 LATIN SMALL LETTER N WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x004e; = &#x1e44; U+1E44 LATIN CAPITAL LETTER N WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x006f; = &#x022f; U+022F LATIN SMALL LETTER O WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x004f; = &#x022e; U+022E LATIN CAPITAL LETTER O WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0070; = &#x1e57; U+1E57 LATIN SMALL LETTER P WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0050; = &#x1e56; U+1E56 LATIN CAPITAL LETTER P WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0072; = &#x1e59; U+1E59 LATIN SMALL LETTER R WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0052; = &#x1e58; U+1E58 LATIN CAPITAL LETTER R WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0073; = &#x1e61; U+1E61 LATIN SMALL LETTER S WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0053; = &#x1e60; U+1E60 LATIN CAPITAL LETTER S WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0074; = &#x1e6b; U+1E6B LATIN SMALL LETTER T WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0054; = &#x1e6a; U+1E6A LATIN CAPITAL LETTER T WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0077; = &#x1e87; U+1E87 LATIN SMALL LETTER W WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0057; = &#x1e86; U+1E86 LATIN CAPITAL LETTER W WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0078; = &#x1e8b; U+1E8B LATIN SMALL LETTER X WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0058; = &#x1e8a; U+1E8A LATIN CAPITAL LETTER X WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0079; = &#x1e8f; U+1E8F LATIN SMALL LETTER Y WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x0059; = &#x1e8e; U+1E8E LATIN CAPITAL LETTER Y WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x007a; = &#x017c; U+017C LATIN SMALL LETTER Z WITH DOT ABOVE<br/>&nbsp;&nbsp;+&#x005a; = &#x017b; U+017B LATIN CAPITAL LETTER Z WITH DOT ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/00bf.png" ALT="U+00BF INVERTED QUESTION MARK"  onmouseover = "popup('VK_OEM_2<br/>U+00BF INVERTED QUESTION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift.png" STYLE=cursor:hand ALT="Shift key. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+0020 SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+0020 SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key with AltGr enabled.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlaltlower CLASS=shiftctrlaltlower STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b9.png" ALT="U+00B9 SUPERSCRIPT ONE"  onmouseover = "popup('VK_1<br/>U+00B9 SUPERSCRIPT ONE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b2.png" ALT="U+00B2 SUPERSCRIPT TWO"  onmouseover = "popup('VK_2<br/>U+00B2 SUPERSCRIPT TWO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b3.png" ALT="U+00B3 SUPERSCRIPT THREE"  onmouseover = "popup('VK_3<br/>U+00B3 SUPERSCRIPT THREE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a3.png" ALT="U+00A3 POUND SIGN"  onmouseover = "popup('VK_4<br/>U+00A3 POUND SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a5.png" ALT="U+00A5 YEN SIGN"  onmouseover = "popup('VK_5<br/>U+00A5 YEN SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0126.png" ALT="U+0126 LATIN CAPITAL LETTER H WITH STROKE"  onmouseover = "popup('VK_6<br/>U+0126 LATIN CAPITAL LETTER H WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d0.png" ALT="U+00D0 LATIN CAPITAL LETTER ETH"  onmouseover = "popup('VK_7<br/>U+00D0 LATIN CAPITAL LETTER ETH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00de.png" ALT="U+00DE LATIN CAPITAL LETTER THORN"  onmouseover = "popup('VK_8<br/>U+00DE LATIN CAPITAL LETTER THORN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/201c.png" ALT="U+201C LEFT DOUBLE QUOTATION MARK"  onmouseover = "popup('VK_9<br/>U+201C LEFT DOUBLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/201d.png" ALT="U+201D RIGHT DOUBLE QUOTATION MARK"  onmouseover = "popup('VK_0<br/>U+201D RIGHT DOUBLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2014.png" ALT="U+2014 EM DASH"  onmouseover = "popup('VK_OEM_MINUS<br/>U+2014 EM DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f7.png" ALT="U+00F7 DIVISION SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+00F7 DIVISION SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/BackSp.png" ALT="Backspace key." onmouseover = "popup('VK_BACK<br/>Backspace key');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c4.png" ALT="U+00C4 LATIN CAPITAL LETTER A WITH DIAERESIS"  onmouseover = "popup('VK_Q<br/>U+00C4 LATIN CAPITAL LETTER A WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c5.png" ALT="U+00C5 LATIN CAPITAL LETTER A WITH RING ABOVE"  onmouseover = "popup('VK_W<br/>U+00C5 LATIN CAPITAL LETTER A WITH RING ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c3.png" ALT="U+00C3 LATIN CAPITAL LETTER A WITH TILDE"  onmouseover = "popup('VK_F<br/>U+00C3 LATIN CAPITAL LETTER A WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d8.png" ALT="U+00D8 LATIN CAPITAL LETTER O WITH STROKE"  onmouseover = "popup('VK_P<br/>U+00D8 LATIN CAPITAL LETTER O WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0110.png" ALT="U+0110 LATIN CAPITAL LETTER D WITH STROKE"  onmouseover = "popup('VK_J<br/>U+0110 LATIN CAPITAL LETTER D WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0141.png" ALT="U+0141 LATIN CAPITAL LETTER L WITH STROKE"  onmouseover = "popup('VK_L<br/>U+0141 LATIN CAPITAL LETTER L WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00da.png" ALT="U+00DA LATIN CAPITAL LETTER U WITH ACUTE"  onmouseover = "popup('VK_U<br/>U+00DA LATIN CAPITAL LETTER U WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00dc.png" ALT="U+00DC LATIN CAPITAL LETTER U WITH DIAERESIS"  onmouseover = "popup('VK_Y<br/>U+00DC LATIN CAPITAL LETTER U WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d6.png" ALT="U+00D6 LATIN CAPITAL LETTER O WITH DIAERESIS"  onmouseover = "popup('VK_OEM_1<br/>U+00D6 LATIN CAPITAL LETTER O WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2039.png" ALT="U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_4<br/>U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/203a.png" ALT="U+203A SINGLE RIGHT-POINTING ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_6<br/>U+203A SINGLE RIGHT-POINTING ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock.png" STYLE=cursor:hand ALT="Caps Lock key. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c1.png" ALT="U+00C1 LATIN CAPITAL LETTER A WITH ACUTE"  onmouseover = "popup('VK_A<br/>U+00C1 LATIN CAPITAL LETTER A WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/1e9e.png" ALT="U+1E9E LATIN CAPITAL LETTER SHARP S"  onmouseover = "popup('VK_S<br/>U+1E9E LATIN CAPITAL LETTER SHARP S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/02ddK.png" ALT="U+02DD DOUBLE ACUTE ACCENT&#10;DeadKey: &#x02dd; &#x0151; &#x0150; &#x0171; &#x0170;"  onmouseover = "popup('VK_T<br/>U+02DD DOUBLE ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02dd; U+02DD DOUBLE ACUTE ACCENT<br/>&nbsp;&nbsp;+&#x006f; = &#x0151; U+0151 LATIN SMALL LETTER O WITH DOUBLE ACUTE<br/>&nbsp;&nbsp;+&#x004f; = &#x0150; U+0150 LATIN CAPITAL LETTER O WITH DOUBLE ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x0171; U+0171 LATIN SMALL LETTER U WITH DOUBLE ACUTE<br/>&nbsp;&nbsp;+&#x0055; = &#x0170; U+0170 LATIN CAPITAL LETTER U WITH DOUBLE ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d1.png" ALT="U+00D1 LATIN CAPITAL LETTER N WITH TILDE"  onmouseover = "popup('VK_N<br/>U+00D1 LATIN CAPITAL LETTER N WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c9.png" ALT="U+00C9 LATIN CAPITAL LETTER E WITH ACUTE"  onmouseover = "popup('VK_E<br/>U+00C9 LATIN CAPITAL LETTER E WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00cd.png" ALT="U+00CD LATIN CAPITAL LETTER I WITH ACUTE"  onmouseover = "popup('VK_I<br/>U+00CD LATIN CAPITAL LETTER I WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d3.png" ALT="U+00D3 LATIN CAPITAL LETTER O WITH ACUTE"  onmouseover = "popup('VK_O<br/>U+00D3 LATIN CAPITAL LETTER O WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00d5.png" ALT="U+00D5 LATIN CAPITAL LETTER O WITH TILDE"  onmouseover = "popup('VK_OEM_7<br/>U+00D5 LATIN CAPITAL LETTER O WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key." onmouseover = "popup('VK_RETURN<br/>Enter key.');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2014.png" ALT="U+2014 EM DASH"  onmouseover = "popup('VK_OEM_102<br/>U+2014 EM DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c6.png" ALT="U+00C6 LATIN CAPITAL LETTER AE"  onmouseover = "popup('VK_Z<br/>U+00C6 LATIN CAPITAL LETTER AE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00c7.png" ALT="U+00C7 LATIN CAPITAL LETTER C WITH CEDILLA"  onmouseover = "popup('VK_C<br/>U+00C7 LATIN CAPITAL LETTER C WITH CEDILLA');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0152.png" ALT="U+0152 LATIN CAPITAL LIGATURE OE"  onmouseover = "popup('VK_V<br/>U+0152 LATIN CAPITAL LIGATURE OE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+00A0 NO-BREAK SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+00A0 NO-BREAK SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key with AltGr enabled.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+<DIV ID=shiftctrlaltcaps CLASS=shiftctrlaltcaps STYLE="display: none">
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b9.png" ALT="U+00B9 SUPERSCRIPT ONE"  onmouseover = "popup('VK_1<br/>U+00B9 SUPERSCRIPT ONE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b2.png" ALT="U+00B2 SUPERSCRIPT TWO"  onmouseover = "popup('VK_2<br/>U+00B2 SUPERSCRIPT TWO');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00b3.png" ALT="U+00B3 SUPERSCRIPT THREE"  onmouseover = "popup('VK_3<br/>U+00B3 SUPERSCRIPT THREE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a3.png" ALT="U+00A3 POUND SIGN"  onmouseover = "popup('VK_4<br/>U+00A3 POUND SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00a5.png" ALT="U+00A5 YEN SIGN"  onmouseover = "popup('VK_5<br/>U+00A5 YEN SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0127.png" ALT="U+0127 LATIN SMALL LETTER H WITH STROKE"  onmouseover = "popup('VK_6<br/>U+0127 LATIN SMALL LETTER H WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f0.png" ALT="U+00F0 LATIN SMALL LETTER ETH"  onmouseover = "popup('VK_7<br/>U+00F0 LATIN SMALL LETTER ETH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00fe.png" ALT="U+00FE LATIN SMALL LETTER THORN"  onmouseover = "popup('VK_8<br/>U+00FE LATIN SMALL LETTER THORN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/201c.png" ALT="U+201C LEFT DOUBLE QUOTATION MARK"  onmouseover = "popup('VK_9<br/>U+201C LEFT DOUBLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/201d.png" ALT="U+201D RIGHT DOUBLE QUOTATION MARK"  onmouseover = "popup('VK_0<br/>U+201D RIGHT DOUBLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2014.png" ALT="U+2014 EM DASH"  onmouseover = "popup('VK_OEM_MINUS<br/>U+2014 EM DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f7.png" ALT="U+00F7 DIVISION SIGN"  onmouseover = "popup('VK_OEM_PLUS<br/>U+00F7 DIVISION SIGN');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/BackSp.png" ALT="Backspace key." onmouseover = "popup('VK_BACK<br/>Backspace key');" onmouseout="kill()" WIDTH="80" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/Tab.png" ALT="Tab key." onmouseover = "popup('VK_TAB<br/>Tab key');" onmouseout="kill()" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e4.png" ALT="U+00E4 LATIN SMALL LETTER A WITH DIAERESIS"  onmouseover = "popup('VK_Q<br/>U+00E4 LATIN SMALL LETTER A WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e5.png" ALT="U+00E5 LATIN SMALL LETTER A WITH RING ABOVE"  onmouseover = "popup('VK_W<br/>U+00E5 LATIN SMALL LETTER A WITH RING ABOVE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e3.png" ALT="U+00E3 LATIN SMALL LETTER A WITH TILDE"  onmouseover = "popup('VK_F<br/>U+00E3 LATIN SMALL LETTER A WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f8.png" ALT="U+00F8 LATIN SMALL LETTER O WITH STROKE"  onmouseover = "popup('VK_P<br/>U+00F8 LATIN SMALL LETTER O WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0111.png" ALT="U+0111 LATIN SMALL LETTER D WITH STROKE"  onmouseover = "popup('VK_J<br/>U+0111 LATIN SMALL LETTER D WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0142.png" ALT="U+0142 LATIN SMALL LETTER L WITH STROKE"  onmouseover = "popup('VK_L<br/>U+0142 LATIN SMALL LETTER L WITH STROKE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00fa.png" ALT="U+00FA LATIN SMALL LETTER U WITH ACUTE"  onmouseover = "popup('VK_U<br/>U+00FA LATIN SMALL LETTER U WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00fc.png" ALT="U+00FC LATIN SMALL LETTER U WITH DIAERESIS"  onmouseover = "popup('VK_Y<br/>U+00FC LATIN SMALL LETTER U WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f6.png" ALT="U+00F6 LATIN SMALL LETTER O WITH DIAERESIS"  onmouseover = "popup('VK_OEM_1<br/>U+00F6 LATIN SMALL LETTER O WITH DIAERESIS');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2039.png" ALT="U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_4<br/>U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/203a.png" ALT="U+203A SINGLE RIGHT-POINTING ANGLE QUOTATION MARK"  onmouseover = "popup('VK_OEM_6<br/>U+203A SINGLE RIGHT-POINTING ANGLE QUOTATION MARK');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000W.png" ALT="Blank key." WIDTH="60" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/CapsLock2.png" STYLE=cursor:hand ALT="Caps Lock key with Caps Lock enabled. Click to change keyboard state."  onClick=Click(1) onmouseover = "popup('VK_CAPITAL<br/>Caps Lock key with Caps Lock enabled.<br/>Click to change keyboard state.');MouseOver(1);" onmouseout="kill();MouseOut(1);" WIDTH="80" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e1.png" ALT="U+00E1 LATIN SMALL LETTER A WITH ACUTE"  onmouseover = "popup('VK_A<br/>U+00E1 LATIN SMALL LETTER A WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00df.png" ALT="U+00DF LATIN SMALL LETTER SHARP S"  onmouseover = "popup('VK_S<br/>U+00DF LATIN SMALL LETTER SHARP S');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/02ddK.png" ALT="U+02DD DOUBLE ACUTE ACCENT&#10;DeadKey: &#x02dd; &#x0151; &#x0150; &#x0171; &#x0170;"  onmouseover = "popup('VK_T<br/>U+02DD DOUBLE ACUTE ACCENT<br/>DeadKey: <br/>&nbsp;&nbsp;+{space} = &#x02dd; U+02DD DOUBLE ACUTE ACCENT<br/>&nbsp;&nbsp;+&#x006f; = &#x0151; U+0151 LATIN SMALL LETTER O WITH DOUBLE ACUTE<br/>&nbsp;&nbsp;+&#x004f; = &#x0150; U+0150 LATIN CAPITAL LETTER O WITH DOUBLE ACUTE<br/>&nbsp;&nbsp;+&#x0075; = &#x0171; U+0171 LATIN SMALL LETTER U WITH DOUBLE ACUTE<br/>&nbsp;&nbsp;+&#x0055; = &#x0170; U+0170 LATIN CAPITAL LETTER U WITH DOUBLE ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40"></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f1.png" ALT="U+00F1 LATIN SMALL LETTER N WITH TILDE"  onmouseover = "popup('VK_N<br/>U+00F1 LATIN SMALL LETTER N WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e9.png" ALT="U+00E9 LATIN SMALL LETTER E WITH ACUTE"  onmouseover = "popup('VK_E<br/>U+00E9 LATIN SMALL LETTER E WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00ed.png" ALT="U+00ED LATIN SMALL LETTER I WITH ACUTE"  onmouseover = "popup('VK_I<br/>U+00ED LATIN SMALL LETTER I WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f3.png" ALT="U+00F3 LATIN SMALL LETTER O WITH ACUTE"  onmouseover = "popup('VK_O<br/>U+00F3 LATIN SMALL LETTER O WITH ACUTE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00f5.png" ALT="U+00F5 LATIN SMALL LETTER O WITH TILDE"  onmouseover = "popup('VK_OEM_7<br/>U+00F5 LATIN SMALL LETTER O WITH TILDE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Enter.png" ALT="Enter key." onmouseover = "popup('VK_RETURN<br/>Enter key.');" onmouseout="kill()" WIDTH="82" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8><TR>
+<TD><IMG SRC="images/NarrowShift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="60" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/2014.png" ALT="U+2014 EM DASH"  onmouseover = "popup('VK_OEM_102<br/>U+2014 EM DASH');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e6.png" ALT="U+00E6 LATIN SMALL LETTER AE"  onmouseover = "popup('VK_Z<br/>U+00E6 LATIN SMALL LETTER AE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/00e7.png" ALT="U+00E7 LATIN SMALL LETTER C WITH CEDILLA"  onmouseover = "popup('VK_C<br/>U+00E7 LATIN SMALL LETTER C WITH CEDILLA');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0153.png" ALT="U+0153 LATIN SMALL LIGATURE OE"  onmouseover = "popup('VK_V<br/>U+0153 LATIN SMALL LIGATURE OE');" onmouseout="kill();" WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/0000.png" ALT="Blank key." WIDTH="40" HEIGHT="40" /></TD>
+<TD><IMG SRC="images/Shift2.png" STYLE=cursor:hand ALT="Shift key with Shift enabled. Click to change keyboard state."  onClick=Click(2) onmouseover = "popup('VK_SHIFT<br/>Shift key with Shift enabled.<br/>Click to change keyboard state.');MouseOver(2);" onmouseout="kill();MouseOut(2);" WIDTH="104" HEIGHT="40" /></TD>
+</TR></TABLE>
+<TABLE WIDTH=640 HEIGHT=40 BORDER=0 CELLSPACING=0 PADDING=0 BGCOLOR=#C8C8C8>
+<TD><IMG SRC="images/Control2.png" STYLE=cursor:hand ALT="Ctrl key with Ctrl enabled." onmouseover = "popup('VK_CONTROL<br/>Ctrl key with Ctrl enabled.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Alt.png" ALT="Alt key." onmouseover = "popup('VK_LMENU<br/>Alt key.');" onmouseout="kill()" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Key4.png" ALT="Spacebar key. U+00A0 NO-BREAK SPACE" onmouseover = "popup('VK_SPACE<br/>Spacebar key.<br/>U+00A0 NO-BREAK SPACE');" onmouseout="kill()" WIDTH=308 HEIGHT=40></TD>
+<TD><IMG SRC="images/AltGr2.png" STYLE=cursor:hand ALT="AltGr key with AltGr enabled. Click to change keyboard state." onClick=Click(8) onmouseover = "popup('VK_RMENU<br/>AltGr key with AltGr enabled.<br/>Click to change keyboard state.');MouseOver(8);" onmouseout="kill();MouseOut(8);" WIDTH=80 HEIGHT=40></TD>
+<TD><IMG SRC="images/Control_Centered.png" STYLE=cursor:hand ALT="Ctrl key." onmouseover = "popup('VK_CONTROL<br/>Ctrl key.');MouseOver(4);" onmouseout="kill();MouseOut(4);" WIDTH=80 HEIGHT=40></TD></TR></TABLE>
+</DIV>
+
+</BODY>
+</HTML>
