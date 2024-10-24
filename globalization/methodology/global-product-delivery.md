@@ -104,10 +104,10 @@ When starting a project, it's vital to get these fundamentals in place as early 
 
    [Pseudolocalization](pseudolocalization.md) is an excellent method to enable build and test without incurring the cost of translation.
 
-3. Validate the localization round-trip from development to translator and back. 
+3. Validate the localization round-trip from development to translator and back.
    Perform an early pilot, perhaps with minimal content and only one or a few languages, to minimize surprises later.
 
-4. Implement the ability to choose the language and locale. 
+4. Implement the ability to choose the language and locale.
    Having a means to select the language and locale independently from the language and locale of the platform makes it easy to develop, test, and debug.
    Plus, it's a useful feature for multilingual users.
 
