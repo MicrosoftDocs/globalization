@@ -38,18 +38,18 @@ Consider the following aspects, which may vary widely by locale and language:
 
 When you get to specifics in your application, keep in mind significant locale differences in:
 
-* Language and language variants, including word choice, spelling, and punctuation.
-* Reading order and text layout.
-* Typographical conventions.
-* People's names.
-* Calendars.
-* Date and time formats.
-* Number formats.
-* Currency unit and formatting of monetary values.
-* Postal addresses.
-* Telephone numbers.
-* Measurement units.
-* Paper sizes.
+* Language and language variants, including word choice, spelling, and punctuation
+* Reading order and text layout
+* Typographical conventions
+* People's names
+* Calendars
+* Date and time formats
+* Number formats
+* Currency unit and formatting of monetary values
+* Postal addresses
+* Telephone numbers
+* Measurement units
+* Paper sizes
 
 To delve into the details of these considerations (and much more), see [International design](international-design.md).
 
