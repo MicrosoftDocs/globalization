@@ -54,6 +54,7 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Chinese (Traditional) - US](keyboards/kbdus_4.md) | 00000404 | 8.1 |
 | &nbsp; | [Chinese (Traditional, Hong Kong S.A.R.) - US](keyboards/kbdus_5.md) | 00000C04 | 8.1 |
 | &nbsp; | [Chinese (Traditional, Macao S.A.R.) - US](keyboards/kbdus_6.md) | 00001404 | 8.1 |
+| &nbsp; | [Colemak](keyboards/kbdcmk.md) | 00060409 | 11 |
 | &nbsp; | [Czech](keyboards/kbdcz.md) | 00000405 | pre-XP |
 | &nbsp; | [Czech (QWERTY)](keyboards/kbdcz1.md) | 00010405 | pre-XP |
 | &nbsp; | [Czech Programmers](keyboards/kbdcz2.md) | 00020405 | pre-XP |
@@ -68,7 +69,9 @@ Choose a keyboard below to view its layout.
 | <a name="F"></a>F | [Faeroese](keyboards/kbdfo.md) | 00000438 | pre-XP |
 | &nbsp; | [Finnish](keyboards/kbdfi.md) | 0000040B | pre-XP |
 | &nbsp; | [Finnish with Sami](keyboards/kbdfi1_1.md) | 0001083B | XP SP2 |
-| &nbsp; | [French](keyboards/kbdfr.md) | 0000040C | pre-XP |
+| &nbsp; | [French (Legacy, AZERTY)](keyboards/kbdfr.md) | 0000040C | pre-XP |
+| &nbsp; | [French (Standard, AZERTY)](keyboards/kbdfrna.md) | 0001040C | 11 |
+| &nbsp; | [French (Standard, BÉPO)](keyboards/kbdfrnb.md) | 0002040C | 11 |
 | &nbsp; | [Futhark](keyboards/kbdfthrk.md) | 00120C00 | 8.1 |
 | <a name="G"></a>G | [Georgian (Ergonomic)](keyboards/kbdgeoer.md) | 00020437 | Vista / Server 2008 |
 | &nbsp; | [Georgian (Legacy)](keyboards/kbdgeo.md) | 00000437 | pre-XP |
@@ -77,6 +80,8 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Georgian (QWERTY)](keyboards/kbdgeoqw.md) | 00010437 | Vista / Server 2008 |
 | &nbsp; | [German](keyboards/kbdgr.md) | 00000407 | pre-XP |
 | &nbsp; | [German (IBM)](keyboards/kbdgr1.md) | 00010407 | pre-XP |
+| &nbsp; | [German Extended (E1)](keyboards/kbdgre1.md) | 00020407 | 11 |
+| &nbsp; | [German Extended (E2)](keyboards/kbdgre2.md) | 00030407 | 11 |
 | &nbsp; | [Gothic](keyboards/kbdgthc.md) | 000C0C00 | 8.1 |
 | &nbsp; | [Greek](keyboards/kbdhe.md) | 00000408 | pre-XP |
 | &nbsp; | [Greek (220)](keyboards/kbdhe220.md) | 00010408 | pre-XP |
@@ -92,6 +97,7 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Hawaiian](keyboards/kbdhaw.md) | 00000475 | 8 |
 | &nbsp; | [Hebrew](keyboards/kbdheb.md) | 0000040D | pre-XP |
 | &nbsp; | [Hebrew (Standard)](keyboards/kbdhebl3.md) | 0002040D | 8 |
+| &nbsp; | [Hebrew (Standard, 2018)](keyboards/kbdhebsi.md) | 0003040D | 11 |
 | &nbsp; | [Hindi Traditional](keyboards/kbdinhin.md) | 00010439 | pre-XP |
 | &nbsp; | [Hungarian](keyboards/kbdhu.md) | 0000040E | pre-XP |
 | &nbsp; | [Hungarian 101-key](keyboards/kbdhu1.md) | 0001040E | pre-XP |

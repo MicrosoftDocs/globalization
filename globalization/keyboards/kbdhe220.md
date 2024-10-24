@@ -1,7 +1,7 @@
 ---
 title: Greek (220) Keyboard
 description: An interactive representation of the Windows Greek (220) keyboard. To see different keyboard states, click or move the mouse over the state keys.
-ms.date: 04/24/2024
+ms.date: 10/24/2024
 ms.topic: ui-reference
 author: jowilco
 ---
