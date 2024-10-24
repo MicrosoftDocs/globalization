@@ -1,12 +1,12 @@
 ---
-title: French Keyboard
-description: An interactive representation of the Windows French keyboard. To see different keyboard states, click or move the mouse over the state keys.
-ms.date: 04/24/2024
+title: French (Legacy, AZERTY) Keyboard
+description: An interactive representation of the Windows French (Legacy, AZERTY) keyboard. To see different keyboard states, click or move the mouse over the state keys.
+ms.date: 10/24/2024
 ms.topic: ui-reference
 author: jowilco
 ---
 
-# French Keyboard
+# French (Legacy, AZERTY) Keyboard
 
 KLID: 0000040C
 
