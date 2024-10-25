@@ -16,14 +16,14 @@ Localization is not the same thing as translation, even though people often use 
 
 The above example is greatly simplified. Localization affects your entire deliverable, not just its textual content. To make localization as smooth as possible, you should design your product to be adaptable to different audiences with as few engineering changes or rework as possible. This advance planning and preparation is known as internationalization.
 
-When localization and internationalization are done correctly, the following things and more are considered:
+To perform localization and internationalization correctly, at a minimum, the following items should be considered:
 
 - Cultural differences such as cultural references, idioms, symbolic meanings, taboos; for example, ground floor vs. first floor, or football vs. soccer
 - Different calendars, date, time, and currency formats
 - Metric vs. imperial measurements
 - Text length: text translated from English into many other languages can be considerably longer, which might create layout issues
 - Orthography, including punctuation and capitalization
-- Direction of writing: languages such as Arabic and Hebrew are written from right to left
+- Direction of writing: Some languages, such as Arabic and Hebrew, are written from right to left
 - Different keyboard layouts
 - Legal requirements such as compliance with Europe’s General Data Protection Regulation (GDPR)
 - Visual elements such as images, videos, icons, and UI elements
@@ -40,7 +40,7 @@ It is important to verify that the source materials are ready for translation. T
 
 You need to isolate the materials you've identified as needing to be translated. All your deliverables—[software](localize-software.md), [documentation](localize-content.md), [marketing materials](transcreation.md), videos (dubbing, [subtitling](../media/captioning.md), even [re-creation](../media/re-creation.md)), websites, and sample data—have components that are translatable. This translatable content usually needs to be extracted from the source files so that translators can focus solely on the textual content. Any non-translatable content should be the responsibility of [engineers and desktop publishers](#identifying-translation-vendors). After translation the textual content is then reinserted into the source files. In some cases your translation vendor can perform the extraction for you.
 
-This approach also lets you use the same source materials to support multiple languages. The source might need some modification to make this possible, but this is still much better than having separate software binaries for each language, or creating a new layout from scratch for every localized version of your documentation or marketing materials. The separation of translatable content from code is discussed under "Separating your code from your translatable strings" in [Localize software](localize-software.md).
+This approach also lets you use the same source materials to support multiple languages. The source might need some modification to make this possible, but this is still much better than having separate software binaries for each language or creating a new layout from scratch for every localized version of your documentation or marketing materials. The separation of translatable content from code is discussed under "Separating your code from your translatable strings" in [Localize software](localize-software.md).
 
 ## Sequencing of materials to be translated
 
@@ -65,7 +65,7 @@ Your organization might have some of these capabilities available internally. Wh
 
 ## Preparing and delivering materials to translation vendors
 
-You should provide the localization vendor more than just the strings, multimedia files, and any other materials that need to be translated and localized. Sharing any reference material you have helps to ensure the quality of the localized product. This includes style guides, [translation memories](translation-memories.md) (TMs), and [terminology lists](managing-terminology.md). If the vendor is responsible for recreating screenshots in the languages of the translated deliverables, you should provide steps for recreating the screenshot, so that matching screenshots can be taken when the translated UI is available.
+You should provide the localization vendor more than just the strings, multimedia files, and any other materials that need to be translated and localized. Sharing any reference material you have helps to ensure the quality of the localized product. This includes style guides, [translation memories](translation-memories.md) (TMs), and [terminology lists](managing-terminology.md). If the vendor is responsible for recreating screenshots in the languages of the translated deliverables, you should provide steps for recreating the screenshots, so that matching screenshots can be taken when the translated UI is available.
 
 You should also establish the expected format for interchanging the data (such as the widely used [XLIFF format](localization-file-formats.md)). The vendor should have access to the English (or other source language) software and product documentation for reference. They should know the purpose, context, and scope of the project, along with the expected translation quality criteria.
 
@@ -97,7 +97,7 @@ Your terminology lists should be developed by both internal teams such as market
 
 ## Linguistic validation
 
-Part of the maintenance of your linguistic assets is to ensure that each translation is linguistically accurate, culturally appropriate, and validated by an expert. Such linguistic validation is important in all fields, but it is crucial for things like the translation of clinical trials, scientific instructions, and legal documents. In these areas, there are regulatory processes for ensuring linguistic accuracy. Examples include [ISO 13485:2016](https://www.iso.org/standard/59752.html) that covers medical devices and [ISO/IEC 17025:2017](https://www.iso.org/standard/66912.html) that covers requirements for testing and calibration laboratories.
+Part of the maintenance of your linguistic assets is to ensure that each translation is linguistically accurate, culturally appropriate, and validated by an expert. Such linguistic validation is important in all fields, but it is crucial for things like the translation of clinical trials, scientific instructions, and legal documents. In these areas, there are regulatory processes for ensuring linguistic accuracy. Examples include [ISO 13485:2016](https://www.iso.org/standard/59752.html), which covers medical devices, and [ISO/IEC 17025:2017](https://www.iso.org/standard/66912.html), which covers requirements for testing and calibration laboratories.
 
 To ensure your TMs and terminology lists are correct, they should be reviewed by linguists, in-country marketing personnel, and subject matter experts. For specialized fields like life sciences and legal services, linguistic validation can be a rigorous process. The validation could require reconciliation of back translation with the original translation, accompanied by a professional review.
 

@@ -1,5 +1,5 @@
 ---
-title: Localize software
+title: Get started with software localization
 description: Software and content localization each have their particular characteristics that drive different localization strategies.
 author: m-kauppinen
 ms.author: v-mikau
