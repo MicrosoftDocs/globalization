@@ -8,7 +8,7 @@ author: jowilco
 
 # Windows keyboard layouts
 
-Layouts generated using: Microsoft Windows 11 Enterprise 22H2 (22621.1848)
+Layouts generated using: Microsoft Windows 11 Enterprise 24H2 (26100.2033)
 
 Choose a keyboard below to view its layout.
 
