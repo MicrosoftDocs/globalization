@@ -1,6 +1,6 @@
 ---
 title: Microsoft Learn Globalization License
-description: License agreeement for globalization content on learn.microsoft.com.
+description: License agreement for globalization content on learn.microsoft.com.
 ms.topic: article
 ms.date: 06/27/2023
 ---
@@ -16,7 +16,7 @@ Microsoft provides you with access to a variety of resources on Microsoft Learn'
       1. require distributors and external end users to agree to terms that protect it at least as much as this agreement
       1. display your valid copyright notice on your programs/documents;
       1. indemnify, defend, and hold harmless Microsoft from any claims, including attorneys’ fees, related to the distribution or use of your programs /documents; and
-      1. include the following notice with distributions of the Globalization Materials: “Entry from Microsoft Learn's Globalization documentation. © 2023 [or applicable year] Microsoft Corporation. All rights reserved.”
+      1. include the following notice with distributions of the Globalization Materials: “Entry from Microsoft Learn's Globalization Essentials. © 2023 [or applicable year] Microsoft Corporation. All rights reserved.”
    1. Distribution Restrictions. You may not:
       1. alter any copyright, trademark or patent notice in the Globalization Materials;
       1. use Microsoft’s trademarks in your programs or documents’ names or in a way that suggests your programs or documents come from or are endorsed by Microsoft; or
