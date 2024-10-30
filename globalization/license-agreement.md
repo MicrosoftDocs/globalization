@@ -1,13 +1,13 @@
 ---
 title: Microsoft Learn Globalization License
-description: License agreeement for globalization content on learn.microsoft.com.
+description: License agreement for globalization content on learn.microsoft.com.
 ms.topic: article
 ms.date: 06/27/2023
 ---
 
 # License agreement
 
-Microsoft provides you with access to a variety of resources on Microsoft Learn's Globalization documentation (“Web Site”), including documentation, terminology and other product information (collectively the “Globalization Materials”). The Globalization Materials (including any updates, enhancements, new features, and/or the addition of any new Web properties to the Web Site) are subject to the [Microsoft Terms of Use](/legal/termsofuse) (“TOU”) and this Microsoft Learn Globalization License ( “License”), unless we have provided more specific terms, in which case those more specific terms will apply to the relevant item. If there is any conflict between the TOU and this License, this License will supersede the TOU. Microsoft reserves the right to update this License at any time without notice to you. The most current version of this License is available at [Microsoft Learn Globalization License](license-agreement.md). These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. Please read them.
+Microsoft provides you with access to a variety of resources on Microsoft Learn's Globalization Essentials (“Web Site”), including documentation, terminology and other product information (collectively the “Globalization Materials”). The Globalization Materials (including any updates, enhancements, new features, and/or the addition of any new Web properties to the Web Site) are subject to the [Microsoft Terms of Use](/legal/termsofuse) (“TOU”) and this Microsoft Learn Globalization License ( “License”), unless we have provided more specific terms, in which case those more specific terms will apply to the relevant item. If there is any conflict between the TOU and this License, this License will supersede the TOU. Microsoft reserves the right to update this License at any time without notice to you. The most current version of this License is available at [Microsoft Learn Globalization License](license-agreement.md). These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. Please read them.
 
 **BY USING THE GLOBALIZATION MATERIALS, YOU ACCEPT AND COMPLY WITH THESE TERMS. IF YOU DO NOT ACCEPT THEM, DO NOT USE THE GLOBALIZATION MATERIALS.**
 
@@ -16,7 +16,7 @@ Microsoft provides you with access to a variety of resources on Microsoft Learn'
       1. require distributors and external end users to agree to terms that protect it at least as much as this agreement
       1. display your valid copyright notice on your programs/documents;
       1. indemnify, defend, and hold harmless Microsoft from any claims, including attorneys’ fees, related to the distribution or use of your programs /documents; and
-      1. include the following notice with distributions of the Globalization Materials: “Entry from Microsoft Learn's Globalization documentation. © 2023 [or applicable year] Microsoft Corporation. All rights reserved.”
+      1. include the following notice with distributions of the Globalization Materials: “Entry from Microsoft Learn's Globalization Essentials. © 2023 [or applicable year] Microsoft Corporation. All rights reserved.”
    1. Distribution Restrictions. You may not:
       1. alter any copyright, trademark or patent notice in the Globalization Materials;
       1. use Microsoft’s trademarks in your programs or documents’ names or in a way that suggests your programs or documents come from or are endorsed by Microsoft; or
