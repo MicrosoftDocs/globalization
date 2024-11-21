@@ -152,7 +152,7 @@ A layer featuring monetary symbols from around the world is available by pressin
 | t | ₸ |
 | w | ₩ |
 | y | ¥ |
-| | | ₾ |
+| &#124; | ₾ |
 | % | ₰ |
 | ® | ₨ |
 | Ç | ₡ |
@@ -263,14 +263,14 @@ The caron dead key (**AltGr + ^**) provides access to a layer of subscript numer
 
 The solidus dead key (**AltGr + K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key (**AltGr + K**) followed by one of the following characters to type its corresponding character:
 
-| Character to type | Resulting character |
-|---|---|
-| = | ≠ |
-| ≃ | ≄ |
-| < | ≮ |
-| > | ≯ |
-| ⩽ | ≰ |
-| ⩾ | ≱ |
+| Character to type | Resulting character | Resulting character |
+|---|---|---|
+| = | ≠ | |
+| ≃ | ≄ | |
+| < | ≮ | &#226E; |
+| > | ≯ | &#226F; |
+| ⩽ | ≰ | &#2270; |
+| ⩾ | ≱ | &#2271; |
 
 #### Mathematical symbols with tilde
 
