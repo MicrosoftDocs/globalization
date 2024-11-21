@@ -18,7 +18,7 @@ For more information about the new standard, you can consult AFNOR’s article a
 ## The new “French (Standard, AZERTY)” layout in Windows
 
 <iframe src="kbdfrna.html" height="300"></iframe>
- 
+
 This keyboard layout is designed to enable you to enter all the accented characters and ligatures commonly used in French. It includes characters that were missing from the legacy AZERTY layout, which are integral to French orthography, such as:
 
   É Ç æ Æ œ Œ — « » ‹ ›
@@ -43,6 +43,7 @@ The new French (Standard, AZERTY) keyboard makes it easier to type:
 The keyboard layout makes it easy to type accented characters and ligatures commonly used in the French language, including in their capital forms.
 
 | Character | Key presses |
+|---|---|
 | à | À |
 | À | AltGr + Shift + à |
 | é | É |
@@ -63,6 +64,7 @@ The keyboard layout makes it easy to type accented characters and ligatures comm
 To keep the physical keyboard looking clean, the keyboard doesn’t feature all the available characters printed on it. The following additional symbols which aren’t printed on the keyboard can be typed:
 
 | Character | Key presses |
+|---|---|
 | Non-breaking space | AltGr + Space |
 | Narrow non-breaking space | AltGr + Shift + Space |
 | — | AltGr + Shift + ’ |
@@ -94,6 +96,7 @@ To enter these accented characters, first press the dead key, then follow it wit
 For example, to type a ‘y’ with a diaresis (ÿ), you would press **Shift + ^** followed by **y**.
 
 | Accent | Dead key | Follow with a letter to type: | Follow with a space to type: |
+|---|---|---|---|
 | Breve | AltGr + @ | ĂĔĞĬŎŬăĕğĭŏŭ | ˘ |
 | Inverted breve | AltGr + Shift + @ | ȂȆȊȎȒȖȃȇȋȏȓȗ | ° |
 | Acute accent | AltGr + é | ÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǼáćéǵíḱĺḿńóṕŕśúẃýźǽ | ´ |
@@ -120,6 +123,7 @@ For example, to type a ‘y’ with a diaresis (ÿ), you would press **Shift + ^
 A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr + F** then one of the following characters to type its corresponding monetary symbol:
 
 | Character to type | Resulting monetary symbol |
+|---|---|
 | A | ₳ |
 | B | ฿ |
 | C | ₡ |
@@ -161,6 +165,7 @@ A layer featuring monetary symbols from around the world is available by pressin
 A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr + G** then one of the following characters to type its corresponding Greek character:
 
 | Character to type | Resulting Greek character |
+|---|---|
 | A | Α |
 | B | Β |
 | C | Ψ |
@@ -217,6 +222,7 @@ A layer featuring all the letters of the Greek alphabet is available by pressing
 A layer featuring an assortment of additional European characters is available by pressing the dead key **AltGr + H** then one of the following characters to type its corresponding character:
 
 | Character to type | Resulting additional European character |
+|---|---|
 | ' | ʼ |
 | 0 | « |
 | 7 | › |
@@ -258,6 +264,7 @@ The caron dead key (**AltGr + ^**) provides access to a layer of subscript numer
 The solidus dead key (**AltGr + K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key (**AltGr + K**) followed by one of the following characters to type its corresponding character:
 
 | Character to type | Resulting character |
+|---|---|
 | = | ≠ |
 | ≃ | ≄ |
 | < | ≮ |
@@ -270,6 +277,7 @@ The solidus dead key (**AltGr + K**) provides access to a set of additional math
 The tilde dead key (**AltGr + N**) provides access to a set of additional mathematical symbols featuring wavy lines. Press the dead key (**AltGr + N**) followed by one of the following characters to type its corresponding character:
 
 | Character to type | Resulting character |
+|---|---|
 | - | ≃ |
 | = | ≈ |
 | < | ≲ |
