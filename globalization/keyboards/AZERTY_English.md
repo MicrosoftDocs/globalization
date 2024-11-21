@@ -9,7 +9,7 @@ ms.date: 11/21/2024
 
 Windows 11 version 24H4 introduces France’s new standard keyboard layout, an updated version of the “AZERTY” layout.
 
-This new keyboard layout has been designed to address the many deficiencies of the traditional AZERTY layout that has been ubiquitous in France. Most critically, the traditional layout lacks the full set of characters needed to write French. For example, ligatures like ‘æ’ and ‘œ’ are missing, as are French « quotation marks » and the capitalised forms of some accented characters.
+This new keyboard layout has been designed to address the many deficiencies of the [traditional AZERTY](./kbdfr.md) layout that has been ubiquitous in France. Most critically, the traditional layout lacks the full set of characters needed to write French. For example, ligatures like ‘æ’ and ‘œ’ are missing, as are French « quotation marks » and the capitalised forms of some accented characters.
 
 The new layout was implemented according to France’s NF Z71-300 national standard. That standard can be purchased from AFNOR, France’s national standards body, here: [Standard NF Z71-300](https://www.boutique.afnor.org/en-gb/standard/nf-z71300/user-interfaces-french-keyboard-layouts-for-office/fa188960/1792)
 
