@@ -263,14 +263,14 @@ The caron dead key (**AltGr + ^**) provides access to a layer of subscript numer
 
 The solidus dead key (**AltGr + K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key (**AltGr + K**) followed by one of the following characters to type its corresponding character:
 
-| Character to type | Resulting character | Resulting character |
-|---|---|---|
-| = | ≠ | |
-| ≃ | ≄ | |
-| < | ≮ | &#x226E; |
-| > | ≯ | &#x226F; |
-| ⩽ | ≰ | &#x2270; |
-| ⩾ | ≱ | &#x2271; |
+| Character to type | Resulting character |
+|---|---|
+| = | ≠ |
+| ≃ | ≄ |
+| < | ≮ |
+| > | ≯ |
+| ⩽ | ≰ |
+| ⩾ | ≱ |
 
 #### Mathematical symbols with tilde
 
