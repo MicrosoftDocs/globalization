@@ -152,7 +152,7 @@ A layer featuring monetary symbols from around the world is available by pressin
 | t | ₸ |
 | w | ₩ |
 | y | ¥ |
-| &#124; | ₾ |
+| &#x7c; | ₾ |
 | % | ₰ |
 | ® | ₨ |
 | Ç | ₡ |
@@ -267,10 +267,10 @@ The solidus dead key (**AltGr + K**) provides access to a set of additional math
 |---|---|---|
 | = | ≠ | |
 | ≃ | ≄ | |
-| < | ≮ | &#226E; |
-| > | ≯ | &#226F; |
-| ⩽ | ≰ | &#2270; |
-| ⩾ | ≱ | &#2271; |
+| < | ≮ | &#x226E; |
+| > | ≯ | &#x226F; |
+| ⩽ | ≰ | &#x2270; |
+| ⩾ | ≱ | &#x2271; |
 
 #### Mathematical symbols with tilde
 
