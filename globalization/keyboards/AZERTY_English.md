@@ -33,7 +33,7 @@ The new French (Standard, AZERTY) keyboard makes it easier to type:
 
 - [Accented characters and ligatures commonly used in French](#accented-characters-and-ligatures-commonly-used-in-french)
 - [Other characters not printed on the keys](#other-characters-not-printed-on-the-keys)
-- [Additional accented characters](dead-keys-for-additional-accented-characters)
+- [Additional accented characters](#dead-keys-for-additional-accented-characters)
 - [Monetary symbols](#monetary-symbols-layer)
 - [Greek letters](#greek-letters-layer)
 - [Additional European characters](#additional-european-characters-layer)
