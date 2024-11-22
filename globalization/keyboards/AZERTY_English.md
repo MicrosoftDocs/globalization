@@ -7,7 +7,7 @@ ms.date: 11/22/2024
 
 # France's new AZERTY keyboard layout
 
-Windows 11 version 24H4 introduces France's new standard keyboard layout, an updated version of the “AZERTY” layout.
+Windows 11 version 24H2 introduces France's new standard keyboard layout, an updated version of the “AZERTY” layout.
 
 This new keyboard layout has been designed to address the many deficiencies of the [traditional AZERTY](./kbdfr.md) layout that has been ubiquitous in France. Most critically, the traditional layout lacks the full set of characters needed to write French. For example, ligatures like 'æ' and 'œ' are missing, as are French « quotation marks » and the capitalised forms of some accented characters.
 
@@ -46,13 +46,13 @@ The keyboard layout makes it easy to type accented characters and ligatures comm
 
 | Character | Key presses |
 |---|---|
-| à | À |
+| à | à |
 | À | AltGr + Shift + à |
-| é | É |
+| é | é |
 | É | AltGr + Shift + é |
-| è | È |
+| è | è |
 | È | AltGr + Shift + è |
-| ê | Ê |
+| ê | ê |
 | Ê | AltGr + Shift + ê |
 | æ | AltGr + A |
 | Æ | AltGr + Shift + A |
@@ -141,7 +141,7 @@ A layer featuring monetary symbols from around the world is available by pressin
 | c | ¢ |
 | d | ₫ |
 | e | ₠ |
-| f | Ƒ |
+| f | ƒ |
 | g | ₲ |
 | h | ₴ |
 | k | ₭ |
@@ -237,14 +237,14 @@ A layer featuring an assortment of additional European characters is available b
 | J | Ĳ |
 | T | Þ |
 | a | ª |
-| d | Ð |
+| d | ð |
 | e | ə |
-| g | Ŋ |
-| i | I |
-| j | Ĳ |
+| g | ŋ |
+| i | ı |
+| j | ĳ |
 | o | º |
 | s | ſ |
-| t | Þ |
+| t | þ |
 | « | „ |
 | » | ‟ |
 | Space | ſ |
