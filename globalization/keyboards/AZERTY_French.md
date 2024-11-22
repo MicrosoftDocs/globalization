@@ -17,7 +17,7 @@ Pour plus d’informations sur la nouvelle norme, vous pouvez consulter l’arti
 
 ## La nouvelle disposition du clavier « Français (Standard, AZERTY) » en Windows
 
-<iframe src="keyboards\kbdfrna.html" height="300"></iframe>
+<iframe src="kbdfrna.html" height="300"></iframe>
 
 Cette disposition du clavier a été conçue pour vous permettre de saisir tous les caractères de la langue française. Elle comprend des caractères manquants dans l'ancienne disposition AZERTY qui font partie intégrante de l'orthographie française, tels que :
 
@@ -33,13 +33,12 @@ La nouvelle disposition du clavier Français (Standard, AZERTY) facilite la sais
 
 - [Caractères accentués et ligatures couramment utilisés en français](#caractères-accentués-et-ligatures-couramment-utilisés-en-français)
 - [Autres caractères non imprimés sur les touches](#autres-caractères-non-imprimés-sur-les-touches)
-- [Caractères accentués additionnels](touches-mortes-pour-caractères-accentués-additionnels)
+- [Caractères accentués additionnels](#touches-mortes-pour-des-caractères-accentués-additionnels)
 - [Symboles monétaires](#touche-morte-symboles-monétaires)
 - [Lettres grecques](#touche-morte-lettres-grecques)
 - [Caractères européens additionnels](#touche-morte-caractères-européens-additionnels)
-- [Chiffres en exposant et en indice](#chiffres-en-exposant et en indice)
+- [Chiffres en exposant et en indice](#chiffres-en-exposant-et-en-indice)
 - [Symboles mathématiques](#symboles-mathématiques)
-
 
 ### Caractères accentués et ligatures couramment utilisés en français
 
@@ -155,7 +154,7 @@ Un ensemble de symboles monétaires internationaux est disponible en appuyant su
 | t | ₸ |
 | w | ₩ |
 | y | ¥ |
-| \| | ₾ |
+| &#x7c; | ₾ |
 | % | ₰ |
 | ® | ₨ |
 | Ç | ₡ |
