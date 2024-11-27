@@ -47,19 +47,19 @@ La disposition du clavier facilite la saisie des caractères accentués et des l
 | Caractère | Touches à appuyer |
 |-------|-------|
 | à | à |
-| À | AltGr + Maj + à |
+| À | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;à |
 | é | é |
-| É | AltGr + Maj + é |
+| É | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;é |
 | è | è |
-| È | AltGr + Maj + è |
+| È | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;è |
 | ê | ê |
-| Ê | AltGr + Maj + ê |
-| æ | AltGr + A |
-| Æ | AltGr + Maj + A |
-| œ | AltGr + O |
-| Œ | AltGr + Maj + O |
-| ç | AltGr + C |
-| Ç | AltGr + Maj + C |
+| Ê | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;ê |
+| æ | AltGr&#xa0;+&#xa0;A |
+| Æ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;A |
+| œ | AltGr&#xa0;+&#xa0;O |
+| Œ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;O |
+| ç | AltGr&#xa0;+&#xa0;C |
+| Ç | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;C |
 
 ### Autres caractères non imprimés sur les touches
 
@@ -67,27 +67,27 @@ Pour éviter que le clavier physique ne paraisse trop encombré, il ne comporte 
 
 | Caractère | Touches à appuyer |
 |-------|-------|
-| Espace insécable | AltGr + Espace |
-| Espace insécable fine | AltGr + Maj + Espace |
-| — | AltGr + Maj + ’ |
-| ‹ | AltGr + Maj + « |
-| › | AltGr + Maj + » |
-| ‰ | AltGr + Maj + P |
-| − | AltGr + - |
-| - | AltGr + Maj + - |
-| † | AltGr + + |
-| ‡ | AltGr + Maj + + |
-| θ | AltGr + Q |
-| ∞ | AltGr + M |
-| √ | AltGr + Maj + / |
-| ¼ | AltGr + Maj + * |
-| ⩽ | AltGr + < |
-| ⩾ | AltGr + Maj + < |
-| ʒ | AltGr + W |
-| ¿ | AltGr + Maj + . |
-| ¡ | AltGr + Maj + , |
-| ≃ | AltGr + ; |
-| ≠ | AltGr + Maj + ; |
+| Espace insécable | AltGr&#xa0;+&#xa0;Espace |
+| Espace insécable fine | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;Espace |
+| — | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;’ |
+| ‹ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;« |
+| › | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;» |
+| ‰ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;P |
+| − | AltGr&#xa0;+&#xa0;- |
+| - | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;- |
+| † | AltGr&#xa0;+&#xa0;+ |
+| ‡ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;+ |
+| θ | AltGr&#xa0;+&#xa0;Q |
+| ∞ | AltGr&#xa0;+&#xa0;M |
+| √ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;/ |
+| ¼ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;* |
+| ⩽ | AltGr&#xa0;+&#xa0;< |
+| ⩾ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;< |
+| ʒ | AltGr&#xa0;+&#xa0;W |
+| ¿ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;. |
+| ¡ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;, |
+| ≃ | AltGr&#xa0;+&#xa0;; |
+| ≠ | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;; |
 
 ### Touches mortes pour des caractères accentués additionnels
 
@@ -95,34 +95,34 @@ De nombreuses « touches mortes » sont incluses pour saisir des caractères a
 
 Pour saisir ces caractères accentués, appuyez d'abord sur la touche morte, puis faites-la suivre de la lettre à laquelle vous souhaitez ajouter un accent. Si vous souhaitez taper l'accent seul, faites-le suivre d'un espace.
 
-Par exemple, pour saisir un « y » avec un tréma ( « ÿ » ), il faut appuyer sur **Maj + ^** suivi de **y**.
+Par exemple, pour saisir un « y » avec un tréma ( « ÿ » ), il faut appuyer sur **Maj&#xa0;+&#xa0;^** suivi de **y**.
 
 | Accent | Touche morte | Faire suivre d'une lettre pour saisir : | Faire suivre d'un espace pour saisir : |
 |-------|-------|-------|-------|
-| Brève | AltGr + @ | ĂĔĞĬŎŬăĕğĭŏŭ | ˘ |
-| Brève renversée | AltGr + Maj + @ | ȂȆȊȎȒȖȃȇȋȏȓȗ | ° |
-| Accent aigu | AltGr + é | ÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǼáćéǵíḱĺḿńóṕŕśúẃýźǽ | ´ |
-| Accent grave | AltGr + è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
-| Accent double aigu | AltGr + Maj + ( | ŐŰőű | ˝ |
-| Accent double grave | AltGr + Maj + ) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
-| Macron | AltGr + ‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
-| Rond en chef | AltGr + Maj + ° | ÅŮåůẘẙ | ˚ |
+| Brève | AltGr&#xa0;+&#xa0;@ | ĂĔĞĬŎŬăĕğĭŏŭ | ˘ |
+| Brève renversée | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;@ | ȂȆȊȎȒȖȃȇȋȏȓȗ | ° |
+| Accent aigu | AltGr&#xa0;+&#xa0;é | ÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǼáćéǵíḱĺḿńóṕŕśúẃýźǽ | ´ |
+| Accent grave | AltGr&#xa0;+&#xa0;è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
+| Accent double aigu | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;( | ŐŰőű | ˝ |
+| Accent double grave | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
+| Macron | AltGr&#xa0;+&#xa0;‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
+| Rond en chef | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;° | ÅŮåůẘẙ | ˚ |
 | Accent circonflexe | ^ | ÂĈÊĜĤÎĴÔŜÛŴŶẐâĉêĝĥîĵôŝûŵŷẑ | ^ |
-| Tréma | Maj + ^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
-| Caron | AltGr + Maj + ^ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
-| Point en chef | AltGr + I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
-| Point souscrit | AltGr + Maj + I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
-| Macron souscrit | AltGr + Maj + H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |
-| Barre oblique couvrante | AltGr + K | ȺȻɆŁØȾȼɇłøẜ | / |
-| Cédille | AltGr + V | ÇḐȨĢḨĶĻŅŖŞŢçḑȩģḩķļņŗşţ | ¸ |
-| Ogonek | AltGr + Maj + V | ĄĘĮǪŲąęįǫų | ˛ |
-| Barre couvrante | AltGr + B | ɃĐǤĦƗɈȽɌŦɄɎƵƀđǥħɉƚɍŧɏƶ | - |
-| Tilde | AltGr + N | ÃẼĨÑÕŨṼỸãẽĩñõũṽỹ | ~ |
-| Virgule souscrite | AltGr + Maj + , | ȘȚșț | , |
+| Tréma | Maj&#xa0;+&#xa0;^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
+| Caron | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;^ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
+| Point en chef | AltGr&#xa0;+&#xa0;I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
+| Point souscrit | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
+| Macron souscrit | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |
+| Barre oblique couvrante | AltGr&#xa0;+&#xa0;K | ȺȻɆŁØȾȼɇłøẜ | / |
+| Cédille | AltGr&#xa0;+&#xa0;V | ÇḐȨĢḨĶĻŅŖŞŢçḑȩģḩķļņŗşţ | ¸ |
+| Ogonek | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;V | ĄĘĮǪŲąęįǫų | ˛ |
+| Barre couvrante | AltGr&#xa0;+&#xa0;B | ɃĐǤĦƗɈȽɌŦɄɎƵƀđǥħɉƚɍŧɏƶ | - |
+| Tilde | AltGr&#xa0;+&#xa0;N | ÃẼĨÑÕŨṼỸãẽĩñõũṽỹ | ~ |
+| Virgule souscrite | AltGr&#xa0;+&#xa0;Maj&#xa0;+&#xa0;, | ȘȚșț | , |
 
 ### Touche morte symboles monétaires
 
-Un ensemble de symboles monétaires internationaux est disponible en appuyant sur la touche morte **AltGr + F** puis sur l'un des caractères suivants pour saisir son symbole monétaire correspondant :
+Un ensemble de symboles monétaires internationaux est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;F** puis sur l'un des caractères suivants pour saisir son symbole monétaire correspondant :
 
 | Caractère à saisir | Symbole monétaire résultant |
 |-------|-------|
@@ -164,7 +164,7 @@ Un ensemble de symboles monétaires internationaux est disponible en appuyant su
 
 ### Touche morte lettres grecques
 
-Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte **AltGr + G** puis sur l'un des caractères suivants pour saisir son caractère grec correspondant :
+Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;G** puis sur l'un des caractères suivants pour saisir son caractère grec correspondant :
 
 | Caractère à saisir | Lettre grecque résultant |
 |-------|-------|
@@ -221,7 +221,7 @@ Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte 
 
 ### Touche morte caractères européens additionnels
 
-Un assortiment de caractères européens est disponible en appuyant sur la touche morte **AltGr + H** puis sur l'un des caractères suivants pour saisir son caractère correspondant :
+Un assortiment de caractères européens est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;H** puis sur l'un des caractères suivants pour saisir son caractère correspondant :
 
 | Caractère à saisir | Caractère résultant |
 |-------|-------|
@@ -257,13 +257,13 @@ La touche morte circonflexe (**^**) donne accès aux chiffres en exposant. Appuy
 
 #### Chiffres en indice
 
-La touche morte caron (**AltGr + ^**) donne accès aux chiffres en indice. Appuyez sur la touche morte **AltGr + ^** suivie d'un chiffre pour en saisir une version en indice : ₀₁₂₃₄₅₆₇₈₉
+La touche morte caron (**AltGr&#xa0;+&#xa0;^**) donne accès aux chiffres en indice. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;^** suivie d'un chiffre pour en saisir une version en indice : ₀₁₂₃₄₅₆₇₈₉
 
 ### Symboles mathématiques
 
 #### Symboles mathématiques avec barre oblique couvrante
 
-La touche morte barre oblique couvrante (**AltGr + K**) permet d'accéder à des symboles mathématiques traversés par une barre oblique. Appuyez sur la touche morte **AltGr + K** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
+La touche morte barre oblique couvrante (**AltGr&#xa0;+&#xa0;K**) permet d'accéder à des symboles mathématiques traversés par une barre oblique. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;K** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
 
 | Caractère à saisir | Caractère résultant |
 |-------|-------|
@@ -276,7 +276,7 @@ La touche morte barre oblique couvrante (**AltGr + K**) permet d'accéder à des
 
 #### Symboles mathématiques avec tilde
 
-La touche morte tilde (**AltGr + N**) donne accès à des symboles mathématiques comportant des lignes ondulées. Appuyez sur la touche morte **AltGr + N** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
+La touche morte tilde (**AltGr&#xa0;+&#xa0;N**) donne accès à des symboles mathématiques comportant des lignes ondulées. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;N** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
 
 | Caractère à saisir | Caractère résultant |
 |-------|-------|

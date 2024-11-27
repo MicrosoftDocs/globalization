@@ -47,19 +47,19 @@ The keyboard layout makes it easy to type accented characters and ligatures comm
 | Character | Key presses |
 |---|---|
 | à | à |
-| À | AltGr + Shift + à |
+| À | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;à |
 | é | é |
-| É | AltGr + Shift + é |
+| É | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;é |
 | è | è |
-| È | AltGr + Shift + è |
+| È | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;è |
 | ê | ê |
-| Ê | AltGr + Shift + ê |
-| æ | AltGr + A |
-| Æ | AltGr + Shift + A |
-| œ | AltGr + O |
-| Œ | AltGr + Shift + O |
-| ç | AltGr + C |
-| Ç | AltGr + Shift + C |
+| Ê | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;ê |
+| æ | AltGr&#xa0;+&#xa0;A |
+| Æ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;A |
+| œ | AltGr&#xa0;+&#xa0;O |
+| Œ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;O |
+| ç | AltGr&#xa0;+&#xa0;C |
+| Ç | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;C |
 
 ### Other characters not printed on the keys
 
@@ -67,27 +67,27 @@ To keep the physical keyboard looking clean, the keyboard doesn't feature all th
 
 | Character | Key presses |
 |---|---|
-| Non-breaking space | AltGr + Space |
-| Narrow non-breaking space | AltGr + Shift + Space |
-| — | AltGr + Shift + ’ |
-| ‹ | AltGr + Shift + « |
-| › | AltGr + Shift + » |
-| ‰ | AltGr + Shift + P |
-| − | AltGr + - |
-| - | AltGr + Shift + - |
-| † | AltGr + + |
-| ‡ | AltGr + Shift + + |
-| θ | AltGr + Q |
-| ∞ | AltGr + M |
-| √ | AltGr + Shift + / |
-| ¼ | AltGr + Shift + * |
-| ⩽ | AltGr + < |
-| ⩾ | AltGr + Shift + < |
-| ʒ | AltGr + W |
-| ¿ | AltGr + Shift + . |
-| ¡ | AltGr + Shift + , |
-| ≃ | AltGr + ; |
-| ≠ | AltGr + Shift + ; |
+| Non-breaking space | AltGr&#xa0;+&#xa0;Space |
+| Narrow non-breaking space | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;Space |
+| — | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;’ |
+| ‹ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;« |
+| › | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;» |
+| ‰ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;P |
+| − | AltGr&#xa0;+&#xa0;- |
+| - | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;- |
+| † | AltGr&#xa0;+&#xa0;+ |
+| ‡ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;+ |
+| θ | AltGr&#xa0;+&#xa0;Q |
+| ∞ | AltGr&#xa0;+&#xa0;M |
+| √ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;/ |
+| ¼ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;* |
+| ⩽ | AltGr&#xa0;+&#xa0;< |
+| ⩾ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;< |
+| ʒ | AltGr&#xa0;+&#xa0;W |
+| ¿ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;. |
+| ¡ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;, |
+| ≃ | AltGr&#xa0;+&#xa0;; |
+| ≠ | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;; |
 
 ### Dead keys for additional accented characters
 
@@ -95,34 +95,34 @@ Many “dead keys” are provided for typing even more accented characters.
 
 To enter these accented characters, first press the dead key, then follow it with the letter you'd like to add an accent to. If you'd like to type the accent on its own, follow it with a space.
 
-For example, to type a 'y' with a diaresis (ÿ), you would press **Shift + ^** followed by **y**.
+For example, to type a 'y' with a diaresis (ÿ), you would press **Shift&#xa0;+&#xa0;^** followed by **y**.
 
 | Accent | Dead key | Follow with a letter to type: | Follow with a space to type: |
 |---|---|---|---|
-| Breve | AltGr + @ | ĂĔĞĬŎŬăĕğĭŏŭ | ˘ |
-| Inverted breve | AltGr + Shift + @ | ȂȆȊȎȒȖȃȇȋȏȓȗ | ° |
-| Acute accent | AltGr + é | ÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǼáćéǵíḱĺḿńóṕŕśúẃýźǽ | ´ |
-| Grave accent | AltGr + è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
-| Double acute accent | AltGr + Shift + ( | ŐŰőű | ˝ |
-| Double grave accent | AltGr + Shift + ) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
-| Macron | AltGr + ‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
-| Ring above | AltGr + Shift + ° | ÅŮåůẘẙ | ˚ |
+| Breve | AltGr&#xa0;+&#xa0;@ | ĂĔĞĬŎŬăĕğĭŏŭ | ˘ |
+| Inverted breve | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;@ | ȂȆȊȎȒȖȃȇȋȏȓȗ | ° |
+| Acute accent | AltGr&#xa0;+&#xa0;é | ÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǼáćéǵíḱĺḿńóṕŕśúẃýźǽ | ´ |
+| Grave accent | AltGr&#xa0;+&#xa0;è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
+| Double acute accent | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;( | ŐŰőű | ˝ |
+| Double grave accent | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
+| Macron | AltGr&#xa0;+&#xa0;‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
+| Ring above | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;° | ÅŮåůẘẙ | ˚ |
 | Circumflex accent | ^ | ÂĈÊĜĤÎĴÔŜÛŴŶẐâĉêĝĥîĵôŝûŵŷẑ | ^ |
-| Diaresis | Shift + ^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
-| Caron | AltGr + Shift + ^ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
-| Dot above | AltGr + I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
-| Dot below | AltGr + Shift + I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
-| Macron below | AltGr + Shift + H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |
-| Solidus | AltGr + K | ȺȻɆŁØȾȼɇłøẜ | / |
-| Cedilla | AltGr + V | ÇḐȨĢḨĶĻŅŖŞŢçḑȩģḩķļņŗşţ | ¸ |
-| Ogonek | AltGr + Shift + V | ĄĘĮǪŲąęįǫų | ˛ |
-| Stroke | AltGr + B | ɃĐǤĦƗɈȽɌŦɄɎƵƀđǥħɉƚɍŧɏƶ | - |
-| Tilde | AltGr + N | ÃẼĨÑÕŨṼỸãẽĩñõũṽỹ | ~ |
-| Comma below | AltGr + Shift + , | ȘȚșț | , |
+| Diaresis | Shift&#xa0;+&#xa0;^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
+| Caron | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;^ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
+| Dot above | AltGr&#xa0;+&#xa0;I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
+| Dot below | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
+| Macron below | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |
+| Solidus | AltGr&#xa0;+&#xa0;K | ȺȻɆŁØȾȼɇłøẜ | / |
+| Cedilla | AltGr&#xa0;+&#xa0;V | ÇḐȨĢḨĶĻŅŖŞŢçḑȩģḩķļņŗşţ | ¸ |
+| Ogonek | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;V | ĄĘĮǪŲąęįǫų | ˛ |
+| Stroke | AltGr&#xa0;+&#xa0;B | ɃĐǤĦƗɈȽɌŦɄɎƵƀđǥħɉƚɍŧɏƶ | - |
+| Tilde | AltGr&#xa0;+&#xa0;N | ÃẼĨÑÕŨṼỸãẽĩñõũṽỹ | ~ |
+| Comma below | AltGr&#xa0;+&#xa0;Shift&#xa0;+&#xa0;, | ȘȚșț | , |
 
 ### Monetary symbols layer
 
-A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr + F** then one of the following characters to type its corresponding monetary symbol:
+A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr&#xa0;+&#xa0;F** then one of the following characters to type its corresponding monetary symbol:
 
 | Character to type | Resulting monetary symbol |
 |---|---|
@@ -164,7 +164,7 @@ A layer featuring monetary symbols from around the world is available by pressin
 
 ### Greek letters layer
 
-A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr + G** then one of the following characters to type its corresponding Greek character:
+A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr&#xa0;+&#xa0;G** then one of the following characters to type its corresponding Greek character:
 
 | Character to type | Resulting Greek character |
 |---|---|
@@ -221,7 +221,7 @@ A layer featuring all the letters of the Greek alphabet is available by pressing
 
 ### Additional European characters layer
 
-A layer featuring an assortment of additional European characters is available by pressing the dead key **AltGr + H** then one of the following characters to type its corresponding character:
+A layer featuring an assortment of additional European characters is available by pressing the dead key **AltGr&#xa0;+&#xa0;H** then one of the following characters to type its corresponding character:
 
 | Character to type | Resulting additional European character |
 |---|---|
@@ -257,13 +257,13 @@ The circumflex dead key (**^**) provides access to a layer of superscript numera
 
 #### Subscript numerals layer
 
-The caron dead key (**AltGr + ^**) provides access to a layer of subscript numerals. Press the dead key (**AltGr + ^**) followed by a number to type a subscript version of the number: ₀₁₂₃₄₅₆₇₈₉
+The caron dead key (**AltGr&#xa0;+&#xa0;^**) provides access to a layer of subscript numerals. Press the dead key (**AltGr&#xa0;+&#xa0;^**) followed by a number to type a subscript version of the number: ₀₁₂₃₄₅₆₇₈₉
 
 ### Mathematical symbols
 
 #### Mathematical symbols with solidus
 
-The solidus dead key (**AltGr + K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key (**AltGr + K**) followed by one of the following characters to type its corresponding character:
+The solidus dead key (**AltGr&#xa0;+&#xa0;K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key (**AltGr&#xa0;+&#xa0;K**) followed by one of the following characters to type its corresponding character:
 
 | Character to type | Resulting character |
 |---|---|
@@ -276,7 +276,7 @@ The solidus dead key (**AltGr + K**) provides access to a set of additional math
 
 #### Mathematical symbols with tilde
 
-The tilde dead key (**AltGr + N**) provides access to a set of additional mathematical symbols featuring wavy lines. Press the dead key (**AltGr + N**) followed by one of the following characters to type its corresponding character:
+The tilde dead key (**AltGr&#xa0;+&#xa0;N**) provides access to a set of additional mathematical symbols featuring wavy lines. Press the dead key (**AltGr&#xa0;+&#xa0;N**) followed by one of the following characters to type its corresponding character:
 
 | Character to type | Resulting character |
 |---|---|
