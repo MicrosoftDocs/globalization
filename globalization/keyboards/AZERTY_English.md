@@ -105,11 +105,11 @@ For example, to type a 'y' with a diaresis (ÿ), you would press **Shift + ^** f
 | Grave accent | AltGr + è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
 | Double acute accent | AltGr + Shift + ( | ŐŰőű | ˝ |
 | Double grave accent | AltGr + Shift + ) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
-| Macron | AltGr + Shift + ‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
+| Macron | AltGr + ‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
 | Ring above | AltGr + Shift + ° | ÅŮåůẘẙ | ˚ |
 | Circumflex accent | ^ | ÂĈÊĜĤÎĴÔŜÛŴŶẐâĉêĝĥîĵôŝûŵŷẑ | ^ |
 | Diaresis | Shift + ^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
-| Caron | AltGr + Shift + ˇ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
+| Caron | AltGr + Shift + ^ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
 | Dot above | AltGr + I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
 | Dot below | AltGr + Shift + I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
 | Macron below | AltGr + Shift + H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |

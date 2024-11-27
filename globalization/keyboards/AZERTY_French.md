@@ -105,11 +105,11 @@ Par exemple, pour saisir un « y » avec un tréma ( « ÿ » ), il faut a
 | Accent grave | AltGr + è | ÀÈÌǸÒÙẀỲàèìǹòùẁỳ | ` |
 | Accent double aigu | AltGr + Maj + ( | ŐŰőű | ˝ |
 | Accent double grave | AltGr + Maj + ) | ȀȄȈȌȐȔȁȅȉȍȑȕ | ˵ |
-| Macron | AltGr + Maj + ‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
+| Macron | AltGr + ‘ | ĀĒḠĪŌŪȲǢāēḡīōūȳǣ | ¯ |
 | Rond en chef | AltGr + Maj + ° | ÅŮåůẘẙ | ˚ |
 | Accent circonflexe | ^ | ÂĈÊĜĤÎĴÔŜÛŴŶẐâĉêĝĥîĵôŝûŵŷẑ | ^ |
 | Tréma | Maj + ^ | ÄËḦÏÖÜẄẌŸäëḧïöẗüẅẍÿ | ¨ |
-| Caron | AltGr + Maj + ˇ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
+| Caron | AltGr + Maj + ^ | ǍČĎĚǦȞǏǨĽŇǑŘŠŤǓŽǮǎčďěǧȟǐǰǩľňǒřšťǔžǯ | ˇ |
 | Point en chef | AltGr + I | ȦḂĊḊĖḞĠḢİĿṀṄȮṖṘṠṪẆẊẎŻȧḃċḋėḟġḣıŀṁṅȯṗṙṡṫẇẋẏżẛ | ˙ |
 | Point souscrit | AltGr + Maj + I | ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ | . |
 | Macron souscrit | AltGr + Maj + H | ḆḎḴḺṈṞṮẔḇḏẖḵḻṉṟṯẕ | ˍ |
