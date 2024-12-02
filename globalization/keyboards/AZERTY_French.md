@@ -9,13 +9,13 @@ author: danjac
 
 La version 24H2 de Windows 11 introduit la nouvelle disposition de clavier normalisé française, une version mise à jour de la disposition « AZERTY ».
 
-Cette nouvelle disposition a été conçue pour remédier aux nombresus déficiences de la disposition [AZERTY traditionelle](./kbdfr.md) omniprésente en France. Let plus important, la dispotition traditionelle ne dispose pas de l'ensemble complet des caractères nécessaires à l'écriture française. Par example, les ligatures comme « æ » et « œ » sont manquantes, tout comme les « guillemets » français et les formes majuscules de certains caractères accentués.
+Cette nouvelle disposition a été conçue pour remédier aux nombreusus déficiences de la disposition [AZERTY traditionelle](./kbdfr.md) omniprésente en France. Plus important, la disposition traditionnelle ne dispose pas de l'ensemble complet des caractères nécessaires à l'écriture française. Par exemple, les ligatures comme « æ » et « œ » sont manquantes, tout comme les « guillemets » français et les formes majuscules de certains caractères accentués.
 
-La nouvelle disposition a mise en œuvre conformément à la norme française NF Z71-300. Cette norme est disponible à l'achat auprès de l'AFNOR, l'organisme national de normalisation français, ici : [Norme NF Z71-300](https://www.boutique.afnor.org/fr-fr/norme/nf-z71300/interfaces-utilisateurs-dispositions-de-clavier-bureautique-francais/fa188960/1792)
+La nouvelle disposition se conforme à la norme française NF Z71-300. Cette norme est disponible à l'achat auprès de l'AFNOR, l'organisme national de normalisation français, ici : [Norme NF Z71-300](https://www.boutique.afnor.org/fr-fr/norme/nf-z71300/interfaces-utilisateurs-dispositions-de-clavier-bureautique-francais/fa188960/1792)
 
 Pour plus d’informations sur la nouvelle norme, vous pouvez consulter l’article et la FAQ de l’AFNOR ici : [Clavier français : une norme volontaire pour faciliter la saisie de tous les caractères](https://www.afnor.org/actualites/clavier-francais-norme-volontaire-ecriture-francais/)
 
-## La nouvelle disposition du clavier « Français (Standard, AZERTY) » en Windows
+## La nouvelle disposition du clavier « Français (Standard, AZERTY) » dans Windows
 
 <iframe src="kbdfrna.html" height="300"></iframe>
 
@@ -122,132 +122,132 @@ Par exemple, pour saisir un « y » avec un tréma ( « ÿ » ), il faut a
 
 ### Touche morte symboles monétaires
 
-Un ensemble de symboles monétaires internationaux est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;F** puis sur l'un des caractères suivants pour saisir son symbole monétaire correspondant :
+Un ensemble de symboles monétaires internationaux est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;F** puis sur l'une des touches suivants pour saisir son symbole monétaire correspondant :
 
-| Caractère à saisir | Symbole monétaire résultant |
-|-------|-------|
-| A | ₳ |
-| B | ฿ |
-| C | ₡ |
-| D | ₯ |
-| F | ₣ |
-| L | ₤ |
-| M | ℳ |
-| P | ₧ |
-| R | ₹ |
-| S | ₷ |
-| T | ₮ |
-| b | ₿ |
-| c | ¢ |
-| d | ₫ |
-| e | ₠ |
-| f | ƒ |
-| g | ₲ |
-| h | ₴ |
-| k | ₭ |
-| l | ₺ |
-| m | ₥ |
-| n | ₦ |
-| p | ₱ |
-| r | ₽ |
-| s | ₪ |
-| t | ₸ |
-| w | ₩ |
-| y | ¥ |
-| &#x7c; | ₾ |
-| % | ₰ |
-| ® | ₨ |
-| Ç | ₡ |
-| ç | ₢ |
-| ∞ | ₼ |
-| Espace | ¤ |
+| Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;F, puis |
+|---|---|
+| ₳ | A |
+| ฿ | B |
+| ₡ | C |
+| ₯ | D |
+| ₣ | F |
+| ₤ | L |
+| ℳ | M |
+| ₧ | P |
+| ₹ | R |
+| ₷ | S |
+| ₮ | T |
+| ₿ | b |
+| ¢ | c |
+| ₫ | d |
+| ₠ | e |
+| ƒ | f |
+| ₲ | g |
+| ₴ | h |
+| ₭ | k |
+| ₺ | l |
+| ₥ | m |
+| ₦ | n |
+| ₱ | p |
+| ₽ | r |
+| ₪ | s |
+| ₸ | t |
+| ₩ | w |
+| ¥ | y |
+| ₾ | &#x7c; |
+| ₰ | % |
+| ₨ | ® |
+| ₡ | Ç |
+| ₢ | ç |
+| ₼ | ∞ |
+| ¤ | Espace |
 
 ### Touche morte lettres grecques
 
-Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;G** puis sur l'un des caractères suivants pour saisir son caractère grec correspondant :
+Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;G** puis sur l'une des touches suivants pour saisir son caractère grec correspondant :
 
-| Caractère à saisir | Lettre grecque résultant |
-|-------|-------|
-| A | Α |
-| B | Β |
-| C | Ψ |
-| D | Δ |
-| E | Ε |
-| F | Φ |
-| G | Γ |
-| H | Η |
-| I | Ι |
-| J | Ξ |
-| K | Κ |
-| L | Λ |
-| M | Μ |
-| N | Ν |
-| O | Ο |
-| P | Π |
-| R | Ρ |
-| S | Σ |
-| T | Τ |
-| U | Θ |
-| V | Ω |
-| X | Χ |
-| Y | Υ |
-| Z | Ζ |
-| a | α |
-| b | β |
-| c | ψ |
-| d | δ |
-| e | ε |
-| f | φ |
-| g | γ |
-| h | η |
-| i | ι |
-| j | ξ |
-| k | κ |
-| l | λ |
-| m | μ |
-| n | ν |
-| o | ο |
-| p | π |
-| r | ρ |
-| s | σ |
-| t | τ |
-| u | θ |
-| v | ω |
-| w | ς |
-| x | χ |
-| y | υ |
-| z | ζ |
-| Espace | µ |
+| Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;G, puis |
+|---|---|
+| Α | A |
+| Β | B |
+| Ψ | C |
+| Δ | D |
+| Ε | E |
+| Φ | F |
+| Γ | G |
+| Η | H |
+| Ι | I |
+| Ξ | J |
+| Κ | K |
+| Λ | L |
+| Μ | M |
+| Ν | N |
+| Ο | O |
+| Π | P |
+| Ρ | R |
+| Σ | S |
+| Τ | T |
+| Θ | U |
+| Ω | V |
+| Χ | X |
+| Υ | Y |
+| Ζ | Z |
+| α | a |
+| β | b |
+| ψ | c |
+| δ | d |
+| ε | e |
+| φ | f |
+| γ | g |
+| η | h |
+| ι | i |
+| ξ | j |
+| κ | k |
+| λ | l |
+| μ | m |
+| ν | n |
+| ο | o |
+| π | p |
+| ρ | r |
+| σ | s |
+| τ | t |
+| θ | u |
+| ω | v |
+| ς | w |
+| χ | x |
+| υ | y |
+| ζ | z |
+| µ | Espace |
 
 ### Touche morte caractères européens additionnels
 
-Un assortiment de caractères européens est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;H** puis sur l'un des caractères suivants pour saisir son caractère correspondant :
+Un assortiment de caractères européens est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;H** puis sur l'une des touches suivants pour saisir son caractère correspondant :
 
-| Caractère à saisir | Caractère résultant |
-|-------|-------|
-| ' | ʼ |
-| 0 | « |
-| 7 | › |
-| 8 | ‹ |
-| 9 | » |
-| D | Ð |
-| E | Ə |
-| G | Ŋ |
-| I | İ |
-| J | Ĳ |
-| T | Þ |
-| a | ª |
-| d | ð |
-| e | ə |
-| g | ŋ |
-| i | ı |
-| j | ĳ |
-| o | º |
-| s | ſ |
-| t | þ |
-| « | „ |
-| » | ‟ |
-| Espace | ſ |
+| Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;H, puis |
+|---|---|
+| ʼ | ' |
+| « | 0 |
+| › | 7 |
+| ‹ | 8 |
+| » | 9 |
+| Ð | D |
+| Ə | E |
+| Ŋ | G |
+| İ | I |
+| Ĳ | J |
+| Þ | T |
+| ª | a |
+| ð | d |
+| ə | e |
+| ŋ | g |
+| ı | i |
+| ĳ | j |
+| º | o |
+| ſ | s |
+| þ | t |
+| „ | « |
+| ‟ | » |
+| ſ | Espace |
 
 ### Chiffres en exposant et en indice
 
@@ -263,27 +263,27 @@ La touche morte caron (**AltGr&#xa0;+&#xa0;^**) donne accès aux chiffres en ind
 
 #### Symboles mathématiques avec barre oblique couvrante
 
-La touche morte barre oblique couvrante (**AltGr&#xa0;+&#xa0;K**) permet d'accéder à des symboles mathématiques traversés par une barre oblique. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;K** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
+La touche morte barre oblique couvrante (**AltGr&#xa0;+&#xa0;K**) permet d'accéder à des symboles mathématiques traversés par une barre oblique. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;K** suivie de l'une des touches suivants pour saisir le caractère correspondant :
 
-| Caractère à saisir | Caractère résultant |
-|-------|-------|
-| = | ≠ |
-| ≃ | ≄ |
-| < | ≮ |
-| > | ≯ |
-| ⩽ | ≰ |
-| ⩾ | ≱ |
+| Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;K, puis |
+|---|---|
+| ≠ | = |
+| ≄ | ≃ |
+| ≮ | < |
+| ≯ | > |
+| ≰ | ⩽ |
+| ≱ | ⩾ |
 
 #### Symboles mathématiques avec tilde
 
-La touche morte tilde (**AltGr&#xa0;+&#xa0;N**) donne accès à des symboles mathématiques comportant des lignes ondulées. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;N** suivie de l'un des caractères suivants pour saisir le caractère correspondant :
+La touche morte tilde (**AltGr&#xa0;+&#xa0;N**) donne accès à des symboles mathématiques comportant des lignes ondulées. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;N** suivie de l'une des touches suivants pour saisir le caractère correspondant :
 
-| Caractère à saisir | Caractère résultant |
-|-------|-------|
-| - | ≃ |
-| = | ≈ |
-| < | ≲ |
-| > | ≳ |
+| Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;N, puis |
+|---|---|
+| ≃ | - |
+| ≈ | = |
+| ≲ | < |
+| ≳ | > |
 
 #### Séparateur décimal
 

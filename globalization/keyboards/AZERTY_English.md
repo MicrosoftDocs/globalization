@@ -122,132 +122,132 @@ For example, to type a 'y' with a diaresis (ÿ), you would press **Shift&#xa0;+&
 
 ### Monetary symbols layer
 
-A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr&#xa0;+&#xa0;F** then one of the following characters to type its corresponding monetary symbol:
+A layer featuring monetary symbols from around the world is available by pressing the dead key **AltGr&#xa0;+&#xa0;F** then one of the following keys to type its corresponding monetary symbol:
 
-| Character to type | Resulting monetary symbol |
+| Character | Key presses: AltGr&#xa0;+&#xa0;F, then |
 |---|---|
-| A | ₳ |
-| B | ฿ |
-| C | ₡ |
-| D | ₯ |
-| F | ₣ |
-| L | ₤ |
-| M | ℳ |
-| P | ₧ |
-| R | ₹ |
-| S | ₷ |
-| T | ₮ |
-| b | ₿ |
-| c | ¢ |
-| d | ₫ |
-| e | ₠ |
-| f | ƒ |
-| g | ₲ |
-| h | ₴ |
-| k | ₭ |
-| l | ₺ |
-| m | ₥ |
-| n | ₦ |
-| p | ₱ |
-| r | ₽ |
-| s | ₪ |
-| t | ₸ |
-| w | ₩ |
-| y | ¥ |
-| &#x7c; | ₾ |
-| % | ₰ |
-| ® | ₨ |
-| Ç | ₡ |
-| ç | ₢ |
-| ∞ | ₼ |
-| Space | ¤ |
+| ₳ | A |
+| ฿ | B |
+| ₡ | C |
+| ₯ | D |
+| ₣ | F |
+| ₤ | L |
+| ℳ | M |
+| ₧ | P |
+| ₹ | R |
+| ₷ | S |
+| ₮ | T |
+| ₿ | b |
+| ¢ | c |
+| ₫ | d |
+| ₠ | e |
+| ƒ | f |
+| ₲ | g |
+| ₴ | h |
+| ₭ | k |
+| ₺ | l |
+| ₥ | m |
+| ₦ | n |
+| ₱ | p |
+| ₽ | r |
+| ₪ | s |
+| ₸ | t |
+| ₩ | w |
+| ¥ | y |
+| ₾ | &#x7c; |
+| ₰ | % |
+| ₨ | ® |
+| ₡ | Ç |
+| ₢ | ç |
+| ₼ | ∞ |
+| ¤ | Space |
 
 ### Greek letters layer
 
-A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr&#xa0;+&#xa0;G** then one of the following characters to type its corresponding Greek character:
+A layer featuring all the letters of the Greek alphabet is available by pressing the dead key **AltGr&#xa0;+&#xa0;G** then one of the following keys to type its corresponding Greek character:
 
-| Character to type | Resulting Greek character |
+| Character | Key presses: AltGr&#xa0;+&#xa0;G, then |
 |---|---|
-| A | Α |
-| B | Β |
-| C | Ψ |
-| D | Δ |
-| E | Ε |
-| F | Φ |
-| G | Γ |
-| H | Η |
-| I | Ι |
-| J | Ξ |
-| K | Κ |
-| L | Λ |
-| M | Μ |
-| N | Ν |
-| O | Ο |
-| P | Π |
-| R | Ρ |
-| S | Σ |
-| T | Τ |
-| U | Θ |
-| V | Ω |
-| X | Χ |
-| Y | Υ |
-| Z | Ζ |
-| a | α |
-| b | β |
-| c | ψ |
-| d | δ |
-| e | ε |
-| f | φ |
-| g | γ |
-| h | η |
-| i | ι |
-| j | ξ |
-| k | κ |
-| l | λ |
-| m | μ |
-| n | ν |
-| o | ο |
-| p | π |
-| r | ρ |
-| s | σ |
-| t | τ |
-| u | θ |
-| v | ω |
-| w | ς |
-| x | χ |
-| y | υ |
-| z | ζ |
-| Espace | µ |
+| Α | A |
+| Β | B |
+| Ψ | C |
+| Δ | D |
+| Ε | E |
+| Φ | F |
+| Γ | G |
+| Η | H |
+| Ι | I |
+| Ξ | J |
+| Κ | K |
+| Λ | L |
+| Μ | M |
+| Ν | N |
+| Ο | O |
+| Π | P |
+| Ρ | R |
+| Σ | S |
+| Τ | T |
+| Θ | U |
+| Ω | V |
+| Χ | X |
+| Υ | Y |
+| Ζ | Z |
+| α | a |
+| β | b |
+| ψ | c |
+| δ | d |
+| ε | e |
+| φ | f |
+| γ | g |
+| η | h |
+| ι | i |
+| ξ | j |
+| κ | k |
+| λ | l |
+| μ | m |
+| ν | n |
+| ο | o |
+| π | p |
+| ρ | r |
+| σ | s |
+| τ | t |
+| θ | u |
+| ω | v |
+| ς | w |
+| χ | x |
+| υ | y |
+| ζ | z |
+| µ | Espace |
 
 ### Additional European characters layer
 
-A layer featuring an assortment of additional European characters is available by pressing the dead key **AltGr&#xa0;+&#xa0;H** then one of the following characters to type its corresponding character:
+A layer featuring an assortment of additional European characters is available by pressing the dead key **AltGr&#xa0;+&#xa0;H** then one of the following keys to type its corresponding character:
 
-| Character to type | Resulting additional European character |
+| Character | Key presses: AltGr&#xa0;+&#xa0;H, then |
 |---|---|
-| ' | ʼ |
-| 0 | « |
-| 7 | › |
-| 8 | ‹ |
-| 9 | » |
-| D | Ð |
-| E | Ə |
-| G | Ŋ |
-| I | İ |
-| J | Ĳ |
-| T | Þ |
-| a | ª |
-| d | ð |
-| e | ə |
-| g | ŋ |
-| i | ı |
-| j | ĳ |
-| o | º |
-| s | ſ |
-| t | þ |
-| « | „ |
-| » | ‟ |
-| Space | ſ |
+| ʼ | ' |
+| « | 0 |
+| › | 7 |
+| ‹ | 8 |
+| » | 9 |
+| Ð | D |
+| Ə | E |
+| Ŋ | G |
+| İ | I |
+| Ĳ | J |
+| Þ | T |
+| ª | a |
+| ð | d |
+| ə | e |
+| ŋ | g |
+| ı | i |
+| ĳ | j |
+| º | o |
+| ſ | s |
+| þ | t |
+| „ | « |
+| ‟ | » |
+| ſ | Space |
 
 ### Superscript and subscript numerals
 
@@ -263,27 +263,27 @@ The caron dead key (**AltGr&#xa0;+&#xa0;^**) provides access to a layer of subsc
 
 #### Mathematical symbols with solidus
 
-The solidus dead key (**AltGr&#xa0;+&#xa0;K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key (**AltGr&#xa0;+&#xa0;K**) followed by one of the following characters to type its corresponding character:
+The solidus dead key (**AltGr&#xa0;+&#xa0;K**) provides access to a set of additional mathematical symbols with a solidus through them. Press the dead key (**AltGr&#xa0;+&#xa0;K**) followed by one of the following keys to type its corresponding character:
 
-| Character to type | Resulting character |
+| Character | Key presses: AltGr&#xa0;+&#xa0;K, then |
 |---|---|
-| = | ≠ |
-| ≃ | ≄ |
-| < | ≮ |
-| > | ≯ |
-| ⩽ | ≰ |
-| ⩾ | ≱ |
+| ≠ | = |
+| ≄ | ≃ |
+| ≮ | < |
+| ≯ | > |
+| ≰ | ⩽ |
+| ≱ | ⩾ |
 
 #### Mathematical symbols with tilde
 
-The tilde dead key (**AltGr&#xa0;+&#xa0;N**) provides access to a set of additional mathematical symbols featuring wavy lines. Press the dead key (**AltGr&#xa0;+&#xa0;N**) followed by one of the following characters to type its corresponding character:
+The tilde dead key (**AltGr&#xa0;+&#xa0;N**) provides access to a set of additional mathematical symbols featuring wavy lines. Press the dead key (**AltGr&#xa0;+&#xa0;N**) followed by one of the following keys to type its corresponding character:
 
-| Character to type | Resulting character |
+| Character | Key presses: AltGr&#xa0;+&#xa0;N, then |
 |---|---|
-| - | ≃ |
-| = | ≈ |
-| < | ≲ |
-| > | ≳ |
+| ≃ | - |
+| ≈ | = |
+| ≲ | < |
+| ≳ | > |
 
 #### Decimal separator
 
