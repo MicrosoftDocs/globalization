@@ -9,7 +9,7 @@ author: danjac
 
 La version 24H2 de Windows 11 introduit la nouvelle disposition de clavier normalisé française, une version mise à jour de la disposition « AZERTY ».
 
-Cette nouvelle disposition a été conçue pour remédier aux nombreusus déficiences de la disposition [AZERTY traditionelle](./kbdfr.md) omniprésente en France. Plus important, la disposition traditionnelle ne dispose pas de l'ensemble complet des caractères nécessaires à l'écriture française. Par exemple, les ligatures comme « æ » et « œ » sont manquantes, tout comme les « guillemets » français et les formes majuscules de certains caractères accentués.
+Cette nouvelle disposition a été conçue pour remédier aux nombreuses déficiences de la disposition [AZERTY traditionnelle](./kbdfr.md) omniprésente en France. Plus important, la disposition traditionnelle ne dispose pas de l'ensemble complet des caractères nécessaires à l'écriture française. Par exemple, les ligatures comme « æ » et « œ » sont manquantes, tout comme les « guillemets » français et les formes majuscules de certains caractères accentués.
 
 La nouvelle disposition se conforme à la norme française NF Z71-300. Cette norme est disponible à l'achat auprès de l'AFNOR, l'organisme national de normalisation français, ici : [Norme NF Z71-300](https://www.boutique.afnor.org/fr-fr/norme/nf-z71300/interfaces-utilisateurs-dispositions-de-clavier-bureautique-francais/fa188960/1792)
 
@@ -19,7 +19,7 @@ Pour plus d’informations sur la nouvelle norme, vous pouvez consulter l’arti
 
 <iframe src="kbdfrna.html" height="300"></iframe>
 
-Cette disposition du clavier a été conçue pour vous permettre de saisir tous les caractères de la langue française. Elle comprend des caractères manquants dans l'ancienne disposition AZERTY qui font partie intégrante de l'orthographie française, tels que :
+Cette disposition du clavier a été conçue pour vous permettre de saisir tous les caractères de la langue française. Elle comprend des caractères manquants dans l'ancienne disposition AZERTY qui font partie intégrante de l'orthographe française, tels que :
 
   É Ç æ Æ œ Œ — « » ‹ ›
 
@@ -122,7 +122,7 @@ Par exemple, pour saisir un « y » avec un tréma ( « ÿ » ), il faut a
 
 ### Touche morte symboles monétaires
 
-Un ensemble de symboles monétaires internationaux est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;F** puis sur l'une des touches suivants pour saisir son symbole monétaire correspondant :
+Un ensemble de symboles monétaires internationaux est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;F** puis sur l'une des touches suivantes pour saisir son symbole monétaire correspondant :
 
 | Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;F, puis |
 |---|---|
@@ -164,7 +164,7 @@ Un ensemble de symboles monétaires internationaux est disponible en appuyant su
 
 ### Touche morte lettres grecques
 
-Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;G** puis sur l'une des touches suivants pour saisir son caractère grec correspondant :
+Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;G** puis sur l'une des touches suivantes pour saisir son caractère grec correspondant :
 
 | Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;G, puis |
 |---|---|
@@ -221,7 +221,7 @@ Les lettres de l'alphabet grec sont accessibles en appuyant sur la touche morte 
 
 ### Touche morte caractères européens additionnels
 
-Un assortiment de caractères européens est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;H** puis sur l'une des touches suivants pour saisir son caractère correspondant :
+Un assortiment de caractères européens est disponible en appuyant sur la touche morte **AltGr&#xa0;+&#xa0;H** puis sur l'une des touches suivantes pour saisir son caractère correspondant :
 
 | Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;H, puis |
 |---|---|
@@ -263,7 +263,7 @@ La touche morte caron (**AltGr&#xa0;+&#xa0;^**) donne accès aux chiffres en ind
 
 #### Symboles mathématiques avec barre oblique couvrante
 
-La touche morte barre oblique couvrante (**AltGr&#xa0;+&#xa0;K**) permet d'accéder à des symboles mathématiques traversés par une barre oblique. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;K** suivie de l'une des touches suivants pour saisir le caractère correspondant :
+La touche morte barre oblique couvrante (**AltGr&#xa0;+&#xa0;K**) permet d'accéder à des symboles mathématiques traversés par une barre oblique. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;K** suivie de l'une des touches suivantes pour saisir le caractère correspondant :
 
 | Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;K, puis |
 |---|---|
@@ -276,7 +276,7 @@ La touche morte barre oblique couvrante (**AltGr&#xa0;+&#xa0;K**) permet d'accé
 
 #### Symboles mathématiques avec tilde
 
-La touche morte tilde (**AltGr&#xa0;+&#xa0;N**) donne accès à des symboles mathématiques comportant des lignes ondulées. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;N** suivie de l'une des touches suivants pour saisir le caractère correspondant :
+La touche morte tilde (**AltGr&#xa0;+&#xa0;N**) donne accès à des symboles mathématiques comportant des lignes ondulées. Appuyez sur la touche morte **AltGr&#xa0;+&#xa0;N** suivie de l'une des touches suivantes pour saisir le caractère correspondant :
 
 | Caractère | Touches à appuyer : AltGr&#xa0;+&#xa0;N, puis |
 |---|---|
