@@ -21,7 +21,7 @@ The list of fonts included with Windows 11 is available in the [Windows 11 font 
 
 Segoe UI Variable is the new system font for Windows. It's a refreshed take on the classic Segoe and uses variable font technology to dynamically provide great legibility at small sizes, and improved outlines at display sizes. Windows 11 also introduces a new system icon font, [Segoe Fluent Icons](/windows/apps/design/style/segoe-fluent-icons-font). This icon font aligns to the Fluent Design system. For more information about Windows 11 design principles, see [Typography in Windows 11](/windows/apps/design/signature-experiences/typography) and [Iconography in Windows 11](/windows/apps/design/signature-experiences/iconography).
 
-The following table lists scripts newly supported in Windows 10, and associated fonts:
+The following table lists scripts newly supported in Windows 11, and associated fonts:
 
 | New scripts | Region where script is from | Fonts | Comments on language usage |
 | ----------- | --------------------------- | ----- | -------------------------- |
