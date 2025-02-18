@@ -17,7 +17,7 @@ Some programming environments provide facilities to maintain source text in the 
 
 ## Separate localizable and nonlocalizable resources
 
-Keeping nonlocalizable resources separate from localizable resources lowers the risk of over-localization and can reduce the complexity of localization. Where using separate files can't be used, [contextual metadata](contextual-metadata.md) can be used to distinguish localizable from nonlocalizable resources. Some localization tools provide a formal mechanism for excluding selected resources from localization. Exclusion from localization might be specified by an attribute in the resource file schema, or a special notation used in comments. For example, a tool might recognize `{Locked}` in a resource comment to "lock" the string and prevent it's localization.
+Keeping nonlocalizable resources separate from localizable resources lowers the risk of over-localization and can reduce the complexity of localization. Where using separate files can't be used, [contextual metadata](contextual-metadata.md) can be used to distinguish localizable from nonlocalizable resources. Some localization tools provide a formal mechanism for excluding selected resources from localization. Exclusion from localization might be specified by an attribute in the resource file schema, or a special notation used in comments. For example, a tool might recognize `{Locked}` in a resource comment to "lock" the string and prevent its localization.
 
 ## Avoid repurposing strings
 
