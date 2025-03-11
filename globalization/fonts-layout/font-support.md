@@ -15,60 +15,6 @@ A detailed library of Microsoft fonts is available as part of the [Microsoft Typ
 
 Comments on language usage are included in cases in which associations between scripts and languages might not be well known. The list of languages for any given script isn't necessarily exhaustive.
 
-## Windows 11 24H2
-
-The list of fonts included with Windows 11 24H2.
-
-The following table lists scripts newly supported in Windows 11 24H2, and associated fonts:
-
-| New scripts |
-| ----------- |
-| Coptic Epact Numbers
-| Indic Siyaq Numbers
-| Kawi
-| Nag Mundari
-| Old Permic
-| Old Uyghur
-| Ottoman Siyaq Numbers
-| Tai Tham
-| Tamil Supplement
-
-## Windows 11 23H2
-
-The list of fonts included with Windows 11 23H2.
-
-The following table lists scripts newly supported in Windows 11 23H2, and associated fonts:
-
-| New scripts |
-| ----------- |
-| Anatolian Hieroglyphs
-| Bassa Vah
-| Bhaiksuki
-| Chorasmian
-| Cypro-Minoan
-| Dives Akuru
-| Duployan
-| Grantha
-| Gunjala Gondi
-| Hatran
-| Makasar
-| Marchen
-| Meroitic Hieroglyphs
-| Nandinagari
-| Newa
-| Nushu
-| Pahawh Hmong
-| Rejang
-| Siddham
-| Syloti Nagri
-| Tagalog
-| Tagbanwa
-| Tai Viet
-| Tangsa
-| Toto
-| Vithkuqi
-| Yezidi
-
 ## Windows 11
 
 The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/fonts/windows_11_font_list).
@@ -77,29 +23,44 @@ Segoe UI Variable is the new system font for Windows. It's a refreshed take on t
 
 The following table lists scripts newly supported in Windows 11, and associated fonts:
 
-| New scripts | Region where script is from | Fonts | Comments on language usage |
-| ----------- | --------------------------- | ----- | -------------------------- |
+| New scripts                    | Region where script is from | Fonts           | Comments on language usage |
+| ------------------------------ | --------------------- | --------------------- | -------------------------- |
 | Aegean Numbers                 | Europe                | Sans Serif Collection | Aegean numerals and punctuation |
 | Ahom                           | Indian subcontinent   | Sans Serif Collection | Ahom |
+| Anatolian Hieroglyphs          | Middle East           | Sans Serif Collection | Luwian |
 | Ancient Greek Musical Notation | Europe                | Sans Serif Collection | Musical notation used in ancient Greece |
 | Avestan                        | Middle East           | Sans Serif Collection | Avestan, Middle Persian |
 | Balinese                       | Southeast Asia        | Sans Serif Collection | Balinese, Sasak |
+| Bassa Vah                      | Africa                | Sans Serif Collection | Bassa |
 | Bamum                          | Africa                | Ebrima                | Bamum |
 | Bamum Supplement               | Africa                | Segoe UI Historic     | Bamum - Historic stage A-F of the Bamum script |
 | Batak                          | Southeast Asia        | Sans Serif Collection | Alas-Kluet, Angkola, Karo, Mandailing, Pakpak, Simalungun, Toba |
+| Bhaiksuki                      | Southeast Asia        | Sans Serif Collection | Sanskrit |
 | Buhid                          | Southeast Asia        | Sans Serif Collection | Buhid, Tagalog |
 | Byzantine Musical Symbols      | Europe                | Sans Serif Collection | Musical notation for Byzantine music |
 | Caucasian Albanian             | Europe                | Sans Serif Collection | Caucasian Albanian |
-| Chakma                         | Indian subcontinent   | Nirmala UI            | Chakma   |
+| Chakma                         | Indian subcontinent   | Nirmala UI            | Chakma |
 | Cham                           | Southeast Asia        | Sans Serif Collection | Cham, Sanskrit |
+| Chorasmian                     | Middle East           | Sans Serif Collection | Khwarezmian |
 | Combining Half Marks           |                       | Sans Serif Collection | Diacritical marks spanning two or more characters |
 | Common Indic Number Forms      | Indian subcontinent   | Sans Serif Collection | Representing fractions |
+| Coptic Epact Numbers           | Africa                | Sans Serif Collection | Coptic |
+| Cypro-Minoan                   | Middle East           | Sans Serif Collection | unknown |
+| Dives Akuru                    | South Asia            | Sans Serif Collection | Maldivian |
 | Dogra                          | Indian subcontinent   | Sans Serif Collection | Dogri |
+| Duployan                       | Europe                | Sans Serif Collection | Originally developed for French, but has been expanded and adapted for other languages. |
 | Elbasan                        | Europe                | Sans Serif Collection | Albanian |
 | Elymaic                        | Middle East           | Sans Serif Collection | Aramaic |
+| Glagolitic                     | Europe                | Sans Serif Collection | Byzantine, Chakavian, Littoral Slovene, Old Church Slavonic, Old Croat, Old Czech, Old Slovak, Old Slovene, Serbo-Croatian |
+| Glagolitic Supplement          | Europe                | Sans Serif Collection | Byzantine, Chakavian, Littoral Slovene, Old Church Slavonic, Old Croat, Old Czech, Old Slovak, Old Slovene, Serbo-Croatian |
+| Grantha                        | Indian subcontinent   | Sans Serif Collection | Sanskrit, Tamil |
+| Gunjala Gondi                  | Indian subcontinent   | Sans Serif Collection | Gondi |
 | Hanifi Rohingya                | Southeast Asia        | Sans Serif Collection | Rohingya |
 | Hanunoo                        | Southeast Asia        | Sans Serif Collection | Hanunó'o, Tagalog |
+| Hatran                         | Middle East           | Sans Serif Collection | Hatran Aramaic |
+| Indic Siyaq Numbers            | Indian subcontinent   | Sans Serif Collection | Arabic-script numerals that were used for accounting in India in the 17th–20th centuries |
 | Kaithi                         | Indian subcontinent   | Sans Serif Collection | Awadhi, Bhojpuri, Hindustani, Magahi, Maithili, Nagpuri |
+| Kawi                           | Southeast Asia        | Sans Serif Collection | Old Balinese, Old Javanese, Old Malay, Old Sundanese, Old Tagalog, Sanskrit |
 | Kayah Li                       | Southeast Asia        | Sans Serif Collection | Karenni |
 | Khojki                         | Indian subcontinent   | Sans Serif Collection | Kutchi, Sindhi |
 | Khudawadi                      | Indian subcontinent   | Sans Serif Collection | Sindhi |
@@ -109,36 +70,60 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Linear B Ideograms             | Europe                | Sans Serif Collection | Unknown |
 | Linear B Syllabary             | Europe                | Sans Serif Collection | Mycenaean Greek |
 | Mahajani                       | Indian subcontinent   | Sans Serif Collection | Hindi, Marwari, Punjabi |
+| Makasar                        | Southeast Asia        | Sans Serif Collection | Makassarese |
 | Mandaic                        | Middle East           | Sans Serif Collection | Mandaic |
 | Manichaean                     | Central Asia          | Sans Serif Collection | Multiple Middle Iranian and Tocharian languages |
+| Marchen                        | Central Asia          | Sans Serif Collection | Zhangzhung |
 | Masaram Gondi                  | Indian subcontinent   | Sans Serif Collection | Gondi |
 | Mayan Numerals                 | Mesoamerica           | Sans Serif Collection | Historical Mayan numeral system |
 | Medefaidrin                    | Africa                | Sans Serif Collection | Medefaidrin |
 | Mende Kikakui                  | Africa                | Sans Serif Collection | Mende |
+| Meroitic Hieroglyphs           | Africa                | Sans Serif Collection | Meroitic |
 | Miao                           | China, Southeast Asia | Sans Serif Collection | A-Hmao, Lipo, Nasu, Sichuan Miao |
 | Modi                           | Indian subcontinent   | Sans Serif Collection | Marathi |
 | Mro                            | Indian subcontinent   | Sans Serif Collection | Mru |
 | Multani                        | Indian subcontinent   | Sans Serif Collection | Saraiki |
 | Musical Symbols                |                       | Sans Serif Collection | Modern musical notation |
 | Nabataean                      | Middle East           | Sans Serif Collection | Nabataean |
+| Nag Mundari                    | Indian subcontinent   | Sans Serif Collection | Mundari |
+| Nandinagari                    | Indian subcontinent   | Sans Serif Collection | Kannada, Sanskrit |
+| Newa                           | South Asia            | Sans Serif Collection | Maithili, Nepal Bhasa, Pali, Sanskrit |
+| Nushu                          | China                 | Sans Serif Collection | Xiangnan Tuhua |
 | Nyiakeng Puachue Hmong         | Southeast Asia        | Sans Serif Collection | White Hmong, Green Hmong |
 | Old Hungarian                  | Europe                | Sans Serif Collection | Hungarian |
 | Old North Arabian              | Middle East           | Sans Serif Collection | Ancient North Arabian |
+| Old Permic                     | Europe                | Sans Serif Collection | Komi |
 | Old Sogdian                    | Central Asia          | Sans Serif Collection | Sogdian |
+| Old Uyghur                     | Central and East Asia | Sans Serif Collection | Old Uyghur |
+| Ottoman Siyaq Numbers          | Middle East           | Sans Serif Collection | Ottoman Turkish |
+| Pahawh Hmong                   | Southeast Asia        | Sans Serif Collection | Hmong Daw, Hmong Njua |
 | Palmyrene                      | Middle East           | Sans Serif Collection | Palmyrene Aramaic |
 | Pau Cin Hau                    | Southeast Asia        | Sans Serif Collection | Tedim |
 | Psalter Pahlavi                | Middle East           | Sans Serif Collection | Middle Persian |
+| Rejang                         | Southeast Asia        | Sans Serif Collection | Rejang |
 | Samaritan                      | Middle East           | Sans Serif Collection | Samaritan Aramaic, Samaritan Hebrew |
 | Saurashtra                     | Indian subcontinent   | Sans Serif Collection | Saurashtra |
 | Sharada                        | Indian subcontinent   | Sans Serif Collection | Kashmiri, Sanskrit |
+| Siddham                        | Central and East Asia | Sans Serif Collection | Sanskrit |
 | Sogdian                        | Central Asia          | Sans Serif Collection | Sogdian |
 | Soyombo                        | Central Asia          | Sans Serif Collection | Mongolian, Sanskrit, Tibetan |
 | Sundanese                      | Southeast Asia        | Sans Serif Collection | Sundanese |
 | Sundanese Supplement           | Southeast Asia        | Sans Serif Collection | Sundanese |
+| Syloti Nagri                   | Indian subcontinent   | Sans Serif Collection | Middle Bengali, Sylheti |
+| Tagalog                        | Southeast Asia        | Sans Serif Collection | Tagalog, supporting the Tagalog Baybayin script |
+| Tagbanwa                       | Southeast Asia        | Sans Serif Collection | Palawanic languages |
+| Tai Tham                       | Southeast Asia        | Sans Serif Collection | Isan, Khün, Lao, Northern Thai, Tai Lü |
+| Tai Viet                       | Southeast Asia        | Sans Serif Collection | Tai Dam, Tai Daeng, Tai Dón, Thai Song, Tày Tac |
 | Takri                          | Indian subcontinent   | Sans Serif Collection | Western and Central Pahari languages |
+| Tamil Supplement               | Indian subcontinent   | Sans Serif Collection | Tamil |
+| Tangsa                         | Southeast Asia        | Sans Serif Collection | Tangsa |
 | Tirhuta                        | Indian subcontinent   | Sans Serif Collection | Maithili, Sanskrit |
+| Toto                           | Indian subcontinent   | Sans Serif Collection | Toto |
+| Vedic Extensions               | Indian subcontinent   | Sans Serif Collection | Tones and vedic symbols in Devanagari and similar scripts |
+| Vithkuqi                       | Europe                | Sans Serif Collection | Albanian |
 | Wancho                         | Indian subcontinent   | Sans Serif Collection | Wancho |
 | Warang Citi                    | Indian subcontinent   | Sans Serif Collection | Ho |
+| Yezidi                         | West Asia             | Sans Serif Collection | Kurdish |
 | Zanabazar Square               | Central Asia          | Sans Serif Collection | Mongolian, Sanskrit, Tibetan |
 
 ## Windows 10
