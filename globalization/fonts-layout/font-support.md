@@ -15,6 +15,60 @@ A detailed library of Microsoft fonts is available as part of the [Microsoft Typ
 
 Comments on language usage are included in cases in which associations between scripts and languages might not be well known. The list of languages for any given script isn't necessarily exhaustive.
 
+## Windows 11 24H2
+
+The list of fonts included with Windows 11 24H2.
+
+The following table lists scripts newly supported in Windows 11 24H2, and associated fonts:
+
+| New scripts |
+| ----------- |
+| Coptic Epact Numbers
+| Indic Siyaq Numbers
+| Kawi
+| Nag Mundari
+| Old Permic
+| Old Uyghur
+| Ottoman Siyaq Numbers
+| Tai Tham
+| Tamil Supplement
+
+## Windows 11 23H2
+
+The list of fonts included with Windows 11 23H2.
+
+The following table lists scripts newly supported in Windows 11 23H2, and associated fonts:
+
+| New scripts |
+| ----------- |
+| Anatolian Hieroglyphs
+| Bassa Vah
+| Bhaiksuki
+| Chorasmian
+| Cypro-Minoan
+| Dives Akuru
+| Duployan
+| Grantha
+| Gunjala Gondi
+| Hatran
+| Makasar
+| Marchen
+| Meroitic Hieroglyphs
+| Nandinagari
+| Newa
+| Nushu
+| Pahawh Hmong
+| Rejang
+| Siddham
+| Syloti Nagri
+| Tagalog
+| Tagbanwa
+| Tai Viet
+| Tangsa
+| Toto
+| Vithkuqi
+| Yezidi
+
 ## Windows 11
 
 The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/fonts/windows_11_font_list).
