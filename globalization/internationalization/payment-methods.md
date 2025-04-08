@@ -10,7 +10,7 @@ ms.date: 05/16/2024
 
 # Payment methods
 
-In many Western countries, credit cards are commonly used to pay for software purchases. As discussed in [How to release products internationally](../methodology/how-to-release-products-internationally.md#payment-methods), not all target markets use the same payment methods. Choosing which payment methods customers can use to buy your product in each market needs to be part of your strategy. You should select methods that are popular in the target market and suitable for buying software online.
+In many countries/regions, credit cards are commonly used to pay for software purchases. As discussed in [How to release products internationally](../methodology/how-to-release-products-internationally.md#payment-methods), not all target markets use the same payment methods. Choosing which payment methods customers can use to buy your product in each market needs to be part of your strategy. You should select methods that are popular in the target market and suitable for buying software online.
 
 This article gives an overview of some other methods used around the world.
 
@@ -43,5 +43,5 @@ Here are a few examples of nontraditional payment methods, some of which have on
 
 - **Bitcoin and other cryptocurrencies** are becoming more popular in the developer community due to their decentralized nature. Some software vendors and platforms accept Bitcoin and other cryptocurrencies, and they're used globally.
 - The **GitHub Sponsors** platform allows developers to financially support each other directly on GitHub, a popular platform for hosting and sharing code. It's used globally and can be a viable alternative to traditional payment methods for software.
-- **Prepaid cards** are payment cards with a monetary value stored on the card itself. They're trusted and popular worldwide, especially in countries with a large unbanked population, as they can be loaded with cash at a retail location, making them a tangible payment method.
+- **Prepaid cards** are payment cards with a monetary value stored on the card itself. They're trusted and popular worldwide, especially in countries/regions with a large unbanked population, as they can be loaded with cash at a retail location, making them a tangible payment method.
 - Many **Software as a Service (SaaS) platforms**, like Amazon Web Services (AWS), Google Cloud, and Microsoft Azure, have their own billing systems that can be linked to various payment methods. These platforms are used globally.
