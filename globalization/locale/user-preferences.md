@@ -9,7 +9,7 @@ ms.date: 10/25/2023
 ---
 # Identifying user preferences
 
-Products intended for international markets need to be able to identify and follow users’ language and country preferences. Windows has a dedicated group of settings for this purpose under **Settings** > **Time & language** > **Language & region**. They consist of:
+Products intended for international markets need to be able to identify and follow users’ language and country/region preferences. Windows has a dedicated group of settings for this purpose under **Settings** > **Time & language** > **Language & region**. They consist of:
 
 - **Windows display language**: used for the Windows UI and for features such as File Explorer
 - **Preferred languages**: a Microsoft Store application uses the first language in this list that is supported by the app

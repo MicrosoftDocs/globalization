@@ -6,9 +6,9 @@ ms.date: 06/13/2023
 
 # Time zones
 
-A time zone is a geographical region in which the same time is used. If the earth were to be divided into 24 time zones corresponding to the 24 hours in a day, each time zone would span 15° of longitude. However, because it's more convenient for areas to share time, time zone boundaries tend to follow country or administrative (for example, provincial or state) borders.
+A time zone is a geographical region in which the same time is used. If the earth were to be divided into 24 time zones corresponding to the 24 hours in a day, each time zone would span 15° of longitude. However, because it's more convenient for areas to share time, time zone boundaries tend to follow country/region or administrative (for example, provincial or state) borders.
 
-Even when a country’s width would suggest that more than one time zone would be used, countries might elect to use fewer time zones. For example, China spans over 60° of longitude, but uses a single unified time zone (China Standard Time).
+Even when a country/region’s width would suggest that more than one time zone would be used, countries/regions might elect to use fewer time zones. For example, China spans over 60° of longitude, but uses a single unified time zone (China Standard Time).
 
 The time in any of the world's time zones can be expressed as an offset from a time standard called Coordinated Universal Time (UTC). UTC corresponds to the mean solar time at 0° of longitude. Most time zone offsets are typically in multiples of hours, but can be other combinations of hours and minutes, such as UTC+05:30 for India or UTC+05:45 for Nepal.
 
