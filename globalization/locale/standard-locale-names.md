@@ -29,7 +29,7 @@ A locale using the BCP 47 format is defined by a primary language tag and option
 |Example  |Corresponds to  |Explanation  |
 |---------|---------|---------|
 |de |German |A primary language tag with no additional qualifiers. |
-|zh-yue-HK |Cantonese for Hong Kong |A primary language tag, an extended language subtag, and a region subtag. Equivalent to yue-HK. |
+|zh-yue-HK |Cantonese for Hong Kong SAR |A primary language tag, an extended language subtag, and a region subtag. Equivalent to yue-HK. |
 |sr-Latn |Serbian, written using the Latin script |A primary language tag and a script subtag. |
 |de-AT |German for Austria |A primary language tag and a region subtag. |
 |ca-ES-valencia |Valencian for Spain |A primary language tag, a region subtag, and a variant subtag. |

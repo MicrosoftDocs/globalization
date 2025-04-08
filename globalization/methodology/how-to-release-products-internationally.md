@@ -41,7 +41,7 @@ Marketing is such a critical area that it can benefit from [transcreation](../lo
 
 ### Language support
 
-When you have selected the target markets, you need to lock down which languages are going to be supported. Are you going to try to support all languages in all your target markets, or prioritize some languages or markets, perhaps adding more after launch? For example, in Japan Japanese is the dominant language and you should focus your support on Japanese. But many countries have more than one official language, and some unofficial languages might also be worth supporting. Supporting common languages such as Spanish have the advantage of covering many markets at once, although you still need to account for regional variations and conventions.
+When you have selected the target markets, you need to lock down which languages are going to be supported. Are you going to try to support all languages in all your target markets, or prioritize some languages or markets, perhaps adding more after launch? For example, in Japan Japanese is the dominant language and you should focus your support on Japanese. But many countries/regions have more than one official language, and some unofficial languages might also be worth supporting. Supporting common languages such as Spanish have the advantage of covering many markets at once, although you still need to account for regional variations and conventions.
 
 Language support can incur considerable costs, especially if your original product development didn’t plan for [internationalization](software-internationalization.md). Even if internationalization was accounted for, each new language version still comes with an incremental cost.
 
@@ -49,13 +49,13 @@ Language support can incur considerable costs, especially if your original produ
 
 Every market doesn’t have the same [payment methods](../internationalization/payment-methods.md) available. And even if a given method is available, it might be little used. Research which options are commonly used in the markets you're targeting. You should offer several ways to pay for your product. Credit cards, online payment methods such as Stripe, Paypal, or Google Pay, multi-currency accounts, and transfer via a third party such as Western Union are some possibilities worth investigating.
 
-Selling your product in a new country often means that you get payments in a new currency. It's worth considering whether you should use a bank that is local for the target market for this business. At some point you want to repatriate those profits, so plan for that eventuality when you think about your banking solution.
+Selling your product in a new country/region often means that you get payments in a new currency. It's worth considering whether you should use a bank that is local for the target market for this business. At some point you want to repatriate those profits, so plan for that eventuality when you think about your banking solution.
 
 Foreign currencies involve what is called a foreign exchange risk, as currency exchange rates can fluctuate. Cash repatriation also affects your taxes, so good planning can reap considerable benefits.
 
 ### Legal concerns
 
-Before even considering the specifics of your product, you need to look into your company starting operations in the target market. As with marketing and sales, you can benefit from the assistance of in-country talent. For example, Europe’s GDPR law has changed the way customer data privacy is handled. Patent rights and lawsuits are also potential issues.
+Before even considering the specifics of your product, you need to look into your company starting operations in the target market. As with marketing and sales, you can benefit from the assistance of in-country/region talent. For example, Europe’s GDPR law has changed the way customer data privacy is handled. Patent rights and lawsuits are also potential issues.
 
 When it comes to your product, it must comply with all legal and trade requirements of each target market. Some of the things you need to consider are taxes, warranties, trademarks, certificates, import regulations, declarations of conformity, and packaging of the product if it's a physical delivery. For more information, see [International laws and standards](../internationalization/international-laws-and-standards.md).
 
@@ -69,9 +69,9 @@ When you’ve done this assessment of your capabilities and started to acquire t
 
 Speaking of timelines, perhaps the most important thing to remember about compliance is that it typically takes a very long lead time to have everything up and running.
 
-You need to work with your legal team to see if they can handle all the issues you identified earlier and any other problems that might arise. This might be an area where you need to seek assistance from in-country legal counsel.
+You need to work with your legal team to see if they can handle all the issues you identified earlier and any other problems that might arise. This might be an area where you need to seek assistance from in-country/region legal counsel.
 
-As an example, for some industries you might have to perform local testing or quality control in some countries to gain approval for your product. As another example, product liability and consumer protection laws might work differently from your home market. The potential hazards are numerous and we can’t emphasize enough the need for research, assessing your capabilities, seeking local help if necessary, and keeping your schedules realistic.
+As an example, for some industries you might have to perform local testing or quality control in some countries/regions to gain approval for your product. As another example, product liability and consumer protection laws might work differently from your home market. The potential hazards are numerous and we can’t emphasize enough the need for research, assessing your capabilities, seeking local help if necessary, and keeping your schedules realistic.
 
 ### Banking and payments
 
@@ -89,7 +89,7 @@ Your product should be designed according to the principles of [internationaliza
 
 Physical products need shipping to local warehouses and distribution deals to stores. Customers are going to be unhappy if they can only get your product by waiting many weeks for expensive international delivery.
 
-If your product is something that could be manufactured in-country, that is worth considering as it could let you avoid many import-related issues. These include customs duties and tariffs, taxes, import licensing, and shipping, for example.
+If your product is something that could be manufactured in-country/region, that is worth considering as it could let you avoid many import-related issues. These include customs duties and tariffs, taxes, import licensing, and shipping, for example.
 
 ### Local support and infrastructure
 
