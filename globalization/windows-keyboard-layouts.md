@@ -8,7 +8,7 @@ author: jowilco
 
 # Windows keyboard layouts
 
-Layouts generated using: Microsoft Windows 11 Enterprise 24H2 (26100.2033)
+Layouts generated using: Microsoft Windows 11 Enterprise 25H2 (26200.6584)
 
 Choose a keyboard below to view its layout.
 
@@ -105,6 +105,7 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Igbo](keyboards/kbdibo.md) | 00000470 | 7 / Server 2008 R2 |
 | &nbsp; | [Inuktitut - Latin](keyboards/kbdiulat.md) | 0000085D | Vista / Server 2008 |
 | &nbsp; | [Inuktitut - Naqittaut](keyboards/kbdinuk2.md) | 0001045D | Vista / Server 2008 |
+| &nbsp; | [Inuktitut - Nattilik](keyboards/kbdinuk3.md) | 0002045D | 11 |
 | &nbsp; | [Irish](keyboards/kbdir.md) | 00001809 | pre-XP |
 | &nbsp; | [Italian](keyboards/kbdit.md) | 00000410 | pre-XP |
 | &nbsp; | [Italian (142)](keyboards/kbdit142.md) | 00010410 | pre-XP |
@@ -208,6 +209,7 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Tibetan (PRC) - Updated](keyboards/kbdtiprd.md) | 00010451 | 8.1 |
 | &nbsp; | [Tifinagh (Basic)](keyboards/kbdtifi.md) | 0000105F | 8 |
 | &nbsp; | [Tifinagh (Extended)](keyboards/kbdtifi2.md) | 0001105F | 8 |
+| &nbsp; | [Traditional Mongolian (MNS)](keyboards/kbdmons2.md) | 00020850 | 8.1 |
 | &nbsp; | [Traditional Mongolian (Standard)](keyboards/kbdmonst.md) | 00010850 | 8.1 |
 | &nbsp; | [Turkish F](keyboards/kbdtuf.md) | 0001041F | pre-XP |
 | &nbsp; | [Turkish Q](keyboards/kbdtuq.md) | 0000041F | pre-XP |
