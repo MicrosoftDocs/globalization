@@ -209,7 +209,7 @@ Choose a keyboard below to view its layout.
 | &nbsp; | [Tibetan (PRC) - Updated](keyboards/kbdtiprd.md) | 00010451 | 8.1 |
 | &nbsp; | [Tifinagh (Basic)](keyboards/kbdtifi.md) | 0000105F | 8 |
 | &nbsp; | [Tifinagh (Extended)](keyboards/kbdtifi2.md) | 0001105F | 8 |
-| &nbsp; | [Traditional Mongolian (MNS)](keyboards/kbdmons2.md) | 00020850 | 8.1 |
+| &nbsp; | [Traditional Mongolian (MNS)](keyboards/kbdmons2.md) | 00020850 | 11 |
 | &nbsp; | [Traditional Mongolian (Standard)](keyboards/kbdmonst.md) | 00010850 | 8.1 |
 | &nbsp; | [Turkish F](keyboards/kbdtuf.md) | 0001041F | pre-XP |
 | &nbsp; | [Turkish Q](keyboards/kbdtuq.md) | 0000041F | pre-XP |
