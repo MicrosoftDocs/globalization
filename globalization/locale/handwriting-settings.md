@@ -3,7 +3,7 @@ title: Handwriting settings
 description: Systems on touchscreen devices can offer users the possibility to write by hand in some languages.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 11/25/2022
 ---
 

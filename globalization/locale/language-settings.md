@@ -3,7 +3,7 @@ title: Language settings
 description: You should enable users worldwide to interact with your application by supporting various settings related to languages and input.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 01/10/2023
 
 ---

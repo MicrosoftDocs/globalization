@@ -3,7 +3,7 @@ title: Localize video and multimedia
 description: Video and multimedia localization is expensive and requires a unique strategy.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 --- 

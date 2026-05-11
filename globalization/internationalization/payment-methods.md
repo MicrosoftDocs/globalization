@@ -3,7 +3,7 @@ title: Payment methods
 description: Acceptable methods of payment differ in different locales.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 05/16/2024
 
 ---

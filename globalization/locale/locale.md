@@ -3,7 +3,7 @@ title: Locale
 description: The combination of language and country or region names a locale.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 01/20/2023
 
 ---

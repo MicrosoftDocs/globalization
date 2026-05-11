@@ -3,7 +3,7 @@ title: Keyboard shortcuts and localization
 description: The definition of hotkeys and accelerators should take international keyboards into account.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 02/15/2024
 ---
 

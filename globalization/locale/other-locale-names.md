@@ -3,7 +3,7 @@ title: Other locale representations
 description: There are a number of other locale identification systems that you should be aware of, such as LCID (obsolete Windows Locale Identifier).
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 03/13/2023
 
 ---

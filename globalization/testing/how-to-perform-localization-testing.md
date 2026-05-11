@@ -1,9 +1,9 @@
-﻿---
+---
 title: How to perform localization testing
 description: Defining a process for localization testing, identifying tools that can help with testing, and creating test data help ensure that testing identifies issues.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 05/04/2024
 
 ---

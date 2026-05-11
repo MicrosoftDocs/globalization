@@ -3,7 +3,7 @@ title: Why international validation is important
 description: An overview of issues related to international validation.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 05/04/2024
 
 ---

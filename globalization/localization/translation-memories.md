@@ -3,7 +3,7 @@ title: Maintain translation memories
 description: A translation memory (TM) represents a significant asset that demands careful maintenance.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 --- 

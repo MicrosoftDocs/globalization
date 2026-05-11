@@ -3,7 +3,7 @@ title: Identifying user preferences
 description: How to identify preferences of international users for user interface, input, and content, including language and regional formats.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 10/25/2023
 
 ---

@@ -3,7 +3,7 @@ title: Exchanging localizable resources
 description: This article describes XML Localization Interchange File Format (XLIFF) in more detail.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 ---

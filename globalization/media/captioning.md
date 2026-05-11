@@ -3,7 +3,7 @@ title: Captioning and subtitling
 description: Captioning can be employed to make videos useful to an international audience and users with disabilities.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 ---

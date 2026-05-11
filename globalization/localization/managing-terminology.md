@@ -3,7 +3,7 @@ title: Manage terminology
 description: Careful up-front planning around the terminology used in your product can help ensure high quality localization and translation.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/27/2023
 
 ---

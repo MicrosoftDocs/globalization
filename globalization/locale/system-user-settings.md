@@ -3,7 +3,7 @@ title: Operating system and application settings
 description: Language and locale settings are applicable to both your application and the operating system it runs on..
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 05/16/2024
 
 ---

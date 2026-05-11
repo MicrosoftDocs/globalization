@@ -3,7 +3,7 @@ title: Re-creation and dubbing
 description: One localization strategy is to re-create an asset in the target language.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 ---
