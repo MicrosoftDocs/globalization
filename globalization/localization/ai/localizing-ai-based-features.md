@@ -3,7 +3,7 @@ title: Localize artificial intelligence-based features
 description: Optimize AI features for global markets by customizing LLM outputs to meet diverse language and cultural needs, ensuring alignment with business goals and user expectations.
 author: jowilco
 ms.author: jowilco
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 08/15/2024
 ms.custom:
   - ai-gen-docs-bap

@@ -3,7 +3,7 @@ title: Artificial intelligence and localization
 description: Use AI for translation and ensure that AI-based features meet global expectation to drive product success worldwide.
 author: jowilco
 ms.author: jowilco
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 08/15/2024
 ms.custom:
   - ai-gen-docs-bap

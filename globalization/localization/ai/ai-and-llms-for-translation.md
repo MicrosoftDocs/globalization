@@ -3,7 +3,7 @@ title: Use AI and large language models for translation
 description: Discover how large language models (LLMs) are revolutionizing localization, offering near-human quality and versatility in multilingual applications.
 author: jowilco
 ms.author: jowilco
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 08/15/2024
 ms.custom:
   - ai-gen-docs-bap
