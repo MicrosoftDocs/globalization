@@ -1,9 +1,9 @@
-﻿---
+---
 title: How to perform internationalization testing
 description: This article is a checklist of common issues with internationalization and localization that can be identified during testing.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 05/04/2024
 
 ---

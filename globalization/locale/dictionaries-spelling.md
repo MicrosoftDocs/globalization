@@ -3,7 +3,7 @@ title: Proofing tools
 description: Dictionaries, spelling algorithms, and other proofing tools require special treatment in a global application.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 10/25/2023
 
 ---

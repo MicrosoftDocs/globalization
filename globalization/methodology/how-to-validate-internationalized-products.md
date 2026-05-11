@@ -3,7 +3,7 @@ title: How to validate international products
 description: An overview of issues involved in testing your product for international release.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 05/04/2024
 
 ---

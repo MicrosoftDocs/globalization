@@ -3,7 +3,7 @@ title: Localize games
 description: Localizing games is particularly demanding due to the unique way games are developed and the nature of the target audience.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 ---

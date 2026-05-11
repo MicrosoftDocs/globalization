@@ -3,7 +3,7 @@ title: Locale fallback
 description: When a global application does not have full support of a given locale, it can fall back to an appropriate supported locale.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 01/20/2023
 
 ---

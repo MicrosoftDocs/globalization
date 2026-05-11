@@ -3,7 +3,7 @@ title: Transcreation
 description: Transcreation is the process of adapting content from one language to another while maintaining its intent, style, tone, and context.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 ---

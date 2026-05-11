@@ -1,9 +1,9 @@
-﻿---
+---
 title: When to perform internationalization testing
 description: Using appropriate testing methods at the right time helps identify bugs before rework increases expense.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 05/04/2024
 
 ---

@@ -3,7 +3,7 @@ title: Localize documentation
 description: Localizing documentation and user assistance involves adapting and translating your existing content. Recycling existing translation involves extra challenges.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 07/12/2023
 
 ---

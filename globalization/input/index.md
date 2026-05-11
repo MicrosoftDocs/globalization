@@ -3,7 +3,7 @@ title: User input
 description: For international users, your application may need support for different keyboard layouts and Input Method Editors (IME)
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 06/19/2024
 ---
 

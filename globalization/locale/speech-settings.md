@@ -3,7 +3,7 @@ title: Speech settings
 description: IF your application supports speech, make sure that international users also benefit.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 01/10/2023
 
 ---

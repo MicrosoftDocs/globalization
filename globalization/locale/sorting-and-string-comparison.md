@@ -3,7 +3,7 @@ title: Collation, sorting, and string comparison
 description: In world-ready applications, the alphabetical order can vary among languages, and the conventions for sequencing items can also be quite different.
 author: m-kauppinen
 ms.author: v-mikau
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+ms.topic: article
 ms.date: 01/10/2023
 
 ---
