@@ -51,6 +51,7 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Duployan                       | Europe                | Sans Serif Collection | Originally developed for French, but has been expanded and adapted for other languages. |
 | Elbasan                        | Europe                | Sans Serif Collection | Albanian |
 | Elymaic                        | Middle East           | Sans Serif Collection | Aramaic |
+| Georgian Extended              | Europe                | Segoe UI              | Georgian |
 | Glagolitic                     | Europe                | Sans Serif Collection | Byzantine, Chakavian, Littoral Slovene, Old Church Slavonic, Old Croat, Old Czech, Old Slovak, Old Slovene, Serbo-Croatian |
 | Glagolitic Supplement          | Europe                | Sans Serif Collection | Byzantine, Chakavian, Littoral Slovene, Old Church Slavonic, Old Croat, Old Czech, Old Slovak, Old Slovene, Serbo-Croatian |
 | Grantha                        | Indian subcontinent   | Sans Serif Collection | Sanskrit, Tamil |
@@ -81,9 +82,11 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Meroitic Hieroglyphs           | Africa                | Sans Serif Collection | Meroitic |
 | Miao                           | China, Southeast Asia | Sans Serif Collection | A-Hmao, Lipo, Nasu, Sichuan Miao |
 | Modi                           | Indian subcontinent   | Sans Serif Collection | Marathi |
+| Mongolian Supplement           | North Asia            | Mongolian Baiti       | Mongolian |
 | Mro                            | Indian subcontinent   | Sans Serif Collection | Mru |
 | Multani                        | Indian subcontinent   | Sans Serif Collection | Saraiki |
 | Musical Symbols                |                       | Sans Serif Collection | Modern musical notation |
+| Myanmar Extended-C             | Southeast Asia        | Myanmar Text          | Pao and Eastern Pwo Karen |
 | Nabataean                      | Middle East           | Sans Serif Collection | Nabataean |
 | Nag Mundari                    | Indian subcontinent   | Sans Serif Collection | Mundari |
 | Nandinagari                    | Indian subcontinent   | Sans Serif Collection | Kannada, Sanskrit |
@@ -142,6 +145,7 @@ The following table lists scripts newly supported in Windows 10, and associated 
 | Brahmi                    | Indian subcontinent | Segoe UI Historic | Historic |
 | Carian                    | Europe              | Segoe UI Historic | Historic |
 | Cypriot                   | Europe              | Segoe UI Historic | Historic |
+| Devanagari Extended       | Indian subcontinent | Nirmala UI        | Historic and liturgical |
 | Egyptian Hieroglyphs      | Middle East         | Segoe UI Historic | Historic |
 | Imperial Aramaic          | Middle East         | Segoe UI Historic | Historic |
 | Inscriptional Pahlavi     | Middle East         | Segoe UI Historic | Historic |
@@ -150,9 +154,11 @@ The following table lists scripts newly supported in Windows 10, and associated 
 | Lycian                    | Europe              | Segoe UI Historic | Historic |
 | Lydian                    | Europe              | Segoe UI Historic | Historic |
 | Meetei Mayek              | Indian subcontinent | Nirmala UI        | Meitei   |
+| Myanmar Extended-B        | Southeast Asia      | Myanmar Text      | Shan Pali and Tai Laing |
 | Phoenician                | Middle East         | Segoe UI Historic | Historic |
 | Old Persian Cuneiform     | Middle East         | Segoe UI Historic | Historic |
 | Old South Arabian         | Middle East         | Segoe UI Historic | Historic |
+| Sinhala Archaic Numbers   | Indian subcontinent | Nirmala UI        | Sinhala Illakkam |
 | Shavian                   | Europe              | Segoe UI Historic | English phonetic writing |
 | Sumero-Akkadian Cuneiform | Middle East         | Segoe UI Historic | Historic |
 | Ugaritic Cuneiform        | Middle East         | Segoe UI Historic | Historic |
@@ -322,7 +328,7 @@ The user interface font changes are as follows:
 - Gadugi font: new font for Canadian Aboriginal Syllabics and Cherokee scripts
 - Microsoft JhengHei UI: new font for Traditional Chinese script
 - Microsoft YaHei UI: new font for Simplified Chinese script
-- Nirmala UI: new font for South Asian scripts (Bangla, Devanagari, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Sinhala, Tamil, Telugu)
+- Nirmala UI: new font for South Asian scripts (Bangla, Common Indic Number Forms, Devanagari, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Sinhala, Tamil, Telugu)
 - Segoe UI (certain weights): updated to add support for Arabic, Armenian, Georgian (Mkhedruli), Georgian Khutsuri, Hebrew scripts
 
 Among additional fonts added for previously supported scripts is the Urdu Typesetting font, which supports Arabic script in Nastaliq style (sometimes referred to as *Perso-Arabic script*).
@@ -356,8 +362,10 @@ The following table lists scripts newly supported in Windows 7, and associated f
 | Runic       | Europe        | Segoe UI Symbol       | - |
 | Symbols     | -             | Segoe UI Symbol       | - |
 | Tai Le      | China         | Microsoft Tai Le      | Used for the Dehong Dai language |
+| Tai Xuan Jing Symbols | China | Segoe UI Symbol     | Extension of Yijing symbols |
 | Tifinagh    | Africa        | Ebrima                | Used for Tamazight and other Amazigh languages |
 | Vai         | Africa        | Ebrima                | - |
+| Yijing Hexagram Symbols | China | Segoe UI Symbol       | - |
 
 Note: The Segoe UI Symbol font contains a subset of Unicode-encoded symbols. It isn't a symbol charset-encoded font.
 
