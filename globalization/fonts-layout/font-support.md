@@ -2,7 +2,7 @@
 title: Script and font support in Windows
 description: Discover the changes made to script and font support for major releases of Windows.
 author: pallep
-ms.date: 8/10/2023
+ms.date: 7/24/2026
 ---
 
 # Script and font support in Windows
@@ -15,13 +15,48 @@ A detailed library of Microsoft fonts is available as part of the [Microsoft Typ
 
 Comments on language usage are included in cases in which associations between scripts and languages might not be well known. The list of languages for any given script isn't necessarily exhaustive.
 
+Scripts and Fonts Marked in Asterisks meaning that the script is requested to be added for the next or future version of Windows. Some scripts listed here are from Unicode 18.0 and may be in developement early.
+
+
+## Windows Future Version
+
+ The list of fonts included with a future version of Windows that has not been yet announced and includes to cover more Scripts.
+
+ The Goal is to cover Bopomofo, CJK Symbols (Ideographic Symbols and Punctuation), Archaic Kana and Hentaigana, and CJK Unified Ideographs Extension J.
+
+ The two scripts replacing Sans Serif Collection are Sharada and Kawi to support character extensions that do not support Noto.
+
+The following table lists scripts will be supported in a Future Windows version, and associated fonts:
+
+| New scripts                    | Region where script is from | Fonts           | Comments on language usage |
+| ------------------------------ | --------------------- | --------------------- | -------------------------- |
+| Archaic Cuneiform Numerals*    | Middle East           | Segoe UI Historic     | Archaic Numerals used in Early Sumerian |
+| Archaic Kana*                  | East Asia             | Yu Gothic             | Old Japanese languages |
+| Garay*                         | Europe                | Ebrima                | Wolof |
+| Hentaigana*                    | East Asia             | Yu Gothic             | Old Japanese |
+| Jurchen*                       | East Asia             | Microsoft Fangsong*   | Jurchen |
+| Kawi*                          | Southeast Asia        | Segoe UI Historic     | All languages listed on Windows 11 and to cover the Kawi Script and the Nukta |
+| Khitan Small Script*           | East Asia             | Microsoft Fangsong*   | Khitan |
+| Phaistos Disc*                 | Europe                | Segoe UI Historic     | Unknown |
+| Rumi Numerals*                 | Middle East           | Segoe UI Historic     | Numerals used for Rumi |
+| Sharada*                       | Indian subcontinent   | Nirmala UI            | All languages listed on Windows 11 and to support Sharada Supplement |
+| Sharada Supplement*            | Indian subcontinent   | Nirmala UI            | Kashmiri |
+| Tai Yo*                        | Southeast Asia        | Microsoft Tai Yo*     | Tai Yo |
+| Tangut*                        | East Asia             | SimSun Tangut*        | Tangut |
+| Tulu-Tigalari*                 | Indian subcontinent   | Nirmala UI            | Tulu  |
+
 ## Windows 11
 
 The list of fonts included with Windows 11 is available in the [Windows 11 font list](/typography/fonts/windows_11_font_list).
 
 Segoe UI Variable is the new system font for Windows. It's a refreshed take on the classic Segoe and uses variable font technology to dynamically provide great legibility at small sizes, and improved outlines at display sizes. Windows 11 also introduces a new system icon font, [Segoe Fluent Icons](/windows/apps/design/style/segoe-fluent-icons-font). This icon font aligns to the Fluent Design system. For more information about Windows 11 design principles, see [Typography in Windows 11](/windows/apps/design/signature-experiences/typography) and [Iconography in Windows 11](/windows/apps/design/signature-experiences/iconography).
 
+The goal is to cover all combining diacritical marks, Unicode 15.0 - 18.0 Latin Letters from Latin Extended D to G, and Cyrillic Extended C and D on a different Microsoft made font to not render issues with the San Serif Collection font.
+
+The goal is to cover Unicode character extensions that don't support Noto by making a different Microsoft made font.
+
 The following table lists scripts newly supported in Windows 11, and associated fonts:
+
 
 | New scripts                    | Region where script is from | Fonts           | Comments on language usage |
 | ------------------------------ | --------------------- | --------------------- | -------------------------- |
@@ -29,26 +64,32 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Ahom                           | Indian subcontinent   | Sans Serif Collection | Ahom |
 | Anatolian Hieroglyphs          | Middle East           | Sans Serif Collection | Luwian |
 | Ancient Greek Musical Notation | Europe                | Sans Serif Collection | Musical notation used in ancient Greece |
+| Ancient Greek Numbers*         | Europe                | Segoe UI Historic     | Numbers used in ancient Greece |
 | Avestan                        | Middle East           | Sans Serif Collection | Avestan, Middle Persian |
 | Balinese                       | Southeast Asia        | Sans Serif Collection | Balinese, Sasak |
 | Bassa Vah                      | Africa                | Sans Serif Collection | Bassa |
 | Bamum                          | Africa                | Ebrima                | Bamum |
 | Bamum Supplement               | Africa                | Segoe UI Historic     | Bamum - Historic stage A-F of the Bamum script |
 | Batak                          | Southeast Asia        | Sans Serif Collection | Alas-Kluet, Angkola, Karo, Mandailing, Pakpak, Simalungun, Toba |
+| Beria Erfe*                    | Africa                | Ebrima                | Zaghawa |
 | Bhaiksuki                      | Southeast Asia        | Sans Serif Collection | Sanskrit |
 | Buhid                          | Southeast Asia        | Sans Serif Collection | Buhid, Tagalog |
 | Byzantine Musical Symbols      | Europe                | Sans Serif Collection | Musical notation for Byzantine music |
 | Caucasian Albanian             | Europe                | Sans Serif Collection | Caucasian Albanian |
 | Chakma                         | Indian subcontinent   | Nirmala UI            | Chakma |
 | Cham                           | Southeast Asia        | Sans Serif Collection | Cham, Sanskrit |
+| Chess Symbols*                 |                       | Segoe UI Symbol       | Extended Chess Symbols |
 | Chorasmian                     | Middle East           | Sans Serif Collection | Khwarezmian |
 | Combining Half Marks           |                       | Sans Serif Collection | Diacritical marks spanning two or more characters |
 | Common Indic Number Forms      | Indian subcontinent   | Sans Serif Collection | Representing fractions |
 | Coptic Epact Numbers           | Africa                | Sans Serif Collection | Coptic |
+| Counting Rod Numerals*         | China                 | Segoe UI Symbol       | Counting rods uses in China as tally marks |
 | Cypro-Minoan                   | Middle East           | Sans Serif Collection | unknown |
 | Dives Akuru                    | South Asia            | Sans Serif Collection | Maldivian |
 | Dogra                          | Indian subcontinent   | Sans Serif Collection | Dogri |
 | Duployan                       | Europe                | Sans Serif Collection | Originally developed for French, but has been expanded and adapted for other languages. |
+| Early Dynastic Cuneiform*      | Middle East           | Segoe UI Historic     | Used in Early Sumerian |
+| Egyptian Hieroglyphs Extended* | Africa                | Segoe UI Historic     | Extended signs used for Ancient Egyptian |
 | Elbasan                        | Europe                | Sans Serif Collection | Albanian |
 | Elymaic                        | Middle East           | Sans Serif Collection | Aramaic |
 | Georgian Extended              | Europe                | Segoe UI              | Georgian |
@@ -56,15 +97,19 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Glagolitic Supplement          | Europe                | Sans Serif Collection | Byzantine, Chakavian, Littoral Slovene, Old Church Slavonic, Old Croat, Old Czech, Old Slovak, Old Slovene, Serbo-Croatian |
 | Grantha                        | Indian subcontinent   | Sans Serif Collection | Sanskrit, Tamil |
 | Gunjala Gondi                  | Indian subcontinent   | Sans Serif Collection | Gondi |
+| Gurung Khema*                  | Indian subcontinent   | Nirmala UI            | Gurung |
 | Hanifi Rohingya                | Southeast Asia        | Sans Serif Collection | Rohingya |
 | Hanunoo                        | Southeast Asia        | Sans Serif Collection | Hanunó'o, Tagalog |
 | Hatran                         | Middle East           | Sans Serif Collection | Hatran Aramaic |
 | Indic Siyaq Numbers            | Indian subcontinent   | Sans Serif Collection | Arabic-script numerals that were used for accounting in India in the 17th–20th centuries |
 | Kaithi                         | Indian subcontinent   | Sans Serif Collection | Awadhi, Bhojpuri, Hindustani, Magahi, Maithili, Nagpuri |
+| Kaktovik Numerals*             | North America         | Segoe UI Symbol       | Numerals used in Canada for the Kaktovik Notation |
 | Kawi                           | Southeast Asia        | Sans Serif Collection | Old Balinese, Old Javanese, Old Malay, Old Sundanese, Old Tagalog, Sanskrit |
 | Kayah Li                       | Southeast Asia        | Sans Serif Collection | Karenni |
+| Kirat Rai*                     | Indian subcontinent   | Nirmala UI            | Bantawa |
 | Khojki                         | Indian subcontinent   | Sans Serif Collection | Kutchi, Sindhi |
 | Khudawadi                      | Indian subcontinent   | Sans Serif Collection | Sindhi |
+| Lao Extensions*                | Southeast Asia        | Leelawadee UI         | Pali and Sanskrit |
 | Lepcha                         | Indian subcontinent   | Sans Serif Collection | Lepcha |
 | Limbu                          | Indian subcontinent   | Sans Serif Collection | Limbu |
 | Linear A                       | Europe                | Sans Serif Collection | Unknown |
@@ -79,10 +124,12 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Mayan Numerals                 | Mesoamerica           | Sans Serif Collection | Historical Mayan numeral system |
 | Medefaidrin                    | Africa                | Sans Serif Collection | Medefaidrin |
 | Mende Kikakui                  | Africa                | Sans Serif Collection | Mende |
+| Meroitic Cursive               | Africa                | Sans Serif Collection | Meroitic and to support Meroitic Cursive Numerals |
 | Meroitic Hieroglyphs           | Africa                | Sans Serif Collection | Meroitic |
+| Meetei Mayek                   | Indian subcontinent   | Sans Serif Collection | Meitei, rendering issues with the Nirmala UI font and to support the Meetei Mayek Extensions block |
 | Miao                           | China, Southeast Asia | Sans Serif Collection | A-Hmao, Lipo, Nasu, Sichuan Miao |
 | Modi                           | Indian subcontinent   | Sans Serif Collection | Marathi |
-| Mongolian Supplement           | North Asia            | Mongolian Baiti       | Mongolian |
+| Mongolian Supplement           | North Asia            | Mongolian Baiti       | Mongolian, Todo, Sibe, Manchu |
 | Mro                            | Indian subcontinent   | Sans Serif Collection | Mru |
 | Multani                        | Indian subcontinent   | Sans Serif Collection | Saraiki |
 | Musical Symbols                |                       | Sans Serif Collection | Modern musical notation |
@@ -95,6 +142,7 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Nyiakeng Puachue Hmong         | Southeast Asia        | Sans Serif Collection | White Hmong, Green Hmong |
 | Old Hungarian                  | Europe                | Sans Serif Collection | Hungarian |
 | Old North Arabian              | Middle East           | Sans Serif Collection | Ancient North Arabian |
+| Ol Onal*                       | Indian subcontinent   | Nirmala UI            | Bhumij |
 | Old Permic                     | Europe                | Sans Serif Collection | Komi |
 | Old Sogdian                    | Central Asia          | Sans Serif Collection | Sogdian |
 | Old Uyghur                     | Central and East Asia | Sans Serif Collection | Old Uyghur |
@@ -108,11 +156,14 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Saurashtra                     | Indian subcontinent   | Sans Serif Collection | Saurashtra |
 | Sharada                        | Indian subcontinent   | Sans Serif Collection | Kashmiri, Sanskrit |
 | Siddham                        | Central and East Asia | Sans Serif Collection | Sanskrit |
+| Sidetic*                       | Middle East           | Segoe UI Historic     | Unknown |
 | Sogdian                        | Central Asia          | Sans Serif Collection | Sogdian |
 | Soyombo                        | Central Asia          | Sans Serif Collection | Mongolian, Sanskrit, Tibetan |
 | Sundanese                      | Southeast Asia        | Sans Serif Collection | Sundanese |
 | Sundanese Supplement           | Southeast Asia        | Sans Serif Collection | Sundanese |
+| Sunuwar*                       | Indian subcontinent   | Nirmala UI            | Sunuwar |
 | Syloti Nagri                   | Indian subcontinent   | Sans Serif Collection | Middle Bengali, Sylheti |
+| Symbols for Legacy Computing*  |                       | Segoe UI Symbol       | Symbols used in legacy computers |
 | Tagalog                        | Southeast Asia        | Sans Serif Collection | Tagalog, supporting the Tagalog Baybayin script |
 | Tagbanwa                       | Southeast Asia        | Sans Serif Collection | Palawanic languages |
 | Tai Tham                       | Southeast Asia        | Sans Serif Collection | Isan, Khün, Lao, Northern Thai, Tai Lü |
@@ -121,6 +172,8 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Tamil Supplement               | Indian subcontinent   | Sans Serif Collection | Tamil |
 | Tangsa                         | Southeast Asia        | Sans Serif Collection | Tangsa |
 | Tirhuta                        | Indian subcontinent   | Sans Serif Collection | Maithili, Sanskrit |
+| Todhri*                        | Europe                | Sans Serif Collection | Albanian |
+| Tolong Siki*                   | Indian subcontinent   | Nirmala UI            | Kurukh |
 | Toto                           | Indian subcontinent   | Sans Serif Collection | Toto |
 | Vedic Extensions               | Indian subcontinent   | Sans Serif Collection | Tones and vedic symbols in Devanagari and similar scripts |
 | Vithkuqi                       | Europe                | Sans Serif Collection | Albanian |
@@ -128,6 +181,7 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Warang Citi                    | Indian subcontinent   | Sans Serif Collection | Ho |
 | Yezidi                         | West Asia             | Sans Serif Collection | Kurdish |
 | Zanabazar Square               | Central Asia          | Sans Serif Collection | Mongolian, Sanskrit, Tibetan |
+| Znamenny Musical Notation*     | Europe                | Sans Serif Collection | Used in old Znamenny Musical texts |
 
 ## Windows 10
 
@@ -144,8 +198,9 @@ The following table lists scripts newly supported in Windows 10, and associated 
 | ADLaM                     | Africa              | Ebrima            | Fulani   |
 | Brahmi                    | Indian subcontinent | Segoe UI Historic | Historic |
 | Carian                    | Europe              | Segoe UI Historic | Historic |
+| Common Indic Number Forms | Indian subcontinent | Nirmala UI        | Used in Vedic languages |
 | Cypriot                   | Europe              | Segoe UI Historic | Historic |
-| Devanagari Extended       | Indian subcontinent | Nirmala UI        | Historic and liturgical |
+| Devanagari Extended       | Indian subcontinent | Nirmala UI        | Used in Vedic languages |
 | Egyptian Hieroglyphs      | Middle East         | Segoe UI Historic | Historic |
 | Imperial Aramaic          | Middle East         | Segoe UI Historic | Historic |
 | Inscriptional Pahlavi     | Middle East         | Segoe UI Historic | Historic |
@@ -154,11 +209,12 @@ The following table lists scripts newly supported in Windows 10, and associated 
 | Lycian                    | Europe              | Segoe UI Historic | Historic |
 | Lydian                    | Europe              | Segoe UI Historic | Historic |
 | Meetei Mayek              | Indian subcontinent | Nirmala UI        | Meitei   |
-| Myanmar Extended-B        | Southeast Asia      | Myanmar Text      | Shan Pali and Tai Laing |
+| Myanmar Extended-B        | Southeast Asia      | Myanmar Text      | Shan and Tai Laing |
 | Phoenician                | Middle East         | Segoe UI Historic | Historic |
 | Old Persian Cuneiform     | Middle East         | Segoe UI Historic | Historic |
 | Old South Arabian         | Middle East         | Segoe UI Historic | Historic |
-| Sinhala Archaic Numbers   | Indian subcontinent | Nirmala UI        | Sinhala Illakkam |
+| Osage                     | North America       | Gadugi            | Osage |
+| Sinhala Archaic Numbers   | Indian subcontinent | Nirmala UI        | Archaic Sinhala |
 | Shavian                   | Europe              | Segoe UI Historic | English phonetic writing |
 | Sumero-Akkadian Cuneiform | Middle East         | Segoe UI Historic | Historic |
 | Ugaritic Cuneiform        | Middle East         | Segoe UI Historic | Historic |
@@ -362,10 +418,10 @@ The following table lists scripts newly supported in Windows 7, and associated f
 | Runic       | Europe        | Segoe UI Symbol       | - |
 | Symbols     | -             | Segoe UI Symbol       | - |
 | Tai Le      | China         | Microsoft Tai Le      | Used for the Dehong Dai language |
-| Tai Xuan Jing Symbols | China | Segoe UI Symbol     | Extension of Yijing symbols |
+| Tai Xuan    | China         | Segoe UI Symbol       | - |
 | Tifinagh    | Africa        | Ebrima                | Used for Tamazight and other Amazigh languages |
 | Vai         | Africa        | Ebrima                | - |
-| Yijing Hexagram Symbols | China | Segoe UI Symbol       | - |
+| Yijing      | China         | Segoe UI Symbol       | - |
 
 Note: The Segoe UI Symbol font contains a subset of Unicode-encoded symbols. It isn't a symbol charset-encoded font.
 
