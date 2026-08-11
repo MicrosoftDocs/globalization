@@ -35,6 +35,7 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Bamum                          | Africa                | Ebrima                | Bamum |
 | Bamum Supplement               | Africa                | Segoe UI Historic     | Bamum - Historic stage A-F of the Bamum script |
 | Batak                          | Southeast Asia        | Sans Serif Collection | Alas-Kluet, Angkola, Karo, Mandailing, Pakpak, Simalungun, Toba |
+| Beria                          | Africa                | Ebrima                | Zaghawa |
 | Bhaiksuki                      | Southeast Asia        | Sans Serif Collection | Sanskrit |
 | Buhid                          | Southeast Asia        | Sans Serif Collection | Buhid, Tagalog |
 | Byzantine Musical Symbols      | Europe                | Sans Serif Collection | Musical notation for Byzantine music |
@@ -51,6 +52,7 @@ The following table lists scripts newly supported in Windows 11, and associated 
 | Duployan                       | Europe                | Sans Serif Collection | Originally developed for French, but has been expanded and adapted for other languages. |
 | Elbasan                        | Europe                | Sans Serif Collection | Albanian |
 | Elymaic                        | Middle East           | Sans Serif Collection | Aramaic |
+| Garay                          | Africa                | Ebrima                | Wolof |
 | Georgian Extended              | Europe                | Segoe UI              | Georgian |
 | Glagolitic                     | Europe                | Sans Serif Collection | Byzantine, Chakavian, Littoral Slovene, Old Church Slavonic, Old Croat, Old Czech, Old Slovak, Old Slovene, Serbo-Croatian |
 | Glagolitic Supplement          | Europe                | Sans Serif Collection | Byzantine, Chakavian, Littoral Slovene, Old Church Slavonic, Old Croat, Old Czech, Old Slovak, Old Slovene, Serbo-Croatian |
