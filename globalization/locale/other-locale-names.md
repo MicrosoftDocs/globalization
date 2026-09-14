@@ -9,7 +9,7 @@ ms.date: 03/13/2023
 ---
 # Other locale representations
 
-Many environments, such as C++, Java, .NET Framework, Python, XML, and other Unicode-based environments use a common format for specifying a locale. This format is specified in the [IETF BCP 47](https://www.ietf.org/rfc/bcp/bcp47.txt) standard. For more information about the BCP 47 format, refer to [Standard locale names](standard-locale-names.md).
+Many environments, such as C++, Java, .NET Framework, Python, XML, and other Unicode-based environments use a common format for specifying a locale. This format is specified in the [IETF BCP 47](https://www.rfc-editor.org/info/bcp47/) standard. For more information about the BCP 47 format, refer to [Standard locale names](standard-locale-names.md).
 
 Windows APIs have used BCP 47 locale names since Windows Vista. There are other locale representations, however; some of which are discussed below.
 
