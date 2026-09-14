@@ -26,7 +26,7 @@ The default fallback locales provided by APIs might not be sufficient for your o
 
 ### International Components for Unicode (ICU)
 
-ICU is a set of C/C++ and Java libraries that provide Unicode, internationalization, and globalization support. ICU provides a set of locale-sensitive services such as number formatting, resource management, and text manipulation. A locale object in ICU can be constructed for any valid [BCP 47](https://www.ietf.org/rfc/bcp/bcp47.txt) locale and there is a default locale object that might be the default locale of the operating system (C++) or Java Virtual Machine (Java).
+ICU is a set of C/C++ and Java libraries that provide Unicode, internationalization, and globalization support. ICU provides a set of locale-sensitive services such as number formatting, resource management, and text manipulation. A locale object in ICU can be constructed for any valid [BCP 47](https://www.rfc-editor.org/info/bcp47/) locale and there is a default locale object that might be the default locale of the operating system (C++) or Java Virtual Machine (Java).
 
 When using these locale-sensitive services, ICU will attempt to resolve the requested locale to a valid locale via the following steps:
 
