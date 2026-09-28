@@ -1,14 +1,14 @@
 ﻿---
 title: Windows keyboard layouts
 description: Choose a keyboard below to view its layouts.
-ms.date: 06/22/2023
+ms.date: 09/28/2026
 ms.topic: reference
 author: jowilco
 ---
 
 # Windows keyboard layouts
 
-Layouts generated using: Microsoft Windows 11 Enterprise 25H2 (26200.6584)
+Layouts generated using: Microsoft Windows 11 Enterprise 26H2 (26300.9457)
 
 Choose a keyboard below to view its layout.
 
@@ -17,6 +17,7 @@ Choose a keyboard below to view its layout.
 | <a name="A"></a>A | [ADLaM](keyboards/kbdadlm.md) | 00140C00 | 10 |
 | &nbsp; | [Albanian](keyboards/kbdal.md) | 0000041C | pre-XP |
 | &nbsp; | [Arabic (101)](keyboards/kbda1.md) | 00000401 | pre-XP |
+| &nbsp; | [Arabic (101, Legacy)](keyboards/kbda4.md) | 00030401 | 11 |
 | &nbsp; | [Arabic (102)](keyboards/kbda2.md) | 00010401 | pre-XP |
 | &nbsp; | [Arabic (102) AZERTY](keyboards/kbda3.md) | 00020401 | pre-XP |
 | &nbsp; | [Armenian Eastern (Legacy)](keyboards/kbdarme.md) | 0000042B | pre-XP |
