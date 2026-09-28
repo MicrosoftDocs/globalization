@@ -1,7 +1,7 @@
 ---
 title: Khmer Keyboard
 description: An interactive representation of the Windows Khmer keyboard. To see different keyboard states, click or move the mouse over the state keys.
-ms.date: 10/24/2024
+ms.date: 09/28/2026
 ms.topic: ui-reference
 author: jowilco
 ---
